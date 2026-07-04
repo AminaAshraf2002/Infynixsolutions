@@ -12,10 +12,10 @@
   --dark: #007A5E;
   --white: #ffffff;
   --blue: #005A46;
-  --orange: #A7D600;
+  --orange: #007A5E;
   --gray: #4B5563;
   --light-gray: #9CA3AF;
-  --hero-bg: linear-gradient(to left, rgba(10, 15, 12, 0.795), rgba(0, 122, 94, 0.85)), url('./assets/hero-bg.jpg') center/cover no-repeat;
+  --hero-bg: linear-gradient(to right, rgba(10, 15, 12, 0.9) 0%, rgba(10, 15, 12, 0.6) 30%, transparent 60%), url('./assets/hero-bg.jpg') center/cover no-repeat;
 }
 
 .hero,
