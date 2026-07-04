@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://infynix.com/</loc>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://infynix.com/growth-engineering</loc>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://infynix.com/about</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://infynix.com/contact</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://infynix.com/case-studies</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://infynix.com/insights</loc>
+    <priority>0.80</priority>
+  </url>
+  
+  <!-- Solutions -->
+  <url>
+    <loc>https://infynix.com/solutions/website-development</loc>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://infynix.com/solutions/mobile-app-development</loc>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://infynix.com/solutions/performance-marketing</loc>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://infynix.com/solutions/seo-services</loc>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://infynix.com/solutions/artificial-intelligence</loc>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://infynix.com/solutions/business-automation</loc>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://infynix.com/solutions/crm-erp-development</loc>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://infynix.com/solutions/ui-ux-design</loc>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Industries -->
+  <url>
+    <loc>https://infynix.com/industries/healthcare</loc>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://infynix.com/industries/education</loc>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://infynix.com/industries/construction</loc>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://infynix.com/industries/real-estate</loc>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://infynix.com/industries/manufacturing</loc>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://infynix.com/industries/retail</loc>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://infynix.com/industries/hospitality</loc>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://infynix.com/industries/professional-services</loc>
+    <priority>0.75</priority>
+  </url>
+
+  <!-- Case Studies Details -->
+  <url>
+    <loc>https://infynix.com/case-studies/riverside-logistics</loc>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://infynix.com/case-studies/medvibe-portal</loc>
+    <priority>0.70</priority>
+  </url>
+
+  <!-- Insights Details -->
+  <url>
+    <loc>https://infynix.com/insights/what-is-growth-engineering</loc>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://infynix.com/insights/how-ai-automates-growth</loc>
+    <priority>0.70</priority>
+  </url>
+
+  <!-- Legal -->
+  <url>
+    <loc>https://infynix.com/privacy-policy</loc>
+    <priority>0.30</priority>
+  </url>
+  <url>
+    <loc>https://infynix.com/terms-of-service</loc>
+    <priority>0.30</priority>
+  </url>
+</urlset>

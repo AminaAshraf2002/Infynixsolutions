@@ -1,0 +1,268 @@
+// WhoWeAre.jsx  —  About Page — Infynix "Digital Momentum" Design
+// Primary: #007A5E | Selective dark sections only
+
+import { useState, useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
+import "./InfynixDesign.css";
+import workVideo from "../assets/work1.mp4";
+
+export function useIxReveal() {
+  useEffect(() => {
+    const els = document.querySelectorAll(".ix-reveal, .ix-reveal-left, .ix-reveal-right, .ix-reveal-scale");
+    const obs = new IntersectionObserver(
+      (entries) => entries.forEach((e) => { if (e.isIntersecting) e.target.classList.add("ix-visible"); }),
+      { threshold: 0.1, rootMargin: "0px 0px -40px 0px" }
+    );
+    els.forEach((el) => obs.observe(el));
+    return () => obs.disconnect();
+  }, []);
+}
+
+const CULTURE_CARDS = [
+  { title: "Precision",  icon: "⬡", text: "We approach system design with extreme mathematical and architectural rigor. By maintaining a standard of clean code, automated testing, and defensive programming, we ensure that every growth engine we build performs flawlessly under peak loads." },
+  { title: "Velocity",   icon: "△", text: "We prioritize swift execution and continuous integration. By utilizing modular architectures, automated deployment pipelines, and agile feedback loops, we deliver production-ready features quickly without compromising reliability." },
+  { title: "Ownership",  icon: "◎", text: "We take full end-to-end accountability for our projects. Our team operates with a product-mindset, proactively identifying potential system bottlenecks, recommending optimal cloud configurations, and ensuring long-term system success." },
+  { title: "Security",   icon: "⬛", text: "We embed security and privacy guidelines into every layer of our stack. From data encryption and secure API gateways to real-time anomaly detection, we protect sensitive enterprise assets against evolving threat vectors." },
+];
+
+const STATS = [
+  { num: "900+", label: "Rapidly growing tribe" },
+  { num: "7×",   label: "Great Place to Work award winner" },
+  { num: "90%",  label: "Growth from referrals" },
+  { num: "150+", label: "Enterprise systems shipped" },
+];
+
+const PILLARS = [
+  { title: "Deep Systems Engineering",    desc: "Architecting robust, scalable, and resilient software networks tailored to complex business objectives.", icon: "⬡" },
+  { title: "Direct-Access Collaboration", desc: "Offering seamless, high-ownership engineering partnerships focused on driving real-world outcomes.", icon: "◎" },
+  { title: "Elite Technical Expertise",   desc: "Powered by highly skilled, senior software architects, developers, and data engineers.", icon: "△" },
+  { title: "Vendor-Agnostic Integrity",   desc: "Designing custom, client-first integrations by harmonizing Growth Engineering frameworks with advanced Growth Systems.", icon: "◇" },
+  { title: "AI & Surveillance Leadership",desc: "Pioneering state-of-the-art computer vision models, predictive analytics, and automated growth loops.", icon: "⬛" },
+];
+
+const Arrow = () => (
+  <svg viewBox="0 0 14 14" fill="none" width="13" height="13">
+    <path d="M2 12L12 2M12 2H5M12 2V9" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+  </svg>
+);
+
+export default function WhoWeAre() {
+  useIxReveal();
+
+  return (
+    <div style={{ background: "#fff" }}>
+
+      {/* ══ HERO — dark teal ══ */}
+      <section style={{
+        background: "var(--ix-dark)",
+        minHeight: "100vh",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "flex-end",
+        padding: "clamp(80px, 12vw, 160px) clamp(20px, 8vw, 120px) clamp(56px, 8vw, 96px)",
+        position: "relative",
+        overflow: "hidden",
+      }}>
+        {/* Teal grid */}
+        <div style={{ position: "absolute", inset: 0, backgroundImage: "linear-gradient(rgba(0,122,94,0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(0,122,94,0.06) 1px, transparent 1px)", backgroundSize: "80px 80px", pointerEvents: "none" }} />
+
+        {/* Teal blobs */}
+        <div className="ix-blob-container">
+          <div className="ix-blob ix-blob-1" />
+          <div className="ix-blob ix-blob-2" />
+        </div>
+
+        {/* Right stripe */}
+        <div style={{ position: "absolute", top: 0, right: "clamp(20px, 8vw, 120px)", width: 2, height: "50%", background: "linear-gradient(to bottom, var(--ix-primary-lt), transparent)", opacity: 0.5 }} />
+
+        <div style={{ position: "relative", zIndex: 1, maxWidth: 1300 }}>
+          <span className="ix-eyebrow ix-eyebrow--light" data-aos="fade-up">Who We Are</span>
+
+          <h1 style={{ fontFamily: "var(--ix-font-display)", fontWeight: 800, fontSize: "clamp(2rem, 6vw, 7rem)", lineHeight: 0.93, letterSpacing: "-0.03em", color: "#fff", marginBottom: "2.5rem" }}>
+            <span data-aos-delay="100" data-aos="fade-up" style={{ display: "block" }}>Architecting</span>
+            <span data-aos-delay="200" data-aos="fade-up" style={{ display: "block" }}>Next-Gen</span>
+            <em data-aos-delay="300" data-aos="fade-up" style={{ display: "block", fontFamily: "var(--ix-font-serif)", fontStyle: "italic", fontWeight: 400, color: "var(--ix-primary-lt)" }}>Growth Engines</em>
+          </h1>
+
+          <div style={{ display: "flex", gap: "2rem", flexWrap: "wrap", alignItems: "flex-end" }}>
+            <p data-aos-delay="400" data-aos="fade-up" style={{ fontFamily: "var(--ix-font-body)", fontSize: "clamp(0.9rem, 1.3vw, 1.05rem)", color: "rgba(255,255,255,0.45)", lineHeight: 1.75, maxWidth: 480 }}>
+              Infynix Solutions is your dedicated AI Surveillance & Growth Systems partner — delivering deep systems engineering, direct-access collaboration, and elite technical expertise.
+            </p>
+            <div className="ix-d5" data-aos="fade-up" style={{ display: "flex", gap: "1rem" }}>
+              <Link to="/contact" className="ix-btn-primary">Work With Us <Arrow /></Link>
+              <a href="#story" className="ix-btn-outline-wh">Our Story</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ══ WHAT WE DELIVER — white ══ */}
+      <section className="ix-section" style={{ background: "#fff" }}>
+        <div style={{ maxWidth: 1200, margin: "0 auto" }}>
+          <div style={{ marginBottom: "clamp(2rem, 5vw, 4rem)" }}>
+            <span className="ix-teal-bar" />
+            <h2 data-aos="fade-up" style={{ fontFamily: "var(--ix-font-display)", fontWeight: 800, fontSize: "clamp(2rem, 3.5vw, 3rem)", color: "var(--ix-text)", lineHeight: 1.1, letterSpacing: "-0.02em" }}>
+              What We<br />
+              <em style={{ fontFamily: "var(--ix-font-serif)", fontStyle: "italic", fontWeight: 400, color: "var(--ix-primary)" }}>Deliver</em>
+            </h2>
+          </div>
+
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: "1px", background: "var(--ix-border-n)", border: "1px solid var(--ix-border-n)", borderRadius: 20, overflow: "hidden" }}>
+            {PILLARS.map((item, i) => (
+              <div
+                key={item.title}
+                className={`-scale ix-d${Math.min(i + 1, 7)} data-aos="fade-up"`}
+                style={{ background: "#fff", padding: "2.2rem", transition: "background 0.3s", cursor: "default" }}
+                onMouseEnter={e => {
+                  e.currentTarget.style.background = "var(--ix-primary)";
+                  e.currentTarget.querySelectorAll("[data-c]").forEach(el => el.style.color = el.dataset.hc);
+                }}
+                onMouseLeave={e => {
+                  e.currentTarget.style.background = "#fff";
+                  e.currentTarget.querySelectorAll("[data-c]").forEach(el => el.style.color = el.dataset.dc);
+                }}
+              >
+                <div style={{ fontSize: "2rem", marginBottom: "1rem", color: "var(--ix-primary)", transition: "color 0.3s" }}>{item.icon}</div>
+                <h3 data-c="1" data-dc="var(--ix-text)" data-hc="#fff" style={{ fontFamily: "var(--ix-font-display)", fontWeight: 700, fontSize: "1rem", color: "var(--ix-text)", marginBottom: "0.6rem", transition: "color 0.3s" }}>{item.title}</h3>
+                <p data-c="1" data-dc="var(--ix-muted)" data-hc="rgba(255,255,255,0.7)" style={{ fontFamily: "var(--ix-font-body)", fontSize: "0.87rem", color: "var(--ix-muted)", lineHeight: 1.7, transition: "color 0.3s" }}>{item.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ══ STORY + VIDEO — light teal bg + dark right ══ */}
+      <section id="story" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", minHeight: "80vh" }}>
+        {/* Left — teal bg */}
+        <div style={{
+          background: "var(--ix-primary-bg)",
+          display: "flex", flexDirection: "column", justifyContent: "center",
+          padding: "clamp(56px, 8vw, 100px) clamp(20px, 6vw, 80px)",
+          borderRight: "1px solid var(--ix-border)",
+        }}>
+          <span className="ix-eyebrow" data-aos="fade-up">Our Story</span>
+          <h2 data-aos-delay="100" data-aos="fade-up" style={{ fontFamily: "var(--ix-font-display)", fontWeight: 800, fontSize: "clamp(2rem, 3.5vw, 3.5rem)", lineHeight: 1.05, color: "var(--ix-text)", letterSpacing: "-0.02em", marginBottom: "1.5rem" }}>
+            From Vision<br />to Scaled<br />
+            <em style={{ fontFamily: "var(--ix-font-serif)", fontStyle: "italic", fontWeight: 400, color: "var(--ix-primary)" }}>Systems</em>
+          </h2>
+          <p data-aos-delay="200" data-aos="fade-up" style={{ fontFamily: "var(--ix-font-body)", fontSize: "0.97rem", color: "var(--ix-muted)", lineHeight: 1.8, marginBottom: "1rem" }}>
+            It all started when a vision to unify advanced intelligence with business growth kickstarted our journey. What began as a focused engineering collective has evolved into a global powerhouse for high-performance systems.
+          </p>
+          <p data-aos-delay="300" data-aos="fade-up" style={{ fontFamily: "var(--ix-font-body)", fontSize: "0.97rem", color: "var(--ix-muted)", lineHeight: 1.8 }}>
+            Our commitment to high-precision engineering attracted elite builders and developers. Today, we stand as a premier partner for enterprises worldwide, delivering state-of-the-art Growth Systems, AI Surveillance integrations, CRM solutions, and digital marketing.
+          </p>
+        </div>
+
+        {/* Right — video */}
+        <div style={{ position: "relative", overflow: "hidden", background: "var(--ix-dark)" }}>
+          <video src={workVideo} autoPlay loop muted playsInline style={{ width: "100%", height: "100%", objectFit: "cover", display: "block", opacity: 0.85 }} />
+          <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to right, var(--ix-primary-bg) 0%, transparent 25%)" }} />
+        </div>
+      </section>
+
+      {/* ══ STATS STRIP — white ══ */}
+      <section className="ix-section" style={{ background: "#fff" }}>
+        <div style={{ maxWidth: 1200, margin: "0 auto" }}>
+          <span className="ix-teal-bar" />
+          <h2 data-aos="fade-up" style={{ fontFamily: "var(--ix-font-display)", fontWeight: 800, fontSize: "clamp(1.8rem, 3vw, 2.5rem)", color: "var(--ix-text)", letterSpacing: "-0.02em", lineHeight: 1.1, marginBottom: "clamp(2rem, 4vw, 3rem)" }}>
+            Impact by<br />
+            <em style={{ fontFamily: "var(--ix-font-serif)", fontStyle: "italic", fontWeight: 400, color: "var(--ix-primary)" }}>the Numbers</em>
+          </h2>
+          <div className="ix-stats-strip-scale" data-aos="fade-up" style={{ gridTemplateColumns: "repeat(4, 1fr)" }}>
+            {STATS.map((s, i) => (
+              <div className="ix-stat-block" key={i}>
+                <span className="ix-stat-num">{s.num}</span>
+                <span className="ix-stat-label">{s.label}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ══ TEAM PHOTOS — light teal bg ══ */}
+      <section className="ix-section" style={{ background: "var(--ix-primary-bg)" }}>
+        <div style={{ maxWidth: 1200, margin: "0 auto" }}>
+          <span className="ix-teal-bar" />
+          <h2 data-aos="fade-up" style={{ fontFamily: "var(--ix-font-display)", fontWeight: 800, fontSize: "clamp(2rem, 3.5vw, 3rem)", color: "var(--ix-text)", letterSpacing: "-0.02em", lineHeight: 1.1, marginBottom: "clamp(2rem, 4vw, 3.5rem)" }}>
+            Get to Know<br />
+            <em style={{ fontFamily: "var(--ix-font-serif)", fontStyle: "italic", fontWeight: 400, color: "var(--ix-primary)" }}>the People Behind It</em>
+          </h2>
+
+          <div style={{ display: "grid", gridTemplateColumns: "1fr 2fr", gap: "1.5rem", marginBottom: "1.5rem" }}>
+            <div className="-left" data-aos="fade-up" style={{ borderRadius: 20, overflow: "hidden", aspectRatio: "3/4" }}>
+              <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=600&q=80" alt="Infynix team leader" style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} />
+            </div>
+            <div className="-right" data-aos="fade-up" style={{ borderRadius: 20, overflow: "hidden", aspectRatio: "16/9" }}>
+              <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80" alt="Infynix engineering team" style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} />
+            </div>
+          </div>
+
+          <p data-aos="fade-up" style={{ fontFamily: "var(--ix-font-body)", fontSize: "1.05rem", color: "var(--ix-muted)", lineHeight: 1.8, maxWidth: 700, marginBottom: "2rem" }}>
+            We foster an environment of high ownership, uniting senior engineers and creative thinkers to design and deploy resilient digital systems.
+          </p>
+
+          <div data-aos-delay="100" data-aos="fade-up" style={{ borderRadius: 20, overflow: "hidden", height: "clamp(240px, 40vw, 480px)" }}>
+            <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1600&q=80" alt="Infynix full team" style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} />
+          </div>
+        </div>
+      </section>
+
+      {/* ══ CULTURE CARDS — white ══ */}
+      <section className="ix-section" style={{ background: "#fff" }}>
+        <div style={{ maxWidth: 1200, margin: "0 auto" }}>
+          <span className="ix-teal-bar" />
+          <h2 data-aos="fade-up" style={{ fontFamily: "var(--ix-font-display)", fontWeight: 800, fontSize: "clamp(2rem, 3.5vw, 3rem)", color: "var(--ix-text)", letterSpacing: "-0.02em", lineHeight: 1.1, marginBottom: "clamp(2rem, 5vw, 4rem)" }}>
+            Culture that<br />
+            <em style={{ fontFamily: "var(--ix-font-serif)", fontStyle: "italic", fontWeight: 400, color: "var(--ix-primary)" }}>Drives Excellence</em>
+          </h2>
+
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: "1.5rem" }}>
+            {CULTURE_CARDS.map((card, i) => (
+              <div
+                key={card.title}
+                className={`ix-d${Math.min(i + 1, 7)} data-aos="fade-up"`}
+                style={{ background: "var(--ix-primary-bg)", border: "1px solid var(--ix-border)", borderRadius: 20, padding: "2.2rem", transition: "transform 0.3s, box-shadow 0.3s, background 0.3s" }}
+                onMouseEnter={e => { e.currentTarget.style.transform = "translateY(-5px)"; e.currentTarget.style.boxShadow = "0 16px 40px rgba(0,122,94,0.12)"; e.currentTarget.style.background = "var(--ix-primary)"; e.currentTarget.querySelectorAll("[data-cx]").forEach(el => el.style.color = el.dataset.hx); }}
+                onMouseLeave={e => { e.currentTarget.style.transform = ""; e.currentTarget.style.boxShadow = ""; e.currentTarget.style.background = "var(--ix-primary-bg)"; e.currentTarget.querySelectorAll("[data-cx]").forEach(el => el.style.color = el.dataset.dx); }}
+              >
+                <div style={{ fontSize: "2.2rem", marginBottom: "1.2rem", color: "var(--ix-primary)", transition: "color 0.3s" }}>{card.icon}</div>
+                <h3 data-cx="1" data-dx="var(--ix-text)" data-hx="#fff" style={{ fontFamily: "var(--ix-font-display)", fontWeight: 800, fontSize: "1.15rem", color: "var(--ix-text)", marginBottom: "0.8rem", transition: "color 0.3s" }}>{card.title}</h3>
+                <p data-cx="1" data-dx="var(--ix-muted)" data-hx="rgba(255,255,255,0.7)" style={{ fontFamily: "var(--ix-font-body)", fontSize: "0.87rem", color: "var(--ix-muted)", lineHeight: 1.75, transition: "color 0.3s" }}>{card.text}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ══ GLOBAL STATEMENT — teal ══ */}
+      <section style={{ background: "var(--ix-primary)", padding: "clamp(64px, 10vw, 120px) clamp(20px, 8vw, 120px)", position: "relative", overflow: "hidden" }}>
+        <div style={{ position: "absolute", inset: 0, opacity: 0.06, backgroundImage: "repeating-linear-gradient(-45deg, #fff 0, #fff 1px, transparent 0, transparent 50%)", backgroundSize: "20px 20px" }} />
+        <div style={{ maxWidth: 1200, margin: "0 auto", position: "relative", zIndex: 1 }}>
+          <p data-aos="fade-up" style={{ fontFamily: "var(--ix-font-display)", fontWeight: 800, fontSize: "clamp(2.5rem, 5.5vw, 5rem)", lineHeight: 1.1, letterSpacing: "-0.025em", color: "#fff" }}>
+            Partnering with leading brands to deploy scalable growth systems and next-generation AI security solutions —{" "}
+            <em style={{ fontFamily: "var(--ix-font-serif)", fontStyle: "italic", fontWeight: 400, color: "var(--ix-primary-mid)" }}>globally.</em>
+          </p>
+        </div>
+      </section>
+
+      {/* ══ CTA — dark teal ══ */}
+      <section className="ix-section" style={{ background: "var(--ix-dark)", textAlign: "center" }}>
+        <div style={{ maxWidth: 700, margin: "0 auto" }}>
+          <span className="ix-eyebrow ix-eyebrow--light" data-aos="fade-up" style={{ justifyContent: "center" }}>Let's Build Together</span>
+          <h2 data-aos-delay="100" data-aos="fade-up" style={{ fontFamily: "var(--ix-font-display)", fontWeight: 800, fontSize: "clamp(2.5rem, 5vw, 4.5rem)", lineHeight: 1.05, color: "#fff", letterSpacing: "-0.025em", marginBottom: "1.2rem" }}>
+            Interested in<br />
+            <em style={{ fontFamily: "var(--ix-font-serif)", fontStyle: "italic", fontWeight: 400, color: "var(--ix-primary-lt)" }}>partnering with us?</em>
+          </h2>
+          <p data-aos-delay="200" data-aos="fade-up" style={{ fontFamily: "var(--ix-font-body)", fontSize: "0.97rem", color: "rgba(255,255,255,0.4)", lineHeight: 1.8, marginBottom: "2.5rem" }}>
+            Whether you're scaling a startup or transforming an enterprise, Infynix engineers your path to sustainable growth.
+          </p>
+          <div data-aos-delay="300" data-aos="fade-up" style={{ display: "flex", justifyContent: "center", gap: "1rem", flexWrap: "wrap" }}>
+            <Link to="/contact" className="ix-btn-primary">Get in Touch ↗</Link>
+            <Link to="/growth-engineering" className="ix-btn-outline-wh">Our Method</Link>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  );
+}
