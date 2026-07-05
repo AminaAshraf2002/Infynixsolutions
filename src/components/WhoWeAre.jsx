@@ -4,7 +4,7 @@
 import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import "./InfynixDesign.css";
-import workVideo from "../assets/work1.mp4";
+import storyVideo from "../assets/video.mp4";
 
 export function useIxReveal() {
   useEffect(() => {
@@ -155,26 +155,74 @@ export default function WhoWeAre() {
 
         {/* Right — video */}
         <div style={{ position: "relative", overflow: "hidden", background: "var(--ix-dark)" }}>
-          <video src={workVideo} autoPlay loop muted playsInline style={{ width: "100%", height: "100%", objectFit: "cover", display: "block", opacity: 0.85 }} />
+          <video src={storyVideo} autoPlay loop muted playsInline style={{ width: "100%", height: "100%", objectFit: "cover", display: "block", opacity: 0.85 }} />
           <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to right, var(--ix-primary-bg) 0%, transparent 25%)" }} />
         </div>
       </section>
 
-      {/* ══ STATS STRIP — white ══ */}
-      <section className="ix-section" style={{ background: "#fff" }}>
-        <div style={{ maxWidth: 1200, margin: "0 auto" }}>
-          <span className="ix-teal-bar" />
-          <h2 data-aos="fade-up" style={{ fontFamily: "var(--ix-font-display)", fontWeight: 800, fontSize: "clamp(1.8rem, 3vw, 2.5rem)", color: "var(--ix-text)", letterSpacing: "-0.02em", lineHeight: 1.1, marginBottom: "clamp(2rem, 4vw, 3rem)" }}>
-            Impact by<br />
-            <em style={{ fontFamily: "var(--ix-font-serif)", fontStyle: "italic", fontWeight: 400, color: "var(--ix-primary)" }}>the Numbers</em>
-          </h2>
-          <div className="ix-stats-strip-scale" data-aos="fade-up" style={{ gridTemplateColumns: "repeat(4, 1fr)" }}>
-            {STATS.map((s, i) => (
-              <div className="ix-stat-block" key={i}>
-                <span className="ix-stat-num">{s.num}</span>
-                <span className="ix-stat-label">{s.label}</span>
+      {/* ══ STATS STRIP — exact design ══ */}
+      <section className="ix-section" style={{ background: "var(--ix-primary-bg)", overflow: 'hidden', position: 'relative' }}>
+
+
+        <div style={{ maxWidth: 1400, margin: "0 auto", position: 'relative', zIndex: 1, padding: '0 2rem' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(400px, 1fr))', gap: '4rem', alignItems: 'flex-start' }}>
+            
+            {/* Left Column */}
+            <div data-aos="fade-right">
+              <div style={{ fontSize: '0.75rem', color: 'var(--ix-primary)', textTransform: 'uppercase', letterSpacing: '1px', fontWeight: 700, borderBottom: '2px solid var(--ix-text)', paddingBottom: '0.5rem', marginBottom: '2.5rem', display: 'inline-block' }}>
+                OUR SCALE
               </div>
-            ))}
+              <h2 style={{ fontFamily: "var(--ix-font-display)", fontWeight: 800, fontSize: "clamp(3rem, 5vw, 4.5rem)", color: "var(--ix-text)", letterSpacing: "-0.02em", lineHeight: 1.1, margin: "0 0 1.5rem" }}>
+                Impact by<br />
+                <em style={{ fontFamily: "var(--ix-font-serif)", fontStyle: "italic", fontWeight: 400, color: "var(--ix-primary)" }}>the Numbers</em>
+              </h2>
+              <p style={{ fontFamily: "var(--ix-font-body)", fontSize: "1.1rem", color: "var(--ix-text)", lineHeight: 1.6, maxWidth: "400px", marginBottom: "3rem" }}>
+                Engineering high-performance growth for the world's most ambitious brands.
+              </p>
+              
+              <div style={{ borderRadius: '16px', overflow: 'hidden', filter: 'grayscale(100%) opacity(80%)' }}>
+                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" alt="Team Collaboration" style={{ width: '100%', display: 'block', objectFit: 'cover', height: '280px' }} />
+              </div>
+              
+            </div>
+
+            {/* Right Column */}
+            <div data-aos="fade-left">
+              {/* Stat Cards */}
+              <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(180px, 1fr))", gap: "1rem", marginBottom: "1rem" }}>
+                {[
+                  { num: "900+", label: "CLIENTS SERVED" },
+                  { num: "7x",   label: "GROWTH MULTIPLIER" },
+                  { num: "90%",  label: "RETENTION RATE" },
+                  { num: "150+", label: "ENGINEERS" },
+                ].map((s, i) => (
+                  <div key={i} style={{ background: '#fff', padding: '2.5rem 1.8rem 2rem', borderRadius: '12px', border: '1px solid rgba(0,0,0,0.06)', display: 'flex', flexDirection: 'column' }}>
+                    <span style={{ fontSize: '0.65rem', color: 'var(--ix-muted)', marginBottom: '3.5rem', fontWeight: 600 }}>0{i + 1}</span>
+                    <div style={{ fontSize: 'clamp(1.8rem, 2.7vw, 2.8rem)', fontWeight: 800, color: 'var(--ix-primary)', marginBottom: '0.5rem', lineHeight: 1 }}>{s.num}</div>
+                    <div style={{ fontSize: '0.75rem', fontWeight: 700, color: 'var(--ix-text)', letterSpacing: '1px', textTransform: 'uppercase', lineHeight: 1.4 }}>{s.label}</div>
+                  </div>
+                ))}
+              </div>
+
+              {/* CTA Card */}
+              <div style={{ background: 'rgba(255,255,255,0.4)', backdropFilter: 'blur(10px)', border: '1px solid rgba(0,0,0,0.06)', borderRadius: '12px', padding: '3rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '2rem' }}>
+                <div style={{ display: 'flex', alignItems: 'flex-start', gap: '1.5rem' }}>
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--ix-primary)" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{ marginTop: '0.2rem' }}>
+                    <path d="M22 7L13.5 15.5L8.5 10.5L2 17" />
+                    <path d="M16 7H22V13" />
+                  </svg>
+                  <div>
+                    <h3 style={{ fontFamily: 'var(--ix-font-display)', fontSize: '1.4rem', fontWeight: 700, color: 'var(--ix-primary)', marginBottom: '0.5rem' }}>Scale your engineering team today</h3>
+                    <p style={{ fontFamily: 'var(--ix-font-body)', fontSize: '.9rem', color: 'var(--ix-muted)', margin: 0, maxWidth: '400px', lineHeight: 1.6 }}>We provide the technical backbone for rapid-growth tech ecosystems.</p>
+                  </div>
+                </div>
+                
+                <Link to="/case-studies" style={{ textDecoration: 'none', color: 'var(--ix-text)', fontSize: '0.8rem', fontWeight: 700, letterSpacing: '1px', textTransform: 'uppercase', borderBottom: '1.5px solid var(--ix-text)', paddingBottom: '0.2rem' }}>
+                  EXPLORE CASE STUDIES
+                </Link>
+              </div>
+            </div>
+            
           </div>
         </div>
       </section>
@@ -238,7 +286,7 @@ export default function WhoWeAre() {
       <section style={{ background: "var(--ix-primary)", padding: "clamp(64px, 10vw, 120px) clamp(20px, 8vw, 120px)", position: "relative", overflow: "hidden" }}>
         <div style={{ position: "absolute", inset: 0, opacity: 0.06, backgroundImage: "repeating-linear-gradient(-45deg, #fff 0, #fff 1px, transparent 0, transparent 50%)", backgroundSize: "20px 20px" }} />
         <div style={{ maxWidth: 1200, margin: "0 auto", position: "relative", zIndex: 1 }}>
-          <p data-aos="fade-up" style={{ fontFamily: "var(--ix-font-display)", fontWeight: 800, fontSize: "clamp(2.5rem, 5.5vw, 5rem)", lineHeight: 1.1, letterSpacing: "-0.025em", color: "#fff" }}>
+          <p data-aos="fade-up" style={{ fontFamily: "var(--ix-font-display)", fontWeight: 600, fontSize: "clamp(1.8rem, 4.4vw, 4.5rem)", lineHeight: 1.1, letterSpacing: "-0.025em", color: "#fff" }}>
             Partnering with leading brands to deploy scalable growth systems and next-generation AI security solutions —{" "}
             <em style={{ fontFamily: "var(--ix-font-serif)", fontStyle: "italic", fontWeight: 400, color: "var(--ix-primary-mid)" }}>globally.</em>
           </p>

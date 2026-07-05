@@ -6,6 +6,7 @@ import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
+import CustomCursor from './components/CustomCursor';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import SpecializeSection from './components/SpecializeSection';
@@ -66,6 +67,7 @@ function AppContent() {
 
   return (
     <>
+      <CustomCursor />
       <Navbar />
       <main style={{ position: 'relative' }}>
         {/* Global Dashed Lines (Spans all pages) */}

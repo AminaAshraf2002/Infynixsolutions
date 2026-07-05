@@ -183,10 +183,10 @@ const InsightsPage = () => {
       {/* ── TOP HEADER ── */}
       <section style={{ padding: '160px 20px 40px', textAlign: 'center', position: 'relative' }} data-aos="fade-down">
         <div style={{ width: '1px', height: '20px', background: 'transparent', borderLeft: `1px dotted ${BORDER}`, margin: '0 auto 20px' }}></div>
-        <div style={{ fontSize: '0.65rem', color: GREEN, textTransform: 'uppercase', letterSpacing: '3px', fontWeight: 700, marginBottom: '20px' }}>
+        <div style={{ fontSize: '0.65rem', color: GREEN, textTransform: 'uppercase', letterSpacing: '3px', fontWeight: 700, marginTop: '-40px', marginBottom: '20px' }}>
           PERSPECTIVES • ENGINEERING • SCALE
         </div>
-        <h1 style={{ fontSize: 'clamp(3rem, 6vw, 4.5rem)', fontWeight: 800, color: CHARCOAL, margin: '0 0 15px', fontFamily: 'var(--ix-font-display)', letterSpacing: '-0.02em' }}>
+        <h1 style={{ fontSize: 'clamp(3rem, 6vw, 4.5rem)', fontWeight: 600, color: CHARCOAL, margin: '0 0 15px', fontFamily: 'var(--ix-font-display)', letterSpacing: '-0.02em' }}>
           Growth Insights
         </h1>
         <p style={{ fontSize: '1.1rem', color: '#555', fontStyle: 'italic', fontFamily: 'var(--ix-font-serif)', maxWidth: '600px', margin: '0 auto' }}>
@@ -211,14 +211,14 @@ const InsightsPage = () => {
               • {featuredArticle.date}
             </div>
             <Link to={`/insights/${featuredArticle.slug}`} style={{ textDecoration: 'none', color: 'inherit' }}>
-              <h2 style={{ fontSize: 'clamp(2rem, 4vw, 3rem)', fontWeight: 800, color: CHARCOAL, margin: '0 0 20px', lineHeight: 1.1, fontFamily: 'var(--ix-font-display)', letterSpacing: '-0.02em' }}>
+              <h2 style={{ fontSize: 'clamp(2rem, 4vw, 3rem)', fontWeight: 600, color: CHARCOAL, margin: '0 0 20px', lineHeight: 1.1, fontFamily: 'var(--ix-font-display)', letterSpacing: '-0.02em' }}>
                 {featuredArticle.title}
               </h2>
             </Link>
-            <p style={{ fontSize: '1rem', color: '#555', lineHeight: 1.7, marginBottom: '30px' }}>
+            <p style={{ fontSize: '.9rem', color: '#555', lineHeight: 1.7, marginBottom: '30px' }}>
               {featuredArticle.summary}
             </p>
-            <Link to={`/insights/${featuredArticle.slug}`} style={{ textDecoration: 'none', color: GREEN, fontWeight: 700, fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '2px' }}>
+            <Link to={`/insights/${featuredArticle.slug}`} style={{ textDecoration: 'none', color: GREEN, fontWeight: 600, fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '2px' }}>
               Read Article →
             </Link>
           </div>

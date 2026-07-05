@@ -103,7 +103,7 @@ const ClientsSection = () => {
       </div>
 
       {/* White Logo Banner */}
-      <div data-aos="fade-up" style={{ background: '#fff', padding: '2.5rem 0', overflow: 'hidden', whiteSpace: 'nowrap', display: 'flex' }}>
+      {/* <div data-aos="fade-up" style={{ background: '#fff', padding: '2.5rem 0', overflow: 'hidden', whiteSpace: 'nowrap', display: 'flex' }}>
         <div style={{ display: 'inline-flex', gap: '4rem', paddingLeft: '4rem', animation: 'ix-scroll-marquee 30s linear infinite' }}>
           {clients.concat(clients).map((client, i) => (
             <div key={i} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
@@ -111,7 +111,7 @@ const ClientsSection = () => {
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
       {/* CTA Card — "Let's create great things." */}
       <div className="cta-home-card" id="contact">
         <h2 className="cta-home-heading">

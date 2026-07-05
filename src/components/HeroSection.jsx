@@ -3,28 +3,49 @@ import './HeroSection.css';
 
 const SERVER_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
 
-function HeroSection({ data }) {
-  const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
-  const [services, setServices] = useState([]);
-  const [fade, setFade] = useState(true);
+
+const TypewriterTitle = ({ firstPart, secondPart }) => {
+  const [displayedFirst, setDisplayedFirst] = useState('');
+  const [displayedSecond, setDisplayedSecond] = useState('');
 
   useEffect(() => {
-    if (data && data.slides) {
-      setServices(data.slides);
-    }
-  }, [data]);
+    setDisplayedFirst('');
+    setDisplayedSecond('');
+    let i = 0;
+    let j = 0;
+    const totalFirst = firstPart.length;
+    const totalSecond = secondPart.length;
 
-  useEffect(() => {
-    if (!services || services.length <= 1) return;
     const timer = setInterval(() => {
-      setFade(false);
-      setTimeout(() => {
-        setCurrentSlideIndex((prev) => (prev + 1) % services.length);
-        setFade(true);
-      }, 500); // match css transition
-    }, 5000);
+      if (i < totalFirst) {
+        // Typing first part
+        setDisplayedFirst((prev) => firstPart.slice(0, prev.length + 1));
+        i++;
+      } else if (j < totalSecond) {
+        // Typing second part
+        setDisplayedSecond((prev) => secondPart.slice(0, prev.length + 1));
+        j++;
+      } else {
+        clearInterval(timer);
+      }
+    }, 40);
+
     return () => clearInterval(timer);
-  }, [services]);
+  }, [firstPart, secondPart]);
+
+  return (
+    <>
+      {displayedFirst}
+      {displayedFirst.length === firstPart.length && ' '}
+      <span className="title-break">{displayedSecond}</span>
+      <span className="typewriter-cursor"></span>
+    </>
+  );
+};
+
+function HeroSection({ data }) {
+  // Get just the first slide to use as the static image
+  const staticSlide = data?.slides && data.slides.length > 0 ? data.slides[0] : null;
 
   const getImgUrl = (path) => {
     if (!path) return "";
@@ -35,94 +56,58 @@ function HeroSection({ data }) {
     return `${SERVER_URL}/${formatted}`;
   };
 
-  const globalLink = data?.sectionLink || "/contact";
   const handlePrimaryClick = () => {
-    if (globalLink.startsWith('http')) {
-      window.open(globalLink, "_blank", "noopener,noreferrer");
-    } else {
-      window.location.href = globalLink;
-    }
+    window.location.href = "/contact";
   };
 
-  if (!services || services.length === 0) return null;
+  if (!staticSlide) return null;
 
-  const currentSlide = services[currentSlideIndex];
-
-  // Function to split title and highlight the second half with line break
+  // Function to split title for typewriter
   const renderTitle = (title) => {
     if (!title) return null;
     const words = title.split(' ');
-    if (words.length <= 1) return <span>{title}</span>;
+    if (words.length <= 1) {
+       return (
+         <>
+           {title}
+           <span className="typewriter-cursor">|</span>
+         </>
+       );
+    }
     
     const mid = Math.ceil(words.length / 2);
     const firstPart = words.slice(0, mid).join(' ');
     const secondPart = words.slice(mid).join(' ');
     
-    return (
-      <>
-        {firstPart} <br className="title-break" />
-        <span className="highlight-text">{secondPart}</span>
-      </>
-    );
+    return <TypewriterTitle firstPart={firstPart} secondPart={secondPart} />;
   };
 
   return (
     <section className="hero-section">
-      {/* Background Image Area (Right Side focused) */}
-      <div 
-        className={`hero-bg-image ${fade ? 'fade-in' : 'fade-out'}`}
-        style={{ backgroundImage: `url(${getImgUrl(currentSlide?.image)})` }}
-      >
-        <div className="hero-gradient-overlay"></div>
-      </div>
-
       <div className="hero-container">
-        <div className={`hero-content ${fade ? 'fade-in-up' : 'fade-out-down'}`}>
+        <div className="hero-content">
+          <div className="hero-eyebrow">Growth Engineering Company</div>
           <h1 className="hero-title">
-            {renderTitle(currentSlide?.title)}
+            {renderTitle("Engineering Intelligent Growth Systems for Businesses Built to Scale.")}
           </h1>
           <p className="hero-subtitle">
-            {currentSlide?.subtitle}
+            Businesses don't struggle because they lack ambition. They struggle because technology, marketing, customer experience, operations and data often operate independently. Infynix engineers these into one intelligent system that enables sustainable business growth.
           </p>
           
           <div className="hero-buttons">
             <button className="btn btn-primary" onClick={handlePrimaryClick}>
-              Know More
+              Book a Discovery Call
             </button>
-            <button className="btn btn-secondary" onClick={() => window.location.href = '/services'}>
-              Our Services
+            <button className="btn btn-secondary" onClick={() => window.location.href = '/growth-engineering'}>
+              Learn About Growth Engineering
             </button>
-          </div>
-
-          <div className="hero-trust">
-            <span className="trust-text">Trustpilot</span>
-            <div className="trust-stars">
-              <span>★★★★★</span> 5 Star
-            </div>
-            <span className="trust-divider">|</span>
-            <span className="trust-text">Clutch</span>
-            <div className="trust-stars">
-              <span>★★★★★</span> 5 Star
-            </div>
           </div>
         </div>
       </div>
       
-      {/* Slide Indicators */}
-      <div className="hero-indicators">
-        {services.map((_, idx) => (
-          <div 
-            key={idx} 
-            className={`indicator-dot ${idx === currentSlideIndex ? 'active' : ''}`}
-            onClick={() => {
-                setFade(false);
-                setTimeout(() => {
-                    setCurrentSlideIndex(idx);
-                    setFade(true);
-                }, 500);
-            }}
-          />
-        ))}
+      {/* Static Image */}
+      <div className="hero-image-wrapper">
+        <img src={getImgUrl(staticSlide?.image)} alt="Hero visual" />
       </div>
     </section>
   );

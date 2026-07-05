@@ -33,21 +33,22 @@ const CustomCursor = () => {
 
     // Hover grow on interactive elements
     const interactives = document.querySelectorAll('a, button, .work-strip, .content-card-featured, .content-item');
-    const grow = () => {
-      cursor.style.width = '8px';
-      cursor.style.height = '8px';
-      ring.style.width = '56px';
-      ring.style.height = '56px';
-      ring.style.borderColor = 'rgba(26,111,212,0.4)';
-    };
-    const shrink = () => {
-      cursor.style.width = '12px';
-      cursor.style.height = '12px';
-      ring.style.width = '40px';
-      ring.style.height = '40px';
-      ring.style.borderColor = 'rgba(249,115,22,0.5)';
-    };
-
+   const grow = () => {
+  cursor.style.width = '7px';
+  cursor.style.height = '7px';
+  ring.style.width = '48px';
+  ring.style.height = '48px';
+  ring.style.borderWidth = '1px';
+  ring.style.borderColor = 'rgba(0, 122, 94, 0.4)';
+};
+const shrink = () => {
+  cursor.style.width = '9px';
+  cursor.style.height = '9px';
+  ring.style.width = '42px';
+  ring.style.height = '42px';
+  ring.style.borderWidth = '1px';
+  ring.style.borderColor = 'rgba(0, 122, 94, 0.4)';
+};
     interactives.forEach((el) => {
       el.addEventListener('mouseenter', grow);
       el.addEventListener('mouseleave', shrink);

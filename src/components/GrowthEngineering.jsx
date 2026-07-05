@@ -276,16 +276,16 @@ const GrowthEngineering = () => {
       </section>
 
       {/* ══ LIME QUOTE SECTION ══ */}
-      <section className="ix-section" data-aos="fade-up" style={{ position: "relative", background: 'rgb(61, 33, 112)', textAlign: 'left', padding: 'clamp(60px, 8vw, 100px) 20px', overflow: 'hidden' }}>
+      <section className="ix-section" data-aos="fade-up" style={{ position: "relative", background: 'rgb(198, 255, 109)', textAlign: 'left', padding: 'clamp(60px, 8vw, 100px) 20px', overflow: 'hidden' }}>
         <div style={{ maxWidth: 1200, margin: '0 auto', position: 'relative', padding: '0 40px 0 100px', zIndex: 2 }}>
-          <span style={{ position: 'absolute', top: -30, left: '30px', fontSize: '5rem', color: 'var(--ix-lime)', lineHeight: 1, fontFamily: 'var(--ix-font-serif)', opacity: 0.8 }}>"</span>
-          <blockquote style={{ fontFamily: 'var(--ix-font-serif)', fontStyle: 'italic', fontSize: 'clamp(2rem, 3.5vw, 2.8rem)', fontWeight: 400, color: '#fff', lineHeight: 1.4, margin: '2rem 0' }}>
+          <span style={{ position: 'absolute', top: -30, left: '30px', fontSize: '5rem', color: 'var(--ix-lime)', lineHeight: 1, fontFamily: 'var(--font-display)', opacity: 0.8 }}>"</span>
+          <blockquote style={{ fontFamily: "'Playfair Display', serif", fontStyle: 'italic', fontSize: 'clamp(2rem, 3.5vw, 2.8rem)', fontWeight: 400, color: '#000000ff', lineHeight: 1.4, margin: '2rem 0' }}>
             Growth isn't achieved through isolated services. It is built through connected systems, strategic thinking, and continuous improvement. Technology × AI × Performance × Automation = Sustainable Business Growth.
           </blockquote>
-          <p style={{ fontFamily: 'var(--ix-font-body)', fontWeight: 700, fontSize: '0.9rem', letterSpacing: '0.1em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.9)', marginTop: '3rem' }}>
+          <p style={{ fontFamily: 'var(--ix-font-body)', fontWeight: 700, fontSize: '0.9rem', letterSpacing: '0.1em', textTransform: 'uppercase', color: 'rgba(0, 0, 0, 0.9)', marginTop: '3rem' }}>
             Infynix Growth Engineers
           </p>
-          <span style={{ position: 'absolute', bottom: -10, right: '40px', fontSize: '5rem', color: 'var(--ix-lime)', lineHeight: 1, fontFamily: 'var(--ix-font-serif)', opacity: 0.8 }}>"</span>
+          <span style={{ position: 'absolute', bottom: -10, right: '40px', fontSize: '5rem', color: 'var(--ix-lime)', lineHeight: 1, fontFamily: "'Playfair Display', serif", opacity: 0.8 }}>"</span>
         </div>
       </section>
 
@@ -379,14 +379,7 @@ const GrowthEngineering = () => {
       </section>
 
       {/* ══ FULL-BLEED IMAGE COMBINED ══ */}
-      <section style={{ minHeight: '85vh', overflow: 'hidden', position: 'relative', display: 'flex', alignItems: 'center' }}>
-        <img
-          src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=1600&q=80"
-          alt="Integrated growth structures"
-          loading="lazy"
-          style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center', display: 'block', zIndex: 0 }}
-        />
-        <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,0,0,0.6)', zIndex: 1 }} />
+      <section style={{ minHeight: '85vh', overflow: 'hidden', position: 'relative', display: 'flex', alignItems: 'center', background: 'rgb(59, 34, 93)' }}>
         
         <div style={{ position: 'relative', zIndex: 2, width: '100%', maxWidth: '1000px', margin: '0 auto', display: 'flex', flexDirection: 'column', justifyContent: 'center', gap: '4rem', padding: '10vh 5vw', minHeight: '70vh' }}>
           
