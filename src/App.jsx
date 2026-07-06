@@ -9,6 +9,9 @@ import 'aos/dist/aos.css';
 import CustomCursor from './components/CustomCursor';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import AboutInfynix from './components/AboutInfynix';
+import TimelineSection from './components/TimelineSection';
+import StatsSection from './components/StatsSection';
 import SpecializeSection from './components/SpecializeSection';
 import InitiativesSection from './components/InitiativesSection';
 import RiversideChatSection from './components/RiversideChatSection';
@@ -37,11 +40,21 @@ function HomePage() {
       {/* 1. Hero */}
       <Hero />
 
+      {/* About Infynix Section */}
+      <AboutInfynix />
       {/* 2. "We Specialize" + CTA card + Footer (all inside) */}
       <SpecializeSection />
 
       {/* 3. Services */}
       <ServicesSection />
+
+      {/* Timeline Section */}
+      <TimelineSection />
+
+      {/* Stats Section */}
+      <StatsSection />
+
+      
 
       {/* 4. Featured Work */}
       <FeaturedWork />
@@ -71,8 +84,8 @@ function AppContent() {
       <Navbar />
       <main style={{ position: 'relative' }}>
         {/* Global Dashed Lines (Spans all pages) */}
-        <div style={{ position: 'fixed', top: 0, bottom: 0, left: 'clamp(20px, 4vw, 60px)', width: '1px', borderLeft: '1.5px dashed rgba(0,0,0,0.15)', zIndex: 50, pointerEvents: 'none' }} />
-        <div style={{ position: 'fixed', top: 0, bottom: 0, right: 'clamp(20px, 4vw, 60px)', width: '1px', borderLeft: '1.5px dashed rgba(0,0,0,0.15)', zIndex: 50, pointerEvents: 'none' }} />
+        <div style={{ position: 'fixed', top: 0, bottom: 0, left: 'clamp(20px, 4vw, 60px)', width: '1px', borderLeft: '1.5px dashed rgba(0,0,0,0.15)', zIndex: 0, pointerEvents: 'none' }} />
+        <div style={{ position: 'fixed', top: 0, bottom: 0, right: 'clamp(20px, 4vw, 60px)', width: '1px', borderLeft: '1.5px dashed rgba(0,0,0,0.15)', zIndex: 0, pointerEvents: 'none' }} />
 
         <div style={{ position: 'relative', zIndex: 1 }}>
           <Routes>
@@ -119,4 +132,4 @@ function App() {
   );
 }
 
-export default App;
+export default App;

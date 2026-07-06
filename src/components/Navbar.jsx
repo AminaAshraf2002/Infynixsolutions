@@ -12,7 +12,7 @@ const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
-      setScrolled(currentScrollY > 40);
+      setScrolled(currentScrollY > 50);
       
       if (currentScrollY > lastScrollY.current && currentScrollY > 120) {
         setVisible(false);
@@ -35,47 +35,55 @@ const Navbar = () => {
   return (
     <nav 
       id="navbar" 
-      className={`${scrolled ? 'scrolled' : ''} ${menuOpen ? 'menu-active' : ''}`}
+      className={`site-header ${scrolled ? 'scrolled' : ''} ${menuOpen ? 'menu-active' : ''}`}
       style={{
-        transform: (visible || menuOpen) ? 'translateX(-50%) translateY(0)' : 'translateX(-50%) translateY(-130%)',
-        transition: 'transform 0.35s cubic-bezier(0.4, 0, 0.2, 1)'
+        transform: (visible || menuOpen) ? 'translateY(0)' : 'translateY(-100%)',
+        transition: 'transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.3s ease'
       }}
     >
-      <div className="nav-inner">
-        <Link to="/" className="nav-logo" onClick={() => setMenuOpen(false)}>
-          <img src={logo} alt="Infynix Logo" />
-        </Link>
-        <ul className={`nav-links ${menuOpen ? 'open' : ''}`}>
-          <li><Link to="/growth-engineering" onClick={() => setMenuOpen(false)}>Growth Engineering</Link></li>
-          <li><Link to="/solutions/website-development" onClick={() => setMenuOpen(false)}>Solutions</Link></li>
-          <li><Link to="/industries/healthcare" onClick={() => setMenuOpen(false)}>Industries</Link></li>
-          <li><Link to="/case-studies" onClick={() => setMenuOpen(false)}>Case Studies</Link></li>
-          <li><Link to="/insights" onClick={() => setMenuOpen(false)}>Insights</Link></li>
-          <li><Link to="/about" onClick={() => setMenuOpen(false)}>About</Link></li>
-          <li className="mobile-cta-li">
-            <Link to="/contact" className="nav-cta" onClick={() => setMenuOpen(false)}>
-              <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="1.5">
-                <path d="M1 13L13 1M13 1H5M13 1v8" />
-              </svg>
-              Get in touch
-            </Link>
-          </li>
-        </ul>
-        <Link to="/contact" className="nav-cta desktop-cta">
-          <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="1.5">
-            <path d="M1 13L13 1M13 1H5M13 1v8" />
-          </svg>
-          Get in touch
-        </Link>
-        <button 
-          className={`nav-hamburger ${menuOpen ? 'open' : ''}`} 
-          onClick={() => setMenuOpen(!menuOpen)}
-          aria-label="Toggle navigation"
-        >
-          <span className="hamburger-line"></span>
-          <span className="hamburger-line"></span>
-          <span className="hamburger-line"></span>
-        </button>
+      <div className="nav-inner-container">
+        <div className="nav-left">
+          <Link to="/" className="nav-logo" onClick={() => setMenuOpen(false)}>
+            <img src={logo} alt="Infynix Logo" />
+          </Link>
+        </div>
+
+        <div className={`nav-center ${menuOpen ? 'open' : ''}`}>
+          <ul className="nav-links-new">
+            <li><Link to="/" onClick={() => setMenuOpen(false)}>Home</Link></li>
+            <li><Link to="/growth-engineering" onClick={() => setMenuOpen(false)}>Services</Link></li>
+            <li><Link to="/industries/healthcare" onClick={() => setMenuOpen(false)}>Industries</Link></li>
+            <li><Link to="/about" onClick={() => setMenuOpen(false)}>About</Link></li>
+            <li><Link to="/insights" onClick={() => setMenuOpen(false)}>Insights</Link></li>
+            
+            <li className="mobile-only-cta">
+              <Link to="/contact" className="btn btn-primary" onClick={() => setMenuOpen(false)}>
+                Contact Us
+              </Link>
+            </li>
+          </ul>
+        </div>
+
+        <div className="nav-right">
+          <button className="search-icon-btn" aria-label="Search">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </button>
+          <Link to="/contact" className="header-cta desktop-only">
+            Contact Us
+          </Link>
+          <button 
+            className={`nav-hamburger ${menuOpen ? 'open' : ''}`} 
+            onClick={() => setMenuOpen(!menuOpen)}
+            aria-label="Toggle navigation"
+          >
+            <span className="hamburger-line"></span>
+            <span className="hamburger-line"></span>
+            <span className="hamburger-line"></span>
+          </button>
+        </div>
       </div>
     </nav>
   );

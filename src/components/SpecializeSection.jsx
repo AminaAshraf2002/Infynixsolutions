@@ -44,7 +44,7 @@ const SpecializeSection = () => {
 
   return (
     <section className="specialize-section" id="specialize" ref={sectionRef} style={{ 
-      background: 'linear-gradient(to bottom, var(--ix-dark), var(--ix-dark-2))',
+      background: 'black',
       color: '#fff',
       padding: 'clamp(80px, 10vw, 140px) 5%',
       position: 'relative',
@@ -58,7 +58,7 @@ const SpecializeSection = () => {
         <span className="ix-eyebrow ix-eyebrow--light" data-aos="fade-up">Our Expertise</span>
         
         <h2 className="specialize-text" ref={textRef} style={{ 
-          fontFamily: 'var(--font-display)', 
+          fontFamily: '"Albert Sans", sans-serif', 
           fontSize: 'clamp(1.5rem, 5vw, 3.5rem)', 
           fontWeight: 700, 
           lineHeight: 1.1,
@@ -70,7 +70,7 @@ const SpecializeSection = () => {
           ))} 
           {' '}
           {text2.split(' ').map((w, i) => (
-            <span className="word" style={{ color: 'var(--ix-primary-lt)' }} key={`b-${i}`}>{w}</span>
+            <span className="word" style={{ color: 'rgb(167, 214, 0)' }} key={`b-${i}`}>{w}</span>
           ))}
         </h2>
         
