@@ -1,4 +1,4 @@
-﻿import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import SEOManager from './SEOManager';
 import './InfynixDesign.css';
@@ -80,6 +80,55 @@ const Arrow = () => (
    â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
 const GrowthEngineering = () => {
   useIxReveal();
+
+  const [activeWhyTab, setActiveWhyTab] = useState(0);
+
+  const whyTabsData = [
+    {
+      title: "Fragmented Data Silos",
+      heading: "Unify your business architecture",
+      body: "When systems don't talk, teams are left guessing. We engineer unified data pipelines that bring your CRM, website, and marketing analytics into one single source of truth.",
+      mockupIcon: "🔄",
+      mockupTitle: "Data Architecture",
+      mockupStats: [
+        { label: "Data latency", val: "0.2s" },
+        { label: "Integration errors", val: "None" }
+      ]
+    },
+    {
+      title: "Manual Process Bottlenecks",
+      heading: "Automate routine operations",
+      body: "Repetitive tasks drain your team's most valuable resource: time. We deploy custom business automation frameworks and AI agents that handle operations seamlessly in the background.",
+      mockupIcon: "⚡",
+      mockupTitle: "Process Automation",
+      mockupStats: [
+        { label: "Manual input", val: "-85%" },
+        { label: "Throughput", val: "+300%" }
+      ]
+    },
+    {
+      title: "Lack of Real-Time Telemetry",
+      heading: "See your growth in real-time",
+      body: "Standard reporting looks backward. We build live telemetry dashboards that capture customer friction points the second they happen, allowing for instant conversion rate optimization.",
+      mockupIcon: "📊",
+      mockupTitle: "Live Telemetry",
+      mockupStats: [
+        { label: "Data drops", val: "Identified" },
+        { label: "Resolution", val: "Instant" }
+      ]
+    },
+    {
+      title: "Unscalable Architectures",
+      heading: "Engineered to scale effortlessly",
+      body: "Systems that work for 100 users break at 10,000. We design dynamic, load-balancing architectures and serverless functions that naturally scale alongside your growth trajectory.",
+      mockupIcon: "🚀",
+      mockupTitle: "Scale Engine",
+      mockupStats: [
+        { label: "System Load", val: "Optimal" },
+        { label: "Capacity", val: "Infinite" }
+      ]
+    }
+  ];
 
   const schema = {
     '@context': 'https://schema.org',
@@ -173,7 +222,7 @@ const GrowthEngineering = () => {
         </div>
       </section>
 
-      {/* â•â• MARQUEE TICKER â•â• */}
+      {/* ── MARQUEE TICKER ── */}
       <div className="ix-marquee-wrapper">
         <div className="ix-marquee-track">
           {marqueeItems.map((item, i) => (
@@ -185,48 +234,145 @@ const GrowthEngineering = () => {
         </div>
       </div>
 
-      {/* â•â• WHY SECTION â•â• */}
+      {/* ══ WHY SECTION (ZENDESK-STYLE) ══ */}
       <section className="ix-section" style={{ background: '#fff' }}>
-        <div style={{ maxWidth: '1200px', margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 'clamp(2rem, 6vw, 6rem)', alignItems: 'center' }}>
-          <div>
-            <span className="ix-lime-bar" />
-            <h2 data-aos="fade-up" style={{
-              fontFamily: 'var(--ix-font-display)',
-              fontWeight: 800,
-              fontSize: 'clamp(2rem, 3.5vw, 3.2rem)',
-              lineHeight: 1.12,
-              color: '#0a0a0a',
-              letterSpacing: '-0.02em',
-              marginBottom: '1.5rem',
-            }}>
-              Why Businesses<br />
-              <em style={{ fontFamily: 'var(--ix-font-serif)', fontWeight: 400, fontStyle: 'italic' }}>Stop Growing</em>
-            </h2>
-            <p data-aos-delay="100" data-aos="fade-up" style={{ fontFamily: 'var(--ix-font-body)', fontSize: '0.97rem', color: '#555', lineHeight: 1.8, marginBottom: '1rem' }}>
-              Businesses don't struggle because they lack ambition. They struggle because technology, marketing, customer experience, operations and data often operate independently.
-            </p>
-            <p data-aos-delay="200" data-aos="fade-up" style={{ fontFamily: 'var(--ix-font-body)', fontSize: '0.97rem', color: '#555', lineHeight: 1.8, marginBottom: '2rem' }}>
-              Standard monitoring fails to capture deep operational inefficiencies, leaving organizations blind to critical bottlenecks. We engineer frameworks that merge edge intelligence, real-time feedback telemetry, and dynamic load-balancing growth systems to automate intelligence.
-            </p>
-            <Link to="/contact" className="ix-btn-outline ix-btn-outline-dark" data-aos-delay="300" data-aos="fade-up" style={{ textDecoration: 'none' }}>
-              Start the Conversation <Arrow />
-            </Link>
-          </div>
-
-          {/* Stats glass card */}
-          <div className="-right" data-aos="fade-up" style={{ background: 'var(--ix-black)', borderRadius: 24, padding: '2.5rem', border: '1px solid var(--ix-border)' }}>
-            <span className="ix-eyebrow" style={{ marginBottom: '1.5rem', display: 'block' }}>Impact Metrics</span>
-            <div className="ix-stats-strip" style={{ gridTemplateColumns: '1fr 1fr' }}>
-              {stats.map((s, i) => (
-                <div className="ix-stat-block" key={i}>
-                  <span className="ix-stat-num">{s.num}</span>
-                  <span className="ix-stat-label">{s.label}</span>
-                </div>
-              ))}
+        <div style={{ maxWidth: '1300px', margin: '0 auto', padding: '0 20px' }}>
+          <div style={{ 
+            background: 'var(--dark)', 
+            borderRadius: '24px', 
+            padding: 'clamp(40px, 6vw, 80px)', 
+            color: '#fff',
+            display: 'flex',
+            flexDirection: 'column',
+            gap: '3rem'
+          }}>
+            {/* Header part */}
+            <div style={{ textAlign: 'center', maxWidth: '800px', margin: '0 auto' }}>
+              <h2 data-aos="fade-up" style={{
+                fontFamily: 'var(--ix-font-display)',
+                fontWeight: 700,
+                fontSize: 'clamp(2.2rem, 4vw, 3.2rem)',
+                lineHeight: 1.12,
+                color: '#fff',
+                letterSpacing: '-0.02em',
+                marginBottom: '1.5rem',
+              }}>
+                Why Businesses <em style={{ fontFamily: 'var(--ix-font-serif)', fontWeight: 400, fontStyle: 'italic' }}>Stop Growing</em>
+              </h2>
+              <p data-aos-delay="100" data-aos="fade-up" style={{ fontFamily: 'var(--ix-font-body)', fontSize: '1.05rem', color: 'rgba(255,255,255,0.85)', lineHeight: 1.6, marginBottom: '2.5rem' }}>
+                Businesses don't struggle because they lack ambition. They struggle because technology, marketing, customer experience, operations and data often operate independently.
+              </p>
+              <div data-aos-delay="200" data-aos="fade-up" style={{ display: 'flex', gap: '1rem', justifyContent: 'center' }}>
+                <Link to="/contact" style={{ 
+                  background: 'var(--ix-lime)', 
+                  color: '#000', 
+                  padding: '14px 28px', 
+                  borderRadius: '100px', 
+                  textDecoration: 'none', 
+                  fontWeight: 600,
+                  fontFamily: 'var(--ix-font-body)',
+                  transition: 'background 0.3s'
+                }}>Start the Conversation</Link>
+                <Link to="/about" style={{ 
+                  border: '1px solid rgba(255,255,255,0.3)', 
+                  color: '#fff', 
+                  padding: '14px 28px', 
+                  borderRadius: '100px', 
+                  textDecoration: 'none', 
+                  fontWeight: 500,
+                  fontFamily: 'var(--ix-font-body)',
+                  transition: 'background 0.3s'
+                }}>Learn more</Link>
+              </div>
             </div>
-            <p style={{ fontFamily: 'var(--ix-font-body)', fontSize: '0.8rem', color: 'rgba(255,255,255,0.28)', marginTop: '1.5rem', lineHeight: 1.6 }}>
-              Infynix engineers high-performance tech stacks, CRM dashboards, and AI agents that support long-term business growth.
-            </p>
+
+            {/* Tabs grid layout */}
+            <div style={{ 
+              display: 'grid', 
+              gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', 
+              gap: 'clamp(2rem, 4vw, 4rem)',
+              marginTop: '1rem'
+            }}>
+              {/* Left Column: Tabs */}
+              <div style={{ display: 'flex', flexDirection: 'column' }}>
+                {whyTabsData.map((tab, idx) => (
+                  <button 
+                    key={idx}
+                    onClick={() => setActiveWhyTab(idx)}
+                    style={{
+                      background: activeWhyTab === idx ? 'rgba(0,0,0,0.15)' : 'transparent',
+                      border: 'none',
+                      borderLeft: activeWhyTab === idx ? '3px solid var(--ix-lime)' : '3px solid transparent',
+                      padding: '1.5rem',
+                      textAlign: 'left',
+                      color: '#fff',
+                      cursor: 'pointer',
+                      fontFamily: 'var(--ix-font-body)',
+                      fontSize: '1.05rem',
+                      fontWeight: 600,
+                      transition: 'all 0.3s ease',
+                      borderBottom: idx !== whyTabsData.length - 1 ? '1px solid rgba(255,255,255,0.08)' : 'none'
+                    }}
+                  >
+                    {tab.title}
+                  </button>
+                ))}
+              </div>
+
+              {/* Right Column: Tab Content */}
+              <div style={{ 
+                background: 'rgba(0,0,0,0.15)', 
+                borderRadius: '16px', 
+                padding: 'clamp(1.5rem, 4vw, 3rem)',
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                justifyContent: 'center',
+                minHeight: '380px',
+                position: 'relative'
+              }}>
+                <div key={activeWhyTab} style={{ 
+                  background: '#fff', 
+                  borderRadius: '16px', 
+                  padding: '2rem', 
+                  color: '#000',
+                  width: '100%',
+                  maxWidth: '460px',
+                  boxShadow: '0 20px 40px rgba(0,0,0,0.2)',
+                  position: 'relative',
+                  zIndex: 2,
+                  animation: 'ix-fade-up 0.4s ease-out forwards'
+                }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '1.5rem' }}>
+                    <div style={{ width: 48, height: 48, borderRadius: '50%', background: 'rgba(0,122,94,0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.5rem' }}>
+                      {whyTabsData[activeWhyTab].mockupIcon}
+                    </div>
+                    <h3 style={{ margin: 0, fontFamily: 'var(--ix-font-display)', fontWeight: 700, fontSize: '1.2rem' }}>{whyTabsData[activeWhyTab].mockupTitle}</h3>
+                  </div>
+                  
+                  <div style={{ padding: '1.2rem', background: '#f8fafc', borderRadius: '12px', border: '1px solid #e2e8f0', marginBottom: '1.5rem' }}>
+                    <p style={{ margin: 0, fontFamily: 'var(--ix-font-body)', fontSize: '0.9rem', color: '#334155', lineHeight: 1.6 }}>
+                      {whyTabsData[activeWhyTab].body}
+                    </p>
+                  </div>
+
+                  <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+                    {whyTabsData[activeWhyTab].mockupStats.map((stat, sIdx) => (
+                      <div key={sIdx}>
+                        <div style={{ fontSize: '0.75rem', color: '#64748b', marginBottom: '0.3rem', fontFamily: 'var(--ix-font-body)' }}>{stat.label}</div>
+                        <div style={{ fontSize: '1.1rem', fontWeight: 700, color: '#0f172a' }}>{stat.val}</div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                <div key={`heading-${activeWhyTab}`} style={{ marginTop: '2.5rem', textAlign: 'center', maxWidth: '500px', animation: 'ix-fade-up 0.5s ease-out forwards' }}>
+                  <p style={{ fontFamily: 'var(--ix-font-body)', fontSize: '1.05rem', color: '#fff', lineHeight: 1.5, margin: 0 }}>
+                    {whyTabsData[activeWhyTab].heading}
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
