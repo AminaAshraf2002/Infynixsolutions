@@ -1,7 +1,7 @@
 .stats-section {
   width: 100%;
   background: #ffffff;
-  padding: 100px 5%;
+  padding: 40px 5% 100px; /* Reduced top padding */
   font-family: "Vanilla Sans", Arial, sans-serif;
 }
 

@@ -83,9 +83,7 @@ function AppContent() {
       <CustomCursor />
       <Navbar />
       <main style={{ position: 'relative' }}>
-        {/* Global Dashed Lines (Spans all pages) */}
-        <div style={{ position: 'fixed', top: 0, bottom: 0, left: 'clamp(20px, 4vw, 60px)', width: '1px', borderLeft: '1.5px dashed rgba(0,0,0,0.15)', zIndex: 0, pointerEvents: 'none' }} />
-        <div style={{ position: 'fixed', top: 0, bottom: 0, right: 'clamp(20px, 4vw, 60px)', width: '1px', borderLeft: '1.5px dashed rgba(0,0,0,0.15)', zIndex: 0, pointerEvents: 'none' }} />
+        {/* Global Dashed Lines (handled via CSS pseudo-elements in index.css) */}
 
         <div style={{ position: 'relative', zIndex: 1 }}>
           <Routes>

@@ -20,13 +20,13 @@ const PartnersSection = () => {
         <h2 className="partners-h2" data-aos="fade-up">Our Trusted <em>Partners</em></h2>
         <div className="partners-grid">
           {partners.map((partner, i) => (
-            <div className={`partner-logoix-d${(i % 4) + 1} data-aos="fade-up"`} key={i}>
+            <div className={`partner-logo ix-d${(i % 4) + 1}`} data-aos="fade-up" key={i}>
               <img
                 src={partner.src}
                 alt={partner.name}
                 style={{
-                  maxHeight: '140px',
-                  maxWidth: '100%',
+                  height: '110px',
+                  width: '240px',
                   objectFit: 'contain',
                   filter: 'brightness(0) invert(1) brightness(1.5)',
                   opacity: 1,

@@ -22,11 +22,12 @@
 }
 
 .featured-title {
-  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-size: clamp(2.2rem, 6vw, 4.2rem);
   font-weight: 500;
   margin-bottom: 10px;
   color: #ffffff;
-  font-family: 'Kanit', 'Kanit Fallback', sans-serif;
+   font-family: "Montserrat", Arial, sans-serif;
+
   letter-spacing: -0.02em;
 }
 
@@ -37,9 +38,11 @@
 }
 
 .featured-subtitle {
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: #a3a3a3;
   max-width: 600px;
+    font-family: "Montserrat", Arial, sans-serif;
+
 }
 
 /* Accordion Container */
@@ -145,6 +148,8 @@
   opacity: 1;
   transition: opacity 0.3s ease;
   width: max-content;
+  font-family: "Montserrat", Arial, sans-serif;
+
 }
 
 /* Hide vertical title when card expands */
@@ -203,8 +208,9 @@
 }
 
 .fw-project-title {
+  font-family: "Montserrat", Arial, sans-serif;
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: 600;
   margin-bottom: 20px;
   line-height: 1.2;
 }

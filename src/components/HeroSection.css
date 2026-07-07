@@ -2,17 +2,20 @@
   position: relative;
   width: 100%;
   background: #ffffff;
-  padding-top: 120px; /* Pushes the hero image to start below the navbar */
+  padding-top: 120px;
+  /* Pushes the hero image to start below the navbar */
   overflow: visible;
   padding-bottom: 80px;
-  z-index: 60;
+  z-index: 101;
+  /* Above the global dashed lines (100) to hide them here */
 }
 
 .hero-bg-wrapper {
   position: relative;
   width: calc(100% - 48px);
   max-width: 1400px;
-  margin: 0 auto; /* Starts exactly at 24px padding boundary */
+  margin: 0 auto;
+  /* Starts exactly at 24px padding boundary */
   min-height: 85vh;
   border-radius: 32px;
   background-size: cover;
@@ -20,7 +23,8 @@
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end; /* Anchor content to the bottom */
+  justify-content: flex-end;
+  /* Anchor content to the bottom */
   padding: 4rem;
   box-sizing: border-box;
   overflow: hidden;
@@ -34,7 +38,7 @@
   width: 100%;
   height: 100%;
   /* A dark gradient from bottom left to help text readability */
-  background: linear-gradient(to top right, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.3) 40%, rgba(0,0,0,0) 80%);
+  background: linear-gradient(to top right, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.3) 40%, rgba(0, 0, 0, 0) 80%);
   z-index: 1;
 }
 
@@ -47,7 +51,10 @@
   text-align: left;
   gap: 1.5rem;
   z-index: 10;
-  padding-top: 80px; /* Give text some breathing room below the absolute navbar */
+  padding-top: 80px;
+  /* Give text some breathing room below the absolute navbar */
+  padding-left: 5vw;
+  /* Push content more to the right to match Zendesk padding */
 }
 
 .hero-eyebrow {
@@ -55,26 +62,29 @@
   font-weight: 700;
   letter-spacing: 1.5px;
   text-transform: uppercase;
-  color: #fdfdfd;
+  color: #f1e4b8;
   margin-bottom: 0.5rem;
 }
 
 .hero-title {
-  font-family: 'Playfair Display', serif;
-  font-size: clamp(3rem, 5vw, 4.5rem);
-  font-weight: 700;
-  line-height: 1.1;
+    font-family: "Montserrat", Arial, sans-serif;
+
+  font-size: clamp(3rem, 4vw, 3.5rem) !important;
+  font-weight: 500;
+  line-height: 1.25;
   color: #ffffff;
   margin: 0;
   letter-spacing: -0.02em;
 }
 
 .title-highlight {
-  color: #ccff00; /* Zendesk lime green */
+  color: #f1e4b8;
+  /* Zendesk lime green */
 }
 
 .hero-subtitle {
   font-family: 'Albert Sans', sans-serif;
+  font-style: normal !important;
   font-size: 1.25rem;
   line-height: 1.6;
   color: #ffffff;
@@ -88,9 +98,12 @@
     padding: 2rem;
     min-height: 70vh;
   }
+
   .hero-title {
-    font-size: 2.5rem;
+    font-size: clamp(3.5rem, 7vw, 5rem);
+
   }
+
   .hero-subtitle {
     font-size: 1.1rem;
   }

@@ -62,13 +62,13 @@ const StatsSection = () => {
       <div className="stats-container">
         
         <div className="stats-header" data-aos="fade-up">
-          <h2>Trillions of data points turned into billions of successful outcomes.</h2>
+          <h2>Every system we engineer is built on data, not guesswork.</h2>
         </div>
 
         <div className="stats-grid">
-          <AnimatedStat endValue={22} suffix="K+" label="AI customers" />
-          <AnimatedStat endValue={830} suffix="M" label="AI interactions" />
-          <AnimatedStat endValue={4.8} suffix="B" label="Resolutions delivered" />
+          <AnimatedStat endValue={30} suffix="+" label="Growth systems engineered" />
+          <AnimatedStat endValue={80} suffix="%" label="Average automation achieved" />
+          <AnimatedStat endValue={9} suffix="+" label="Industries served" />
         </div>
 
       </div>

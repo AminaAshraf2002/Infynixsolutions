@@ -7,14 +7,14 @@ const timelineData = [
   {
     id: 1,
     icon: MessageSquare,
-    badgeColor: '#FFC107',
-    title: "Move beyond simple deflection",
-    description: "Achieve up to 80% automation with AI agents that continuously learn from every interaction, managing complex workflows to provide better outcomes.",
+    badgeColor: 'rgb(254, 235, 126)',
+    title: "Discover Where Growth Stalls",
+    description: "We begin with a business systems audit to identify disconnected silos and unify your growth engine.",
     mockup: (
       <div className="tl-mockup">
         <div className="tl-mockup-header">
           <div className="tl-mockup-dots"><span></span><span></span><span></span></div>
-          <span className="tl-mockup-title">Customer Interaction</span>
+          <span className="tl-mockup-title" style={{ display: 'flex', alignItems: 'center', gap: '8px' }}><MessageSquare size={16} /> Customer Interaction</span>
         </div>
         <div className="tl-mockup-body">
           <div className="tl-msg user-msg">Can I still return my item? I bought it 30 days ago.</div>
@@ -29,13 +29,13 @@ const timelineData = [
   {
     id: 2,
     icon: Lightbulb,
-    badgeColor: '#FF8A00',
-    title: "Turn signals into actionable improvement",
-    description: "Automatically identify knowledge gaps and generate articles to automate even more workflows. Infynix TMS turns support data into a powerful growth engine.",
+    badgeColor: '#e49a45ff',
+    title: "Engineer a Connected Growth Architecture",
+    description: "We design custom website development, CRM systems, and business automation as one connected architecture.",
     mockup: (
       <div className="tl-mockup">
         <div className="tl-mockup-header dark">
-          <span className="tl-mockup-title">Fill Knowledge Gaps</span>
+          <span className="tl-mockup-title" style={{ display: 'flex', alignItems: 'center', gap: '8px' }}><Lightbulb size={16} /> Fill Knowledge Gaps</span>
         </div>
         <div className="tl-mockup-body">
           <div className="tl-card">
@@ -56,9 +56,9 @@ const timelineData = [
   {
     id: 3,
     icon: ThumbsUp,
-    badgeColor: '#00B4D8',
-    title: "Smarter with every single resolution",
-    description: "Every conversation becomes a learning signal. Trillions of data points train our AI to understand intent, sentiment, and context for flawless execution.",
+    badgeColor: '#77dbefff',
+    title: "Build with AI-Powered Precision",
+    description: "From AI development to mobile app development, every solution is engineered for measurable business outcomes.",
     mockup: (
       <div className="tl-mockup">
         <div className="tl-mockup-body align-center">
@@ -88,9 +88,9 @@ const timelineData = [
   {
     id: 4,
     icon: TrendingUp,
-    badgeColor: '#8338EC',
-    title: "Data-Driven Performance Analytics",
-    description: "Uncover deep insights into operational bottlenecks. Our advanced telemetry dashboards empower your leadership with real-time, actionable business intelligence.",
+    badgeColor: '#ae84e8ff',
+    title: "Optimize with Real-Time Business Intelligence",
+    description: "Our performance marketing and SEO strategies are backed by real-time business intelligence for confident decisions.",
     mockup: (
       <div className="tl-mockup">
         <div className="tl-mockup-header dark">
@@ -115,9 +115,9 @@ const timelineData = [
   {
     id: 5,
     icon: CheckCircle,
-    badgeColor: '#007A5E',
-    title: "Enterprise-Grade Security & Compliance",
-    description: "Rest easy knowing your critical growth data is protected by bank-level encryption and strict role-based access control, adhering to SOC2 standards.",
+    badgeColor: '#70beabff',
+    title: "Scale on Systems Built to Grow",
+    description: "Your engineered system scales with your business, supporting long-term digital transformation and sustainable business growth.",
     mockup: (
       <div className="tl-mockup">
         <div className="tl-mockup-body align-center" style={{ padding: '1rem' }}>
@@ -130,93 +130,123 @@ const timelineData = [
   }
 ];
 
-// Combine the 5 steps + the start bookend icon
 const gapZones = [
-  { icon: HelpCircle, color: '#FFC107' }, // Start Bookend
+  { icon: HelpCircle, color: '#FFC107' },
   ...timelineData.map(item => ({ icon: item.icon, color: item.badgeColor })),
-  { icon: CheckCircle, color: '#007A5E' } // Safety end bookend
+  { icon: CheckCircle, color: '#007A5E' }
 ];
 
 const TimelineSection = () => {
   const sectionRef = useRef(null);
   const trackRef = useRef(null);
-  
+  const cardRefs = useRef([]);
+
   const [trackHeight, setTrackHeight] = useState(0);
+  const [ranges, setRanges] = useState({ input: [0, 1], output: [0, 0] });
   const [activeZone, setActiveZone] = useState(0);
 
-  // Measure the exact track height
+  // Measure track height + each card's real center position
   useEffect(() => {
-    const measureTrack = () => {
-      if (trackRef.current) {
-        setTrackHeight(trackRef.current.offsetHeight);
-      }
+    const measure = () => {
+      if (!trackRef.current) return;
+      const height = trackRef.current.offsetHeight;
+      setTrackHeight(height);
+
+      if (height === 0) return;
+      // We no longer need to build custom pause ranges. Linear mapping guarantees a perfect 1:1 screen lock!
     };
-    measureTrack();
-    window.addEventListener('resize', measureTrack);
-    return () => window.removeEventListener('resize', measureTrack);
+
+    measure();
+    window.addEventListener('resize', measure);
+    return () => window.removeEventListener('resize', measure);
   }, []);
 
   const { scrollYProgress } = useScroll({
-    target: sectionRef,
-    offset: ["start end", "end start"]
+    target: trackRef,
+    offset: ["start 30%", "end 30%"]
   });
 
-  // Balanced spring physics as requested
-  const smoothProgress = useSpring(scrollYProgress, {
-    stiffness: 80,
-    damping: 25,
-    mass: 0.5,
-    restDelta: 0.001
-  });
-
-  // Map exactly to the height of the vertical line
-  const iconY = useTransform(smoothProgress, [0, 1], [0, trackHeight]);
+  // Remove spring completely for 1:1 pixel-perfect scrolling
+  const iconY = useTransform(scrollYProgress, [0, 1], [0, trackHeight]);
 
   useEffect(() => {
-    const unsubscribe = smoothProgress.on("change", (latest) => {
-      const totalZones = gapZones.length;
-      let currentIndex = Math.floor(latest * totalZones);
-      if (currentIndex >= totalZones) currentIndex = totalZones - 1;
-      if (currentIndex < 0) currentIndex = 0;
+    const unsubscribe = scrollYProgress.on("change", (latest) => {
+      if (trackHeight === 0) return;
+      const currentY = latest * trackHeight;
+      let newZone = 0;
+
+      if (!trackRef.current) return;
       
-      setActiveZone(currentIndex);
+      const trackRect = trackRef.current.getBoundingClientRect();
+      const trackTop = trackRect.top;
+
+      // Zone logic based on real physical position using getBoundingClientRect:
+      if (cardRefs.current[0]) {
+        const firstCardTop = cardRefs.current[0].getBoundingClientRect().top - trackTop;
+        if (currentY < firstCardTop - 20) {
+          newZone = 0; // Above first card -> Start Zone
+        } else {
+          newZone = gapZones.length - 1; // Default to End Zone
+          for (let i = 0; i < cardRefs.current.length; i++) {
+            const card = cardRefs.current[i];
+            if (!card) continue;
+            
+            const cardRect = card.getBoundingClientRect();
+            const cardBottom = cardRect.bottom - trackTop;
+            
+            // If the icon is physically above the bottom of this card (plus a small gap)
+            if (currentY < cardBottom + 60) {
+              newZone = i + 1; // Card zones are indices 1-5
+              break;
+            }
+          }
+        }
+      }
+
+      // If we are physically at the very bottom padding, lock to End Zone
+      if (currentY >= trackHeight - 40) {
+        newZone = gapZones.length - 1;
+      }
+
+      setActiveZone(newZone);
     });
     return () => unsubscribe();
-  }, [smoothProgress]);
+  }, [scrollYProgress, trackHeight]);
 
   const ActiveIcon = gapZones[activeZone].icon;
   const activeBadgeColor = gapZones[activeZone].color;
-
-  // We highlight the card if the icon has passed its starting point but hasn't fully cleared it.
-  // We can approximate active card index by mapping activeZone back to card index (zone 1 = card 1)
   const activeCardIndex = Math.max(0, activeZone - 1);
 
   return (
     <section className="timeline-section" ref={sectionRef}>
       <div className="timeline-taller-wrapper">
-        
+
         <div className="timeline-header-section">
-          <h2>AI that gets <span style={{ color: '#007A5E' }}>smarter</span> with every resolution.</h2>
-          <p>Achieve up to 80% automation with AI agents that continuously learn from every interaction, manage more complex workflows and provide better outcomes.</p>
-          <button className="timeline-cta-btn">Explore the platform</button>
+          <h2>
+            Growth Engineering that gets <span style={{ color: '#007A5E' }}>smarter</span> with every system.
+          </h2>
+          <p>
+            From website development and AI automation to CRM integration — Infynix's Growth Engineering Method connects every business system for measurable, sustainable growth.
+          </p>
+          <button className="timeline-cta-btn">
+            Schedule a Discovery Call
+          </button>
         </div>
 
         <div className="timeline-container">
-          
+
           <div className="timeline-track-wrapper">
             <div className="timeline-line-static" ref={trackRef}></div>
 
-            {/* Continuous Traveling Marker - Explicitly setting x: "-50%" in Framer Motion to prevent transform override */}
-            <motion.div 
+            <motion.div
               className="timeline-continuous-marker"
               style={{ x: "-50%", y: iconY }}
             >
-              <div  
+              <div
                 className="timeline-small-badge"
-                style={{ 
+                style={{
                   background: activeBadgeColor,
                   borderColor: activeBadgeColor,
-                  color: '#ffffff'
                 }}
               >
                 <AnimatePresence mode="wait">
@@ -226,13 +256,12 @@ const TimelineSection = () => {
                     animate={{ opacity: 1, scale: 1 }}
                     exit={{ opacity: 0, scale: 0.8 }}
                     transition={{ duration: 0.2, ease: "easeOut" }}
+                    style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}
                   >
                     <ActiveIcon size={16} strokeWidth={2.5} color="#ffffff" />
                   </motion.div>
                 </AnimatePresence>
               </div>
-              
-              <div className="timeline-small-connector-dot" style={{ background: activeBadgeColor }}></div>
             </motion.div>
           </div>
 
@@ -240,13 +269,13 @@ const TimelineSection = () => {
             {timelineData.map((item, index) => {
               const isActive = activeCardIndex === index;
               return (
-                <div 
-                  className="timeline-item-continuous" 
-                  key={item.id} 
-                >
-                  <div className="timeline-card-wrapper">
+                <div className="timeline-item-continuous" key={item.id}>
+                  <div
+                    className="timeline-card-wrapper"
+                    ref={(el) => (cardRefs.current[index] = el)}
+                  >
                     <div className={`timeline-card ${isActive ? 'active' : ''}`}>
-                      
+
                       <div className="timeline-text">
                         <h3>{item.title}</h3>
                         <p>{item.description}</p>

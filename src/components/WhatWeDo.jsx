@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 
 const tabs = [
-  { id: 'ai_surveillance', label: 'AI & AI Surveillance' },
-  { id: 'growth_engineering', label: 'Growth Engineering' },
-  { id: 'growth_marketing', label: 'Growth Marketing System' },
-  { id: 'growth_systems', label: 'Growth Systems' },
-  { id: 'app_development', label: 'App Development' },
-  { id: 'crm_development', label: 'CRM Development' },
-  { id: 'web_development', label: 'Web Development' },
-  { id: 'digital_marketing', label: 'Digital Marketing & SEO' },
+  { id: 'web_development', label: 'Website Development' },
+  { id: 'mobile_app_development', label: 'Mobile App Development' },
+  { id: 'performance_marketing', label: 'Performance Marketing' },
+  { id: 'seo_services', label: 'SEO Services' },
+  { id: 'artificial_intelligence', label: 'Artificial Intelligence' },
+  { id: 'business_automation', label: 'Business Automation' },
+  { id: 'crm_erp_development', label: 'CRM & ERP Development' },
+  { id: 'ui_ux_design', label: 'UI/UX Design' },
 ];
 
 const tabContent = {

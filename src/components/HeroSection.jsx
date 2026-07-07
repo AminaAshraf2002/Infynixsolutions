@@ -1,6 +1,6 @@
 import React from 'react';
 import './HeroSection.css';
-import heroBg from '../assets/newh.png';
+import heroBg from '../assets/tem3.png';
 import hero2 from '../assets/hero2.png';
 import hero3 from '../assets/hero3.png';
 import hero4 from '../assets/hero4.png';
@@ -31,13 +31,19 @@ function HeroSection({ data }) {
         <div className="hero-content">
           <span className="hero-eyebrow">GROWTH ENGINEERING COMPANY</span>
           <h1 className="hero-title">
-            Move beyond deflection. Deliver <br/>
-            <span className="title-highlight">real resolutions.</span>
+            Engineering Smarter Growth Systems<br />
+            <span className="title-highlight">That Scale.</span>
           </h1>
           <p className="hero-subtitle">
-            Self-Improving AI agents that learn, adapt and outperform.<br/>
-            On every channel, on any platform.
-          </p>
+Growth stalls when technology, marketing, and operations work in silos. Infynix unifies them into one intelligent system built for sustainable business growth.          </p>
+          <div className="hero-actions" style={{ display: 'flex', gap: '16px', marginTop: '30px' }}>
+            {/* <button className="btn btn-primary" onClick={() => window.location.href = '/contact'} style={{ backgroundColor: ' #ffffffff', color: '#11110D', border: 'none', padding: '12px 24px', borderRadius: '100px', cursor: 'pointer', fontWeight: '700' }}>
+              Book a Discovery Call
+            </button>
+            <button className="btn btn-secondary" onClick={() => window.location.href = '/growth-engineering'} style={{ backgroundColor: 'transparent', color: '#fff', border: '1px solid #fff', padding: '12px 24px', borderRadius: '100px', cursor: 'pointer', fontWeight: '500' }}>
+              Learn About Growth Engineering
+            </button> */}
+          </div>
         </div>
       </div>
     </section>

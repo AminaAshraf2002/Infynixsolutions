@@ -2,7 +2,7 @@
   width: 100%;
   background: #ffffff;
   padding: 40px 5% 120px 5%; /* Reduced top padding, kept bottom padding */
-  font-family: "Vanilla Sans", Arial, sans-serif;
+  font-family: "Montserrat", Arial, sans-serif;
   overflow: hidden;
 }
 
@@ -48,7 +48,7 @@
 }
 
 .about-heading {
-  font-size: clamp(1.8rem, 3.8vw, 2.8rem);
+  font-size: clamp(1.3rem, 3.3vw, 2.3rem);
   font-weight: 500;
   color: #11110D;
   line-height: 1.15;
@@ -71,11 +71,11 @@
 .about-btn {
   padding: 14px 28px;
   border-radius: 8px;
-  font-size: 1rem;
+  font-size: .9rem;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
-  font-family: "Vanilla Sans", Arial, sans-serif;
+  font-family: "Montserrat", Arial, sans-serif;
 }
 
 .about-btn.primary {

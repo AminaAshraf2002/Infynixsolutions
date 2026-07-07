@@ -59,7 +59,7 @@ const SpecializeSection = () => {
         
         <h2 className="specialize-text" ref={textRef} style={{ 
           fontFamily: '"Albert Sans", sans-serif', 
-          fontSize: 'clamp(1.5rem, 5vw, 3.5rem)', 
+          fontSize: 'clamp(2.7rem, 5.7vw, 4.5rem)', 
           fontWeight: 700, 
           lineHeight: 1.1,
           letterSpacing: '-0.02em',

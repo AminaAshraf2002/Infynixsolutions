@@ -95,12 +95,9 @@ const CaseStudiesPage = () => {
       />
 
       {/* ── BACKGROUND FAINT VERTICAL DASHED GRIDLINES ── */}
-      <div style={{ position: 'absolute', inset: 0, display: 'flex', justifyContent: 'space-between', padding: '0 80px', pointerEvents: 'none', zIndex: 0 }}>
-        <div style={{ borderLeft: '1px dashed rgba(0,0,0,0.05)', height: '100%' }} />
-        <div style={{ borderLeft: '1px dashed rgba(0,0,0,0.05)', height: '100%' }} />
-        <div style={{ borderLeft: '1px dashed rgba(0,0,0,0.05)', height: '100%' }} />
-        <div style={{ borderLeft: '1px dashed rgba(0,0,0,0.05)', height: '100%' }} />
-        <div style={{ borderLeft: '1px dashed rgba(0,0,0,0.05)', height: '100%' }} />
+      <div style={{ position: 'absolute', inset: 0, pointerEvents: 'none', zIndex: 0 }}>
+        <div style={{ position: 'absolute', left: 'clamp(20px, 4vw, 60px)', top: 0, bottom: 0, borderLeft: '1.5px dashed rgba(0,0,0,0.11)' }} />
+        <div style={{ position: 'absolute', right: 'clamp(20px, 4vw, 60px)', top: 0, bottom: 0, borderRight: '1.5px dashed rgba(0,0,0,0.11)' }} />
       </div>
 
       {/* ── EXACT CHRONOTEK BACKGROUND SHAPE (As shown in mockup image) ── */}
@@ -124,7 +121,7 @@ const CaseStudiesPage = () => {
           <div style={transitionStyle}>
 
             {/* ── 1. HERO / HEADER CONTAINER ── */}
-            <section style={{ position: 'relative', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '50px', alignItems: 'center', marginBottom: '60px' }} data-aos="fade-up">
+            <div className="case-page-section" style={{ position: 'relative', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '50px', alignItems: 'center', marginBottom: '60px' }} data-aos="fade-up">
               
               <div style={{ padding: '40px 40px 40px 0' }}>
                 {/* Tool icons row */}
@@ -180,13 +177,13 @@ const CaseStudiesPage = () => {
                   <img src={pageImage} alt={`${currentStudy.client} Process Dashboard Mockup`} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                 </div>
               </div>
-            </section>
+            </div>
 
           </div>
         </div>
 
         {/* ── 2. FILTER BAR (BELOW HERO SECTION) ── */}
-        <div role="navigation" aria-label="Case Studies Menu" style={{ display: 'flex', justifyContent: 'center', gap: '15px', marginTop: '20px', marginBottom: '40px', borderBottom: '1px solid #e0e0e0', paddingBottom: '20px' }}>
+        <div role="navigation" aria-label="Case Studies Menu" style={{ display: 'flex', justifyContent: 'center', gap: '15px', marginTop: '20px', marginBottom: '40px', borderBottom: '1px solid #e0e6ed', paddingBottom: '20px' }}>
           {caseStudiesData.map((item) => (
             <Link
               key={item.slug}
@@ -213,7 +210,7 @@ const CaseStudiesPage = () => {
           <div style={transitionStyle}>
 
             {/* ── 3. FEATURES HEADER SECTION ── */}
-            <section style={{ textAlign: 'center', padding: '40px 0 60px', position: 'relative' }} data-aos="fade-up">
+            <div className="case-page-section" style={{ textAlign: 'center', padding: '40px 0 60px', position: 'relative' }} data-aos="fade-up">
               <div style={{ fontSize: '1.5rem', color: '#aaa', marginBottom: '20px' }}>
                 <i className="fa-solid fa-arrow-down-long"></i>
               </div>
@@ -249,10 +246,10 @@ const CaseStudiesPage = () => {
               <p style={{ maxWidth: '800px', margin: '0 auto 50px', color: '#666', lineHeight: 1.7, fontSize: '0.95rem' }}>
                 {currentStudy.challenge}
               </p>
-            </section>
+            </div>
 
             {/* ── 4. HIGHLIGHTS CARDS ROW ── */}
-            <section style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '30px', marginBottom: '80px' }}>
+            <div className="case-page-section" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '30px', marginBottom: '80px' }}>
               <div data-aos="fade-up" data-aos-delay="100" style={{ border: '1px solid #eee', borderRadius: '16px', padding: '30px', background: '#fff', textAlign: 'center' }}>
                 <div style={{ color: GREEN, fontSize: '2rem', marginBottom: '15px' }}>
                   <i className="fa-solid fa-bullseye"></i>
@@ -280,19 +277,19 @@ const CaseStudiesPage = () => {
                   {currentStudy.execution}
                 </p>
               </div>
-            </section>
+            </div>
 
             {/* ── 5. PILL TAGS GRID ── */}
-            <section style={{ borderTop: '1px dashed #eee', paddingTop: '60px', display: 'flex', flexWrap: 'wrap', gap: '10px', justifyContent: 'center' }} data-aos="fade-up">
+            <div className="case-page-section" style={{ borderTop: '1px dashed #eee', paddingTop: '60px', display: 'flex', flexWrap: 'wrap', gap: '10px', justifyContent: 'center' }} data-aos="fade-up">
               {techTags.map((tag) => (
                 <span key={tag} style={{ border: '1px solid #e0e6ed', color: '#555', padding: '8px 18px', borderRadius: '8px', fontSize: '0.8rem', background: '#fff', fontWeight: '500' }}>
                   {tag}
                 </span>
               ))}
-            </section>
+            </div>
 
             {/* Results Summary Box */}
-            <section style={{ background: LIGHT_BG, borderRadius: '24px', padding: '40px', display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', alignItems: 'center', gap: '20px', marginTop: '80px' }} data-aos="fade-up">
+            <div className="case-page-section" style={{ background: LIGHT_BG, borderRadius: '24px', padding: '40px', display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', alignItems: 'center', gap: '20px', marginTop: '80px' }} data-aos="fade-up">
               <div>
                 <h4 style={{ margin: '0 0 8px', fontSize: '1rem', fontWeight: 'bold', color: TEXT_DARK, fontFamily: 'var(--ix-font-serif)' }}>MEASURABLE OUTCOME</h4>
                 <p style={{ margin: 0, color: GREEN, fontWeight: '900', fontSize: '1.8rem', fontFamily: 'var(--ix-font-display)' }}>{currentStudy.results}</p>
@@ -300,7 +297,7 @@ const CaseStudiesPage = () => {
               <Link to="/contact" className="outline-btn" style={{ border: `1.5px solid ${GREEN}`, color: GREEN, padding: '12px 30px', fontSize: '0.85rem', fontWeight: 'bold', textDecoration: 'none', background: 'transparent' }}>
                 SEE MORE →
               </Link>
-            </section>
+            </div>
 
           </div>
         </div>

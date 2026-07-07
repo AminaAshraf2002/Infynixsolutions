@@ -18,10 +18,10 @@ const useAnimateOnScroll = (threshold = 0.12) => {
 };
 
 const stats = [
-  { num: '150+', label: 'Projects Delivered' },
-  { num: '12+', label: 'Years in Business' },
-  { num: '98%', label: 'Client Retention Rate' },
-  { num: '40+', label: 'Senior Engineers' },
+  { num: '80%', label: 'Average Automation Achieved' },
+  { num: '9+', label: 'Industries Served' },
+  { num: '30+', label: 'Growth Systems Engineered' },
+  { num: '2x', label: 'Faster Time to Scale' },
 ];
 
 const Stats = () => {
@@ -34,7 +34,7 @@ const Stats = () => {
           {stats.map((s, i) => (
             <div
               key={s.label}
-              className={`stat-itemdelay-${i + 1} data-aos="fade-up"`}
+              className={`stat-item delay-${i + 1}`}
               role="listitem"
             >
               <div className="stat-number" aria-label={s.num}>{s.num}</div>

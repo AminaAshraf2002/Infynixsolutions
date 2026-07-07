@@ -1,6 +1,6 @@
 import React from 'react';
 import HeroSection from './HeroSection';
-import hero1 from '../assets/newh.png';
+import hero1 from '../assets/tem3.png';
 import hero2 from '../assets/hero2.png';
 import hero3 from '../assets/hero3.png';
 import hero4 from '../assets/hero4.png';
