@@ -4,9 +4,15 @@ import SEOManager from './SEOManager';
 
 export const PrivacyPolicy = () => {
   return (
-    <div className="news-page" style={{ position: 'relative', background: '#fff', color: '#333', minHeight: '100vh', padding: '120px 80px 80px' }}>
+    <div className="news-page" style={{ position: 'relative', background: '#F9FAFB', color: '#333', minHeight: '100vh', padding: '120px 80px 80px', overflow: 'hidden' }}>
+      <div style={{ position: 'absolute', top: '-100px', left: '0', width: '100%', height: '250px', background: 'radial-gradient(ellipse at center, rgba(0, 122, 94, 0.4) 0%, rgba(204, 255, 0, 0.15) 55%, rgba(255,255,255,0) 85%)', filter: 'blur(80px)', pointerEvents: 'none', zIndex: 0 }} />
+      <div style={{ position: 'absolute', bottom: '-100px', left: '0', width: '100%', height: '250px', background: 'radial-gradient(ellipse at center, rgba(0, 122, 94, 0.4) 0%, rgba(204, 255, 0, 0.15) 55%, rgba(255,255,255,0) 85%)', filter: 'blur(80px)', pointerEvents: 'none', zIndex: 0 }} />
+      
+      <div style={{ position: 'absolute', left: 'clamp(20px, 4vw, 60px)', top: 0, bottom: 0, borderLeft: '1.5px dashed rgba(0,0,0,0.11)', pointerEvents: 'none', zIndex: 1 }} />
+      <div style={{ position: 'absolute', right: 'clamp(20px, 4vw, 60px)', top: 0, bottom: 0, borderRight: '1.5px dashed rgba(0,0,0,0.11)', pointerEvents: 'none', zIndex: 1 }} />
+
       <SEOManager title="Privacy Policy | Infynix" description="Learn how Infynix handles and protects your user and operational data." />
-      <div className="news-article" style={{ maxWidth: '860px', margin: '0 auto' }}>
+      <div className="news-article" style={{ position: 'relative', zIndex: 2, maxWidth: '860px', margin: '0 auto' }}>
         <h1 className="news-title" style={{ marginTop: 0 }}>Privacy Policy</h1>
         <p style={{ color: '#888', fontSize: '0.9rem', marginBottom: '30px' }}>Last updated: June 30, 2026</p>
         
@@ -14,7 +20,7 @@ export const PrivacyPolicy = () => {
           <div className="news-block">
             <h2 className="news-subheading">1. Introduction</h2>
             <p className="news-para">
-              At Infynix, we prioritize the protection and security of your corporate and personal data. This privacy policy describes the types of info we collect, how it is stored, and the precautions we take to secure your transactions and interactions.
+              At Infynix — Growth Engineering Company, we prioritize the protection and security of your corporate and personal data. This privacy policy describes the types of info we collect, how it is stored, and the precautions we take to secure your transactions and interactions.
             </p>
           </div>
 
@@ -53,9 +59,15 @@ export const PrivacyPolicy = () => {
 
 export const TermsOfService = () => {
   return (
-    <div className="news-page" style={{ position: 'relative', background: '#fff', color: '#333', minHeight: '100vh', padding: '120px 80px 80px' }}>
+    <div className="news-page" style={{ position: 'relative', background: '#F9FAFB', color: '#333', minHeight: '100vh', padding: '120px 80px 80px', overflow: 'hidden' }}>
+      <div style={{ position: 'absolute', top: '-100px', left: '0', width: '100%', height: '250px', background: 'radial-gradient(ellipse at center, rgba(0, 122, 94, 0.4) 0%, rgba(204, 255, 0, 0.15) 55%, rgba(255,255,255,0) 85%)', filter: 'blur(80px)', pointerEvents: 'none', zIndex: 0 }} />
+      <div style={{ position: 'absolute', bottom: '-100px', left: '0', width: '100%', height: '250px', background: 'radial-gradient(ellipse at center, rgba(0, 122, 94, 0.4) 0%, rgba(204, 255, 0, 0.15) 55%, rgba(255,255,255,0) 85%)', filter: 'blur(80px)', pointerEvents: 'none', zIndex: 0 }} />
+      
+      <div style={{ position: 'absolute', left: 'clamp(20px, 4vw, 60px)', top: 0, bottom: 0, borderLeft: '1.5px dashed rgba(0,0,0,0.11)', pointerEvents: 'none', zIndex: 1 }} />
+      <div style={{ position: 'absolute', right: 'clamp(20px, 4vw, 60px)', top: 0, bottom: 0, borderRight: '1.5px dashed rgba(0,0,0,0.11)', pointerEvents: 'none', zIndex: 1 }} />
+
       <SEOManager title="Terms of Service | Infynix" description="Read the terms and conditions governing the use of Infynix web services." />
-      <div className="news-article" style={{ maxWidth: '860px', margin: '0 auto' }}>
+      <div className="news-article" style={{ position: 'relative', zIndex: 2, maxWidth: '860px', margin: '0 auto' }}>
         <h1 className="news-title" style={{ marginTop: 0 }}>Terms of Service</h1>
         <p style={{ color: '#888', fontSize: '0.9rem', marginBottom: '30px' }}>Last updated: June 30, 2026</p>
         
@@ -70,7 +82,7 @@ export const TermsOfService = () => {
           <div className="news-block">
             <h2 className="news-subheading">2. Use of Services</h2>
             <p className="news-para">
-              You agree not to use our systems for any unlawful purposes, database mining, or network overloading. Infynix reserves the right to terminate API key access or hosting deployments in the event of clear violations.
+              You agree not to use our systems for any unlawful purposes, database mining, or network overloading. Infynix — Growth Engineering Company reserves the right to terminate API key access or hosting deployments in the event of clear violations.
             </p>
           </div>
 
@@ -84,7 +96,7 @@ export const TermsOfService = () => {
           <div className="news-block">
             <h2 className="news-subheading">4. Liability Limits</h2>
             <p className="news-para">
-              Infynix shall not be liable for indirect, incidental, or consequential damages resulting from system downtime, hosting provider failure, or third-party API changes.
+              Infynix — Growth Engineering Company shall not be liable for indirect, incidental, or consequential damages resulting from system downtime, hosting provider failure, or third-party API changes.
             </p>
           </div>
         </div>

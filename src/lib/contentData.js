@@ -97,80 +97,146 @@ export const solutionsData = {
     faqs: [
       { q: 'What is your design process?', a: 'We start with wireframes, proceed to high-fidelity Figma prototypes, iterate with user feedback, and hand off clean design guides.' }
     ]
+  },
+  'cloud-solutions': {
+    title: 'Cloud Solutions',
+    keywords: ['Cloud Solutions Company', 'Cloud Architecture', 'Cloud Migration', 'AWS Consulting'],
+    description: 'Modernize your infrastructure with secure, scalable cloud environments tailored for enterprise performance.',
+    challenge: 'Legacy on-premise servers are slow, expensive to maintain, and vulnerable to security breaches and hardware failures.',
+    insight: 'The cloud should be a seamless utility. A well-architected cloud environment reduces costs, improves uptime, and scales automatically with your business.',
+    solution: 'We architect and migrate applications to AWS, Google Cloud, and Azure, implementing serverless and containerized solutions.',
+    outcome: 'Reduced infrastructure costs, 99.99% uptime, infinite scalability, and robust disaster recovery protocols.',
+    faqs: [
+      { q: 'Can you migrate our existing applications to the cloud?', a: 'Yes, we provide end-to-end cloud migration services with minimal downtime and zero data loss.' }
+    ]
   }
 };
 
 export const industriesData = {
   'healthcare': {
     name: 'Healthcare',
+    heroTitle: 'Healthcare Growth Engineering Solutions',
     challenge: 'Healthcare systems face manual scheduling, paper-heavy compliance, and fragmented patient record systems that delay patient care.',
     opportunity: 'Automate scheduling, integrate records, and deploy secure portals to enhance care, reduce errors, and ensure compliance.',
     solutions: ['Custom patient portals, automated reminders, HIPAA-compliant storage, and AI diagnostics assistants.'],
     faqs: [
       { q: 'Are your healthcare systems HIPAA compliant?', a: 'Yes, we follow strict data encryption standards and secure authentication protocols to protect patient data.' }
-    ]
+    ],
+    howItWorks: [
+      { title: 'Automate Patient Intake', desc: 'Replace paper forms with smart digital intakes that verify insurance instantly.', icon: 'clipboard-list' },
+      { title: 'Predictive Diagnostics', desc: 'Give doctors AI co-pilots that analyze historical patient data in real-time.', icon: 'activity' },
+      { title: 'Secure Compliance', desc: 'Ensure all data flows remain strictly encrypted and HIPAA-compliant 24/7.', icon: 'shield-check' }
+    ],
+    images: {
+      feature1: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=80',
+      feature2: 'https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=800&q=80',
+      feature3: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80',
+      integrations: 'https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=1200&q=80'
+    }
   },
   'education': {
     name: 'Education',
+    heroTitle: 'Education Systems for Growing Institutions',
     challenge: 'LMS platforms are often outdated, making online learning and student enrollment friction-heavy.',
     opportunity: 'Modernize learning with high-speed virtual classrooms, intuitive student enrollment panels, and automated grading loops.',
     solutions: ['Headless LMS setups, customizable student registration systems, and interactive curriculum software.'],
     faqs: [
       { q: 'Can you integrate with existing databases?', a: 'Yes, we integrate modern frontends with legacy institutional databases via custom API layers.' }
+    ],
+    howItWorks: [
+      { title: 'Streamline Enrollment', desc: 'Automate the registration process and eliminate manual paperwork for staff.', icon: 'graduation-cap' },
+      { title: 'Interactive Learning', desc: 'Deploy high-speed, interactive curriculum tools that keep students engaged.', icon: 'monitor-play' },
+      { title: 'Unified Campuses', desc: 'Connect distinct campus systems into one central, globally accessible hub.', icon: 'network' }
     ]
   },
   'construction': {
     name: 'Construction',
+    heroTitle: 'Construction Business Automation Solutions',
     challenge: 'Fragmented supply chains, missing tools tracking, and paper site updates delay projects and overrun budgets.',
     opportunity: 'Centralize material inventories, logistics status, and daily operations updates into one unified web hub.',
     solutions: ['Mobile resource tracking apps, supply chain logs, and custom builder analytics.'],
     faqs: [
       { q: 'Do these systems work on-site?', a: 'Yes, all our construction tools are mobile-responsive and include offline-first syncing capabilities.' }
+    ],
+    howItWorks: [
+      { title: 'Track Materials', desc: 'Log supply chain data automatically to prevent costly shortages on site.', icon: 'hard-hat' },
+      { title: 'Real-time Updates', desc: 'Provide site managers with instant visibility into project milestones.', icon: 'bar-chart' },
+      { title: 'Site Coordination', desc: 'Sync distributed teams and contractors across multiple global projects.', icon: 'users' }
     ]
   },
   'real-estate': {
     name: 'Real Estate',
+    heroTitle: 'Real Estate CRM & Growth Systems',
     challenge: 'Real estate portals load slowly, have bad filters, and fail to qualify prospective property buyers.',
     opportunity: 'Engage visitors with fast search, responsive map tools, and automated scheduling systems.',
     solutions: ['High-speed property listings, interactive maps, and lead follow-up bots.'],
     faqs: [
       { q: 'Do you sync with MLS databases?', a: 'Yes, we automate listings updates by syncronizing with RETS/IDX systems.' }
+    ],
+    howItWorks: [
+      { title: 'Fast Property Search', desc: 'Deliver lightning-fast search filters that help buyers find homes instantly.', icon: 'home' },
+      { title: 'Automated Tours', desc: 'Let AI instantly schedule showings and follow up with high-intent leads.', icon: 'calendar-check' },
+      { title: 'Market Reach', desc: 'Expand your listing visibility and attract international property investors.', icon: 'trending-up' }
     ]
   },
   'manufacturing': {
     name: 'Manufacturing',
+    heroTitle: 'Manufacturing Growth Engineering',
     challenge: 'Manual inventory logs and legacy machine alerts lead to production delays and resource wastage.',
     opportunity: 'Deploy automated inventory alerts and real-time plant analytics using connected software dashboards.',
     solutions: ['Inventory alert dashboards, automated supply logs, and machine telemetry metrics.'],
     faqs: [
       { q: 'Can you connect with IoT sensors?', a: 'Yes, we build secure cloud gateways to collect and display machine telemetry data.' }
+    ],
+    howItWorks: [
+      { title: 'Inventory Automation', desc: 'Automatically restock supplies before they run out using smart thresholds.', icon: 'factory' },
+      { title: 'Plant Analytics', desc: 'Monitor machine health and prevent breakdowns with predictive modeling.', icon: 'line-chart' },
+      { title: 'Supply Chain Sync', desc: 'Unify your vendors and distributors into a single connected logistics loop.', icon: 'truck' }
     ]
   },
   'retail': {
     name: 'Retail & Commerce',
+    heroTitle: 'Retail & Commerce Growth Systems',
     challenge: 'Slow checkouts and generic product listings increase bounce rates and reduce purchase conversions.',
     opportunity: 'Increase sales with lightning-fast headless checkouts, AI product recommendations, and custom carts.',
     solutions: ['Headless eCommerce systems, automated cart reminders, and custom sales trackers.'],
     faqs: [
       { q: 'What commerce engines do you support?', a: 'We build headless commerce using Shopify, BigCommerce, or fully custom transactional engines.' }
+    ],
+    howItWorks: [
+      { title: 'Frictionless Checkout', desc: 'Remove checkout barriers with one-click purchasing and smart carts.', icon: 'shopping-cart' },
+      { title: 'Personalized Shopping', desc: 'Suggest the perfect products dynamically using real-time behavioral AI.', icon: 'sparkles' },
+      { title: 'Omnichannel Sales', desc: 'Sell seamlessly across web, social media, and international storefronts.', icon: 'globe' }
     ]
   },
   'hospitality': {
     name: 'Hospitality',
+    heroTitle: 'Hospitality Growth & Automation Solutions',
     challenge: 'High fees from reservation portals eat booking margins and manual scheduling delays check-ins.',
     opportunity: 'Capture more revenue using custom booking engines, guest desks, and automated welcome flows.',
     solutions: ['Direct booking platforms, loyalty systems, and contactless guest support tools.'],
     faqs: [
       { q: 'Can we sync booking calendars?', a: 'Yes, our custom direct booking calendars sync automatically with Channel Managers.' }
+    ],
+    howItWorks: [
+      { title: 'Direct Bookings', desc: 'Bypass OTA fees by driving reservations through your own custom engine.', icon: 'concierge-bell' },
+      { title: 'Automated Guest Care', desc: 'Delight guests with instant digital check-ins and smart room upgrades.', icon: 'smartphone' },
+      { title: 'Global Sync', desc: 'Keep your room inventory perfectly synced across all worldwide channels.', icon: 'refresh-cw' }
     ]
   },
   'professional-services': {
     name: 'Professional Services',
+    heroTitle: 'Growth Systems for Professional Services',
     challenge: 'Manual billing systems and email scheduling create friction and limit business scaling.',
     opportunity: 'Automate customer lead flows, online scheduling, and invoice status updates into a client hub.',
     solutions: ['Client collaboration desks, automated billing modules, and online consulting schedule systems.'],
     faqs: [
       { q: 'Can you build secure document portals?', a: 'Yes, we design encrypted portals for files sharing, e-signatures, and messaging.' }
+    ],
+    howItWorks: [
+      { title: 'Automated Billing', desc: 'Generate and collect invoices automatically to ensure steady cash flow.', icon: 'credit-card' },
+      { title: 'Client Dashboards', desc: 'Provide a premium self-serve portal for project updates and document sharing.', icon: 'layout-dashboard' },
+      { title: 'Remote Collaboration', desc: 'Work with clients seamlessly across borders with integrated meeting tools.', icon: 'video' }
     ]
   }
 };

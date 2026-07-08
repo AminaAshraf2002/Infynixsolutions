@@ -62,7 +62,7 @@
   font-weight: 700;
   letter-spacing: 1.5px;
   text-transform: uppercase;
-  color: #f1e4b8;
+  color: rgb(214, 250, 86);
   margin-bottom: 0.5rem;
 }
 
@@ -78,7 +78,7 @@
 }
 
 .title-highlight {
-  color: #f1e4b8;
+  color: rgb(214, 250, 86);
   /* Zendesk lime green */
 }
 
@@ -101,10 +101,26 @@
 
   .hero-title {
     font-size: clamp(3.5rem, 7vw, 5rem);
-
   }
 
   .hero-subtitle {
     font-size: 1.1rem;
+  }
+}
+
+.hero-actions {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+@media (max-width: 767px) {
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+    align-items: stretch;
+  }
+  .hero-actions button {
+    width: 100%;
   }
 }

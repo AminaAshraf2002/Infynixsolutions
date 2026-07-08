@@ -92,6 +92,13 @@ const CaseStudiesPage = () => {
         title={`${currentStudy.client} Systems Integration Case Study | Infynix`}
         description={`Learn how Infynix optimized operations for ${currentStudy.client}. Dynamic strategy: ${currentStudy.objectives.slice(0, 120)}`}
         canonicalUrl={`https://infynix.com/case-studies/${currentStudy.slug}`}
+        schemaData={{
+          '@context': 'https://schema.org',
+          '@type': 'Article',
+          'headline': `${currentStudy.client} Case Study`,
+          'description': currentStudy.challenge,
+          'author': { '@type': 'Organization', 'name': 'Infynix' }
+        }}
       />
 
       {/* ── BACKGROUND FAINT VERTICAL DASHED GRIDLINES ── */}

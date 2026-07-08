@@ -17,19 +17,19 @@ const offices = [
     {
         city: "London",
         label: "UK Headquarters",
-        desc: "Our global executive headquarters directing international operations, technology consulting, and enterprise client strategy across European and American regions.",
+        desc: "1-75 Shelton St, London, WC2H 9JQ. Our global executive headquarters directing international operations, technology consulting, and enterprise client strategy across European and American regions.",
         image: "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=900&q=80",
     },
     {
         city: "Dubai",
         label: "UAE Office",
-        desc: "Our strategic regional office managing partnerships, cloud growth projects, and AI system installations across the Middle East and GCC countries.",
+        desc: "Business Bay, Dubai, UAE. Our strategic regional office managing partnerships, cloud growth projects, and AI system installations across the Middle East and GCC countries.",
         image: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=900&q=80",
     },
     {
         city: "Kochi",
         label: "Kerala Office",
-        desc: "Our core engineering powerhouse and development center delivering robust backend growth architecture, advanced computer vision research, and SRE operations.",
+        desc: "7th Floor, National Pearl Star Building, Edappally, Kochi, Kerala 682024. Our core engineering powerhouse and development center delivering robust backend growth architecture.",
         image: "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?w=900&q=80",
     },
 ];

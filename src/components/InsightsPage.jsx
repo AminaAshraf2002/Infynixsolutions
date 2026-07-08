@@ -10,7 +10,7 @@ const GREEN_LITE = "#EBF1ED";
 const BORDER = "#E5E5E5";
 
 const insightImages = {
-  'what-is-growth-engineering': 'https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1200&q=80',
+  'what-is-growth-engineering': 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80',
   'how-ai-automates-growth': 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=1200&q=80'
 };
 
@@ -71,23 +71,33 @@ const InsightsPage = () => {
     const pageImage = insightImages[article.slug] || insightImages['what-is-growth-engineering'];
 
     return (
-      <div style={{ background: OFF_WHITE, minHeight: '100vh', fontFamily: 'var(--ix-font-body)', color: CHARCOAL }}>
+      <div style={{ background: OFF_WHITE, minHeight: '100vh', fontFamily: "'Montserrat', sans-serif", color: CHARCOAL }}>
         <SEOManager
           title={`${article.title} | Infynix`}
           description={article.summary}
           canonicalUrl={`https://infynix.com/insights/${slug}`}
+          schemaData={{
+            '@context': 'https://schema.org',
+            '@type': 'Article',
+            'headline': article.title,
+            'description': article.summary,
+            'author': { '@type': 'Organization', 'name': article.author || 'Infynix' },
+            'publisher': { '@type': 'Organization', 'name': 'Infynix' },
+            'datePublished': article.date
+          }}
         />
 
         {/* ── ARTICLE HEADER ── */}
-        <section style={{ padding: '140px 20px 60px', textAlign: 'center' }} data-aos="fade-up">
-          <div style={{ maxWidth: '800px', margin: '0 auto' }}>
-            <span style={{ display: 'inline-block', padding: '6px 14px', background: GREEN, color: '#fff', fontSize: '0.65rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '2px', marginBottom: '30px' }}>
+        <section style={{ padding: '140px 20px 60px', textAlign: 'center', position: 'relative', overflow: 'hidden' }} data-aos="fade-up">
+          <div style={{ position: 'absolute', bottom: '-50px', right: 0, width: '800px', height: '250px', background: 'radial-gradient(ellipse at center, rgba(0, 122, 94, 0.7) 0%, rgba(204, 255, 0, 0.25) 55%, rgba(255,255,255,0) 85%)', filter: 'blur(90px)', pointerEvents: 'none', zIndex: 0 }} />
+          <div style={{ maxWidth: '800px', margin: '0 auto', position: 'relative', zIndex: 1 }}>
+            <span style={{ display: 'inline-block', padding: '6px 14px', background: GREEN, color: '#fff', fontSize: '0.65rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '2px', marginBottom: '30px', fontFamily: "'Montserrat', sans-serif" }}>
               {article.category}
             </span>
-            <h1 style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)', fontWeight: 800, margin: '0 0 25px', lineHeight: 1.15, fontFamily: 'var(--ix-font-display)', color: CHARCOAL }}>
+            <h1 style={{ fontSize: 'clamp(2.25rem, 4vw, 2.75rem)', fontWeight: 500, margin: '0 0 25px', lineHeight: 1.15, fontFamily: "'Montserrat', sans-serif", color: CHARCOAL }}>
               {article.title}
             </h1>
-            <p style={{ fontStyle: 'italic', color: '#666', fontSize: '1rem', fontFamily: 'var(--ix-font-serif)', margin: 0 }}>
+            <p style={{ fontStyle: 'italic', color: '#666', fontSize: '1rem', fontFamily: "'Montserrat', sans-serif", margin: 0 }}>
               {article.author} • {article.date}
             </p>
           </div>
@@ -102,11 +112,11 @@ const InsightsPage = () => {
 
         {/* ── ARTICLE CONTENT ── */}
         <section style={{ padding: '0 20px 80px' }}>
-          <div style={{ maxWidth: '700px', margin: '0 auto' }}>
+          <div style={{ maxWidth: '750px', margin: '0 auto', textAlign: 'left', fontFamily: "'Montserrat', sans-serif" }}>
             
-            <div style={{ fontSize: '1.05rem', lineHeight: '1.8', color: '#444' }}>
+            <div style={{ fontSize: '1.05rem', lineHeight: '1.7', color: '#444' }}>
               {/* Fake content dots divider */}
-              <div style={{ borderBottom: `1px dotted ${BORDER}`, marginBottom: '40px', width: '30px', margin: '0 auto 40px' }} />
+              <div style={{ borderBottom: `1px dotted ${BORDER}`, marginBottom: '40px', width: '30px' }} />
 
               {article.content.split('\n\n').map((para, idx) => (
                 <p key={idx} style={{ marginBottom: '30px' }} data-aos="fade-up">
@@ -115,12 +125,12 @@ const InsightsPage = () => {
               ))}
 
               <div style={{ background: '#EAEAEA', padding: '30px', margin: '50px 0', borderLeft: `3px solid ${GREEN}` }} data-aos="fade-right">
-                <p style={{ fontStyle: 'italic', fontFamily: 'var(--ix-font-serif)', fontSize: '1.15rem', color: '#333', margin: 0 }}>
+                <p style={{ fontStyle: 'italic', fontFamily: "'Montserrat', sans-serif", fontSize: '1.15rem', lineHeight: '1.6', color: '#333', margin: 0 }}>
                   "Engineering is not the art of building complex things, but the science of making complexity invisible to the user."
                 </p>
               </div>
 
-              <h3 style={{ fontSize: '1.5rem', fontWeight: 800, fontFamily: 'var(--ix-font-display)', margin: '50px 0 20px', color: CHARCOAL }} data-aos="fade-up">
+              <h3 style={{ fontSize: '1.5rem', fontWeight: 800, fontFamily: "'Montserrat', sans-serif", margin: '50px 0 20px', color: CHARCOAL }} data-aos="fade-up">
                 Defining the New Blueprint
               </h3>
               <p style={{ marginBottom: '40px' }} data-aos="fade-up">
@@ -129,18 +139,18 @@ const InsightsPage = () => {
 
               <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '20px', marginBottom: '40px' }}>
                 <div style={{ border: `1px dotted #ccc`, padding: '20px' }} data-aos="zoom-in" data-aos-delay="100">
-                  <div style={{ color: GREEN, fontSize: '0.75rem', fontWeight: 'bold', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '10px', fontFamily: 'monospace' }}>
+                  <div style={{ color: GREEN, fontSize: '0.75rem', fontWeight: 'bold', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '10px', fontFamily: "'Montserrat', sans-serif" }}>
                     01 / MODULARITY
                   </div>
-                  <p style={{ margin: 0, fontSize: '0.9rem', lineHeight: 1.6, fontFamily: 'monospace' }}>
+                  <p style={{ margin: 0, fontSize: '0.9rem', lineHeight: 1.6, fontFamily: "'Montserrat', sans-serif" }}>
                     Components must be swappable without interrupting the global state.
                   </p>
                 </div>
                 <div style={{ border: `1px dotted #ccc`, padding: '20px' }} data-aos="zoom-in" data-aos-delay="200">
-                  <div style={{ color: GREEN, fontSize: '0.75rem', fontWeight: 'bold', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '10px', fontFamily: 'monospace' }}>
+                  <div style={{ color: GREEN, fontSize: '0.75rem', fontWeight: 'bold', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '10px', fontFamily: "'Montserrat', sans-serif" }}>
                     02 / OBSERVABILITY
                   </div>
-                  <p style={{ margin: 0, fontSize: '0.9rem', lineHeight: 1.6, fontFamily: 'monospace' }}>
+                  <p style={{ margin: 0, fontSize: '0.9rem', lineHeight: 1.6, fontFamily: "'Montserrat', sans-serif" }}>
                     Granular data collection at every trace node for predictive maintenance.
                   </p>
                 </div>
@@ -173,33 +183,56 @@ const InsightsPage = () => {
   const featImg = insightImages[featuredArticle.slug] || insightImages['what-is-growth-engineering'];
 
   return (
-    <div style={{ background: OFF_WHITE, minHeight: '100vh', fontFamily: 'var(--ix-font-body)', color: CHARCOAL }}>
+    <div style={{ background: OFF_WHITE, minHeight: '100vh', fontFamily: "'Montserrat', sans-serif", color: CHARCOAL }}>
       <SEOManager
         title="Insights | Infynix"
         description="Growth Insights"
         canonicalUrl="https://infynix.com/insights"
+        schemaData={{
+          '@context': 'https://schema.org',
+          '@type': 'Blog',
+          'name': 'Infynix Growth Insights',
+          'description': 'Exploring the intersection of complex infrastructure, sustainable engineering, and the future of industrial integration.',
+          'publisher': { '@type': 'Organization', 'name': 'Infynix' }
+        }}
       />
 
-      {/* ── TOP HEADER ── */}
-      <section style={{ padding: '160px 20px 40px', textAlign: 'center', position: 'relative' }} data-aos="fade-down">
-        <div style={{ width: '1px', height: '20px', background: 'transparent', borderLeft: `1px dotted ${BORDER}`, margin: '0 auto 20px' }}></div>
-        <div style={{ fontSize: '0.65rem', color: GREEN, textTransform: 'uppercase', letterSpacing: '3px', fontWeight: 700, marginTop: '-40px', marginBottom: '20px' }}>
-          PERSPECTIVES • ENGINEERING • SCALE
+      <style>{`
+        .insight-hero-section { padding: clamp(80px, 10vw, 120px) 0; }
+        .insight-eyebrow { font-size: 0.8rem; font-weight: 600; color: #007A5E; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 1rem; display: block; }
+        .insight-h1 { font-family: 'Montserrat', sans-serif; font-size: clamp(2.25rem, 4vw, 2.75rem); font-weight: 600; line-height: 1.1; margin-bottom: 1.5rem; letter-spacing: -0.01em; color: #111; }
+        .insight-p { font-size: clamp(0.9375rem, 2vw, 1rem); color: #4B5563; line-height: 1.7; margin-bottom: 2rem; max-width: 600px; }
+        .insight-btn-primary { background: #007A5E; color: #fff; padding: 0.6rem 1.35rem; font-size: 0.85rem; border-radius: 50px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; transition: background 0.3s; border: none; cursor: pointer; }
+        .insight-btn-primary:hover { background: #0F5C4C; }
+        .insight-btn-outline { background: transparent; color: #111; padding: 0.6rem 1.35rem; font-size: 0.85rem; border-radius: 50px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; transition: background 0.3s, border-color 0.3s; border: 1.5px solid #E5E7EB; cursor: pointer; }
+        .insight-btn-outline:hover { background: #F9FAFB; border-color: #D1D5DB; }
+        .insight-img { border-radius: 24px; box-shadow: 0 20px 40px rgba(0,0,0,0.08); object-fit: cover; width: 100%; display: block; }
+      `}</style>
+
+      {/* ── TOP HEADER (HERO SECTION) ── */}
+      <section className="insight-hero-section" style={{ position: 'relative', overflow: 'hidden', minHeight: '85vh', display: 'flex', alignItems: 'center', marginTop: '60px' }}>
+        <div style={{ position: 'absolute', bottom: '-50px', right: '-200px', width: '800px', height: '250px', background: 'radial-gradient(ellipse at center, rgba(0, 122, 94, 0.7) 0%, rgba(204, 255, 0, 0.25) 55%, rgba(255,255,255,0) 85%)', filter: 'blur(90px)', pointerEvents: 'none', zIndex: 0 }} />
+        <div style={{ maxWidth: 1140, margin: '0 auto', padding: '0 var(--section-px)', position: 'relative', zIndex: 1, display: 'grid', gridTemplateColumns: '0.75fr 1fr', gap: '5rem', alignItems: 'center', width: '100%' }}>
+          <div data-aos="fade-up">
+            <span className="insight-eyebrow">INFYNIX INSIGHTS</span>
+            <h1 className="insight-h1" style={{ maxWidth: '420px' }}>Growth Insights</h1>
+            <p className="insight-p" style={{ maxWidth: '420px' }}>Exploring the intersection of complex infrastructure, sustainable engineering, and the future of industrial integration.</p>
+            <div style={{ display: 'flex', gap: '1rem', flexWrap: 'nowrap', whiteSpace: 'nowrap', maxWidth: '420px' }}>
+              <a href="#articles" className="insight-btn-primary" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 800, behavior: 'smooth' }); }}>Explore Articles</a>
+              <a href="#subscribe" className="insight-btn-outline" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' }); }}>Subscribe for Updates</a>
+            </div>
+          </div>
+          <div data-aos="fade-up" data-aos-delay="200" style={{ display: 'flex', justifyContent: 'center' }}>
+            <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1200&q=80" alt="Growth Insights" className="insight-img" style={{ width: '82%', maxWidth: '100%', aspectRatio: '1/1', borderRadius: '24px', objectFit: 'cover' }} />
+          </div>
         </div>
-        <h1 style={{ fontSize: 'clamp(3rem, 6vw, 4.5rem)', fontWeight: 600, color: CHARCOAL, margin: '0 0 15px', fontFamily: 'var(--ix-font-display)', letterSpacing: '-0.02em' }}>
-          Growth Insights
-        </h1>
-        <p style={{ fontSize: '1.1rem', color: '#555', fontStyle: 'italic', fontFamily: 'var(--ix-font-serif)', maxWidth: '600px', margin: '0 auto' }}>
-          Exploring the intersection of complex infrastructure, sustainable engineering, and the future of industrial integration.
-        </p>
-        <div style={{ width: '4px', height: '4px', background: GREEN, margin: '40px auto 0' }}></div>
       </section>
 
       {/* ── FEATURED ARTICLE ── */}
       <section style={{ padding: '20px clamp(60px, 8vw, 120px) 80px' }} data-aos="fade-up">
-        <div style={{ maxWidth: '1000px', margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '40px', alignItems: 'center' }}>
+        <div style={{ maxWidth: '1000px', margin: '0 auto', display: 'grid', gridTemplateColumns: '0.85fr 1.15fr', gap: '50px', alignItems: 'center' }}>
           
-          <Link to={`/insights/${featuredArticle.slug}`} style={{ position: 'relative', height: 'clamp(300px, 35vw, 500px)', display: 'block', overflow: 'hidden' }}>
+          <Link to={`/insights/${featuredArticle.slug}`} style={{ position: 'relative', height: 'clamp(250px, 30vw, 400px)', display: 'block', overflow: 'hidden' }}>
             <div style={{ position: 'absolute', top: '20px', left: '20px', background: GREEN, color: '#fff', padding: '6px 12px', fontSize: '0.65rem', fontWeight: 700, letterSpacing: '2px', zIndex: 2 }}>
               {featuredArticle.category.toUpperCase()}
             </div>
@@ -207,11 +240,11 @@ const InsightsPage = () => {
           </Link>
 
           <div style={{ padding: '0 20px' }}>
-            <div style={{ fontStyle: 'italic', color: '#666', fontSize: '0.95rem', fontFamily: 'var(--ix-font-serif)', marginBottom: '20px' }}>
+            <div style={{ fontStyle: 'italic', color: '#666', fontSize: '0.95rem', fontFamily: "'Montserrat', sans-serif", marginBottom: '20px' }}>
               • {featuredArticle.date}
             </div>
             <Link to={`/insights/${featuredArticle.slug}`} style={{ textDecoration: 'none', color: 'inherit' }}>
-              <h2 style={{ fontSize: 'clamp(2rem, 4vw, 3rem)', fontWeight: 600, color: CHARCOAL, margin: '0 0 20px', lineHeight: 1.1, fontFamily: 'var(--ix-font-display)', letterSpacing: '-0.02em' }}>
+              <h2 style={{ fontSize: 'clamp(1.6rem, 3.6vw, 2.6rem)', fontWeight: 500, color: CHARCOAL, margin: '0 0 20px', lineHeight: 1.1, fontFamily: "'Montserrat', sans-serif", letterSpacing: '-0.02em' }}>
                 {featuredArticle.title}
               </h2>
             </Link>
@@ -269,7 +302,7 @@ const InsightsPage = () => {
                 <span>{article.date}</span>
               </div>
               
-              <h3 style={{ fontSize: '1.4rem', fontWeight: 800, color: CHARCOAL, margin: '0 0 15px', lineHeight: 1.2, fontFamily: 'var(--ix-font-display)', letterSpacing: '-0.01em' }}>
+              <h3 style={{ fontSize: '1.2rem', fontWeight: 500, color: CHARCOAL, margin: '0 0 15px', lineHeight: 1.2, fontFamily: "'Montserrat', sans-serif", letterSpacing: '-0.01em' }}>
                 {article.title}
               </h3>
               
@@ -322,8 +355,9 @@ const InsightsPage = () => {
       </section>
 
       {/* ── NEWSLETTER FOOTER ── */}
-      <section style={{ background: '#EAEAE6', padding: '80px 20px', borderTop: `1px solid ${BORDER}` }} data-aos="fade-in">
-        <div style={{ maxWidth: '1000px', margin: '0 auto', background: OFF_WHITE, border: `1px solid ${GREEN}`, padding: '50px', position: 'relative' }}>
+      <section style={{ background: '#fff', padding: '80px 20px', borderTop: `1px solid ${BORDER}`, position: 'relative', overflow: 'hidden' }} data-aos="fade-in">
+        <div style={{ position: 'absolute', bottom: '-150px', left: '50%', transform: 'translateX(-50%)', width: '800px', height: '250px', background: 'radial-gradient(ellipse at center, rgba(0, 122, 94, 0.7) 0%, rgba(204, 255, 0, 0.25) 55%, rgba(255,255,255,0) 85%)', filter: 'blur(90px)', pointerEvents: 'none', zIndex: 0 }} />
+        <div style={{ maxWidth: '1000px', margin: '0 auto', background: '#fff', border: `1px solid ${GREEN}`, padding: '50px', position: 'relative', zIndex: 1 }}>
           {/* Decorative corners */}
           <div style={{ position: 'absolute', top: '-1px', left: '-1px', width: '10px', height: '10px', borderTop: `2px solid ${GREEN}`, borderLeft: `2px solid ${GREEN}` }}></div>
           <div style={{ position: 'absolute', bottom: '-1px', right: '-1px', width: '10px', height: '10px', borderBottom: `2px solid ${GREEN}`, borderRight: `2px solid ${GREEN}` }}></div>
@@ -333,7 +367,7 @@ const InsightsPage = () => {
               <div style={{ fontSize: '0.65rem', color: GREEN, textTransform: 'uppercase', letterSpacing: '2px', fontWeight: 700, marginBottom: '15px' }}>
                 THE ARCHIVE WEEKLY
               </div>
-              <h4 style={{ fontSize: '1.8rem', fontWeight: 800, color: CHARCOAL, margin: '0 0 15px', fontFamily: 'var(--ix-font-display)' }}>
+              <h4 style={{ fontSize: '1.8rem', fontWeight: 800, color: CHARCOAL, margin: '0 0 15px', fontFamily: "'Montserrat', sans-serif" }}>
                 Direct Intelligence
               </h4>
               <p style={{ color: '#555', fontSize: '0.9rem', lineHeight: 1.6, margin: 0 }}>

@@ -26,6 +26,7 @@ import Footer from './components/Footer';
 import News from './components/News';
 import Contact from './components/Contact';
 
+
 // Strategy v2.0 Page Imports
 import GrowthEngineering from './components/GrowthEngineering';
 import SolutionsPage from './components/SolutionsPage';
@@ -59,6 +60,8 @@ function HomePage() {
       {/* 4. Featured Work */}
       <FeaturedWork />
 
+
+
       {/* 5. Initiatives */}
       <InitiativesSection />
 
@@ -90,7 +93,7 @@ function AppContent() {
             <Route path="/"                 element={<HomePage />} />
             <Route path="/growth-engineering" element={<GrowthEngineering />} />
             <Route path="/solutions/:slug"   element={<SolutionsPage />} />
-            <Route path="/solutions"        element={<Navigate to="/growth-engineering" replace />} />
+            <Route path="/solutions"        element={<SolutionsPage />} />
             <Route path="/industries/:slug"  element={<IndustriesPage />} />
             <Route path="/case-studies/:slug" element={<CaseStudiesPage />} />
             <Route path="/case-studies"      element={<CaseStudiesPage />} />
@@ -106,6 +109,10 @@ function AppContent() {
             <Route path="/what-we-do"        element={<Navigate to="/growth-engineering" replace />} />
             <Route path="/future-of-growth-systems" element={<Navigate to="/growth-engineering" replace />} />
             <Route path="/news"              element={<Navigate to="/insights" replace />} />
+            <Route path="/services"          element={<Navigate to="/solutions" replace />} />
+            <Route path="/portfolio"         element={<Navigate to="/case-studies" replace />} />
+            <Route path="/about-us"          element={<Navigate to="/about" replace />} />
+            <Route path="/contact-us"        element={<Navigate to="/contact" replace />} />
             
             {/* Fallback 404 */}
             <Route path="*"                  element={<NotFoundPage />} />

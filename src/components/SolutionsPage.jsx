@@ -3,6 +3,9 @@ import { useParams, Link } from 'react-router-dom';
 import { solutionsData } from '../lib/contentData';
 import SEOManager from './SEOManager';
 import './InfynixDesign.css';
+import teamImg from '../assets/team.png';
+import weImg from '../assets/webpage.png';
+import aiImg from '../assets/ai.png'; // Added alternative image for AI
 
 function useIxReveal() {
   useEffect(() => {
@@ -45,13 +48,14 @@ const Arrow = () => (
 
 const SolutionsPage = () => {
   const { slug } = useParams();
+  const activeSlug = slug || 'website-development';
   useIxReveal();
-  
+
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, [slug]);
+  }, [activeSlug]);
 
-  const data = solutionsData[slug];
+  const data = solutionsData[activeSlug];
   if (!data) return <div style={{ padding: '20vh 5%', textAlign: 'center', fontFamily: 'var(--ix-font-display)', fontSize: '2rem' }}>Solution not found.</div>;
 
   const titleWords = data.title.split(' ');
@@ -68,83 +72,77 @@ const SolutionsPage = () => {
 
   const blueprint = [
     { label: 'Challenge', text: data.challenge },
-    { label: 'Insight',   text: data.insight   },
-    { label: 'Solution',  text: data.solution  },
-    { label: 'Outcome',   text: data.outcome   },
-    { label: 'Scale',     text: 'Continuous testing, optimizations, and cloud scaling alerts.' },
+    { label: 'Insight', text: data.insight },
+    { label: 'Solution', text: data.solution },
+    { label: 'Outcome', text: data.outcome },
+    { label: 'Scale', text: 'Continuous testing, optimizations, and cloud scaling alerts.' },
   ];
 
   return (
     <div style={{ background: '#fff' }}>
-      <SEOManager 
+      <SEOManager
         title={`${data.title} | Infynix Solutions`}
         description={data.description}
         canonicalUrl={`https://infynix.com/solutions/${slug}`}
         schemaData={schema}
       />
 
-      {/* ══ HERO — dark teal ══ */}
+      {/* ══ HERO — Zendesk Replica ══ */}
       <section style={{
-        background: 'var(--ix-dark)',
+        background: '#ffffff',
         minHeight: '85vh',
         display: 'grid',
         gridTemplateColumns: '1fr 1fr',
-        overflow: 'hidden',
+        alignItems: 'center',
         position: 'relative',
-        paddingTop: '60px'
+        padding: '120px var(--section-px) 80px',
+        gap: '4rem',
+        overflow: 'hidden'
       }}>
-        <div style={{ position: 'absolute', inset: 0, backgroundImage: 'linear-gradient(rgba(0,122,94,0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(0,122,94,0.06) 1px, transparent 1px)', backgroundSize: '80px 80px', pointerEvents: 'none', zIndex: 0 }} />
-
-        {/* Left */}
+        {/* Radial ambient glow */}
         <div style={{
-          display: 'flex', flexDirection: 'column', justifyContent: 'center',
-          padding: 'clamp(20px, 4vw, 60px) clamp(60px, 10vw, 120px)',
-          borderRight: '1px solid rgba(0,122,94,0.2)',
-          position: 'relative', zIndex: 1,
-        }}>
-          <span className="ix-eyebrow ix-eyebrow--light" data-aos="fade-up">Solutions & Services</span>
-          <h1 style={{ fontFamily: 'var(--ix-font-display)', fontWeight: 800, fontSize: 'clamp(2.8rem, 5.5vw, 5rem)', lineHeight: 0.95, letterSpacing: '-0.03em', color: '#fff', marginBottom: '2rem' }}>
-            <em data-aos-delay="100" data-aos="fade-up" style={{ display: 'block', fontFamily: 'var(--ix-font-serif)', fontStyle: 'italic', fontWeight: 400, color: 'var(--ix-primary-lt)' }}>{firstWord}</em>
-            <span data-aos-delay="200" data-aos="fade-up" style={{ display: 'block' }}>{restWords}</span>
+          position: 'absolute',
+          bottom: '-100px',
+          left: '0',
+          width: '100%',
+          height: '250px',
+          background: 'radial-gradient(ellipse at 80% 50%, rgba(0, 122, 94, 0.7) 0%, rgba(204, 255, 0, 0.11) 55%, rgba(255,255,255,0) 85%)',
+          filter: 'blur(90px)',
+          pointerEvents: 'none',
+          zIndex: 0
+        }} />
+        {/* Left */}
+        <div style={{ position: 'relative', zIndex: 1 }} data-aos="fade-up">
+          <h1 style={{ fontFamily: 'var(--ix-font-display)', fontWeight: 500, fontSize: 'clamp(2rem, 4vw, 3.5rem)', color: '#111', lineHeight: 1.1, marginTop: '60px',marginBottom: '1.5rem', letterSpacing: '-0.02em' }}>
+            {data.title}
           </h1>
-          <p data-aos-delay="300" data-aos="fade-up" style={{ fontFamily: 'var(--ix-font-body)', fontSize: 'clamp(0.88rem, 1.2vw, 1rem)', color: 'rgba(255,255,255,0.9)', lineHeight: 1.8, maxWidth: 420, marginBottom: '2.5rem' }}>
+          <p style={{ fontFamily: 'var(--ix-font-body)', fontSize: '1rem', color: '#111', lineHeight: 1.6, marginBottom: '1.5rem', maxWidth: '520px' }}>
             {data.description}
           </p>
-          <div data-aos-delay="400" data-aos="fade-up" style={{ display: 'flex', gap: '0.8rem', flexWrap: 'wrap' }}>
-            <Link to="/contact" className="ix-btn-primary">Book Discovery Session <Arrow /></Link>
-            <a href="#blueprint" className="ix-btn-outline-wh">See Blueprint</a>
+          <p style={{ fontFamily: 'var(--ix-font-body)', fontSize: '1.1rem', color: '#111', lineHeight: 1.6, marginBottom: '2.5rem', maxWidth: '520px' }}>
+            {data.challenge}
+          </p>
+          <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
+            <Link to="/contact" style={{ background: '#007A5E', color: '#ffffffff', padding: '0.9rem 1.8rem', borderRadius: '40px', fontWeight: 600, textDecoration: 'none', display: 'inline-flex', alignItems: 'center', transition: 'background 0.3s' }} onMouseEnter={e => e.currentTarget.style.background = '#96c200'} onMouseLeave={e => e.currentTarget.style.background = '#a7d600'}>
+              Try it for free
+            </Link>
+            <a href="#blueprint" style={{ background: '#fff', border: '1px solid #ccc', color: '#111', padding: '0.9rem 1.8rem', borderRadius: '40px', fontWeight: 600, textDecoration: 'none', display: 'inline-flex', alignItems: 'center', transition: 'border-color 0.3s' }} onMouseEnter={e => e.currentTarget.style.borderColor = '#999'} onMouseLeave={e => e.currentTarget.style.borderColor = '#ccc'}>
+              View demo
+            </a>
           </div>
         </div>
 
-        {/* Right — 4 pillars */}
-        <div style={{ display: 'grid', gridTemplateRows: '1fr 1fr', gridTemplateColumns: '1fr 1fr', gap: '1px', background: 'rgba(0,122,94,0.15)', position: 'relative', zIndex: 1, paddingRight: 'clamp(40px, 6vw, 80px)' }}>
-          {[
-            { label: 'The Challenge', text: data.challenge },
-            { label: 'The Insight',   text: data.insight   },
-            { label: 'The Solution',  text: data.solution  },
-            { label: 'The Outcome',   text: data.outcome   },
-          ].map((p, i) => (
-            <div
-              key={p.label}
-              className={`-scale ix-d${i + 1} data-aos="fade-up"`}
-              style={{ background: 'var(--ix-dark-2)', padding: 'clamp(1.5rem, 3vw, 2.5rem)', display: 'flex', flexDirection: 'column', gap: '0.8rem', transition: 'background 0.3s' }}
-              onMouseEnter={e => e.currentTarget.style.background = 'rgba(0,122,94,0.18)'}
-              onMouseLeave={e => e.currentTarget.style.background = 'var(--ix-dark-2)'}
-            >
-              <span style={{ fontFamily: 'var(--ix-font-body)', fontSize: '0.68rem', letterSpacing: '0.15em', textTransform: 'uppercase', color: 'var(--ix-primary-lt)' }}>{p.label}</span>
-              <p style={{ fontFamily: 'var(--ix-font-body)', fontSize: 'clamp(0.82rem, 1vw, 0.9rem)', color: 'rgba(255,255,255,0.85)', lineHeight: 1.7 }}>
-                {p.text.slice(0, 110)}{p.text.length > 110 ? '…' : ''}
-              </p>
-            </div>
-          ))}
+        {/* Right — Image */}
+        <div style={{ position: 'relative', zIndex: 1, display: 'flex', justifyContent: 'center' }} data-aos="fade-up" data-aos-delay="200">
+          <img src={activeSlug === 'artificial-intelligence' ? aiImg : weImg} alt={data.title} style={{ width: '100%', maxWidth: '340px', height: 'auto', borderRadius: '40px', objectFit: 'cover', aspectRatio: '1/1',  }} />
         </div>
       </section>
 
       {/* ══ TEAL BANNER ══ */}
-      <section style={{ background: 'var(--ix-primary)', padding: 'clamp(48px, 8vw, 96px) clamp(20px, 8vw, 120px)', overflow: 'hidden', position: 'relative' }}>
+      <section style={{ background: 'var(--ix-primary)', padding: 'clamp(48px, 8vw, 96px) var(--section-px)', overflow: 'hidden', position: 'relative' }}>
         <div style={{ position: 'absolute', inset: 0, opacity: 0.07, backgroundImage: 'repeating-linear-gradient(-45deg, #fff 0, #fff 1px, transparent 0, transparent 50%)', backgroundSize: '20px 20px' }} />
         <div style={{ position: 'relative', zIndex: 1, maxWidth: 1200, margin: '0 auto', display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '2rem', flexWrap: 'wrap' }}>
-          <h2 style={{ fontFamily: 'var(--ix-font-display)', fontWeight: 800, fontSize: 'clamp(2rem, 4vw, 3.8rem)', color: '#fff', lineHeight: 1.05, letterSpacing: '-0.02em' }}>
+          <h2 style={{ fontFamily: '"Montserrat", Arial, sans-serif', fontWeight: 400, fontSize: 'clamp(2rem, 4vw, 3.8rem)', color: '#fff', lineHeight: 1.05, letterSpacing: '-0.02em' }}>
             Engineered for<br />
             <em style={{ fontFamily: 'var(--ix-font-serif)', fontStyle: 'italic', fontWeight: 400 }}>Sustainable Growth</em>
           </h2>
@@ -155,7 +153,7 @@ const SolutionsPage = () => {
       </section>
 
       {/* ══ THE GROWTH Blueprint ══ */}
-      <section id="blueprint" className="ix-section" style={{ background: '#fff', textAlign: 'center', padding: '120px clamp(60px, 8vw, 100px)', overflow: 'hidden', position: 'relative' }}>
+      <section id="blueprint" className="ix-section" style={{ background: '#fff', textAlign: 'center', padding: '120px var(--section-px)', overflow: 'hidden', position: 'relative' }}>
         <div style={{ position: 'relative', zIndex: 1, maxWidth: '1200px', margin: '0 auto' }}>
           <h2 data-aos="fade-up" style={{ fontFamily: 'var(--ix-font-display)', fontWeight: 700, fontSize: 'clamp(2rem, 3.5vw, 2.8rem)', color: '#111', marginBottom: '100px', letterSpacing: '-0.02em' }}>
             The Growth Blueprint
@@ -167,22 +165,22 @@ const SolutionsPage = () => {
               const dropAmount = isHigh ? 30 : 120; // 30px for high, 120px for low
 
               return (
-                <div key={item.label} className={`ix-d${i + 1} data-aos="fade-up"`} style={{ 
-                  position: 'relative', 
-                  flex: 1, 
+                <div key={item.label} className={`ix-d${i + 1} data-aos="fade-up"`} style={{
+                  position: 'relative',
+                  flex: 1,
                   maxWidth: '220px', // Exact card size constraint
-                  display: 'flex', 
-                  flexDirection: 'column', 
+                  display: 'flex',
+                  flexDirection: 'column',
                   alignItems: 'center',
                   marginTop: `${dropAmount}px`,
                   zIndex: 1
                 }}>
                   {/* Horizontal line to the next card */}
                   {i < blueprint.length - 1 && (
-                    <div style={{ 
-                      position: 'absolute', 
+                    <div style={{
+                      position: 'absolute',
                       top: `-${dropAmount}px`, // Reaches exactly the top 0 line
-                      left: '50%', 
+                      left: '50%',
                       width: 'calc(100% + 30px)', // Matches gap: 30px
                       borderTop: '1px dashed #e5e7eb',
                       zIndex: 0
@@ -190,21 +188,21 @@ const SolutionsPage = () => {
                   )}
 
                   {/* Vertical drop line */}
-                  <div style={{ 
-                    position: 'absolute', 
-                    top: `-${dropAmount}px`, 
-                    left: '50%', 
-                    height: `${dropAmount}px`, 
+                  <div style={{
+                    position: 'absolute',
+                    top: `-${dropAmount}px`,
+                    left: '50%',
+                    height: `${dropAmount}px`,
                     borderLeft: '1px dashed #e5e7eb',
                     zIndex: 0
                   }}></div>
 
                   {/* Card */}
-                  <div style={{ 
-                    background: '#fff', 
-                    border: '1px solid #f3f4f6', 
-                    borderRadius: '16px', 
-                    padding: '2rem 1.5rem', 
+                  <div style={{
+                    background: '#fff',
+                    border: '1px solid #f3f4f6',
+                    borderRadius: '16px',
+                    padding: '2rem 1.5rem',
                     textAlign: 'left',
                     boxShadow: '0 4px 20px -5px rgba(0,0,0,0.05)',
                     width: '100%',

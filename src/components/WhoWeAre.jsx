@@ -5,6 +5,7 @@ import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import "./InfynixDesign.css";
 import storyVideo from "../assets/video.mp4";
+import teamImg from '../assets/team.png';
 
 export function useIxReveal() {
   useEffect(() => {
@@ -19,25 +20,25 @@ export function useIxReveal() {
 }
 
 const CULTURE_CARDS = [
-  { title: "Precision",  icon: "⬡", text: "We approach system design with extreme mathematical and architectural rigor. By maintaining a standard of clean code, automated testing, and defensive programming, we ensure that every growth engine we build performs flawlessly under peak loads." },
-  { title: "Velocity",   icon: "△", text: "We prioritize swift execution and continuous integration. By utilizing modular architectures, automated deployment pipelines, and agile feedback loops, we deliver production-ready features quickly without compromising reliability." },
-  { title: "Ownership",  icon: "◎", text: "We take full end-to-end accountability for our projects. Our team operates with a product-mindset, proactively identifying potential system bottlenecks, recommending optimal cloud configurations, and ensuring long-term system success." },
-  { title: "Security",   icon: "⬛", text: "We embed security and privacy guidelines into every layer of our stack. From data encryption and secure API gateways to real-time anomaly detection, we protect sensitive enterprise assets against evolving threat vectors." },
+  { title: "Precision", icon: "⬡", text: "We approach system design with extreme mathematical and architectural rigor. By maintaining a standard of clean code, automated testing, and defensive programming, we ensure that every growth engine we build performs flawlessly under peak loads." },
+  { title: "Velocity", icon: "△", text: "We prioritize swift execution and continuous integration. By utilizing modular architectures, automated deployment pipelines, and agile feedback loops, we deliver production-ready features quickly without compromising reliability." },
+  { title: "Ownership", icon: "◎", text: "We take full end-to-end accountability for our projects. Our team operates with a product-mindset, proactively identifying potential system bottlenecks, recommending optimal cloud configurations, and ensuring long-term system success." },
+  { title: "Security", icon: "⬛", text: "We embed security and privacy guidelines into every layer of our stack. From data encryption and secure API gateways to real-time anomaly detection, we protect sensitive enterprise assets against evolving threat vectors." },
 ];
 
 const STATS = [
   { num: "900+", label: "Rapidly growing tribe" },
-  { num: "7×",   label: "Great Place to Work award winner" },
-  { num: "90%",  label: "Growth from referrals" },
+  { num: "7×", label: "Great Place to Work award winner" },
+  { num: "90%", label: "Growth from referrals" },
   { num: "150+", label: "Enterprise systems shipped" },
 ];
 
-const PILLARS = [
-  { title: "Deep Systems Engineering",    desc: "Architecting robust, scalable, and resilient software networks tailored to complex business objectives.", icon: "⬡" },
-  { title: "Direct-Access Collaboration", desc: "Offering seamless, high-ownership engineering partnerships focused on driving real-world outcomes.", icon: "◎" },
-  { title: "Elite Technical Expertise",   desc: "Powered by highly skilled, senior software architects, developers, and data engineers.", icon: "△" },
-  { title: "Vendor-Agnostic Integrity",   desc: "Designing custom, client-first integrations by harmonizing Growth Engineering frameworks with advanced Growth Systems.", icon: "◇" },
-  { title: "AI & Surveillance Leadership",desc: "Pioneering state-of-the-art computer vision models, predictive analytics, and automated growth loops.", icon: "⬛" },
+const METHODOLOGY = [
+  { title: "1. Systems Audit & Architecture", desc: "We evaluate your current technical stack and operational workflows to identify bottlenecks and map out a connected architecture.", icon: "⬡" },
+  { title: "2. Data & Tracking Implementation", desc: "We deploy server-side tracking, analytics, and CRM integrations so every decision is powered by real revenue data.", icon: "◎" },
+  { title: "3. Scalable Web & App Engineering", desc: "We build custom, high-speed applications and headless commerce engines designed for extreme conversion and scale.", icon: "△" },
+  { title: "4. Performance Marketing & SEO", desc: "We drive highly qualified traffic into your ecosystem through advanced algorithmic bidding and technical search optimization.", icon: "◇" },
+  { title: "5. Automated Growth Loops & AI", desc: "We integrate computer vision and AI agents to automate daily operations and create self-sustaining growth loops.", icon: "⬛" },
 ];
 
 const Arrow = () => (
@@ -52,47 +53,54 @@ export default function WhoWeAre() {
   return (
     <div style={{ background: "#fff" }}>
 
-      {/* ══ HERO — dark teal ══ */}
+      {/* ══ HERO — Zendesk Replica ══ */}
       <section style={{
-        background: "var(--ix-dark)",
-        minHeight: "100vh",
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "flex-end",
-        padding: "clamp(80px, 12vw, 160px) clamp(20px, 8vw, 120px) clamp(56px, 8vw, 96px)",
-        position: "relative",
-        overflow: "hidden",
+        background: '#ffffff',
+        minHeight: '85vh',
+        display: 'grid',
+        gridTemplateColumns: '1fr 1fr',
+        alignItems: 'center',
+        position: 'relative',
+        padding: '120px var(--section-px) 80px',
+        gap: '4rem',
+        overflow: 'hidden'
       }}>
-        {/* Teal grid */}
-        <div style={{ position: "absolute", inset: 0, backgroundImage: "linear-gradient(rgba(0,122,94,0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(0,122,94,0.06) 1px, transparent 1px)", backgroundSize: "80px 80px", pointerEvents: "none" }} />
-
-        {/* Teal blobs */}
-        <div className="ix-blob-container">
-          <div className="ix-blob ix-blob-1" />
-          <div className="ix-blob ix-blob-2" />
+        {/* Radial ambient glow */}
+        <div style={{
+          position: 'absolute',
+          bottom: '-100px',
+          left: '0',
+          width: '100%',
+          height: '250px',
+          background: 'radial-gradient(ellipse at 80% 50%, rgba(0, 122, 94, 0.7) 0%, rgba(0, 122, 93, 0.13) 55%, rgba(255,255,255,0) 85%)',
+          filter: 'blur(90px)',
+          pointerEvents: 'none',
+          zIndex: 0
+        }} />
+        {/* Left */}
+        <div style={{ position: 'relative', zIndex: 1 }} data-aos="fade-up">
+          <h1 style={{ fontFamily: 'var(--ix-font-display)', fontWeight: 500, fontSize: 'clamp(2.3rem, 4.3vw,3.8rem)', color: '#111', lineHeight: 1.1, marginTop: '60px', marginBottom: '1.5rem', letterSpacing: '-0.02em' }}>
+            Engineered for Sustainable Growth.
+          </h1>
+          <p style={{ fontFamily: 'var(--ix-font-body)', fontSize: '1rem', color: '#111', lineHeight: 1.6, marginBottom: '1.5rem', maxWidth: '520px' }}>
+            Traditional agencies offer fragmented services—marketing without operations, or websites without CRM integrations. We are a Growth Engineering Company. We build connected ecosystems.
+          </p>
+          <p style={{ fontFamily: 'var(--ix-font-body)', fontSize: '1.1rem', color: '#111', lineHeight: 1.6, marginBottom: '2.5rem', maxWidth: '520px' }}>
+            By integrating custom software, advanced analytics, and performance marketing, we engineer scalable systems that drive measurable business outcomes.
+          </p>
+          <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
+            <Link to="/contact" style={{ background: '#007A5E', color: '#ffffffff', padding: '0.9rem 1.8rem', borderRadius: '40px', fontWeight: 600, textDecoration: 'none', display: 'inline-flex', alignItems: 'center', transition: 'background 0.3s' }} onMouseEnter={e => e.currentTarget.style.background = '#96c200'} onMouseLeave={e => e.currentTarget.style.background = '#a7d600'}>
+              Try it for free
+            </Link>
+            <a href="#story" style={{ background: '#fff', border: '1px solid #ccc', color: '#111', padding: '0.9rem 1.8rem', borderRadius: '40px', fontWeight: 600, textDecoration: 'none', display: 'inline-flex', alignItems: 'center', transition: 'border-color 0.3s' }} onMouseEnter={e => e.currentTarget.style.borderColor = '#999'} onMouseLeave={e => e.currentTarget.style.borderColor = '#ccc'}>
+              View demo
+            </a>
+          </div>
         </div>
 
-        {/* Right stripe */}
-        <div style={{ position: "absolute", top: 0, right: "clamp(20px, 8vw, 120px)", width: 2, height: "50%", background: "linear-gradient(to bottom, var(--ix-primary-lt), transparent)", opacity: 0.5 }} />
-
-        <div style={{ position: "relative", zIndex: 1, maxWidth: 1300 }}>
-          <span className="ix-eyebrow ix-eyebrow--light" data-aos="fade-up">Who We Are</span>
-
-          <h1 style={{ fontFamily: "var(--ix-font-display)", fontWeight: 800, fontSize: "clamp(2rem, 6vw, 7rem)", lineHeight: 0.93, letterSpacing: "-0.03em", color: "#fff", marginBottom: "2.5rem" }}>
-            <span data-aos-delay="100" data-aos="fade-up" style={{ display: "block" }}>Architecting</span>
-            <span data-aos-delay="200" data-aos="fade-up" style={{ display: "block" }}>Next-Gen</span>
-            <em data-aos-delay="300" data-aos="fade-up" style={{ display: "block", fontFamily: "var(--ix-font-serif)", fontStyle: "italic", fontWeight: 400, color: "var(--ix-primary-lt)" }}>Growth Engines</em>
-          </h1>
-
-          <div style={{ display: "flex", gap: "2rem", flexWrap: "wrap", alignItems: "flex-end" }}>
-            <p data-aos-delay="400" data-aos="fade-up" style={{ fontFamily: "var(--ix-font-body)", fontSize: "clamp(0.9rem, 1.3vw, 1.05rem)", color: "rgba(255,255,255,0.45)", lineHeight: 1.75, maxWidth: 480 }}>
-              Infynix Solutions is your dedicated AI Surveillance & Growth Systems partner — delivering deep systems engineering, direct-access collaboration, and elite technical expertise.
-            </p>
-            <div className="ix-d5" data-aos="fade-up" style={{ display: "flex", gap: "1rem" }}>
-              <Link to="/contact" className="ix-btn-primary">Work With Us <Arrow /></Link>
-              <a href="#story" className="ix-btn-outline-wh">Our Story</a>
-            </div>
-          </div>
+        {/* Right — Image */}
+        <div style={{ position: 'relative', zIndex: 1, display: 'flex', justifyContent: 'center' }} data-aos="fade-up" data-aos-delay="200">
+          <img src="https://web-assets.zendesk.com/is/image/zendesk/Hero-4?fmt=avif-alpha&qlt=65" alt="Who We Are" style={{ width: '100%', maxWidth: '400px', height: 'auto', borderRadius: '40px', objectFit: 'cover', aspectRatio: '1/1', }} />
         </div>
       </section>
 
@@ -101,14 +109,14 @@ export default function WhoWeAre() {
         <div style={{ maxWidth: 1200, margin: "0 auto" }}>
           <div style={{ marginBottom: "clamp(2rem, 5vw, 4rem)" }}>
             <span className="ix-teal-bar" />
-            <h2 data-aos="fade-up" style={{ fontFamily: "var(--ix-font-display)", fontWeight: 800, fontSize: "clamp(2rem, 3.5vw, 3rem)", color: "var(--ix-text)", lineHeight: 1.1, letterSpacing: "-0.02em" }}>
-              What We<br />
-              <em style={{ fontFamily: "var(--ix-font-serif)", fontStyle: "italic", fontWeight: 400, color: "var(--ix-primary)" }}>Deliver</em>
+            <h2 data-aos="fade-up" style={{ fontFamily: "var(--ix-font-display)", fontWeight: 600, fontSize: "clamp(2rem, 3.5vw, 3rem)", color: "var(--ix-text)", lineHeight: 1.1, letterSpacing: "-0.02em" }}>
+              Our<br />
+              <em style={{ fontFamily: "var(--ix-font-serif)", fontStyle: "italic", fontWeight: 400, color: "var(--ix-primary)" }}>Methodology</em>
             </h2>
           </div>
 
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: "1px", background: "var(--ix-border-n)", border: "1px solid var(--ix-border-n)", borderRadius: 20, overflow: "hidden" }}>
-            {PILLARS.map((item, i) => (
+            {METHODOLOGY.map((item, i) => (
               <div
                 key={item.title}
                 className={`-scale ix-d${Math.min(i + 1, 7)} data-aos="fade-up"`}
@@ -137,11 +145,11 @@ export default function WhoWeAre() {
         <div style={{
           background: "var(--ix-primary-bg)",
           display: "flex", flexDirection: "column", justifyContent: "center",
-          padding: "clamp(56px, 8vw, 100px) clamp(20px, 6vw, 80px)",
+          padding: "clamp(56px, 8vw, 100px) var(--section-px)",
           borderRight: "1px solid var(--ix-border)",
         }}>
           <span className="ix-eyebrow" data-aos="fade-up">Our Story</span>
-          <h2 data-aos-delay="100" data-aos="fade-up" style={{ fontFamily: "var(--ix-font-display)", fontWeight: 800, fontSize: "clamp(2rem, 3.5vw, 3.5rem)", lineHeight: 1.05, color: "var(--ix-text)", letterSpacing: "-0.02em", marginBottom: "1.5rem" }}>
+          <h2 data-aos-delay="100" data-aos="fade-up" style={{ fontFamily: "var(--ix-font-display)", fontWeight: 600, fontSize: "clamp(2rem, 3.5vw, 3.5rem)", lineHeight: 1.05, color: "var(--ix-text)", letterSpacing: "-0.02em", marginBottom: "1.5rem" }}>
             From Vision<br />to Scaled<br />
             <em style={{ fontFamily: "var(--ix-font-serif)", fontStyle: "italic", fontWeight: 400, color: "var(--ix-primary)" }}>Systems</em>
           </h2>
@@ -166,24 +174,24 @@ export default function WhoWeAre() {
 
         <div style={{ maxWidth: 1400, margin: "0 auto", position: 'relative', zIndex: 1, padding: '0 2rem' }}>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(400px, 1fr))', gap: '4rem', alignItems: 'flex-start' }}>
-            
+
             {/* Left Column */}
             <div data-aos="fade-right">
               <div style={{ fontSize: '0.75rem', color: 'var(--ix-primary)', textTransform: 'uppercase', letterSpacing: '1px', fontWeight: 700, borderBottom: '2px solid var(--ix-text)', paddingBottom: '0.5rem', marginBottom: '2.5rem', display: 'inline-block' }}>
                 OUR SCALE
               </div>
-              <h2 style={{ fontFamily: "var(--ix-font-display)", fontWeight: 800, fontSize: "clamp(3rem, 5vw, 4.5rem)", color: "var(--ix-text)", letterSpacing: "-0.02em", lineHeight: 1.1, margin: "0 0 1.5rem" }}>
+              <h2 style={{ fontFamily: "var(--ix-font-display)", fontWeight: 600, fontSize: "clamp(3rem, 5vw, 4.5rem)", color: "var(--ix-text)", letterSpacing: "-0.02em", lineHeight: 1.1, margin: "0 0 1.5rem" }}>
                 Impact by<br />
                 <em style={{ fontFamily: "var(--ix-font-serif)", fontStyle: "italic", fontWeight: 400, color: "var(--ix-primary)" }}>the Numbers</em>
               </h2>
               <p style={{ fontFamily: "var(--ix-font-body)", fontSize: "1.1rem", color: "var(--ix-text)", lineHeight: 1.6, maxWidth: "400px", marginBottom: "3rem" }}>
                 Engineering high-performance growth for the world's most ambitious brands.
               </p>
-              
+
               <div style={{ borderRadius: '16px', overflow: 'hidden', filter: 'grayscale(100%) opacity(80%)' }}>
                 <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" alt="Team Collaboration" style={{ width: '100%', display: 'block', objectFit: 'cover', height: '280px' }} />
               </div>
-              
+
             </div>
 
             {/* Right Column */}
@@ -192,8 +200,8 @@ export default function WhoWeAre() {
               <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(180px, 1fr))", gap: "1rem", marginBottom: "1rem" }}>
                 {[
                   { num: "900+", label: "CLIENTS SERVED" },
-                  { num: "7x",   label: "GROWTH MULTIPLIER" },
-                  { num: "90%",  label: "RETENTION RATE" },
+                  { num: "7x", label: "GROWTH MULTIPLIER" },
+                  { num: "90%", label: "RETENTION RATE" },
                   { num: "150+", label: "ENGINEERS" },
                 ].map((s, i) => (
                   <div key={i} style={{ background: '#fff', padding: '2.5rem 1.8rem 2rem', borderRadius: '12px', border: '1px solid rgba(0,0,0,0.06)', display: 'flex', flexDirection: 'column' }}>
@@ -216,13 +224,13 @@ export default function WhoWeAre() {
                     <p style={{ fontFamily: 'var(--ix-font-body)', fontSize: '.9rem', color: 'var(--ix-muted)', margin: 0, maxWidth: '400px', lineHeight: 1.6 }}>We provide the technical backbone for rapid-growth tech ecosystems.</p>
                   </div>
                 </div>
-                
+
                 <Link to="/case-studies" style={{ textDecoration: 'none', color: 'var(--ix-text)', fontSize: '0.8rem', fontWeight: 700, letterSpacing: '1px', textTransform: 'uppercase', borderBottom: '1.5px solid var(--ix-text)', paddingBottom: '0.2rem' }}>
                   EXPLORE CASE STUDIES
                 </Link>
               </div>
             </div>
-            
+
           </div>
         </div>
       </section>
@@ -259,7 +267,7 @@ export default function WhoWeAre() {
       <section className="ix-section" style={{ background: "#fff" }}>
         <div style={{ maxWidth: 1200, margin: "0 auto" }}>
           <span className="ix-teal-bar" />
-          <h2 data-aos="fade-up" style={{ fontFamily: "var(--ix-font-display)", fontWeight: 800, fontSize: "clamp(2rem, 3.5vw, 3rem)", color: "var(--ix-text)", letterSpacing: "-0.02em", lineHeight: 1.1, marginBottom: "clamp(2rem, 5vw, 4rem)" }}>
+          <h2 data-aos="fade-up" style={{ fontFamily: "var(--ix-font-display)", fontWeight: 600, fontSize: "clamp(2rem, 3.5vw, 3rem)", color: "var(--ix-text)", letterSpacing: "-0.02em", lineHeight: 1.1, marginBottom: "clamp(2rem, 5vw, 4rem)" }}>
             Culture that<br />
             <em style={{ fontFamily: "var(--ix-font-serif)", fontStyle: "italic", fontWeight: 400, color: "var(--ix-primary)" }}>Drives Excellence</em>
           </h2>
@@ -283,7 +291,7 @@ export default function WhoWeAre() {
       </section>
 
       {/* ══ GLOBAL STATEMENT — teal ══ */}
-      <section style={{ background: "var(--ix-primary)", padding: "clamp(64px, 10vw, 120px) clamp(20px, 8vw, 120px)", position: "relative", overflow: "hidden" }}>
+      <section style={{ background: "var(--ix-primary)", padding: "clamp(64px, 10vw, 120px) var(--section-px)", position: "relative", overflow: "hidden" }}>
         <div style={{ position: "absolute", inset: 0, opacity: 0.06, backgroundImage: "repeating-linear-gradient(-45deg, #fff 0, #fff 1px, transparent 0, transparent 50%)", backgroundSize: "20px 20px" }} />
         <div style={{ maxWidth: 1200, margin: "0 auto", position: "relative", zIndex: 1 }}>
           <p data-aos="fade-up" style={{ fontFamily: "var(--ix-font-display)", fontWeight: 600, fontSize: "clamp(1.8rem, 4.4vw, 4.5rem)", lineHeight: 1.1, letterSpacing: "-0.025em", color: "#fff" }}>
@@ -305,8 +313,8 @@ export default function WhoWeAre() {
             Whether you're scaling a startup or transforming an enterprise, Infynix engineers your path to sustainable growth.
           </p>
           <div data-aos-delay="300" data-aos="fade-up" style={{ display: "flex", justifyContent: "center", gap: "1rem", flexWrap: "wrap" }}>
-            <Link to="/contact" className="ix-btn-primary">Get in Touch ↗</Link>
-            <Link to="/growth-engineering" className="ix-btn-outline-wh">Our Method</Link>
+            <Link to="/contact" className="ix-btn-primary">Book a Systems Audit ↗</Link>
+            <Link to="/growth-engineering" className="ix-btn-outline-wh">Discover Growth Engineering</Link>
           </div>
         </div>
       </section>
