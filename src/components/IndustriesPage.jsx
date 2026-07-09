@@ -123,7 +123,7 @@ const IndustriesPage = () => {
   const data = industriesData[industryKey];
   const pageImage = industryImages[industryKey] || industryImages['healthcare'];
   const testimonials = industryTestimonials[industryKey] || industryTestimonials['default'];
-  
+
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
 
   useIxReveal();
@@ -142,6 +142,15 @@ const IndustriesPage = () => {
       />
 
       <style>{`
+        /* ===== FIX: --section-px was used but never defined anywhere below.
+           Without this, every "padding: 0 var(--section-px)" declaration was
+           INVALID and got dropped by the browser, meaning .ind-container,
+           .ind-container-lg, and the Final CTA band had ZERO side padding
+           regardless of any other changes made. This is now fixed. ===== */
+        :root {
+          --section-px: clamp(20px, 5vw, 100px);
+        }
+
         .ind-section { padding: clamp(40px, 8vw, 180px) 0; }
         .ind-eyebrow { font-size: 0.8rem; font-weight: 600; color: #007A5E; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 1rem; display: block; }
         .ind-h1 { font-family: 'Montserrat', sans-serif; font-size: clamp(2.25rem, 4vw, 2.75rem); font-weight: 600; line-height: 1.1; margin-bottom: 1.5rem; letter-spacing: -0.01em; color: #111; }
@@ -161,36 +170,53 @@ const IndustriesPage = () => {
         .hide-scrollbar::-webkit-scrollbar { display: none; }
         .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
 
-        .ind-container { max-width: 1140px; margin: 0 auto; padding: 0 var(--section-px); width: 100%; }
-        .ind-container-sm { max-width: 1040px; margin: 0 auto; width: 100%; }
-        .ind-container-lg { max-width: 1200px; margin: 0 auto; padding: 0 var(--section-px); width: 100%; }
+        .ind-container { max-width: 1140px; margin: 0 auto; padding: 0 var(--section-px); width: 100%; box-sizing: border-box; }
+        .ind-container-sm { max-width: 1040px; margin: 0 auto; padding: 0 var(--section-px); width: 100%; box-sizing: border-box; }
+        .ind-container-lg { max-width: 1200px; margin: 0 auto; padding: 0 var(--section-px); width: 100%; box-sizing: border-box; }
 
-        .ind-hero-grid { display: grid; grid-template-columns: 0.9fr 1fr; gap: 5rem; align-items: center; }
+        /* Hero: text column sized to match image column, matching About page proportions.
+           380px hard cap removed from text elements below so this gap value is meaningful. */
+        .ind-hero-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 7rem; align-items: center; }
         .ind-feature-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6rem; align-items: center; }
         .ind-works-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3rem; }
         .ind-resources-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
         .ind-testimonial-grid { display: grid; grid-template-columns: 400px 1fr; gap: 4rem; align-items: center; }
 
+        .ind-hero-text { max-width: 480px; }
+
         @media (min-width: 1024px) and (max-width: 1439px) {
+          :root { --section-px: clamp(40px, 6vw, 80px); }
           .ind-section { padding: clamp(40px, 6vw, 80px) 0; }
           .ind-container { max-width: 960px; }
           .ind-container-sm { max-width: 900px; }
           .ind-container-lg { max-width: 1000px; }
-          .ind-hero-grid { gap: 3rem; }
+          .ind-hero-grid { gap: 4rem; }
           .ind-feature-grid { gap: 3.5rem; }
           .ind-works-grid { gap: 2rem; }
           .ind-resources-grid { gap: 1.5rem; }
           .ind-testimonial-grid { grid-template-columns: 380px 1fr; gap: 3rem; }
+          .ind-hero-text { max-width: 420px; }
         }
 
         @media (min-width: 1440px) {
+          :root { --section-px: clamp(80px, 9vw, 180px); }
           .ind-section { padding: clamp(80px, 9vw, 180px) 0; }
           .ind-container { max-width: 1400px; }
           .ind-container-sm { max-width: 1300px; }
           .ind-container-lg { max-width: 1450px; }
-          .ind-hero-grid { grid-template-columns: 0.95fr 1fr; gap: 6rem; }
+          .ind-hero-grid { grid-template-columns: 1fr 1fr; gap: 8rem; }
           .ind-feature-grid { gap: 8rem; }
           .ind-testimonial-grid { grid-template-columns: 450px 1fr; gap: 6rem; }
+          .ind-hero-text { max-width: 540px; }
+        }
+
+        @media (max-width: 1023px) {
+          .ind-hero-grid { grid-template-columns: 1fr; gap: 3rem; }
+          .ind-feature-grid { grid-template-columns: 1fr; gap: 3rem; }
+          .ind-works-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+          .ind-resources-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+          .ind-testimonial-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+          .ind-hero-text { max-width: 100%; }
         }
       `}</style>
 
@@ -198,17 +224,17 @@ const IndustriesPage = () => {
       <section className="ind-section" style={{ position: 'relative', overflow: 'hidden', minHeight: '85vh', display: 'flex', alignItems: 'center', marginTop: '60px' }}>
         <div className="ind-glow" style={{ right: '-200px' }} />
         <div className="ind-container ind-hero-grid" style={{ position: 'relative', zIndex: 1 }}>
-          <div data-aos="fade-up">
+          <div className="ind-hero-text" data-aos="fade-up">
             <span className="ind-eyebrow">Industry Solutions</span>
-            <h1 className="ind-h1" style={{ maxWidth: '380px' }}>{data.heroTitle}</h1>
-            <p className="ind-p" style={{ maxWidth: '380px' }}>Businesses don't struggle because they lack ambition. They struggle because technology, marketing, operations, and data operate independently. We engineer intelligent systems that help {data.name} organizations attract, engage, convert, and scale.</p>
-            <div style={{ display: 'flex', gap: '1rem', flexWrap: 'nowrap', whiteSpace: 'nowrap', maxWidth: '380px' }}>
+            <h1 className="ind-h1">{data.heroTitle}</h1>
+            <p className="ind-p">Businesses don't struggle because they lack ambition. They struggle because technology, marketing, operations, and data operate independently. We engineer intelligent systems that help {data.name} organizations attract, engage, convert, and scale.</p>
+            <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
               <Link to="/contact" className="ind-btn-primary">Schedule a Discovery Call</Link>
               <Link to="/solutions" className="ind-btn-outline">Explore Our Solutions</Link>
             </div>
           </div>
           <div data-aos="fade-up" data-aos-delay="200" style={{ display: 'flex', justifyContent: 'center' }}>
-            <img src={pageImage} alt={data.name} className="ind-img" style={{ width: '100%', maxWidth: '100%', aspectRatio: '1/1', borderRadius: '24px', objectFit: 'cover' }} />
+            <img src={pageImage} alt={data.name} className="ind-img" style={{ width: '100%', maxWidth: '480px', height: 'auto', aspectRatio: '1/1', borderRadius: '32px', objectFit: 'cover' }} />
           </div>
         </div>
       </section>
@@ -270,9 +296,9 @@ const IndustriesPage = () => {
       {/* 5. FEATURED TESTIMONIAL SLIDER */}
       <section className="ind-section" style={{ background: '#F4F5F0', position: 'relative' }}>
         <div className="ind-container-lg ind-testimonial-grid">
-          
+
           {/* Nav Arrows */}
-          <button 
+          <button
             onClick={() => setCurrentTestimonial(prev => prev === 0 ? testimonials.length - 1 : prev - 1)}
             style={{ position: 'absolute', left: 'clamp(20px, 5vw, 60px)', top: '50%', transform: 'translateY(-50%)', width: '48px', height: '48px', borderRadius: '50%', background: 'rgba(0,0,0,0.05)', border: 'none', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', transition: 'background 0.2s' }}
             onMouseEnter={(e) => e.currentTarget.style.background = 'rgba(0,0,0,0.1)'}
@@ -280,7 +306,7 @@ const IndustriesPage = () => {
           >
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#111" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
           </button>
-          <button 
+          <button
             onClick={() => setCurrentTestimonial(prev => (prev + 1) % testimonials.length)}
             style={{ position: 'absolute', right: 'clamp(20px, 5vw, 60px)', top: '50%', transform: 'translateY(-50%)', width: '48px', height: '48px', borderRadius: '50%', background: 'rgba(0,0,0,0.05)', border: 'none', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', transition: 'background 0.2s' }}
             onMouseEnter={(e) => e.currentTarget.style.background = 'rgba(0,0,0,0.1)'}
@@ -290,10 +316,10 @@ const IndustriesPage = () => {
           </button>
 
           <div data-aos="fade-right">
-            <img 
-              src={testimonials[currentTestimonial].image} 
-              alt={testimonials[currentTestimonial].name} 
-              style={{ width: '100%', height: '460px', objectFit: 'cover', borderRadius: '24px' }} 
+            <img
+              src={testimonials[currentTestimonial].image}
+              alt={testimonials[currentTestimonial].name}
+              style={{ width: '100%', height: '460px', objectFit: 'cover', borderRadius: '24px' }}
             />
           </div>
           <div data-aos="fade-left">
@@ -306,12 +332,12 @@ const IndustriesPage = () => {
             <div style={{ fontSize: '14px', color: '#6B7280' }}>
               {testimonials[currentTestimonial].role}
             </div>
-            
+
             <div style={{ display: 'flex', gap: '8px', marginTop: '3rem' }}>
               {testimonials.map((_, idx) => (
-                <div 
-                  key={idx} 
-                  style={{ height: '3px', flex: 1, background: idx === currentTestimonial ? '#007A5E' : '#E5E7EB', transition: 'background 0.3s' }} 
+                <div
+                  key={idx}
+                  style={{ height: '3px', flex: 1, background: idx === currentTestimonial ? '#007A5E' : '#E5E7EB', transition: 'background 0.3s' }}
                 />
               ))}
             </div>
@@ -319,7 +345,7 @@ const IndustriesPage = () => {
         </div>
 
         {/* Logos Row */}
-        <div className="ind-container" style={{ margin: '4rem auto 0', padding: '4rem 0 0', borderTop: '1px solid rgba(0,0,0,0.08)', display: 'flex', justifyContent: 'center', gap: '4rem', flexWrap: 'wrap', opacity: 0.5 }}>
+        <div className="ind-container" style={{ margin: '4rem auto 0', paddingTop: '4rem', borderTop: '1px solid rgba(0,0,0,0.08)', display: 'flex', justifyContent: 'center', gap: '4rem', flexWrap: 'wrap', opacity: 0.5 }}>
           {trustLogos.map((logo, idx) => (
             <img key={idx} src={logo} alt="Partner Logo" style={{ height: '32px', filter: 'grayscale(100%)', objectFit: 'contain' }} />
           ))}
