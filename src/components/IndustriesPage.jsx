@@ -142,7 +142,7 @@ const IndustriesPage = () => {
       />
 
       <style>{`
-        .ind-section { padding: clamp(80px, 10vw, 120px) 0; }
+        .ind-section { padding: clamp(40px, 8vw, 180px) 0; }
         .ind-eyebrow { font-size: 0.8rem; font-weight: 600; color: #007A5E; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 1rem; display: block; }
         .ind-h1 { font-family: 'Montserrat', sans-serif; font-size: clamp(2.25rem, 4vw, 2.75rem); font-weight: 600; line-height: 1.1; margin-bottom: 1.5rem; letter-spacing: -0.01em; color: #111; }
         .ind-h2 { font-family: 'Montserrat', sans-serif; font-size: clamp(1.75rem, 3vw, 2rem); font-weight: 600; line-height: 1.15; margin-bottom: 1.5rem; letter-spacing: -0.01em; color: #111; }
@@ -153,19 +153,51 @@ const IndustriesPage = () => {
         .ind-btn-outline:hover { background: #F9FAFB; border-color: #D1D5DB; }
         .ind-btn-text { color: #007A5E; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; font-size: 1.1rem; }
         .ind-btn-text:hover { text-decoration: underline; }
-        .ind-glow { position: absolute; bottom: -50px; right: 0; width: 800px; height: 250px; background: radial-gradient(ellipse at center, rgba(0, 122, 94, 0.7) 0%, rgba(204, 255, 0, 0.25) 55%, rgba(255,255,255,0) 85%); filter: blur(90px); pointer-events: none; z-index: 0; }
+        .ind-glow { position: absolute; bottom: -50px; right: 0; width: clamp(800px, 60vw, 1200px); height: clamp(250px, 20vw, 400px); background: radial-gradient(ellipse at center, rgba(0, 122, 94, 0.7) 0%, rgba(204, 255, 0, 0.25) 55%, rgba(255,255,255,0) 85%); filter: blur(90px); pointer-events: none; z-index: 0; }
         .ind-img { border-radius: 24px; box-shadow: 0 20px 40px rgba(0,0,0,0.08); object-fit: cover; width: 100%; display: block; }
         .ind-card { background: #fff; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); padding: 2rem; transition: transform 0.3s, box-shadow 0.3s; }
         .ind-card:hover { transform: translateY(-5px); box-shadow: 0 20px 40px rgba(0,0,0,0.08); }
         .ind-icon-badge { width: 56px; height: 56px; border-radius: 50%; background: linear-gradient(160deg, #005A46 0%, #007A5E 55%, #004d3a 100%); color: #ffffff; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; }
         .hide-scrollbar::-webkit-scrollbar { display: none; }
         .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+        .ind-container { max-width: 1140px; margin: 0 auto; padding: 0 var(--section-px); width: 100%; }
+        .ind-container-sm { max-width: 1040px; margin: 0 auto; width: 100%; }
+        .ind-container-lg { max-width: 1200px; margin: 0 auto; padding: 0 var(--section-px); width: 100%; }
+
+        .ind-hero-grid { display: grid; grid-template-columns: 0.9fr 1fr; gap: 5rem; align-items: center; }
+        .ind-feature-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6rem; align-items: center; }
+        .ind-works-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3rem; }
+        .ind-resources-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+        .ind-testimonial-grid { display: grid; grid-template-columns: 400px 1fr; gap: 4rem; align-items: center; }
+
+        @media (min-width: 1024px) and (max-width: 1439px) {
+          .ind-section { padding: clamp(40px, 6vw, 80px) 0; }
+          .ind-container { max-width: 960px; }
+          .ind-container-sm { max-width: 900px; }
+          .ind-container-lg { max-width: 1000px; }
+          .ind-hero-grid { gap: 3rem; }
+          .ind-feature-grid { gap: 3.5rem; }
+          .ind-works-grid { gap: 2rem; }
+          .ind-resources-grid { gap: 1.5rem; }
+          .ind-testimonial-grid { grid-template-columns: 380px 1fr; gap: 3rem; }
+        }
+
+        @media (min-width: 1440px) {
+          .ind-section { padding: clamp(80px, 9vw, 180px) 0; }
+          .ind-container { max-width: 1400px; }
+          .ind-container-sm { max-width: 1300px; }
+          .ind-container-lg { max-width: 1450px; }
+          .ind-hero-grid { grid-template-columns: 0.95fr 1fr; gap: 6rem; }
+          .ind-feature-grid { gap: 8rem; }
+          .ind-testimonial-grid { grid-template-columns: 450px 1fr; gap: 6rem; }
+        }
       `}</style>
 
       {/* 1. HERO SECTION */}
       <section className="ind-section" style={{ position: 'relative', overflow: 'hidden', minHeight: '85vh', display: 'flex', alignItems: 'center', marginTop: '60px' }}>
         <div className="ind-glow" style={{ right: '-200px' }} />
-        <div style={{ maxWidth: 1140, margin: '0 auto', padding: '0 var(--section-px)', position: 'relative', zIndex: 1, display: 'grid', gridTemplateColumns: '0.75fr 1fr', gap: '5rem', alignItems: 'center', width: '100%' }}>
+        <div className="ind-container ind-hero-grid" style={{ position: 'relative', zIndex: 1 }}>
           <div data-aos="fade-up">
             <span className="ind-eyebrow">Industry Solutions</span>
             <h1 className="ind-h1" style={{ maxWidth: '380px' }}>{data.heroTitle}</h1>
@@ -176,19 +208,19 @@ const IndustriesPage = () => {
             </div>
           </div>
           <div data-aos="fade-up" data-aos-delay="200" style={{ display: 'flex', justifyContent: 'center' }}>
-            <img src={pageImage} alt={data.name} className="ind-img" style={{ width: '65%', maxWidth: '100%', aspectRatio: '1/1', borderRadius: '24px', objectFit: 'cover' }} />
+            <img src={pageImage} alt={data.name} className="ind-img" style={{ width: '100%', maxWidth: '100%', aspectRatio: '1/1', borderRadius: '24px', objectFit: 'cover' }} />
           </div>
         </div>
       </section>
 
       {/* 2. HOW IT WORKS */}
       <section className="ind-section" style={{ background: '#fff' }}>
-        <div style={{ maxWidth: 1040, margin: '0 auto' }}>
+        <div className="ind-container-sm">
           <div style={{ textAlign: 'center', marginBottom: '4rem' }} data-aos="fade-up">
             <span className="ind-eyebrow">How Infynix AI Works</span>
             <h2 className="ind-h2" style={{ maxWidth: 700, margin: '0 auto' }}>AI that works as hard as your team.</h2>
           </div>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '3rem' }}>
+          <div className="ind-works-grid">
             {data.howItWorks?.map((item, idx) => {
               const IconComponent = iconMap[item.icon] || Globe;
               return (
@@ -207,7 +239,7 @@ const IndustriesPage = () => {
 
       {/* 3. FEATURE BLOCK 1 (Text Left, Image Right) */}
       <section className="ind-section" style={{ overflow: 'hidden' }}>
-        <div style={{ maxWidth: 1140, margin: '0 auto', padding: '0 var(--section-px)', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '6rem', alignItems: 'center' }}>
+        <div className="ind-container ind-feature-grid">
           <div data-aos="fade-right">
             <span className="ind-eyebrow">The Challenge</span>
             <h2 className="ind-h2">The bottleneck in {data.name}.</h2>
@@ -222,7 +254,7 @@ const IndustriesPage = () => {
 
       {/* 4. FEATURE BLOCK 2 (Image Left, Text Right) */}
       <section className="ind-section" style={{ overflow: 'hidden' }}>
-        <div style={{ maxWidth: 1140, margin: '0 auto', padding: '0 var(--section-px)', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '6rem', alignItems: 'center' }}>
+        <div className="ind-container ind-feature-grid">
           <div data-aos="fade-right" style={{ display: 'flex', justifyContent: 'center' }}>
             <img src={data.images?.feature2 || defaultPlaceholders.feature2} alt="Industry Solution" className="ind-img" style={{ width: '100%', maxWidth: '480px', borderRadius: '24px', aspectRatio: '4/3' }} />
           </div>
@@ -237,7 +269,7 @@ const IndustriesPage = () => {
 
       {/* 5. FEATURED TESTIMONIAL SLIDER */}
       <section className="ind-section" style={{ background: '#F4F5F0', position: 'relative' }}>
-        <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 var(--section-px)', display: 'grid', gridTemplateColumns: '400px 1fr', gap: '4rem', alignItems: 'center' }}>
+        <div className="ind-container-lg ind-testimonial-grid">
           
           {/* Nav Arrows */}
           <button 
@@ -287,7 +319,7 @@ const IndustriesPage = () => {
         </div>
 
         {/* Logos Row */}
-        <div style={{ maxWidth: 1140, margin: '4rem auto 0', padding: '4rem var(--section-px) 0', borderTop: '1px solid rgba(0,0,0,0.08)', display: 'flex', justifyContent: 'center', gap: '4rem', flexWrap: 'wrap', opacity: 0.5 }}>
+        <div className="ind-container" style={{ margin: '4rem auto 0', padding: '4rem 0 0', borderTop: '1px solid rgba(0,0,0,0.08)', display: 'flex', justifyContent: 'center', gap: '4rem', flexWrap: 'wrap', opacity: 0.5 }}>
           {trustLogos.map((logo, idx) => (
             <img key={idx} src={logo} alt="Partner Logo" style={{ height: '32px', filter: 'grayscale(100%)', objectFit: 'contain' }} />
           ))}
@@ -296,7 +328,7 @@ const IndustriesPage = () => {
 
       {/* 6. FEATURE BLOCK 3 (Internal Use Case) */}
       <section className="ind-section" style={{ overflow: 'hidden' }}>
-        <div style={{ maxWidth: 1140, margin: '0 auto', padding: '0 var(--section-px)', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '6rem', alignItems: 'center' }}>
+        <div className="ind-container ind-feature-grid">
           <div data-aos="fade-right">
             <span className="ind-eyebrow">The Outcome</span>
             <h2 className="ind-h2">Measurable Business Impact.</h2>
@@ -312,7 +344,7 @@ const IndustriesPage = () => {
       {/* 6.5. RECOMMENDED SOLUTIONS */}
       {data.solutions && data.solutions.length > 0 && (
         <section className="ind-section" style={{ background: '#F9FAFB', overflow: 'hidden' }}>
-          <div style={{ maxWidth: 1140, margin: '0 auto', padding: '0 var(--section-px)' }}>
+          <div className="ind-container">
             <h2 className="ind-h2" data-aos="fade-up" style={{ textAlign: 'center', marginBottom: '3rem' }}>Recommended Solutions for {data.name}</h2>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem' }}>
               {data.solutions.map((solution, idx) => (
@@ -328,7 +360,7 @@ const IndustriesPage = () => {
 
       {/* 7. INTEGRATIONS BLOCK */}
       <section className="ind-section" style={{ background: '#fff' }}>
-        <div style={{ maxWidth: 1140, margin: '0 auto', padding: '0 var(--section-px)', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
+        <div className="ind-container" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
           <span className="ind-eyebrow" data-aos="fade-up">Integrations</span>
           <h2 className="ind-h2" data-aos="fade-up" data-aos-delay="100" style={{ maxWidth: 600 }}>Plays perfectly with the tools you already use.</h2>
           <p className="ind-p" data-aos="fade-up" data-aos-delay="200" style={{ marginBottom: '4rem' }}>No need to rip and replace. Our systems connect securely to your existing ERP, CRM, and communication platforms via robust APIs.</p>
@@ -340,9 +372,9 @@ const IndustriesPage = () => {
 
       {/* 8. ADDITIONAL RESOURCES GRID */}
       <section className="ind-section" style={{ background: '#fff' }}>
-        <div style={{ maxWidth: 1140, margin: '0 auto', padding: '0 var(--section-px)' }}>
+        <div className="ind-container">
           <h2 className="ind-h2" style={{ marginBottom: '3rem' }} data-aos="fade-up">Additional Resources</h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '2rem' }}>
+          <div className="ind-resources-grid">
             {[0, 1, 2].map((idx) => (
               <a href="#resource" key={idx} className="ind-card" style={{ padding: 0, overflow: 'hidden', textDecoration: 'none', display: 'block', border: '1px solid #E5E7EB' }} data-aos="fade-up" data-aos-delay={(idx + 1) * 100}>
                 <div style={{ height: 160, background: '#E5E7EB' }}>
@@ -363,7 +395,7 @@ const IndustriesPage = () => {
       {/* 8.5. FAQs */}
       {data.faqs && data.faqs.length > 0 && (
         <section className="ind-section" style={{ background: '#F9FAFB' }}>
-          <div style={{ maxWidth: 1140, margin: '0 auto', padding: '0 var(--section-px)' }}>
+          <div className="ind-container">
             <div style={{ textAlign: 'center', marginBottom: '4rem' }} data-aos="fade-up">
               <span className="ind-eyebrow">Frequently Asked Questions</span>
               <h2 className="ind-h2" style={{ maxWidth: 700, margin: '0 auto' }}>Common Questions About {data.name}.</h2>
