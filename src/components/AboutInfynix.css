@@ -2,6 +2,8 @@
   width: 100%;
   background: #ffffff;
   padding: clamp(60px, 8vw, 160px) 5%;
+  padding-left: clamp(60px, 10vw, 200px);
+  padding-bottom: clamp(100px, 12vw, 220px);
   font-family: "Montserrat", Arial, sans-serif;
   overflow: hidden;
   position: relative;
@@ -25,12 +27,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 4rem;
+  gap: 2rem;
 }
 
 @media (min-width: 1440px) {
   .about-infynix-container {
     max-width: 1400px;
+    gap: 2.5rem;
   }
 }
 
@@ -144,11 +147,16 @@
 
 /* RESPONSIVE */
 @media (max-width: 900px) {
+  .about-infynix-section {
+    padding-left: 5%;
+    padding-bottom: clamp(60px, 8vw, 160px);
+  }
+
   .about-infynix-container {
     flex-direction: column;
     gap: 3rem;
   }
-  
+
   .about-infynix-text-col,
   .about-infynix-media-col {
     flex: 1 1 100%;
@@ -156,20 +164,20 @@
     text-align: center;
     justify-content: center;
   }
-  
+
   .about-eyebrow-row {
     justify-content: center;
   }
-  
+
   .about-paragraph {
     margin-left: auto;
     margin-right: auto;
   }
-  
+
   .about-buttons {
     justify-content: center;
   }
-  
+
   .about-media-wrapper {
     max-width: 100%;
   }

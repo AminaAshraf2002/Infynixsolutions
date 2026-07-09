@@ -198,7 +198,7 @@ const InsightsPage = () => {
       />
 
       <style>{`
-        .insight-hero-section { padding: clamp(80px, 10vw, 120px) 0; }
+        .insight-hero-section { padding: clamp(80px, 10vw, 140px) 0; min-height: 85vh; }
         .insight-eyebrow { font-size: 0.8rem; font-weight: 600; color: #007A5E; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 1rem; display: block; }
         .insight-h1 { font-family: 'Montserrat', sans-serif; font-size: clamp(2.25rem, 4vw, 2.75rem); font-weight: 600; line-height: 1.1; margin-bottom: 1.5rem; letter-spacing: -0.01em; color: #111; }
         .insight-p { font-size: clamp(0.9375rem, 2vw, 1rem); color: #4B5563; line-height: 1.7; margin-bottom: 2rem; max-width: 600px; }
@@ -207,23 +207,33 @@ const InsightsPage = () => {
         .insight-btn-outline { background: transparent; color: #111; padding: 0.6rem 1.35rem; font-size: 0.85rem; border-radius: 50px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; transition: background 0.3s, border-color 0.3s; border: 1.5px solid #E5E7EB; cursor: pointer; }
         .insight-btn-outline:hover { background: #F9FAFB; border-color: #D1D5DB; }
         .insight-img { border-radius: 24px; box-shadow: 0 20px 40px rgba(0,0,0,0.08); object-fit: cover; width: 100%; display: block; }
+
+        @media (min-width: 992px) {
+          .insight-hero-section { min-height: 95vh; padding: clamp(100px, 12vw, 160px) 0; }
+          .insight-h1 { font-size: clamp(3rem, 4.5vw, 4rem) !important; }
+          .insight-p { font-size: 1.05rem !important; max-width: 460px !important; }
+        }
+
+        @media (max-width: 768px) {
+          .insight-hero-section { min-height: auto; padding: 60px 0; }
+        }
       `}</style>
 
       {/* ── TOP HEADER (HERO SECTION) ── */}
-      <section className="insight-hero-section" style={{ position: 'relative', overflow: 'hidden', minHeight: '85vh', display: 'flex', alignItems: 'center', marginTop: '60px' }}>
+      <section className="insight-hero-section" style={{ position: 'relative', overflow: 'hidden', display: 'flex', alignItems: 'center', marginTop: '60px' }}>
         <div style={{ position: 'absolute', bottom: '-50px', right: '-200px', width: '800px', height: '250px', background: 'radial-gradient(ellipse at center, rgba(0, 122, 94, 0.7) 0%, rgba(204, 255, 0, 0.25) 55%, rgba(255,255,255,0) 85%)', filter: 'blur(90px)', pointerEvents: 'none', zIndex: 0 }} />
-        <div style={{ maxWidth: 1140, margin: '0 auto', padding: '0 var(--section-px)', position: 'relative', zIndex: 1, display: 'grid', gridTemplateColumns: '0.75fr 1fr', gap: '5rem', alignItems: 'center', width: '100%' }}>
+        <div style={{ maxWidth: 1140, margin: '0 auto', padding: '0 var(--section-px)', position: 'relative', zIndex: 1, display: 'grid', gridTemplateColumns: '0.85fr 1fr', gap: '4rem', alignItems: 'center', width: '100%' }}>
           <div data-aos="fade-up">
             <span className="insight-eyebrow">INFYNIX INSIGHTS</span>
-            <h1 className="insight-h1" style={{ maxWidth: '420px' }}>Growth Insights</h1>
-            <p className="insight-p" style={{ maxWidth: '420px' }}>Exploring the intersection of complex infrastructure, sustainable engineering, and the future of industrial integration.</p>
+            <h1 className="insight-h1" style={{ maxWidth: '480px' }}>Growth Insights</h1>
+            <p className="insight-p" style={{ maxWidth: '480px' }}>Exploring the intersection of complex infrastructure, sustainable engineering, and the future of industrial integration.</p>
             <div style={{ display: 'flex', gap: '1rem', flexWrap: 'nowrap', whiteSpace: 'nowrap', maxWidth: '420px' }}>
               <a href="#articles" className="insight-btn-primary" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 800, behavior: 'smooth' }); }}>Explore Articles</a>
               <a href="#subscribe" className="insight-btn-outline" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' }); }}>Subscribe for Updates</a>
             </div>
           </div>
           <div data-aos="fade-up" data-aos-delay="200" style={{ display: 'flex', justifyContent: 'center' }}>
-            <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1200&q=80" alt="Growth Insights" className="insight-img" style={{ width: '82%', maxWidth: '100%', aspectRatio: '1/1', borderRadius: '24px', objectFit: 'cover' }} />
+            <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1200&q=80" alt="Growth Insights" className="insight-img" style={{ width: '90%', maxWidth: '100%', aspectRatio: '1/1', borderRadius: '24px', objectFit: 'cover' }} />
           </div>
         </div>
       </section>
