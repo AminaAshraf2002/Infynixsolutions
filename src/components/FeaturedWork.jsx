@@ -1,11 +1,11 @@
 import React from 'react';
 import './FeaturedWork.css';
-import work1 from '../assets/work1.avif';
-import work2 from '../assets/work2.avif';
-import work3 from '../assets/work3.avif';
-import work4 from '../assets/work4.avif';
-import work5 from '../assets/work5.avif';
-import work6 from '../assets/work6.avif';
+import work1 from '../assets/green1.png';
+import work2 from '../assets/webpage.png';
+import work3 from '../assets/green2.png';
+import work4 from '../assets/ai.png';
+import work5 from '../assets/green3.png';
+import work6 from '../assets/green4.png';
 
 const featuredProjects = [
   {
