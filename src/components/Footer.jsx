@@ -93,8 +93,8 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="footer-bottom" style={{ borderTop: '1px solid rgba(255, 255, 255, 0.05)', marginTop: '40px', paddingTop: '30px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '20px' }}>
-          <p style={{ fontSize: '0.8rem', color: '#6b7280' }}>© 2026 Infynix Solutions UK. Engineered for Excellence.</p>
+        <div className="footer-bottom" style={{ borderTop: '1px solid rgba(204, 191, 191, 0.28)', marginTop: '40px', paddingTop: '30px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '20px' }}>
+          <p style={{ fontSize: '0.8rem', color: '#ffffff' }}>© 2026 Infynix Solutions UK. Engineered for Excellence.</p>
         </div>
       </div>
     </footer>

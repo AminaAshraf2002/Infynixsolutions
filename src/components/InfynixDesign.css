@@ -117,7 +117,7 @@
 /* Eyebrow label */
 .ix-eyebrow {
   font-family: var(--ix-font-body);
-  font-size: 0.72rem;
+  font-size: 0.95rem;
   font-weight: 600;
   letter-spacing: 0.18em;
   text-transform: uppercase;
@@ -511,4 +511,9 @@
   .ix-blob-1, .ix-blob-2, .ix-blob-3 { width: 200px; height: 200px; }
   .ix-timeline::before { left: 20px; }
   .ix-timeline-num { width: 40px; height: 40px; font-size: 0.7rem; }
+  
+  .ix-eyebrow {
+    font-size: 1.25rem !important;
+    letter-spacing: 0.1em;
+  }
 }

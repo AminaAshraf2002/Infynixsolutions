@@ -103,15 +103,15 @@
   .hero-bg-wrapper {
     width: calc(100% - 32px);
     padding: 2rem;
-    min-height: 70vh;
+    min-height: 50vh;
   }
 
   .hero-title {
-    font-size: clamp(3.5rem, 7vw, 5rem);
+    font-size: clamp(1.5rem, 5vw, 1.8rem) !important;
   }
 
   .hero-subtitle {
-    font-size: 1.1rem;
+    font-size: 0.9rem !important;
   }
 }
 

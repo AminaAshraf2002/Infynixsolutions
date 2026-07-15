@@ -61,7 +61,16 @@
 
 @media (max-width: 768px) {
   .stats-grid {
-    grid-template-columns: 1fr;
-    gap: 4rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+  .stat-number-wrapper {
+    font-size: clamp(2rem, 5vw, 3rem);
+  }
+  .stat-suffix {
+    font-size: clamp(1.2rem, 3vw, 2rem);
+  }
+  .stat-label {
+    font-size: 0.75rem;
   }
 }

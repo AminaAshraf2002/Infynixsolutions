@@ -239,8 +239,8 @@ const InsightsPage = () => {
       </section>
 
       {/* ── FEATURED ARTICLE ── */}
-      <section style={{ padding: '20px clamp(60px, 8vw, 120px) 80px' }} data-aos="fade-up">
-        <div style={{ maxWidth: '1000px', margin: '0 auto', display: 'grid', gridTemplateColumns: '0.85fr 1.15fr', gap: '50px', alignItems: 'center' }}>
+      <section className="insight-featured-section" data-aos="fade-up">
+        <div className="insight-featured-grid">
           
           <Link to={`/insights/${featuredArticle.slug}`} style={{ position: 'relative', height: 'clamp(250px, 30vw, 400px)', display: 'block', overflow: 'hidden' }}>
             <div style={{ position: 'absolute', top: '20px', left: '20px', background: GREEN, color: '#fff', padding: '6px 12px', fontSize: '0.65rem', fontWeight: 700, letterSpacing: '2px', zIndex: 2 }}>
@@ -270,8 +270,8 @@ const InsightsPage = () => {
       </section>
 
       {/* ── FILTER BAR ── */}
-      <section style={{ borderTop: `1px solid ${BORDER}`, borderBottom: `1px solid ${BORDER}` }} data-aos="fade-in">
-        <div style={{ maxWidth: '1000px', margin: '0 auto', display: 'flex', flexWrap: 'wrap', gap: '20px', justifyContent: 'space-between', alignItems: 'center', padding: '15px clamp(60px, 8vw, 120px)', fontSize: '0.65rem', textTransform: 'uppercase', letterSpacing: '1px', fontWeight: 600 }}>
+      <section className="insight-filter-section" style={{ borderTop: `1px solid ${BORDER}`, borderBottom: `1px solid ${BORDER}` }} data-aos="fade-in">
+        <div style={{ maxWidth: '1000px', margin: '0 auto', display: 'flex', flexWrap: 'wrap', gap: '20px', justifyContent: 'space-between', alignItems: 'center', fontSize: '0.65rem', textTransform: 'uppercase', letterSpacing: '1px', fontWeight: 600 }}>
           <div style={{ display: 'flex', gap: '20px', color: '#999', flexWrap: 'wrap' }}>
             {allCategories.slice(0, 4).map(cat => (
               <span 
@@ -295,8 +295,8 @@ const InsightsPage = () => {
       </section>
 
       {/* ── GRID ── */}
-      <section style={{ padding: '60px clamp(60px, 8vw, 120px) 80px' }}>
-        <div style={{ maxWidth: '1000px', margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '40px 30px' }}>
+      <section className="insight-grid-section">
+        <div className="insight-grid-container">
           
           {currentArticles.length > 0 ? currentArticles.map((article, idx) => (
             <Link to={`/insights/${article.slug}`} key={article.slug} style={{ textDecoration: 'none', color: 'inherit', display: 'flex', flexDirection: 'column' }} data-aos="fade-up" data-aos-delay={`${idx * 100}`}>

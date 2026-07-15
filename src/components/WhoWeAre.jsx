@@ -54,11 +54,10 @@ export default function WhoWeAre() {
     <div style={{ background: "#fff" }}>
 
       {/* ══ HERO — Zendesk Replica ══ */}
-      <section style={{
+      <section className="solutions-hero-section" style={{
         background: '#ffffff',
         minHeight: '85vh',
         display: 'grid',
-        gridTemplateColumns: '1fr 1fr',
         alignItems: 'center',
         position: 'relative',
         padding: '120px var(--section-px) 80px',
@@ -79,7 +78,7 @@ export default function WhoWeAre() {
         }} />
         {/* Left */}
         <div style={{ position: 'relative', zIndex: 1 }} data-aos="fade-up">
-          <h1 style={{ fontFamily: 'var(--ix-font-display)', fontWeight: 500, fontSize: 'clamp(2.3rem, 4.3vw,3.8rem)', color: '#111', lineHeight: 1.1, marginTop: '60px', marginBottom: '1.5rem', letterSpacing: '-0.02em' }}>
+          <h1 style={{ fontFamily: 'var(--ix-font-display)', fontWeight: 500, fontSize: 'clamp(2.3rem, 4.3vw,3.8rem)', color: '#111', lineHeight: 1.1, marginTop: '0', marginBottom: '1.5rem', letterSpacing: '-0.02em' }}>
             Engineered for Sustainable Growth.
           </h1>
           <p style={{ fontFamily: 'var(--ix-font-body)', fontSize: '1rem', color: '#111', lineHeight: 1.6, marginBottom: '1.5rem', maxWidth: '520px' }}>
@@ -140,7 +139,7 @@ export default function WhoWeAre() {
       </section>
 
       {/* ══ STORY + VIDEO — light teal bg + dark right ══ */}
-      <section id="story" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", minHeight: "80vh" }}>
+      <section id="story" className="about-story-section">
         {/* Left — teal bg */}
         <div style={{
           background: "var(--ix-primary-bg)",
@@ -173,7 +172,7 @@ export default function WhoWeAre() {
 
 
         <div style={{ maxWidth: 1400, margin: "0 auto", position: 'relative', zIndex: 1, padding: '0 2rem' }}>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(400px, 1fr))', gap: '4rem', alignItems: 'flex-start' }}>
+          <div className="about-stats-grid">
 
             {/* Left Column */}
             <div data-aos="fade-right">
@@ -197,7 +196,7 @@ export default function WhoWeAre() {
             {/* Right Column */}
             <div data-aos="fade-left">
               {/* Stat Cards */}
-              <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(180px, 1fr))", gap: "1rem", marginBottom: "1rem" }}>
+              <div className="about-stats-cards">
                 {[
                   { num: "900+", label: "CLIENTS SERVED" },
                   { num: "7x", label: "GROWTH MULTIPLIER" },

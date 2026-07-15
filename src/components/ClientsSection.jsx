@@ -77,7 +77,7 @@ const ClientsSection = () => {
     <section className="clients-section" id="clients" style={{ background: '#007A5E', paddingTop: '80px' }}>
       
       {/* Stats Section */}
-      <div style={{ maxWidth: 1000, margin: '0 auto', padding: '0 5%', marginBottom: '80px' }}>
+      {/* <div style={{ maxWidth: 1000, margin: '0 auto', padding: '0 5%', marginBottom: '80px' }}>
         <h2 data-aos="fade-up" style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(2rem, 4vw, 3rem)', color: '#fff', fontWeight: 600, letterSpacing: '-0.02em', lineHeight: 1.2, marginBottom: '1.5rem', maxWidth: '700px' }}>
           Over a decade helping enterprise businesses scale.
         </h2>
@@ -100,7 +100,7 @@ const ClientsSection = () => {
             <div style={{ color: 'rgba(255,255,255,0.9)', fontSize: '0.95rem', fontWeight: 500 }}>Revenue unlocked for clients</div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* White Logo Banner */}
       {/* <div data-aos="fade-up" style={{ background: '#fff', padding: '2.5rem 0', overflow: 'hidden', whiteSpace: 'nowrap', display: 'flex' }}>
@@ -207,7 +207,7 @@ const ClientsSection = () => {
           </div>
 
           <div className="footer-bottom" style={{ borderTop: '1px solid rgba(255, 255, 255, 0.05)', marginTop: '40px', paddingTop: '30px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '20px' }}>
-            <p style={{ fontSize: '0.8rem', color: '#6b7280' }}>© 2026 Infynix Solutions UK. Engineered for Excellence.</p>
+            <p style={{ fontSize: '0.8rem', color: '#ffffff' }}>© 2026 Infynix Solutions UK. Engineered for Excellence.</p>
           </div>
         </div>
       </footer>

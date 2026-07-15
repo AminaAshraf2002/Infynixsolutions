@@ -88,11 +88,10 @@ const SolutionsPage = () => {
       />
 
       {/* ══ HERO — Zendesk Replica ══ */}
-      <section style={{
+      <section className="solutions-hero-section" style={{
         background: '#ffffff',
         minHeight: '85vh',
         display: 'grid',
-        gridTemplateColumns: '1fr 1fr',
         alignItems: 'center',
         position: 'relative',
         padding: '120px var(--section-px) 80px',
@@ -113,7 +112,7 @@ const SolutionsPage = () => {
         }} />
         {/* Left */}
         <div style={{ position: 'relative', zIndex: 1 }} data-aos="fade-up">
-          <h1 style={{ fontFamily: 'var(--ix-font-display)', fontWeight: 500, fontSize: 'clamp(2rem, 4vw, 3.5rem)', color: '#111', lineHeight: 1.1, marginTop: '60px',marginBottom: '1.5rem', letterSpacing: '-0.02em' }}>
+          <h1 style={{ fontFamily: 'var(--ix-font-display)', fontWeight: 500, fontSize: 'clamp(2rem, 4vw, 3.5rem)', color: '#111', lineHeight: 1.1, marginTop: '0', marginBottom: '1.5rem', letterSpacing: '-0.02em' }}>
             {data.title}
           </h1>
           <p style={{ fontFamily: 'var(--ix-font-body)', fontSize: '1rem', color: '#111', lineHeight: 1.6, marginBottom: '1.5rem', maxWidth: '520px' }}>
@@ -159,13 +158,13 @@ const SolutionsPage = () => {
             The Growth Blueprint
           </h2>
 
-          <div style={{ position: 'relative', display: 'flex', justifyContent: 'center', gap: '30px' }}>
+          <div className="solutions-blueprint-container" style={{ position: 'relative', display: 'flex', justifyContent: 'center', gap: '30px' }}>
             {blueprint.map((item, i) => {
               const isHigh = i % 2 !== 0;
               const dropAmount = isHigh ? 30 : 120; // 30px for high, 120px for low
 
               return (
-                <div key={item.label} className={`ix-d${i + 1} data-aos="fade-up"`} style={{
+                <div key={item.label} className={`ix-d${i + 1} solutions-blueprint-card`} data-aos="fade-up" style={{
                   position: 'relative',
                   flex: 1,
                   maxWidth: '220px', // Exact card size constraint

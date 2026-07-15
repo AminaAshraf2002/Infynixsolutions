@@ -182,17 +182,16 @@ const GrowthEngineering = () => {
           overflow: "hidden",
           background: "#fff",
         }}>
-          <div style={{
-            position: "absolute",
-            left: "8vw",
-            top: "14vh",
+          <div
+            className="ge-hero-text-1" 
+            style={{
             opacity: settled ? 0 : 1,
             transform: settled ? "translateY(-30px)" : "translateY(0px)",
             transition: TRANSITION,
             zIndex: 4,
             pointerEvents: "none",
           }}>
-            <h1 style={{
+            <h1 className="ge-hero-h1" style={{
               fontFamily: '"Montserrat", Arial, sans-serif',
               fontWeight: 700,
               fontSize: "clamp(2.5rem, 4.9vw, 4.7rem)",
@@ -200,9 +199,6 @@ const GrowthEngineering = () => {
               letterSpacing: "-0.03em",
               color: "#4d4c4c",
               whiteSpace: "nowrap",
-              marginBottom: "1.4rem",
-              marginLeft: "50px",
-              marginTop: "50px",
             }}>
               Growth{" "}
               <em style={{
@@ -215,16 +211,13 @@ const GrowthEngineering = () => {
               </em>
             </h1>
 
-            <h2 style={{
+            <h2 className="ge-hero-h2" style={{
               fontFamily: '"Montserrat", Arial, sans-serif',
               fontWeight: 800,
-              fontSize: "clamp(1.8rem, 3vw, 3.2rem)",
+              fontSize: "clamp(1.4rem, 3vw, 3.2rem)",
               lineHeight: 1.15,
               letterSpacing: "-0.01em",
               color: "#353434",
-              marginBottom: "0.55rem",
-              marginLeft: "50px",
-              marginTop: "30px",
             }}>
               Attract → Engage → Convert
               <br />
@@ -240,22 +233,16 @@ const GrowthEngineering = () => {
               </em>
             </h2>
 
-            <p style={{ fontFamily: "var(--ix-font-body)", fontSize: "1.05rem", color: "#666", lineHeight: 1.6, marginLeft: "50px", marginTop: "20px" }}>
+            <p className="ge-hero-p" style={{ fontFamily: "var(--ix-font-body)", fontSize: "1.05rem", color: "#666", lineHeight: 1.6 }}>
               Unifying technology, marketing, operations and data into one intelligent system.
             </p>
           </div>
 
-          <div style={{
-            position: "absolute",
-            left: "11vw",
-            top: settled ? "16vh" : "55vh",
-            width: settled ? "40vw" : "70vw",
-            height: settled ? "50vh" : "36vh",
-            borderRadius: settled ? "38px" : "24px",
-            overflow: "hidden",
+          <div
+            className={`ge-hero-image ${settled ? 'settled' : ''}`}
+            style={{
             transition: TRANSITION_SLOW,
             zIndex: 2,
-            marginTop: "50px",
           }}>
             <img
               src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=80"
@@ -268,27 +255,19 @@ const GrowthEngineering = () => {
             />
           </div>
 
-          <div style={{
-            position: "absolute",
-            left: "52vw",
-            right: "4vw",
-            top: "10vh",
-            bottom: "10vh",
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            alignItems: "flex-start",
+          <div
+            className="ge-hero-text-2"
+            style={{
             opacity: settled ? 1 : 0,
             transition: "opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.3s",
             zIndex: 3,
             pointerEvents: settled ? "auto" : "none",
-            marginLeft: "30px",
           }}>
             <span style={{ fontFamily: 'var(--ix-font-body)', fontSize: '0.8rem', letterSpacing: '0.15em', textTransform: 'uppercase', color: '#888', display: 'block', marginBottom: '1.5rem' }}>The Discipline</span>
             <h2 style={{
               fontFamily: "var(--ix-font-display)",
               fontWeight: 800,
-              fontSize: "clamp(2rem, 3.2vw, 3.4rem)",
+              fontSize: "clamp(1.8rem, 3.2vw, 3.4rem)",
               lineHeight: 1.2,
               letterSpacing: "-0.01em",
               color: "#424242",
@@ -333,10 +312,10 @@ const GrowthEngineering = () => {
       </section>
 
       {/* ══ LIME QUOTE SECTION ══ */}
-      <section className="ix-section" data-aos="fade-up" style={{ position: "relative", background: 'rgb(198, 255, 109)', textAlign: 'left', padding: 'clamp(60px, 8vw, 100px) 20px', overflow: 'hidden' }}>
-        <div style={{ maxWidth: 1200, margin: '0 auto', position: 'relative', padding: '0 40px 0 100px', zIndex: 2 }}>
-          <span style={{ position: 'absolute', top: -30, left: '30px', fontSize: '5rem', color: 'var(--ix-lime)', lineHeight: 1, fontFamily: 'var(--font-display)', opacity: 0.8 }}>"</span>
-          <blockquote style={{ fontFamily: "'Playfair Display', serif", fontStyle: 'italic', fontSize: 'clamp(2rem, 3.5vw, 2.8rem)', fontWeight: 400, color: '#000000ff', lineHeight: 1.4, margin: '2rem 0' }}>
+      <section className="ix-section ge-lime-section" data-aos="fade-up" style={{ position: "relative", background: 'rgb(198, 255, 109)', textAlign: 'left', padding: 'clamp(60px, 8vw, 100px) 20px', overflow: 'hidden' }}>
+        <div className="ge-lime-quote-container" style={{ maxWidth: 1200, margin: '0 auto', position: 'relative', zIndex: 2 }}>
+          <span style={{ position: 'absolute', top: -30, left: '-10px', fontSize: '5rem', color: 'var(--ix-lime)', lineHeight: 1, fontFamily: 'var(--font-display)', opacity: 0.8 }}>"</span>
+          <blockquote style={{ fontFamily: "'Playfair Display', serif", fontStyle: 'italic', fontSize: 'clamp(1.8rem, 3.5vw, 2.8rem)', fontWeight: 400, color: '#000000ff', lineHeight: 1.4, margin: '2rem 0' }}>
             Growth isn't achieved through isolated services. It is built through connected systems, strategic thinking, and continuous improvement. Technology × AI × Performance × Automation = Sustainable Business Growth.
           </blockquote>
           <p style={{ fontFamily: 'var(--ix-font-body)', fontWeight: 700, fontSize: '0.9rem', letterSpacing: '0.1em', textTransform: 'uppercase', color: 'rgba(0, 0, 0, 0.9)', marginTop: '3rem' }}>

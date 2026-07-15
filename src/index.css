@@ -434,17 +434,29 @@ section[style*="var(--ix-primary)"]::after,
   background: #b3e600;
 }
 
+.nav-hamburger {
+  display: none;
+}
+
 @media (max-width: 1024px) {
+  .nav-main-center {
+    display: none !important;
+  }
+  
+  .desktop-only {
+    display: none !important;
+  }
+
   .nav-hamburger {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 44px;
-    height: 44px;
+    width: 36px;
+    height: 36px;
     background: transparent;
     border: none;
-    border-radius: 12px;
+    border-radius: 10px;
     cursor: pointer;
     padding: 0;
     z-index: 3100;
@@ -457,7 +469,7 @@ section[style*="var(--ix-primary)"]::after,
   }
 
   .nav-hamburger .hamburger-line {
-    width: 22px;
+    width: 18px;
     height: 2px;
     background-color: #007A5E; /* Emerald Green */
     border-radius: 2px;
@@ -465,9 +477,9 @@ section[style*="var(--ix-primary)"]::after,
     position: absolute;
   }
   
-  .nav-hamburger .hamburger-line:nth-child(1) { transform: translateY(-7px); }
+  .nav-hamburger .hamburger-line:nth-child(1) { transform: translateY(-5px); }
   .nav-hamburger .hamburger-line:nth-child(2) { transform: translateY(0); }
-  .nav-hamburger .hamburger-line:nth-child(3) { transform: translateY(7px); }
+  .nav-hamburger .hamburger-line:nth-child(3) { transform: translateY(5px); }
 
   .nav-hamburger.open .hamburger-line:nth-child(1) {
     transform: translateY(0) rotate(45deg);
@@ -1899,7 +1911,7 @@ section[style*="var(--ix-primary)"]::after,
 
 .footer-copy {
   font-size: 0.78rem;
-  color: #ffffff;
+  color: #ffffff !important;
   margin: 0;
 }
 
@@ -4143,8 +4155,32 @@ video {
     transform: translateX(-50%) !important;
     width: calc(100% - 32px) !important;
     top: 12px !important;
-    padding: 0 1rem !important;
-    height: 40px !important;
+    padding: 8px 1rem !important;
+    height: auto !important;
+    min-height: 56px;
+    z-index: 3100 !important;
+  }
+  .pre-header-bar {
+    display: none !important;
+  }
+
+  .nav-main-left {
+    position: absolute !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    width: auto !important;
+  }
+
+  .nav-logo img {
+    width: 170px !important;
+    height: auto !important;
+    max-height: 45px;
+  }
+
+  .site-header.scrolled .nav-logo img {
+    width: 140px !important;
+    height: auto !important;
+    max-height: 38px;
   }
 
   .desktop-cta {
@@ -4161,7 +4197,7 @@ video {
   }
 
   .nav-hamburger.open .hamburger-line:nth-child(1) {
-    transform: translateY(7px) rotate(45deg) !important;
+    transform: translateY(5px) rotate(45deg) !important;
   }
 
   .nav-hamburger.open .hamburger-line:nth-child(2) {
@@ -4169,7 +4205,7 @@ video {
   }
 
   .nav-hamburger.open .hamburger-line:nth-child(3) {
-    transform: translateY(-7px) rotate(-45deg) !important;
+    transform: translateY(-5px) rotate(-45deg) !important;
   }
 
   .nav-links {
@@ -4709,4 +4745,244 @@ textarea,
   height: 42px;
   border: 1px solid rgba(0, 122, 94, 0.5);
   transition: width 0.2s, height 0.2s, border-color 0.2s;
+}
+
+/* Growth Engineering Hero Styles */
+.ge-hero-text-1 {
+  position: absolute;
+  left: 8vw;
+  top: 14vh;
+}
+.ge-hero-h1 {
+  margin-bottom: 1.4rem;
+  margin-left: 50px;
+  margin-top: 50px;
+}
+.ge-hero-h2 {
+  margin-bottom: 0.55rem;
+  margin-left: 50px;
+  margin-top: 30px;
+}
+.ge-hero-p {
+  margin-left: 50px;
+  margin-top: 20px;
+}
+
+.ge-hero-image {
+  position: absolute;
+  left: 11vw;
+  top: 55vh;
+  width: 70vw;
+  height: 36vh;
+  border-radius: 24px;
+  overflow: hidden;
+  margin-top: 50px;
+}
+.ge-hero-image.settled {
+  top: 16vh;
+  width: 40vw;
+  height: 50vh;
+  border-radius: 38px;
+}
+
+.ge-hero-text-2 {
+  position: absolute;
+  left: 52vw;
+  right: 4vw;
+  top: 10vh;
+  bottom: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 30px;
+}
+
+.ge-lime-quote-container {
+  padding: 0 40px 0 100px;
+}
+
+/* Mobile Overrides */
+@media (max-width: 768px) {
+  .ge-hero-text-1 {
+    left: 4vw;
+    top: 8vh;
+    width: 92vw;
+  }
+  .ge-hero-h1, .ge-hero-h2, .ge-hero-p {
+    margin-left: 0 !important;
+    margin-top: 10px !important;
+    white-space: normal !important;
+  }
+  .ge-hero-h1 {
+    margin-top: 30px !important;
+    font-size: clamp(2rem, 8vw, 3rem) !important;
+  }
+  .ge-hero-image {
+    left: 4vw;
+    top: 48vh;
+    width: 92vw !important;
+    height: 30vh !important;
+    margin-top: 20px !important;
+  }
+  .ge-hero-image.settled {
+    top: 10vh;
+    width: 92vw !important;
+    height: 30vh !important;
+    left: 4vw;
+  }
+  .ge-hero-text-2 {
+    left: 4vw !important;
+    right: 4vw !important;
+    top: 46vh !important;
+    bottom: auto !important;
+    margin-left: 0 !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+  
+  .ge-lime-section {
+    padding-left: 5vw !important;
+    padding-right: 5vw !important;
+  }
+  .ge-lime-quote-container {
+    padding: 0 !important;
+  }
+}
+
+/* Solutions Page */
+.solutions-hero-section {
+  grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 768px) {
+  .solutions-hero-section {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+    padding: 100px 5vw 60px !important;
+  }
+  
+  .solutions-blueprint-container {
+    flex-direction: column !important;
+    gap: 1.5rem !important;
+  }
+  
+  .solutions-blueprint-card {
+    max-width: 100% !important;
+    margin-top: 0 !important;
+  }
+  
+  /* Hide dashed connector lines on mobile */
+  .solutions-blueprint-card > div:not(:last-child) {
+    display: none !important;
+  }
+}
+
+/* Insights Page Layout */
+.insight-featured-section {
+  padding: 20px clamp(60px, 8vw, 120px) 80px;
+}
+.insight-featured-grid {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 50px;
+  align-items: center;
+}
+.insight-filter-section {
+  padding: 15px clamp(60px, 8vw, 120px);
+}
+.insight-grid-section {
+  padding: 60px clamp(60px, 8vw, 120px) 80px;
+}
+.insight-grid-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px 30px;
+}
+
+@media (max-width: 768px) {
+  .insight-featured-section {
+    padding: 20px 5vw 60px !important;
+  }
+  .insight-featured-grid {
+    grid-template-columns: 1fr !important;
+    gap: 30px !important;
+  }
+  .insight-filter-section {
+    padding: 15px 5vw !important;
+  }
+  .insight-grid-section {
+    padding: 40px 5vw 60px !important;
+  }
+  .insight-grid-container {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* About Page (Who We Are) */
+.about-story-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 80vh;
+}
+.about-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 4rem;
+  align-items: flex-start;
+}
+.about-stats-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .about-story-section {
+    grid-template-columns: 1fr !important;
+  }
+  .about-stats-grid {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+  }
+  .about-stats-cards {
+    grid-template-columns: 1fr !important;
+  }
+  
+  /* Footer Centering on Mobile */
+  .footer-locations-grid {
+    text-align: center !important;
+  }
+  .footer-location-card {
+    text-align: center !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-brand-col {
+    align-items: center !important;
+    text-align: center !important;
+  }
+  .footer-nav-col {
+    align-items: center !important;
+    text-align: center !important;
+  }
+  .footer-bottom {
+    justify-content: center !important;
+    text-align: center !important;
+  }
+}
+
+.specialize-text {
+  font-size: clamp(2.7rem, 5.7vw, 4.5rem);
+}
+@media (max-width: 768px) {
+  .specialize-text {
+    font-size: clamp(2rem, 6vw, 2.5rem) !important;
+  }
 }

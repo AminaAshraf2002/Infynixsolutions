@@ -55,12 +55,11 @@ const SpecializeSection = () => {
       <div style={{ position: 'absolute', top: '-10%', left: '-10%', width: '40vw', height: '40vw', background: 'radial-gradient(circle, rgba(0,122,94,0.15) 0%, transparent 70%)', borderRadius: '50%', pointerEvents: 'none' }} />
       <div style={{ position: 'absolute', bottom: '-20%', right: '-10%', width: '60vw', height: '60vw', background: 'radial-gradient(circle, rgba(0,122,94,0.1) 0%, transparent 70%)', borderRadius: '50%', pointerEvents: 'none' }} />
 
-      <div style={{ maxWidth: 1360, margin: '0 auto', padding: '0 clamp(20px, 5vw, 80px)', position: 'relative', zIndex: 1, display: 'flex', flexDirection: 'column', gap: '2rem' }}>
+      <div style={{ maxWidth: 1360, margin: '0 auto', padding: '0', position: 'relative', zIndex: 1, display: 'flex', flexDirection: 'column', gap: '2rem' }}>
         <span className="ix-eyebrow ix-eyebrow--light" data-aos="fade-up">Our Expertise</span>
         
         <h2 className="specialize-text" ref={textRef} style={{ 
           fontFamily: '"Albert Sans", sans-serif', 
-          fontSize: 'clamp(2.7rem, 5.7vw, 4.5rem)', 
           fontWeight: 700, 
           lineHeight: 1.1,
           letterSpacing: '-0.02em',
