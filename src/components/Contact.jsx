@@ -30,7 +30,7 @@ const offices = [
         city: "Kochi",
         label: "Kerala Office",
         desc: "7th Floor, National Pearl Star Building, Edappally, Kochi, Kerala 682024. Our core engineering powerhouse and development center delivering robust backend growth architecture.",
-        image: "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?w=900&q=80",
+        image: "https://images.unsplash.com/photo-1593693397690-362cb9666fc2?w=900&q=80",
     },
 ];
 

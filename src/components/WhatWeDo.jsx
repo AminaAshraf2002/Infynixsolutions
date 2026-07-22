@@ -165,28 +165,28 @@ const WhatWeDo = () => {
         <div className="wwd-s1-inner">
           <p className="wwd-eyebrow">What we do</p>
           <h1 className="wwd-h1">
-            <em>Architecting</em> Scale & AI Systems
+            <em>Architecting</em> Growth Systems
           </h1>
           <p className="wwd-sub">
-            We build high-performance software networks and advanced computer vision systems. For your enterprise, this translates to robust reliability, end-to-end security, and automated growth loops engineered for unlimited scalability.
+            We build high-performance software architectures and automated optimization pipelines. For your enterprise, this translates to rapid experimentation, data-driven personalization, and resilient platforms engineered for scalable growth.
           </p>
  
           <div className="wwd-pillars">
             <div className="wwd-pillar">
-              <h3>Intelligent Enterprise Scaling</h3>
-              <p>Driving sustainable digital expansion with modern tech architectures.</p>
+              <h3>High-Velocity Experimentation</h3>
+              <p>Engineered environments for rapid A/B testing and performance iteration at scale.</p>
             </div>
             <div className="wwd-pillar">
-              <h3>Growth Marketing Systems</h3>
-              <p>Deploying automated loops, customer data platforms, and ML-powered personalization to scale engagement.</p>
+              <h3>Data-Driven Architectures</h3>
+              <p>Robust analytics pipelines and CDP integrations to fuel real-time decision making.</p>
             </div>
             <div className="wwd-pillar">
-              <h3>Advanced AI Surveillance</h3>
-              <p>Integrating computer vision models, real-time tracking, and privacy-first edge analytics into operations.</p>
+              <h3>Conversion Rate Engineering</h3>
+              <p>Optimizing page performance, user funnels, and dynamic personalization for maximum ROI.</p>
             </div>
             <div className="wwd-pillar">
-              <h3>Precision Engineering</h3>
-              <p>Delivering zero-escalation, high-performance software development with a dedicated product mindset.</p>
+              <h3>Scalable Growth Systems</h3>
+              <p>Resilient microservices and automated workflows built to handle exponential user acquisition.</p>
             </div>
           </div>
         </div>
@@ -195,11 +195,11 @@ const WhatWeDo = () => {
       {/* ── SECTION 2: DARK BANNER ── */}
       <section className="wwd-s2">
         <h2 className="wwd-s2-h2">
-          Engineered to Scale<br />
-          your Digital & AI<br />
-          <em>Infrastructure</em>
+          Engineered to Accelerate<br />
+          your Business<br />
+          <em>Growth</em>
         </h2>
-        <p className="wwd-s2-sub">Delivering custom software systems, advanced computer vision, and automated marketing loops that align with your strategic targets.</p>
+        <p className="wwd-s2-sub">Delivering high-performance backend stacks, conversion-optimized funnels, and scalable architectures that align with your strategic targets.</p>
         <div className="wwd-s2-line"></div>
       </section>
 

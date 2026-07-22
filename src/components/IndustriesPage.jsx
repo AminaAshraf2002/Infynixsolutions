@@ -70,7 +70,7 @@ const defaultPlaceholders = {
   feature1: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80',
   feature2: 'https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=800&q=80',
   feature3: 'https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=800&q=80',
-  integrations: 'https://images.unsplash.com/photo-1531239846875-1087e59c5d08?auto=format&fit=crop&w=1200&q=80',
+  integrations: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=80',
 };
 
 const resourceImages = [
@@ -294,10 +294,10 @@ const IndustriesPage = () => {
       </section>
 
       {/* 5. FEATURED TESTIMONIAL SLIDER */}
-      <section className="ind-section" style={{ background: '#F4F5F0', position: 'relative' }}>
+      {/* <section className="ind-section" style={{ background: '#F4F5F0', position: 'relative' }}>
         <div className="ind-container-lg ind-testimonial-grid">
 
-          {/* Nav Arrows */}
+          
           <button
             onClick={() => setCurrentTestimonial(prev => prev === 0 ? testimonials.length - 1 : prev - 1)}
             style={{ position: 'absolute', left: 'clamp(20px, 5vw, 60px)', top: '50%', transform: 'translateY(-50%)', width: '48px', height: '48px', borderRadius: '50%', background: 'rgba(0,0,0,0.05)', border: 'none', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', transition: 'background 0.2s' }}
@@ -344,13 +344,12 @@ const IndustriesPage = () => {
           </div>
         </div>
 
-        {/* Logos Row */}
         <div className="ind-container" style={{ margin: '4rem auto 0', paddingTop: '4rem', borderTop: '1px solid rgba(0,0,0,0.08)', display: 'flex', justifyContent: 'center', gap: '4rem', flexWrap: 'wrap', opacity: 0.5 }}>
           {trustLogos.map((logo, idx) => (
             <img key={idx} src={logo} alt="Partner Logo" style={{ height: '32px', filter: 'grayscale(100%)', objectFit: 'contain' }} />
           ))}
         </div>
-      </section>
+      </section> */}
 
       {/* 6. FEATURE BLOCK 3 (Internal Use Case) */}
       <section className="ind-section" style={{ overflow: 'hidden' }}>
@@ -397,7 +396,7 @@ const IndustriesPage = () => {
       </section>
 
       {/* 8. ADDITIONAL RESOURCES GRID */}
-      <section className="ind-section" style={{ background: '#fff' }}>
+      {/* <section className="ind-section" style={{ background: '#fff' }}>
         <div className="ind-container">
           <h2 className="ind-h2" style={{ marginBottom: '3rem' }} data-aos="fade-up">Additional Resources</h2>
           <div className="ind-resources-grid">
@@ -416,7 +415,7 @@ const IndustriesPage = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* 8.5. FAQs */}
       {data.faqs && data.faqs.length > 0 && (

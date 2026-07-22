@@ -12,62 +12,69 @@ const InitiativesSection = () => {
             <em>Pillars</em>
           </h1>
           <p className="init-desc">
-            We are pioneering the next frontier of enterprise technology with targeted research and development in cognitive systems, ethical networks, and immersive digital design.
+            We are pioneering the next frontier of growth engineering, focusing on conversion-driven architectures, automated marketing systems, and intelligent digital experiences.
           </p>
           <p className="init-desc">
-            Our core innovation pillars are designed to build intelligent, scalable, and resilient systems that adapt to complex business ecosystems. By merging advanced AI research with human-centric interfaces, we prepare leading brands for tomorrow's digital economy.
+            Our core strategic pillars are designed to build scalable, high-performance engines that accelerate user acquisition and retention. By merging data analytics with technical innovation, we prepare leading brands for sustainable digital growth.
           </p>
         </div>
 
         {/* Right Side Grid */}
         <div className="init-right">
-          {/* Card 1: ZIRO */}
-          <div className="init-card" data-aos-delay="100" data-aos="fade-up">
-            <div className="init-card-logo-wrap">
-              <span className="logo-ziro">ZIRO</span>
+          {/* Card 1: High-Velocity Experimentation */}
+          <div className="init-card" data-aos-delay="100" data-aos="fade-up" style={{ display: 'flex', flexDirection: 'column', gap: '1rem', padding: '2.5rem' }}>
+            <div style={{ color: '#007A5E' }}>
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M3 3v18h18" />
+                <path d="m19 9-5 5-4-4-3 3" />
+              </svg>
             </div>
-            <p className="init-card-desc">
-              <strong>Ethical Knowledge Networks</strong> — Building purpose-driven platforms focused on collaborative intelligence and data integrity.
+            <h3 style={{ fontSize: '1.25rem', fontWeight: 700, margin: 0, color: '#111' }}>High-Velocity Experimentation</h3>
+            <p className="init-card-desc" style={{ margin: 0, marginTop: '0.5rem' }}>
+              Building environments for rapid A/B testing and continuous performance iteration at scale.
             </p>
           </div>
 
-          {/* Card 2: DEEP FUTURE INTELLIGENCE */}
-          <div className="init-card" data-aos-delay="200" data-aos="fade-up">
-            <div className="init-card-logo-wrap" style={{ display: 'flex', alignItems: 'center' }}>
-              <div className="logo-dfi-icon">
-                <span />
-                <span />
-              </div>
-              <span className="logo-dfi-text">
-                DEEP FUTURE<br />INTELLIGENCE
-              </span>
+          {/* Card 2: Data-Driven Architecture */}
+          <div className="init-card" data-aos-delay="200" data-aos="fade-up" style={{ display: 'flex', flexDirection: 'column', gap: '1rem', padding: '2.5rem' }}>
+            <div style={{ color: '#007A5E' }}>
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <ellipse cx="12" cy="5" rx="9" ry="3" />
+                <path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5" />
+                <path d="M3 12c0 1.66 4.03 3 9 3s9-1.34 9-3" />
+              </svg>
             </div>
-            <p className="init-card-desc">
-              <strong>Cognitive Computing</strong> — Developing advanced reasoning frameworks that enable seamless collaboration between humans and smart machines.
+            <h3 style={{ fontSize: '1.25rem', fontWeight: 700, margin: 0, color: '#111' }}>Data-Driven Architecture</h3>
+            <p className="init-card-desc" style={{ margin: 0, marginTop: '0.5rem' }}>
+              Developing robust analytics pipelines and CDP integrations to fuel real-time business decisions.
             </p>
           </div>
 
-          {/* Card 3: advait */}
-          <div className="init-card" data-aos-delay="300" data-aos="fade-up">
-            <div className="init-card-logo-wrap">
-              <span className="logo-advait">
-                adva<span>i</span>t
-              </span>
+          {/* Card 3: Scalable Growth Systems */}
+          <div className="init-card" data-aos-delay="300" data-aos="fade-up" style={{ display: 'flex', flexDirection: 'column', gap: '1rem', padding: '2.5rem' }}>
+            <div style={{ color: '#007A5E' }}>
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+                <polyline points="3.29 7 12 12 20.71 7" />
+                <line x1="12" y1="22" x2="12" y2="12" />
+              </svg>
             </div>
-            <p className="init-card-desc">
-              <strong>Autonomous Intelligence</strong> — Engineering self-evolving architectures and autonomous engines for enterprise decision-making.
+            <h3 style={{ fontSize: '1.25rem', fontWeight: 700, margin: 0, color: '#111' }}>Scalable Growth Systems</h3>
+            <p className="init-card-desc" style={{ margin: 0, marginTop: '0.5rem' }}>
+              Engineering resilient microservices and automated workflows built to handle exponential user acquisition.
             </p>
           </div>
 
-          {/* Card 4: Triode */}
-          <div className="init-card" data-aos-delay="400" data-aos="fade-up">
-            <div className="init-card-logo-wrap">
-              <span className="logo-triode">
-                Tr<span>i</span>ode
-              </span>
+          {/* Card 4: Conversion Engineering */}
+          <div className="init-card" data-aos-delay="400" data-aos="fade-up" style={{ display: 'flex', flexDirection: 'column', gap: '1rem', padding: '2.5rem' }}>
+            <div style={{ color: '#007A5E' }}>
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3" />
+              </svg>
             </div>
-            <p className="init-card-desc">
-              <strong>Intelligent Experience</strong> — Designing high-fidelity, adaptive user experiences that harmonize complex systems with human interaction.
+            <h3 style={{ fontSize: '1.25rem', fontWeight: 700, margin: 0, color: '#111' }}>Conversion Engineering</h3>
+            <p className="init-card-desc" style={{ margin: 0, marginTop: '0.5rem' }}>
+              Designing high-fidelity, optimized funnels and dynamic personalization for maximum ROI.
             </p>
           </div>
         </div>

@@ -18,7 +18,7 @@ import RiversideChatSection from './components/RiversideChatSection';
 import PartnersSection from './components/PartnersSection';
 import ClientsSection from './components/ClientsSection';
 import ServicesSection from './components/Services';
-import FeaturedWork from './components/FeaturedWork';
+// import FeaturedWork from './components/FeaturedWork';
 import WhatWeDo from './components/WhatWeDo';
 import WhoWeAre from './components/WhoWeAre';
 import FutureOfRetail from './components/FutureOfRetail';
@@ -58,7 +58,7 @@ function HomePage() {
       
 
       {/* 4. Featured Work */}
-      <FeaturedWork />
+      {/* <FeaturedWork /> */}
 
 
 
@@ -66,7 +66,7 @@ function HomePage() {
       <InitiativesSection />
 
       {/* 6. Riverside Chat */}
-      <RiversideChatSection />
+      {/* <RiversideChatSection /> */}
 
       {/* 7. Trusted Partners */}
       <PartnersSection />

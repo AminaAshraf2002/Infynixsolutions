@@ -235,7 +235,7 @@ export default function WhoWeAre() {
       </section>
 
       {/* ══ TEAM PHOTOS — light teal bg ══ */}
-      <section className="ix-section" style={{ background: "var(--ix-primary-bg)" }}>
+      {/* <section className="ix-section" style={{ background: "var(--ix-primary-bg)" }}>
         <div style={{ maxWidth: 1200, margin: "0 auto" }}>
           <span className="ix-teal-bar" />
           <h2 data-aos="fade-up" style={{ fontFamily: "var(--ix-font-display)", fontWeight: 800, fontSize: "clamp(2rem, 3.5vw, 3rem)", color: "var(--ix-text)", letterSpacing: "-0.02em", lineHeight: 1.1, marginBottom: "clamp(2rem, 4vw, 3.5rem)" }}>
@@ -260,7 +260,7 @@ export default function WhoWeAre() {
             <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1600&q=80" alt="Infynix full team" style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} />
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* ══ CULTURE CARDS — white ══ */}
       <section className="ix-section" style={{ background: "#fff" }}>

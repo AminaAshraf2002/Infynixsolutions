@@ -9,8 +9,14 @@ const LIGHT_BG = "#f4f8f6";
 const TEXT_DARK = "#1F2937";
 
 const caseImages = {
-  'riverside-logistics': '/riverside_logistics_mockup.png',
-  'medvibe-portal': '/medvibe_patient_booking_portal.png'
+  'task-management-system': {
+    desktop: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80',
+    mobile: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=400&q=80'
+  },
+  'beyond-demands': {
+    desktop: 'https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=80',
+    mobile: 'https://images.unsplash.com/photo-1596704017254-9b121068fb31?auto=format&fit=crop&w=400&q=80'
+  }
 };
 
 function useReveal(dependency) {
@@ -28,7 +34,7 @@ function useReveal(dependency) {
 
 const CaseStudiesPage = () => {
   const { slug } = useParams();
-  const activeSlug = slug || 'medvibe-portal';
+  const activeSlug = slug || 'task-management-system';
   const targetStudy = caseStudiesData.find((item) => item.slug === activeSlug) || caseStudiesData[0];
   
   // Custom states to animate slide transitions on content switch
@@ -73,7 +79,8 @@ const CaseStudiesPage = () => {
     }
   }, [targetStudy]);
 
-  const pageImage = caseImages[currentStudy.slug] || caseImages['medvibe-portal'];
+  // Resolve the current page images based on the slug
+  const pageImages = caseImages[currentStudy.slug] || caseImages['task-management-system'];
   const techTags = currentStudy.technology ? currentStudy.technology.split(',').map(t => t.trim()) : [];
 
   // Determine transition styles based on slide state
@@ -155,34 +162,39 @@ const CaseStudiesPage = () => {
                 </Link>
               </div>
 
-              {/* Overlapping perspective mobile screens */}
+              {/* Overlapping perspective screens (Desktop + Mobile) */}
               <div style={{ position: 'relative', height: '450px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                <div style={{
-                  position: 'absolute',
-                  width: '190px',
-                  height: '380px',
-                  borderRadius: '32px',
-                  overflow: 'hidden',
-                  border: '5px solid #1c1c1e',
-                  boxShadow: '0 20px 45px rgba(0,0,0,0.18)',
-                  transform: 'rotate(-12deg) translateX(-50px) translateY(15px)',
-                  zIndex: 1
-                }}>
-                  <img src={pageImage} alt={`${currentStudy.client} Interface Screen Mockup`} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-                </div>
-                <div style={{
-                  position: 'absolute',
-                  width: '190px',
-                  height: '380px',
-                  borderRadius: '32px',
-                  overflow: 'hidden',
-                  border: '5px solid #1c1c1e',
-                  boxShadow: '0 25px 55px rgba(0,0,0,0.25)',
-                  transform: 'rotate(-5deg) translateX(50px) translateY(-15px)',
-                  zIndex: 2
-                }}>
-                  <img src={pageImage} alt={`${currentStudy.client} Process Dashboard Mockup`} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-                </div>
+                {pageImages.desktop && (
+                  <div style={{
+                    position: 'absolute',
+                    width: '420px',
+                    height: '270px',
+                    borderRadius: '12px',
+                    overflow: 'hidden',
+                    border: '8px solid #1c1c1e',
+                    borderBottomWidth: '14px',
+                    boxShadow: '0 20px 45px rgba(0,0,0,0.18)',
+                    transform: pageImages.mobile ? 'translateX(-30px) translateY(-10px)' : 'translateX(0)',
+                    zIndex: 1
+                  }}>
+                    <img src={pageImages.desktop} alt={`${currentStudy.client} Desktop Interface`} style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top' }} />
+                  </div>
+                )}
+                {pageImages.mobile && (
+                  <div style={{
+                    position: 'absolute',
+                    width: '140px',
+                    height: '290px',
+                    borderRadius: '24px',
+                    overflow: 'hidden',
+                    border: '6px solid #1c1c1e',
+                    boxShadow: '0 25px 55px rgba(0,0,0,0.25)',
+                    transform: pageImages.desktop ? 'translateX(160px) translateY(30px)' : 'translateX(0)',
+                    zIndex: 2
+                  }}>
+                    <img src={pageImages.mobile} alt={`${currentStudy.client} Mobile App`} style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top' }} />
+                  </div>
+                )}
               </div>
             </div>
 

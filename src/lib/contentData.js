@@ -243,30 +243,26 @@ export const industriesData = {
 
 export const caseStudiesData = [
   {
-    slug: 'medvibe-portal',
-    title: 'MedVibe Patient Booking Portal',
-    client: 'MedVibe Healthcare Systems',
-    challenge: 'Manual clinic booking operations led to 18% booking drop-offs and patient scheduling friction.',
-    objectives: 'Establish a secure booking system, minimize appointment empty slots, and verify patient insurance in real-time.',
-    strategy: 'Design a HIPAA-compliant scheduling flow with instant insurance checking APIs.',
-    technology: 'React, Django, PostgreSQL, Twilio SMS.',
-    execution: 'Created an intuitive booking portal, integrated insurance validation systems, and configured automated SMS text reminders.',
-    results: '28% increase in completed patient visits and a 40% reduction in clinic appointment cancellations.',
-    testimonial: 'Our patient scheduling is now fully automated, allowing our clinical staff to focus entirely on direct patient care.',
-    author: 'Dr. Amy R., Operations Director'
+    slug: 'task-management-system',
+    title: 'A multi-role SaaS product for team and task management across industries',
+    client: 'TMS',
+    challenge: 'Infynix needed an internal, industry-agnostic tool to manage teams and tasks across roles (Super Admin, Org Admin, Team Lead/PM, Employee), with each industry activating only the modules relevant to it.',
+    objectives: 'Build a scalable multi-role platform with clear separation between web (admin roles) and mobile (execution roles), supporting offline-first usage for field/on-site employees.',
+    strategy: 'Split the platform by role and surface — Super Admin and Org Admin as web-only (React/MERN), Team Lead/PM and Employee as app-only (Flutter) — with industry-specific module activation instead of separate builds per industry.',
+    technology: 'React, Vite, Tailwind, React Native, Expo, Node.js, Express, MongoDB, SQLite',
+    execution: 'Authored SRS documents and flowcharts up front; built 17+ frontend pages across the web app; developed the backend API layer (Node.js/Express/MongoDB); implemented SQLite-backed offline-first sync for the mobile app so employees can log work without connectivity.',
+    results: '17+ pages shipped across one unified role-based platform',
   },
   {
-    slug: 'riverside-logistics',
-    title: 'Riverside Logistics Automated Systems Integration',
-    client: 'Riverside Logistics',
-    challenge: 'Managing over 10,000 daily shipping dispatches across fragmented tracking logs led to client complaints and operations overhead.',
-    objectives: 'Build a centralized cloud dispatcher dashboard, reduce manual logs, and implement automated client tracking alerts.',
-    strategy: 'Utilize an event-driven Growth Systems framework to aggregate supply logs and automatically calculate delivery ETAs.',
-    technology: 'Node.js, Kafka, React, AWS cloud, PostgreSQL.',
-    execution: 'Engineered a real-time dispatch dashboard, synced courier data feeds, and deployed a secure client portal for live tracking.',
-    results: '92% reduction in manual tracking queries and a 14% improvement in logistics dispatch speed.',
-    testimonial: 'Infynix engineered a bulletproof cloud dispatcher that completely eliminated our daily operational bottlenecks.',
-    author: 'Riverside Ops Team'
+    slug: 'beyond-demands',
+    title: 'A multi-tenant salon supply procurement platform with three dedicated surfaces',
+    client: 'Beyond Demands',
+    challenge: 'Partner salons, warehouse teams, and org admins all needed different views into the same supply chain — a premium storefront for ordering, an operations console for dispatch, and an analytics dashboard for oversight — without duplicating the underlying data model.',
+    objectives: 'Ship one platform that feels like three purpose-built products, while keeping tenancy, stock accuracy, and audit trails airtight under concurrent orders.',
+    strategy: 'Modular monolith architecture — one Next.js deployable with strict internal module boundaries (identity, catalog, ordering, inventory, audit) designed as future service seams, rather than premature microservices.',
+    technology: 'Next.js, Prisma, PostgreSQL, NextAuth, Row-Level Security',
+    execution: 'Implemented Postgres Row-Level Security with fail-closed tenant policies, SELECT ... FOR UPDATE transaction locking for order/dispatch concurrency, derived (never double-counted) reserved stock, rate limiting on login and purchase-code attempts, and forced password rotation for first-time users.',
+    results: 'One codebase, three tailored surfaces, zero cross-tenant data leaks',
   }
 ];
 
