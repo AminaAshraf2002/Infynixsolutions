@@ -10,12 +10,12 @@ const TEXT_DARK = "#1F2937";
 
 const caseImages = {
   'task-management-system': {
-    desktop: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80',
-    mobile: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=400&q=80'
+    desktop: '/tms_dashboard.png',
+    mobile: '/tms_app.png'
   },
   'beyond-demands': {
-    desktop: 'https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=80',
-    mobile: 'https://images.unsplash.com/photo-1596704017254-9b121068fb31?auto=format&fit=crop&w=400&q=80'
+    desktop: '/salon_dashboard.png',
+    mobile: null
   }
 };
 
