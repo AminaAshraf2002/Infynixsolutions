@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import "./Contact.css";
+import kochiImage from "../assets/kochi-office.jpg";
 
 const ArrowIcon = () => (
     <svg viewBox="0 0 14 14" fill="none" width="13" height="13">
@@ -30,7 +31,8 @@ const offices = [
         city: "Kochi",
         label: "Kerala Office",
         desc: "7th Floor, National Pearl Star Building, Edappally, Kochi, Kerala 682024. Our core engineering powerhouse and development center delivering robust backend growth architecture.",
-        image: "https://images.unsplash.com/photo-1593693397690-362cb9666fc2?w=900&q=80",
+        image: kochiImage,
+        mapUrl: "https://share.google/KX27eRrKxncrDFibN"
     },
 ];
 
@@ -57,27 +59,35 @@ export default function Contact() {
 
     return (
         <div className="contact-page">
-            {/* ── HERO + SIDEBAR ── */}
-            <section className="contact-hero">
-                <div className="contact-hero-inner">
-                    {/* LEFT */}
-                    <div className="contact-left">
-                        <h1 className="contact-headline">
+            {/* ── HERO SECTION ── */}
+            <section className="contact-form-section">
+                <div className="contact-form-section-bg-text">CONTACT</div>
+                
+                <div className="contact-hero-top-inner" style={{position: 'relative', zIndex: 1, maxWidth: '1200px', margin: '0 auto', width: '100%'}}>
+                    <div className="contact-header-wrap" style={{textAlign: 'center', marginBottom: '2rem', marginTop: '2.7rem'}}>
+                        <h1 className="contact-headline-dark">
                             Let's work together.
                         </h1>
-                        <p className="contact-italic">Tell us what you need.</p>
-                        <p className="contact-body-p">
+                        <p className="contact-italic-dark" style={{fontFamily: "'Playfair Display', Georgia, serif", fontStyle: "italic", fontWeight: "300", fontSize: "clamp(2rem, 4vw, 3.5rem)", color: "#00e6b0", marginBottom: "1rem"}}>Tell us what you need.</p>
+                        <p className="contact-subtitle-dark" style={{marginBottom: "0.5rem", maxWidth: '600px', margin: '0 auto 0.5rem'}}>
                             Send us a message to see how our tools can help your business.
                         </p>
-                        <p className="contact-body-p">
+                        <p className="contact-subtitle-dark" style={{marginBottom: "0.5rem", maxWidth: '600px', margin: '0 auto 0.5rem'}}>
                             Whether you need a fast website, smart AI, or better marketing, we can help.
                         </p>
-                        <p className="contact-body-p">
+                        <p className="contact-subtitle-dark" style={{marginBottom: "2rem", maxWidth: '600px', margin: '0 auto 2rem'}}>
                             We will reply within 24 hours.
                         </p>
+                    </div>
+                </div>
+            </section>
 
-                        {/* FORM */}
-                        <div className="contact-form">
+            {/* ── CONTACT FORM & LINKS SECTION ── */}
+            <section className="contact-hero" style={{paddingTop: '4rem'}}>
+                <div className="contact-hero-inner">
+                    {/* LEFT (Just the form) */}
+                    <div className="contact-left" style={{paddingTop: '0'}}>
+                        <div className="contact-form" style={{marginTop: '0'}}>
                             <div className="cf-field">
                                 <label className="cf-label">Name</label>
                                 <input
@@ -143,23 +153,23 @@ export default function Contact() {
                     </div>
 
                     {/* RIGHT SIDEBAR */}
-                    <div className="contact-sidebar">
+                    <div className="contact-sidebar" style={{marginTop: '0'}}>
                         {/* Queries card */}
                         <div className="sidebar-card">
                             <div className="sidebar-query-block">
                                 <p className="sidebar-query-title">Sales-Related Queries</p>
-                                <a href="mailto:hello@infynix.com" className="sidebar-query-val">hello@infynix.com</a>
+                                <a href="mailto:office@infynixsolutions.ae" className="sidebar-query-val">office@infynixsolutions.ae</a>
                             </div>
                             <div className="sidebar-divider" />
                             <div className="sidebar-query-block">
                                 <p className="sidebar-query-title">HR Related Queries</p>
                                 <p className="sidebar-query-val">+91 99959 11140</p>
-                                <a href="mailto:hr@infynixsolutions.co.uk" className="sidebar-query-val">hr@infynixsolutions.co.uk</a>
+                                <a href="mailto:hr@infynixsolutions.ae" className="sidebar-query-val">hr@infynixsolutions.ae</a>
                             </div>
                             <div className="sidebar-divider" />
                             <div className="sidebar-query-block">
-                                <p className="sidebar-query-title">Recruitment &amp; Open Positions</p>
-                                <a href="mailto:hires@infynix.com" className="sidebar-query-val">hires@infynix.com</a>
+                                <p className="sidebar-query-title">General Queries &amp; Support</p>
+                                <a href="mailto:info@infynixsolutions.ae" className="sidebar-query-val">info@infynixsolutions.ae</a>
                                 <a href="#" className="sidebar-careers-btn">
                                     Careers <ArrowIcon />
                                 </a>
@@ -202,9 +212,15 @@ export default function Contact() {
                         </div>
                         <div className="offices-label-row">
                             <span className="offices-label">{offices[activeOffice].label}</span>
-                            <button className="offices-map-btn" title="View on map">
-                                <LocationIcon />
-                            </button>
+                            {offices[activeOffice].mapUrl ? (
+                                <a href={offices[activeOffice].mapUrl} target="_blank" rel="noreferrer" className="offices-map-btn" title="View on map">
+                                    <LocationIcon />
+                                </a>
+                            ) : (
+                                <button className="offices-map-btn" title="View on map">
+                                    <LocationIcon />
+                                </button>
+                            )}
                         </div>
                         <p className="offices-desc" style={{ marginTop: "1rem", marginBottom: "2rem", color: "#666", fontSize: "0.85rem", lineHeight: "1.6", maxWidth: "420px" }}>
                             {offices[activeOffice].desc}
