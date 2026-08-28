@@ -48,7 +48,7 @@ const Footer = () => {
           </div>
 
           <div className="footer-location-card">
-            <a href="https://maps.google.com/?q=National+Pearl+Star+Edappally+Kochi+Kerala" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
+            <a href="https://share.google/KX27eRrKxncrDFibN" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
               <img src={kochiImage} alt="Kochi India Office" className="footer-location-svg" />
               <div className="footer-location-title">INDIA - KOCHI ↗</div>
               <div className="footer-location-addr">
