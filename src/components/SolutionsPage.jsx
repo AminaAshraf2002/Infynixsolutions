@@ -258,7 +258,7 @@ const SolutionsPage = () => {
           <h1 data-aos="fade-up" style={{ 
             fontFamily: '"PP Neue Montreal", sans-serif', 
             fontWeight: 400, 
-            fontSize: 'clamp(2.3rem, 6vw, 4rem)', 
+            fontSize: 'clamp(1.8rem, 5vw, 4rem)', 
             color: '#fff', 
             lineHeight: 1, 
             margin: 0, 

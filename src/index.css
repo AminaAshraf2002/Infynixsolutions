@@ -535,38 +535,39 @@ section[style*="var(--ix-primary)"]::after,
     padding: 0;
     z-index: 3100;
     position: relative;
-    transition: background 0.3s;
-  }
-  
-  .nav-hamburger:active, .nav-hamburger.open {
-    background: rgba(0, 122, 94, 0.08);
   }
 
-  .nav-hamburger .hamburger-line {
-    width: 18px;
+    .nav-hamburger .hamburger-line {
+    width: 24px;
     height: 2px;
-    background-color: #007A5E; /* Emerald Green */
+    background-color: #007A5E;
     border-radius: 2px;
-    transition: transform 0.3s ease, opacity 0.3s ease, background-color 0.3s ease;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
     position: absolute;
+    right: 6px;
+    transform-origin: right center;
   }
   
-  .nav-hamburger .hamburger-line:nth-child(1) { transform: translateY(-5px); }
-  .nav-hamburger .hamburger-line:nth-child(2) { transform: translateY(0); }
-  .nav-hamburger .hamburger-line:nth-child(3) { transform: translateY(5px); }
+  .nav-hamburger .hamburger-line:nth-child(1) { transform: translateY(-4px); }
+  .nav-hamburger .hamburger-line:nth-child(2) { transform: translateY(4px); width: 14px; }
+  .nav-hamburger .hamburger-line:nth-child(3) { display: none; }
 
   .nav-hamburger.open .hamburger-line:nth-child(1) {
-    transform: translateY(0) rotate(45deg);
-    background-color: #ffffff;
+    width: 16px;
+    transform: translateY(-6px) rotate(45deg);
+    background-color: #007A5E;
+    right: 4px;
   }
 
   .nav-hamburger.open .hamburger-line:nth-child(2) {
-    opacity: 0;
+    width: 16px;
+    transform: translateY(6px) rotate(-45deg);
+    background-color: #007A5E;
+    right: 4px;
   }
 
   .nav-hamburger.open .hamburger-line:nth-child(3) {
-    transform: translateY(0) rotate(-45deg);
-    background-color: #ffffff;
+    display: none;
   }
   
   .nav-mobile-overlay {
@@ -574,17 +575,17 @@ section[style*="var(--ix-primary)"]::after,
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
+    height: 100dvh;
     background: #050608;
     z-index: 2900;
     display: flex;
     flex-direction: column;
-    padding: 120px 30px 40px;
-    overflow-y: auto;
+    padding: 100px 30px 20px;
     opacity: 0;
-    transform: translateX(100%);
     visibility: hidden;
-    transition: opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1), transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.5s;
+    transform: translateX(100%);
+    transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    overflow-y: auto;
   }
 
   .nav-mobile-overlay.open {
@@ -604,7 +605,6 @@ section[style*="var(--ix-primary)"]::after,
   .mobile-nav-links {
     display: flex;
     flex-direction: column;
-    gap: 16px;
   }
 
   .mobile-menu-link {
@@ -617,12 +617,39 @@ section[style*="var(--ix-primary)"]::after,
     letter-spacing: -0.03em;
     opacity: 0;
     transform: translateY(30px);
-    transition: opacity 0.4s ease, transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    transition: opacity 0.4s ease, transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .mobile-link-num {
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.4);
+    font-family: var(--ix-font-mono);
+  }
+
+  .mobile-link-arrow {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
   }
 
   .nav-mobile-overlay.open .mobile-menu-link {
     opacity: 1;
     transform: translateY(0);
+  }
+
+  .nav-mobile-overlay.open .mobile-link-arrow {
+    opacity: 1;
+    transform: translateX(0);
+    transition-delay: 0.3s;
   }
 
   .nav-mobile-overlay.open .stagger-1 { transition-delay: 0.1s; }
@@ -3631,7 +3658,8 @@ section[style*="var(--ix-primary)"]::after,
 
 /* ─── XS / SMALL MOBILE (< 480px) ─── */
 @media (max-width: 479px) {
-  .site-header {
+
+  .site-header {
     width: calc(100% - 20px);
     top: 10px;
     height: 40px;
@@ -4259,17 +4287,7 @@ video {
     display: flex !important;
   }
 
-  .nav-hamburger.open .hamburger-line:nth-child(1) {
-    transform: translateY(5px) rotate(45deg) !important;
-  }
 
-  .nav-hamburger.open .hamburger-line:nth-child(2) {
-    opacity: 0 !important;
-  }
-
-  .nav-hamburger.open .hamburger-line:nth-child(3) {
-    transform: translateY(-5px) rotate(-45deg) !important;
-  }
 
   .nav-links {
     display: flex !important;

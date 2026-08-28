@@ -236,22 +236,58 @@ const Navbar = () => {
           <div className="mobile-menu-inner">
             <div className="mobile-nav-links">
               <Link to="/" className="mobile-menu-link stagger-1" onClick={() => setMenuOpen(false)}>
-                Home
+                <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+                  <span className="mobile-link-num">01</span>
+                  <span className="mobile-link-text">Home</span>
+                </div>
+                <span className="mobile-link-arrow">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </span>
               </Link>
               <Link to="/growth-engineering" className="mobile-menu-link stagger-2" onClick={() => setMenuOpen(false)}>
-                Engineering
+                <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+                  <span className="mobile-link-num">02</span>
+                  <span className="mobile-link-text">Engineering</span>
+                </div>
+                <span className="mobile-link-arrow">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </span>
               </Link>
               <Link to="/solutions" className="mobile-menu-link stagger-3" onClick={() => setMenuOpen(false)}>
-                Solutions
+                <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+                  <span className="mobile-link-num">03</span>
+                  <span className="mobile-link-text">Solutions</span>
+                </div>
+                <span className="mobile-link-arrow">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </span>
               </Link>
               <Link to="/case-studies" className="mobile-menu-link stagger-4" onClick={() => setMenuOpen(false)}>
-                Case Studies
+                <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+                  <span className="mobile-link-num">04</span>
+                  <span className="mobile-link-text">Case Studies</span>
+                </div>
+                <span className="mobile-link-arrow">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </span>
               </Link>
               <Link to="/insights" className="mobile-menu-link stagger-5" onClick={() => setMenuOpen(false)}>
-                Insights
+                <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+                  <span className="mobile-link-num">05</span>
+                  <span className="mobile-link-text">Insights</span>
+                </div>
+                <span className="mobile-link-arrow">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </span>
               </Link>
               <Link to="/about" className="mobile-menu-link stagger-6" onClick={() => setMenuOpen(false)}>
-                About Us
+                <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+                  <span className="mobile-link-num">06</span>
+                  <span className="mobile-link-text">About Us</span>
+                </div>
+                <span className="mobile-link-arrow">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </span>
               </Link>
             </div>
 
