@@ -1,26 +1,30 @@
 import React, { useRef, useState, useEffect } from 'react';
 import { motion, useScroll, useTransform, useSpring, AnimatePresence } from 'framer-motion';
-import { HelpCircle, MessageSquare, Lightbulb, ThumbsUp, TrendingUp, CheckCircle } from 'lucide-react';
+import { HelpCircle, Target, Lightbulb, Settings, TrendingUp, CheckCircle } from 'lucide-react';
 import './TimelineSection.css';
 
 const timelineData = [
   {
     id: 1,
-    icon: MessageSquare,
+    icon: Target,
     badgeColor: 'rgb(254, 235, 126)',
-    title: "Discover Where Growth Stalls",
-    description: "We begin with a business systems audit to identify disconnected silos and unify your growth engine.",
+    title: "1 Measure",
+    pillText: "Stage 1",
+    description: "Score the business across six pillars before recommending a single deliverable.",
     mockup: (
       <div className="tl-mockup">
         <div className="tl-mockup-header">
           <div className="tl-mockup-dots"><span></span><span></span><span></span></div>
-          <span className="tl-mockup-title" style={{ display: 'flex', alignItems: 'center', gap: '8px' }}><MessageSquare size={16} /> Customer Interaction</span>
+          <span className="tl-mockup-title" style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>Measurement Report</span>
         </div>
-        <div className="tl-mockup-body">
-          <div className="tl-msg user-msg">Can I still return my item? I bought it 30 days ago.</div>
-          <div className="tl-msg ai-msg">
-            <span className="ai-badge">AI Agent</span>
-            Yes. We allow refunds for up to 30 days. I've initiated the return process for you.
+        <div className="tl-mockup-body" style={{ padding: '0.75rem', display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: 'rgba(0,0,0,0.03)', padding: '0.5rem', borderRadius: '4px', border: '1px solid rgba(0,0,0,0.05)' }}>
+             <span style={{ fontSize: '0.75rem', fontWeight: 600, color: '#333' }}>Marketing Tools</span>
+             <span style={{ fontSize: '0.65rem', fontWeight: 700, padding: '2px 6px', borderRadius: '20px', background: '#ffebee', color: '#c62828' }}>Data Silo</span>
+          </div>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: 'rgba(0,0,0,0.03)', padding: '0.5rem', borderRadius: '4px', border: '1px solid rgba(0,0,0,0.05)' }}>
+             <span style={{ fontSize: '0.75rem', fontWeight: 600, color: '#333' }}>Sales CRM</span>
+             <span style={{ fontSize: '0.65rem', fontWeight: 700, padding: '2px 6px', borderRadius: '20px', background: '#e6f4ea', color: '#1e8e3e' }}>Connected</span>
           </div>
         </div>
       </div>
@@ -30,55 +34,45 @@ const timelineData = [
     id: 2,
     icon: Lightbulb,
     badgeColor: '#e49a45ff',
-    title: "Engineer a Connected Growth Architecture",
-    description: "We design custom website development, CRM systems, and business automation as one connected architecture.",
+    title: "2 Design",
+    pillText: "Stage 2",
+    description: "Map the stack layers that close the specific gaps the measurement found.",
     mockup: (
       <div className="tl-mockup">
         <div className="tl-mockup-header dark">
-          <span className="tl-mockup-title" style={{ display: 'flex', alignItems: 'center', gap: '8px' }}><Lightbulb size={16} /> Fill Knowledge Gaps</span>
+          <span className="tl-mockup-title" style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>System Design Blueprint</span>
         </div>
-        <div className="tl-mockup-body">
-          <div className="tl-card">
-            <div className="tl-card-header">
-              <span className="tl-card-title">Return policy</span>
-              <span className="tl-card-badge">High impact</span>
-            </div>
-            <div className="tl-card-footer">
-              <span className="tl-muted">Estimated automations</span>
-              <span className="tl-stat">15%</span>
-              <button className="tl-btn">Generate article</button>
-            </div>
-          </div>
+        <div className="tl-mockup-body" style={{ display: 'flex', gap: '4px', padding: '0.75rem', alignItems: 'center', justifyContent: 'center' }}>
+          <div style={{ padding: '6px', background: 'rgba(0,0,0,0.04)', borderRadius: '4px', fontSize: '0.65rem', fontWeight: 600 }}>Web Apps</div>
+          <span style={{ color: 'var(--ix-primary)', fontSize: '0.9rem' }}>↔</span>
+          <div style={{ padding: '6px', background: 'rgba(0,0,0,0.04)', borderRadius: '4px', fontSize: '0.65rem', fontWeight: 600 }}>CRM Systems</div>
+          <span style={{ color: 'var(--ix-primary)', fontSize: '0.9rem' }}>↔</span>
+          <div style={{ padding: '6px', background: 'rgba(0,0,0,0.04)', borderRadius: '4px', fontSize: '0.65rem', fontWeight: 600 }}>Automations</div>
         </div>
       </div>
     )
   },
   {
     id: 3,
-    icon: ThumbsUp,
+    icon: Settings,
     badgeColor: '#77dbefff',
-    title: "Build with AI-Powered Precision",
-    description: "From AI development to mobile app development, every solution is engineered for measurable business outcomes.",
+    title: "3 Build",
+    pillText: "Stage 3",
+    description: "Ship the system: content, campaigns, platforms, and the automation connecting them.",
     mockup: (
       <div className="tl-mockup">
-        <div className="tl-mockup-body align-center">
-           <div className="tl-qa-card">
-              <div className="tl-qa-header">
-                <ThumbsUp size={16} /> AI Agent QA
+        <div className="tl-mockup-body align-center" style={{ padding: '0.75rem' }}>
+           <div className="tl-qa-card" style={{ width: '100%', padding: '0.75rem' }}>
+              <div className="tl-qa-header" style={{ marginBottom: '0.5rem', fontSize: '0.8rem' }}>
+                Engineering Build Status
               </div>
-              <div className="tl-qa-row">
-                <span>Product knowledge</span>
-                <span className="emoji">🤔</span>
+              <div className="tl-qa-row" style={{ fontSize: '0.7rem', marginBottom: '0.25rem' }}>
+                <span>AI Data Models</span>
+                <span style={{ color: '#1e8e3e', fontWeight: 'bold' }}>Trained</span>
               </div>
-              <div className="tl-qa-row">
-                <span>Solution accuracy</span>
-                <span className="emoji">👎</span>
-              </div>
-              <div className="tl-qa-divider"></div>
-              <div className="tl-qa-row">
-                <span>Total</span>
-                <span className="tl-qa-badge warning">Needs review</span>
-                <span className="tl-qa-score warning">72%</span>
+              <div className="tl-qa-row" style={{ fontSize: '0.7rem' }}>
+                <span>Mobile & Web Binaries</span>
+                <span style={{ color: '#1e8e3e', fontWeight: 'bold' }}>Compiled</span>
               </div>
            </div>
         </div>
@@ -89,41 +83,24 @@ const timelineData = [
     id: 4,
     icon: TrendingUp,
     badgeColor: '#ae84e8ff',
-    title: "Optimize with Real-Time Business Intelligence",
-    description: "Our performance marketing and SEO strategies are backed by real-time business intelligence for confident decisions.",
+    title: "4 Re-Measure",
+    pillText: "Stage 4",
+    description: "Score the business again, and adjust the system for the next cycle.",
     mockup: (
       <div className="tl-mockup">
         <div className="tl-mockup-header dark">
-          <span className="tl-mockup-title">Performance Dashboard</span>
+          <span className="tl-mockup-title">Re-Measurement Dashboard</span>
         </div>
         <div className="tl-mockup-body align-center">
-          <div className="tl-chart-placeholder">
+          <div className="tl-chart-placeholder" style={{ height: '60px', paddingTop: '0.5rem' }}>
              <div className="tl-bar" style={{ height: '40%' }}></div>
              <div className="tl-bar" style={{ height: '70%' }}></div>
              <div className="tl-bar" style={{ height: '50%' }}></div>
              <div className="tl-bar" style={{ height: '90%' }}></div>
-             <div className="tl-bar" style={{ height: '60%' }}></div>
           </div>
-          <div className="tl-card-footer" style={{ width: '100%', textAlign: 'center', marginTop: '1rem' }}>
-              <span className="tl-stat">87%</span>
-              <span className="tl-muted">Resolution Rate ↑</span>
+          <div className="tl-card-footer" style={{ width: '100%', textAlign: 'center', marginTop: '0.5rem' }}>
+              <span className="tl-stat" style={{ fontSize: '1rem' }}>124%</span>
           </div>
-        </div>
-      </div>
-    )
-  },
-  {
-    id: 5,
-    icon: CheckCircle,
-    badgeColor: '#70beabff',
-    title: "Scale on Systems Built to Grow",
-    description: "Your engineered system scales with your business, supporting long-term digital transformation and sustainable business growth.",
-    mockup: (
-      <div className="tl-mockup">
-        <div className="tl-mockup-body align-center" style={{ padding: '1rem' }}>
-           <CheckCircle size={48} color="var(--ix-primary)" />
-           <h4 style={{ marginTop: '0.5rem', marginBottom: '0.25rem', fontWeight: 'bold' }}>SOC2 Certified</h4>
-           <span className="tl-muted">End-to-end encryption active</span>
         </div>
       </div>
     )
@@ -136,12 +113,14 @@ const gapZones = [
   { icon: CheckCircle, color: '#007A5E' }
 ];
 
+
 const TimelineSection = () => {
   const sectionRef = useRef(null);
   const trackRef = useRef(null);
   const cardRefs = useRef([]);
 
   const [trackHeight, setTrackHeight] = useState(0);
+  const [svgPath, setSvgPath] = useState("");
   const [ranges, setRanges] = useState({ input: [0, 1], output: [0, 0] });
   const [activeZone, setActiveZone] = useState(0);
 
@@ -149,16 +128,70 @@ const TimelineSection = () => {
   useEffect(() => {
     const measure = () => {
       if (!trackRef.current) return;
+      const trackRect = trackRef.current.getBoundingClientRect();
       const height = trackRef.current.offsetHeight;
       setTrackHeight(height);
 
       if (height === 0) return;
-      // We no longer need to build custom pause ranges. Linear mapping guarantees a perfect 1:1 screen lock!
+
+      if (cardRefs.current.length > 0) {
+        let path = "";
+        const r = 24; 
+        
+        for (let i = 0; i < cardRefs.current.length; i++) {
+          const card = cardRefs.current[i];
+          if (!card) continue;
+          const rect = card.getBoundingClientRect();
+          
+          const cx = (rect.left + rect.width / 2) - trackRect.left;
+          const cy = (rect.top + rect.height / 2) - trackRect.top;
+          
+          if (i === 0) {
+             path += `M ${cx} ${cy} `;
+          } else {
+             const prevCard = cardRefs.current[i-1];
+             const prevRect = prevCard.getBoundingClientRect();
+             const pcx = (prevRect.left + prevRect.width / 2) - trackRect.left;
+             const pcy = (prevRect.top + prevRect.height / 2) - trackRect.top;
+             
+             if (Math.abs(cx - pcx) < 10) {
+                // Mobile stacked layout: draw straight line down
+                path += `L ${cx} ${cy} `;
+             } else if (cx > pcx) {
+                // Moving Left to Right
+                path += `L ${cx - r} ${pcy} `;
+                path += `A ${r} ${r} 0 0 1 ${cx} ${pcy + r} `;
+                path += `L ${cx} ${cy} `;
+             } else {
+                // Moving Right to Left
+                path += `L ${cx + r} ${pcy} `;
+                path += `A ${r} ${r} 0 0 0 ${cx} ${pcy + r} `;
+                path += `L ${cx} ${cy} `;
+             }
+          }
+        }
+        setSvgPath(path);
+      }
     };
 
+    const resizeObserver = new ResizeObserver(() => {
+      measure();
+    });
+
+    if (trackRef.current) {
+      resizeObserver.observe(trackRef.current);
+    }
+    
+    // Also observe the cards themselves in case their internal content changes height
+    cardRefs.current.forEach(card => {
+      if (card) resizeObserver.observe(card);
+    });
+
     measure();
-    window.addEventListener('resize', measure);
-    return () => window.removeEventListener('resize', measure);
+    
+    return () => {
+      resizeObserver.disconnect();
+    };
   }, []);
 
   const { scrollYProgress } = useScroll({
@@ -219,28 +252,44 @@ const TimelineSection = () => {
 
   return (
     <section className="timeline-section" ref={sectionRef}>
-      <div className="timeline-taller-wrapper">
+      <div className="timeline-header-section">
+        <h2>
+          Growth Engineering that gets <span style={{ color: '#007A5E' }}>smarter</span> with every system.
+        </h2>
+        <p>
+          From website development and AI automation to CRM integration — Infynix's Growth Engineering Method connects every business system for measurable, sustainable growth.
+        </p>
+        <button className="timeline-cta-btn">
+          Schedule a Discovery Call
+        </button>
+      </div>
 
-        <div className="timeline-header-section">
-          <h2>
-            Growth Engineering that gets <span style={{ color: '#007A5E' }}>smarter</span> with every system.
-          </h2>
-          <p>
-            From website development and AI automation to CRM integration — Infynix's Growth Engineering Method connects every business system for measurable, sustainable growth.
-          </p>
-          <button className="timeline-cta-btn">
-            Schedule a Discovery Call
-          </button>
-        </div>
+      <div className="timeline-taller-wrapper">
 
         <div className="timeline-container">
 
-          <div className="timeline-track-wrapper">
-            <div className="timeline-line-static" ref={trackRef}></div>
-
+          <div className="timeline-track-wrapper" ref={trackRef} style={{ pointerEvents: 'none' }}>
+            <svg style={{ width: '100%', height: '100%', position: 'absolute', top: 0, left: 0, zIndex: 1 }}>
+               <path d={svgPath} fill="none" stroke="#E5E5E5" strokeWidth="1.5" strokeDasharray="6 6" />
+               <motion.path 
+                 d={svgPath} 
+                 fill="none" 
+                 stroke="#007A5E" 
+                 strokeWidth="2" 
+                 strokeDasharray="6 6"
+                 style={{ pathLength: scrollYProgress }} 
+               />
+            </svg>
             <motion.div
               className="timeline-continuous-marker"
-              style={{ x: "-50%", y: iconY }}
+              style={{ 
+                top: 0, 
+                left: 0, 
+                transform: "none",
+                offsetPath: svgPath ? `path('${svgPath}')` : 'none',
+                offsetDistance: useTransform(scrollYProgress, [0, 1], ['0%', '100%']),
+                offsetRotate: '0deg'
+              }}
             >
               <div
                 className="timeline-small-badge"
@@ -275,18 +324,23 @@ const TimelineSection = () => {
                     ref={(el) => (cardRefs.current[index] = el)}
                   >
                     <div className={`timeline-card ${isActive ? 'active' : ''}`}>
-
-                      <div className="timeline-text">
-                        <h3>{item.title}</h3>
-                        <p>{item.description}</p>
+                      <div className="timeline-card-pill">
+                        <span>{item.pillText}</span>
                       </div>
-
-                      <div className="timeline-visual-scale-wrapper">
-                        <div className="timeline-visual">
-                          {item.mockup}
+                      <div className="timeline-card-content">
+                        <div className="timeline-card-header">
+                           <div className="timeline-card-icon" style={{ backgroundColor: item.badgeColor, color: '#111' }}>
+                             <item.icon size={18} strokeWidth={2.5} />
+                           </div>
+                           <h3>{item.title}</h3>
                         </div>
+                        <p>{item.description}</p>
+                        {item.mockup && (
+                           <div className="timeline-mini-mockup-wrapper">
+                             {item.mockup}
+                           </div>
+                        )}
                       </div>
-
                     </div>
                   </div>
                 </div>

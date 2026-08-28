@@ -74,9 +74,9 @@ const Footer = () => {
             </div>
             <div className="footer-nav-col">
               <span style={{ color: '#ffffff', fontWeight: 'bold', fontSize: '0.85rem', marginBottom: '8px' }}>SERVICES</span>
-              <Link to="/growth-engineering">Growth Engineering</Link>
-              <Link to="/solutions/website-development">Web Development</Link>
-              <Link to="/solutions/artificial-intelligence">AI Integration</Link>
+              <Link to="/solutions/infynix-agency">Infynix Agency</Link>
+              <Link to="/solutions/infynix-media">Infynix Media</Link>
+              <Link to="/solutions/infynix-growth-solutions">Infynix Growth</Link>
             </div>
             <div className="footer-nav-col">
               <span style={{ color: '#ffffff', fontWeight: 'bold', fontSize: '0.85rem', marginBottom: '8px' }}>INDUSTRIES</span>

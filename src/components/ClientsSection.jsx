@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { motion, useInView, useAnimation } from 'framer-motion';
 import { useIxReveal } from './WhoWeAre';
 import logo from '../assets/footer.png';
 import ukLImage from '../assets/UKL.svg';
@@ -181,27 +182,27 @@ const ClientsSection = () => {
             <div className="footer-nav-grid" style={{ width: '100%' }}>
               <div className="footer-nav-col">
                 <span style={{ color: '#ffffff', fontWeight: 'bold', fontSize: '0.85rem', marginBottom: '8px' }}>ABOUT</span>
-                <a href="#specialize">Company</a>
-                <a href="#featured">Featured Work</a>
-                <a href="#">Careers</a>
+                <Link to="/about">Company</Link>
+                <Link to="/case-studies">Featured Work</Link>
+                <Link to="/insights">Insights</Link>
               </div>
               <div className="footer-nav-col">
                 <span style={{ color: '#ffffff', fontWeight: 'bold', fontSize: '0.85rem', marginBottom: '8px' }}>SERVICES</span>
-                <a href="/what-we-do">Growth Engineering</a>
-                <a href="/what-we-do">Growth Systems</a>
-                <a href="/what-we-do">AI Surveillance</a>
+                <Link to="/solutions/infynix-agency">Infynix Agency</Link>
+                <Link to="/solutions/infynix-media">Infynix Media</Link>
+                <Link to="/solutions/infynix-growth-solutions">Infynix Growth</Link>
               </div>
               <div className="footer-nav-col">
                 <span style={{ color: '#ffffff', fontWeight: 'bold', fontSize: '0.85rem', marginBottom: '8px' }}>INDUSTRIES</span>
-                <a href="#">Retail & Commerce</a>
-                <a href="#">Healthcare</a>
-                <a href="#">Technology</a>
+                <Link to="/industries/retail">Retail & Commerce</Link>
+                <Link to="/industries/healthcare">Healthcare</Link>
+                <Link to="/industries/education">Education</Link>
               </div>
               <div className="footer-nav-col">
                 <span style={{ color: '#ffffff', fontWeight: 'bold', fontSize: '0.85rem', marginBottom: '8px' }}>LEGAL</span>
-                <a href="#">Privacy Policy</a>
-                <a href="#">Security</a>
-                <a href="#">Terms of Use</a>
+                <Link to="/privacy-policy">Privacy Policy</Link>
+                <Link to="/terms-of-service">Terms of Use</Link>
+                <a href="/sitemap.xml" target="_blank" rel="noopener noreferrer">XML Sitemap</a>
               </div>
             </div>
           </div>

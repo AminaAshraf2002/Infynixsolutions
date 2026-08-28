@@ -1,245 +1,552 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { solutionsData } from '../lib/contentData';
+import { solutionsData, caseStudiesData } from '../lib/contentData';
 import SEOManager from './SEOManager';
-import './InfynixDesign.css';
-import teamImg from '../assets/team.png';
-import weImg from '../assets/webpage.png';
-import aiImg from '../assets/ai.png'; // Added alternative image for AI
+import defaultHeroBg from '../assets/hero_bg_abstract.jpg';
+import capImg1 from '../assets/cap_img_1.jpg';
+import capImg2 from '../assets/cap_img_2.jpg';
+import capImg3 from '../assets/cap_img_3.jpg';
+import caseStudy1 from '../assets/menucard.jpeg';
+import caseStudy2 from '../assets/case_study_2.jpg';
+import caseStudy3 from '../assets/visiting.jpeg';
 
-function useIxReveal() {
-  useEffect(() => {
-    const els = document.querySelectorAll('.ix-reveal, .ix-reveal-left, .ix-reveal-right, .ix-reveal-scale');
-    const obs = new IntersectionObserver(
-      (entries) => entries.forEach((e) => { if (e.isIntersecting) e.target.classList.add('ix-visible'); }),
-      { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
-    );
-    els.forEach((el) => obs.observe(el));
-    return () => obs.disconnect();
-  }, []);
-}
+// Import images for main layer pages
+import agencyBg from '../assets/mark.png';
+import mediaBg from '../assets/media.png';
+import growthBg from '../assets/marketing.png';
 
+const bgMap = {
+  'infynix-agency': agencyBg,
+  'infynix-media': mediaBg,
+  'infynix-growth-solutions': growthBg
+};
 
-
-function Accordion({ items, dark }) {
-  const [open, setOpen] = useState(null);
-  return (
-    <div>
-      {items.map((item, i) => (
-        <div key={i} className={`ix-accordion-item${dark ? ' ix-accordion-item--dark' : ''}`}>
-          <button className="ix-accordion-btn" onClick={() => setOpen(open === i ? null : i)} aria-expanded={open === i}>
-            <span className={`ix-accordion-q${dark ? ' ix-accordion-q--dark' : ''}`}>{item.q}</span>
-            <span className={`ix-accordion-icon${dark ? ' ix-accordion-icon--dark' : ''}${open === i ? ' open' : ''}`}>+</span>
-          </button>
-          <div className={`ix-accordion-body${open === i ? ' open' : ''}`}>
-            <p className={`ix-accordion-a${dark ? ' ix-accordion-a--dark' : ''}`}>{item.a}</p>
-          </div>
-        </div>
-      ))}
-    </div>
-  );
-}
-
-const Arrow = () => (
-  <svg viewBox="0 0 14 14" fill="none" width="13" height="13">
-    <path d="M2 12L12 2M12 2H5M12 2V9" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+// SVG Icons
+const ArrowUpRight = () => (
+  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="square">
+    <path d="M7 17L17 7M7 7H17V17" />
   </svg>
 );
+
+const ArrowRight = () => (
+  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="1.5">
+    <path d="M5 12H19M12 5L19 12L12 19" />
+  </svg>
+);
+
+const PlusMinus = ({ isOpen }) => (
+  <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" strokeWidth="1.5" style={{ transition: 'transform 0.3s', transform: isOpen ? 'rotate(180deg)' : 'rotate(0deg)' }}>
+    {!isOpen && <path d="M12 5V19" />}
+    <path d="M5 12H19" />
+  </svg>
+);
+
+// --- Component: Custom Accordion ---
+const CapabilitiesAccordion = ({ items }) => {
+  const [openIndex, setOpenIndex] = useState(0);
+
+  const images = [capImg1, capImg2, capImg3];
+
+  return (
+    <div style={{ display: 'flex', flexDirection: 'column' }}>
+      {items.map((item, idx) => {
+        const isOpen = openIndex === idx;
+        const num = String(idx + 1).padStart(2, '0');
+        const bgImg = images[idx % images.length];
+        
+        return (
+          <div key={idx} className="solutions-accordion-row" style={{ borderBottom: '1px solid #eaeaea', padding: '32px 0', gap: '40px', alignItems: 'flex-start' }}>
+            
+            {/* Left Side: Icon or Image */}
+            <div className="solutions-accordion-left" style={{ flexShrink: 0, cursor: 'pointer' }} onClick={() => setOpenIndex(isOpen ? -1 : idx)}>
+              {isOpen ? (
+                <div style={{ 
+                  width: '240px', 
+                  height: '240px', 
+                  backgroundImage: `url(${bgImg})`,
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
+                  position: 'relative',
+                  overflow: 'hidden'
+                }}>
+                </div>
+              ) : (
+                <div style={{ width: '240px', display: 'flex', alignItems: 'center' }}>
+                  <div style={{ width: '48px', height: '48px', background: '#f8f8f8', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#a7d600" strokeWidth="1.5">
+                       <path d="M12 2L15 9L22 12L15 15L12 22L9 15L2 12L9 9L12 2Z" fill="rgba(167,214,0,0.2)"/>
+                     </svg>
+                  </div>
+                </div>
+              )}
+            </div>
+
+            {/* Right Side: Number, Title, Text */}
+            <div style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: '20px' }}>
+              
+              <div 
+                style={{ display: 'flex', alignItems: 'center', gap: '20px', cursor: 'pointer' }}
+                onClick={() => setOpenIndex(isOpen ? -1 : idx)}
+              >
+                <span style={{ fontSize: '0.9rem', fontWeight: 600, color: '#555', fontFamily: 'var(--ix-font-body)' }}>{num}</span>
+                <h3 style={{ fontFamily: '"PP Neue Montreal", sans-serif', fontSize: 'clamp(1.5rem, 3vw, 2.8rem)', fontWeight: 400, margin: 0, color: '#111', letterSpacing: '-0.02em', lineHeight: 1.1 }}>
+                  {item.title}
+                </h3>
+              </div>
+
+              <div style={{
+                height: isOpen ? 'auto' : 0,
+                overflow: 'hidden',
+                opacity: isOpen ? 1 : 0,
+                transition: 'opacity 0.4s ease',
+              }}>
+                <div style={{ paddingTop: '16px', paddingLeft: '40px' }}>
+                  <p style={{ fontSize: '0.95rem', lineHeight: 1.7, color: '#999', margin: 0, maxWidth: '600px', fontFamily: 'var(--ix-font-body)' }}>
+                    {item.desc}
+                  </p>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        );
+      })}
+    </div>
+  );
+};
+
+
+const MarqueeCard = ({ title, slug }) => {
+  const [isHovered, setIsHovered] = useState(false);
+  return (
+    <Link 
+      to={`/solutions/${slug}`}
+      style={{
+        flex: '0 0 auto',
+        width: '280px',
+        height: '90px',
+        background: isHovered ? '#f4f4f4' : '#fafafa',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        cursor: 'pointer',
+        transition: 'background 0.3s ease',
+        padding: '0 20px',
+        textAlign: 'center',
+        textDecoration: 'none'
+      }}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
+      {isHovered ? (
+        <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: '#999', fontSize: '1rem', fontFamily: 'var(--ix-font-body)' }}>
+          View Service <ArrowRight />
+        </div>
+      ) : (
+        <span style={{ fontSize: '1.05rem', fontWeight: 500, color: '#111', fontFamily: 'var(--ix-font-body)' }}>
+          {title}
+        </span>
+      )}
+    </Link>
+  );
+};
 
 const SolutionsPage = () => {
   const { slug } = useParams();
   const activeSlug = slug || 'website-development';
-  useIxReveal();
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [activeSlug]);
 
   const data = solutionsData[activeSlug];
-  if (!data) return <div style={{ padding: '20vh 5%', textAlign: 'center', fontFamily: 'var(--ix-font-display)', fontSize: '2rem' }}>Solution not found.</div>;
+  if (!data) return <div style={{ padding: '20vh 5%', textAlign: 'center', fontSize: '2rem' }}>Solution not found.</div>;
 
-  const titleWords = data.title.split(' ');
-  const firstWord = titleWords[0];
-  const restWords = titleWords.slice(1).join(' ');
+  const currentHeroBg = bgMap[activeSlug] || defaultHeroBg;
 
-  const schema = {
-    '@context': 'https://schema.org',
-    '@type': 'Service',
-    'name': data.title,
-    'description': data.description,
-    'provider': { '@type': 'Organization', 'name': 'Infynix', 'url': 'https://infynix.com' }
-  };
-
-  const blueprint = [
-    { label: 'Challenge', text: data.challenge },
-    { label: 'Insight', text: data.insight },
-    { label: 'Solution', text: data.solution },
-    { label: 'Outcome', text: data.outcome },
-    { label: 'Scale', text: 'Continuous testing, optimizations, and cloud scaling alerts.' },
+  // Use specific capabilities if available, otherwise adapt blueprint data
+  const capabilities = data.capabilities || [
+    { title: 'The Challenge', desc: data.challenge },
+    { title: 'Our Insight', desc: data.insight },
+    { title: 'The Solution', desc: data.solution },
+    { title: 'The Outcome', desc: data.outcome },
+    { title: 'Scale & Optimize', desc: 'Continuous testing, optimizations, and cloud scaling alerts to ensure long-term, sustainable growth.' }
   ];
 
+  // Map specific steps for the "How We Work" section if available, otherwise use fallback
+  const workingSteps = data.workingSteps || [
+    { num: '01', title: 'Measure', desc: 'We audit your current systems, marketing, and funnels.' },
+    { num: '02', title: 'Design', desc: 'We architect a custom strategy bridging your exact gaps.' },
+    { num: '03', title: 'Build', desc: 'We deploy the tech, content, and pipelines required.' },
+    { num: '04', title: 'Launch', desc: 'We seamlessly roll out the solution with zero downtime.' },
+    { num: '05', title: 'Re-Measure', desc: 'We track every metric to ensure it meets our strict KPIs.' },
+    { num: '06', title: 'Scale', desc: 'We optimize the winning channels to compound your returns.' }
+  ];
+
+  // Get 3 random case studies or first 3
+  const relatedCases = caseStudiesData.slice(0, 3);
+  
+  const agencyServices = [
+    "Performance Advertising", "SEO & Content Marketing", "Social Media Management",
+    "Marketing Automation & CRM", "Analytics & Reporting", "Brand Strategy & Positioning"
+  ];
+  const mediaServices = [
+    "Photography & Videography", "Short-Form & Social Content", "Brand Films & Commercials",
+    "AI-Assisted Production", "Motion Graphics & Animation", "Podcast & Audio Production"
+  ];
+  const growthServices = [
+    "Custom Web & App Development", "AI-Native Product Development", "Marketing & Business Automation",
+    "IoT & Connected Systems", "Data Platforms & Dashboards", "API & Systems Integration"
+  ];
+
+  let displayServices = mediaServices;
+  if (data.category === 'Marketing' || data.category === 'Branding') {
+    displayServices = agencyServices;
+  } else if (data.category === 'Development') {
+    displayServices = growthServices;
+  }
+
   return (
-    <div style={{ background: '#fff' }}>
+    <div style={{ background: '#fff', color: '#111' }}>
+      <style dangerouslySetInnerHTML={{__html: `
+        @media (max-width: 768px) {
+          .solutions-hero-section {
+            background-size: 100% auto !important;
+            background-position: top center !important;
+            background-repeat: no-repeat !important;
+            background-color: #111 !important;
+            padding-top: calc(100vw * 0.56 + 20px) !important;
+            min-height: auto !important;
+            padding-bottom: 30px !important;
+          }
+          .solutions-hero-overlay {
+            background: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(17,17,17,1) calc(100vw * 0.65)) !important;
+          }
+        }
+      `}} />
       <SEOManager
         title={`${data.title} | Infynix Solutions`}
         description={data.description}
         canonicalUrl={`https://infynix.com/solutions/${slug}`}
-        schemaData={schema}
       />
 
-      {/* ══ HERO — Zendesk Replica ══ */}
+      {/* ══ 1. HERO SECTION ══ */}
       <section className="solutions-hero-section" style={{
-        background: '#ffffff',
-        minHeight: '85vh',
-        display: 'grid',
-        alignItems: 'center',
+        backgroundImage: `url(${currentHeroBg})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        padding: '200px 5% 100px 5%',
+        minHeight: '80vh',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
         position: 'relative',
-        padding: '120px var(--section-px) 80px',
-        gap: '4rem',
-        overflow: 'hidden'
+        color: '#fff' // Update text color to white for better contrast on dark metallic bg
       }}>
-        {/* Radial ambient glow */}
-        <div style={{
-          position: 'absolute',
-          bottom: '-100px',
-          left: '0',
-          width: '100%',
-          height: '250px',
-          background: 'radial-gradient(ellipse at 80% 50%, rgba(0, 122, 94, 0.7) 0%, rgba(204, 255, 0, 0.11) 55%, rgba(255,255,255,0) 85%)',
-          filter: 'blur(90px)',
-          pointerEvents: 'none',
-          zIndex: 0
-        }} />
-        {/* Left */}
-        <div style={{ position: 'relative', zIndex: 1 }} data-aos="fade-up">
-          <h1 style={{ fontFamily: 'var(--ix-font-display)', fontWeight: 500, fontSize: 'clamp(2rem, 4vw, 3.5rem)', color: '#111', lineHeight: 1.1, marginTop: '0', marginBottom: '1.5rem', letterSpacing: '-0.02em' }}>
+        <div className="solutions-hero-overlay" style={{ position: 'absolute', inset: 0, background: 'rgba(0,0,0,0.3)' }}></div> {/* Overlay for readability */}
+        <div style={{ maxWidth: '1400px', margin: '0 auto', width: '100%', position: 'relative', zIndex: 1 }}>
+          {/* Breadcrumbs */}
+          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.9rem', color: '#eaeaea', marginBottom: '3rem', fontFamily: 'var(--ix-font-body)' }}>
+            <Link to="/" style={{ color: '#eaeaea', textDecoration: 'none' }}>Home</Link>
+            <span>/</span>
+            <Link to="/solutions" style={{ color: '#eaeaea', textDecoration: 'none' }}>Services</Link>
+            <span>/</span>
+            <span style={{ color: '#fff', fontWeight: 500 }}>{data.title}</span>
+          </div>
+
+          <h1 style={{ 
+            fontFamily: '"PP Neue Montreal", sans-serif', 
+            fontWeight: 400, 
+            fontSize: 'clamp(2rem, 4vw, 4rem)', 
+            color: '#fff', 
+            lineHeight: 1, 
+            margin: 0, 
+            letterSpacing: '-0.03em',
+            maxWidth: '1200px'
+          }}>
             {data.title}
           </h1>
-          <p style={{ fontFamily: 'var(--ix-font-body)', fontSize: '1rem', color: '#111', lineHeight: 1.6, marginBottom: '1.5rem', maxWidth: '520px' }}>
-            {data.description}
-          </p>
-          <p style={{ fontFamily: 'var(--ix-font-body)', fontSize: '1.1rem', color: '#111', lineHeight: 1.6, marginBottom: '2.5rem', maxWidth: '520px' }}>
-            {data.challenge}
-          </p>
-          <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
-            <Link to="/contact" style={{ background: '#007A5E', color: '#ffffffff', padding: '0.9rem 1.8rem', borderRadius: '40px', fontWeight: 600, textDecoration: 'none', display: 'inline-flex', alignItems: 'center', transition: 'background 0.3s' }} onMouseEnter={e => e.currentTarget.style.background = '#96c200'} onMouseLeave={e => e.currentTarget.style.background = '#a7d600'}>
-              Try it for free
-            </Link>
-            <a href="#blueprint" style={{ background: '#fff', border: '1px solid #ccc', color: '#111', padding: '0.9rem 1.8rem', borderRadius: '40px', fontWeight: 600, textDecoration: 'none', display: 'inline-flex', alignItems: 'center', transition: 'border-color 0.3s' }} onMouseEnter={e => e.currentTarget.style.borderColor = '#999'} onMouseLeave={e => e.currentTarget.style.borderColor = '#ccc'}>
-              View demo
-            </a>
+        </div>
+      </section>
+
+      {/* ══ 2. INTRO SECTION (Split Column) ══ */}
+      <section className="solutions-intro-section" style={{ padding: '120px 5% 120px 5%', background: '#fff' }}>
+        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+          <div className="solutions-intro-grid" style={{ display: 'grid', gap: '6rem' }}>
+            
+            {/* Left: Bold Statement */}
+            <div style={{ paddingRight: '2rem' }}>
+              <h2 style={{ 
+                fontFamily: '"PP Neue Montreal", var(--ix-font-display)', 
+                fontSize: 'clamp(2.5rem, 4vw, 3.5rem)', 
+                lineHeight: 1.1, 
+                margin: 0,
+                letterSpacing: '-0.02em'
+              }}>
+                <span style={{ color: '#888', fontWeight: 400 }}>At Infynix,</span> <span style={{ color: '#111', fontWeight: 400 }}>we craft growth engines that inspire and endure.</span>
+              </h2>
+            </div>
+
+            {/* Right: Description & CTA */}
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
+              <p style={{ fontFamily: 'var(--ix-font-body)', fontSize: '1.05rem', color: '#888', lineHeight: 1.7, margin: 0 }}>
+                {data.description} {data.challenge} {data.insight}
+              </p>
+              
+              <div style={{ marginTop: '1rem' }}>
+                <Link to="/contact" style={{ 
+                  display: 'inline-flex', 
+                  alignItems: 'center', 
+                  justifyContent: 'space-between',
+                  width: '240px',
+                  background: 'transparent', 
+                  color: '#111', 
+                  padding: '14px 20px', 
+                  textDecoration: 'none', 
+                  fontWeight: 500, 
+                  fontFamily: 'var(--ix-font-body)',
+                  fontSize: '1rem',
+                  transition: 'all 0.3s',
+                  border: '1px solid #111'
+                }}
+                onMouseEnter={e => { e.currentTarget.style.background = '#111'; e.currentTarget.style.color = '#fff'; }}
+                onMouseLeave={e => { e.currentTarget.style.background = 'transparent'; e.currentTarget.style.color = '#111'; }}
+                >
+                  <span>Get My Growth Plan</span> <ArrowRight />
+                </Link>
+              </div>
+            </div>
+
           </div>
-        </div>
-
-        {/* Right — Image */}
-        <div style={{ position: 'relative', zIndex: 1, display: 'flex', justifyContent: 'center' }} data-aos="fade-up" data-aos-delay="200">
-          <img src={activeSlug === 'artificial-intelligence' ? aiImg : weImg} alt={data.title} style={{ width: '100%', maxWidth: '340px', height: 'auto', borderRadius: '40px', objectFit: 'cover', aspectRatio: '1/1',  }} />
+          
         </div>
       </section>
 
-      {/* ══ TEAL BANNER ══ */}
-      <section style={{ background: 'var(--ix-primary)', padding: 'clamp(48px, 8vw, 96px) var(--section-px)', overflow: 'hidden', position: 'relative' }}>
-        <div style={{ position: 'absolute', inset: 0, opacity: 0.07, backgroundImage: 'repeating-linear-gradient(-45deg, #fff 0, #fff 1px, transparent 0, transparent 50%)', backgroundSize: '20px 20px' }} />
-        <div style={{ position: 'relative', zIndex: 1, maxWidth: 1200, margin: '0 auto', display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '2rem', flexWrap: 'wrap' }}>
-          <h2 style={{ fontFamily: '"Montserrat", Arial, sans-serif', fontWeight: 400, fontSize: 'clamp(2rem, 4vw, 3.8rem)', color: '#fff', lineHeight: 1.05, letterSpacing: '-0.02em' }}>
-            Engineered for<br />
-            <em style={{ fontFamily: 'var(--ix-font-serif)', fontStyle: 'italic', fontWeight: 400 }}>Sustainable Growth</em>
-          </h2>
-          <p style={{ fontFamily: 'var(--ix-font-body)', fontSize: '0.97rem', color: 'rgba(255,255,255,0.8)', lineHeight: 1.8, maxWidth: 480, flex: '1 1 300px' }}>
-            {data.insight}
-          </p>
+      {/* ══ 3. CAPABILITIES ACCORDION ══ */}
+      <section className="solutions-accordion-section" style={{ padding: '80px 5% 120px 5%', background: '#fff' }}>
+        <div style={{ maxWidth: '1400px', margin: '0 auto', display: 'flex', flexWrap: 'wrap', gap: '4rem' }}>
+          
+          {/* Left: Sticky Label */}
+          <div style={{ flex: '1 1 300px' }}>
+            <div style={{ position: 'sticky', top: '120px' }}>
+              <p style={{ 
+                fontFamily: 'var(--ix-font-body)', 
+                fontSize: '0.85rem', 
+                letterSpacing: '0.02em', 
+                lineHeight: 1.5, 
+                margin: 0,
+                textTransform: 'uppercase'
+              }}>
+                <span style={{ color: '#999', fontWeight: 500 }}>OUR </span> 
+                <span style={{ color: '#111', fontWeight: 600 }}>CAPABILITIES IN</span><br/>
+                <span style={{ color: '#111', fontWeight: 600 }}>{data.title}</span>
+              </p>
+            </div>
+          </div>
+
+          {/* Right: Accordion */}
+          <div style={{ flex: '2 1 600px' }}>
+            <CapabilitiesAccordion items={capabilities} />
+          </div>
+
         </div>
       </section>
 
-      {/* ══ THE GROWTH Blueprint ══ */}
-      <section id="blueprint" className="ix-section" style={{ background: '#fff', textAlign: 'center', padding: '120px var(--section-px)', overflow: 'hidden', position: 'relative' }}>
-        <div style={{ position: 'relative', zIndex: 1, maxWidth: '1200px', margin: '0 auto' }}>
-          <h2 data-aos="fade-up" style={{ fontFamily: 'var(--ix-font-display)', fontWeight: 700, fontSize: 'clamp(2rem, 3.5vw, 2.8rem)', color: '#111', marginBottom: '100px', letterSpacing: '-0.02em' }}>
-            The Growth Blueprint
-          </h2>
+      {/* ══ 4. HOW WE WORK (Dark Grid) ══ */}
+      <section style={{ background: '#0a0a0a', color: '#fff', padding: '120px 5%' }}>
+        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+          
+          <div style={{ textAlign: 'center', marginBottom: '80px' }}>
+            <h2 style={{ fontFamily: '"PP Neue Montreal", var(--ix-font-display)', fontSize: 'clamp(2.5rem, 5vw, 4rem)', margin: 0, letterSpacing: '-0.02em' }}>
+              <span style={{ color: '#888', fontWeight: 400 }}>How</span> <span style={{ fontWeight: 500, color: '#fff' }}>We Work</span>
+            </h2>
+          </div>
 
-          <div className="solutions-blueprint-container" style={{ position: 'relative', display: 'flex', justifyContent: 'center', gap: '30px' }}>
-            {blueprint.map((item, i) => {
-              const isHigh = i % 2 !== 0;
-              const dropAmount = isHigh ? 30 : 120; // 30px for high, 120px for low
+          {/* 3x2 Grid */}
+          <div style={{ 
+            display: 'grid', 
+            gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', 
+            gap: '30px'
+          }}>
+            {workingSteps.map((step, idx) => (
+              <div key={idx} style={{ 
+                background: 'transparent', 
+                border: '1px solid rgba(255,255,255,0.08)',
+                padding: '40px 32px',
+                display: 'flex',
+                flexDirection: 'column',
+                gap: '20px'
+              }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+                  <span style={{ fontFamily: 'var(--ix-font-body)', fontSize: '0.9rem', fontWeight: 700, color: '#fff' }}>
+                    {step.num}
+                  </span>
+                  <h3 style={{ fontFamily: 'var(--ix-font-display)', fontSize: '1.2rem', fontWeight: 600, margin: 0, color: '#fff' }}>
+                    {step.title}
+                  </h3>
+                </div>
+                <p style={{ fontFamily: 'var(--ix-font-body)', fontSize: '1.05rem', color: '#888', margin: 0, lineHeight: 1.6 }}>
+                  {step.desc}
+                </p>
+              </div>
+            ))}
+          </div>
 
+        </div>
+      </section>
+
+      {/* ══ 5. CASE STUDY (Replica) ══ */}
+      <section style={{ padding: '120px 5%', background: '#fff' }}>
+        <div style={{ maxWidth: '1400px', margin: '0 auto' }}>
+          
+          <div style={{ textAlign: 'center', marginBottom: '80px' }}>
+            <h2 style={{ fontFamily: '"PP Neue Montreal", sans-serif', fontSize: 'clamp(2.5rem, 5vw, 4rem)', fontWeight: 400, margin: 0, letterSpacing: '-0.02em' }}>
+              <span style={{ color: '#aaa' }}>Case</span> <span style={{ color: '#111' }}>study</span>
+            </h2>
+          </div>
+
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '20px' }}>
+            
+            {/* Left Image */}
+            <div style={{ position: 'relative', aspectRatio: '3/4', overflow: 'hidden' }}>
+              <img src={caseStudy1} alt="Case Study 1" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+              <div style={{ position: 'absolute', bottom: '20px', left: '20px', display: 'flex', gap: '8px' }}>
+                <span style={{ background: 'rgba(0,0,0,0.6)', color: '#fff', padding: '6px 12px', fontSize: '0.75rem', fontWeight: 600, fontFamily: 'var(--ix-font-body)' }}>Marketing</span>
+                <span style={{ background: 'rgba(0,0,0,0.6)', color: '#fff', padding: '6px 12px', fontSize: '0.75rem', fontWeight: 600, fontFamily: 'var(--ix-font-body)' }}>Menucard</span>
+              </div>
+            </div>
+
+            {/* Center Video/Image (Using poster image, ready for video src) */}
+            <div style={{ position: 'relative', aspectRatio: '3/4', overflow: 'hidden' }}>
+              <video autoPlay loop muted playsInline poster={caseStudy2} style={{ width: '100%', height: '100%', objectFit: 'cover' }}>
+                {/* <source src="/path-to-your-video.mp4" type="video/mp4" /> */}
+              </video>
+              <div style={{ position: 'absolute', bottom: '20px', left: '20px', display: 'flex', gap: '8px' }}>
+                <span style={{ background: 'rgba(200,200,200,0.6)', color: '#fff', padding: '6px 12px', fontSize: '0.75rem', fontWeight: 600, fontFamily: 'var(--ix-font-body)' }}>Marketing</span>
+                <span style={{ background: 'rgba(200,200,200,0.6)', color: '#fff', padding: '6px 12px', fontSize: '0.75rem', fontWeight: 600, fontFamily: 'var(--ix-font-body)' }}>Campaign</span>
+              </div>
+            </div>
+
+            {/* Right Image */}
+            <div style={{ position: 'relative', aspectRatio: '3/4', overflow: 'hidden' }}>
+              <img src={caseStudy3} alt="Case Study 3" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+              <div style={{ position: 'absolute', bottom: '20px', left: '20px', display: 'flex', gap: '8px' }}>
+                <span style={{ background: 'rgba(200,50,50,0.6)', color: '#fff', padding: '6px 12px', fontSize: '0.75rem', fontWeight: 600, fontFamily: 'var(--ix-font-body)' }}>Branding</span>
+                <span style={{ background: 'rgba(200,50,50,0.6)', color: '#fff', padding: '6px 12px', fontSize: '0.75rem', fontWeight: 600, fontFamily: 'var(--ix-font-body)' }}>Visiting Card</span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      {/* ══ 6. EXPLORE ALL SERVICES ══ */}
+      <section style={{ padding: '60px 5% 120px 5%', background: '#fff' }}>
+        <div style={{ maxWidth: '1400px', margin: '0 auto' }}>
+          
+          <div style={{ textAlign: 'center', marginBottom: '60px' }}>
+            <h2 style={{ fontFamily: '"PP Neue Montreal", sans-serif', fontSize: 'clamp(2.5rem, 5vw, 4rem)', fontWeight: 400, margin: 0, letterSpacing: '-0.02em' }}>
+              <span style={{ color: '#aaa' }}>Explore</span> <span style={{ color: '#111' }}>all services</span>
+            </h2>
+          </div>
+          
+          <div className="hide-scrollbar" style={{ display: 'flex', overflowX: 'auto', gap: '20px', background: '#fff', paddingBottom: '20px' }}>
+            {displayServices.map((svcTitle, index) => {
+              const bgImages = [capImg1, capImg2, capImg3, defaultHeroBg];
               return (
-                <div key={item.label} className={`ix-d${i + 1} solutions-blueprint-card`} data-aos="fade-up" style={{
-                  position: 'relative',
-                  flex: 1,
-                  maxWidth: '220px', // Exact card size constraint
+                <div key={index} style={{
+                  flex: '0 0 auto',
+                  width: '320px',
+                  background: '#f4f4f4',
+                  backgroundImage: `url(${bgImages[index % bgImages.length]})`,
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
+                  aspectRatio: '1/1',
+                  padding: '40px 30px',
+                  color: '#111',
                   display: 'flex',
                   flexDirection: 'column',
-                  alignItems: 'center',
-                  marginTop: `${dropAmount}px`,
-                  zIndex: 1
-                }}>
-                  {/* Horizontal line to the next card */}
-                  {i < blueprint.length - 1 && (
-                    <div style={{
-                      position: 'absolute',
-                      top: `-${dropAmount}px`, // Reaches exactly the top 0 line
-                      left: '50%',
-                      width: 'calc(100% + 30px)', // Matches gap: 30px
-                      borderTop: '1px dashed #e5e7eb',
-                      zIndex: 0
-                    }}></div>
-                  )}
-
-                  {/* Vertical drop line */}
-                  <div style={{
-                    position: 'absolute',
-                    top: `-${dropAmount}px`,
-                    left: '50%',
-                    height: `${dropAmount}px`,
-                    borderLeft: '1px dashed #e5e7eb',
-                    zIndex: 0
-                  }}></div>
-
-                  {/* Card */}
-                  <div style={{
-                    background: '#fff',
-                    border: '1px solid #f3f4f6',
-                    borderRadius: '16px',
-                    padding: '2rem 1.5rem',
-                    textAlign: 'left',
-                    boxShadow: '0 4px 20px -5px rgba(0,0,0,0.05)',
-                    width: '100%',
-                    position: 'relative',
-                    zIndex: 2,
-                    height: '100%',
-                    display: 'flex',
-                    flexDirection: 'column'
-                  }}>
-                    <h3 style={{ fontFamily: 'var(--ix-font-display)', fontWeight: 700, fontSize: '1.05rem', color: '#111', marginBottom: '0.8rem', letterSpacing: '-0.01em' }}>
-                      {item.label}
+                  position: 'relative',
+                  overflow: 'hidden',
+                }}
+                className="explore-card"
+                >
+                  <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.2) 100%)', transition: 'opacity 0.3s' }} className="explore-overlay"></div>
+                  
+                  <div style={{ position: 'relative', zIndex: 1, display: 'flex', flexDirection: 'column', height: '100%' }}>
+                    
+                    <h3 style={{ fontFamily: '"PP Neue Montreal", sans-serif', fontSize: '1.8rem', fontWeight: 400, margin: '0 0 20px 0', lineHeight: 1.1, letterSpacing: '-0.02em' }}>
+                      {svcTitle}
                     </h3>
-                    <p style={{ fontFamily: 'var(--ix-font-body)', fontSize: '0.85rem', color: '#6b7280', lineHeight: 1.6, margin: 0 }}>
-                      {item.text}
-                    </p>
+                    
+                    <Link to={`/solutions/${svcTitle.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')}`} style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.85rem', fontWeight: 600, fontFamily: 'var(--ix-font-body)', borderBottom: '1px solid #111', paddingBottom: '4px', width: 'fit-content', textTransform: 'uppercase', textDecoration: 'none', color: '#111', marginTop: 'auto' }}>
+                      Learn More <ArrowUpRight />
+                    </Link>
+
                   </div>
                 </div>
               );
             })}
           </div>
-        </div>
-      </section>
 
-      {/* ══ FAQ — white ══ */}
-      <section className="ix-section" style={{ background: '#fff', position: 'relative' }}>
-        <div style={{ maxWidth: 760, margin: '0 auto', position: 'relative', zIndex: 1 }}>
-          <span className="ix-teal-bar" />
-          <h2 data-aos="fade-up" style={{ fontFamily: 'var(--ix-font-display)', fontWeight: 800, fontSize: 'clamp(2rem, 3.5vw, 2.8rem)', color: 'var(--ix-text)', letterSpacing: '-0.02em', lineHeight: 1.1, marginBottom: 'clamp(2rem, 4vw, 3rem)' }}>
-            Frequently Asked<br />
-            <em style={{ fontFamily: 'var(--ix-font-serif)', fontStyle: 'italic', fontWeight: 400, color: 'var(--ix-primary)' }}>Questions</em>
-          </h2>
-          <div data-aos-delay="100" data-aos="fade-up"><Accordion items={data.faqs} /></div>
-          <div style={{ marginTop: '3rem', paddingTop: '2.5rem', borderTop: '1px solid var(--ix-border-n)', display: 'flex', alignItems: 'center', gap: '1.5rem', flexWrap: 'wrap' }}>
-            <p style={{ fontFamily: 'var(--ix-font-body)', fontSize: '0.92rem', color: 'var(--ix-muted)', flex: 1 }}>Still have questions? Our team is ready to help.</p>
-            <Link to="/contact" className="ix-btn-primary">Book Discovery Session <Arrow /></Link>
+          <div style={{ display: 'flex', justifyContent: 'center', marginTop: '60px' }}>
+            <Link to="/solutions" style={{ 
+              display: 'inline-flex', 
+              alignItems: 'center', 
+              justifyContent: 'space-between',
+              width: '240px',
+              background: 'transparent', 
+              color: '#111', 
+              padding: '14px 20px', 
+              textDecoration: 'none', 
+              fontWeight: 500, 
+              fontFamily: 'var(--ix-font-body)',
+              fontSize: '1rem',
+              transition: 'all 0.3s',
+              border: '1px solid #111'
+            }}
+            onMouseEnter={e => { e.currentTarget.style.background = '#111'; e.currentTarget.style.color = '#fff'; }}
+            onMouseLeave={e => { e.currentTarget.style.background = 'transparent'; e.currentTarget.style.color = '#111'; }}
+            >
+              <span>View All Services</span> <ArrowRight />
+            </Link>
           </div>
         </div>
       </section>
+
+      {/* ══ 7. INFINITE MARQUEE ══ */}
+      <section style={{ background: '#fff', padding: '0 0 120px 0', overflow: 'hidden' }}>
+        <div className="marquee-container" style={{ display: 'flex', width: 'max-content', whiteSpace: 'nowrap' }}
+             onMouseEnter={(e) => {
+               const tracks = e.currentTarget.querySelectorAll('.marquee-track');
+               tracks.forEach(t => t.style.animationPlayState = 'paused');
+             }}
+             onMouseLeave={(e) => {
+               const tracks = e.currentTarget.querySelectorAll('.marquee-track');
+               tracks.forEach(t => t.style.animationPlayState = 'running');
+             }}
+        >
+          {/* We render the track twice for seamless infinite looping */}
+          {[1, 2].map(trackIndex => (
+            <div key={trackIndex} className="marquee-track" style={{ display: 'flex', animation: 'marquee 60s linear infinite' }}>
+              {[
+                "Performance Advertising", "SEO & Content Marketing", "Social Media Management",
+                "Marketing Automation & CRM", "Analytics & Reporting", "Brand Strategy & Positioning",
+                "Photography & Videography", "Short-Form & Social Content", "Brand Films & Commercials",
+                "AI-Assisted Production", "Motion Graphics & Animation", "Podcast & Audio Production",
+                "Custom Web & App Development", "AI-Native Product Development", "Marketing & Business Automation",
+                "IoT & Connected Systems", "Data Platforms & Dashboards", "API & Systems Integration"
+              ].map((title, i) => {
+                const titleSlug = title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+                return <MarqueeCard key={`m${trackIndex}-${i}`} title={title} slug={titleSlug} />
+              })}
+            </div>
+          ))}
+        </div>
+      </section>
+
     </div>
   );
 };

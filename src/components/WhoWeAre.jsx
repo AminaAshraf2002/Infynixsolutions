@@ -20,10 +20,10 @@ export function useIxReveal() {
 }
 
 const CULTURE_CARDS = [
-  { title: "Precision", icon: "⬡", text: "We approach system design with extreme mathematical and architectural rigor. By maintaining a standard of clean code, automated testing, and defensive programming, we ensure that every growth engine we build performs flawlessly under peak loads." },
-  { title: "Velocity", icon: "△", text: "We prioritize swift execution and continuous integration. By utilizing modular architectures, automated deployment pipelines, and agile feedback loops, we deliver production-ready features quickly without compromising reliability." },
-  { title: "Ownership", icon: "◎", text: "We take full end-to-end accountability for our projects. Our team operates with a product-mindset, proactively identifying potential system bottlenecks, recommending optimal cloud configurations, and ensuring long-term system success." },
-  { title: "Security", icon: "⬛", text: "We embed security and privacy guidelines into every layer of our stack. From data encryption and secure API gateways to real-time anomaly detection, we protect sensitive enterprise assets against evolving threat vectors." },
+  { title: "Precision", icon: "⬡", text: "We write clean code. We test everything carefully. Your systems will not break under pressure." },
+  { title: "Velocity", icon: "△", text: "We build things fast but we build them right. We add new features quickly without causing errors." },
+  { title: "Ownership", icon: "◎", text: "We treat your project like it is ours. We find problems early and make sure everything runs smoothly." },
+  { title: "Security", icon: "⬛", text: "We keep your data safe. We use strong security tools to stop attacks and protect your business." },
 ];
 
 const STATS = [
@@ -34,11 +34,11 @@ const STATS = [
 ];
 
 const METHODOLOGY = [
-  { title: "1. Systems Audit & Architecture", desc: "We evaluate your current technical stack and operational workflows to identify bottlenecks and map out a connected architecture.", icon: "⬡" },
-  { title: "2. Data & Tracking Implementation", desc: "We deploy server-side tracking, analytics, and CRM integrations so every decision is powered by real revenue data.", icon: "◎" },
-  { title: "3. Scalable Web & App Engineering", desc: "We build custom, high-speed applications and headless commerce engines designed for extreme conversion and scale.", icon: "△" },
-  { title: "4. Performance Marketing & SEO", desc: "We drive highly qualified traffic into your ecosystem through advanced algorithmic bidding and technical search optimization.", icon: "◇" },
-  { title: "5. Automated Growth Loops & AI", desc: "We integrate computer vision and AI agents to automate daily operations and create self-sustaining growth loops.", icon: "⬛" },
+  { title: "1. Review & Plan", desc: "We look at your current setup. We find what is slowing you down and plan how to fix it.", icon: "⬡" },
+  { title: "2. Set Up Tracking", desc: "We add clear tracking tools. You will know exactly where your money comes from.", icon: "◎" },
+  { title: "3. Build Apps & Sites", desc: "We build fast websites and apps. They are designed to get you more sales.", icon: "△" },
+  { title: "4. Drive Traffic", desc: "We run smart ads and use SEO to bring ready-to-buy customers to your site.", icon: "◇" },
+  { title: "5. Automate Work", desc: "We use AI and smart tools to connect your software. This stops manual daily work.", icon: "⬛" },
 ];
 
 const Arrow = () => (
@@ -79,13 +79,13 @@ export default function WhoWeAre() {
         {/* Left */}
         <div style={{ position: 'relative', zIndex: 1 }} data-aos="fade-up">
           <h1 style={{ fontFamily: 'var(--ix-font-display)', fontWeight: 500, fontSize: 'clamp(2.3rem, 4.3vw,3.8rem)', color: '#111', lineHeight: 1.1, marginTop: '0', marginBottom: '1.5rem', letterSpacing: '-0.02em' }}>
-            Engineered for Sustainable Growth.
+            Built for Real Growth.
           </h1>
           <p style={{ fontFamily: 'var(--ix-font-body)', fontSize: '1rem', color: '#111', lineHeight: 1.6, marginBottom: '1.5rem', maxWidth: '520px' }}>
-            Traditional agencies offer fragmented services—marketing without operations, or websites without CRM integrations. We are a Growth Engineering Company. We build connected ecosystems.
+            Most agencies give you one piece of the puzzle. We give you the whole picture. We are a Growth Engineering company.
           </p>
           <p style={{ fontFamily: 'var(--ix-font-body)', fontSize: '1.1rem', color: '#111', lineHeight: 1.6, marginBottom: '2.5rem', maxWidth: '520px' }}>
-            By integrating custom software, advanced analytics, and performance marketing, we engineer scalable systems that drive measurable business outcomes.
+            We combine custom software, clear data, and smart marketing. We build systems that get real results.
           </p>
           <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
             <Link to="/contact" style={{ background: '#007A5E', color: '#ffffffff', padding: '0.9rem 1.8rem', borderRadius: '40px', fontWeight: 600, textDecoration: 'none', display: 'inline-flex', alignItems: 'center', transition: 'background 0.3s' }} onMouseEnter={e => e.currentTarget.style.background = '#96c200'} onMouseLeave={e => e.currentTarget.style.background = '#a7d600'}>
@@ -149,14 +149,14 @@ export default function WhoWeAre() {
         }}>
           <span className="ix-eyebrow" data-aos="fade-up">Our Story</span>
           <h2 data-aos-delay="100" data-aos="fade-up" style={{ fontFamily: "var(--ix-font-display)", fontWeight: 600, fontSize: "clamp(2rem, 3.5vw, 3.5rem)", lineHeight: 1.05, color: "var(--ix-text)", letterSpacing: "-0.02em", marginBottom: "1.5rem" }}>
-            From Vision<br />to Scaled<br />
-            <em style={{ fontFamily: "var(--ix-font-serif)", fontStyle: "italic", fontWeight: 400, color: "var(--ix-primary)" }}>Systems</em>
+            How We<br />
+            <em style={{ fontFamily: "var(--ix-font-serif)", fontStyle: "italic", fontWeight: 400, color: "var(--ix-primary)" }}>Started</em>
           </h2>
           <p data-aos-delay="200" data-aos="fade-up" style={{ fontFamily: "var(--ix-font-body)", fontSize: "0.97rem", color: "var(--ix-muted)", lineHeight: 1.8, marginBottom: "1rem" }}>
-            It all started when a vision to unify advanced intelligence with business growth kickstarted our journey. What began as a focused engineering collective has evolved into a global powerhouse for high-performance systems.
+            We saw a big problem: businesses had great ideas but terrible tech. Marketing was not talking to sales. Websites were slow. We started a team to fix that.
           </p>
           <p data-aos-delay="300" data-aos="fade-up" style={{ fontFamily: "var(--ix-font-body)", fontSize: "0.97rem", color: "var(--ix-muted)", lineHeight: 1.8 }}>
-            Our commitment to high-precision engineering attracted elite builders and developers. Today, we stand as a premier partner for enterprises worldwide, delivering state-of-the-art Growth Systems, AI Surveillance integrations, CRM solutions, and digital marketing.
+            Today, we are a global partner for growing companies. We build the websites, apps, and marketing systems that actually help you sell more.
           </p>
         </div>
 

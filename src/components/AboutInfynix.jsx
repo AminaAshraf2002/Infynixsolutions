@@ -15,11 +15,11 @@ const AboutInfynix = () => {
           </div>
           
           <h2 className="about-heading">
-            Disconnected investments<br/>create disconnected growth.
+            Broken tools<br/>stop your growth.
           </h2>
           
           <p className="about-paragraph">
-            Businesses don't struggle because they lack ambition. They struggle because technology, marketing, customer experience, operations and data often operate independently. Growth Engineering is the discipline of designing, building, and continuously improving interconnected business systems that create sustainable growth.
+            We are a Growth Engineering team. We stop you from wasting money on broken systems. We connect your marketing, sales, and tech so they work as one. When everything connects, your business grows faster.
           </p>
 
           <div className="about-buttons">

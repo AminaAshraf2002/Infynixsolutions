@@ -1,113 +1,262 @@
 // Centralized data repository for solutions, industries, case studies, insights, and FAQs
+import { subcategoryData } from './subcategoryData';
 
 export const solutionsData = {
+  ...subcategoryData,
+  'infynix-agency': {
+    title: 'Infynix Agency',
+    category: 'Agency',
+    keywords: ['Performance Advertising', 'SEO & Content Marketing', 'Social Media Management', 'Marketing Automation', 'Analytics', 'Brand Strategy'],
+    description: 'Performance marketing, built to put the finished system in front of the right people.',
+    challenge: 'Brands struggle to connect their marketing efforts to actual measurable revenue growth.',
+    insight: 'True performance marketing requires a seamless integration of creative, data, and distribution.',
+    solution: 'We build high-converting marketing engines that capture attention and drive sales.',
+    outcome: 'You gain a predictable, scalable system for acquiring and retaining customers.',
+    capabilities: [
+      { title: 'Performance Advertising', desc: 'Data-driven ad campaigns across Meta, Google, and LinkedIn optimized for ROI.' },
+      { title: 'SEO & Content Marketing', desc: 'Strategic organic growth through technical SEO and high-value content creation.' },
+      { title: 'Social Media Management', desc: 'Building brand authority and engaging communities across social platforms.' },
+      { title: 'Brand Strategy & Positioning', desc: 'Crafting compelling brand narratives that resonate with your target audience.' }
+    ],
+    faqs: [
+      { q: 'What is your approach to performance marketing?', a: 'We focus strictly on ROI and revenue, optimizing campaigns based on deep data analysis.' }
+    ]
+  },
+  'infynix-media': {
+    title: 'Infynix Media',
+    category: 'Media',
+    keywords: ['Photography', 'Videography', 'Social Content', 'Brand Films', 'Motion Graphics', 'Podcasts'],
+    description: 'Brand narratives and visual communication that command attention.',
+    challenge: 'In a crowded digital space, generic content is ignored. Brands need to stand out visually.',
+    insight: 'High-quality, narrative-driven media creates an emotional connection that drives action.',
+    solution: 'We produce premium photography, videography, and motion graphics that tell your brand story.',
+    outcome: 'Your brand commands attention, builds trust, and elevates its perceived value in the market.',
+    capabilities: [
+      { title: 'Brand Films & Commercials', desc: 'Cinematic video production that captures your brand essence and converts viewers.' },
+      { title: 'Photography & Videography', desc: 'Premium visual assets for your website, social media, and ad campaigns.' },
+      { title: 'Motion Graphics & Animation', desc: 'Dynamic animations that explain complex products and engage users.' },
+      { title: 'Short-Form & Social Content', desc: 'High-performing reels, TikToks, and shorts designed for viral reach.' }
+    ],
+    faqs: [
+      { q: 'Do you handle full production?', a: 'Yes, we handle everything from pre-production planning to final editing and delivery.' }
+    ]
+  },
+  'infynix-growth-solutions': {
+    title: 'Infynix Growth Solutions',
+    category: 'Growth',
+    keywords: ['Web Development', 'App Development', 'AI Product Development', 'Business Automation', 'Data Platforms'],
+    description: 'The technical foundation and systems that power scalable business growth.',
+    challenge: 'Businesses are slowed down by disconnected systems, legacy tech, and manual processes.',
+    insight: 'Scalable growth requires a robust, integrated technical foundation that automates operations.',
+    solution: 'We engineer custom web apps, AI tools, and automated systems that run your business efficiently.',
+    outcome: 'You get a scalable tech infrastructure that reduces costs and accelerates growth.',
+    capabilities: [
+      { title: 'Custom Web & App Development', desc: 'High-performance, scalable applications built on modern tech stacks.' },
+      { title: 'AI-Native Product Development', desc: 'Integrating cutting-edge AI into your products to provide unique value.' },
+      { title: 'Marketing & Business Automation', desc: 'Connecting your CRM, ERP, and marketing tools to eliminate manual work.' },
+      { title: 'API & Systems Integration', desc: 'Seamlessly connecting disparate software systems into a unified platform.' }
+    ],
+    faqs: [
+      { q: 'What technologies do you use?', a: 'We use modern stacks like React, Node.js, Python, and cloud infrastructure on AWS/GCP.' }
+    ]
+  },
   'website-development': {
     title: 'Website Development Services',
+    category: 'Development',
     keywords: ['Web Development Company', 'Corporate Website Development', 'Business Website Development', 'Custom Website Development', 'Enterprise Website Design'],
-    description: 'Transform your web presence with high-performance, custom website development engineered for scalability, speed, and business conversion.',
-    challenge: 'Most corporate websites are just digital brochures. They load slowly, lack integrations, and fail to turn organic visitors into qualified business leads.',
-    insight: 'A website is not an online poster—it is the central engine of your digital growth system. It must combine speed, security, and conversion rate optimization.',
-    solution: 'Infynix builds custom, high-speed, and search-optimized web systems that connect to your business tools and drive revenue growth.',
-    outcome: 'We deliver custom corporate web ecosystems featuring headless CMS integration, server-side rendering, and lead tracking that boosts conversions by up to 40%.',
+    description: 'We build fast, secure websites. They are designed to grow with your business and turn visitors into customers.',
+    challenge: 'Most corporate websites are just online brochures. They load slowly and fail to get you leads.',
+    insight: 'A website should be the engine of your digital growth. It must combine speed, security, and clear design.',
+    solution: 'We build fast, custom websites that connect to your business tools and drive sales.',
+    outcome: 'You get a secure, high-speed website that boosts your conversions and tracks your leads clearly.',
     faqs: [
-      { q: 'How long does custom website development take?', a: 'Typically 6 to 12 weeks depending on complexity, third-party integrations, and content requirements.' },
-      { q: 'Do you build responsive, mobile-first designs?', a: 'Yes, every site we engineer is 100% responsive, optimized for all viewports, and compliant with accessibility guidelines.' }
+      { q: 'How long does custom website development take?', a: 'It usually takes 6 to 12 weeks. It depends on what features you need.' },
+      { q: 'Do you build mobile-friendly designs?', a: 'Yes. Every site we build works perfectly on phones and tablets.' }
     ]
   },
   'mobile-app-development': {
     title: 'Mobile App Development',
+    category: 'Development',
     keywords: ['Mobile App Development Company', 'Android App Development', 'iOS App Development', 'Flutter Development', 'Cross Platform Development'],
-    description: 'Build premium iOS and Android applications with offline-first synchronization, high performance, and fluid user interfaces.',
-    challenge: 'Mobile apps fail when they are slow, crash, or fail to operate offline. Users uninstall generic web-wrappers in seconds.',
-    insight: 'A great app is fluid and built for the user. It needs native performance, offline support, and smart notifications to drive engagement.',
-    solution: 'We develop native iOS/Android and cross-platform Flutter mobile apps that connect users directly to your core business systems.',
-    outcome: 'High-performance, secure mobile applications that retain users, streamline mobile checkouts, and operate flawlessly under low network conditions.',
+    description: 'We build high-quality mobile apps for iOS and Android. They run fast and work smoothly.',
+    challenge: 'Mobile apps fail when they are slow or crash. Users quickly delete bad apps.',
+    insight: 'A great app is fast and easy to use. It should work offline and keep users engaged.',
+    solution: 'We build native and cross-platform apps. They connect your users directly to your business.',
+    outcome: 'You get a fast, secure app that keeps your users coming back.',
     faqs: [
-      { q: 'Should we build native or cross-platform applications?', a: 'We evaluate your budget and needs. Cross-platform (Flutter) works for 90% of business cases, saving time and money, while native is best for intensive hardware processing.' }
+      { q: 'Should we build native or cross-platform apps?', a: 'We help you decide based on your budget. Cross-platform works great for most businesses.' }
     ]
   },
   'performance-marketing': {
     title: 'Performance Marketing',
+    category: 'Marketing',
     keywords: ['Performance Marketing Agency', 'Meta Ads Agency', 'Google Ads Agency', 'Lead Generation Company', 'Digital Marketing Company'],
-    description: 'Accelerate acquisition and generate qualified leads with data-driven paid advertising campaigns on Google, Meta, and LinkedIn.',
-    challenge: 'Traditional agencies burn budgets on impressions. They fail to align advertising spend with real business revenue and customer lifetime value.',
-    insight: 'Marketing must be measured in revenue, not clicks. Every dollar spent should be tracked through the sales pipeline to verify ROI.',
-    solution: 'We configure performance marketing campaigns, tracking funnels from click to close, using automated bidding and audience modeling.',
-    outcome: 'Measurable cost-per-acquisition reductions, increased sales pipelines, and scalable lead acquisition loops that optimize marketing spend.',
+    description: 'We run smart ad campaigns on Google, Meta, and LinkedIn. We help you find the right customers.',
+    challenge: 'Many agencies waste money on clicks. They do not track how many clicks turn into real sales.',
+    insight: 'Marketing should be measured by revenue. Every dollar spent should be tracked.',
+    solution: 'We set up clear ad campaigns. We track everything from the first click to the final sale.',
+    outcome: 'You get more qualified leads and lower costs. Your marketing spend actually makes you money.',
     faqs: [
-      { q: 'How do you track performance marketing leads?', a: 'We set up end-to-end tracking using GA4, Meta Pixel, and CRM integrations to tie ads directly to sales.' }
+      { q: 'How do you track leads?', a: 'We use tools like Google Analytics and CRM tracking to tie your ads directly to your sales.' }
     ]
   },
   'seo-services': {
     title: 'SEO Services',
+    category: 'Marketing',
     keywords: ['SEO Company', 'SEO Agency', 'Technical SEO', 'Local SEO', 'Enterprise SEO'],
-    description: 'Rank for high-intent keywords and drive organic business growth with advanced technical and semantic search engine optimization.',
-    challenge: 'Sloppy search setups and superficial content keep businesses buried on page two, missing out on valuable organic buyers.',
-    insight: 'SEO is not about writing keyword-stuffed articles. It is about authority, crawlability, speed, schema tags, and solving real user queries.',
-    solution: 'We engineer structured content pipelines, fix technical crawl bottlenecks, implement Schema.org markup, and build topical authority.',
-    outcome: 'Sustained growth in organic traffic, higher rankings for commercial keywords, and a compounding flow of inbound leads without ad spend.',
+    description: 'We help your business rank higher on search engines. This brings you more organic traffic.',
+    challenge: 'Bad SEO setups keep your business hidden on page two. You miss out on ready-to-buy customers.',
+    insight: 'Good SEO is not just stuffing keywords. It is about speed, clear code, and answering user questions.',
+    solution: 'We fix your website tech and create clear content. This builds your site authority.',
+    outcome: 'You get steady organic traffic. You rank higher for the keywords that matter.',
     faqs: [
-      { q: 'How long does it take to see SEO results?', a: 'SEO is a compounding strategy. Significant ranking increases typically occur within 3 to 6 months.' }
+      { q: 'How long does it take to see SEO results?', a: 'SEO takes time to build. You usually see clear results in 3 to 6 months.' }
     ]
   },
   'artificial-intelligence': {
     title: 'Artificial Intelligence & AI Integration',
+    category: 'Production',
     keywords: ['AI Development Company', 'Business AI Solutions', 'AI Automation', 'AI Integration', 'AI Agents'],
-    description: 'Integrate advanced computer vision, predictive analytics, and conversational AI agents into your business operations.',
-    challenge: 'Most AI initiatives are gimmicks that fail to address operational bottlenecks, resulting in wasted development cycles.',
-    insight: 'AI should automate high-friction processes, reduce support overhead, and provide actionable analytics for operations.',
-    solution: 'We build custom computer vision pipelines, deploy smart AI agents, and integrate machine learning models with legacy backends.',
-    outcome: 'Automated document processing, reduced support ticketing, real-time activity tracking, and intelligent automation that scales.',
+    description: 'We add smart AI tools to your business. This automates tasks and saves you time.',
+    challenge: 'Many AI projects are just for show. They do not actually help run the business.',
+    insight: 'AI should fix real problems. It should automate daily tasks and give you clear data.',
+    solution: 'We build custom AI agents. We connect them to your current systems.',
+    outcome: 'You get automated work and fewer support tickets. Your business runs faster.',
     faqs: [
-      { q: 'How can AI improve my business operations?', a: 'AI can automate customer support via agents, optimize inventory with predictive modeling, and extract structured data from documents.' }
+      { q: 'How can AI improve my business operations?', a: 'AI can handle customer support, track data, and automate daily admin work.' }
     ]
   },
   'business-automation': {
     title: 'Business Automation Solutions',
+    category: 'Production',
     keywords: ['Workflow Automation', 'Business Automation Company', 'Digital Transformation', 'Process Automation'],
-    description: 'Eliminate manual workflows and sync disconnected software systems to streamline your company operations.',
-    challenge: 'Teams lose thousands of hours manually copying data between systems, leading to human errors and delayed transactions.',
-    insight: 'System fragmentation limits scalability. Businesses must bridge tools with robust APIs, message queues, and automation layers.',
-    solution: 'We build event-driven automation pipelines that synchronize CRMs, ERPs, accounting tools, and communication suites.',
-    outcome: 'Elimination of manual entry errors, immediate data synchronization, and automated alerts that speed up response times.',
+    description: 'We connect your software tools together. This stops manual work and speeds up your team.',
+    challenge: 'Teams waste hours moving data by hand. This causes errors and delays.',
+    insight: 'Disconnected tools slow you down. You need your software to talk to each other.',
+    solution: 'We build systems that connect your CRM, accounting, and daily tools.',
+    outcome: 'You stop doing manual data entry. Everything updates instantly across your tools.',
     faqs: [
-      { q: 'What tools do you use for automation?', a: 'We build custom backend integrations using Node.js/Python, and configure platforms like Zapier, Make, and cloud-based message brokers.' }
+      { q: 'What tools do you use for automation?', a: 'We build custom code and use platforms like Zapier to link your software.' }
     ]
   },
   'crm-erp-development': {
     title: 'Custom CRM & ERP Development',
+    category: 'Development',
     keywords: ['CRM Development Company', 'ERP Development Company', 'Business Management Software'],
-    description: 'Engineered custom management systems to unify sales pipeline tracking, inventory control, and enterprise resource planning.',
-    challenge: 'Off-the-shelf software is expensive and forces you to modify your business processes to fit their rigid structures.',
-    insight: 'Software should adapt to your business, not the other way around. Custom systems give you a permanent competitive advantage.',
-    solution: 'We design bespoke web-based CRM and ERP architectures tailored to your workflow, complete with custom user portals and analytics.',
-    outcome: 'Centralized operational visibility, automated supply chains, reduced software licensing costs, and complete ownership of your data.',
+    description: 'We build custom software to manage your sales and daily work. It fits exactly how you run your business.',
+    challenge: 'Standard software is expensive and hard to use. It forces you to change how you work.',
+    insight: 'Software should fit your business. A custom system gives you a real edge.',
+    solution: 'We design simple CRM and ERP tools. They match your exact daily workflow.',
+    outcome: 'You get clear data and automated tasks. You also stop paying high monthly software fees.',
     faqs: [
-      { q: 'Do you build on top of existing platforms like Salesforce or Odoo?', a: 'Yes. We both build completely custom solutions and customize enterprise CRM/ERP platforms to align with your workflows.' }
+      { q: 'Do you build on top of existing platforms?', a: 'Yes. We can build custom tools or adjust platforms like Salesforce to fit your needs.' }
     ]
   },
   'ui-ux-design': {
     title: 'UI/UX Design',
+    category: 'Branding',
     keywords: ['UI UX Design Company', 'User Experience Design', 'Product Design'],
-    description: 'Create interactive digital product interfaces that engage visitors and maximize conversion rates.',
-    challenge: 'Ugly, confusing layouts frustrate visitors and lead to high abandonment rates and loss of customer trust.',
-    insight: 'Premium design combines beauty with ease of use. Every button, transition, and layout must guide the user naturally to the CTA.',
-    solution: 'We design modern user interfaces, perform user testing, and create clean design systems that transition smoothly to code.',
-    outcome: 'Interactive user journeys, improved customer satisfaction, reduced bounce rates, and a premium digital brand aesthetic.',
+    description: 'We design digital products that look great and are easy to use. Good design builds trust.',
+    challenge: 'Confusing website layouts frustrate users. They leave and do not come back.',
+    insight: 'Great design is simple and clear. It guides the user easily to what they need.',
+    solution: 'We design modern, clean interfaces. We test them to make sure they are easy to use.',
+    outcome: 'Your users stay longer and buy more. Your brand looks premium and professional.',
     faqs: [
-      { q: 'What is your design process?', a: 'We start with wireframes, proceed to high-fidelity Figma prototypes, iterate with user feedback, and hand off clean design guides.' }
+      { q: 'What is your design process?', a: 'We start with sketches, make full designs, test them, and then write the code.' }
     ]
   },
   'cloud-solutions': {
     title: 'Cloud Solutions',
+    category: 'Production',
     keywords: ['Cloud Solutions Company', 'Cloud Architecture', 'Cloud Migration', 'AWS Consulting'],
-    description: 'Modernize your infrastructure with secure, scalable cloud environments tailored for enterprise performance.',
-    challenge: 'Legacy on-premise servers are slow, expensive to maintain, and vulnerable to security breaches and hardware failures.',
-    insight: 'The cloud should be a seamless utility. A well-architected cloud environment reduces costs, improves uptime, and scales automatically with your business.',
-    solution: 'We architect and migrate applications to AWS, Google Cloud, and Azure, implementing serverless and containerized solutions.',
-    outcome: 'Reduced infrastructure costs, 99.99% uptime, infinite scalability, and robust disaster recovery protocols.',
+    description: 'We move your apps to secure cloud servers. This keeps your data safe and your systems running.',
+    challenge: 'Old physical servers are slow and cost a lot to fix. They can easily break.',
+    insight: 'The cloud is fast and reliable. It scales up easily as your business grows.',
+    solution: 'We set up secure cloud servers on AWS, Google, or Azure for your business.',
+    outcome: 'Your systems run faster and cost less to maintain. Your data is always safe.',
     faqs: [
-      { q: 'Can you migrate our existing applications to the cloud?', a: 'Yes, we provide end-to-end cloud migration services with minimal downtime and zero data loss.' }
+      { q: 'Can you move our current apps to the cloud?', a: 'Yes. We handle the whole move safely, without losing any data.' }
+    ]
+  },
+  'marketing': {
+    title: 'Marketing Services',
+    category: 'Marketing',
+    keywords: ['Performance Marketing', 'SEO', 'Lead Generation'],
+    description: 'We run smart ad campaigns and improve your search rankings to bring ready-to-buy customers directly to you.',
+    challenge: 'Many agencies waste money on clicks. They do not track how many clicks turn into real sales.',
+    insight: 'Marketing should be measured by revenue. Every dollar spent should be tracked.',
+    solution: 'We set up clear ad campaigns and fix your SEO. We track everything from the first click to the final sale.',
+    outcome: 'You get more qualified leads and lower costs. Your marketing spend actually makes you money.',
+    capabilities: [
+      {
+        title: 'Performance Advertising',
+        desc: 'Meta, Google Search, Shopping, and Performance Max, engineered around a measurable return.',
+      },
+      {
+        title: 'SEO & Content Marketing',
+        desc: 'Technical SEO and content built to compound organic visibility instead of renting it every month.',
+      },
+      {
+        title: 'Social Media Management',
+        desc: 'Strategy, calendars, and community management across the platforms that actually matter to the business.',
+      },
+      {
+        title: 'Marketing Automation & CRM',
+        desc: 'Lifecycle campaigns and CRM systems that follow up on a lead without anyone having to remember to.',
+      },
+      {
+        title: 'Analytics & Reporting',
+        desc: 'Full-funnel tracking and monthly reporting tied to revenue, not reach.',
+      },
+      {
+        title: 'Brand Strategy & Positioning',
+        desc: 'Positioning and messaging that gives every campaign underneath it a consistent point of view.',
+      }
+    ],
+    faqs: [
+      { q: 'How do you track leads?', a: 'We use tools like Google Analytics and CRM tracking to tie your ads directly to your sales.' },
+      { q: 'How long does it take to see SEO results?', a: 'SEO takes time to build. You usually see clear results in 3 to 6 months.' }
+    ]
+  },
+  'media': {
+    title: 'Media Services',
+    category: 'Media',
+    keywords: ['Video Production', 'Content Creation', 'Digital Media'],
+    description: 'We produce engaging videos and digital content that capture attention and build your brand.',
+    challenge: 'Poor quality content fails to engage your audience and makes your brand look unprofessional.',
+    insight: 'High-quality media tells your story clearly and builds trust with your customers.',
+    solution: 'We create premium video, photography, and digital content tailored for your marketing needs.',
+    outcome: 'Your brand looks professional, and your audience stays engaged longer.',
+    faqs: [
+      { q: 'What types of media do you produce?', a: 'We produce everything from corporate videos and commercials to social media content and photography.' },
+      { q: 'How long does a video project take?', a: 'Most projects take 2 to 4 weeks from planning to final delivery.' }
+    ]
+  },
+  'development': {
+    title: 'Custom Development',
+    category: 'Development',
+    keywords: ['Web Development', 'Mobile Apps', 'CRM Systems'],
+    description: 'We build high-quality mobile apps and fast websites designed to grow with your business and drive sales.',
+    challenge: 'Most corporate websites and standard apps are slow and fail to get you leads.',
+    insight: 'Software should fit your business. A custom system gives you a real edge.',
+    solution: 'We build fast, custom websites and mobile apps that connect to your business tools and drive sales.',
+    outcome: 'You get a secure, high-speed system that boosts your conversions and tracks your leads clearly.',
+    faqs: [
+      { q: 'How long does custom development take?', a: 'It usually takes 6 to 12 weeks. It depends on what features you need.' },
+      { q: 'Do you build mobile-friendly designs?', a: 'Yes. Every site we build works perfectly on phones and tablets.' }
+    ]
+  },
+  'branding': {
+    title: 'Digital Branding',
+    category: 'Branding',
+    keywords: ['UI UX Design', 'Brand Strategy'],
+    description: 'We design digital products that look great and are easy to use. Great design builds trust and keeps users engaged.',
+    challenge: 'Confusing website layouts frustrate users. They leave and do not come back.',
+    insight: 'Great design is simple and clear. It guides the user easily to what they need.',
+    solution: 'We design modern, clean interfaces. We test them to make sure they are easy to use.',
+    outcome: 'Your users stay longer and buy more. Your brand looks premium and professional.',
+    faqs: [
+      { q: 'What is your design process?', a: 'We start with sketches, make full designs, test them, and then write the code.' }
     ]
   }
 };
@@ -271,13 +420,13 @@ export const insightsData = [
     slug: 'what-is-growth-engineering',
     title: 'What is Growth Engineering and Why Your Business Needs It',
     category: 'Growth Engineering',
-    summary: 'Explore why traditional software and marketing fail to drive scale, and how Growth Engineering bridges the gap.',
+    summary: 'See why standard marketing is not enough. Learn how Growth Engineering builds real systems for scale.',
     content: `
-      Businesses don't struggle because they lack ambition. They struggle because technology, marketing, customer experience, operations, and data often operate independently.
+      Businesses do not struggle because they lack drive. They struggle because their tools do not connect. Your marketing, sales, and tech teams are working alone.
       
-      Growth Engineering is the discipline of designing, building, and continuously improving interconnected business systems that create sustainable growth. It brings a scientific, software-driven approach to client acquisition and operational scaling.
+      Growth Engineering fixes this. We build systems that talk to each other. We use software and data to find new clients and speed up daily work.
       
-      By integrating your CRM, website speed optimizations, and analytics tracking into a single loop, you make it possible to run data-backed experiments and scale conversions.
+      When you connect your CRM, fast websites, and clear tracking, you get real results. You can test ideas quickly and grow your business reliably.
     `,
     date: 'June 25, 2026',
     author: 'Infynix Tech Lab'
@@ -286,13 +435,13 @@ export const insightsData = [
     slug: 'how-ai-automates-growth',
     title: 'How Artificial Intelligence Automates Modern Operations',
     category: 'Artificial Intelligence',
-    summary: 'Discover how computer vision and AI agents streamline customer pipelines and secure business facilities.',
+    summary: 'Learn how smart AI tools can speed up your daily tasks and improve customer support.',
     content: `
-      Artificial Intelligence is shifting from basic tools to autonomous systems.
+      AI is more than just a buzzword. It is a tool that runs your business faster.
       
-      For growing companies, this means integrating computer vision pipelines to track material flows, deploying AI customer support agents to resolve 60% of tickets, and using predictive models to forecast product demand.
+      You can use AI to answer customer questions automatically. You can use it to track stock or read documents instantly. 
       
-      By connecting AI directly to your existing CRM and ERP databases, you enable immediate actions that boost efficiency and lower overhead.
+      By adding AI to your current software, you save hours of manual work. This lowers your costs and lets your team focus on real growth.
     `,
     date: 'June 28, 2026',
     author: 'Infynix AI Team'

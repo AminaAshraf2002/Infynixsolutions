@@ -232,55 +232,39 @@ const Navbar = () => {
       {/* MOBILE FULL-SCREEN OVERLAY */}
       {isMobile && (
         <div className={`nav-mobile-overlay ${menuOpen ? 'open' : ''}`}>
-          <div className="mobile-overlay-bg-glow" />
           
           <div className="mobile-menu-inner">
-            <Link to="/" className="mobile-menu-link" onClick={() => setMenuOpen(false)}>
-              Home
-            </Link>
-            <Link to="/growth-engineering" className="mobile-menu-link" onClick={() => setMenuOpen(false)}>
-              Growth Engineering
-            </Link>
-            <Link to="/solutions" className="mobile-menu-link" onClick={() => setMenuOpen(false)}>
-              Solutions
-            </Link>
-            
-            <div className="mobile-menu-accordion">
-              <button 
-                className="mobile-accordion-trigger"
-                onClick={() => setMobileIndOpen(!mobileIndOpen)}
-              >
-                <span>Industries</span>
-                <svg className={`accordion-chevron ${mobileIndOpen ? 'open' : ''}`} width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                  <polyline points="6 9 12 15 18 9"></polyline>
-                </svg>
-              </button>
-              
-              <div className={`mobile-accordion-content ${mobileIndOpen ? 'open' : ''}`}>
-                <div className="mobile-accordion-inner">
-                  {[...indLeft, ...indRight].map((item, i) => (
-                    <Link key={i} to={item.path} onClick={() => { setMobileIndOpen(false); setMenuOpen(false); }} className="mobile-sublink">
-                      <img src={item.icon} alt={item.title} className="mobile-sublink-icon" />
-                      <span>{item.title}</span>
-                    </Link>
-                  ))}
-                </div>
-              </div>
+            <div className="mobile-nav-links">
+              <Link to="/" className="mobile-menu-link stagger-1" onClick={() => setMenuOpen(false)}>
+                Home
+              </Link>
+              <Link to="/growth-engineering" className="mobile-menu-link stagger-2" onClick={() => setMenuOpen(false)}>
+                Engineering
+              </Link>
+              <Link to="/solutions" className="mobile-menu-link stagger-3" onClick={() => setMenuOpen(false)}>
+                Solutions
+              </Link>
+              <Link to="/case-studies" className="mobile-menu-link stagger-4" onClick={() => setMenuOpen(false)}>
+                Case Studies
+              </Link>
+              <Link to="/insights" className="mobile-menu-link stagger-5" onClick={() => setMenuOpen(false)}>
+                Insights
+              </Link>
+              <Link to="/about" className="mobile-menu-link stagger-6" onClick={() => setMenuOpen(false)}>
+                About Us
+              </Link>
             </div>
 
-            <Link to="/case-studies" className="mobile-menu-link" onClick={() => setMenuOpen(false)}>
-              Case Studies
-            </Link>
-            <Link to="/insights" className="mobile-menu-link" onClick={() => setMenuOpen(false)}>
-              Insights
-            </Link>
-            <Link to="/about" className="mobile-menu-link" onClick={() => setMenuOpen(false)}>
-              About
-            </Link>
-
-            <Link to="/contact" className="mobile-menu-cta" onClick={() => setMenuOpen(false)}>
-              Contact Us
-            </Link>
+            <div className="mobile-menu-footer stagger-7">
+              <Link to="/contact" className="mobile-menu-cta" onClick={() => setMenuOpen(false)}>
+                Start a Project <span style={{ marginLeft: '8px' }}>→</span>
+              </Link>
+              <div className="mobile-socials">
+                <a href="#">LinkedIn</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+              </div>
+            </div>
           </div>
         </div>
       )}

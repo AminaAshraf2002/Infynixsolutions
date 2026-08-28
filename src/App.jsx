@@ -30,6 +30,7 @@ import Contact from './components/Contact';
 // Strategy v2.0 Page Imports
 import GrowthEngineering from './components/GrowthEngineering';
 import SolutionsPage from './components/SolutionsPage';
+import SolutionsIndex from './components/SolutionsIndex';
 import IndustriesPage from './components/IndustriesPage';
 import CaseStudiesPage from './components/CaseStudiesPage';
 import InsightsPage from './components/InsightsPage';
@@ -48,7 +49,7 @@ function HomePage() {
 
       {/* 3. Services */}
       <ServicesSection />
-
+      
       {/* Timeline Section */}
       <TimelineSection />
 
@@ -93,8 +94,9 @@ function AppContent() {
             <Route path="/"                 element={<HomePage />} />
             <Route path="/growth-engineering" element={<GrowthEngineering />} />
             <Route path="/solutions/:slug"   element={<SolutionsPage />} />
-            <Route path="/solutions"        element={<SolutionsPage />} />
-            <Route path="/industries/:slug"  element={<IndustriesPage />} />
+            <Route path="/solutions"        element={<SolutionsIndex />} />
+            <Route path="/industries/:slug" element={<IndustriesPage />} />
+            <Route path="/industries"       element={<IndustriesPage />} />
             <Route path="/case-studies/:slug" element={<CaseStudiesPage />} />
             <Route path="/case-studies"      element={<CaseStudiesPage />} />
             <Route path="/insights/:slug"    element={<InsightsPage />} />

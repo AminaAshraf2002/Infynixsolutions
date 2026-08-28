@@ -79,39 +79,6 @@ const GrowthSystemsIcon = () => (
   </svg>
 );
 
-const AppDevIcon = () => (
-  <svg viewBox="0 0 100 100" fill="none" stroke="#007A5E" strokeWidth="1.2" style={{ width: '100%', height: '100%' }}>
-    {/* Base phone structure */}
-    <rect x="28" y="15" width="44" height="70" rx="6" />
-    {/* Screen layers floating */}
-    <rect x="34" y="22" width="32" height="42" rx="2" stroke="#A7D600" />
-    <line x1="38" y1="72" x2="62" y2="72" />
-    <circle cx="50" cy="79" r="2.5" />
-    {/* Floating wireframe panels */}
-    <path d="M18,30 L38,20 L38,40 L18,50 Z" strokeOpacity="0.5" />
-    <path d="M82,40 L62,50 L62,70 L82,60 Z" strokeOpacity="0.5" />
-  </svg>
-);
-
-const CrmIcon = () => (
-  <svg viewBox="0 0 100 100" fill="none" stroke="#007A5E" strokeWidth="1.2" style={{ width: '100%', height: '100%' }}>
-    {/* Interconnected pentagon */}
-    <polygon points="50,15 80,38 68,76 32,76 20,38" strokeDasharray="3 3" />
-    <circle cx="50" cy="15" r="4" fill="#007A5E" />
-    <circle cx="80" cy="38" r="4" fill="#A7D600" />
-    <circle cx="68" cy="76" r="4" fill="#007A5E" />
-    <circle cx="32" cy="76" r="4" fill="#007A5E" />
-    <circle cx="20" cy="38" r="4" fill="#A7D600" />
-    {/* Central node connection */}
-    <circle cx="50" cy="48" r="8" stroke="#007A5E" />
-    <line x1="50" y1="15" x2="50" y2="40" />
-    <line x1="80" y1="38" x2="57" y2="44" />
-    <line x1="68" y1="76" x2="55" y2="54" />
-    <line x1="32" y1="76" x2="45" y2="54" />
-    <line x1="20" y1="38" x2="43" y2="44" />
-  </svg>
-);
-
 const WebDevIcon = () => (
   <svg viewBox="0 0 100 100" fill="none" stroke="#007A5E" strokeWidth="1.2" style={{ width: '100%', height: '100%' }}>
     <rect x="15" y="20" width="70" height="50" rx="4" />
@@ -127,90 +94,38 @@ const WebDevIcon = () => (
   </svg>
 );
 
-const DigitalMarketingIcon = () => (
-  <svg viewBox="0 0 100 100" fill="none" stroke="#007A5E" strokeWidth="1.2" style={{ width: '100%', height: '100%' }}>
-    <circle cx="50" cy="50" r="38" />
-    <circle cx="50" cy="50" r="25" stroke="#A7D600" />
-    <circle cx="50" cy="50" r="12" />
-    {/* Crosshairs */}
-    <line x1="50" y1="5" x2="50" y2="95" strokeDasharray="3 3" />
-    <line x1="5" y1="50" x2="95" y2="50" strokeDasharray="3 3" />
-    {/* Pulsing signal waves */}
-    <path d="M50,12 A38,38 0 0,1 88,50" stroke="#007A5E" strokeWidth="2" />
-    <path d="M12,50 A38,38 0 0,1 50,88" stroke="#007A5E" strokeWidth="2" />
-  </svg>
-);
 
 const services = [
   {
-    icon: <WebDevIcon />,
-    title: 'Website Development',
-    tagline: 'High-performance digital presence',
-    desc: 'Corporate websites and web applications engineered using modern, secure frameworks designed to convert visitors.',
-    link: '/solutions/website-development',
-  },
-  {
-    icon: <AppDevIcon />,
-    title: 'Mobile App Development',
-    tagline: 'Fluid and intuitive',
-    desc: 'Stunning native and cross-platform mobile apps built for scale, performance, and seamless user experiences.',
-    link: '/solutions/mobile-app-development',
-  },
-  {
     icon: <GrowthMarketingIcon />,
-    title: 'Performance Marketing',
-    tagline: 'Data-driven acquisition',
-    desc: 'Targeted campaigns across search and social channels engineered for measurable business outcomes and high ROI.',
-    link: '/solutions/performance-marketing',
-  },
-  {
-    icon: <DigitalMarketingIcon />,
-    title: 'SEO Services',
-    tagline: 'Sustainable organic growth',
-    desc: 'Technical, local, and enterprise SEO strategies designed to capture high-intent traffic and build domain authority.',
-    link: '/solutions/seo-services',
-  },
-  {
-    icon: <AiSurveillanceIcon />,
-    title: 'Artificial Intelligence',
-    tagline: 'Intelligent business automation',
-    desc: 'Custom AI solutions, machine learning pipelines, and AI agent integrations that solve complex business challenges.',
-    link: '/solutions/artificial-intelligence',
+    title: 'Infynix Agency',
+    layerPrefix: 'Layer 01',
+    layerName: 'Distribution',
+    desc: 'Performance marketing, built to put the finished system in front of the right people.',
+    link: '/solutions/marketing',
   },
   {
     icon: <GrowthSystemsIcon />,
-    title: 'Business Automation',
-    tagline: 'Scalable and resilient',
-    desc: 'Workflow automation and digital transformation systems that eliminate manual processes and accelerate operations.',
-    link: '/solutions/business-automation',
+    title: 'Infynix Media',
+    layerPrefix: 'Layer 02',
+    layerName: 'Content',
+    desc: 'Media production, built to fill the systems layer with something worth looking at.',
+    link: '/solutions/media',
   },
   {
-    icon: <CrmIcon />,
-    title: 'CRM & ERP Development',
-    tagline: 'Connected and efficient',
-    desc: 'Bespoke business management software tailored to your operational workflows and data architecture.',
-    link: '/solutions/crm-erp-development',
-  },
-  {
-    icon: <GrowthEngineeringIcon />,
-    title: 'UI/UX Design',
-    tagline: 'User-centric interfaces',
-    desc: 'Strategic user experience and interface design that reduces friction and guides users toward conversion.',
-    link: '/solutions/ui-ux-design',
-  },
-  {
-    icon: <GrowthSystemsIcon />,
-    title: 'Cloud Solutions',
-    tagline: 'Secure and scalable',
-    desc: 'Cloud infrastructure design, migration, and management for resilient, highly available digital ecosystems.',
-    link: '/solutions/cloud-solutions',
+    icon: <WebDevIcon />,
+    title: 'Infynix Growth Solutions',
+    layerPrefix: 'Layer 03',
+    layerName: 'Systems',
+    desc: 'AI native software, built to run everything above it in the stack.',
+    link: '/solutions/development',
   }
 ];
 
 const Services = () => {
   const containerRef = useAnimateOnScroll();
   const [activeIndex, setActiveIndex] = useState(0);
-  const [displayTagline, setDisplayTagline] = useState(services[0].tagline);
+  const [activeLayer, setActiveLayer] = useState(services[0]);
   const [fade, setFade] = useState(false);
 
   // IntersectionObserver to monitor active service scroll
@@ -245,7 +160,7 @@ const Services = () => {
   useEffect(() => {
     setFade(true);
     const timer = setTimeout(() => {
-      setDisplayTagline(services[activeIndex].tagline);
+      setActiveLayer(services[activeIndex]);
       setFade(false);
     }, 300); // match transition speed
 
@@ -257,11 +172,11 @@ const Services = () => {
       <div className="services-wrap">
         {/* Left Sticky Column */}
         <div className="services-left">
-          <span className="svc-label">Our Services</span>
+          <span className="svc-label">The Growth Stack</span>
           <h2 className={`svc-tagline ${fade ? 'hidden' : ''}`}>
-            {displayTagline.substring(0, displayTagline.lastIndexOf(' '))}
+            {activeLayer.layerPrefix}
             <br />
-            {displayTagline.substring(displayTagline.lastIndexOf(' ') + 1)}
+            {activeLayer.layerName}
           </h2>
         </div>
 
@@ -277,6 +192,7 @@ const Services = () => {
                 key={svc.title}
                 className="service-item anim-fade-up"
               >
+
                 <div 
                   className="svc-icon" 
                   style={{ 

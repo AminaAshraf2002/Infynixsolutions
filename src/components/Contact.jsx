@@ -63,18 +63,17 @@ export default function Contact() {
                     {/* LEFT */}
                     <div className="contact-left">
                         <h1 className="contact-headline">
-                            Partner with Infynix
-                            <br />to Scale Smarter
+                            Let's work together.
                         </h1>
-                        <p className="contact-italic">Let's build together.</p>
+                        <p className="contact-italic">Tell us what you need.</p>
                         <p className="contact-body-p">
-                            Get in touch to explore how our custom growth systems and AI surveillance solutions can elevate your operations.
+                            Send us a message to see how our tools can help your business.
                         </p>
                         <p className="contact-body-p">
-                            Whether you need high-performance web applications, secure computer vision setups, or optimized cloud scaling, our team delivers reliable engineering results.
+                            Whether you need a fast website, smart AI, or better marketing, we can help.
                         </p>
                         <p className="contact-body-p">
-                            We operate with a high-ownership model, providing transparent project delivery and dedicated long-term support.
+                            We will reply within 24 hours.
                         </p>
 
                         {/* FORM */}

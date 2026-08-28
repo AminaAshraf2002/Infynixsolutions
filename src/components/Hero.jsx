@@ -9,22 +9,22 @@ const heroData = {
   slides: [
     {
       title: "Growth Engineering Company",
-      subtitle: "Engineering Intelligent Growth Systems for Businesses Built to Scale.",
+      subtitle: "We build smart systems to help your business grow fast.",
       image: hero1
     },
     {
-      title: "Unified Intelligence",
-      subtitle: "Businesses don't struggle because they lack ambition. They struggle because technology, marketing, operations, and data often operate independently.",
+      title: "Everything Connected",
+      subtitle: "Businesses struggle when their marketing, tech, and data do not talk to each other. We fix that.",
       image: hero2
     },
     {
-      title: "Sustainable Business Growth",
-      subtitle: "Infynix engineers these into one intelligent system that enables sustainable business growth.",
+      title: "Built to Last",
+      subtitle: "We connect your tools into one system. This makes growth steady and reliable.",
       image: hero3
     },
     {
-      title: "Innovation & Technology",
-      subtitle: "Transforming the future with cutting-edge technology and data-driven insights.",
+      title: "Smart Technology",
+      subtitle: "We use the latest tech and clear data to move your business forward.",
       image: hero4
     }
   ],

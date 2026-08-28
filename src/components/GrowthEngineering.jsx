@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import SEOManager from './SEOManager';
+import EngineeringMethod from './EngineeringMethod';
 import './InfynixDesign.css';
 
 /* â”€â”€ DATA â”€â”€ */
