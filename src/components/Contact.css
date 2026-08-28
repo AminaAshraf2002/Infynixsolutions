@@ -456,7 +456,8 @@ a.sidebar-query-val:hover { color: #007A5E; }
     }
 
     .contact-hero-inner {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
         gap: 2rem;
     }
 
@@ -503,6 +504,7 @@ a.sidebar-query-val:hover { color: #007A5E; }
     .contact-sidebar {
         margin-top: 0;
         padding-top: 0;
+        flex-direction: column;
         gap: 1rem;
     }
 
@@ -567,7 +569,8 @@ a.sidebar-query-val:hover { color: #007A5E; }
     }
 
     .contact-hero-inner {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
         gap: 2.5rem;
     }
 
@@ -601,6 +604,7 @@ a.sidebar-query-val:hover { color: #007A5E; }
     .contact-sidebar {
         margin-top: 0;
         padding-top: 0;
+        flex-direction: column;
         gap: 1rem;
     }
 
@@ -653,7 +657,8 @@ a.sidebar-query-val:hover { color: #007A5E; }
     }
 
     .contact-hero-inner {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
         gap: 3rem;
     }
 
