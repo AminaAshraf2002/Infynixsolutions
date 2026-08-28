@@ -98,22 +98,37 @@ const SolutionsIndex = () => {
         .service-card-left:hover .service-bg-img {
           transform: scale(1.05);
         }
+        .solutions-index-hero {
+          height: 90vh;
+        }
+        .solutions-index-h1 {
+          font-size: clamp(3rem, 5vw, 5.5rem);
+        }
+        @media (max-width: 768px) {
+          .solutions-index-hero {
+            height: 75vh !important;
+            background-position: top center !important;
+          }
+          .solutions-index-h1 {
+            font-size: clamp(3rem, 10vw, 4rem) !important;
+          }
+        }
       `}} />
       
       {/* 1. HERO SECTION */}
-      <section style={{ 
-        height: '90vh', 
+      <section className="solutions-index-hero" style={{ 
         position: 'relative', 
         display: 'flex', 
         alignItems: 'flex-end',
         padding: '5%',
+        paddingBottom: '10%',
         backgroundImage: `url(${heroBg})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center'
       }}>
         <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.3) 100%)' }}></div>
         <div style={{ position: 'relative', zIndex: 1, maxWidth: '1400px', width: '100%' }}>
-          <h1 style={{ fontSize: 'clamp(2rem, 5vw, 4rem)', fontWeight: 400, margin: 0, lineHeight: 1.1, letterSpacing: '-0.03em' }}>
+          <h1 className="solutions-index-h1" style={{ fontWeight: 400, margin: 0, lineHeight: 1.1, letterSpacing: '-0.03em' }}>
             Expertise you <br />
             <span style={{ color: '#aaa' }}>can trust</span>
           </h1>
