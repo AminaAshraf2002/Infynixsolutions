@@ -2973,11 +2973,12 @@ section[style*="var(--ix-primary)"]::after,
 
 /* ─── MD / TABLET PORTRAIT (640–767px) ─── */
 @media (min-width: 640px) and (max-width: 767px) {
-  nav {
+  .site-header {
     width: calc(100% - 32px);
     top: 12px;
     height: 44px;
     padding: 0 1rem;
+    border-radius: 100px;
   }
 
   .nav-links a {
@@ -3279,11 +3280,12 @@ section[style*="var(--ix-primary)"]::after,
 
 /* ─── SM / LARGE MOBILE (480–639px) ─── */
 @media (min-width: 480px) and (max-width: 639px) {
-  nav {
+  .site-header {
     width: calc(100% - 24px);
     top: 10px;
     height: 42px;
     padding: 0 0.875rem;
+    border-radius: 100px;
   }
 
   /* Hero */
@@ -3629,11 +3631,12 @@ section[style*="var(--ix-primary)"]::after,
 
 /* ─── XS / SMALL MOBILE (< 480px) ─── */
 @media (max-width: 479px) {
-  nav {
+  .site-header {
     width: calc(100% - 20px);
     top: 10px;
     height: 40px;
     padding: 0 0.875rem;
+    border-radius: 100px;
   }
 
   .nav-logo img {

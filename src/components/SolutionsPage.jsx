@@ -255,7 +255,7 @@ const SolutionsPage = () => {
             <span style={{ color: '#fff', fontWeight: 500 }}>{data.title}</span>
           </div>
 
-          <h1 style={{ 
+          <h1 data-aos="fade-up" style={{ 
             fontFamily: '"PP Neue Montreal", sans-serif', 
             fontWeight: 400, 
             fontSize: 'clamp(2.8rem, 6vw, 4rem)', 
@@ -277,7 +277,7 @@ const SolutionsPage = () => {
             
             {/* Left: Bold Statement */}
             <div style={{ paddingRight: '2rem' }}>
-              <h2 style={{ 
+              <h2 data-aos="fade-up" style={{ 
                 fontFamily: '"PP Neue Montreal", var(--ix-font-display)', 
                 fontSize: 'clamp(2.5rem, 4vw, 3.5rem)', 
                 lineHeight: 1.1, 
@@ -290,11 +290,11 @@ const SolutionsPage = () => {
 
             {/* Right: Description & CTA */}
             <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
-              <p style={{ fontFamily: 'var(--ix-font-body)', fontSize: '1.05rem', color: '#888', lineHeight: 1.7, margin: 0 }}>
+              <p data-aos="fade-up" data-aos-delay="100" style={{ fontFamily: 'var(--ix-font-body)', fontSize: '1.05rem', color: '#888', lineHeight: 1.7, margin: 0 }}>
                 {data.description} {data.challenge} {data.insight}
               </p>
               
-              <div style={{ marginTop: '1rem' }}>
+              <div data-aos="fade-up" data-aos-delay="200" style={{ marginTop: '1rem' }}>
                 <Link to="/contact" style={{ 
                   display: 'inline-flex', 
                   alignItems: 'center', 

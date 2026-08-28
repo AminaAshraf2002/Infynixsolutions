@@ -110,7 +110,7 @@ const SolutionsIndex = () => {
             background-position: top center !important;
           }
           .solutions-index-h1 {
-            font-size: clamp(3rem, 10vw, 4rem) !important;
+            font-size: clamp(2.5rem, 8vw, 3.5rem) !important;
           }
         }
       `}} />
@@ -128,7 +128,7 @@ const SolutionsIndex = () => {
       }}>
         <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.3) 100%)' }}></div>
         <div style={{ position: 'relative', zIndex: 1, maxWidth: '1400px', width: '100%' }}>
-          <h1 className="solutions-index-h1" style={{ fontWeight: 400, margin: 0, lineHeight: 1.1, letterSpacing: '-0.03em' }}>
+          <h1 className="solutions-index-h1" data-aos="fade-up" style={{ fontWeight: 400, margin: 0, lineHeight: 1.1, letterSpacing: '-0.03em' }}>
             Expertise you <br />
             <span style={{ color: '#aaa' }}>can trust</span>
           </h1>
@@ -138,7 +138,7 @@ const SolutionsIndex = () => {
       {/* 2. INTRO TEXT */}
       <section style={{ padding: '120px 5%', borderBottom: '1px dashed #333' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto', textAlign: 'center' }}>
-          <h2 style={{ fontSize: 'clamp(1.5rem, 4vw, 3rem)', fontWeight: 400, margin: 0, lineHeight: 1.2, letterSpacing: '-0.02em', color: '#fff' }}>
+          <h2 data-aos="fade-up" data-aos-delay="100" style={{ fontSize: 'clamp(1.5rem, 4vw, 3rem)', fontWeight: 400, margin: 0, lineHeight: 1.2, letterSpacing: '-0.02em', color: '#fff' }}>
             Crafting experiences shaping brands <br /> accelerated growth.
           </h2>
         </div>
@@ -148,7 +148,7 @@ const SolutionsIndex = () => {
       <section style={{ padding: '60px 5%' }}>
         <div style={{ maxWidth: '1400px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: '80px' }}>
           {layers.map((layer, idx) => (
-            <div key={idx} className="solutions-layer-row" style={{ 
+            <div key={idx} className="solutions-layer-row" data-aos="fade-up" data-aos-delay={idx * 150} style={{ 
               display: 'flex', 
               flexWrap: 'wrap',
               background: '#111', // Card container background
@@ -183,7 +183,7 @@ const SolutionsIndex = () => {
                 {/* Gradient for text readability like Phew */}
                 <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 60%)', zIndex: 1, pointerEvents: 'none' }}></div>
                 <Link to={`/solutions/${layer.slug}`} style={{ position: 'relative', zIndex: 2, textDecoration: 'none' }}>
-                  <h3 style={{ fontSize: 'clamp(1.8rem, 3vw, 2.5rem)', fontWeight: 400, margin: 0, letterSpacing: '-0.02em', color: '#fff' }}>
+                  <h3 data-aos="fade-up" style={{ fontSize: 'clamp(1.8rem, 3vw, 2.5rem)', fontWeight: 400, margin: 0, letterSpacing: '-0.02em', color: '#fff' }}>
                     {layer.title}
                   </h3>
                 </Link>
@@ -196,17 +196,17 @@ const SolutionsIndex = () => {
                 flexDirection: 'column',
                 padding: '40px'
               }}>
-                <div style={{ fontSize: '1rem', fontFamily: 'var(--ix-font-body)', fontWeight: 500, color: '#666', marginBottom: '20px' }}>
+                <div data-aos="fade-in" style={{ fontSize: '1rem', fontFamily: 'var(--ix-font-body)', fontWeight: 500, color: '#666', marginBottom: '20px' }}>
                   {layer.num}
                 </div>
                 
                 {layer.desc && (
-                  <p style={{ fontSize: '0.95rem', color: '#aaa', lineHeight: 1.6, marginBottom: '20px', maxWidth: '400px', fontFamily: 'var(--ix-font-body)' }}>
+                  <p data-aos="fade-up" data-aos-delay="100" style={{ fontSize: '0.95rem', color: '#aaa', lineHeight: 1.6, marginBottom: '20px', maxWidth: '400px', fontFamily: 'var(--ix-font-body)' }}>
                     {layer.desc}
                   </p>
                 )}
 
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '5px', flex: 1, justifyContent: 'center' }}>
+                <div data-aos="fade-up" data-aos-delay="200" style={{ display: 'flex', flexDirection: 'column', gap: '5px', flex: 1, justifyContent: 'center' }}>
                   {layer.services.map((svc, sIdx) => {
                     const svcSlug = svc.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
                     return (
@@ -235,7 +235,7 @@ const SolutionsIndex = () => {
       </section>
 
       {/* 4. INFINITE MARQUEE */}
-      <section style={{ background: '#000', padding: '120px 0', overflow: 'hidden', borderBottom: '1px dashed #333' }}>
+      <section data-aos="fade-in" style={{ background: '#000', padding: '120px 0', overflow: 'hidden', borderBottom: '1px dashed #333' }}>
         <div className="marquee-container" style={{ display: 'flex', width: 'max-content', whiteSpace: 'nowrap' }}
              onMouseEnter={(e) => {
                const tracks = e.currentTarget.querySelectorAll('.marquee-track');
