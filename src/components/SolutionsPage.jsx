@@ -216,12 +216,12 @@ const SolutionsPage = () => {
             background-position: top center !important;
             background-repeat: no-repeat !important;
             background-color: #111 !important;
-            padding-top: calc(100vw * 0.56 + 20px) !important;
+            padding-top: calc(100vw * 0.56 + 10px) !important;
             min-height: auto !important;
-            padding-bottom: 30px !important;
+            padding-bottom: 10px !important;
           }
           .solutions-hero-overlay {
-            background: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(17,17,17,1) calc(100vw * 0.65)) !important;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(17,17,17,1) calc(100vw * 0.56)) !important;
           }
         }
       `}} />
@@ -247,7 +247,7 @@ const SolutionsPage = () => {
         <div className="solutions-hero-overlay" style={{ position: 'absolute', inset: 0, background: 'rgba(0,0,0,0.3)' }}></div> {/* Overlay for readability */}
         <div style={{ maxWidth: '1400px', margin: '0 auto', width: '100%', position: 'relative', zIndex: 1 }}>
           {/* Breadcrumbs */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.9rem', color: '#eaeaea', marginBottom: '3rem', fontFamily: 'var(--ix-font-body)' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.9rem', color: '#eaeaea', marginBottom: '1.5rem', fontFamily: 'var(--ix-font-body)' }}>
             <Link to="/" style={{ color: '#eaeaea', textDecoration: 'none' }}>Home</Link>
             <span>/</span>
             <Link to="/solutions" style={{ color: '#eaeaea', textDecoration: 'none' }}>Services</Link>
@@ -258,7 +258,7 @@ const SolutionsPage = () => {
           <h1 style={{ 
             fontFamily: '"PP Neue Montreal", sans-serif', 
             fontWeight: 400, 
-            fontSize: 'clamp(2rem, 4vw, 4rem)', 
+            fontSize: 'clamp(2.8rem, 6vw, 4rem)', 
             color: '#fff', 
             lineHeight: 1, 
             margin: 0, 

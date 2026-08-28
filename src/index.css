@@ -3012,10 +3012,10 @@ section[style*="var(--ix-primary)"]::after,
 
   /* Specialize */
   .specialize-section {
-    padding: 72px 24px;
+    padding: 72px 16px;
     min-height: auto;
-    padding-left: 24px !important;
-    padding-right: 24px !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
   }
 
   .specialize-text {
@@ -3319,10 +3319,10 @@ section[style*="var(--ix-primary)"]::after,
 
   /* Specialize */
   .specialize-section {
-    padding: 64px 20px;
+    padding: 64px 8px;
     min-height: auto;
-    padding-left: 20px !important;
-    padding-right: 20px !important;
+    padding-left: 8px !important;
+    padding-right: 8px !important;
   }
 
   .specialize-text {
@@ -3682,10 +3682,10 @@ section[style*="var(--ix-primary)"]::after,
 
   /* Specialize */
   .specialize-section {
-    padding: 56px 16px;
+    padding: 56px 8px;
     min-height: auto;
-    padding-left: 16px !important;
-    padding-right: 16px !important;
+    padding-left: 8px !important;
+    padding-right: 8px !important;
   }
 
   .specialize-text {
