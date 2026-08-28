@@ -201,9 +201,9 @@ const SolutionsPage = () => {
   ];
 
   let displayServices = mediaServices;
-  if (data.category === 'Marketing' || data.category === 'Branding') {
+  if (data.category === 'Agency' || data.category === 'Marketing' || data.category === 'Branding') {
     displayServices = agencyServices;
-  } else if (data.category === 'Development') {
+  } else if (data.category === 'Growth' || data.category === 'Development') {
     displayServices = growthServices;
   }
 

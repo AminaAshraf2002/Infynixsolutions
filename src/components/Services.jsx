@@ -102,7 +102,7 @@ const services = [
     layerPrefix: 'Layer 01',
     layerName: 'Distribution',
     desc: 'Performance marketing, built to put the finished system in front of the right people.',
-    link: '/solutions/marketing',
+    link: '/solutions/infynix-agency',
   },
   {
     icon: <GrowthSystemsIcon />,
@@ -110,15 +110,15 @@ const services = [
     layerPrefix: 'Layer 02',
     layerName: 'Content',
     desc: 'Media production, built to fill the systems layer with something worth looking at.',
-    link: '/solutions/media',
+    link: '/solutions/infynix-media',
   },
   {
     icon: <WebDevIcon />,
-    title: 'Infynix Growth Solutions',
+    title: 'Infynix Development',
     layerPrefix: 'Layer 03',
     layerName: 'Systems',
     desc: 'AI native software, built to run everything above it in the stack.',
-    link: '/solutions/development',
+    link: '/solutions/infynix-growth-solutions',
   }
 ];
 
