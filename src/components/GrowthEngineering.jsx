@@ -5,20 +5,13 @@ import './InfynixDesign.css';
 
 /* ── DATA ── */
 const stages = [
-  { n: '01', title: 'Discover', body: 'Identify technical bottlenecks across your crawl architecture, page performance, and conversion funnels.' },
-  { n: '02', title: 'Diagnose', body: 'Audit technical SEO indexing errors, Core Web Vitals, ad attribution models, and system latency.' },
-  { n: '03', title: 'Engineer', body: 'Blueprint pre-rendered page architectures, programmatic search routes, and AI computer vision pipelines.' },
-  { n: '04', title: 'Build', body: 'Write clean, high-performance production code using React 19, Next.js, Node.js, and edge AI hardware.' },
-  { n: '05', title: 'Deploy', body: 'Launch pre-rendered static HTML routes complete with structured JSON-LD schemas and GA4 event tracking.' },
-  { n: '06', title: 'Optimize', body: 'Tune page load speeds to under one second, optimize landing page conversion rates, and lower CAC.' },
-  { n: '07', title: 'Scale', body: 'Deploy automated AI agents and continuous programmatic search expansion for sustained market dominance.' },
-];
-
-const stats = [
-  { num: '7x', label: 'Engineering Stages' },
-  { num: '3x', label: 'Avg. Revenue Lift' },
-  { num: '98%', label: 'Client Retention' },
-  { num: '150+', label: 'Systems Built' },
+  { n: '01', title: 'Audit', body: 'We review your site speed, search rankings, ad setup, and software tools to spot exact fixes.' },
+  { n: '02', title: 'Plan', body: 'We map out a clear roadmap for search engineering, paid media, and software improvements.' },
+  { n: '03', title: 'Design', body: 'We create clean layouts, brand visual assets, and high-converting landing pages.' },
+  { n: '04', title: 'Build', body: 'We write clean, production-ready code in React, Next.js, and Node.js built for sub-second speeds.' },
+  { n: '05', title: 'Launch', body: 'We roll out static pre-rendered pages with complete search tags and analytics tracking.' },
+  { n: '06', title: 'Optimize', body: 'We refine user flows, speed up load times, and tune ad campaigns to lower acquisition costs.' },
+  { n: '07', title: 'Scale', body: 'We add automated software workflows and AI agents to handle higher client volumes.' },
 ];
 
 /* ── HOOKS ── */
@@ -53,37 +46,37 @@ const GrowthEngineering = () => {
     {
       title: "SEO Engineering",
       mockupIcon: "fa-solid fa-magnifying-glass",
-      capability: "Technical SEO & Search Infrastructure",
-      details: "Sub-second SSG pre-rendering, programmatic search page generation, structured JSON-LD schemas, and keyword cluster dominance.",
-      heading: "SEO Engineering transforms search from passive blogging into a predictable, scalable revenue pipeline."
+      capability: "Search Infrastructure & Ranking",
+      details: "Fast page loading, clean pre-rendering, and structured search tags built to get your site ranking at the top of Google.",
+      heading: "Turn search engines into your most consistent source of new clients."
     },
     {
       title: "Infynix Agency",
       mockupIcon: "fa-solid fa-bullhorn",
-      capability: "Performance Advertising & Paid Media",
-      details: "Meta Ads, Google Search, Shopping, and LinkedIn campaigns backed by server-side attribution and conversion rate engineering.",
-      heading: "Data-driven performance media engineered to capture high-intent buyers and lower customer acquisition costs."
+      capability: "Paid Media & Lead Flow",
+      details: "Meta and Google campaigns targeted directly at high-intent buyers, backed by clear tracking and lower lead costs.",
+      heading: "Clear ad budgets, tracked conversions, and steady client acquisition."
     },
     {
       title: "Infynix Media",
       mockupIcon: "fa-solid fa-film",
-      capability: "Branding & Visual Production",
-      details: "Cinematic brand films, 3D motion graphics, UI/UX product design, and high-retention short-form social video.",
-      heading: "Elevated design and story-led visual media establish instant market authority and user conversion."
+      capability: "Branding & Visual Content",
+      details: "Clean UI design, brand films, and short video content that make your company look premium and build trust.",
+      heading: "Design that looks modern, communicates value, and drives action."
     },
     {
       title: "Infynix Growth Solutions",
       mockupIcon: "fa-solid fa-code",
-      capability: "Custom Software & AI Agents",
-      details: "Full-stack React/Next.js web apps, mobile applications, autonomous AI agents, and enterprise API workflow automation.",
-      heading: "Custom software infrastructure that automates operational tasks and scales without added complexity."
+      capability: "Custom Web & App Development",
+      details: "React and Next.js web applications, mobile apps, and automated workflows built to handle heavy daily workloads.",
+      heading: "Custom software that takes care of manual tasks so your team can focus on growth."
     },
     {
       title: "AI Surveillance",
       mockupIcon: "fa-solid fa-shield-halved",
-      capability: "AI Computer Vision & Edge Security",
-      details: "Real-time threat detection, perimeter intrusion profiling, NVIDIA Jetson edge processing, and smart CCTV integration.",
-      heading: "Active computer vision security that detects threats instantly with local, zero-latency processing."
+      capability: "Computer Vision Security",
+      details: "Real-time edge security processing on local hardware that detects threats instantly on your current camera network.",
+      heading: "Active facility security that alerts your team before incidents happen."
     }
   ];
 
@@ -124,17 +117,17 @@ const GrowthEngineering = () => {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'Service',
-    'name': 'Growth Engineering & SEO Engineering',
+    'name': 'Growth Engineering & SEO Services',
     'provider': { '@type': 'Organization', 'name': 'Infynix Solutions', 'url': 'https://www.infynix-solutions.com' },
-    'description': 'Infynix Solutions is a Growth Engineering Company specializing in SEO Engineering, Performance Media, Custom Software, and AI Surveillance Solutions.',
+    'description': 'Infynix Solutions is a Growth Engineering Company. We build fast websites, search architecture, paid media campaigns, and AI software.',
     'serviceType': 'Growth Engineering',
   };
 
   return (
     <>
       <SEOManager
-        title="Growth Engineering & SEO Engineering Company | Infynix Solutions"
-        description="Infynix Solutions is a Growth Engineering company. We unify technical SEO engineering, performance media, custom software architectures, and AI surveillance solutions."
+        title="Growth Engineering & SEO Company | Infynix Solutions"
+        description="Infynix Solutions is a Growth Engineering company. We build fast websites, search architecture, paid media campaigns, and AI vision systems."
         canonicalUrl="https://www.infynix-solutions.com/growth-engineering"
         schemaData={schema}
       />
@@ -195,12 +188,12 @@ const GrowthEngineering = () => {
                 marginTop: "10px",
                 display: 'inline-block'
               }}>
-                SEO Engineering & System Scale
+                SEO, Software & Media
               </em>
             </h2>
 
             <p className="ge-hero-p" style={{ fontFamily: "var(--ix-font-body)", fontSize: "1.05rem", color: "#666", lineHeight: 1.6 }}>
-              Unifying SEO engineering, performance media, custom software, and AI vision into one scalable system.
+              We build fast websites, smart search setups, targeted ads, and AI software.
             </p>
           </div>
 
@@ -212,7 +205,7 @@ const GrowthEngineering = () => {
           }}>
             <img
               src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=80"
-              alt="Infynix Growth Engineering Network"
+              alt="Infynix Growth Engineering"
               style={{
                 width: "100%", height: "100%",
                 objectFit: "cover", objectPosition: "center 20%",
@@ -229,7 +222,7 @@ const GrowthEngineering = () => {
             zIndex: 3,
             pointerEvents: settled ? "auto" : "none",
           }}>
-            <span style={{ fontFamily: 'var(--ix-font-body)', fontSize: '0.8rem', letterSpacing: '0.15em', textTransform: 'uppercase', color: '#888', display: 'block', marginBottom: '1.5rem' }}>Core Discipline</span>
+            <span style={{ fontFamily: 'var(--ix-font-body)', fontSize: '0.8rem', letterSpacing: '0.15em', textTransform: 'uppercase', color: '#888', display: 'block', marginBottom: '1.5rem' }}>Our Work</span>
             <h2 style={{
               fontFamily: "var(--ix-font-display)",
               fontWeight: 800,
@@ -247,10 +240,10 @@ const GrowthEngineering = () => {
                 fontWeight: 400,
                 color: "#424242",
               }}>
-                Growth Infrastructure
+                Connected Systems
               </em>
             </h2>
-            <p style={{ fontFamily: "var(--ix-font-body)", fontSize: "1.05rem", color: "#666", lineHeight: 1.6 }}>Engineering intelligent business systems that dominate organic search and scale customer acquisition.</p>
+            <p style={{ fontFamily: "var(--ix-font-body)", fontSize: "1.05rem", color: "#666", lineHeight: 1.6 }}>Building clean digital systems that help your business rank high and get clients.</p>
           </div>
 
           <div style={{
@@ -267,10 +260,10 @@ const GrowthEngineering = () => {
           }}>
             <div style={{ maxWidth: 1200, margin: '0 auto', background: '#f5f5f5', borderRadius: 16, padding: '2rem 3rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '2rem', flexWrap: 'wrap' }}>
               <p style={{ fontFamily: 'var(--ix-font-body)', fontSize: '0.95rem', color: '#555', lineHeight: 1.6, flex: '1 1 500px', margin: 0 }}>
-                Infynix Solutions engineers technical SEO architectures, pre-rendered web platforms, AI agents, and computer vision surveillance to power long-term business growth.
+                Infynix Solutions builds search infrastructure, high-speed web apps, paid media campaigns, and AI security systems designed for long-term growth.
               </p>
               <Link to="/contact" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '0.75rem 1.5rem', background: '#fff', color: '#111', textDecoration: 'none', borderRadius: 30, border: '1px solid #ddd', fontWeight: 600, fontSize: '0.9rem', transition: 'all 0.2s', whiteSpace: 'nowrap' }}>
-                Book a Discovery Call <Arrow />
+                Book a Call <Arrow />
               </Link>
             </div>
           </div>
@@ -281,10 +274,10 @@ const GrowthEngineering = () => {
       <section className="ix-section ge-lime-section" data-aos="fade-up" style={{ position: "relative", background: 'rgb(198, 255, 109)', textAlign: 'left', padding: 'clamp(60px, 8vw, 100px) 20px', overflow: 'hidden' }}>
         <div className="ge-lime-quote-container" style={{ maxWidth: 1200, margin: '0 auto', position: 'relative', zIndex: 2 }}>
           <blockquote style={{ fontFamily: "'Playfair Display', serif", fontStyle: 'italic', fontSize: 'clamp(1.8rem, 3.5vw, 2.8rem)', fontWeight: 400, color: '#000000ff', lineHeight: 1.4, margin: '2rem 0' }}>
-            Growth is not built through disconnected services. It is engineered through unified technical search, performance media, custom software, and continuous optimization.
+            Real growth comes from clear engineering. We connect your search, media, and software so your business works smoothly every day.
           </blockquote>
           <p style={{ fontFamily: 'var(--ix-font-body)', fontWeight: 700, fontSize: '0.9rem', letterSpacing: '0.1em', textTransform: 'uppercase', color: 'rgba(0, 0, 0, 0.9)', marginTop: '3rem' }}>
-            Infynix Solutions: Growth Engineers
+            Infynix Solutions
           </p>
         </div>
       </section>
@@ -322,10 +315,10 @@ const GrowthEngineering = () => {
                   letterSpacing: '-0.02em',
                   marginBottom: '1.5rem',
                 }}>
-                  The Infynix Growth <em style={{ fontStyle: 'normal', fontWeight: 600 }}>Engineering Ecosystem</em>
+                  Five Core <em style={{ fontStyle: 'normal', fontWeight: 600 }}>Capabilities</em>
                 </h2>
                 <p data-aos-delay="100" data-aos="fade-up" style={{ fontFamily: '"Montserrat", Arial, sans-serif', fontSize: '1.05rem', color: 'rgba(255,255,255,0.85)', lineHeight: 1.6, marginBottom: '2.5rem' }}>
-                  Explore how our five specialized growth modules unify search engineering, media, software, and AI surveillance into one cohesive system.
+                  Everything your business needs to rank high, capture leads, and run efficiently.
                 </p>
                 <div data-aos-delay="200" data-aos="fade-up" style={{ display: 'flex', gap: '1rem', justifyContent: 'center' }}>
                   <Link to="/contact" style={{
@@ -337,7 +330,7 @@ const GrowthEngineering = () => {
                     fontWeight: 600,
                     fontFamily: '"Montserrat", Arial, sans-serif',
                     transition: 'background 0.3s'
-                  }}>Start the Conversation</Link>
+                  }}>Talk with Us</Link>
                   <Link to="/solutions" style={{
                     border: '1px solid rgba(255,255,255,0.3)',
                     color: '#fff',
@@ -347,7 +340,7 @@ const GrowthEngineering = () => {
                     fontWeight: 500,
                     fontFamily: '"Montserrat", Arial, sans-serif',
                     transition: 'background 0.3s'
-                  }}>Explore Solutions</Link>
+                  }}>View Solutions</Link>
                 </div>
               </div>
 
@@ -448,7 +441,7 @@ const GrowthEngineering = () => {
         </div>
       </div>
 
-      {/* ══ 7-STAGE METHOD ══ */}
+      {/* ══ 7 STAGE METHOD ══ */}
       <section id="method" className="ix-section" style={{ background: '#fff', position: 'relative' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto', position: 'relative', zIndex: 2 }}>
           <div style={{ marginBottom: 'clamp(2.5rem, 5vw, 4rem)' }}>
@@ -461,8 +454,8 @@ const GrowthEngineering = () => {
               letterSpacing: '-0.02em',
               lineHeight: 1.1,
             }}>
-              The Infynix Growth<br />
-              <em style={{ fontFamily: 'var(--ix-font-serif)', fontStyle: 'italic', fontWeight: 400 }}>Engineering Method</em>
+              Our 7 Step<br />
+              <em style={{ fontFamily: 'var(--ix-font-serif)', fontStyle: 'italic', fontWeight: 400 }}>Working Process</em>
             </h2>
           </div>
 
@@ -497,7 +490,7 @@ const GrowthEngineering = () => {
                 }}
               >
                 <div className="ge-num" style={{ fontFamily: 'var(--ix-font-display)', fontSize: '3rem', fontWeight: 800, color: 'rgba(0,0,0,0.08)', lineHeight: 1, marginBottom: '1rem', transition: 'color 0.25s' }}>{stage.n}</div>
-                <h3 className="ge-title" style={{ fontFamily: 'var(--ix-font-display)', fontWeight: 700, fontSize: '1.05rem', color: '#0a0a0a', marginBottom: '0.6rem', transition: 'color 0.25s' }}>{stage.title} Stage</h3>
+                <h3 className="ge-title" style={{ fontFamily: 'var(--ix-font-display)', fontWeight: 700, fontSize: '1.05rem', color: '#0a0a0a', marginBottom: '0.6rem', transition: 'color 0.25s' }}>{stage.title}</h3>
                 <p className="ge-body" style={{ fontFamily: 'var(--ix-font-body)', fontSize: '0.88rem', color: '#666', lineHeight: 1.7, transition: 'color 0.25s' }}>{stage.body}</p>
               </div>
             ))}
@@ -517,14 +510,14 @@ const GrowthEngineering = () => {
             letterSpacing: '-0.02em',
             marginBottom: '1rem',
           }}>
-            Connect With Our Growth Engineers
+            Get In Touch
           </h2>
           <p data-aos-delay="200" data-aos="fade-up" style={{ fontFamily: 'var(--ix-font-body)', fontSize: '1rem', color: '#666', lineHeight: 1.6, marginBottom: '3.5rem', maxWidth: '800px' }}>
-            Speak directly with our senior technologists. We will perform a technical audit of your SEO indexing, page speed performance, ad attribution, and system workflows.
+            Schedule a conversation with our team. We will review your website performance, search rankings, and growth goals.
           </p>
 
           <div data-aos-delay="300" data-aos="fade-up" style={{ padding: '0' }}>
-            <h3 style={{ fontFamily: 'var(--ix-font-display)', fontSize: '1.4rem', fontWeight: 800, color: '#111', marginBottom: '2.5rem' }}>Schedule a Session</h3>
+            <h3 style={{ fontFamily: 'var(--ix-font-display)', fontSize: '1.4rem', fontWeight: 800, color: '#111', marginBottom: '2.5rem' }}>Send Us a Message</h3>
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '3rem 4rem' }}>
               {[
                 { label: 'Name', type: 'text' },

@@ -7,196 +7,196 @@ export const solutionsData = {
     title: 'Infynix Agency',
     category: 'Agency',
     keywords: ['Performance Advertising', 'SEO & Content Marketing', 'Social Media Management', 'Paid Media Agency', 'Google Ads Agency', 'Meta Ads Agency', 'SEO Engineering'],
-    description: 'Infynix Agency builds performance advertising engines and technical SEO infrastructure to put your offer directly in front of ready-to-buy customers.',
-    challenge: 'Brands struggle to turn traffic into revenue. Unoptimized paid ads burn budget while slow, unstructured web pages fail to rank in search engines.',
-    insight: 'True growth requires an integrated media and search system combining paid intent capture with technical SEO engineering and conversion funnels.',
-    solution: 'We deploy targeted paid media campaigns across Meta, Google, and LinkedIn paired with sub-second SEO pre-rendering and data-backed landing funnels.',
-    outcome: 'Predictable, scalable customer acquisition with lower CAC, higher LTV, and measurable revenue attribution.',
+    description: 'Infynix Agency runs targeted ad campaigns and builds search infrastructure to bring qualified buyers directly to your business.',
+    challenge: 'Unoptimized ads waste budget, while slow websites fail to convert visitors into clients.',
+    insight: 'Growth requires targeted ad campaigns connected directly to fast landing pages and clear lead tracking.',
+    solution: 'We build and manage ad campaigns across Meta, Google, and LinkedIn paired with fast SEO pre-rendering.',
+    outcome: 'Lower client acquisition costs, higher lead volume, and clear revenue tracking.',
     capabilities: [
-      { title: 'Meta & Google Ads Engine', desc: 'High-intent search, shopping, display, and social campaigns optimized for direct ROI and customer acquisition.' },
-      { title: 'SEO Engineering & Technical Search', desc: 'Sub-second SSG rendering, structured JSON-LD schema graphs, and programmatic search architecture.' },
-      { title: 'Conversion Funnel Optimization', desc: 'Behavioral tracking, landing page CRO, dynamic personalization, and multi-touch retargeting loops.' },
-      { title: 'Brand Positioning & Strategy', desc: 'High-impact value propositions and competitive differentiation built to convert cold traffic into loyal clients.' }
+      { title: 'Meta & Google Paid Advertising', desc: 'Targeted search, shopping, and social ad campaigns optimized for sales and lead generation.' },
+      { title: 'SEO Engineering & Search', desc: 'Pre-rendered static pages, clean HTML tags, and keyword architecture built to rank.' },
+      { title: 'Conversion Funnel Optimization', desc: 'Landing page design, A/B testing, and retargeting campaigns built to convert visitors.' },
+      { title: 'Brand Positioning', desc: 'Clear messaging frameworks that make your offer stand out to prospective clients.' }
     ],
     faqs: [
-      { q: 'How do you measure advertising performance?', a: 'We measure campaigns strictly by customer acquisition cost (CAC), return on ad spend (ROAS), and net revenue generated.' },
-      { q: 'What makes your SEO approach different?', a: 'We combine technical software engineering with content architecture, ensuring your pages load instantly and rank for commercial intent keywords.' }
+      { q: 'How do you track ad performance?', a: 'We track campaigns using cost per lead, return on ad spend (ROAS), and total sales generated.' },
+      { q: 'What makes your SEO approach different?', a: 'We focus on page speed, static pre-rendering, and commercial search terms that bring real clients.' }
     ]
   },
   'infynix-media': {
     title: 'Infynix Media',
     category: 'Media',
     keywords: ['Brand Identity', 'UI UX Design', 'Video Production', 'Brand Films', '3D Motion Graphics', 'Studio Photography'],
-    description: 'Infynix Media produces cinematic brand films, high-converting digital design, and 3D motion graphics that command market attention.',
-    challenge: 'Generic visuals blend into digital noise, frustrating prospects and undermining your brand perceived value.',
-    insight: 'High-impact design and story-led media establish instant market authority, creating an emotional anchor that drives user conversion.',
-    solution: 'We design modern UI/UX interfaces, shoot broadcast-quality video content, and create 3D motion graphics that elevate your brand.',
-    outcome: 'Heightened brand authority, superior visual identity, and higher user engagement across all digital touchpoints.',
+    description: 'Infynix Media produces brand films, modern UI/UX product designs, and 3D motion graphics that make your business look world-class.',
+    challenge: 'Outdated visuals and generic designs dilute trust and make it hard to stand out.',
+    insight: 'Clean design and visual media build instant credibility and keep customers engaged.',
+    solution: 'We design modern digital interfaces, shoot corporate brand films, and create 3D product animations.',
+    outcome: 'Stronger brand authority, modern visual presentation, and higher customer engagement.',
     capabilities: [
-      { title: 'UI/UX & Product Design', desc: 'Figma-crafted digital interfaces designed for high usability, modern aesthetics, and seamless conversion.' },
-      { title: 'Cinematic Brand Films', desc: 'Broadcast-quality video production, commercials, and documentary-style brand narratives.' },
-      { title: '3D Motion & Visual Effects', desc: 'Dynamic vector animations and 3D product renders that explain complex software and hardware.' },
-      { title: 'Short-Form Social Content', desc: 'High-retention vertical video production for Reels, TikTok, and Shorts built for algorithmic organic reach.' }
+      { title: 'UI/UX & Digital Design', desc: 'Modern web and app interfaces designed for clean usability and high conversion.' },
+      { title: 'Brand Films & Commercials', desc: 'Corporate video production, commercials, and brand stories shot in high resolution.' },
+      { title: '3D Motion & Animation', desc: 'Vector animations and 3D renders that explain software and physical products simply.' },
+      { title: 'Short-Form Social Video', desc: 'Vertical video content crafted for Reels, TikTok, and social advertising.' }
     ],
     faqs: [
-      { q: 'Do you provide end-to-end media production?', a: 'Yes, we handle pre-production scripting, studio and location shooting, motion graphics, and final delivery.' }
+      { q: 'Do you handle full video production?', a: 'Yes, we handle planning, scripting, filming, editing, and final delivery.' }
     ]
   },
   'infynix-growth-solutions': {
     title: 'Infynix Growth Solutions',
     category: 'Growth',
     keywords: ['Custom Web Development', 'Mobile App Development', 'AI Software Solutions', 'AI Surveillance', 'Business Automation'],
-    description: 'Infynix Growth Solutions engineers custom software architectures, AI agents, enterprise automation, and AI surveillance pipelines for scaling enterprises.',
-    challenge: 'Legacy software and disconnected manual processes slow operational velocity and limit business throughput.',
-    insight: 'Sustainable scale requires custom software infrastructure where web applications, CRM databases, and AI systems communicate seamlessly.',
-    solution: 'We build fast React/Next.js web applications, native mobile apps, automated workflow integrations, and real-time AI computer vision surveillance.',
-    outcome: 'Robust technical infrastructure that lowers operating costs, automates manual labor, and powers long-term growth.',
+    description: 'Infynix Growth Solutions builds custom web apps, AI software workflows, and real-time AI security systems.',
+    challenge: 'Manual workflows and disconnected software tools slow down daily business operations.',
+    insight: 'Scaling requires custom software tools that automate routine work and connect your operations.',
+    solution: 'We build React and Next.js web applications, mobile apps, automated workflows, and AI computer vision systems.',
+    outcome: 'Streamlined daily work, lower operating costs, and software built to scale with your business.',
     capabilities: [
-      { title: 'Custom Web & Mobile Apps', desc: 'High-speed React, Next.js, and mobile applications engineered for security, scale, and sub-second load times.' },
-      { title: 'AI Surveillance & Vision Systems', desc: 'Real-time computer vision threat detection, edge processing on NVIDIA Jetson, and smart CCTV network analytics.' },
-      { title: 'AI Agents & Workflow Automation', desc: 'Autonomous AI agents and custom webhooks connecting CRMs, ERPs, and internal business tools.' },
-      { title: 'API & Middleware Engineering', desc: 'Secure REST/GraphQL API integration and database warehousing for single-source data reporting.' }
+      { title: 'Custom Web & Mobile Applications', desc: 'Fast React, Next.js, and mobile applications built for speed, security, and sub-second load times.' },
+      { title: 'AI Surveillance & Vision Systems', desc: 'Real-time threat detection, edge AI processing on local hardware, and smart CCTV camera integration.' },
+      { title: 'AI Agents & Automation', desc: 'Custom AI agents and API integrations connecting your CRM, communication, and internal tools.' },
+      { title: 'API & Database Infrastructure', desc: 'Secure backend development and custom database management.' }
     ],
     faqs: [
-      { q: 'What technology stack do you use?', a: 'We build with modern frameworks including React 19, Next.js, Node.js, Python, OpenCV, and cloud infrastructure on AWS and Vercel.' }
+      { q: 'What technology stack do you use?', a: 'We build with modern frameworks like React 19, Next.js, Node.js, Python, and cloud infrastructure on AWS and Vercel.' }
     ]
   },
   'ai-surveillance': {
     title: 'AI Surveillance & Security Solutions',
     category: 'Surveillance',
     keywords: ['AI Surveillance', 'Computer Vision Security', 'Smart CCTV Analytics', 'NVIDIA Jetson AI', 'Object Threat Detection', 'Edge AI Vision'],
-    description: 'Real-time AI computer vision surveillance, edge processing, and automated threat detection engineered for enterprise security and industrial facilities.',
-    challenge: 'Traditional CCTV security relies on passive recording and manual monitoring, leaving facilities vulnerable to undetected intrusions and costly security incidents.',
-    insight: 'Modern security requires active, edge-processed AI computer vision that detects threats instantly and alerts response teams in real time.',
-    solution: 'We deploy custom AI surveillance pipelines with real-time computer vision, perimeter intrusion profiling, edge hardware integration (NVIDIA Jetson, Google Coral), and automated alerting.',
-    outcome: 'Zero-latency threat detection, reduced security staffing costs, and automated incident compliance logs.',
+    description: 'Real-time AI computer vision security, local edge processing, and automated threat alerts for commercial facilities.',
+    challenge: 'Traditional CCTV requires constant human monitoring and usually only records incidents after they happen.',
+    insight: 'Active security uses AI computer vision to detect threats automatically and alert your team in real time.',
+    solution: 'We deploy custom AI vision models on local edge hardware (like NVIDIA Jetson) connected directly to your existing CCTV cameras.',
+    outcome: 'Instant threat alerts, lower monitoring costs, and private, local video processing.',
     capabilities: [
-      { title: 'Real-Time Threat Detection', desc: 'Automated perimeter intrusion, unauthorized entry, weapon profiling, and motion anomaly detection.' },
-      { title: 'Edge Hardware Processing', desc: 'Deploying low-latency AI models on NVIDIA Jetson and Google Coral devices for local, privacy-first video analytics.' },
-      { title: 'Smart CCTV & IP Camera Integration', desc: 'Seamless RTSP/ONVIF integration with existing camera infrastructure without requiring hardware replacement.' },
-      { title: 'Live Telemetry & Alerting', desc: 'Real-time security dashboards, instant SMS/push notifications, and automated incident report generation.' }
+      { title: 'Real-Time Threat Detection', desc: 'Automated perimeter monitoring, intrusion alerts, and motion anomaly detection.' },
+      { title: 'Edge Hardware Processing', desc: 'Running vision AI locally on NVIDIA Jetson hardware for zero latency and complete privacy.' },
+      { title: 'CCTV Camera Integration', desc: 'Connecting directly to existing IP and CCTV cameras without replacing hardware.' },
+      { title: 'Instant Mobile Alerts', desc: 'Real-time SMS and app notifications when security boundaries are crossed.' }
     ],
     faqs: [
-      { q: 'Can your AI surveillance system connect to existing CCTV cameras?', a: 'Yes, our vision models connect directly to standard IP and CCTV cameras via RTSP/ONVIF streams.' },
-      { q: 'Does the video data leave our facility?', a: 'No. Using edge devices like NVIDIA Jetson, video analytics run locally on-site for maximum privacy and zero latency.' }
+      { q: 'Does this work with existing cameras?', a: 'Yes, our vision software connects directly to standard CCTV and IP camera streams.' },
+      { q: 'Is video sent to external servers?', a: 'No. Video analytics process locally on your on-site edge hardware for privacy.' }
     ]
   },
   'website-development': {
     title: 'Website Development Services',
     category: 'Development',
     keywords: ['Web Development Company', 'Corporate Website Development', 'Business Website Development', 'Custom Website Development', 'Enterprise Website Design'],
-    description: 'We build high-speed, secure web applications engineered with React 19 and Next.js to convert visitors into loyal customers.',
-    challenge: 'Outdated websites load slowly, break on mobile devices, and fail to generate qualified sales leads.',
-    insight: 'Your website is the core engine of your growth. It must combine sub-second performance, technical SEO, and conversion design.',
-    solution: 'We build custom, pre-rendered web platforms that connect seamlessly to your business tools and marketing funnels.',
-    outcome: 'A secure, high-speed web presence that boosts conversions and tracks leads accurately.',
+    description: 'We build fast, secure web platforms using React 19 and Next.js designed to convert visitors into clients.',
+    challenge: 'Slow websites frustrate visitors, rank poorly on Google, and lose potential sales leads.',
+    insight: 'Your website should be fast, easy to navigate, and pre-rendered for search engines.',
+    solution: 'We build custom, high-speed websites pre-rendered for search engines and connected to your CRM.',
+    outcome: 'A fast web presence that loads instantly and drives consistent inquiries.',
     faqs: [
-      { q: 'How long does custom website development take?', a: 'Typical projects take 4 to 10 weeks depending on custom feature requirements.' },
-      { q: 'Are all websites mobile-friendly and optimized for SEO?', a: 'Yes, every build is fully responsive, accessible, and pre-rendered for search engines.' }
+      { q: 'How long does website development take?', a: 'Most custom website projects take 4 to 8 weeks to complete.' },
+      { q: 'Are all websites optimized for mobile?', a: 'Yes. Every website we build works on mobile devices, tablets, and desktop computers.' }
     ]
   },
   'mobile-app-development': {
     title: 'Mobile App Development',
     category: 'Development',
     keywords: ['Mobile App Development Company', 'Android App Development', 'iOS App Development', 'Flutter Development', 'Cross Platform Development'],
-    description: 'We develop high-performance mobile applications for iOS and Android built for speed, offline reliability, and intuitive UX.',
-    challenge: 'Mobile apps fail when performance is sluggish, offline sync breaks, or navigation is confusing.',
-    insight: 'Exceptional mobile apps combine responsive offline storage, clean UI design, and fast backend connectivity.',
-    solution: 'We engineer native and cross-platform apps using React Native and Flutter for seamless mobile experiences.',
-    outcome: 'Fast, secure mobile apps that keep users engaged and drive customer retention.',
+    description: 'We develop custom mobile applications for iOS and Android built for speed, offline usability, and clear navigation.',
+    challenge: 'Mobile apps fail when they crash, load slowly, or are difficult for users to navigate.',
+    insight: 'Great mobile apps combine offline support, clean UI design, and fast backend response times.',
+    solution: 'We build cross-platform apps using React Native and Flutter for seamless performance.',
+    outcome: 'Reliable mobile apps that keep users engaged and coming back.',
     faqs: [
-      { q: 'Should we build native or cross-platform apps?', a: 'We evaluate your goals and budget. Cross-platform frameworks like React Native deliver native performance at lower cost.' }
+      { q: 'Native or cross-platform development?', a: 'Cross-platform frameworks like React Native deliver native speeds at lower development cost for most projects.' }
     ]
   },
   'performance-marketing': {
-    title: 'Performance Marketing & Paid Media',
+    title: 'Performance Marketing & Paid Ads',
     category: 'Marketing',
     keywords: ['Performance Marketing Agency', 'Meta Ads Agency', 'Google Ads Agency', 'Lead Generation Company', 'PPC Advertising'],
-    description: 'We build and scale paid ad campaigns across Google, Meta, and LinkedIn engineered for direct revenue generation.',
-    challenge: 'Many ad agencies spend budget on vanity clicks without tracking real sales conversion or customer acquisition cost.',
-    insight: 'Paid media must be managed against net revenue and customer acquisition metrics, backed by strict conversion attribution.',
-    solution: 'We build targeted ad campaigns, continuous creative testing matrices, and conversion tracking pipelines.',
-    outcome: 'Higher qualified lead volume, lower customer acquisition cost, and clear ROAS visibility.',
+    description: 'We manage targeted ad campaigns on Google, Meta, and LinkedIn focused on customer acquisition and return on ad spend.',
+    challenge: 'Wasted ad budget on clicks that do not turn into real sales or lead inquiries.',
+    insight: 'Paid media must be managed against clear acquisition metrics and tracked conversions.',
+    solution: 'We design ad campaigns, run creative tests, and set up conversion tracking.',
+    outcome: 'More qualified leads, lower cost per lead, and transparent ad performance reporting.',
     faqs: [
-      { q: 'How do you track campaign conversions?', a: 'We implement server-side tracking, Conversion APIs (CAPI), and CRM attribution to link ad clicks to sales.' }
+      { q: 'How do you track sales from ads?', a: 'We set up server-side pixels and CRM conversion tracking to tie ad clicks directly to inquiries and sales.' }
     ]
   },
   'seo-services': {
-    title: 'SEO Services & Technical SEO Engineering',
+    title: 'SEO Services & Search Infrastructure',
     category: 'Marketing',
     keywords: ['SEO Company', 'SEO Agency', 'Technical SEO', 'Local SEO', 'SEO Engineering Company'],
-    description: 'We engineer technical search infrastructure, semantic topic clusters, and pre-rendered pages to dominate organic search results.',
-    challenge: 'Superficial keyword stuffing and slow web pages keep your business hidden on page two of search results.',
-    insight: 'Modern search dominance requires technical speed, structured JSON-LD data, sub-second pre-rendering, and authoritative content.',
-    solution: 'We execute complete technical SEO overhauls, programmatic search page generation, and cluster-based content architecture.',
-    outcome: 'Compounding organic search traffic, higher commercial keyword rankings, and sustainable market authority.',
+    description: 'We engineer technical search pre-rendering, clean HTML tags, and keyword content to help your business rank at the top of search engine results.',
+    challenge: 'Slow sites and poor HTML structure keep your business hidden on page two of search results.',
+    insight: 'Search dominance requires sub-second load speeds, clean pre-rendering, and targeted content.',
+    solution: 'We fix site speed issues, pre-render pages, and structure content around valuable commercial search terms.',
+    outcome: 'Steady organic traffic growth and higher search rankings for key business terms.',
     faqs: [
-      { q: 'How quickly do SEO engineering improvements take effect?', a: 'Technical indexing improvements show within weeks, while organic keyword dominance compounds over 3 to 6 months.' }
+      { q: 'How long until we see SEO results?', a: 'Technical indexing fixes take effect within weeks, while keyword rankings build steadily over 3 to 6 months.' }
     ]
   },
   'artificial-intelligence': {
     title: 'Artificial Intelligence & AI Integration',
     category: 'Production',
     keywords: ['AI Development Company', 'Business AI Solutions', 'AI Automation', 'AI Integration', 'AI Agents'],
-    description: 'We engineer custom AI agents, LLM integrations, and RAG pipelines that automate complex operations and save time.',
-    challenge: 'Generic AI tools fail to connect with proprietary company data and internal workflows.',
-    insight: 'AI should solve operational bottlenecks by integrating directly into your existing software infrastructure.',
-    solution: 'We build custom AI agents trained on your business data and connected to your CRM and daily communication channels.',
-    outcome: 'Automated administrative workflows, faster response times, and lower operational overhead.',
+    description: 'We build custom AI agents and workflow tools that automate daily administrative tasks.',
+    challenge: 'Off-the-shelf AI tools rarely connect to your internal company files or CRM software.',
+    insight: 'AI tools should integrate directly into your daily software to save actual staff hours.',
+    solution: 'We build custom AI tools connected securely to your company data and communication channels.',
+    outcome: 'Automated routine work, faster responses, and lower overhead costs.',
     faqs: [
-      { q: 'How does custom AI integration help our operations?', a: 'Custom AI handles customer inquiries, processes incoming documents, and automates daily data entry.' }
+      { q: 'How can AI help our business?', a: 'AI can answer common customer questions, process incoming document data, and automate daily scheduling.' }
     ]
   },
   'business-automation': {
     title: 'Business Automation Solutions',
     category: 'Production',
     keywords: ['Workflow Automation', 'Business Automation Company', 'Digital Transformation', 'Process Automation'],
-    description: 'We connect your software ecosystem with automated APIs and custom webhooks to eliminate manual data entry.',
-    challenge: 'Teams waste hundreds of hours manually moving data between disconnected software applications.',
-    insight: 'Disconnected tools slow operational speed. Automated middleware ensures instant data synchronization.',
-    solution: 'We engineer automated workflows connecting your CRM, accounting, communication, and inventory software.',
-    outcome: 'Zero manual data entry errors, accelerated workflow execution, and reduced staff burnout.',
+    description: 'We connect your software tools with automated APIs so your team spends zero time copying data by hand.',
+    challenge: 'Staff wasting hours moving data between separate software applications.',
+    insight: 'Automating repetitive data transfers eliminates human error and speeds up work.',
+    solution: 'We build automated workflows connecting your CRM, accounting, and messaging apps.',
+    outcome: 'No manual data entry errors, faster team work, and less administrative headache.',
     faqs: [
-      { q: 'What software platforms can you automate?', a: 'We build custom API integrations and Make/Zapier pipelines connecting HubSpot, Salesforce, Stripe, WhatsApp, and custom databases.' }
+      { q: 'What tools can you connect?', a: 'We connect HubSpot, Salesforce, Stripe, WhatsApp, custom databases, and popular business tools.' }
     ]
   },
   'crm-erp-development': {
-    title: 'Custom CRM & ERP Development',
+    title: 'Custom CRM & ERP Software',
     category: 'Development',
     keywords: ['CRM Development Company', 'ERP Development Company', 'Business Management Software'],
-    description: 'We build bespoke CRM and ERP management software tailored precisely to your operational workflow.',
-    challenge: 'Generic CRM software is expensive, rigid, and forces your team to adapt to awkward processes.',
-    insight: 'Software should adapt to your business process, providing intuitive tools that increase team productivity.',
-    solution: 'We design custom management portals with automated pipelines, client portals, and real-time operational reporting.',
-    outcome: 'Full visibility over sales and operations, automated team tasks, and freedom from recurring per-seat software licensing fees.',
+    description: 'We build custom CRM and business management software designed around how your company actually operates.',
+    challenge: 'Generic CRM software is expensive, rigid, and hard for staff to use.',
+    insight: 'Software should fit your daily work, giving your team simple tools that speed up tasks.',
+    solution: 'We design simple management portals with automated lead pipelines and reporting.',
+    outcome: 'Full visibility over sales, streamlined daily work, and no monthly per-user software fees.',
     faqs: [
-      { q: 'Can you migrate data from our current software?', a: 'Yes, we safely migrate legacy customer and financial data into your new custom platform.' }
+      { q: 'Can we move data from our old software?', a: 'Yes. We safely import your existing customer and lead data into the new custom platform.' }
     ]
   },
   'ui-ux-design': {
-    title: 'UI/UX Design & Brand Experience',
+    title: 'UI/UX Design & Brand Styling',
     category: 'Branding',
     keywords: ['UI UX Design Company', 'User Experience Design', 'Product Design', 'Brand Identity'],
-    description: 'We design digital interfaces and brand design systems that combine aesthetic elegance with high conversion.',
-    challenge: 'Cluttered, confusing website designs frustrate visitors and cause high bounce rates.',
-    insight: 'Great UI/UX design simplifies user decisions, guiding visitors smoothly toward purchase or inquiry.',
-    solution: 'We craft modern UI designs, interactive prototypes, and cohesive brand design systems.',
-    outcome: 'Increased user retention, higher conversion rates, and a premium market position.',
+    description: 'We design digital product layouts and visual brand styles that look modern and guide users to buy.',
+    challenge: 'Cluttered design confuses visitors and causes high bounce rates.',
+    insight: 'Clean design makes decisions easy for visitors, guiding them naturally to inquire or purchase.',
+    solution: 'We craft modern UI designs, interactive prototypes, and brand style guides.',
+    outcome: 'A modern, professional brand presentation that converts more visitors.',
     faqs: [
-      { q: 'What is your UI/UX design workflow?', a: 'We start with user research and wireframes, create high-fidelity Figma designs, test usability, and deliver developer-ready assets.' }
+      { q: 'What is the design process?', a: 'We start with wireframes, design high-fidelity layouts in Figma, test usability, and hand off clean files for development.' }
     ]
   },
   'cloud-solutions': {
-    title: 'Cloud Infrastructure & DevOps',
+    title: 'Cloud Infrastructure & Hosting',
     category: 'Production',
     keywords: ['Cloud Solutions Company', 'Cloud Architecture', 'Cloud Migration', 'AWS Consulting'],
-    description: 'We design, deploy, and manage resilient cloud infrastructure on AWS, Google Cloud, and Vercel.',
-    challenge: 'Legacy on-premise servers and unoptimized cloud setups suffer from slow speeds, downtime, and high costs.',
-    insight: 'Modern cloud architecture provides sub-second page loads, instant scaling, and bank-grade data security.',
-    solution: 'We migrate applications to serverless cloud environments with CI/CD deployment pipelines and automated backups.',
-    outcome: 'Sub-second web performance, 99.99% uptime reliability, and optimized cloud operating costs.',
+    description: 'We set up and manage secure cloud hosting on AWS, Google Cloud, and Vercel.',
+    challenge: 'Unoptimized web hosting causes slow page loading and unexpected site downtime.',
+    insight: 'Modern cloud hosting delivers fast load times, reliable uptime, and strong security.',
+    solution: 'We migrate websites and apps to fast cloud environments with automated backups.',
+    outcome: 'Sub-second page speeds, 99.99% uptime, and predictable hosting costs.',
     faqs: [
-      { q: 'Can you migrate our applications without downtime?', a: 'Yes, we execute zero-downtime cloud migrations with strict data validation.' }
+      { q: 'Can you migrate our site without downtime?', a: 'Yes. We handle cloud migrations cleanly without taking your current site offline.' }
     ]
   }
 };
@@ -204,62 +204,62 @@ export const solutionsData = {
 export const industriesData = {
   'healthcare': {
     name: 'Healthcare',
-    heroTitle: 'Healthcare Growth Engineering & Systems',
-    challenge: 'Healthcare providers struggle with manual patient scheduling, paperwork delays, and fragmented record systems.',
-    opportunity: 'Automate intake, deploy HIPAA-compliant patient portals, and integrate AI diagnostic assistants.',
-    solutions: ['Custom patient portals, automated reminders, HIPAA-compliant storage, and AI vision diagnostics.'],
+    heroTitle: 'Healthcare Growth Systems',
+    challenge: 'Healthcare teams struggle with paper forms, manual scheduling, and disconnected records.',
+    opportunity: 'Automate intake, deploy secure patient portals, and streamline daily scheduling.',
+    solutions: ['Patient portals, automated appointment reminders, and secure data storage.'],
     faqs: [
-      { q: 'Are your healthcare software systems HIPAA compliant?', a: 'Yes, we adhere to strict data encryption standards and secure authentication protocols.' }
+      { q: 'Is your healthcare software secure?', a: 'Yes. We follow strict data encryption and authentication standards to protect patient data.' }
     ],
     howItWorks: [
-      { title: 'Automate Patient Intake', desc: 'Replace paper forms with smart digital intake portals that verify records instantly.', icon: 'clipboard-list' },
-      { title: 'Predictive Diagnostics', desc: 'Provide medical teams with AI co-pilots that analyze historical data in real time.', icon: 'activity' },
-      { title: 'Secure Compliance', desc: 'Ensure all patient data flows remain encrypted and compliant 24/7.', icon: 'shield-check' }
+      { title: 'Digital Patient Intake', desc: 'Replace paper forms with smart online intake forms.', icon: 'clipboard-list' },
+      { title: 'Automated Reminders', desc: 'Reduce missed appointments with SMS and email reminders.', icon: 'activity' },
+      { title: 'Secure Portals', desc: 'Give patients easy access to records and appointment scheduling.', icon: 'shield-check' }
     ]
   },
   'education': {
     name: 'Education',
-    heroTitle: 'Education Technology & Learning Platforms',
-    challenge: 'Legacy LMS systems slow down student enrollment and virtual classroom engagement.',
-    opportunity: 'Modernize learning with high-speed virtual portals, automated grading, and student dashboards.',
-    solutions: ['Headless LMS setups, customized enrollment software, and interactive curriculum portals.'],
+    heroTitle: 'Education Technology & Student Portals',
+    challenge: 'Outdated platforms make student registration and online course access frustrating.',
+    opportunity: 'Modernize learning with fast student portals, online enrollment, and clear dashboards.',
+    solutions: ['Custom LMS setups, online registration tools, and student portals.'],
     faqs: [
-      { q: 'Can you integrate with existing institutional databases?', a: 'Yes, we connect modern frontends with legacy databases via secure API layers.' }
+      { q: 'Can you integrate with existing databases?', a: 'Yes. We connect modern web portals with school databases using secure APIs.' }
     ],
     howItWorks: [
-      { title: 'Streamline Enrollment', desc: 'Automate registration processes and eliminate paperwork for staff.', icon: 'graduation-cap' },
-      { title: 'Interactive Portals', desc: 'Deploy high-speed learning tools that keep students engaged.', icon: 'monitor-play' },
-      { title: 'Unified Systems', desc: 'Connect distinct campus workflows into one central hub.', icon: 'network' }
+      { title: 'Simple Registration', desc: 'Automate student sign-ups and cut down administrative paperwork.', icon: 'graduation-cap' },
+      { title: 'Student Dashboards', desc: 'Give students easy access to courses, schedules, and grades.', icon: 'monitor-play' },
+      { title: 'Unified Systems', desc: 'Connect distinct department workflows into one easy portal.', icon: 'network' }
     ]
   },
   'real-estate': {
     name: 'Real Estate',
-    heroTitle: 'Real Estate Growth Systems & MLS Portals',
-    challenge: 'Slow property listing portals and manual lead follow-up cause prospective buyers to leave.',
-    opportunity: 'Engage buyers with fast property search, interactive maps, and automated CRM lead flows.',
-    solutions: ['High-speed property listings, interactive maps, and lead follow-up bots.'],
+    heroTitle: 'Real Estate Portals & Lead Systems',
+    challenge: 'Slow property listing sites lose buyers who expect instant search and map filters.',
+    opportunity: 'Engage home buyers with fast property search, interactive maps, and automated lead routing.',
+    solutions: ['Fast property listing engines, interactive map search, and CRM lead capture.'],
     faqs: [
-      { q: 'Do you sync with RETS and MLS databases?', a: 'Yes, we automate listing updates by synchronizing directly with RETS/IDX systems.' }
+      { q: 'Do you connect with property MLS feeds?', a: 'Yes. We automate listing updates by synchronizing directly with RETS/IDX feeds.' }
     ],
     howItWorks: [
-      { title: 'Fast Property Search', desc: 'Deliver instant search filters to help buyers find homes effortlessly.', icon: 'home' },
-      { title: 'Automated Showing Tools', desc: 'Allow visitors to schedule property tours instantly with automated CRM sync.', icon: 'calendar-check' },
-      { title: 'Lead Qualification', desc: 'Qualify buyer intent automatically to focus your sales team on high-value clients.', icon: 'trending-up' }
+      { title: 'Fast Listing Search', desc: 'Help buyers find properties instantly with responsive filters.', icon: 'home' },
+      { title: 'Tour Scheduling', desc: 'Let prospective buyers request property tours directly online.', icon: 'calendar-check' },
+      { title: 'Automated Lead Sync', desc: 'Send inquiry details instantly to your sales team.', icon: 'trending-up' }
     ]
   },
   'retail': {
     name: 'Retail & Commerce',
-    heroTitle: 'Retail & E-Commerce Growth Infrastructure',
-    challenge: 'Slow checkouts and generic product displays reduce mobile sales conversions.',
-    opportunity: 'Increase sales with headless checkouts, AI product recommendations, and custom carts.',
-    solutions: ['Headless eCommerce systems, automated cart recovery, and revenue analytics.'],
+    heroTitle: 'Retail & E-Commerce Web Platforms',
+    challenge: 'Slow checkout pages cause cart abandonment and lost sales.',
+    opportunity: 'Increase online sales with fast mobile checkout, smart product recommendations, and simple carts.',
+    solutions: ['Fast online stores, cart recovery tools, and sales reporting.'],
     faqs: [
-      { q: 'What commerce platforms do you support?', a: 'We build headless solutions using Shopify, BigCommerce, or custom web engines.' }
+      { q: 'Which e-commerce platforms do you support?', a: 'We build custom online stores using Shopify, BigCommerce, or custom web software.' }
     ],
     howItWorks: [
-      { title: 'Frictionless Checkout', desc: 'Eliminate checkout friction with single-click purchasing and fast loading.', icon: 'shopping-cart' },
-      { title: 'Personalized Product Engine', desc: 'Recommend relevant products dynamically using real-time user behavior.', icon: 'sparkles' },
-      { title: 'Omnichannel Integration', desc: 'Sell across web, mobile, and social media storefronts seamlessly.', icon: 'globe' }
+      { title: 'Fast Mobile Checkout', desc: 'Remove checkout friction so customers complete purchases quickly.', icon: 'shopping-cart' },
+      { title: 'Product Recommendations', desc: 'Suggest relevant products to buyers during checkout.', icon: 'sparkles' },
+      { title: 'Inventory Sync', desc: 'Keep stock levels updated automatically across all sales channels.', icon: 'globe' }
     ]
   }
 };
@@ -267,25 +267,25 @@ export const industriesData = {
 export const caseStudiesData = [
   {
     slug: 'task-management-system',
-    title: 'A multi-role SaaS platform for team and task management across enterprise industries',
+    title: 'A multi-role SaaS platform for team and task management',
     client: 'TMS',
-    challenge: 'Infynix engineered an internal, industry-agnostic software suite to manage teams and tasks across multiple roles (Super Admin, Org Admin, Team Lead/PM, Employee), with custom module activation per industry.',
-    objectives: 'Build a scalable multi-role platform with clear separation between web (admin management) and mobile (execution roles), supporting offline-first usage for field employees.',
-    strategy: 'Split the platform by role and surface, Web management built with React and Node.js, mobile app built with Flutter and SQLite for offline-first sync.',
+    challenge: 'Infynix built an internal software suite to manage team tasks across multiple roles (Super Admin, Org Admin, Team Lead, Employee).',
+    objectives: 'Build a scalable multi-role platform with clear separation between web management and mobile execution, supporting offline work for field employees.',
+    strategy: 'Web app built in React and Node.js for managers; mobile app built with Flutter and SQLite for field staff working offline.',
     technology: 'React, Vite, Node.js, Express, MongoDB, SQLite, Flutter',
-    execution: 'Shipped 17+ custom frontend modules, engineered backend API security, and implemented SQLite offline synchronization.',
-    results: '17+ custom pages shipped across one unified role-based platform with 100% offline availability.',
+    execution: 'Shipped 17+ custom frontend modules and built SQLite offline synchronization.',
+    results: '17+ custom pages shipped across one unified platform with 100% offline support for field staff.',
   },
   {
     slug: 'beyond-demands',
-    title: 'A multi-tenant supply procurement platform with three dedicated operational surfaces',
+    title: 'A supply procurement platform with three dedicated operational portals',
     client: 'Beyond Demands',
-    challenge: 'Partner salons, warehouse teams, and org admins required tailored views into supply inventory, ordering, and dispatch without compromising tenant data security.',
-    objectives: 'Ship one multi-tenant platform with three dedicated surfaces while maintaining strict tenant isolation and concurrency controls.',
-    strategy: 'Modular monolith architecture in Next.js with PostgreSQL Row-Level Security and atomic transaction locks.',
-    technology: 'Next.js, Prisma, PostgreSQL, NextAuth, Row-Level Security',
-    execution: 'Implemented Postgres Row-Level Security policies, transaction locking for inventory dispatch, rate limiting, and automated security audit logs.',
-    results: 'One unified codebase, three tailored operational surfaces, zero data leakage across multi-tenant clients.',
+    challenge: 'Partner salons, warehouse teams, and admins required distinct portal views into inventory, ordering, and dispatch.',
+    objectives: 'Ship one multi-tenant platform with three dedicated surfaces while maintaining strict data security.',
+    strategy: 'Built with Next.js and PostgreSQL Row-Level Security to ensure tenant data safety.',
+    technology: 'Next.js, Prisma, PostgreSQL, NextAuth',
+    execution: 'Implemented Postgres security policies, transaction locking for inventory dispatch, and automated audit logs.',
+    results: 'One unified codebase, three tailored operational portals, and zero data leakage between client accounts.',
   }
 ];
 
@@ -294,28 +294,28 @@ export const insightsData = [
     slug: 'what-is-growth-engineering',
     title: 'What is Growth Engineering and Why Your Business Needs It',
     category: 'Growth Engineering',
-    summary: 'Learn why traditional siloed marketing fails and how Growth Engineering unifies software, search, and media for sustainable business growth.',
+    summary: 'Learn why disconnected marketing tools fail and how connected search, media, and software build reliable growth.',
     content: `
-      Businesses rarely fail due to a lack of ambition. They fail because their software, search strategy, paid advertising, and operational workflows function in silos.
+      Businesses rarely struggle from a lack of effort. They struggle because their website, search strategy, paid ads, and software tools work separately.
       
-      Growth Engineering solves this disconnection. At Infynix Solutions, we engineer unified systems where technical SEO, high-speed web apps, performance media, and business automation work as one cohesive growth engine.
+      Growth Engineering fixes this. At Infynix Solutions, we build unified digital systems where search pre-rendering, fast web apps, paid ads, and daily software tools work together cleanly.
       
-      When your web infrastructure loads in under a second, your content is pre-rendered for search engines, and your lead capture syncs automatically into your CRM, customer acquisition becomes predictable and scalable.
+      When your website loads in less than a second, ranks high on Google, and sends inquiries straight to your CRM, getting new clients becomes straightforward and predictable.
     `,
     date: 'September 6, 2026',
     author: 'Infynix Tech Lab'
   },
   {
     slug: 'ai-surveillance-computer-vision-security',
-    title: 'How Real-Time AI Computer Vision Transforms Facility Security',
+    title: 'How Real-Time AI Computer Vision Improves Facility Security',
     category: 'AI Surveillance',
-    summary: 'Discover how edge-processed AI computer vision on NVIDIA Jetson hardware replaces passive CCTV with real-time threat detection.',
+    summary: 'Discover how edge-processed AI computer vision on local devices turns CCTV into active security.',
     content: `
-      Traditional CCTV surveillance is reactive. Security teams review recorded footage only after an intrusion or security incident has already occurred.
+      Traditional CCTV cameras only record video. Security teams usually review footage after an incident has already happened.
       
-      Modern AI surveillance changes this paradigm completely. By deploying computer vision models on local edge hardware like NVIDIA Jetson and Google Coral, cameras process video streams in real time.
+      AI computer vision changes this. By running AI vision models on local edge hardware like NVIDIA Jetson, your cameras process video streams in real time.
       
-      Intrusions, perimeter breaches, and safety anomalies are detected instantly, alerting security personnel before incidents escalate. Because video processing occurs locally on the edge device, facility data remains private and secure.
+      Intrusions and boundary breaches are detected instantly, alerting your security team before issues escalate. Because processing happens on-site, your video data remains completely private.
     `,
     date: 'September 6, 2026',
     author: 'Infynix AI Team'
