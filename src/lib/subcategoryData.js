@@ -3,532 +3,242 @@ export const subcategoryData = {
   'infynix-agency': {
     title: 'Infynix Agency',
     category: 'Marketing',
-    keywords: ['Performance Marketing', 'Agency', 'Growth Marketing'],
-    description: 'Performance marketing built to put the finished system in front of the right people at the right time.',
-    challenge: 'Traffic without intent is useless. Brands struggle to convert clicks into revenue.',
-    insight: 'Targeting must be driven by data and psychological triggers, not guesswork.',
-    solution: 'We build high-converting, omnichannel marketing engines.',
-    outcome: 'Lower CAC, higher LTV, and predictable revenue scaling.',
+    keywords: ['Performance Marketing', 'Agency', 'Paid Media', 'Meta Ads', 'Google Ads', 'SEO Engineering'],
+    description: 'Performance marketing and technical SEO pre-rendering built to put your offer directly in front of ready-to-buy prospects.',
+    challenge: 'Traffic without commercial intent wastes ad budget. Businesses struggle to convert paid clicks into predictable revenue.',
+    insight: 'Targeting must be driven by data, search intent, and psychological triggers, supported by sub-second page load speeds.',
+    solution: 'We build high-converting paid media campaigns across Meta, Google, and LinkedIn paired with technical search infrastructure.',
+    outcome: 'Lower customer acquisition cost, higher customer lifetime value, and predictable revenue scaling.',
     capabilities: [
-      { title: 'Omnichannel Strategy', desc: 'Deploying campaigns across Meta, Google, and LinkedIn seamlessly.' },
-      { title: 'Conversion Rate Optimization', desc: 'A/B testing landing pages and funnels to maximize ROI.' },
-      { title: 'Audience Segmentation', desc: 'Using data models to target hyper-specific buyer personas.' },
-      { title: 'Retargeting Ecosystems', desc: 'Building multi-touch retargeting loops to capture lost traffic.' },
-      { title: 'ROI Attribution', desc: 'Full-funnel tracking to see exactly which ads generate revenue.' }
+      { title: 'Meta & Google Paid Advertising', desc: 'Running targeted search, shopping, display, and social campaigns optimized for direct ROI.' },
+      { title: 'SEO Engineering & Pre-Rendering', desc: 'Sub-second SSG rendering, structured schema graphs, and semantic keyword architecture.' },
+      { title: 'Conversion Rate Optimization', desc: 'A/B testing landing pages and conversion funnels to maximize lead acquisition.' },
+      { title: 'Audience Segmentation', desc: 'Utilizing data models to isolate and target hyper-specific high-intent buyer personas.' },
+      { title: 'Full-Funnel Attribution', desc: 'Server-side tracking and CRM attribution to tie ad spend directly to sales revenue.' }
     ],
     workingSteps: [
-      { num: '01', title: 'Audit & Analysis', desc: 'Deep dive into historical ad data and current funnel leakage.' },
+      { num: '01', title: 'Audit & Analysis', desc: 'Deep dive into historical ad performance and technical site crawl errors.' },
       { num: '02', title: 'Persona Modeling', desc: 'Defining the exact psychographics of your ideal high-LTV customer.' },
       { num: '03', title: 'Channel Strategy', desc: 'Selecting the optimal mix of paid channels for your specific CAC goals.' },
-      { num: '04', title: 'Creative Testing', desc: 'Launching initial campaigns with multi-variant creative tests.' },
-      { num: '05', title: 'Conversion Tracking', desc: 'Implementing pixel-perfect attribution across the entire funnel.' },
-      { num: '06', title: 'Scale & Optimize', desc: 'Increasing spend on winning channels while eliminating wasted budget.' }
+      { num: '04', title: 'Creative Testing', desc: 'Launching initial campaigns with multi-variant ad copy and visual assets.' },
+      { num: '05', title: 'Conversion Tracking', desc: 'Implementing pixel-perfect server-side attribution across your entire funnel.' },
+      { num: '06', title: 'Scale & Optimize', desc: 'Increasing budgets on winning campaigns while eliminating unneeded spend.' }
     ]
   },
   'infynix-media': {
     title: 'Infynix Media',
     category: 'Branding',
-    keywords: ['Creative Agency', 'Brand Media', 'Video Production'],
-    description: 'Brand narratives and visual communication that command attention in crowded markets.',
-    challenge: 'Generic creative blends in. Attention spans are shorter than ever.',
-    insight: 'Visuals must hook instantly and communicate value within seconds.',
-    solution: 'We produce high-end, scroll-stopping media and brand assets.',
-    outcome: 'Increased brand equity, higher engagement, and stronger market positioning.',
+    keywords: ['Creative Agency', 'Brand Media', 'Video Production', 'UI UX Design', 'Motion Graphics'],
+    description: 'Brand narratives, UI/UX designs, and visual media that command attention in crowded digital markets.',
+    challenge: 'Generic visuals blend into background noise. Attention spans require instant visual value within seconds.',
+    insight: 'Visual design must hook viewers immediately and convey core value through elegant, intuitive aesthetics.',
+    solution: 'We produce cinematic video content, 3D motion graphics, and high-converting digital product interfaces.',
+    outcome: 'Increased brand equity, higher user engagement, and stronger market authority.',
     capabilities: [
-      { title: 'Visual Identity Systems', desc: 'Creating cohesive brand guidelines, logos, and typographies.' },
-      { title: 'High-End Video Production', desc: 'Directing and shooting cinematic brand films.' },
-      { title: 'Content Storyboarding', desc: 'Mapping out narratives that resonate emotionally with audiences.' },
-      { title: 'Digital Asset Libraries', desc: 'Building comprehensive libraries of reusable marketing assets.' },
-      { title: 'Creative Direction', desc: 'Guiding the overarching artistic vision for product launches.' }
+      { title: 'Visual Identity & Design Systems', desc: 'Creating cohesive brand guidelines, logo systems, typography, and UI assets.' },
+      { title: 'Cinematic Brand Films', desc: 'Directing and producing broadcast-quality commercial video content.' },
+      { title: '3D Motion Graphics & Animation', desc: 'Dynamic vector animations and 3D renders that explain complex software concepts.' },
+      { title: 'Short-Form Vertical Content', desc: 'High-retention Reels, TikToks, and Shorts crafted for organic social reach.' }
     ],
     workingSteps: [
-      { num: '01', title: 'Brand Discovery', desc: 'Understanding your core manifesto, archetypes, and market positioning.' },
-      { num: '02', title: 'Moodboarding', desc: 'Establishing the visual language and aesthetic direction.' },
-      { num: '03', title: 'Pre-Production', desc: 'Storyboarding, scripting, casting, and location scouting.' },
-      { num: '04', title: 'Studio Production', desc: 'High-end capture using cinema-grade cameras and lighting.' },
-      { num: '05', title: 'Post-Production', desc: 'Editing, color grading, VFX, and original sound scoring.' },
-      { num: '06', title: 'Asset Rollout', desc: 'Delivering formatted libraries ready for multi-platform distribution.' }
+      { num: '01', title: 'Brand Discovery', desc: 'Understanding your core business values, audience archetypes, and positioning.' },
+      { num: '02', title: 'Moodboarding & Concepting', desc: 'Establishing visual language, typography, and aesthetic direction.' },
+      { num: '03', title: 'Pre-Production', desc: 'Storyboarding, scripting, set design, and shot planning.' },
+      { num: '04', title: 'Studio Capture', desc: 'High-end filming using cinema cameras and professional studio lighting.' },
+      { num: '05', title: 'Post-Production', desc: 'Editing, color grading, visual effects, and custom sound scoring.' },
+      { num: '06', title: 'Asset Deployment', desc: 'Delivering formatted digital libraries ready for multi-channel distribution.' }
     ]
   },
   'infynix-growth-solutions': {
     title: 'Infynix Growth Solutions',
     category: 'Development',
-    keywords: ['Growth Systems', 'Tech Stack', 'Engineering'],
-    description: 'The technical foundation and systems that power scalable business growth.',
-    challenge: 'Disconnected software silos cause data leaks and operational drag.',
-    insight: 'True scale requires a unified tech stack where systems talk to each other.',
-    solution: 'We engineer integrated CRM, Web, and Automation ecosystems.',
-    outcome: 'Streamlined operations, zero data loss, and automated scaling.',
+    keywords: ['Growth Systems', 'Tech Stack', 'Engineering', 'AI Surveillance', 'Custom Software'],
+    description: 'Custom software architectures, AI agents, enterprise automation, and AI surveillance systems that power scalable business growth.',
+    challenge: 'Disconnected software tools cause operational drag, manual data entry errors, and security vulnerabilities.',
+    insight: 'True scalability requires a unified tech infrastructure where software applications and AI systems talk to each other.',
+    solution: 'We engineer integrated web platforms, mobile applications, AI agents, and real-time AI vision surveillance systems.',
+    outcome: 'Streamlined operations, zero manual data loss, and automated business scaling.',
     capabilities: [
-      { title: 'Full-Stack Architecture', desc: 'Designing resilient tech stacks from database to frontend.' },
-      { title: 'CRM Implementation', desc: 'Setting up Salesforce or HubSpot for maximum sales efficiency.' },
-      { title: 'Process Automation', desc: 'Using Zapier and custom webhooks to eliminate manual tasks.' },
-      { title: 'Data Warehousing', desc: 'Centralizing business intelligence into a single source of truth.' },
-      { title: 'Custom Web Apps', desc: 'Developing bespoke portals and tools for internal operations.' }
+      { title: 'Full-Stack Software Architecture', desc: 'Building resilient web and mobile applications using React 19, Next.js, and Node.js.' },
+      { title: 'AI Surveillance & Vision Systems', desc: 'Edge-processed computer vision threat detection on NVIDIA Jetson hardware.' },
+      { title: 'AI Agents & LLM Integration', desc: 'Autonomous AI workflows connected securely to proprietary company data.' },
+      { title: 'Process Automation & APIs', desc: 'Building middleware and webhooks to eliminate manual data entry.' }
     ],
     workingSteps: [
-      { num: '01', title: 'Systems Audit', desc: 'Mapping your current software architecture and identifying bottlenecks.' },
-      { num: '02', title: 'Blueprint Design', desc: 'Architecting the ideal future-state tech stack and database schemas.' },
-      { num: '03', title: 'Core Development', desc: 'Building the foundational web applications and databases.' },
-      { num: '04', title: 'API Integration', desc: 'Wiring disparate systems together via secure middleware.' },
-      { num: '05', title: 'Data Migration', desc: 'Safely transferring legacy data to the new unified platforms.' },
-      { num: '06', title: 'User Training', desc: 'Handing over the keys and training your team on the new workflows.' }
+      { num: '01', title: 'Systems Audit', desc: 'Mapping your current software architecture and identifying operational bottlenecks.' },
+      { num: '02', title: 'Blueprint Design', desc: 'Architecting future-state software stacks, database schemas, and AI pipelines.' },
+      { num: '03', title: 'Core Development', desc: 'Engineering foundational applications, APIs, and computer vision models.' },
+      { num: '04', title: 'API & Hardware Integration', desc: 'Wiring software applications and IP cameras together securely.' },
+      { num: '05', title: 'QA & Security Testing', desc: 'Testing for vulnerabilities, sub-second performance, and zero downtime.' },
+      { num: '06', title: 'Deployment & Training', desc: 'Deploying cloud/edge infrastructure and onboarding your operational teams.' }
     ]
   },
-
-  // --- AGENCY SUBCATEGORIES ---
+  'ai-surveillance': {
+    title: 'AI Surveillance & Security Solutions',
+    category: 'Surveillance',
+    keywords: ['AI Surveillance', 'Computer Vision', 'Edge AI Security', 'NVIDIA Jetson'],
+    description: 'Real-time AI computer vision surveillance, perimeter threat detection, and smart CCTV network analytics.',
+    challenge: 'Traditional CCTV security relies on passive recording, leaving facilities exposed to undetected intrusions and security threats.',
+    insight: 'Enterprise security requires edge-processed AI computer vision that detects intrusion anomalies instantly.',
+    solution: 'We deploy custom AI surveillance pipelines with perimeter intrusion detection, NVIDIA Jetson edge processing, and automated alerting.',
+    outcome: 'Zero-latency threat detection, lower security monitoring costs, and automated incident compliance logs.',
+    capabilities: [
+      { title: 'Perimeter Intrusion Detection', desc: 'Automated threat detection, unauthorized entry profiling, and weapon detection.' },
+      { title: 'Edge Hardware Processing', desc: 'Deploying computer vision models on NVIDIA Jetson and Google Coral for local processing.' },
+      { title: 'RTSP CCTV Camera Integration', desc: 'Connecting directly to existing IP camera networks without replacing hardware.' },
+      { title: 'Real-Time Alert Dashboards', desc: 'Instant SMS/push security alerts and live telemetry management dashboards.' }
+    ],
+    workingSteps: [
+      { num: '01', title: 'Facility Audit', desc: 'Analyzing physical security zones, camera locations, and threat vectors.' },
+      { num: '02', title: 'Model Training', desc: 'Training computer vision models on facility-specific activity patterns.' },
+      { num: '03', title: 'Edge Device Setup', desc: 'Configuring NVIDIA Jetson hardware gateways on site.' },
+      { num: '04', title: 'Stream Integration', desc: 'Connecting RTSP camera streams directly to edge AI processing nodes.' },
+      { num: '05', title: 'Alert Configuration', desc: 'Setting escalation protocols, mobile push alerts, and dashboard views.' },
+      { num: '06', title: 'Live Deployment', desc: 'Launching 24/7 active surveillance with automated incident logging.' }
+    ]
+  },
   'performance-advertising': {
     title: 'Performance Advertising',
     category: 'Marketing',
     keywords: ['Paid Ads', 'PPC', 'Meta Ads', 'Google Ads'],
-    description: 'Data-driven paid media campaigns designed to generate measurable ROI.',
-    challenge: 'Rising ad costs make it harder to acquire customers profitably.',
-    insight: 'Creative testing combined with algorithmic bidding is the only way to scale.',
-    solution: 'We manage and optimize ad spend across all major platforms with strict KPIs.',
-    outcome: 'Profitable customer acquisition at scale.',
+    description: 'Data-driven paid media campaigns on Google, Meta, and LinkedIn designed for direct ROAS.',
+    challenge: 'Rising ad costs make it hard to acquire customers profitably without strict attribution.',
+    insight: 'Continuous creative testing combined with algorithmic bidding is essential for profitable ad scale.',
+    solution: 'We manage and optimize paid ad spend across platforms with strict ROI key performance indicators.',
+    outcome: 'Profitable customer acquisition and scaling.',
     capabilities: [
       { title: 'Search Engine Marketing', desc: 'Capturing high-intent search traffic via Google and Bing.' },
-      { title: 'Paid Social Campaigns', desc: 'Running highly targeted ads on Facebook, Instagram, and LinkedIn.' },
-      { title: 'Creative Testing Matrix', desc: 'Rapidly A/B testing ad copy and creatives to find winners.' },
-      { title: 'Programmatic Display', desc: 'Automated media buying across premium publisher networks.' },
-      { title: 'Bid Management', desc: 'Using AI to optimize bidding strategies in real-time.' }
+      { title: 'Paid Social Campaigns', desc: 'Running targeted ads on Facebook, Instagram, and LinkedIn.' },
+      { title: 'Creative Testing Matrix', desc: 'Rapidly A/B testing ad copy and visual assets to scale winning ads.' },
+      { title: 'Conversion Attribution', desc: 'Server-side tracking to tie ad impressions directly to revenue.' }
     ],
     workingSteps: [
-      { num: '01', title: 'Account Audit', desc: 'Analyzing past ad performance to identify wasted spend and missed opportunities.' },
-      { num: '02', title: 'Tracking Setup', desc: 'Installing and verifying pixels, CAPI, and server-side tracking.' },
-      { num: '03', title: 'Campaign Structuring', desc: 'Building a scalable account architecture for testing and scaling.' },
-      { num: '04', title: 'Creative Launch', desc: 'Deploying the first wave of ad copy and visual assets into the market.' },
-      { num: '05', title: 'Algorithmic Bidding', desc: 'Feeding data back into the ad platforms to train their machine learning.' },
-      { num: '06', title: 'Vertical Scaling', desc: 'Aggressively increasing budgets on the winning ad sets to maximize ROAS.' }
+      { num: '01', title: 'Account Audit', desc: 'Analyzing past ad performance to eliminate wasted spend.' },
+      { num: '02', title: 'Tracking Setup', desc: 'Installing and verifying server-side pixels and CAPI integrations.' },
+      { num: '03', title: 'Campaign Architecture', desc: 'Building scalable account structures for testing and vertical scaling.' },
+      { num: '04', title: 'Creative Launch', desc: 'Deploying high-converting ad copy and visual formats.' },
+      { num: '05', title: 'Bidding Optimization', desc: 'Utilizing machine learning algorithms to optimize bid targets.' },
+      { num: '06', title: 'Scale & Budget Lift', desc: 'Increasing budgets on winning ad sets to maximize total sales.' }
     ]
   },
   'seo-content-marketing': {
     title: 'SEO & Content Marketing',
     category: 'Marketing',
-    keywords: ['SEO', 'Content Strategy', 'Organic Growth'],
-    description: 'Dominating search results and building authority through high-value content.',
-    challenge: 'Algorithms change constantly, and superficial content doesn’t rank.',
-    insight: 'Technical perfection and deep, authoritative content are required for page one.',
-    solution: 'We execute technical SEO audits and produce cluster-based content strategies.',
-    outcome: 'Compounding organic traffic and industry authority.',
+    keywords: ['SEO', 'Content Strategy', 'Organic Growth', 'SEO Engineering'],
+    description: 'Technical search engineering, pre-rendered page architecture, and semantic keyword dominance.',
+    challenge: 'Unstructured websites and superficial content fail to achieve page-one search engine rankings.',
+    insight: 'Technical pre-rendering speed and deep topic clusters are essential for long-term organic authority.',
+    solution: 'We execute technical SEO audits, SSG pre-rendering, and semantic keyword cluster strategies.',
+    outcome: 'Compounding organic traffic and dominant commercial search rankings.',
     capabilities: [
-      { title: 'Technical SEO Audits', desc: 'Fixing crawl errors, site speed, and architectural issues.' },
-      { title: 'Keyword Strategy', desc: 'Identifying high-volume, low-competition semantic clusters.' },
-      { title: 'Long-Form Content Production', desc: 'Writing comprehensive guides and whitepapers.' },
-      { title: 'On-Page Optimization', desc: 'Structuring metadata, headers, and schema markup.' },
-      { title: 'Link Building Outreach', desc: 'Acquiring high-DA backlinks to boost domain authority.' }
+      { title: 'Technical SEO Audits', desc: 'Fixing crawl errors, page load speeds, and indexing barriers.' },
+      { title: 'Keyword Architecture', desc: 'Mapping high-volume semantic keyword clusters.' },
+      { title: 'On-Page Pre-Rendering', desc: 'Injecting structured JSON-LD schemas and static HTML rendering.' },
+      { title: 'Link Building & Authority', desc: 'Acquiring high-authority backlinks to expand domain authority.' }
     ],
     workingSteps: [
-      { num: '01', title: 'Technical Crawl', desc: 'Using Screaming Frog and Ahrefs to uncover site-destroying errors.' },
-      { num: '02', title: 'Competitor Gap', desc: 'Analyzing the keywords your competitors rank for, but you do not.' },
-      { num: '03', title: 'Content Clustering', desc: 'Mapping out pillar pages and supporting blog clusters.' },
-      { num: '04', title: 'Content Execution', desc: 'Writing SEO-optimized, human-first articles and landing pages.' },
-      { num: '05', title: 'On-Page Implementation', desc: 'Injecting schemas, internal links, and optimized metadata.' },
-      { num: '06', title: 'Backlink Acquisition', desc: 'Executing outreach campaigns to build high-authority links.' }
+      { num: '01', title: 'Technical Audit', desc: 'Crawling site architecture to eliminate site errors.' },
+      { num: '02', title: 'Keyword Gap Analysis', desc: 'Identifying valuable search terms your competitors rank for.' },
+      { num: '03', title: 'Content Clustering', desc: 'Structuring pillar pages and supporting content topics.' },
+      { num: '04', title: 'Pre-Rendered Execution', desc: 'Building SEO-optimized, pre-rendered static HTML pages.' },
+      { num: '05', title: 'Schema Injection', desc: 'Injecting structured data markup for rich search snippets.' },
+      { num: '06', title: 'Authority Building', desc: 'Executing outreach to build high-authority backlinks.' }
     ]
   },
   'social-media-management': {
     title: 'Social Media Management',
     category: 'Marketing',
     keywords: ['Social Media', 'Community Management', 'Organic Social'],
-    description: 'Building engaged communities and active followings on native social platforms.',
-    challenge: 'Brands struggle to maintain a consistent, engaging voice across platforms.',
-    insight: 'Social media requires native understanding, what works on TikTok fails on LinkedIn.',
-    solution: 'We curate, schedule, and engage with platform-specific content.',
-    outcome: 'Active brand advocates and heightened brand awareness.',
+    description: 'Building engaged social followings and brand authority across digital platforms.',
+    challenge: 'Brands struggle to maintain a consistent voice and active presence on social channels.',
+    insight: 'Social media requires platform-native creative adapted specifically for each network.',
+    solution: 'We curate, produce, and schedule platform-specific social media content.',
+    outcome: 'Heightened brand authority and active community engagement.',
     capabilities: [
-      { title: 'Platform Strategy', desc: 'Defining the unique role of each social channel for your brand.' },
-      { title: 'Content Calendars', desc: 'Planning and scheduling posts months in advance.' },
-      { title: 'Community Engagement', desc: 'Actively responding to comments, tags, and messages.' },
-      { title: 'Trend Jacking', desc: 'Capitalizing on viral trends with rapid-response content.' },
-      { title: 'Influencer Partnerships', desc: 'Collaborating with micro-influencers to expand reach.' }
+      { title: 'Platform Strategy', desc: 'Defining the specific role of each social network for your business.' },
+      { title: 'Content Calendars', desc: 'Planning and scheduling posts across digital platforms.' },
+      { title: 'Community Management', desc: 'Actively engaging with comments, direct messages, and brand mentions.' },
+      { title: 'Influencer Collaboration', desc: 'Partnering with industry creators to expand organic reach.' }
     ],
     workingSteps: [
-      { num: '01', title: 'Social Audit', desc: 'Reviewing current presence, audience demographics, and engagement rates.' },
-      { num: '02', title: 'Voice & Tone', desc: 'Defining the personality your brand will embody online.' },
-      { num: '03', title: 'Content Pillars', desc: 'Establishing 3-5 core themes that all posts will revolve around.' },
-      { num: '04', title: 'Asset Creation', desc: 'Designing graphics, cutting videos, and writing engaging captions.' },
-      { num: '05', title: 'Scheduling & Publishing', desc: 'Using tools like Sprout Social to maintain a consistent posting cadence.' },
-      { num: '06', title: 'Community Cultivation', desc: 'Proactively engaging with followers and industry peers daily.' }
+      { num: '01', title: 'Social Audit', desc: 'Evaluating current profile presence and audience engagement.' },
+      { num: '02', title: 'Voice & Tone', desc: 'Establishing the distinct online personality of your brand.' },
+      { num: '03', title: 'Content Pillars', desc: 'Defining core content themes that resonate with your target market.' },
+      { num: '04', title: 'Creative Production', desc: 'Designing visuals and writing captions for weekly publishing.' },
+      { num: '05', title: 'Publishing Cadence', desc: 'Maintaining consistent publishing schedules using scheduling tools.' },
+      { num: '06', title: 'Community Growth', desc: 'Proactively connecting with followers and industry peers daily.' }
     ]
   },
   'marketing-automation-crm': {
     title: 'Marketing Automation & CRM',
     category: 'Marketing',
     keywords: ['CRM', 'Email Marketing', 'Automation'],
-    description: 'Nurturing leads on autopilot and closing the gap between marketing and sales.',
-    challenge: 'Leads fall through the cracks when follow-up is manual.',
-    insight: 'Timely, personalized communication is the key to high conversion rates.',
-    solution: 'We build automated email and SMS workflows triggered by user behavior.',
-    outcome: 'Higher lead conversion rates and shorter sales cycles.',
+    description: 'Automating lead follow-ups, email drips, and CRM synchronization.',
+    challenge: 'Sales leads fall through the cracks when follow-up tasks are handled manually.',
+    insight: 'Immediate, behavioral communication is key to converting leads into sales.',
+    solution: 'We build automated email, SMS, and CRM workflows triggered by prospect actions.',
+    outcome: 'Higher lead conversion rates and accelerated sales cycles.',
     capabilities: [
-      { title: 'Drip Campaigns', desc: 'Designing automated email sequences to nurture cold leads.' },
-      { title: 'Lead Scoring', desc: 'Implementing behavioral scoring to identify sales-ready prospects.' },
-      { title: 'CRM Integration', desc: 'Syncing HubSpot or Salesforce with your marketing stack.' },
-      { title: 'SMS Automation', desc: 'Triggering text messages for high-priority alerts and offers.' },
-      { title: 'Cart Abandonment Flows', desc: 'Recovering lost revenue with targeted remarketing emails.' }
+      { title: 'Automated Drip Campaigns', desc: 'Designing automated email sequences to educate and convert leads.' },
+      { title: 'Lead Scoring Models', desc: 'Implementing behavioral scoring to identify sales-ready prospects.' },
+      { title: 'CRM Integration', desc: 'Syncing HubSpot and Salesforce directly with your website funnels.' },
+      { title: 'Cart Recovery Workflows', desc: 'Recovering abandoned orders with automated follow-up messages.' }
     ],
     workingSteps: [
-      { num: '01', title: 'Funnel Mapping', desc: 'Documenting the exact customer journey from lead to sale.' },
-      { num: '02', title: 'CRM Architecture', desc: 'Structuring custom fields, pipelines, and tags in HubSpot/Salesforce.' },
-      { num: '03', title: 'Copywriting', desc: 'Drafting high-converting email templates and SMS scripts.' },
-      { num: '04', title: 'Workflow Logic', desc: 'Building the "If/Then" automation trees in your marketing software.' },
-      { num: '05', title: 'Sandbox Testing', desc: 'Running test leads through the system to ensure zero misfires.' },
-      { num: '06', title: 'Live Optimization', desc: 'A/B testing subject lines and adjusting delays based on open rates.' }
+      { num: '01', title: 'Funnel Mapping', desc: 'Mapping customer journeys from initial inquiry to final purchase.' },
+      { num: '02', title: 'CRM Architecture', desc: 'Structuring custom fields, tags, and pipelines in your CRM.' },
+      { num: '03', title: 'Copywriting', desc: 'Drafting high-converting email sequences and SMS messaging.' },
+      { num: '04', title: 'Automation Logic', desc: 'Building conditional workflow trees in marketing software.' },
+      { num: '05', title: 'System QA', desc: 'Testing workflows to ensure zero dropped leads.' },
+      { num: '06', title: 'Optimization', desc: 'Testing subject lines and messaging based on conversion data.' }
     ]
   },
-  'analytics-reporting': {
-    title: 'Analytics & Reporting',
-    category: 'Marketing',
-    keywords: ['Data Analytics', 'BI', 'Reporting'],
-    description: 'Transforming raw data into actionable business intelligence.',
-    challenge: 'Businesses have too much data and too little insight.',
-    insight: 'Data is only useful if it directly informs business decisions.',
-    solution: 'We build custom dashboards that track the metrics that actually matter.',
-    outcome: 'Total visibility into marketing performance and ROI.',
-    capabilities: [
-      { title: 'Custom Dashboards', desc: 'Building real-time Looker Studio or Tableau dashboards.' },
-      { title: 'Tag Management', desc: 'Setting up GTM for precise event and conversion tracking.' },
-      { title: 'Cross-Domain Tracking', desc: 'Following users seamlessly across multiple web properties.' },
-      { title: 'Data Cleansing', desc: 'Ensuring your analytics data is accurate and free of bot traffic.' },
-      { title: 'Monthly Insights Reports', desc: 'Delivering strategic breakdowns of performance trends.' }
-    ],
-    workingSteps: [
-      { num: '01', title: 'KPI Definition', desc: 'Working with stakeholders to determine the 5 most critical business metrics.' },
-      { num: '02', title: 'GTM Setup', desc: 'Installing Google Tag Manager and configuring custom event triggers.' },
-      { num: '03', title: 'Data Piping', desc: 'Connecting ad platforms, CRM, and website data into a central warehouse.' },
-      { title: 'Dashboard Design', desc: 'Creating clean, intuitive visualizations in Looker Studio or PowerBI.' },
-      { num: '05', title: 'Data QA', desc: 'Cross-referencing dashboard numbers with raw data to ensure 100% accuracy.' },
-      { num: '06', title: 'Insight Delivery', desc: 'Providing ongoing monthly analysis, not just raw numbers.' }
-    ]
-  },
-  'brand-strategy-positioning': {
-    title: 'Brand Strategy & Positioning',
-    category: 'Marketing',
-    keywords: ['Brand Strategy', 'Positioning', 'Messaging'],
-    description: 'Defining your unique space in the market and how you communicate it.',
-    challenge: 'Commoditized brands compete on price; distinct brands compete on value.',
-    insight: 'Positioning is about sacrifice, choosing exactly who you are not for.',
-    solution: 'We develop comprehensive brand archetypes, messaging pillars, and positioning statements.',
-    outcome: 'A powerful, differentiated brand that commands premium pricing.',
-    capabilities: [
-      { title: 'Market Positioning', desc: 'Identifying your unique differentiator in crowded spaces.' },
-      { title: 'Brand Archetyping', desc: 'Defining the core personality and tone of your brand.' },
-      { title: 'Messaging Frameworks', desc: 'Creating the exact words to use in sales and marketing.' },
-      { title: 'Competitor Analysis', desc: 'Mapping the landscape to exploit competitor weaknesses.' },
-      { title: 'Go-To-Market Strategy', desc: 'Planning the rollout of new brands or product lines.' }
-    ],
-    workingSteps: [
-      { num: '01', title: 'Stakeholder Interviews', desc: 'Extracting the vision and core values from your leadership team.' },
-      { num: '02', title: 'Competitive Matrix', desc: 'Plotting competitors on a matrix to find the "white space" in the market.' },
-      { num: '03', title: 'Archetype Selection', desc: 'Choosing the psychological archetype that best represents your brand.' },
-      { num: '04', title: 'Messaging Pillars', desc: 'Developing the 3-4 core messages that will anchor all communications.' },
-      { num: '05', title: 'Brand Playbook', desc: 'Compiling the strategy into an actionable guide for your entire company.' },
-      { num: '06', title: 'Internal Rollout', desc: 'Training your team to live and breathe the new brand positioning.' }
-    ]
-  },
-
-  // --- MEDIA SUBCATEGORIES ---
-  'photography-videography': {
-    title: 'Photography & Videography',
-    category: 'Branding',
-    keywords: ['Photography', 'Videography', 'Production'],
-    description: 'High-end visual capture for products, corporate profiles, and campaigns.',
-    challenge: 'Stock photos dilute brand trust. Poor lighting ruins great products.',
-    insight: 'Custom, high-quality imagery is the foundation of digital credibility.',
-    solution: 'We provide full-service studio and location shoots.',
-    outcome: 'A bank of proprietary, stunning visuals that elevate your brand.',
-    capabilities: [
-      { title: 'Product Photography', desc: 'Capturing e-commerce ready, high-resolution product shots.' },
-      { title: 'Corporate Headshots', desc: 'Professional portraits for teams and executives.' },
-      { title: 'Event Coverage', desc: 'Cinematic video and photo capture of live brand events.' },
-      { title: 'Lifestyle Shoots', desc: 'Contextualizing products in real-world, aspirational settings.' },
-      { title: 'Drone & Aerial', desc: 'Providing unique aerial perspectives for real estate or events.' }
-    ],
-    workingSteps: [
-      { num: '01', title: 'Creative Briefing', desc: 'Aligning on the specific style, lighting, and mood required for the shoot.' },
-      { num: '02', title: 'Logistics Planning', desc: 'Securing locations, permits, talent, and equipment rentals.' },
-      { num: '03', title: 'Shot Listing', desc: 'Creating an exhaustive list of every required angle and composition.' },
-      { num: '04', title: 'Production Day', desc: 'Executing the shoot efficiently while capturing backup and B-roll footage.' },
-      { num: '05', title: 'Selection & Retouching', desc: 'Client review of raw files, followed by professional color correction and airbrushing.' },
-      { num: '06', title: 'Final Delivery', desc: 'Providing high-res print files and compressed web-ready formats.' }
-    ]
-  },
-  'short-form-social-content': {
-    title: 'Short-Form & Social Content',
-    category: 'Branding',
-    keywords: ['Reels', 'TikTok', 'Shorts', 'Social Media'],
-    description: 'Rapid-consumption vertical video designed for algorithmic reach.',
-    challenge: 'Grabbing attention in the first 3 seconds is incredibly difficult.',
-    insight: 'Short-form content must balance entertainment with brand messaging seamlessly.',
-    solution: 'We script, shoot, and edit high-retention TikToks, Reels, and Shorts.',
-    outcome: 'Viral potential and massive organic reach among younger demographics.',
-    capabilities: [
-      { title: 'Hook Scripting', desc: 'Writing opening lines guaranteed to stop the scroll.' },
-      { title: 'Vertical Editing', desc: 'Pacing cuts and graphics perfectly for mobile screens.' },
-      { title: 'Captioning & VFX', desc: 'Adding dynamic text and effects to retain viewer attention.' },
-      { title: 'Content Batching', desc: 'Shooting a month’s worth of content in a single studio day.' },
-      { title: 'Trend Adaptation', desc: 'Pivoting creative rapidly to match current social trends.' }
-    ],
-    workingSteps: [
-      { num: '01', title: 'Trend Research', desc: 'Analyzing TikTok and Reels for current viral audio and formats.' },
-      { num: '02', title: 'Scripting Hooks', desc: 'Writing hyper-optimized 3-second hooks for each video concept.' },
-      { num: '03', title: 'Batch Shooting', desc: 'Directing talent through rapid-fire takes in a single studio session.' },
-      { num: '04', title: 'Dynamic Editing', desc: 'Applying fast jump cuts, sound effects, and motion graphics.' },
-      { num: '05', title: 'Subtitling', desc: 'Adding bold, animated captions optimized for silent scrolling.' },
-      { num: '06', title: 'Algorithm Publishing', desc: 'Posting at peak times with algorithm-friendly hashtags and sounds.' }
-    ]
-  },
-  'brand-films-commercials': {
-    title: 'Brand Films & Commercials',
-    category: 'Branding',
-    keywords: ['Commercials', 'Brand Films', 'Video Production'],
-    description: 'Cinematic storytelling that communicates your brand’s core manifesto.',
-    challenge: 'Explaining a complex brand vision requires more than just words.',
-    insight: 'Emotional connection through cinema drives long-term brand loyalty.',
-    solution: 'We produce broadcast-quality commercials and documentary-style brand films.',
-    outcome: 'A flagship asset that defines your brand for years to come.',
-    capabilities: [
-      { title: 'Narrative Development', desc: 'Crafting the emotional arc of the commercial.' },
-      { title: 'Casting & Location', desc: 'Sourcing the perfect talent and settings for the shoot.' },
-      { title: 'Cinematography', desc: 'Using RED/ARRI cameras for Hollywood-level image quality.' },
-      { title: 'Color Grading', desc: 'Creating a distinct, cohesive visual mood in post-production.' },
-      { title: 'Original Scoring', desc: 'Composing custom music to match the film’s emotional tone.' }
-    ],
-    workingSteps: [
-      { num: '01', title: 'Concept & Treatment', desc: 'Pitching 3 unique cinematic concepts with mood boards.' },
-      { num: '02', title: 'Storyboarding', desc: 'Illustrating frame-by-frame sketches of the entire commercial.' },
-      { num: '03', title: 'Pre-Production', desc: 'Handling permits, casting calls, set design, and crew logistics.' },
-      { num: '04', title: 'Principal Photography', desc: 'Shooting with a full cinema crew, directors, and DPs.' },
-      { num: '05', title: 'Offline & Online Edit', desc: 'Locking the visual cut before applying high-end color and VFX.' },
-      { num: '06', title: 'Sound Design & Mix', desc: 'Adding foley, original music, and mixing for broadcast standards.' }
-    ]
-  },
-  'ai-assisted-production': {
-    title: 'AI-Assisted Production',
-    category: 'Branding',
-    keywords: ['AI Generation', 'Midjourney', 'AI Video'],
-    description: 'Leveraging generative AI to produce impossible visuals at scale.',
-    challenge: 'Traditional CGI and set design are often prohibitively expensive.',
-    insight: 'AI allows for boundless creativity without the constraints of physics or budgets.',
-    solution: 'We use advanced diffusion models to generate assets, backgrounds, and concepts.',
-    outcome: 'Stunning, otherworldly visuals produced in a fraction of the time.',
-    capabilities: [
-      { title: 'Concept Ideation', desc: 'Rapidly visualizing hundreds of campaign ideas using AI.' },
-      { title: 'Virtual Set Generation', desc: 'Creating photorealistic backgrounds for green-screen shoots.' },
-      { title: 'AI Voiceovers', desc: 'Generating natural-sounding narration in any language.' },
-      { title: 'Asset Upscaling', desc: 'Using AI to enhance and restore low-resolution imagery.' },
-      { title: 'Generative Storyboarding', desc: 'Mapping out video shoots with AI-generated frame sketches.' }
-    ],
-    workingSteps: [
-      { num: '01', title: 'Prompt Engineering', desc: 'Crafting precise text prompts to guide the AI models.' },
-      { num: '02', title: 'Rapid Generation', desc: 'Producing hundreds of variations in Midjourney or Stable Diffusion.' },
-      { num: '03', title: 'Curation', desc: 'Selecting the top 5% of generated images that fit the brand style.' },
-      { num: '04', title: 'In-Painting & Editing', desc: 'Manually fixing AI artifacts and adjusting details in Photoshop.' },
-      { num: '05', title: 'Motion Generation', desc: 'Using AI video models to animate the static generations.' },
-      { num: '06', title: 'Upscaling & Delivery', desc: 'Enhancing the final assets to 4K resolution for commercial use.' }
-    ]
-  },
-  'motion-graphics-animation': {
-    title: 'Motion Graphics & Animation',
-    category: 'Branding',
-    keywords: ['Motion Graphics', '2D Animation', '3D Animation'],
-    description: 'Dynamic animations that explain complex products or elevate UI.',
-    challenge: 'Static graphics struggle to explain multi-step software or abstract concepts.',
-    insight: 'Motion simplifies complexity and keeps the viewer visually engaged.',
-    solution: 'We create 2D/3D animations, explainer videos, and micro-interactions.',
-    outcome: 'Clearer communication and a more premium digital feel.',
-    capabilities: [
-      { title: 'Explainer Videos', desc: 'Breaking down SaaS products into easily understood animations.' },
-      { title: 'UI/UX Motion', desc: 'Designing micro-animations for app interfaces and websites.' },
-      { title: '3D Product Rendering', desc: 'Showcasing physical products with impossible camera angles.' },
-      { title: 'Kinetic Typography', desc: 'Making text dynamic and engaging for social ads.' },
-      { title: 'Lottie Animations', desc: 'Exporting lightweight animations for seamless web integration.' }
-    ],
-    workingSteps: [
-      { num: '01', title: 'Scriptwriting', desc: 'Drafting the narration script that will drive the animation timing.' },
-      { num: '02', title: 'Styleframes', desc: 'Designing 2-3 static frames to lock in the visual aesthetic.' },
-      { num: '03', title: 'Animatic', desc: 'Creating a rough timing edit with storyboards and scratch audio.' },
-      { num: '04', title: 'Animation Phase', desc: 'Bringing the vectors or 3D models to life in After Effects or Cinema4D.' },
-      { num: '05', title: 'Sound Design', desc: 'Adding whooshes, pops, and ambient sound to give the motion weight.' },
-      { num: '06', title: 'Render & Optimization', desc: 'Exporting as MP4s or lightweight Lottie JSON files for web.' }
-    ]
-  },
-  'podcast-audio-production': {
-    title: 'Podcast & Audio Production',
-    category: 'Branding',
-    keywords: ['Podcasting', 'Audio', 'Sound Design'],
-    description: 'End-to-end production for corporate podcasts and sonic branding.',
-    challenge: 'Poor audio quality instantly ruins the credibility of a podcast.',
-    insight: 'Audio is the most intimate medium; it builds unparalleled parasocial trust.',
-    solution: 'We handle recording, editing, sound design, and distribution.',
-    outcome: 'A professional, broadcast-quality audio presence that builds authority.',
-    capabilities: [
-      { title: 'Studio Recording', desc: 'Capturing crystal-clear audio with broadcast-grade mics.' },
-      { title: 'Audio Editing', desc: 'Removing filler words, breaths, and background noise seamlessly.' },
-      { title: 'Sonic Branding', desc: 'Creating custom intros, outros, and audio logos.' },
-      { title: 'Video Podcasting', desc: 'Syncing multi-camera video with podcast audio for YouTube.' },
-      { title: 'RSS Distribution', desc: 'Publishing episodes to Apple, Spotify, and all major platforms.' }
-    ],
-    workingSteps: [
-      { num: '01', title: 'Format Strategy', desc: 'Deciding on interview style, solo host, or narrative documentary formats.' },
-      { num: '02', title: 'Equipment Setup', desc: 'Consulting on remote mic setups or booking physical recording studios.' },
-      { num: '03', title: 'Recording Session', desc: 'Producing the episode live to ensure audio levels and flow are perfect.' },
-      { num: '04', title: 'Dialogue Editing', desc: 'Cutting out umms, ahhs, and dead space to create a crisp listening experience.' },
-      { num: '05', title: 'Mixing & Mastering', desc: 'Leveling audio to standard LUFS broadcast requirements.' },
-      { num: '06', title: 'Syndication', desc: 'Pushing the final MP3 to Apple Podcasts, Spotify, and Google.' }
-    ]
-  },
-
-  // --- GROWTH SOLUTIONS SUBCATEGORIES ---
   'custom-web-app-development': {
     title: 'Custom Web & App Development',
     category: 'Development',
-    keywords: ['Web Apps', 'Mobile Apps', 'React', 'Node'],
-    description: 'Engineering bespoke software applications tailored to unique business logic.',
-    challenge: 'Off-the-shelf software often forces businesses to compromise their processes.',
-    insight: 'Custom software should mold to your business, not the other way around.',
-    solution: 'We build scalable, secure web and mobile applications from scratch.',
-    outcome: 'Proprietary software that creates a lasting competitive advantage.',
+    keywords: ['Web Apps', 'Mobile Apps', 'React', 'Node', 'Next.js'],
+    description: 'Engineering high-performance web applications tailored to your business operations.',
+    challenge: 'Standard off-the-shelf software forces businesses into rigid, inefficient processes.',
+    insight: 'Custom software should conform to your operational workflows, not the other way around.',
+    solution: 'We develop scalable React 19, Next.js, and mobile applications from scratch.',
+    outcome: 'Proprietary software that delivers a lasting competitive advantage.',
     capabilities: [
-      { title: 'Frontend Engineering', desc: 'Building reactive, lightning-fast UIs with React and Next.js.' },
-      { title: 'Backend Architecture', desc: 'Designing secure, scalable server logic with Node and Python.' },
-      { title: 'Progressive Web Apps (PWA)', desc: 'Creating web apps that function like native mobile apps.' },
-      { title: 'Database Design', desc: 'Structuring relational and NoSQL databases for performance.' },
-      { title: 'Native Mobile Apps', desc: 'Deploying to iOS and Android via React Native or Swift.' }
+      { title: 'Frontend Engineering', desc: 'Building lightning-fast UIs using React 19 and Next.js.' },
+      { title: 'Backend Architecture', desc: 'Designing secure backend server logic using Node.js and Python.' },
+      { title: 'Database Optimization', desc: 'Structuring relational PostgreSQL and MongoDB databases.' },
+      { title: 'Native Mobile Applications', desc: 'Deploying cross-platform apps to iOS and Android via React Native.' }
     ],
     workingSteps: [
-      { num: '01', title: 'Requirement Gathering', desc: 'Documenting every user story and feature requirement.' },
-      { num: '02', title: 'System Architecture', desc: 'Choosing the right tech stack, frameworks, and database schema.' },
-      { num: '03', title: 'UI/UX Prototyping', desc: 'Designing clickable Figma prototypes for client approval.' },
-      { num: '04', title: 'Agile Sprints', desc: 'Developing the application in two-week iterative sprints.' },
-      { num: '05', title: 'QA & Penetration Testing', desc: 'Hunting for bugs and securing endpoints against vulnerabilities.' },
-      { num: '06', title: 'Deployment & DevOps', desc: 'Setting up CI/CD pipelines and launching to AWS or Vercel.' }
+      { num: '01', title: 'Requirements Mapping', desc: 'Documenting user stories and feature requirements.' },
+      { num: '02', title: 'System Blueprinting', desc: 'Selecting frameworks, databases, and API architecture.' },
+      { num: '03', title: 'UI Prototyping', desc: 'Designing clickable Figma prototypes for team review.' },
+      { num: '04', title: 'Agile Sprints', desc: 'Developing features in rapid two-week iterative sprints.' },
+      { num: '05', title: 'Security QA', desc: 'Testing endpoints against security risks and bottlenecks.' },
+      { num: '06', title: 'Production Deployment', desc: 'Setting up automated CI/CD deployment pipelines on AWS and Vercel.' }
     ]
   },
   'ai-native-product-development': {
-    title: 'AI-Native Product Development',
+    title: 'AI Product Development & Agents',
     category: 'Development',
-    keywords: ['LLMs', 'Generative AI', 'AI Agents'],
-    description: 'Building next-generation applications powered by Large Language Models.',
-    challenge: 'Integrating AI securely without hallucination or data privacy risks is complex.',
-    insight: 'AI shouldn’t just be a gimmick; it should fundamentally solve user problems.',
-    solution: 'We develop apps that utilize RAG, custom agents, and LLM APIs securely.',
-    outcome: 'Intelligent software that automates cognition and delights users.',
+    keywords: ['LLMs', 'Generative AI', 'AI Agents', 'RAG'],
+    description: 'Building intelligent applications powered by Large Language Models and autonomous AI agents.',
+    challenge: 'Integrating AI tools securely without data privacy risks or hallucinations is complex.',
+    insight: 'AI should solve actual business problems by connecting directly to proprietary data.',
+    solution: 'We build applications utilizing RAG, autonomous agents, and secure LLM pipelines.',
+    outcome: 'Intelligent software that automates manual tasks and delights users.',
     capabilities: [
-      { title: 'RAG Implementation', desc: 'Connecting LLMs securely to your proprietary company data.' },
-      { title: 'Autonomous Agents', desc: 'Building AI agents that can execute complex, multi-step tasks.' },
-      { title: 'Prompt Engineering', desc: 'Crafting robust system prompts to eliminate hallucination.' },
-      { title: 'Computer Vision', desc: 'Integrating image recognition and processing pipelines.' },
-      { title: 'LLM Fine-Tuning', desc: 'Training open-source models on your specific domain data.' }
+      { title: 'RAG Implementation', desc: 'Connecting LLMs securely to your company document databases.' },
+      { title: 'Autonomous AI Agents', desc: 'Building AI agents capable of executing multi-step business workflows.' },
+      { title: 'Prompt Engineering & Guardrails', desc: 'Implementing system prompts to ensure accurate, safe AI responses.' },
+      { title: 'Custom Model Fine-Tuning', desc: 'Training open-source models on domain-specific company data.' }
     ],
     workingSteps: [
-      { num: '01', title: 'Use Case Identification', desc: 'Finding the specific workflows where AI adds exponential value.' },
-      { num: '02', title: 'Model Selection', desc: 'Choosing between GPT-4, Claude, or open-source Llama models.' },
-      { num: '03', title: 'Data Vectorization', desc: 'Processing your company data into vector databases for RAG.' },
-      { num: '04', title: 'Agent Logic Development', desc: 'Programming the reasoning loops (LangChain) for AI agents.' },
-      { num: '05', title: 'Guardrail Implementation', desc: 'Adding strict rules to prevent the AI from giving dangerous or wrong answers.' },
-      { num: '06', title: 'Beta Testing', desc: 'Rolling out to a small user group to refine prompt responses.' }
-    ]
-  },
-  'marketing-business-automation': {
-    title: 'Marketing & Business Automation',
-    category: 'Development',
-    keywords: ['Automation', 'Zapier', 'Make', 'Workflows'],
-    description: 'Connecting software tools to execute repetitive tasks automatically.',
-    challenge: 'Employees waste countless hours on manual data entry between systems.',
-    insight: 'If a digital task is repetitive and rules-based, it can be automated.',
-    solution: 'We architect complex automation workflows across your entire tech stack.',
-    outcome: 'Massive reduction in operational overhead and human error.',
-    capabilities: [
-      { title: 'Workflow Mapping', desc: 'Documenting current processes to identify automation bottlenecks.' },
-      { title: 'API Webhooks', desc: 'Setting up real-time data transfers between disparate apps.' },
-      { title: 'Zapier / Make Integration', desc: 'Building resilient automation flows using low-code platforms.' },
-      { title: 'Custom Scripts', desc: 'Writing Python scripts for automations too complex for Zapier.' },
-      { title: 'Error Handling', desc: 'Designing fail-safes so automations alert you if they break.' }
-    ],
-    workingSteps: [
-      { num: '01', title: 'Process Mining', desc: 'Shadowing your team to find the most tedious manual tasks.' },
-      { num: '02', title: 'Logic Mapping', desc: 'Drawing out the exact conditional logic required for the automation.' },
-      { num: '03', title: 'API Authentication', desc: 'Connecting securely to all required software platforms.' },
-      { num: '04', title: 'Workflow Construction', desc: 'Building the triggers, filters, and actions in Make or Zapier.' },
-      { num: '05', title: 'Edge Case Testing', desc: 'Forcing errors to ensure the automation fails gracefully without data loss.' },
-      { num: '06', title: 'Monitoring Setup', desc: 'Installing alerts so we know instantly if an API connection breaks.' }
-    ]
-  },
-  'iot-connected-systems': {
-    title: 'IoT & Connected Systems',
-    category: 'Development',
-    keywords: ['IoT', 'Hardware', 'Sensors'],
-    description: 'Bridging the physical and digital worlds with connected hardware.',
-    challenge: 'Managing data from thousands of physical devices securely is a logistical nightmare.',
-    insight: 'IoT success relies on lightweight firmware and incredibly robust cloud ingestion.',
-    solution: 'We develop the cloud infrastructure and software to support connected devices.',
-    outcome: 'Real-time telemetry and control over physical assets anywhere in the world.',
-    capabilities: [
-      { title: 'Device Telemetry', desc: 'Ingesting millions of data points per second from remote sensors.' },
-      { title: 'Fleet Management Dashboards', desc: 'Visualizing the status and location of hardware globally.' },
-      { title: 'Over-The-Air (OTA) Updates', desc: 'Pushing firmware updates securely to remote devices.' },
-      { title: 'Edge Computing Logic', desc: 'Processing data on the device before it reaches the cloud.' },
-      { title: 'Hardware API Integration', desc: 'Connecting proprietary hardware to standard web dashboards.' }
-    ],
-    workingSteps: [
-      { num: '01', title: 'Hardware Specs', desc: 'Reviewing the firmware capabilities and data output of your devices.' },
-      { num: '02', title: 'Protocol Selection', desc: 'Choosing MQTT, CoAP, or HTTP for the most efficient data transfer.' },
-      { num: '03', title: 'Cloud Architecture', desc: 'Setting up AWS IoT Core or Azure IoT to handle massive concurrent connections.' },
-      { num: '04', title: 'Data Pipeline', desc: 'Routing the incoming telemetry into time-series databases.' },
-      { num: '05', title: 'Command Interface', desc: 'Building secure web portals that can send commands back to the hardware.' },
-      { num: '06', title: 'Security Hardening', desc: 'Encrypting all transit data to prevent device hijacking.' }
-    ]
-  },
-  'data-platforms-dashboards': {
-    title: 'Data Platforms & Dashboards',
-    category: 'Development',
-    keywords: ['Data Engineering', 'Dashboards', 'ETL'],
-    description: 'Centralizing scattered data into beautiful, actionable interfaces.',
-    challenge: 'Data lives in silos (Stripe, Salesforce, Shopify), making holistic reporting impossible.',
-    insight: 'To make fast decisions, executives need all data unified in one reliable dashboard.',
-    solution: 'We build ETL pipelines and custom data warehouses.',
-    outcome: 'A single source of truth for all business operations and KPIs.',
-    capabilities: [
-      { title: 'ETL Pipeline Creation', desc: 'Extracting, transforming, and loading data from APIs.' },
-      { title: 'Data Warehousing', desc: 'Structuring Snowflake or BigQuery for rapid analytical queries.' },
-      { title: 'Custom UI Dashboards', desc: 'Building bespoke React dashboards for unique visualizations.' },
-      { title: 'Predictive Analytics', desc: 'Using historical data to forecast future trends and revenue.' },
-      { title: 'Role-Based Access', desc: 'Ensuring sensitive data is only visible to authorized users.' }
-    ],
-    workingSteps: [
-      { num: '01', title: 'Data Source Auditing', desc: 'Identifying every software platform that holds valuable business data.' },
-      { num: '02', title: 'ETL Architecture', desc: 'Setting up Fivetran or custom Python scripts to pull data automatically.' },
-      { num: '03', title: 'Warehouse Modeling', desc: 'Structuring the data tables in Snowflake for fast querying.' },
-      { num: '04', title: 'Data Transformation', desc: 'Cleaning and merging the data using tools like dbt.' },
-      { num: '05', title: 'BI Integration', desc: 'Connecting the warehouse to Looker, Tableau, or custom React frontends.' },
-      { num: '06', title: 'Automated Reporting', desc: 'Setting up scheduled PDF exports and Slack alerts for key metrics.' }
-    ]
-  },
-  'api-systems-integration': {
-    title: 'API & Systems Integration',
-    category: 'Development',
-    keywords: ['API', 'Integration', 'Middleware'],
-    description: 'Making incompatible software platforms talk to each other securely.',
-    challenge: 'Legacy enterprise systems often refuse to communicate with modern SaaS tools.',
-    insight: 'A strong middleware layer can modernize legacy systems without replacing them.',
-    solution: 'We build custom APIs, middleware, and integration wrappers.',
-    outcome: 'Seamless data flow across your entire organization, regardless of software age.',
-    capabilities: [
-      { title: 'REST & GraphQL APIs', desc: 'Building secure endpoints to expose your data to partners.' },
-      { title: 'Legacy Modernization', desc: 'Creating API wrappers around ancient SOAP or on-prem databases.' },
-      { title: 'Middleware Architecture', desc: 'Designing intermediary services to translate data formats.' },
-      { title: 'OAuth & Security', desc: 'Implementing bank-grade authentication for API access.' },
-      { title: 'Rate Limiting & Scaling', desc: 'Ensuring your APIs can handle massive spikes in traffic.' }
-    ],
-    workingSteps: [
-      { num: '01', title: 'Endpoint Mapping', desc: 'Reviewing API documentation for all systems involved.' },
-      { num: '02', title: 'Middleware Design', desc: 'Architecting the Node or Python layer that will sit between systems.' },
-      { num: '03', title: 'Security Implementation', desc: 'Setting up OAuth2, API keys, and strict CORS policies.' },
-      { num: '04', title: 'Data Translation', desc: 'Writing the logic to convert XML to JSON, or match disparate data fields.' },
-      { num: '05', title: 'Load Testing', desc: 'Simulating high traffic to ensure the middleware doesn’t become a bottleneck.' },
-      { num: '06', title: 'Versioning Setup', desc: 'Establishing API version control so future updates don’t break existing integrations.' }
+      { num: '01', title: 'Use Case Identification', desc: 'Identifying high-impact operational workflows for AI automation.' },
+      { num: '02', title: 'Model Selection', desc: 'Selecting between OpenAI, Claude, or open-source models.' },
+      { num: '03', title: 'Vector Data Pipelines', desc: 'Converting company documentation into vector databases for RAG.' },
+      { num: '04', title: 'Agent Logic Development', desc: 'Programming agent reasoning loops using LangChain and Python.' },
+      { num: '05', title: 'Guardrail QA', desc: 'Enforcing strict rules to prevent inaccurate AI responses.' },
+      { num: '06', title: 'Deployment', desc: 'Rolling out AI systems to internal teams with automated logging.' }
     ]
   }
 };

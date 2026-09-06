@@ -1,0 +1,35 @@
+# Infynix Solutions - The Growth Engineering Company
+
+> Infynix Solutions is a premier Growth Engineering firm. We unify technical SEO engineering, performance media, custom web/app software, AI agents, and AI surveillance solutions into cohesive growth engines.
+
+## Primary Business Pillars
+
+### 1. Infynix Agency (Marketing & Advertising)
+- **Paid Media & Performance Advertising**: Scalable customer acquisition across Meta Ads (Facebook & Instagram), Google Search, Shopping, Performance Max, and LinkedIn Ads.
+- **SEO Engineering**: Technical SEO architecture, sub-second pre-rendering, programmatic landing page engines, structured JSON-LD schemas, and semantic keyword cluster dominance.
+- **Conversion Rate Optimization (CRO)**: Funnel architecture, landing page optimization, behavioral tracking, and data-backed A/B experimentation.
+
+### 2. Infynix Media (Branding & Production)
+- **Brand Identity & Design**: Strategic positioning, messaging frameworks, visual identity systems, and UI/UX product design.
+- **Cinematic Production**: High-end brand films, broadcast commercials, studio photography, and 3D motion graphics.
+- **Short-Form & Social Content**: High-retention vertical video (Reels, TikTok, Shorts) designed for organic algorithmic reach.
+
+### 3. Infynix Growth Solutions (Software & AI Surveillance)
+- **Custom Software & Web Engineering**: High-performance web applications, React/Next.js architectures, progressive web apps, and native mobile apps (iOS & Android).
+- **AI Agents & LLM Integration**: Autonomous AI agents, RAG (Retrieval-Augmented Generation) systems, and workflow automation connected to enterprise CRMs/ERPs.
+- **AI Surveillance & Security Solutions**: Real-time computer vision pipelines, edge AI hardware processing (NVIDIA Jetson & Google Coral), automated threat/intrusion profiling, and smart CCTV network analytics.
+
+## Core Technology Stack
+- **Frontend & Web**: React 19, Next.js, Vite 8, React Router 7, Framer Motion, GSAP.
+- **Backend & AI**: Node.js, Express, Python, OpenAI/Claude APIs, LangChain, RAG Vector Databases.
+- **Edge & Computer Vision**: OpenCV, YOLO, NVIDIA Jetson, Google Coral, RTSP/CCTV Stream Gateways.
+- **Cloud & DevOps**: AWS, GCP, Vercel, Docker, CI/CD pipelines.
+
+## Canonical Website Directory
+- Main Website: https://www.infynix-solutions.com
+- Growth Engineering: https://www.infynix-solutions.com/growth-engineering
+- Solutions & Pillars: https://www.infynix-solutions.com/solutions
+- Industries: https://www.infynix-solutions.com/industries
+- Case Studies: https://www.infynix-solutions.com/case-studies
+- Insights & Tech Lab: https://www.infynix-solutions.com/insights
+- Contact & Discovery: https://www.infynix-solutions.com/contact

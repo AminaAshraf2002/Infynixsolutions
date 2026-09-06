@@ -54,7 +54,7 @@ const SolutionsIndex = () => {
     {
       num: "01",
       title: "Infynix Agency",
-      desc: "Performance marketing, built to put the finished system in front of the right people.",
+      desc: "Performance advertising and technical SEO pre-rendering built to capture high-intent buyers.",
       img: capImg1,
       slug: "infynix-agency",
       services: [
@@ -65,23 +65,23 @@ const SolutionsIndex = () => {
     {
       num: "02",
       title: "Infynix Media",
-      desc: "Brand narratives and visual communication that command attention.",
+      desc: "Cinematic brand films, modern UI/UX design, and 3D motion graphics that command market authority.",
       img: capImg2,
       slug: "infynix-media",
       services: [
         "Photography & Videography", "Short-Form & Social Content", "Brand Films & Commercials",
-        "AI-Assisted Production", "Motion Graphics & Animation", "Podcast & Audio Production"
+        "AI-Assisted Production", "Motion Graphics & Animation", "UI/UX Design"
       ]
     },
     {
       num: "03",
       title: "Infynix Growth Solutions",
-      desc: "The technical foundation and systems that power scalable business growth.",
+      desc: "Custom software architectures, autonomous AI agents, enterprise automation, and AI surveillance.",
       img: capImg3,
       slug: "infynix-growth-solutions",
       services: [
-        "Custom Web & App Development", "AI-Native Product Development", "Marketing & Business Automation",
-        "IoT & Connected Systems", "Data Platforms & Dashboards", "API & Systems Integration"
+        "Custom Web & App Development", "AI Surveillance & Security Solutions", "AI-Native Product Development",
+        "Marketing & Business Automation", "IoT & Connected Systems", "API & Systems Integration"
       ]
     }
   ];
@@ -90,7 +90,7 @@ const SolutionsIndex = () => {
     "Performance Advertising", "SEO & Content Marketing", "Social Media Management",
     "Marketing Automation & CRM", "Analytics & Reporting", "Brand Strategy & Positioning",
     "Photography & Videography", "Short-Form & Social Content", "Brand Films & Commercials",
-    "AI-Assisted Production", "Motion Graphics & Animation", "Podcast & Audio Production",
+    "AI Surveillance & Security Solutions", "Motion Graphics & Animation", "UI/UX Design",
     "Custom Web & App Development", "AI-Native Product Development", "Marketing & Business Automation",
     "IoT & Connected Systems", "Data Platforms & Dashboards", "API & Systems Integration"
   ];
@@ -98,8 +98,8 @@ const SolutionsIndex = () => {
   return (
     <div style={{ background: '#000', color: '#fff', minHeight: '100vh', fontFamily: 'var(--ix-font-body)' }}>
       <Seo
-        title="Our Services | Web, App, AI & Marketing Solutions | Infynix"
-        description="Website and mobile app development, AI and business automation, CRM and ERP systems, SEO and performance marketing, the full Infynix Solutions service range, delivered from Kochi."
+        title="Our Services | Infynix Solutions — The Growth Engineering Company"
+        description="Infynix Agency, Infynix Media, and Infynix Growth Solutions. SEO engineering, paid media, cinematic video production, custom software, and AI surveillance."
         path="/solutions"
         schema={[
           organizationSchema(),
@@ -144,8 +144,8 @@ const SolutionsIndex = () => {
         <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.3) 100%)' }}></div>
         <div style={{ position: 'relative', zIndex: 1, maxWidth: '1400px', width: '100%' }}>
           <h1 className="solutions-index-h1" data-aos="fade-up" style={{ fontWeight: 400, margin: 0, lineHeight: 1.1, letterSpacing: '-0.03em' }}>
-            Expertise you <br />
-            <span style={{ color: '#aaa' }}>can trust</span>
+            Infynix Solutions <br />
+            <span style={{ color: '#aaa' }}>The Growth Engineering Company</span>
           </h1>
         </div>
       </section>
@@ -154,7 +154,7 @@ const SolutionsIndex = () => {
       <section style={{ padding: '120px 5%', borderBottom: '1px dashed #333' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto', textAlign: 'center' }}>
           <h2 data-aos="fade-up" data-aos-delay="100" style={{ fontSize: 'clamp(1.5rem, 4vw, 3rem)', fontWeight: 400, margin: 0, lineHeight: 1.2, letterSpacing: '-0.02em', color: '#fff' }}>
-            Crafting experiences shaping brands <br /> accelerated growth.
+            Infynix Agency, Infynix Media, and Infynix Growth Solutions <br /> Unifying search, media, software, and AI vision into one growth engine.
           </h2>
         </div>
       </section>
@@ -166,8 +166,8 @@ const SolutionsIndex = () => {
             <div key={idx} className="solutions-layer-row" data-aos="fade-up" data-aos-delay={idx * 150} style={{ 
               display: 'flex', 
               flexWrap: 'wrap',
-              background: '#111', // Card container background
-              overflow: 'hidden' // Keeps the image clipped to bounds if needed
+              background: '#111',
+              overflow: 'hidden'
             }}>
               {/* Left Image Card */}
               <div 
@@ -181,7 +181,6 @@ const SolutionsIndex = () => {
                   overflow: 'hidden'
                 }}
               >
-                {/* Background Image Element for zooming */}
                 <div 
                   className="service-bg-img"
                   style={{
@@ -195,7 +194,6 @@ const SolutionsIndex = () => {
                   }}
                 ></div>
 
-                {/* Gradient for text readability like Phew */}
                 <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 60%)', zIndex: 1, pointerEvents: 'none' }}></div>
                 <Link to={`/solutions/${layer.slug}`} style={{ position: 'relative', zIndex: 2, textDecoration: 'none' }}>
                   <h3 data-aos="fade-up" style={{ fontSize: 'clamp(1.8rem, 3vw, 2.5rem)', fontWeight: 400, margin: 0, letterSpacing: '-0.02em', color: '#fff' }}>
@@ -271,16 +269,13 @@ const SolutionsIndex = () => {
         </div>
       </section>
 
-      {/* Every routed service, linked. Thirteen of these pages sat in the
-          sitemap with no internal link pointing at them, which leaves Google
-          discovering them by sitemap alone. Built from solutionsData so a new
-          service cannot be added without appearing here. */}
+      {/* Every routed service, linked */}
       <section style={{ padding: '100px 5%', borderBottom: '1px dashed #333' }}>
         <h2 style={{
           fontSize: 'clamp(1.5rem, 3vw, 2.2rem)', fontWeight: 500, margin: '0 0 40px',
           fontFamily: "'Montserrat', sans-serif", letterSpacing: '-0.02em', color: '#fff',
         }}>
-          All Services
+          All Services & Solutions
         </h2>
         <ul style={{
           display: 'grid',

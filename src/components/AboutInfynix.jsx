@@ -3,10 +3,6 @@ import './AboutInfynix.css';
 import videoSrc from '../assets/video.mp4'; 
 
 const AboutInfynix = () => {
-  // This clip is 2.6 MB and sits below the fold. `autoPlay` makes the browser
-  // fetch it in full on load regardless of the `preload` hint, so it accounted
-  // for most of the homepage's transfer weight. Attaching src only once the
-  // element is near the viewport defers that cost until it is actually needed.
   const videoWrapRef = useRef(null);
   const [videoReady, setVideoReady] = useState(false);
 
@@ -41,19 +37,19 @@ const AboutInfynix = () => {
         {/* Left Column: Text Content */}
         <div className="about-infynix-text-col" data-aos="fade-right" data-aos-duration="800">
           <div className="about-eyebrow-row">
-            <span className="about-eyebrow">THE GROWTH ENGINEERING METHOD</span>
+            <span className="about-eyebrow">INFYNIX SOLUTIONS: THE GROWTH ENGINEERING COMPANY</span>
           </div>
           
           <h2 className="about-heading">
-            Broken tools<br/>stop your growth.
+            Unified Infrastructure<br/>Engineered for Scale.
           </h2>
           
           <p className="about-paragraph">
-            We are a Growth Engineering team. We stop you from wasting money on broken systems. We connect your marketing, sales, and tech so they work as one. When everything connects, your business grows faster.
+            Infynix Solutions is a Growth Engineering company. We unify technical SEO engineering, performance media, custom web/app software, and AI surveillance solutions into one resilient growth ecosystem built to dominate your industry.
           </p>
 
           <div className="about-buttons">
-            <button className="about-btn primary outline-btn-hover" onClick={() => window.location.href = '/growth-engineering'}>Explore the Methodology</button>
+            <button className="about-btn primary outline-btn-hover" onClick={() => window.location.href = '/growth-engineering'}>Explore Growth Engineering</button>
           </div>
         </div>
 
