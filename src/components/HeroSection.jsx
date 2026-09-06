@@ -2,9 +2,7 @@ import { Link } from 'react-router-dom';
 import './HeroSection.css';
 import HeroBackground from './HeroBackground';
 
-const PILLARS = ['Software & Web', 'AI Surveillance', 'Retail Growth Systems'];
-
-const REGIONS = ['Kerala', 'GCC', 'United Kingdom'];
+const REGIONS = ['United Kingdom', 'United Arab Emirates', 'India', 'Kerala'];
 
 function HeroSection({ data }) {
   const eyebrow = data?.eyebrow || 'INFYNIX SOLUTIONS — THE GROWTH ENGINEERING COMPANY';
@@ -22,18 +20,9 @@ function HeroSection({ data }) {
             Software, <span className="title-highlight">AI Surveillance</span> & Retail Growth Systems
           </h1>
 
-          <p style={{ color: '#ccc', fontSize: '1.05rem', marginTop: '1rem', marginBottom: '1.8rem', maxWidth: '680px', lineHeight: 1.6, fontFamily: 'var(--ix-font-body)' }}>
+          <p style={{ color: '#ccc', fontSize: '1.05rem', marginTop: '1rem', marginBottom: '2.2rem', maxWidth: '680px', lineHeight: 1.6, fontFamily: 'var(--ix-font-body)' }}>
             We engineer custom software platforms, real-time edge AI surveillance, and retail growth systems driven by our Growth Engineering philosophy.
           </p>
-
-          <ol className="hero-method" aria-label="What we build">
-            {PILLARS.map((pillar, index) => (
-              <li key={pillar} className="hero-method-item">
-                <span className="hero-method-index">{String(index + 1).padStart(2, '0')}</span>
-                <span className="hero-method-label">{pillar}</span>
-              </li>
-            ))}
-          </ol>
 
           <div className="hero-actions">
             <Link to="/contact" className="hero-btn hero-btn-primary">

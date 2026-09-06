@@ -13,7 +13,7 @@ export const DEFAULT_TITLE =
   'Infynix Solutions | The Growth Engineering Company';
 
 export const DEFAULT_DESCRIPTION =
-  'Infynix Solutions is a Growth Engineering company in Kochi, Kerala. We engineer custom web software, real-time edge AI surveillance, and retail growth systems across Kerala, the GCC, and the United Kingdom.';
+  'Infynix Solutions is a Growth Engineering company. We engineer custom web software, real-time edge AI surveillance, and retail growth systems across the United Kingdom, United Arab Emirates, India, and Kerala.';
 
 export const DEFAULT_OG_IMAGE = `${SITE_URL}/logo.png`;
 
@@ -40,16 +40,16 @@ export const BUSINESS = {
     closes: '18:30',
   },
   areaServed: [
+    'United Kingdom',
+    'United Arab Emirates',
+    'India',
+    'Kerala',
     'Kochi',
     'Ernakulam',
     'Kozhikode',
     'Calicut',
     'Thrissur',
     'Thiruvananthapuram',
-    'Kerala',
-    'India',
-    'United Arab Emirates',
-    'United Kingdom',
   ],
 };
 
