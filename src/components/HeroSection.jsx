@@ -2,10 +2,10 @@ import { Link } from 'react-router-dom';
 import './HeroSection.css';
 import HeroBackground from './HeroBackground';
 
-const REGIONS = ['United Kingdom', 'United Arab Emirates', 'India', 'Kerala'];
+const REGIONS = ['United Kingdom', 'United Arab Emirates', 'India'];
 
 function HeroSection({ data }) {
-  const eyebrow = data?.eyebrow || 'INFYNIX SOLUTIONS — THE GROWTH ENGINEERING COMPANY';
+  const eyebrow = data?.eyebrow || 'INFYNIX SOLUTIONS';
 
   return (
     <section className="hero-section">
@@ -17,11 +17,11 @@ function HeroSection({ data }) {
           <span className="hero-eyebrow">{eyebrow}</span>
 
           <h1 className="hero-title">
-            Software, <span className="title-highlight">AI Surveillance</span> & Retail Growth Systems
+            The Growth <span className="title-highlight">Engineering</span> Company
           </h1>
 
-          <p style={{ color: '#ccc', fontSize: '1.05rem', marginTop: '1rem', marginBottom: '2.2rem', maxWidth: '680px', lineHeight: 1.6, fontFamily: 'var(--ix-font-body)' }}>
-            We engineer custom software platforms, real-time edge AI surveillance, and retail growth systems driven by our Growth Engineering philosophy.
+          <p style={{ color: '#ccc', fontSize: '1.05rem', marginTop: '0.8rem', marginBottom: '2.2rem', maxWidth: '500px', lineHeight: 1.5, fontFamily: 'var(--ix-font-body)' }}>
+            Software, AI vision, and retail growth systems.
           </p>
 
           <div className="hero-actions">

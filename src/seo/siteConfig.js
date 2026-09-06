@@ -13,7 +13,7 @@ export const DEFAULT_TITLE =
   'Infynix Solutions | The Growth Engineering Company';
 
 export const DEFAULT_DESCRIPTION =
-  'Infynix Solutions is a Growth Engineering company. We engineer custom web software, real-time edge AI surveillance, and retail growth systems across the United Kingdom, United Arab Emirates, India, and Kerala.';
+  'Infynix Solutions is a Growth Engineering company. We engineer custom web software, real-time edge AI surveillance, and retail growth systems across the United Kingdom, United Arab Emirates, and India.';
 
 export const DEFAULT_OG_IMAGE = `${SITE_URL}/logo.png`;
 
