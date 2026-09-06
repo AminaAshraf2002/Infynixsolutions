@@ -13,6 +13,8 @@ import {
   serviceSchema,
 } from '../seo/schema';
 import { NotFoundPage } from './UtilityPages';
+import ServiceIcon from './LandingIcons';
+import { heroImageFor, localImageFor } from '../content/landingImagery';
 
 /**
  * Renders a location + service landing page.
@@ -36,6 +38,8 @@ export default function LandingPage({ slug: slugProp }) {
 
   const path = `/${page.slug}`;
   const isKochi = page.city === 'Kochi';
+  const heroImage = heroImageFor(page);
+  const localImage = localImageFor(page);
 
   const schema = [
     organizationSchema(),
@@ -76,19 +80,36 @@ export default function LandingPage({ slug: slugProp }) {
       </div>
 
       <header className="lp-hero">
-        <span className="lp-eyebrow">
-          {page.service} · {page.city}
-          {page.cityAlt ? ` (${page.cityAlt})` : ''}
-        </span>
-        <h1 className="lp-h1">{page.h1}</h1>
-        <p className="lp-sub">{page.heroSubtitle}</p>
-        <div className="lp-actions">
-          <Link to="/contact" className="lp-btn lp-btn-primary">
-            Book a Discovery Call
-          </Link>
-          <a href={`tel:${BUSINESS.telephone.replace(/[^+\d]/g, '')}`} className="lp-btn lp-btn-ghost">
-            Call {BUSINESS.telephone}
-          </a>
+        <div className="lp-hero-text">
+          <span className="lp-eyebrow">
+            {page.service} · {page.city}
+            {page.cityAlt ? ` (${page.cityAlt})` : ''}
+          </span>
+          <h1 className="lp-h1">{page.h1}</h1>
+          <p className="lp-sub">{page.heroSubtitle}</p>
+          <div className="lp-actions">
+            <Link to="/contact" className="lp-btn lp-btn-primary">
+              Book a Discovery Call
+            </Link>
+            <a href={`tel:${BUSINESS.telephone.replace(/[^+\d]/g, '')}`} className="lp-btn lp-btn-ghost">
+              Call {BUSINESS.telephone}
+            </a>
+          </div>
+        </div>
+
+        <div className="lp-hero-media">
+          {/* The only eager image on the page: it is the LCP candidate, so it
+              carries dimensions to reserve space and avoid layout shift. */}
+          <img
+            src={heroImage.src}
+            srcSet={heroImage.srcSet}
+            sizes="(max-width: 900px) 100vw, 480px"
+            alt={heroImage.alt}
+            width="640"
+            height="427"
+            decoding="async"
+            fetchPriority="high"
+          />
         </div>
       </header>
 
@@ -103,6 +124,9 @@ export default function LandingPage({ slug: slugProp }) {
         <div className="lp-grid">
           {page.services.map((service) => (
             <article key={service.name} className="lp-card">
+              <span className="lp-card-icon">
+                <ServiceIcon label={service.name} />
+              </span>
               <h3 className="lp-h3">{service.name}</h3>
               <p>{service.desc}</p>
             </article>
@@ -111,10 +135,24 @@ export default function LandingPage({ slug: slugProp }) {
       </section>
 
       <section className="lp-section lp-local">
-        <h2 className="lp-h2">{page.localHeading}</h2>
-        {page.localBody.map((paragraph, i) => (
-          <p key={i}>{paragraph}</p>
-        ))}
+        <div className="lp-local-text">
+          <h2 className="lp-h2">{page.localHeading}</h2>
+          {page.localBody.map((paragraph, i) => (
+            <p key={i}>{paragraph}</p>
+          ))}
+        </div>
+        <figure className="lp-local-media">
+          <img
+            src={localImage.src}
+            srcSet={localImage.srcSet}
+            sizes="(max-width: 900px) 100vw, 420px"
+            alt={localImage.alt}
+            width="640"
+            height="427"
+            loading="lazy"
+            decoding="async"
+          />
+        </figure>
       </section>
 
       <section className="lp-section">
