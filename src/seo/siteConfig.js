@@ -10,10 +10,10 @@ export const SITE_URL = 'https://www.infynix-solutions.com';
 export const SITE_NAME = 'Infynix Solutions';
 
 export const DEFAULT_TITLE =
-  'Infynix Solutions | Growth Engineering Company in Kochi, Kerala';
+  'Infynix Solutions | Growth Engineering & Digital Marketing Agency in Kerala';
 
 export const DEFAULT_DESCRIPTION =
-  'Infynix Solutions is a growth engineering company in Kochi, Kerala. We build marketing systems, custom software, business automation and AI vision systems for clients across Kerala, the GCC and the United Kingdom.';
+  'Infynix Solutions is a premier Growth Engineering and Digital Marketing Agency in Kerala. We engineer SEO dominance, performance ad campaigns, custom software, and AI surveillance solutions across Kerala, the GCC, and the United Kingdom.';
 
 export const DEFAULT_OG_IMAGE = `${SITE_URL}/logo.png`;
 
