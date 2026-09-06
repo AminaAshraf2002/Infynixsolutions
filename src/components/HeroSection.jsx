@@ -2,12 +2,12 @@ import { Link } from 'react-router-dom';
 import './HeroSection.css';
 import HeroBackground from './HeroBackground';
 
-const PILLARS = ['Marketing', 'Software', 'AI Surveillance'];
+const PILLARS = ['Software', 'AI Surveillance', 'Marketing & SEO'];
 
 const REGIONS = ['Kerala', 'GCC', 'United Kingdom'];
 
 function HeroSection({ data }) {
-  const eyebrow = data?.eyebrow || 'INFYNIX SOLUTIONS — THE GROWTH ENGINEERING COMPANY';
+  const eyebrow = data?.eyebrow || 'INFYNIX SOLUTIONS — SOFTWARE & AI ENGINEERING';
 
   return (
     <section className="hero-section">
@@ -19,11 +19,11 @@ function HeroSection({ data }) {
           <span className="hero-eyebrow">{eyebrow}</span>
 
           <h1 className="hero-title">
-            Growth Engineering & <span className="title-highlight">Digital Marketing Agency</span> in Kerala
+            Software Engineering, <span className="title-highlight">AI Surveillance</span> & Growth Systems
           </h1>
 
-          <p style={{ color: '#ccc', fontSize: '1.05rem', marginTop: '1rem', marginBottom: '1.8rem', maxWidth: '650px', lineHeight: 1.6, fontFamily: 'var(--ix-font-body)' }}>
-            We engineer technical search dominance, performance ad campaigns, custom software, and real-time AI security systems.
+          <p style={{ color: '#ccc', fontSize: '1.05rem', marginTop: '1rem', marginBottom: '1.8rem', maxWidth: '680px', lineHeight: 1.6, fontFamily: 'var(--ix-font-body)' }}>
+            Custom software development, real-time edge AI security systems, technical search pre-rendering, and performance marketing.
           </p>
 
           <ol className="hero-method" aria-label="What we build">
@@ -40,7 +40,7 @@ function HeroSection({ data }) {
               Book a Discovery Call
             </Link>
             <Link to="/growth-engineering" className="hero-btn hero-btn-ghost">
-              Explore Growth Engineering
+              Explore Growth Systems
             </Link>
           </div>
 
