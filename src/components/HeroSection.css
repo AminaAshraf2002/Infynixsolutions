@@ -98,13 +98,13 @@
 
 .hero-title {
   font-family: 'Montserrat', Arial, sans-serif;
-  font-size: clamp(2.6rem, 6.4vw, 5.4rem);
+  font-size: clamp(2.1rem, 5.1vw, 4.3rem);
   font-weight: 600;
-  line-height: 1.04;
+  line-height: 1.08;
   color: #ffffff;
   margin: 0;
   letter-spacing: -0.03em;
-  max-width: 16ch;
+  max-width: 24ch;
 }
 
 .title-highlight {
@@ -282,8 +282,15 @@
   }
 
   .hero-title {
-    font-size: clamp(2.1rem, 9.5vw, 3rem);
+    font-size: clamp(1.75rem, 7.8vw, 2.5rem);
     max-width: 100%;
+    /* The desktop break orphans "cannot." on its own line here. Let the browser
+       balance the three lines instead. */
+    text-wrap: balance;
+  }
+
+  .hero-title br {
+    display: none;
   }
 
   .hero-subtitle {

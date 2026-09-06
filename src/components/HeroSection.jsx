@@ -23,9 +23,9 @@ function HeroSection({ data }) {
           <span className="hero-eyebrow">{eyebrow}</span>
 
           <h1 className="hero-title">
-            Growth is <span className="title-highlight">engineered</span>,
+            A business that can <span className="title-highlight">see itself</span>{' '}
             <br />
-            not advertised.
+            will outgrow one that cannot.
           </h1>
 
           <ol className="hero-method" aria-label="What we build">
