@@ -114,7 +114,7 @@ const GrowthEngineering = () => {
       title: "Data",
       mockupIcon: "fa-solid fa-database",
       body: "When data lives in separate systems, decisions get made on guesses instead of evidence.",
-      heading: "Unified data turns every decision — marketing, product, operations — into an informed one."
+      heading: "Unified data turns every decision, marketing, product, operations, into an informed one."
     }
   ];
 

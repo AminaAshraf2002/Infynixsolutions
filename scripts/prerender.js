@@ -2,7 +2,7 @@
  * Prerenders every route to static HTML.
  *
  * Why this exists: the site is a client-rendered Vite SPA. Fetching any URL
- * returned `<div id="root"></div>` and nothing else — no copy, no headings, one
+ * returned `<div id="root"></div>` and nothing else, no copy, no headings, one
  * shared title for every page, and no canonical or JSON-LD until after hydration.
  * Google can execute JavaScript, but it does so on a slower second pass and
  * social/AI crawlers largely do not execute it at all.
@@ -71,7 +71,7 @@ console.log(`prerender: wrote ${written}/${prerenderPaths.length} routes`);
 if (failures.length) {
   console.error(`prerender: ${failures.length} route(s) failed`);
   for (const failure of failures) {
-    console.error(`  ${failure.route} — ${failure.message}`);
+    console.error(`  ${failure.route}, ${failure.message}`);
   }
   // Fail the build. A silently half-prerendered deploy is worse than no deploy:
   // the broken routes look fine in a browser and are invisible to crawlers.

@@ -98,7 +98,7 @@ const SolutionsIndex = () => {
     <div style={{ background: '#000', color: '#fff', minHeight: '100vh', fontFamily: 'var(--ix-font-body)' }}>
       <Seo
         title="Our Services | Web, App, AI & Marketing Solutions | Infynix"
-        description="Website and mobile app development, AI and business automation, CRM and ERP systems, SEO and performance marketing — the full Infynix Solutions service range, delivered from Kochi."
+        description="Website and mobile app development, AI and business automation, CRM and ERP systems, SEO and performance marketing, the full Infynix Solutions service range, delivered from Kochi."
         path="/solutions"
         schema={[
           organizationSchema(),

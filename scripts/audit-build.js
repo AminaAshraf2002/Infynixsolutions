@@ -48,7 +48,7 @@ for (const file of files) {
   if (!description) issues.push(`${rel}: no meta description`);
   if (!canonical) issues.push(`${rel}: no canonical`);
   if (canonical && !canonical.startsWith(SITE_URL)) {
-    issues.push(`${rel}: canonical points off-domain — ${canonical}`);
+    issues.push(`${rel}: canonical points off-domain, ${canonical}`);
   }
   if (h1Count !== 1) issues.push(`${rel}: ${h1Count} h1 elements (expected 1)`);
 

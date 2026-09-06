@@ -3,7 +3,7 @@
  *
  * Two bugs this replaces:
  *  1. The old sitemap.xml was written as UTF-16LE with a BOM while declaring
- *     encoding="UTF-8". Google cannot parse that at all — the sitemap was dead on
+ *     encoding="UTF-8". Google cannot parse that at all, the sitemap was dead on
  *     arrival. This writer emits plain UTF-8 with no BOM.
  *  2. Both files declared https://infynix.com, a domain Infynix does not own (it
  *     resolves to a domain-sale listing). Everything now comes from SITE_URL.

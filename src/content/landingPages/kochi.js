@@ -2,7 +2,7 @@
 //
 // Kochi is the only city where Infynix has a physical office, so these are the
 // only pages eligible for the local map pack. Copy is deliberately specific to
-// Kochi business districts and sectors — templated city pages that differ only by
+// Kochi business districts and sectors, templated city pages that differ only by
 // a swapped city name get filtered as doorway pages.
 
 export const kochiPages = [
@@ -18,10 +18,10 @@ export const kochiPages = [
       'Infynix Solutions is a digital marketing agency in Kochi running SEO, Google and Meta ads, social media and marketing automation for Kerala businesses. Office in Edappally, Kochi.',
     h1: 'Digital Marketing Agency in Kochi',
     heroSubtitle:
-      'Performance marketing, SEO and automation built as one connected system — run from our Edappally office for businesses across Kochi and Ernakulam.',
+      'Performance marketing, SEO and automation built as one connected system, run from our Edappally office for businesses across Kochi and Ernakulam.',
     intro: [
       'Most Kochi businesses do not have a marketing problem. They have a disconnection problem. Ads run in one place, the website sits in another, enquiries land in a WhatsApp inbox nobody owns, and by the time anyone asks which campaign produced revenue, the trail has gone cold.',
-      'Infynix Solutions works from Edappally, minutes from Changampuzha Metro, and we build the plumbing before we build the campaign. Tracking, CRM, lead routing and attribution go in first. Then the spend goes to work — and you can see exactly which keyword, ad and landing page produced each enquiry.',
+      'Infynix Solutions works from Edappally, minutes from Changampuzha Metro, and we build the plumbing before we build the campaign. Tracking, CRM, lead routing and attribution go in first. Then the spend goes to work, and you can see exactly which keyword, ad and landing page produced each enquiry.',
       'We work with retail and D2C brands, clinics and hospitals, real estate developers, educational institutions and B2B firms across Kochi, from Kakkanad and Infopark through to MG Road and Vyttila.',
     ],
     servicesHeading: 'Digital Marketing Services We Run in Kochi',
@@ -32,7 +32,7 @@ export const kochiPages = [
       },
       {
         name: 'Google Ads & Performance Marketing',
-        desc: 'Search, Performance Max and YouTube campaigns with conversion tracking wired to your CRM — so bidding optimises against qualified leads, not raw form fills.',
+        desc: 'Search, Performance Max and YouTube campaigns with conversion tracking wired to your CRM, so bidding optimises against qualified leads, not raw form fills.',
       },
       {
         name: 'Meta & Instagram Advertising',
@@ -44,7 +44,7 @@ export const kochiPages = [
       },
       {
         name: 'Marketing Automation & CRM',
-        desc: 'WhatsApp, email and SMS journeys connected to a CRM your sales team will actually use — so a lead from a Saturday ad gets followed up before Monday.',
+        desc: 'WhatsApp, email and SMS journeys connected to a CRM your sales team will actually use, so a lead from a Saturday ad gets followed up before Monday.',
       },
       {
         name: 'Analytics & Attribution',
@@ -65,7 +65,7 @@ export const kochiPages = [
       {
         question: 'How long before we see results from SEO in Kochi?',
         answer:
-          'For local map-pack visibility in Ernakulam, meaningful movement usually appears within 8 to 12 weeks once the Google Business Profile, citations and location pages are in place. Competitive organic terms such as "digital marketing agency in Kochi" take longer — typically 6 to 9 months of consistent content and link acquisition.',
+          'For local map-pack visibility in Ernakulam, meaningful movement usually appears within 8 to 12 weeks once the Google Business Profile, citations and location pages are in place. Competitive organic terms such as "digital marketing agency in Kochi" take longer, typically 6 to 9 months of consistent content and link acquisition.',
       },
       {
         question: 'Do you handle Malayalam content?',
@@ -80,7 +80,7 @@ export const kochiPages = [
       {
         question: 'Where is your Kochi office?',
         answer:
-          'We are on the 7th floor of the National Pearl Star Building, Devankulangara, Mamangalam, Edappally, next to Changampuzha Metro Station, Ernakulam 682024. You are welcome to visit — we prefer running strategy sessions in person where we can.',
+          'We are on the 7th floor of the National Pearl Star Building, Devankulangara, Mamangalam, Edappally, next to Changampuzha Metro Station, Ernakulam 682024. You are welcome to visit. We prefer running strategy sessions in person where we can.',
       },
     ],
     related: [
@@ -103,9 +103,9 @@ export const kochiPages = [
       'SEO company in Kochi delivering technical SEO, local map-pack rankings, content and link building for Ernakulam businesses. Transparent reporting on rankings and qualified leads.',
     h1: 'SEO Company in Kochi',
     heroSubtitle:
-      'Technical fixes first, then content and authority — the order that actually moves rankings for Kochi and Ernakulam businesses.',
+      'Technical fixes first, then content and authority, the order that actually moves rankings for Kochi and Ernakulam businesses.',
     intro: [
-      'Most SEO retainers in Kerala sell content volume. That works only if search engines can crawl, render and understand the site in the first place — and a surprising number of Kochi business sites fail at exactly that step.',
+      'Most SEO retainers in Kerala sell content volume. That works only if search engines can crawl, render and understand the site in the first place, and a surprising number of Kochi business sites fail at exactly that step.',
       'We start with a crawl and an index audit. Broken canonicals, JavaScript-rendered content no crawler ever sees, soft 404s, duplicate city pages and unparseable sitemaps get fixed before a single blog post is commissioned. Then we build topical depth and local authority.',
       'You get monthly reporting on the things that matter: indexed pages, map-pack position for your priority Ernakulam keywords, organic enquiries, and which pages produced them.',
     ],
@@ -113,7 +113,7 @@ export const kochiPages = [
     services: [
       {
         name: 'Technical SEO Audit',
-        desc: 'Crawlability, rendering, indexation, canonical logic, redirect chains, Core Web Vitals and structured data — assessed against the raw HTML response, not just the rendered DOM.',
+        desc: 'Crawlability, rendering, indexation, canonical logic, redirect chains, Core Web Vitals and structured data, assessed against the raw HTML response, not just the rendered DOM.',
       },
       {
         name: 'Local SEO & Map Pack',
@@ -133,19 +133,19 @@ export const kochiPages = [
       },
       {
         name: 'Link Acquisition',
-        desc: 'Digital PR, Kerala business directories, industry citations and partnership links — earned placements, never bought link farms.',
+        desc: 'Digital PR, Kerala business directories, industry citations and partnership links, earned placements, never bought link farms.',
       },
     ],
     localHeading: 'Local SEO in Ernakulam Is Won on Proximity and Proof',
     localBody: [
-      'For "near me" queries across Kochi, Google weighs proximity, prominence and relevance. You cannot move your office, but you can dominate the other two — and most Kochi competitors leave both half-finished.',
+      'For "near me" queries across Kochi, Google weighs proximity, prominence and relevance. You cannot move your office, but you can dominate the other two, and most Kochi competitors leave both half-finished.',
       'That means a fully completed Google Business Profile with the right primary category, real photos, service areas covering Kakkanad through Fort Kochi, consistent NAP across every directory, and a steady flow of genuine reviews. We treat this as ongoing work, not a one-time setup task.',
     ],
     faqs: [
       {
         question: 'How is an SEO company in Kochi different from a national agency?',
         answer:
-          'Local knowledge and local signals. Ranking in Ernakulam depends on Kerala-specific citation sources, Malayalam search behaviour and map-pack proximity — none of which a remote agency optimising for national terms will prioritise. We also meet clients in person, which shortens the feedback loop considerably.',
+          'Local knowledge and local signals. Ranking in Ernakulam depends on Kerala-specific citation sources, Malayalam search behaviour and map-pack proximity. None of which a remote agency optimising for national terms will prioritise. We also meet clients in person, which shortens the feedback loop considerably.',
       },
       {
         question: 'Do you guarantee first-page rankings?',
@@ -155,7 +155,7 @@ export const kochiPages = [
       {
         question: 'My site is built in React and is not being indexed. Can you fix it?',
         answer:
-          'Yes — this is a common failure and one we deal with regularly. Single-page apps built in React, Vue or Angular often serve an empty HTML shell to crawlers, so nothing gets indexed properly. The fix is prerendering or server-side rendering plus correct status codes and canonical tags. We implement it, we do not just report it.',
+          'Yes. This is a common failure and one we deal with regularly. Single-page apps built in React, Vue or Angular often serve an empty HTML shell to crawlers, so nothing gets indexed properly. The fix is prerendering or server-side rendering plus correct status codes and canonical tags. We implement it, we do not just report it.',
       },
       {
         question: 'What does SEO cost in Kochi?',
@@ -165,7 +165,7 @@ export const kochiPages = [
       {
         question: 'How do you report progress?',
         answer:
-          'A monthly dashboard covering keyword positions for your priority Kochi terms, map-pack visibility, indexed page count, organic sessions, and — most importantly — organic enquiries attributed to landing pages. Plus a written summary of what changed and what is next.',
+          'A monthly dashboard covering keyword positions for your priority Kochi terms, map-pack visibility, indexed page count, organic sessions, and. Most importantly, organic enquiries attributed to landing pages. Plus a written summary of what changed and what is next.',
       },
     ],
     related: [
@@ -188,17 +188,17 @@ export const kochiPages = [
       'Software development company in Kochi building custom web applications, CRM and ERP systems, AI automation and cloud platforms for businesses in Kerala, India and the GCC.',
     h1: 'Software Development Company in Kochi',
     heroSubtitle:
-      'Custom platforms, CRM and ERP systems, AI automation and integrations — engineered in Kochi for businesses that have outgrown spreadsheets.',
+      'Custom platforms, CRM and ERP systems, AI automation and integrations, engineered in Kochi for businesses that have outgrown spreadsheets.',
     intro: [
       'There is a point where a growing business stops being limited by demand and starts being limited by its own operations. Orders tracked in WhatsApp. Inventory in a spreadsheet somebody guards. Three systems that each hold a different version of the same customer.',
       'Infynix Solutions builds the software that removes that ceiling. Custom web applications, multi-tenant SaaS platforms, CRM and ERP systems, and the integration layer that makes existing tools finally talk to each other.',
-      'Our engineering team works from Kochi and delivers for clients across Kerala, the wider Indian market, the UAE and the UK. We build on modern, supportable stacks — React, Node, Python, PostgreSQL, and cloud infrastructure on AWS or Azure — and we hand over the code.',
+      'Our engineering team works from Kochi and delivers for clients across Kerala, the wider Indian market, the UAE and the UK. We build on modern, supportable stacks, React, Node, Python, PostgreSQL, and cloud infrastructure on AWS or Azure, and we hand over the code.',
     ],
     servicesHeading: 'Software Development Services in Kochi',
     services: [
       {
         name: 'Custom Web Application Development',
-        desc: 'Bespoke platforms built around your actual workflow — dashboards, portals, booking systems and internal tools that replace the spreadsheet sprawl.',
+        desc: 'Bespoke platforms built around your actual workflow, dashboards, portals, booking systems and internal tools that replace the spreadsheet sprawl.',
       },
       {
         name: 'CRM & ERP Development',
@@ -214,7 +214,7 @@ export const kochiPages = [
       },
       {
         name: 'Cloud Architecture & DevOps',
-        desc: 'AWS and Azure infrastructure, CI/CD pipelines, monitoring and cost optimisation — set up so your team can deploy without us.',
+        desc: 'AWS and Azure infrastructure, CI/CD pipelines, monitoring and cost optimisation, set up so your team can deploy without us.',
       },
       {
         name: 'Product Modernisation',
@@ -223,7 +223,7 @@ export const kochiPages = [
     ],
     localHeading: 'Building Software from Kochi',
     localBody: [
-      'Kochi has become a genuine engineering centre — Infopark and the surrounding ecosystem mean the talent depth here is real, and the cost base is a fraction of Bangalore or the Gulf. That combination is why a growing share of our work comes from UAE and UK clients delivered out of Kochi.',
+      'Kochi has become a genuine engineering centre, Infopark and the surrounding ecosystem mean the talent depth here is real, and the cost base is a fraction of Bangalore or the Gulf. That combination is why a growing share of our work comes from UAE and UK clients delivered out of Kochi.',
       'For Kerala businesses it means something more practical: your development team is a drive away. We run discovery workshops in person, demo at the end of every sprint, and you can walk into our Edappally office and see the people building your system.',
     ],
     faqs: [
@@ -245,12 +245,12 @@ export const kochiPages = [
       {
         question: 'Can you take over a project another company started?',
         answer:
-          'Frequently, yes. We start with a paid technical audit of the existing codebase and infrastructure so we can give you an honest assessment of what is salvageable, what needs rewriting, and what it will cost — before either side commits to a full engagement.',
+          'Frequently, yes. We start with a paid technical audit of the existing codebase and infrastructure so we can give you an honest assessment of what is salvageable, what needs rewriting, and what it will cost, before either side commits to a full engagement.',
       },
       {
         question: 'Do you provide support after launch?',
         answer:
-          'Yes. Most clients move onto a support and enhancement retainer covering monitoring, security patching, bug fixes and a monthly allocation of development time. It is optional — if you would rather run it in-house, we will train your team.',
+          'Yes. Most clients move onto a support and enhancement retainer covering monitoring, security patching, bug fixes and a monthly allocation of development time. It is optional, if you would rather run it in-house, we will train your team.',
       },
     ],
     related: [
@@ -273,7 +273,7 @@ export const kochiPages = [
       'Web design company in Kochi building fast, search-optimised websites and e-commerce stores for Kerala businesses. Built to be crawlable, accessible and to convert enquiries.',
     h1: 'Web Design Company in Kochi',
     heroSubtitle:
-      'Websites engineered to load fast, rank properly and convert — not just to look good in a design review.',
+      'Websites engineered to load fast, rank properly and convert, not just to look good in a design review.',
     intro: [
       'A large share of the Kochi business websites we audit share the same three faults: they take too long to load on a mobile connection, search engines cannot read half the content, and there is no clear path from landing to enquiry.',
       'We design and build websites where performance, crawlability and conversion are requirements from the first wireframe. That means server-rendered or prerendered HTML, real heading structure, structured data, compressed and correctly sized images, and a conversion path that survives contact with a distracted mobile user.',
@@ -291,7 +291,7 @@ export const kochiPages = [
       },
       {
         name: 'UI/UX Design',
-        desc: 'Research-led interface design — user flows, wireframes and design systems tested against real conversion goals.',
+        desc: 'Research-led interface design, user flows, wireframes and design systems tested against real conversion goals.',
       },
       {
         name: 'Website Redesign & Migration',
@@ -299,7 +299,7 @@ export const kochiPages = [
       },
       {
         name: 'Performance Optimisation',
-        desc: 'Core Web Vitals work — LCP, INP and CLS — because slow sites lose both rankings and Kerala mobile users.',
+        desc: 'Core Web Vitals work, LCP, INP and CLS, because slow sites lose both rankings and Kerala mobile users.',
       },
       {
         name: 'Multilingual & Regional Sites',
@@ -309,13 +309,13 @@ export const kochiPages = [
     localHeading: 'Built for How Kerala Actually Browses',
     localBody: [
       'The overwhelming majority of traffic to Kerala business sites arrives on a mid-range Android phone over mobile data. A site that scores well on a designer’s laptop and takes eleven seconds on a 4G connection in Kaloor is a broken site.',
-      'We build and test against that reality first — real device testing, aggressive image optimisation, and a mobile layout designed as the primary experience rather than a squeezed-down version of the desktop one.',
+      'We build and test against that reality first, real device testing, aggressive image optimisation, and a mobile layout designed as the primary experience rather than a squeezed-down version of the desktop one.',
     ],
     faqs: [
       {
         question: 'How much does a website cost in Kochi?',
         answer:
-          'A well-built business website with a proper SEO foundation typically runs from ₹75,000 to ₹3,00,000 depending on page count, custom design depth and integrations. E-commerce and booking platforms start higher. Very cheap builds usually cost more later — they are the ones we most often get called in to rescue.',
+          'A well-built business website with a proper SEO foundation typically runs from ₹75,000 to ₹3,00,000 depending on page count, custom design depth and integrations. E-commerce and booking platforms start higher. Very cheap builds usually cost more later. They are the ones we most often get called in to rescue.',
       },
       {
         question: 'How long does it take?',
@@ -330,7 +330,7 @@ export const kochiPages = [
       {
         question: 'Do you work with WordPress?',
         answer:
-          'Yes, where it is the right fit — typically content-heavy sites a non-technical team needs to edit daily. For applications, complex e-commerce or anything needing real performance headroom, we usually recommend a modern JavaScript stack instead and will explain the trade-off honestly.',
+          'Yes, where it is the right fit, typically content-heavy sites a non-technical team needs to edit daily. For applications, complex e-commerce or anything needing real performance headroom, we usually recommend a modern JavaScript stack instead and will explain the trade-off honestly.',
       },
       {
         question: 'Can you maintain the site after launch?',
@@ -360,9 +360,9 @@ export const kochiPages = [
     heroSubtitle:
       'iOS, Android and cross-platform apps built to ship, scale and survive their first ten thousand users.',
     intro: [
-      'An app is the most expensive way to solve a problem a website could have solved. So the first thing we do is establish whether you actually need one — and if you do, exactly which two or three jobs it has to do brilliantly.',
+      'An app is the most expensive way to solve a problem a website could have solved. So the first thing we do is establish whether you actually need one, and if you do, exactly which two or three jobs it has to do brilliantly.',
       'From there we build. React Native and Flutter for most projects, native Swift or Kotlin where hardware access or performance genuinely demands it, backed by a properly designed API and infrastructure that will not collapse the week you get featured.',
-      'We take apps through App Store and Play Store review, and we stay on afterwards — because the first six weeks post-launch is when you learn what the product really needed.',
+      'We take apps through App Store and Play Store review, and we stay on afterwards, because the first six weeks post-launch is when you learn what the product really needed.',
     ],
     servicesHeading: 'App Development Services in Kochi',
     services: [
@@ -376,7 +376,7 @@ export const kochiPages = [
       },
       {
         name: 'Backend & API Development',
-        desc: 'Scalable APIs, authentication, real-time sync and push infrastructure — the part that determines whether the app holds up under load.',
+        desc: 'Scalable APIs, authentication, real-time sync and push infrastructure, the part that determines whether the app holds up under load.',
       },
       {
         name: 'App UI/UX Design',
@@ -394,16 +394,16 @@ export const kochiPages = [
     localHeading: 'App Development from Kochi, for India and the Gulf',
     localBody: [
       'A significant part of our app work is for clients in the UAE and UK, delivered from Kochi. The economics are compelling, but the reason engagements last is time-zone overlap and the fact that a Kochi team can be in Dubai the same day when a project needs it.',
-      'For Kerala businesses — logistics operators, clinics, retail chains, education providers — we build the apps that replace phone-call coordination with something their customers can self-serve.',
+      'For Kerala businesses, logistics operators, clinics, retail chains, education providers. We build the apps that replace phone-call coordination with something their customers can self-serve.',
     ],
     faqs: [
       {
         question: 'How much does it cost to build a mobile app in Kochi?',
         answer:
-          'A focused MVP with a clear feature set typically runs ₹6,00,000 to ₹15,00,000. Apps with payments, real-time features, multi-role access or heavy integrations run higher. We scope MVP first deliberately — it gets a real product in front of real users before the full budget is committed.',
+          'A focused MVP with a clear feature set typically runs ₹6,00,000 to ₹15,00,000. Apps with payments, real-time features, multi-role access or heavy integrations run higher. We scope MVP first deliberately. It gets a real product in front of real users before the full budget is committed.',
       },
       {
-        question: 'React Native or native — which should we choose?',
+        question: 'React Native or native, which should we choose?',
         answer:
           'React Native or Flutter for the large majority of business apps: one codebase, roughly 30 to 40 percent lower build cost, and performance that is indistinguishable for typical use. Go native when you need heavy camera or sensor work, complex offline sync, or graphics-intensive rendering.',
       },
@@ -415,7 +415,7 @@ export const kochiPages = [
       {
         question: 'Do you handle App Store and Play Store submission?',
         answer:
-          'Yes — we manage developer account setup, store listings, screenshots, privacy declarations, review responses and the release process. Apple rejections are routine and we handle the resubmission cycle.',
+          'Yes. We manage developer account setup, store listings, screenshots, privacy declarations, review responses and the release process. Apple rejections are routine and we handle the resubmission cycle.',
       },
       {
         question: 'Can you build the backend as well?',
@@ -443,9 +443,9 @@ export const kochiPages = [
       'IT company in Kochi providing custom software development, cloud infrastructure, AI automation and digital transformation for businesses across Kerala, India, the UAE and UK.',
     h1: 'IT Company in Kochi',
     heroSubtitle:
-      'Software, cloud and automation delivered by one accountable team — with an office you can walk into.',
+      'Software, cloud and automation delivered by one accountable team, with an office you can walk into.',
     intro: [
-      'Most businesses do not need another vendor. They need one team that understands how the website, the CRM, the ad accounts, the internal tools and the data all connect — and is accountable when something between them breaks.',
+      'Most businesses do not need another vendor. They need one team that understands how the website, the CRM, the ad accounts, the internal tools and the data all connect, and is accountable when something between them breaks.',
       'Infynix Solutions is an IT company in Kochi covering that whole surface: custom software, cloud infrastructure, AI and automation, and the marketing technology layer that sits on top. One team, one roadmap, one point of accountability.',
       'We serve businesses across Ernakulam and Kerala, with delivery teams supporting clients in the UAE and the UK from the same Kochi base.',
     ],
@@ -478,7 +478,7 @@ export const kochiPages = [
     ],
     localHeading: 'Kochi as a Delivery Base',
     localBody: [
-      'Kochi’s IT ecosystem — Infopark, SmartCity and the engineering talent around them — makes it a serious delivery centre rather than a low-cost outpost. We hire from that pool and keep teams stable, which is what actually determines whether a long engagement succeeds.',
+      'Kochi’s IT ecosystem, Infopark, SmartCity and the engineering talent around them, makes it a serious delivery centre rather than a low-cost outpost. We hire from that pool and keep teams stable, which is what actually determines whether a long engagement succeeds.',
       'For local clients the advantage is straightforward accountability: a Kerala company, a Kerala contract, and an office in Edappally where you can sit down with the people doing the work.',
     ],
     faqs: [
@@ -490,12 +490,12 @@ export const kochiPages = [
       {
         question: 'Do you offer IT support and managed services?',
         answer:
-          'We provide application support, cloud infrastructure management and monitoring for systems we build or take over. We do not do desktop or helpdesk support — that is a different discipline and there are Kochi firms who do it better than we would.',
+          'We provide application support, cloud infrastructure management and monitoring for systems we build or take over. We do not do desktop or helpdesk support. That is a different discipline and there are Kochi firms who do it better than we would.',
       },
       {
         question: 'How do engagements typically start?',
         answer:
-          'With a paid discovery phase — usually two to four weeks — producing a technical assessment, a scoped roadmap and a fixed estimate for phase one. You own that output regardless of whether you continue with us.',
+          'With a paid discovery phase, usually two to four weeks, producing a technical assessment, a scoped roadmap and a fixed estimate for phase one. You own that output regardless of whether you continue with us.',
       },
       {
         question: 'Can you work with our existing IT team?',
@@ -530,7 +530,7 @@ export const kochiPages = [
     heroSubtitle:
       'Content produced in Kochi, distributed with paid amplification, measured against enquiries rather than likes.',
     intro: [
-      'Kerala audiences are among the most engaged social media users in India, and among the quickest to scroll past anything that looks like an advertisement. Posting consistently is not a strategy here — the content has to earn the stop.',
+      'Kerala audiences are among the most engaged social media users in India, and among the quickest to scroll past anything that looks like an advertisement. Posting consistently is not a strategy here, the content has to earn the stop.',
       'We run social as a production and distribution system: an in-house team shooting reels and photography in Kochi, a bilingual content calendar, paid amplification behind whatever performs, and community management that responds to enquiries in minutes rather than days.',
       'Reporting ties back to enquiries and revenue. Follower growth is a by-product, not the objective.',
     ],
@@ -538,7 +538,7 @@ export const kochiPages = [
     services: [
       {
         name: 'Content Production',
-        desc: 'Reels, photography and short-form video shot by our Kochi team — on location at your premises, not stitched together from stock.',
+        desc: 'Reels, photography and short-form video shot by our Kochi team, on location at your premises, not stitched together from stock.',
       },
       {
         name: 'Malayalam & English Content',
@@ -558,7 +558,7 @@ export const kochiPages = [
       },
       {
         name: 'Analytics & Reporting',
-        desc: 'Monthly reporting on reach, engagement rate, cost per enquiry and revenue attributed to social — with the creative learnings that drove it.',
+        desc: 'Monthly reporting on reach, engagement rate, cost per enquiry and revenue attributed to social, with the creative learnings that drove it.',
       },
     ],
     localHeading: 'What Works on Social in Kerala',
@@ -590,7 +590,7 @@ export const kochiPages = [
       {
         question: 'Can you handle influencer campaigns in Kerala?',
         answer:
-          'Yes. We handle creator identification, negotiation, briefing, content approval, disclosure compliance and performance measurement across Kerala’s creator ecosystem — from regional micro-influencers to larger Malayalam accounts.',
+          'Yes. We handle creator identification, negotiation, briefing, content approval, disclosure compliance and performance measurement across Kerala’s creator ecosystem, from regional micro-influencers to larger Malayalam accounts.',
       },
     ],
     related: [
@@ -610,7 +610,7 @@ export const kochiPages = [
     category: 'technology',
     title: 'E-Commerce Website Development Company in Kochi, Kerala | Infynix',
     description:
-      'E-commerce website development in Kochi — Shopify, WooCommerce and custom storefronts with UPI, Indian payment gateways, logistics integration and GCC shipping.',
+      'E-commerce website development in Kochi, Shopify, WooCommerce and custom storefronts with UPI, Indian payment gateways, logistics integration and GCC shipping.',
     h1: 'E-Commerce Website Development Company in Kochi',
     heroSubtitle:
       'Online stores engineered to be found, to load fast, and to survive a sale-day traffic spike.',
@@ -655,7 +655,7 @@ export const kochiPages = [
       {
         question: 'Shopify or WooCommerce for a Kochi business?',
         answer:
-          'Shopify if you want to launch fast, avoid managing hosting and security, and can live within its structure — most D2C brands should start here. WooCommerce if content and editorial control matter as much as the catalogue, or you need unusual business logic. Shopify costs more monthly and less in maintenance headaches.',
+          'Shopify if you want to launch fast, avoid managing hosting and security, and can live within its structure. Most D2C brands should start here. WooCommerce if content and editorial control matter as much as the catalogue, or you need unusual business logic. Shopify costs more monthly and less in maintenance headaches.',
       },
       {
         question: 'How much does an e-commerce site cost?',
@@ -665,7 +665,7 @@ export const kochiPages = [
       {
         question: 'Can you integrate Indian payment gateways and UPI?',
         answer:
-          'Yes — Razorpay, Cashfree, PayU, Instamojo and direct UPI, alongside cards and net banking. UPI is decisive for Indian conversion rates; a store that makes card payment the default path will convert measurably worse here.',
+          'Yes, Razorpay, Cashfree, PayU, Instamojo and direct UPI, alongside cards and net banking. UPI is decisive for Indian conversion rates; a store that makes card payment the default path will convert measurably worse here.',
       },
       {
         question: 'Will my product pages rank on Google?',
@@ -675,7 +675,7 @@ export const kochiPages = [
       {
         question: 'Can you migrate our existing store?',
         answer:
-          'Yes. Migrations are mostly a redirect-mapping exercise — products, categories and old URLs mapped one to one so rankings survive. Stores that migrate without that mapping routinely lose the majority of their organic traffic, and recovery takes months.',
+          'Yes. Migrations are mostly a redirect-mapping exercise, products, categories and old URLs mapped one to one so rankings survive. Stores that migrate without that mapping routinely lose the majority of their organic traffic, and recovery takes months.',
       },
     ],
     related: [
@@ -695,12 +695,12 @@ export const kochiPages = [
     category: 'technology',
     title: 'UI/UX Design Company in Kochi, Kerala | Product Design | Infynix',
     description:
-      'UI/UX design company in Kochi — user research, wireframing, prototyping and design systems for web apps, mobile apps and e-commerce, tested against real conversion goals.',
+      'UI/UX design company in Kochi, user research, wireframing, prototyping and design systems for web apps, mobile apps and e-commerce, tested against real conversion goals.',
     h1: 'UI/UX Design Company in Kochi',
     heroSubtitle:
       'Research-led interface design for products people have to use every day, not just look at once.',
     intro: [
-      'Most design briefs arrive describing a visual problem. The site looks dated, the app feels clunky. Underneath, the actual problem is usually structural — nobody established what users were trying to accomplish, so the interface organises information the way the business is organised internally.',
+      'Most design briefs arrive describing a visual problem. The site looks dated, the app feels clunky. Underneath, the actual problem is usually structural. Nobody established what users were trying to accomplish, so the interface organises information the way the business is organised internally.',
       'We start with the job the user came to do. Research, flows and wireframes come before any visual direction, and we test the structure with real users before it becomes expensive to change.',
       'The output is a design system your developers can build against, not a set of static screens that leaves every edge case to be improvised in code.',
     ],
@@ -728,7 +728,7 @@ export const kochiPages = [
       },
       {
         name: 'Accessibility Design',
-        desc: 'WCAG-informed design — contrast, focus order, touch targets and screen-reader structure — built in rather than audited in afterwards.',
+        desc: 'WCAG-informed design, contrast, focus order, touch targets and screen-reader structure, built in rather than audited in afterwards.',
       },
     ],
     localHeading: 'Design for the Device Your Users Actually Hold',
@@ -755,7 +755,7 @@ export const kochiPages = [
       {
         question: 'How is UX different from making the site look better?',
         answer:
-          'Visual design changes how something looks; UX changes what it does and in what order. Most products we are asked to make prettier are actually organised around the company’s internal structure rather than the user’s task — restructuring that produces far more improvement than restyling.',
+          'Visual design changes how something looks; UX changes what it does and in what order. Most products we are asked to make prettier are actually organised around the company’s internal structure rather than the user’s task, restructuring that produces far more improvement than restyling.',
       },
       {
         question: 'Can you improve conversion on our existing site?',

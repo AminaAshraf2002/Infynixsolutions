@@ -20,8 +20,8 @@ const marqueeItems = [
 ];
 
 const stats = [
-  { num: '7Ã—',   label: 'Stage Method' },
-  { num: '3Ã—',   label: 'Avg. Revenue Lift' },
+  { num: '7Ã, ',   label: 'Stage Method' },
+  { num: '3Ã, ',   label: 'Avg. Revenue Lift' },
   { num: '98%',  label: 'Client Retention' },
   { num: '150+', label: 'Systems Built' },
 ];

@@ -39,7 +39,7 @@ export default function LandingPage({ slug: slugProp }) {
 
   const schema = [
     organizationSchema(),
-    // Only the Kochi pages carry LocalBusiness — that is the one address Infynix
+    // Only the Kochi pages carry LocalBusiness. That is the one address Infynix
     // actually occupies. Asserting a physical presence elsewhere is what gets
     // Google Business Profiles suspended.
     isKochi ? localBusinessSchema() : null,

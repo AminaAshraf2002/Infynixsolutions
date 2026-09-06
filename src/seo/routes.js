@@ -45,7 +45,7 @@ export const insightRoutes = insightsData.map((post) =>
   entry(`/insights/${post.slug}`, { priority: 0.6 })
 );
 
-// Location + service landing pages — the pages built to win the commercial
+// Location + service landing pages, the pages built to win the commercial
 // "{service} company in {city}" queries.
 export const landingRoutes = landingPages.map((page) =>
   entry(`/${page.slug}`, { priority: 0.9, changefreq: 'monthly' })

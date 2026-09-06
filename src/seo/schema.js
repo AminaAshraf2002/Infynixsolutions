@@ -20,7 +20,7 @@ const postalAddress = {
 };
 
 // Emitted once, on the homepage. Every other page references @id instead of
-// repeating the entity — duplicated Organization blocks dilute the entity graph.
+// repeating the entity, duplicated Organization blocks dilute the entity graph.
 export const organizationSchema = () => ({
   '@type': 'Organization',
   '@id': ORG_ID,
@@ -44,7 +44,7 @@ export const websiteSchema = () => ({
 });
 
 // ProfessionalService is the correct LocalBusiness subtype for an agency.
-// Only emit this where there is a genuine physical presence — Kochi.
+// Only emit this where there is a genuine physical presence, Kochi.
 export const localBusinessSchema = () => ({
   '@type': 'ProfessionalService',
   '@id': `${SITE_URL}/#localbusiness-kochi`,

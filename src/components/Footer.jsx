@@ -14,7 +14,7 @@ const Footer = () => {
         <div className="footer-locations-grid">
           <div className="footer-brand-col">
             <Link to="/" className="footer-logo" style={{ textDecoration: 'none' }}>
-              <img 
+              <img loading="lazy" decoding="async" 
                 src={logo} 
                 alt="Infynix Logo" 
                 style={{ height: '32px', width: 'auto', filter: 'brightness(0) invert(1)', marginBottom: '8px' }} 
@@ -27,7 +27,7 @@ const Footer = () => {
 
           <div className="footer-location-card">
             <a href="https://maps.google.com/?q=1-75+Shelton+St,+London,+WC2H+9JQ" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
-              <img src={ukLImage} alt="UK London Office" className="footer-location-svg" />
+              <img loading="lazy" decoding="async" src={ukLImage} alt="UK London Office" className="footer-location-svg" />
               <div className="footer-location-title">UK - LONDON ↗</div>
               <div className="footer-location-addr">
                 1-75 Shelton St,<br />
@@ -38,7 +38,7 @@ const Footer = () => {
 
           <div className="footer-location-card">
             <a href="https://maps.google.com/?q=Business+Bay,+Dubai,+UAE" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
-              <img src={dubaiImage} alt="Dubai UAE Office" className="footer-location-svg" />
+              <img loading="lazy" decoding="async" src={dubaiImage} alt="Dubai UAE Office" className="footer-location-svg" />
               <div className="footer-location-title">DUBAI - UAE ↗</div>
               <div className="footer-location-addr">
                 Business Bay,<br />
@@ -49,7 +49,7 @@ const Footer = () => {
 
           <div className="footer-location-card">
             <a href="https://share.google/KX27eRrKxncrDFibN" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
-              <img src={kochiImage} alt="Kochi India Office" className="footer-location-svg" />
+              <img loading="lazy" decoding="async" src={kochiImage} alt="Kochi India Office" className="footer-location-svg" />
               <div className="footer-location-title">INDIA - KOCHI ↗</div>
               <div className="footer-location-addr">
                 7th Floor, National Pearl Star Building,<br />
@@ -85,7 +85,7 @@ const Footer = () => {
               <Link to="/industries/education">Education</Link>
             </div>
             <div className="footer-nav-col">
-              {/* Location pages need internal links from a sitewide element — a
+              {/* Location pages need internal links from a sitewide element, a
                   sitemap entry alone is a weak discovery and equity signal. Top
                   pages per city only; the full set is reachable from each page's
                   "Related Services" block and the sitemap. */}

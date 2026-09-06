@@ -1,49 +1,65 @@
+/* Homepage hero.
+   Previously a 2.3 MB photograph behind a dark gradient. It was the page's LCP
+   element and said nothing. Now a text-led statement of the Growth Engineering
+   philosophy over an interactive node-network canvas (HeroBackground.jsx). */
+
 .hero-section {
   position: relative;
   width: 100%;
   background: #ffffff;
   padding-top: 120px;
-  /* Pushes the hero image to start below the navbar */
-  overflow: visible;
   padding-bottom: 80px;
+  overflow: visible;
+  /* Above the global dashed gridlines (z-index 100) so they do not cross the hero. */
   z-index: 101;
-  /* Above the global dashed lines (100) to hide them here */
 }
 
-.hero-bg-wrapper {
+.hero-stage {
   position: relative;
   width: calc(100% - 48px);
   max-width: 1920px;
-  margin: 0 auto;
-  /* Starts exactly at 24px padding boundary */
-  min-height: 85vh;
+  margin: -20px auto 0;
+  min-height: 84vh;
   border-radius: 32px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  /* Anchor content to the bottom */
-  padding: 4rem;
-  box-sizing: border-box;
   overflow: hidden;
-  margin-top: -20px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  /* Deep green-black. The canvas draws on top of this, so the gradient is what
+     the page falls back to if canvas is unavailable or JS is off. */
+  background:
+    radial-gradient(120% 90% at 12% 18%, #0d3b2e 0%, rgba(13, 59, 46, 0) 62%),
+    radial-gradient(90% 80% at 88% 82%, #10402f 0%, rgba(16, 64, 47, 0) 58%),
+    linear-gradient(158deg, #06120e 0%, #0a1f18 52%, #061410 100%);
 }
 
-.hero-overlay {
+.hero-canvas {
   position: absolute;
-  top: 0;
-  left: 0;
+  inset: 0;
   width: 100%;
   height: 100%;
-  /* A dark gradient from bottom left to help text readability */
-  background: linear-gradient(to top right, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.3) 40%, rgba(0, 0, 0, 0) 80%);
+  display: block;
   z-index: 1;
+}
+
+/* Keeps text contrast safe wherever the node field happens to be dense. */
+.hero-veil {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  background: linear-gradient(
+    100deg,
+    rgba(3, 12, 9, 0.9) 0%,
+    rgba(3, 12, 9, 0.68) 34%,
+    rgba(3, 12, 9, 0.18) 68%,
+    rgba(3, 12, 9, 0) 100%
+  );
 }
 
 .hero-content {
   position: relative;
+  z-index: 3;
   width: 100%;
   max-width: 1100px;
   margin: 0 auto;
@@ -51,83 +67,199 @@
   flex-direction: column;
   align-items: flex-start;
   text-align: left;
-  gap: 1.5rem;
-  z-index: 10;
-  padding-top: 80px;
-  /* Adjust side padding for medium desktop */
-  padding-left: clamp(2rem, 4vw, 5vw);
-  padding-right: clamp(2rem, 4vw, 5vw);
+  gap: 1.4rem;
+  padding: 4rem clamp(2rem, 4vw, 5vw);
+  box-sizing: border-box;
 }
 
 @media (min-width: 1440px) {
-  .hero-content {
-    max-width: 1500px;
-  }
+  .hero-content { max-width: 1500px; }
 }
 
 .hero-eyebrow {
-  font-size: 0.85rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.78rem;
   font-weight: 700;
-  letter-spacing: 1.5px;
+  letter-spacing: 1.6px;
   text-transform: uppercase;
   color: rgb(214, 250, 86);
-  margin-bottom: 0.5rem;
+  margin: 0;
+}
+
+.hero-eyebrow::before {
+  content: '';
+  width: 28px;
+  height: 1px;
+  background: rgb(214, 250, 86);
+  opacity: 0.8;
 }
 
 .hero-title {
-  font-family: "Montserrat", Arial, sans-serif;
-  font-size: clamp(2.75rem, 4.5vw, 4rem) !important;
-  font-weight: 500;
-  line-height: 1.25;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: clamp(2.4rem, 5.2vw, 4.4rem);
+  font-weight: 600;
+  line-height: 1.1;
   color: #ffffff;
   margin: 0;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.03em;
+  max-width: 20ch;
 }
 
 .title-highlight {
   color: rgb(214, 250, 86);
-  /* Zendesk lime green */
 }
 
 .hero-subtitle {
-  font-family: 'Albert Sans', sans-serif;
-  font-style: normal !important;
-  font-size: 1.25rem;
-  line-height: 1.6;
-  color: #ffffff;
-  max-width: 600px;
+  font-family: 'Albert Sans', 'Montserrat', sans-serif;
+  font-style: normal;
+  font-size: clamp(1rem, 1.4vw, 1.18rem);
+  line-height: 1.65;
+  color: rgba(255, 255, 255, 0.82);
+  max-width: 60ch;
   margin: 0;
 }
 
-@media (max-width: 768px) {
-  .hero-bg-wrapper {
-    width: calc(100% - 32px);
-    padding: 2rem;
-    min-height: 50vh;
-  }
+/* The five-stage method, as a text row rather than a graphic. */
+.hero-method {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 28px;
+  list-style: none;
+  margin: 0.4rem 0 0;
+  padding: 0;
+}
 
-  .hero-title {
-    font-size: clamp(1.5rem, 5vw, 1.8rem) !important;
-  }
+.hero-method-item {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
 
-  .hero-subtitle {
-    font-size: 0.9rem !important;
-  }
+.hero-method-index {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: rgba(214, 250, 86, 0.75);
+}
+
+.hero-method-label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .hero-actions {
   display: flex;
-  gap: 16px;
+  flex-wrap: wrap;
+  gap: 14px;
   align-items: center;
+  margin-top: 0.6rem;
 }
 
-@media (max-width: 767px) {
+.hero-btn {
+  display: inline-block;
+  padding: 13px 26px;
+  border-radius: 100px;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: 700;
+  font-size: 0.92rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+}
+
+.hero-btn-primary {
+  background: rgb(214, 250, 86);
+  color: #10231b;
+  border: 1px solid rgb(214, 250, 86);
+}
+
+.hero-btn-primary:hover {
+  background: #ffffff;
+  border-color: #ffffff;
+}
+
+.hero-btn-ghost {
+  background: transparent;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  font-weight: 500;
+}
+
+.hero-btn-ghost:hover {
+  border-color: rgb(214, 250, 86);
+  color: rgb(214, 250, 86);
+}
+
+@media (max-width: 900px) {
+  .hero-veil {
+    /* Vertical fade reads better once the text stack goes full width. */
+    background: linear-gradient(
+      180deg,
+      rgba(3, 12, 9, 0.78) 0%,
+      rgba(3, 12, 9, 0.62) 55%,
+      rgba(3, 12, 9, 0.4) 100%
+    );
+  }
+}
+
+@media (max-width: 768px) {
+  /* index.css centres and italicises hero text below 768px. The hero is
+     left-aligned by design at every width, so these re-assert it. */
+  .hero-content,
+  .hero-title,
+  .hero-subtitle,
+  .hero-method,
+  .hero-eyebrow {
+    text-align: left !important;
+  }
+
+  .hero-subtitle {
+    font-style: normal !important;
+  }
+
+  .hero-section {
+    padding-top: 100px;
+    padding-bottom: 48px;
+  }
+
+  .hero-stage {
+    width: calc(100% - 32px);
+    min-height: 78vh;
+    border-radius: 24px;
+  }
+
+  .hero-content {
+    padding: 2.5rem 1.5rem;
+    gap: 1.15rem;
+  }
+
+  .hero-title {
+    font-size: clamp(1.9rem, 8vw, 2.6rem);
+    max-width: 100%;
+  }
+
+  .hero-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .hero-method {
+    gap: 8px 18px;
+  }
+}
+
+@media (max-width: 520px) {
   .hero-actions {
     flex-direction: column;
-    width: 100%;
     align-items: stretch;
-  }
-  .hero-actions button {
     width: 100%;
+  }
+
+  .hero-btn {
+    width: 100%;
+    text-align: center;
   }
 }

@@ -1,61 +1,56 @@
-import React from 'react';
+import { Link } from 'react-router-dom';
 import './HeroSection.css';
-import heroBg from '../assets/newhero.png';
-import hero2 from '../assets/hero2.png';
-import hero3 from '../assets/hero3.png';
-import hero4 from '../assets/hero4.png';
+import HeroBackground from './HeroBackground';
 
-const SERVER_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+// The five stages of the Growth Engineering method. Rendered as real text rather
+// than an image, so it is crawlable, translatable and weighs nothing.
+const METHOD = ['Attract', 'Engage', 'Convert', 'Optimise', 'Scale'];
 
 function HeroSection({ data }) {
-  // Use first slide or fallback to heroBg
-  const staticSlide = data?.slides && data.slides.length > 0 ? data.slides[0] : { image: heroBg };
-
-  const getImgUrl = (path) => {
-    if (!path) return "";
-    const formatted = path.replace(/\\/g, "/");
-    if (formatted.startsWith("http") || formatted.startsWith("/") || formatted.startsWith("data:")) {
-      return formatted;
-    }
-    return `${SERVER_URL}/${formatted}`;
-  };
-
-  const handlePrimaryClick = () => {
-    window.location.href = "/contact";
-  };
+  const eyebrow = data?.eyebrow || 'GROWTH ENGINEERING COMPANY';
 
   return (
-   <section className="hero-section">
-  <div className="hero-bg-wrapper" style={{ backgroundImage: `url(${getImgUrl(staticSlide?.image)})` }}>
-    <div className="hero-overlay"></div>
-    <div className="hero-content">
-      <span className="hero-eyebrow">GROWTH ENGINEERING COMPANY</span>
-      <h1 className="hero-title">
-        Growth Engineering for<br />
-        <span className="title-highlight">Businesses Built to Scale.</span>
-      </h1>
-      <p className="hero-subtitle">
-        We engineer connected technology, marketing, and operations systems that turn disconnected growth into sustainable business growth.
-      </p>
-      <div className="hero-actions" style={{ marginTop: '30px' }}>
-        <button
-          className="btn btn-primary outline-btn-hover"
-          onClick={() => window.location.href = '/contact'}
-          style={{ backgroundColor: ' rgb(214, 250, 86)', color: '#111', border: 'none', padding: '12px 24px', borderRadius: '100px', cursor: 'pointer', fontWeight: '700' }}
-        >
-          Book a Discovery Call
-        </button>
-        <button
-          className="btn btn-secondary"
-          onClick={() => window.location.href = '/growth-engineering'}
-          style={{ backgroundColor: 'transparent', color: '#fff', border: '1px solid #fff', padding: '12px 24px', borderRadius: '100px', cursor: 'pointer', fontWeight: '500' }}
-        >
-          Learn About Growth Engineering
-        </button>
+    <section className="hero-section">
+      <div className="hero-stage">
+        <HeroBackground />
+        <div className="hero-veil" aria-hidden="true" />
+
+        <div className="hero-content">
+          <span className="hero-eyebrow">{eyebrow}</span>
+
+          <h1 className="hero-title">
+            Creative that performs.
+            <br />
+            <span className="title-highlight">Systems that compound.</span>
+          </h1>
+
+          <p className="hero-subtitle">
+            We are a marketing and media agency with an engineering team behind it.
+            Brand, content and campaigns at the front. Connected data, automation
+            and platforms underneath. So every rupee you spend keeps working long
+            after the campaign ends.
+          </p>
+
+          <ol className="hero-method" aria-label="The Growth Engineering method">
+            {METHOD.map((stage, index) => (
+              <li key={stage} className="hero-method-item">
+                <span className="hero-method-index">{String(index + 1).padStart(2, '0')}</span>
+                <span className="hero-method-label">{stage}</span>
+              </li>
+            ))}
+          </ol>
+
+          <div className="hero-actions">
+            <Link to="/contact" className="hero-btn hero-btn-primary">
+              Book a Discovery Call
+            </Link>
+            <Link to="/growth-engineering" className="hero-btn hero-btn-ghost">
+              The Growth Engineering Method
+            </Link>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
   );
 }
 

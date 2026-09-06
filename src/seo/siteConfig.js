@@ -1,7 +1,7 @@
 // Single source of truth for every absolute URL, canonical tag, sitemap entry and
 // schema @id on the site. Nothing else should hardcode the domain.
 //
-// NOTE: the previous robots.txt and sitemap.xml declared https://infynix.com —
+// NOTE: the previous robots.txt and sitemap.xml declared https://infynix.com , 
 // a domain Infynix does not own (it resolves to a domain-sale listing). Do not
 // reintroduce it.
 
@@ -10,7 +10,7 @@ export const SITE_URL = 'https://www.infynix-solutions.com';
 export const SITE_NAME = 'Infynix Solutions';
 
 export const DEFAULT_TITLE =
-  'Infynix Solutions — Digital Marketing & Software Development Company in Kochi, Kerala';
+  'Infynix Solutions, Digital Marketing & Software Development Company in Kochi, Kerala';
 
 export const DEFAULT_DESCRIPTION =
   'Infynix Solutions is a growth engineering company in Kochi, Kerala building websites, mobile apps, AI automation and performance marketing systems for businesses across Kerala, India and the GCC.';
@@ -18,7 +18,7 @@ export const DEFAULT_DESCRIPTION =
 export const DEFAULT_OG_IMAGE = `${SITE_URL}/logo.png`;
 
 // Canonical business details. Must stay byte-identical to the Google Business
-// Profile and every external citation — inconsistent NAP suppresses local ranking.
+// Profile and every external citation, inconsistent NAP suppresses local ranking.
 export const BUSINESS = {
   legalName: 'Infynix Solutions',
   email: 'info@infynixsolutions.ae',
@@ -51,7 +51,7 @@ export const BUSINESS = {
   ],
 };
 
-// Add real profile URLs as they go live — sameAs is a meaningful entity signal and
+// Add real profile URLs as they go live, sameAs is a meaningful entity signal and
 // an empty/wrong list is worse than a short accurate one.
 export const SOCIAL_PROFILES = [
   'https://www.linkedin.com/company/infynix-solutions',

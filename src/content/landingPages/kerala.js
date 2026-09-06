@@ -1,7 +1,7 @@
 // State-level Kerala pages.
 //
 // These target the highest-competition terms in the set. They deliberately take a
-// state-wide angle — multi-city reach, regional market knowledge — rather than
+// state-wide angle, multi-city reach, regional market knowledge, rather than
 // repeating the Kochi pages with the city name swapped.
 
 export const keralaPages = [
@@ -17,10 +17,10 @@ export const keralaPages = [
       'Digital marketing agency in Kerala running SEO, Google and Meta ads, social media and marketing automation for businesses in Kochi, Kozhikode, Thrissur and Trivandrum.',
     h1: 'Digital Marketing Agency in Kerala',
     heroSubtitle:
-      'One connected growth system — search, paid, social and automation — built for businesses selling across Kerala.',
+      'One connected growth system, search, paid, social and automation, built for businesses selling across Kerala.',
     intro: [
       'Kerala is a deceptively difficult market to advertise into. High literacy and high smartphone penetration mean audiences here research thoroughly and compare openly. Trust is built slowly through reviews, referrals and visible track record, and it is lost quickly to an aggressive campaign that overpromises.',
-      'Infynix Solutions builds marketing systems suited to that: strong organic and local search foundations, paid campaigns that support rather than substitute for them, and bilingual creative that reads as though a Malayali wrote it — because one did.',
+      'Infynix Solutions builds marketing systems suited to that: strong organic and local search foundations, paid campaigns that support rather than substitute for them, and bilingual creative that reads as though a Malayali wrote it, because one did.',
       'We work with clients across Ernakulam, Kozhikode, Thrissur, Kollam and Thiruvananthapuram from our engineering base in Kochi.',
     ],
     servicesHeading: 'Digital Marketing Services Across Kerala',
@@ -43,7 +43,7 @@ export const keralaPages = [
       },
       {
         name: 'Marketing Automation',
-        desc: 'WhatsApp, email and CRM journeys that follow up consistently — the gap where most Kerala businesses quietly lose the majority of their leads.',
+        desc: 'WhatsApp, email and CRM journeys that follow up consistently, the gap where most Kerala businesses quietly lose the majority of their leads.',
       },
       {
         name: 'Analytics & Attribution',
@@ -53,7 +53,7 @@ export const keralaPages = [
     localHeading: 'Selling Across Kerala Is a Multi-City Problem',
     localBody: [
       'A business serving all fourteen districts cannot rank on one page. Kozhikode buyers search differently from Ernakulam buyers, Malabar and Travancore price expectations differ, and the map pack only ever shows results near the searcher.',
-      'The structure that works is a strong state-level page for authority, supported by genuinely distinct city pages for each market you serve, each with its own Google Business Profile where you have a physical presence. We build that architecture rather than duplicating one page fourteen times — which Google treats as doorway spam and filters out.',
+      'The structure that works is a strong state-level page for authority, supported by genuinely distinct city pages for each market you serve, each with its own Google Business Profile where you have a physical presence. We build that architecture rather than duplicating one page fourteen times, which Google treats as doorway spam and filters out.',
     ],
     faqs: [
       {
@@ -64,7 +64,7 @@ export const keralaPages = [
       {
         question: 'Do you work with businesses outside Kochi?',
         answer:
-          'Yes. We work with clients across Kozhikode, Thrissur, Kollam, Kottayam and Thiruvananthapuram. Delivery is remote with periodic on-site visits, which for most engagements works well — the exception is content production, where we plan shoot days in your city.',
+          'Yes. We work with clients across Kozhikode, Thrissur, Kollam, Kottayam and Thiruvananthapuram. Delivery is remote with periodic on-site visits, which for most engagements works well, the exception is content production, where we plan shoot days in your city.',
       },
       {
         question: 'How much should a Kerala business budget for digital marketing?',
@@ -104,7 +104,7 @@ export const keralaPages = [
     heroSubtitle:
       'Fix what blocks indexing, build what earns authority, and report on enquiries rather than screenshots of rankings.',
     intro: [
-      'The Kerala SEO market has a credibility problem. Too many retainers deliver a monthly ranking screenshot, a handful of low-quality directory links and a blog nobody reads — while the underlying site quietly fails to get indexed at all.',
+      'The Kerala SEO market has a credibility problem. Too many retainers deliver a monthly ranking screenshot, a handful of low-quality directory links and a blog nobody reads, while the underlying site quietly fails to get indexed at all.',
       'We work in a fixed order because the order matters. Technical foundations first: can search engines crawl, render, and index the site, and are the status codes, canonicals and sitemaps telling the truth? Then information architecture and content. Then authority.',
       'That order is unglamorous and it is why it works. There is no point publishing forty articles on a site that serves an empty HTML shell to crawlers.',
     ],
@@ -112,7 +112,7 @@ export const keralaPages = [
     services: [
       {
         name: 'Technical SEO Audits',
-        desc: 'Crawl and render analysis, indexation review, Core Web Vitals, redirect and canonical logic — assessed on the raw server response.',
+        desc: 'Crawl and render analysis, indexation review, Core Web Vitals, redirect and canonical logic, assessed on the raw server response.',
       },
       {
         name: 'JavaScript SEO',
@@ -128,7 +128,7 @@ export const keralaPages = [
       },
       {
         name: 'Structured Data',
-        desc: 'Schema markup for organisation, services, locations, FAQs and articles — validated and connected as a single entity graph.',
+        desc: 'Schema markup for organisation, services, locations, FAQs and articles, validated and connected as a single entity graph.',
       },
       {
         name: 'Link Building & Digital PR',
@@ -138,7 +138,7 @@ export const keralaPages = [
     localHeading: 'What Actually Ranks in Kerala Search Results',
     localBody: [
       'We analysed the sites currently ranking for the main commercial SEO and digital marketing terms across Kerala. The pattern is consistent and unsubtle: the winners run exact-match "{service} company in {city}" pages, with the keyword in the URL, the title tag and the H1, supported by a real Google Business Profile and steady review volume.',
-      'That is not a clever insight, it is table stakes — and it is exactly what most Kerala business sites are missing. The differentiator beyond it is technical quality and genuine content depth, which is where the field thins out considerably.',
+      'That is not a clever insight, it is table stakes, and it is exactly what most Kerala business sites are missing. The differentiator beyond it is technical quality and genuine content depth, which is where the field thins out considerably.',
     ],
     faqs: [
       {
@@ -159,12 +159,12 @@ export const keralaPages = [
       {
         question: 'Do you provide SEO for Malayalam content?',
         answer:
-          'Yes. Malayalam search volume is meaningful in specific categories — local services, health, education and news in particular. We handle Malayalam keyword research, content and the hreflang implementation needed for bilingual sites to rank both versions.',
+          'Yes. Malayalam search volume is meaningful in specific categories, local services, health, education and news in particular. We handle Malayalam keyword research, content and the hreflang implementation needed for bilingual sites to rank both versions.',
       },
       {
         question: 'Can you fix a site penalised or hit by an update?',
         answer:
-          'Usually. We start by diagnosing whether it was a manual action, an algorithmic update or a technical regression — the recovery paths are completely different. Toxic link profiles, thin doorway pages and mass AI-generated content are the three causes we see most often in this market.',
+          'Usually. We start by diagnosing whether it was a manual action, an algorithmic update or a technical regression, the recovery paths are completely different. Toxic link profiles, thin doorway pages and mass AI-generated content are the three causes we see most often in this market.',
       },
     ],
     related: [
@@ -187,9 +187,9 @@ export const keralaPages = [
       'Software development company in Kerala building custom web applications, CRM and ERP platforms, mobile apps and AI automation for Indian, UAE and UK clients.',
     h1: 'Software Development Company in Kerala',
     heroSubtitle:
-      'Custom platforms, integrations and AI automation — engineered in Kerala, delivered to clients across India, the Gulf and the UK.',
+      'Custom platforms, integrations and AI automation, engineered in Kerala, delivered to clients across India, the Gulf and the UK.',
     intro: [
-      'Kerala has quietly become one of India’s more credible software delivery bases. Engineering graduates in volume, English fluency, a cost base well below Bangalore or Hyderabad, and — critically for GCC clients — a time zone that overlaps the working day in both directions.',
+      'Kerala has quietly become one of India’s more credible software delivery bases. Engineering graduates in volume, English fluency, a cost base well below Bangalore or Hyderabad, and, critically for GCC clients, a time zone that overlaps the working day in both directions.',
       'Infynix Solutions builds custom software from that base: web platforms, CRM and ERP systems, mobile applications, AI automation and the integration work that ties existing systems together.',
       'We are engineers rather than a body shop. Engagements start with discovery and a scoped roadmap, run in visible sprints, and end with you owning the code, the repositories and the infrastructure.',
     ],
@@ -223,7 +223,7 @@ export const keralaPages = [
     localHeading: 'Why Companies Choose a Kerala Development Partner',
     localBody: [
       'For clients in the UAE and UK the arithmetic is straightforward: engineering rates in Kerala are a fraction of local cost, English communication is not a barrier, and the working day overlaps meaningfully with both the Gulf and Europe.',
-      'The risk in offshore development is never the rate, it is turnover and communication. We address both structurally — stable teams, sprint demos every two weeks, direct access to the engineers doing the work, and documentation written as we go rather than assembled at handover.',
+      'The risk in offshore development is never the rate, it is turnover and communication. We address both structurally, stable teams, sprint demos every two weeks, direct access to the engineers doing the work, and documentation written as we go rather than assembled at handover.',
     ],
     faqs: [
       {
@@ -244,7 +244,7 @@ export const keralaPages = [
       {
         question: 'Do you offer dedicated offshore teams?',
         answer:
-          'Yes. For longer engagements clients often prefer a dedicated team model — named engineers working exclusively on your product on a monthly basis. It gives you continuity and direct control over priorities, and is usually more economical past six months than fixed-scope projects.',
+          'Yes. For longer engagements clients often prefer a dedicated team model, named engineers working exclusively on your product on a monthly basis. It gives you continuity and direct control over priorities, and is usually more economical past six months than fixed-scope projects.',
       },
       {
         question: 'How do you protect our intellectual property?',
@@ -272,7 +272,7 @@ export const keralaPages = [
       'Web design company in Kerala building fast, crawlable, conversion-focused websites and e-commerce stores for businesses in Kochi, Trivandrum, Kozhikode and across the state.',
     h1: 'Web Design Company in Kerala',
     heroSubtitle:
-      'Websites engineered for mobile speed, search visibility and enquiries — for businesses selling across Kerala and the Gulf.',
+      'Websites engineered for mobile speed, search visibility and enquiries, for businesses selling across Kerala and the Gulf.',
     intro: [
       'Kerala has an unusually high number of businesses on their second or third website. The pattern repeats: a cheap build nobody could find on Google, then a prettier build that was slow, then a call to someone who will explain why neither worked.',
       'The cause is almost always the same. Design was treated as the deliverable and engineering as an afterthought, so the site shipped without crawlable HTML, without a heading structure, without structured data, and with images nobody compressed.',
@@ -307,19 +307,19 @@ export const keralaPages = [
     ],
     localHeading: 'The Constraint Is the Phone, Not the Browser',
     localBody: [
-      'The overwhelming majority of traffic to a Kerala business website is a mid-range Android device on mobile data. That single fact should drive most build decisions — image strategy, font loading, JavaScript weight, layout priority.',
+      'The overwhelming majority of traffic to a Kerala business website is a mid-range Android device on mobile data. That single fact should drive most build decisions, image strategy, font loading, JavaScript weight, layout priority.',
       'It usually drives none of them. Sites get signed off on a large monitor and then quietly underperform for years. We invert the order: mobile is the primary design, and the performance budget is agreed before the visual direction is.',
     ],
     faqs: [
       {
         question: 'How much does a website cost in Kerala?',
         answer:
-          'A well-engineered business site typically runs ₹75,000 to ₹3,00,000 depending on page count, custom design depth and integrations. E-commerce and booking platforms start higher. The ₹15,000 builds advertised widely are template installs with no SEO foundation — they are the most common reason businesses end up paying twice.',
+          'A well-engineered business site typically runs ₹75,000 to ₹3,00,000 depending on page count, custom design depth and integrations. E-commerce and booking platforms start higher. The ₹15,000 builds advertised widely are template installs with no SEO foundation. They are the most common reason businesses end up paying twice.',
       },
       {
         question: 'Will my website rank on Google?',
         answer:
-          'The build gives you the foundation — crawlable HTML, correct heading structure, unique metadata, schema, fast load. Ranking then depends on content and authority built over time. Any developer who guarantees rankings as part of a website quote is promising something they do not control.',
+          'The build gives you the foundation, crawlable HTML, correct heading structure, unique metadata, schema, fast load. Ranking then depends on content and authority built over time. Any developer who guarantees rankings as part of a website quote is promising something they do not control.',
       },
       {
         question: 'Can you build in Malayalam?',
@@ -329,7 +329,7 @@ export const keralaPages = [
       {
         question: 'Do you offer maintenance?',
         answer:
-          'Yes — hosting management, security updates, backups, uptime monitoring and a monthly allocation of content or development changes. It is optional; if you would rather run it in-house we will train your team and hand over documentation.',
+          'Yes, hosting management, security updates, backups, uptime monitoring and a monthly allocation of content or development changes. It is optional; if you would rather run it in-house we will train your team and hand over documentation.',
       },
       {
         question: 'How long does a website take?',
@@ -357,10 +357,10 @@ export const keralaPages = [
       'Mobile app development company in Kerala building iOS, Android and cross-platform apps with React Native and Flutter for startups and enterprises in India and the GCC.',
     h1: 'Mobile App Development Company in Kerala',
     heroSubtitle:
-      'iOS, Android and cross-platform apps — scoped honestly, built to ship, and supported after launch.',
+      'iOS, Android and cross-platform apps, scoped honestly, built to ship, and supported after launch.',
     intro: [
       'The first useful thing an app developer can tell you is that you may not need an app. A large share of the briefs we receive describe problems a well-built mobile website would solve for a fraction of the cost and none of the store-review friction.',
-      'When an app genuinely is the right answer — repeat usage, offline capability, push notifications, device hardware — we build it properly: React Native or Flutter for one codebase across both platforms, a backend designed to hold up under load, and a scope narrow enough to actually launch.',
+      'When an app genuinely is the right answer, repeat usage, offline capability, push notifications, device hardware. We build it properly: React Native or Flutter for one codebase across both platforms, a backend designed to hold up under load, and a scope narrow enough to actually launch.',
       'We work with Kerala startups building a first product and with established businesses digitising operations that outgrew phone calls and spreadsheets.',
     ],
     servicesHeading: 'App Development Services in Kerala',
@@ -392,7 +392,7 @@ export const keralaPages = [
     ],
     localHeading: 'Kerala Apps, Gulf Users',
     localBody: [
-      'A large share of apps built in Kerala are used substantially outside it — by Malayali communities across the UAE, Saudi Arabia, Qatar and Oman. That shapes real engineering decisions: multi-currency handling, Arabic and right-to-left layout support, regional payment methods, and time zones that are not IST.',
+      'A large share of apps built in Kerala are used substantially outside it, by Malayali communities across the UAE, Saudi Arabia, Qatar and Oman. That shapes real engineering decisions: multi-currency handling, Arabic and right-to-left layout support, regional payment methods, and time zones that are not IST.',
       'Designing for that from the start costs very little. Retrofitting it after launch is expensive and often means reworking the data layer, so we ask about the Gulf audience during discovery rather than after.',
     ],
     faqs: [
@@ -404,7 +404,7 @@ export const keralaPages = [
       {
         question: 'React Native, Flutter, or native?',
         answer:
-          'React Native or Flutter for the large majority of business apps — one codebase, materially lower build and maintenance cost, and performance indistinguishable for typical use. Go native for heavy camera or sensor work, complex offline sync, or graphics-intensive rendering.',
+          'React Native or Flutter for the large majority of business apps, one codebase, materially lower build and maintenance cost, and performance indistinguishable for typical use. Go native for heavy camera or sensor work, complex offline sync, or graphics-intensive rendering.',
       },
       {
         question: 'Do I actually need an app?',
@@ -419,7 +419,7 @@ export const keralaPages = [
       {
         question: 'Will the app work for users in the Gulf?',
         answer:
-          'Yes, if we design for it from the start — multi-currency, Arabic and right-to-left layout support, regional payment methods and correct time-zone handling. We raise this during discovery because retrofitting it later usually means reworking the data layer.',
+          'Yes, if we design for it from the start, multi-currency, Arabic and right-to-left layout support, regional payment methods and correct time-zone handling. We raise this during discovery because retrofitting it later usually means reworking the data layer.',
       },
     ],
     related: [
@@ -439,13 +439,13 @@ export const keralaPages = [
     category: 'marketing',
     title: 'Social Media Marketing Agency in Kerala | Reels & Paid Social | Infynix',
     description:
-      'Social media marketing agency in Kerala — Malayalam and English content, reels production, influencer campaigns and paid social measured against enquiries, not follower counts.',
+      'Social media marketing agency in Kerala. Malayalam and English content, reels production, influencer campaigns and paid social measured against enquiries, not follower counts.',
     h1: 'Social Media Marketing Agency in Kerala',
     heroSubtitle:
       'Malayalam-first content, produced in Kerala, amplified with paid budget and reported against enquiries.',
     intro: [
       'Kerala has among the highest social media engagement rates in India and among the lowest tolerance for content that reads like an advertisement. Both are true at once, and most brand accounts here are built as though only the first one is.',
-      'Consistent posting is not a strategy in this market. The content has to earn the stop — which in practice means Malayalam-first creative, real footage rather than stock, and a point of view rather than a product announcement.',
+      'Consistent posting is not a strategy in this market. The content has to earn the stop, which in practice means Malayalam-first creative, real footage rather than stock, and a point of view rather than a product announcement.',
       'We run social as production plus distribution: an in-house team shooting in Kerala, a bilingual calendar, paid budget behind whatever performs, and enquiries routed into a CRM instead of dying in a DM folder.',
     ],
     servicesHeading: 'Social Media Services Across Kerala',
@@ -456,7 +456,7 @@ export const keralaPages = [
       },
       {
         name: 'Malayalam-First Creative',
-        desc: 'Content written in Malayalam and adapted to regional register — Malabar copy reads differently from central Kerala, and audiences notice.',
+        desc: 'Content written in Malayalam and adapted to regional register, Malabar copy reads differently from central Kerala, and audiences notice.',
       },
       {
         name: 'Paid Social Advertising',
@@ -472,7 +472,7 @@ export const keralaPages = [
       },
       {
         name: 'Reporting & Attribution',
-        desc: 'Monthly reporting on reach, engagement rate, cost per enquiry and attributed revenue — plus the creative learnings behind the numbers.',
+        desc: 'Monthly reporting on reach, engagement rate, cost per enquiry and attributed revenue, plus the creative learnings behind the numbers.',
       },
     ],
     localHeading: 'What Actually Travels on Kerala Social',
@@ -524,13 +524,13 @@ export const keralaPages = [
     category: 'marketing',
     title: 'Performance Marketing Agency in Kerala | Google & Meta Ads | Infynix',
     description:
-      'Performance marketing agency in Kerala running Google Ads, Meta and conversion tracking wired into your CRM — optimised against qualified leads and revenue, not clicks.',
+      'Performance marketing agency in Kerala running Google Ads, Meta and conversion tracking wired into your CRM, optimised against qualified leads and revenue, not clicks.',
     h1: 'Performance Marketing Agency in Kerala',
     heroSubtitle:
-      'Paid media with the measurement built first — so you know which campaign produced revenue, not just which produced clicks.',
+      'Paid media with the measurement built first, so you know which campaign produced revenue, not just which produced clicks.',
     intro: [
       'Most paid media accounts we take over in Kerala share one defect: the tracking is wrong. Conversions fire on page loads rather than qualified actions, offline sales never make it back into the platform, and the algorithm has spent months optimising toward the wrong signal.',
-      'No amount of bid management fixes that. So we do measurement first — server-side tracking, CRM integration, offline conversion import — and only then start optimising spend. It makes for a slower first month and a materially better second quarter.',
+      'No amount of bid management fixes that. So we do measurement first, server-side tracking, CRM integration, offline conversion import, and only then start optimising spend. It makes for a slower first month and a materially better second quarter.',
       'We run Google, Meta and LinkedIn for Kerala businesses selling locally, nationally and into the Gulf.',
     ],
     servicesHeading: 'Performance Marketing Services',
@@ -545,7 +545,7 @@ export const keralaPages = [
       },
       {
         name: 'Conversion Tracking & Attribution',
-        desc: 'GA4, server-side tagging, CRM integration and offline conversion import — the layer that determines whether any of the rest works.',
+        desc: 'GA4, server-side tagging, CRM integration and offline conversion import, the layer that determines whether any of the rest works.',
       },
       {
         name: 'Landing Page Optimisation',
@@ -553,7 +553,7 @@ export const keralaPages = [
       },
       {
         name: 'Gulf & NRI Campaigns',
-        desc: 'Targeting Malayali audiences across the UAE, Saudi Arabia, Qatar and Oman — decisive for property, education, healthcare and jewellery.',
+        desc: 'Targeting Malayali audiences across the UAE, Saudi Arabia, Qatar and Oman, decisive for property, education, healthcare and jewellery.',
       },
       {
         name: 'Reporting & Forecasting',
@@ -572,7 +572,7 @@ export const keralaPages = [
           'Around ₹40,000 to ₹50,000 per month in media for a single channel is roughly where campaigns gather enough conversion data to optimise meaningfully. Below that the algorithms cannot learn quickly enough and you are largely paying for guesswork.',
       },
       {
-        question: 'How do you charge — percentage of spend or retainer?',
+        question: 'How do you charge, percentage of spend or retainer?',
         answer:
           'A flat retainer scoped to the work. Percentage-of-spend pricing creates an incentive to recommend higher budgets regardless of whether they are justified, and we would rather not have that sitting in the middle of our advice to you.',
       },
@@ -589,7 +589,7 @@ export const keralaPages = [
       {
         question: 'Do you run campaigns targeting the Gulf?',
         answer:
-          'Yes. For many Kerala businesses — real estate, education, healthcare, jewellery — Gulf-based Malayali audiences produce the highest-value enquiries. We run those as separate campaigns with their own creative, currency and measurement rather than bolting them onto domestic targeting.',
+          'Yes. For many Kerala businesses, real estate, education, healthcare, jewellery, Gulf-based Malayali audiences produce the highest-value enquiries. We run those as separate campaigns with their own creative, currency and measurement rather than bolting them onto domestic targeting.',
       },
     ],
     related: [

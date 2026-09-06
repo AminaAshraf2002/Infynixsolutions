@@ -133,7 +133,7 @@ export const subcategoryData = {
     keywords: ['Social Media', 'Community Management', 'Organic Social'],
     description: 'Building engaged communities and active followings on native social platforms.',
     challenge: 'Brands struggle to maintain a consistent, engaging voice across platforms.',
-    insight: 'Social media requires native understanding—what works on TikTok fails on LinkedIn.',
+    insight: 'Social media requires native understanding, what works on TikTok fails on LinkedIn.',
     solution: 'We curate, schedule, and engage with platform-specific content.',
     outcome: 'Active brand advocates and heightened brand awareness.',
     capabilities: [
@@ -208,7 +208,7 @@ export const subcategoryData = {
     keywords: ['Brand Strategy', 'Positioning', 'Messaging'],
     description: 'Defining your unique space in the market and how you communicate it.',
     challenge: 'Commoditized brands compete on price; distinct brands compete on value.',
-    insight: 'Positioning is about sacrifice—choosing exactly who you are not for.',
+    insight: 'Positioning is about sacrifice, choosing exactly who you are not for.',
     solution: 'We develop comprehensive brand archetypes, messaging pillars, and positioning statements.',
     outcome: 'A powerful, differentiated brand that commands premium pricing.',
     capabilities: [

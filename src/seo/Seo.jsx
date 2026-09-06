@@ -13,7 +13,7 @@ import { buildGraph } from './schema';
  * Renders head tags through Helmet so they exist in the prerendered HTML.
  *
  * The old SEOManager wrote tags in a useEffect, which meant a crawler reading the
- * raw response saw only the static index.html — every page shared one title and
+ * raw response saw only the static index.html, every page shared one title and
  * one description, and no canonical or JSON-LD existed until after hydration.
  *
  * @param {string}  title        Full <title>. Keep under ~60 chars.

@@ -21,7 +21,7 @@ const PartnersSection = () => {
         <div className="partners-grid">
           {partners.map((partner, i) => (
             <div className={`partner-logo ix-d${(i % 4) + 1}`} data-aos="fade-up" key={i}>
-              <img
+              <img loading="lazy" decoding="async"
                 src={partner.src}
                 alt={partner.name}
                 style={{

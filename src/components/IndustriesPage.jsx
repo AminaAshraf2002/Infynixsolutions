@@ -143,7 +143,7 @@ const IndustriesPage = () => {
           : 'Industries We Serve | Infynix Solutions, Kochi'}
         description={slug
           ? data.challenge
-          : 'Industry-specific software, automation and marketing systems from Infynix Solutions — healthcare, retail, education, real estate, manufacturing, hospitality and more.'}
+          : 'Industry-specific software, automation and marketing systems from Infynix Solutions, healthcare, retail, education, real estate, manufacturing, hospitality and more.'}
         canonicalUrl={slug ? `/industries/${industryKey}` : '/industries'}
       />
 

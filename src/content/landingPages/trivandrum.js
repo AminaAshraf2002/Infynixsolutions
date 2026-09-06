@@ -1,6 +1,6 @@
 // Thiruvananthapuram / Trivandrum landing pages.
 //
-// No Infynix office here either, so no LocalBusiness schema — these are honest
+// No Infynix office here either, so no LocalBusiness schema, these are honest
 // service-area pages (see LandingPage.jsx, which only emits LocalBusiness for
 // Kochi).
 //
@@ -22,20 +22,20 @@ export const trivandrumPages = [
     category: 'marketing',
     title: 'Digital Marketing Agency in Trivandrum (Thiruvananthapuram) | Infynix',
     description:
-      'Digital marketing agency serving Trivandrum and Thiruvananthapuram — SEO, Google and Meta ads, Malayalam social content and marketing automation for capital-city businesses.',
+      'Digital marketing agency serving Trivandrum and Thiruvananthapuram, SEO, Google and Meta ads, Malayalam social content and marketing automation for capital-city businesses.',
     h1: 'Digital Marketing Agency in Trivandrum',
     heroSubtitle:
-      'Search, paid media and automation for Thiruvananthapuram businesses — built by a Kerala team and measured against enquiries, not impressions.',
+      'Search, paid media and automation for Thiruvananthapuram businesses, built by a Kerala team and measured against enquiries, not impressions.',
     intro: [
-      'Thiruvananthapuram is the most institutionally dense market in Kerala. Government departments and PSUs, Technopark’s IT employers, a large medical and research cluster, universities, and Kovalam’s tourism economy — each buys in a completely different way.',
+      'Thiruvananthapuram is the most institutionally dense market in Kerala. Government departments and PSUs, Technopark’s IT employers, a large medical and research cluster, universities, and Kovalam’s tourism economy. Each buys in a completely different way.',
       'A campaign built for retail in Ernakulam does not transfer here. Government-adjacent buyers move on credibility and procurement cycles. Technopark’s salaried professionals are a high-intent consumer audience with money and very little patience. Tourism demand is seasonal and largely inbound from outside Kerala.',
-      'We build for those differences: separate funnels, separate creative, separate measurement — rather than one campaign pointed at "Trivandrum" and hoping.',
+      'We build for those differences: separate funnels, separate creative, separate measurement, rather than one campaign pointed at "Trivandrum" and hoping.',
     ],
     servicesHeading: 'Digital Marketing Services for Thiruvananthapuram Businesses',
     services: [
       {
         name: 'Local SEO for Trivandrum',
-        desc: 'Google Business Profile work, location pages and citations covering Technopark, Kazhakoottam, Pattom, Vazhuthacaud and the wider district — and ranking for both city spellings.',
+        desc: 'Google Business Profile work, location pages and citations covering Technopark, Kazhakoottam, Pattom, Vazhuthacaud and the wider district, and ranking for both city spellings.',
       },
       {
         name: 'Google Ads & Search Marketing',
@@ -60,7 +60,7 @@ export const trivandrumPages = [
     ],
     localHeading: 'Trivandrum Is Four Markets Wearing One Postcode',
     localBody: [
-      'Technopark alone employs tens of thousands of salaried professionals — a concentrated, high-income consumer audience most local advertisers address with the same generic creative they run statewide.',
+      'Technopark alone employs tens of thousands of salaried professionals, a concentrated, high-income consumer audience most local advertisers address with the same generic creative they run statewide.',
       'Meanwhile the government and PSU buying centre runs on tender cycles, committee approval and demonstrable credentials, where paid social does almost nothing and search visibility plus a credible website does almost everything.',
       'We start by deciding which of these you are actually selling to. That decision changes the channel mix more than any optimisation work that follows it.',
     ],
@@ -78,17 +78,17 @@ export const trivandrumPages = [
       {
         question: 'Can you help us reach Technopark employees?',
         answer:
-          'Yes, and it is one of the more targetable audiences in Kerala. Geographic radius targeting around Kazhakoottam combined with employer and interest targeting reaches a dense, high-income professional audience — effective for restaurants, fitness, education, real estate and financial services.',
+          'Yes, and it is one of the more targetable audiences in Kerala. Geographic radius targeting around Kazhakoottam combined with employer and interest targeting reaches a dense, high-income professional audience, effective for restaurants, fitness, education, real estate and financial services.',
       },
       {
         question: 'What does digital marketing cost in Trivandrum?',
         answer:
-          'Broadly in line with Kochi — a focused single-channel scope typically starts around ₹30,000 per month, rising with channels, languages and landing-page volume. Paid media costs in Thiruvananthapuram generally sit below Ernakulam, so ad budgets stretch further.',
+          'Broadly in line with Kochi, a focused single-channel scope typically starts around ₹30,000 per month, rising with channels, languages and landing-page volume. Paid media costs in Thiruvananthapuram generally sit below Ernakulam, so ad budgets stretch further.',
       },
       {
         question: 'Do you work with government or PSU clients?',
         answer:
-          'We work with private businesses that sell into that ecosystem, and with institutions on their public-facing digital presence. We are not a government empanelled vendor, so for tendered work we would typically partner rather than bid directly — we will say so upfront rather than waste your time.',
+          'We work with private businesses that sell into that ecosystem, and with institutions on their public-facing digital presence. We are not a government empanelled vendor, so for tendered work we would typically partner rather than bid directly. We will say so upfront rather than waste your time.',
       },
     ],
     related: [
@@ -108,12 +108,12 @@ export const trivandrumPages = [
     category: 'marketing',
     title: 'SEO Company in Trivandrum (Thiruvananthapuram) | Infynix Solutions',
     description:
-      'SEO services for Trivandrum and Thiruvananthapuram businesses — technical audits, local map-pack visibility, content and link building, reported against organic enquiries.',
+      'SEO services for Trivandrum and Thiruvananthapuram businesses, technical audits, local map-pack visibility, content and link building, reported against organic enquiries.',
     h1: 'SEO Company in Trivandrum',
     heroSubtitle:
       'Technical foundations, local authority and content depth for Thiruvananthapuram search visibility.',
     intro: [
-      'Trivandrum has one of the least contested search markets among Kerala’s major cities. Most agencies chasing Kerala keywords optimise for Kochi first and treat the capital as an afterthought — which leaves genuinely valuable terms sitting there.',
+      'Trivandrum has one of the least contested search markets among Kerala’s major cities. Most agencies chasing Kerala keywords optimise for Kochi first and treat the capital as an afterthought, which leaves genuinely valuable terms sitting there.',
       'The sites we audit here fail on the same fundamentals seen statewide: unclaimed Google Business Profiles, inconsistent addresses across directories, duplicated title tags, no structured data, and mobile pages heavy enough to lose visitors before they render.',
       'None of that is difficult work. It is disciplined work, and doing it consistently is usually enough to reach page one for capital-city service terms.',
     ],
@@ -125,11 +125,11 @@ export const trivandrumPages = [
       },
       {
         name: 'Dual-Spelling Keyword Coverage',
-        desc: 'Ranking for both "Trivandrum" and "Thiruvananthapuram" variants across your service terms — a volume pocket almost nobody here contests properly.',
+        desc: 'Ranking for both "Trivandrum" and "Thiruvananthapuram" variants across your service terms, a volume pocket almost nobody here contests properly.',
       },
       {
         name: 'Technical SEO',
-        desc: 'Crawl, render and indexation audits, Core Web Vitals, canonical and redirect logic — assessed against the raw server response, not just the rendered page.',
+        desc: 'Crawl, render and indexation audits, Core Web Vitals, canonical and redirect logic, assessed against the raw server response, not just the rendered page.',
       },
       {
         name: 'JavaScript SEO',
@@ -147,7 +147,7 @@ export const trivandrumPages = [
     localHeading: 'Why Capital-City SEO Is Winnable Here',
     localBody: [
       'Search competition in Thiruvananthapuram is materially thinner than in Ernakulam for equivalent commercial terms. The institutional buyers here also research far more thoroughly before making contact, which means organic visibility does more of the selling than it does in an impulse-driven retail market.',
-      'That combination — lower competition, higher research intent — makes SEO one of the better-value channels available to a Trivandrum business. Realistic expectation for local service terms with consistent execution is page one within four to six months.',
+      'That combination, lower competition, higher research intent, makes SEO one of the better-value channels available to a Trivandrum business. Realistic expectation for local service terms with consistent execution is page one within four to six months.',
     ],
     faqs: [
       {
@@ -158,12 +158,12 @@ export const trivandrumPages = [
       {
         question: 'Can you do SEO for us from Kochi?',
         answer:
-          'Yes. SEO is executed on your website, your Google Business Profile and your citation profile — none of which depend on our physical location. Your address is what determines local ranking. We travel to Thiruvananthapuram for strategy sessions and content work where it adds value.',
+          'Yes. SEO is executed on your website, your Google Business Profile and your citation profile. None of which depend on our physical location. Your address is what determines local ranking. We travel to Thiruvananthapuram for strategy sessions and content work where it adds value.',
       },
       {
         question: 'Our website was built by a Technopark firm and is not ranking. Why?',
         answer:
-          'The most common causes we find are a JavaScript-rendered site that serves crawlers no content, missing or duplicated title tags across pages, no structured data, and an unclaimed Google Business Profile. All are diagnosable in a technical audit and all are fixable — often without rebuilding anything.',
+          'The most common causes we find are a JavaScript-rendered site that serves crawlers no content, missing or duplicated title tags across pages, no structured data, and an unclaimed Google Business Profile. All are diagnosable in a technical audit and all are fixable, often without rebuilding anything.',
       },
       {
         question: 'Do you handle Malayalam SEO?',
@@ -173,7 +173,7 @@ export const trivandrumPages = [
       {
         question: 'What does SEO cost in Trivandrum?',
         answer:
-          'Typically ₹20,000 to ₹70,000 per month depending on competition, number of service lines and content volume — generally below the equivalent Kochi range. A one-off technical audit is a fixed fee and is usually the sensible first step.',
+          'Typically ₹20,000 to ₹70,000 per month depending on competition, number of service lines and content volume, generally below the equivalent Kochi range. A one-off technical audit is a fixed fee and is usually the sensible first step.',
       },
     ],
     related: [
@@ -193,14 +193,14 @@ export const trivandrumPages = [
     category: 'technology',
     title: 'Software Development Company in Trivandrum (Thiruvananthapuram) | Infynix',
     description:
-      'Software development for Trivandrum and Thiruvananthapuram businesses — custom web platforms, CRM and ERP systems, mobile apps and AI automation, built by a Kerala engineering team.',
+      'Software development for Trivandrum and Thiruvananthapuram businesses, custom web platforms, CRM and ERP systems, mobile apps and AI automation, built by a Kerala engineering team.',
     h1: 'Software Development Company in Trivandrum',
     heroSubtitle:
       'Custom platforms, integrations and automation for Thiruvananthapuram businesses and institutions.',
     intro: [
-      'Trivandrum has no shortage of software talent — Technopark has been Kerala’s flagship IT campus for three decades. What businesses outside that campus often struggle to find is a partner who will build one system properly and stay accountable for it, rather than staffing a project and rotating the team.',
+      'Trivandrum has no shortage of software talent, Technopark has been Kerala’s flagship IT campus for three decades. What businesses outside that campus often struggle to find is a partner who will build one system properly and stay accountable for it, rather than staffing a project and rotating the team.',
       'We build custom web platforms, CRM and ERP systems, mobile applications and the integration layer between tools you already run. Engagements start with a paid discovery phase producing a scoped roadmap and a fixed phase-one estimate.',
-      'You own the code, the repositories and the infrastructure. We build on conventional stacks — React, Node, Python, PostgreSQL, AWS or Azure — specifically so a local team can take it over later if you want that.',
+      'You own the code, the repositories and the infrastructure. We build on conventional stacks, React, Node, Python, PostgreSQL, AWS or Azure, specifically so a local team can take it over later if you want that.',
     ],
     servicesHeading: 'Software Engineering for Thiruvananthapuram',
     services: [
@@ -231,14 +231,14 @@ export const trivandrumPages = [
     ],
     localHeading: 'Building Alongside the Technopark Ecosystem',
     localBody: [
-      'Technopark has given Thiruvananthapuram genuine engineering depth, and the Kerala Startup Mission has added a steady flow of early-stage product companies to it. For a business here, that means real options — and it means a partner should be judged on continuity and accountability rather than headcount.',
+      'Technopark has given Thiruvananthapuram genuine engineering depth, and the Kerala Startup Mission has added a steady flow of early-stage product companies to it. For a business here, that means real options, and it means a partner should be judged on continuity and accountability rather than headcount.',
       'We work with startups needing a first product built properly, and with established Trivandrum organisations replacing systems that have quietly become the constraint on how fast they can operate.',
     ],
     faqs: [
       {
         question: 'Why not use a Technopark company directly?',
         answer:
-          'For many projects you should, and we will say so if that is the honest answer. Where we tend to fit better is work that spans engineering and growth — a platform plus the marketing technology, tracking and search architecture around it — which is usually split across two vendors who then blame each other.',
+          'For many projects you should, and we will say so if that is the honest answer. Where we tend to fit better is work that spans engineering and growth, a platform plus the marketing technology, tracking and search architecture around it, which is usually split across two vendors who then blame each other.',
       },
       {
         question: 'What does custom software cost?',
@@ -253,7 +253,7 @@ export const trivandrumPages = [
       {
         question: 'Can you build software for educational institutions?',
         answer:
-          'Yes — admissions workflows, student information systems, learning platforms and parent or student portals. Thiruvananthapuram’s university and college density makes this a common request, and the requirements differ enough from commercial software that experience matters.',
+          'Yes, admissions workflows, student information systems, learning platforms and parent or student portals. Thiruvananthapuram’s university and college density makes this a common request, and the requirements differ enough from commercial software that experience matters.',
       },
       {
         question: 'How do you work with clients three hours away?',
@@ -278,14 +278,14 @@ export const trivandrumPages = [
     category: 'technology',
     title: 'Web Design Company in Trivandrum (Thiruvananthapuram) | Infynix',
     description:
-      'Web design and development for Trivandrum businesses — fast, crawlable, accessible websites and e-commerce stores built to rank and convert, not just to look good.',
+      'Web design and development for Trivandrum businesses, fast, crawlable, accessible websites and e-commerce stores built to rank and convert, not just to look good.',
     h1: 'Web Design Company in Trivandrum',
     heroSubtitle:
-      'Websites for Thiruvananthapuram businesses and institutions — engineered for speed, search visibility and accessibility.',
+      'Websites for Thiruvananthapuram businesses and institutions, engineered for speed, search visibility and accessibility.',
     intro: [
       'The websites we audit in Thiruvananthapuram tend to fall into two groups. Institutional sites that hold a great deal of information and are almost impossible to navigate on a phone. And business sites that look current but load slowly, cannot be crawled properly, and give a visitor no obvious way to make contact.',
       'We build for the opposite outcome: prerendered or server-rendered HTML so search engines get real content, a genuine heading structure, structured data, correctly sized images, and one clear conversion path.',
-      'Accessibility matters more here than in most Kerala markets — institutional and government-adjacent sites are held to a real standard, and we build to it rather than retrofitting later.',
+      'Accessibility matters more here than in most Kerala markets, institutional and government-adjacent sites are held to a real standard, and we build to it rather than retrofitting later.',
     ],
     servicesHeading: 'Website Services in Thiruvananthapuram',
     services: [
@@ -303,7 +303,7 @@ export const trivandrumPages = [
       },
       {
         name: 'Accessibility & Compliance',
-        desc: 'WCAG-informed builds — keyboard navigation, contrast, semantic structure and screen-reader support — which institutional buyers increasingly require.',
+        desc: 'WCAG-informed builds, keyboard navigation, contrast, semantic structure and screen-reader support, which institutional buyers increasingly require.',
       },
       {
         name: 'Performance Optimisation',
@@ -323,7 +323,7 @@ export const trivandrumPages = [
       {
         question: 'How much does a website cost in Trivandrum?',
         answer:
-          'A well-built business site with proper SEO foundations typically runs ₹75,000 to ₹3,00,000 depending on page count, design depth and integrations. Institutional sites with large content structures and e-commerce builds start higher. Very cheap builds usually cost more later — those are the ones we most often get called to rescue.',
+          'A well-built business site with proper SEO foundations typically runs ₹75,000 to ₹3,00,000 depending on page count, design depth and integrations. Institutional sites with large content structures and e-commerce builds start higher. Very cheap builds usually cost more later, those are the ones we most often get called to rescue.',
       },
       {
         question: 'How long does it take?',
@@ -343,7 +343,7 @@ export const trivandrumPages = [
       {
         question: 'Do you work with WordPress?',
         answer:
-          'Where it fits — typically content-heavy institutional sites a non-technical team edits daily. For applications, complex e-commerce or anything needing real performance headroom we usually recommend a modern JavaScript stack and will explain the trade-off honestly.',
+          'Where it fits, typically content-heavy institutional sites a non-technical team edits daily. For applications, complex e-commerce or anything needing real performance headroom we usually recommend a modern JavaScript stack and will explain the trade-off honestly.',
       },
     ],
     related: [

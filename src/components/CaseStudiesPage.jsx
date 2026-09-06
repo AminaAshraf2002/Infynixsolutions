@@ -46,7 +46,7 @@ const CaseStudiesPage = () => {
   // Track the slug the animation is currently running for in a ref instead of
   // depending on `currentStudy` state directly. Previously this effect depended
   // on [targetStudy, currentStudy], but the effect itself calls setCurrentStudy()
-  // inside timer1 — that state change re-triggered the effect mid-animation,
+  // inside timer1. That state change re-triggered the effect mid-animation,
   // and React's cleanup ran before the re-run, clearing timer2/timer3 before
   // they fired. That left slideState stuck on 'sliding-in' (opacity: 0) forever,
   // i.e. the new case study content was invisible until a full page refresh
@@ -104,7 +104,7 @@ const CaseStudiesPage = () => {
           : 'Case Studies | Software & Growth Projects | Infynix Solutions'}
         description={slug
           ? `How Infynix rebuilt operations for ${currentStudy.client}. ${currentStudy.objectives.slice(0, 110)}`
-          : 'Case studies from Infynix Solutions — custom platforms, systems integration and growth engineering delivered for clients across Kerala, India and the GCC.'}
+          : 'Case studies from Infynix Solutions, custom platforms, systems integration and growth engineering delivered for clients across Kerala, India and the GCC.'}
         canonicalUrl={slug ? `/case-studies/${currentStudy.slug}` : '/case-studies'}
         schemaData={{
           '@context': 'https://schema.org',
