@@ -2,12 +2,12 @@ import { Link } from 'react-router-dom';
 import './HeroSection.css';
 import HeroBackground from './HeroBackground';
 
-const PILLARS = ['Software', 'AI Surveillance', 'Marketing & SEO'];
+const PILLARS = ['Software & Web', 'AI Surveillance', 'Retail Growth Systems'];
 
 const REGIONS = ['Kerala', 'GCC', 'United Kingdom'];
 
 function HeroSection({ data }) {
-  const eyebrow = data?.eyebrow || 'INFYNIX SOLUTIONS — SOFTWARE & AI ENGINEERING';
+  const eyebrow = data?.eyebrow || 'INFYNIX SOLUTIONS — THE GROWTH ENGINEERING COMPANY';
 
   return (
     <section className="hero-section">
@@ -19,11 +19,11 @@ function HeroSection({ data }) {
           <span className="hero-eyebrow">{eyebrow}</span>
 
           <h1 className="hero-title">
-            Software Engineering, <span className="title-highlight">AI Surveillance</span> & Growth Systems
+            Software, <span className="title-highlight">AI Surveillance</span> & Retail Growth Systems
           </h1>
 
           <p style={{ color: '#ccc', fontSize: '1.05rem', marginTop: '1rem', marginBottom: '1.8rem', maxWidth: '680px', lineHeight: 1.6, fontFamily: 'var(--ix-font-body)' }}>
-            Custom software development, real-time edge AI security systems, technical search pre-rendering, and performance marketing.
+            We engineer custom software platforms, real-time edge AI surveillance, and retail growth systems driven by our Growth Engineering philosophy.
           </p>
 
           <ol className="hero-method" aria-label="What we build">
@@ -40,7 +40,7 @@ function HeroSection({ data }) {
               Book a Discovery Call
             </Link>
             <Link to="/growth-engineering" className="hero-btn hero-btn-ghost">
-              Explore Growth Systems
+              Explore Growth Engineering
             </Link>
           </div>
 

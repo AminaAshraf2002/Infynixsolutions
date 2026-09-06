@@ -10,10 +10,10 @@ export const SITE_URL = 'https://www.infynix-solutions.com';
 export const SITE_NAME = 'Infynix Solutions';
 
 export const DEFAULT_TITLE =
-  'Infynix Solutions | Software, AI Surveillance & Growth Engineering';
+  'Infynix Solutions | The Growth Engineering Company';
 
 export const DEFAULT_DESCRIPTION =
-  'Infynix Solutions is a Software, AI Surveillance, and Growth Engineering company in Kochi, Kerala. We engineer custom software applications, real-time edge AI security systems, technical SEO, and performance ad campaigns.';
+  'Infynix Solutions is a Growth Engineering company in Kochi, Kerala. We engineer custom web software, real-time edge AI surveillance, and retail growth systems across Kerala, the GCC, and the United Kingdom.';
 
 export const DEFAULT_OG_IMAGE = `${SITE_URL}/logo.png`;
 
