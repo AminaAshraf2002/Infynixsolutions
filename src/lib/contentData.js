@@ -1,5 +1,5 @@
 // Centralized data repository for solutions, industries, case studies, insights, and FAQs
-import { subcategoryData } from './subcategoryData';
+import { subcategoryData } from './subcategoryData.js';
 
 export const solutionsData = {
   ...subcategoryData,

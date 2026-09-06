@@ -6,6 +6,8 @@ import capImg1 from '../assets/mark.png';
 import capImg2 from '../assets/media.png';
 import capImg3 from '../assets/marketing.png';
 import heroBg from '../assets/hero_bg_solutions_index.jpg';
+import Seo from '../seo/Seo';
+import { organizationSchema, breadcrumbSchema } from '../seo/schema';
 
 // Marquee Card (adapted for dark theme)
 const MarqueeCard = ({ title }) => {
@@ -94,6 +96,18 @@ const SolutionsIndex = () => {
 
   return (
     <div style={{ background: '#000', color: '#fff', minHeight: '100vh', fontFamily: 'var(--ix-font-body)' }}>
+      <Seo
+        title="Our Services | Web, App, AI & Marketing Solutions | Infynix"
+        description="Website and mobile app development, AI and business automation, CRM and ERP systems, SEO and performance marketing — the full Infynix Solutions service range, delivered from Kochi."
+        path="/solutions"
+        schema={[
+          organizationSchema(),
+          breadcrumbSchema([
+            { name: 'Home', path: '/' },
+            { name: 'Solutions', path: '/solutions' },
+          ]),
+        ]}
+      />
       <style dangerouslySetInnerHTML={{__html: `
         .service-card-left:hover .service-bg-img {
           transform: scale(1.05);

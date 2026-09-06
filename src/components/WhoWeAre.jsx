@@ -6,6 +6,8 @@ import { Link } from "react-router-dom";
 import "./InfynixDesign.css";
 import storyVideo from "../assets/video.mp4";
 import teamImg from '../assets/team.png';
+import Seo from '../seo/Seo';
+import { organizationSchema, breadcrumbSchema } from '../seo/schema';
 
 export function useIxReveal() {
   useEffect(() => {
@@ -52,6 +54,18 @@ export default function WhoWeAre() {
 
   return (
     <div style={{ background: "#fff" }}>
+      <Seo
+        title="About Infynix Solutions | Growth Engineering Company in Kochi"
+        description="Infynix Solutions is a growth engineering company headquartered in Kochi, Kerala with offices in London and Dubai, building technology, marketing and operations systems as one connected whole."
+        path="/about"
+        schema={[
+          organizationSchema(),
+          breadcrumbSchema([
+            { name: 'Home', path: '/' },
+            { name: 'About', path: '/about' },
+          ]),
+        ]}
+      />
 
       {/* ══ HERO — Zendesk Replica ══ */}
       <section className="solutions-hero-section" style={{

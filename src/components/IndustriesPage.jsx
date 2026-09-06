@@ -135,10 +135,16 @@ const IndustriesPage = () => {
 
   return (
     <div style={{ background: '#fff', color: '#1F2937', fontFamily: "'Montserrat', sans-serif", overflowX: 'hidden' }}>
+      {/* Same index/detail collision as case studies: /industries rendered the
+          healthcare entry and copied its title and canonical. */}
       <SEOManager
-        title={`${data.name} Solutions | Infynix`}
-        description={data.challenge}
-        canonicalUrl={`https://infynix.com/industries/${industryKey}`}
+        title={slug
+          ? `${data.name} Software & Digital Solutions | Infynix Solutions`
+          : 'Industries We Serve | Infynix Solutions, Kochi'}
+        description={slug
+          ? data.challenge
+          : 'Industry-specific software, automation and marketing systems from Infynix Solutions — healthcare, retail, education, real estate, manufacturing, hospitality and more.'}
+        canonicalUrl={slug ? `/industries/${industryKey}` : '/industries'}
       />
 
       <style>{`

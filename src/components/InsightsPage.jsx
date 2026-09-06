@@ -75,7 +75,7 @@ const InsightsPage = () => {
         <SEOManager
           title={`${article.title} | Infynix`}
           description={article.summary}
-          canonicalUrl={`https://infynix.com/insights/${slug}`}
+          canonicalUrl={`https://www.infynix-solutions.com/insights/${slug}`}
           schemaData={{
             '@context': 'https://schema.org',
             '@type': 'Article',
@@ -187,7 +187,7 @@ const InsightsPage = () => {
       <SEOManager
         title="Insights | Infynix"
         description="Growth Insights"
-        canonicalUrl="https://infynix.com/insights"
+        canonicalUrl="https://www.infynix-solutions.com/insights"
         schemaData={{
           '@context': 'https://schema.org',
           '@type': 'Blog',

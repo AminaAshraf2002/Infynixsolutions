@@ -95,10 +95,17 @@ const CaseStudiesPage = () => {
 
   return (
     <div style={{ background: '#fff', color: '#333', fontFamily: 'var(--ix-font-body)', position: 'relative', overflow: 'hidden', paddingBottom: '100px', minHeight: '100vh' }}>
+      {/* The index route renders the first study, so without this branch
+          /case-studies and /case-studies/<first-slug> shipped an identical
+          title, description and canonical. */}
       <SEOManager
-        title={`${currentStudy.client} Systems Integration Case Study | Infynix`}
-        description={`Learn how Infynix optimized operations for ${currentStudy.client}. Dynamic strategy: ${currentStudy.objectives.slice(0, 120)}`}
-        canonicalUrl={`https://infynix.com/case-studies/${currentStudy.slug}`}
+        title={slug
+          ? `${currentStudy.client} Case Study | Infynix Solutions`
+          : 'Case Studies | Software & Growth Projects | Infynix Solutions'}
+        description={slug
+          ? `How Infynix rebuilt operations for ${currentStudy.client}. ${currentStudy.objectives.slice(0, 110)}`
+          : 'Case studies from Infynix Solutions — custom platforms, systems integration and growth engineering delivered for clients across Kerala, India and the GCC.'}
+        canonicalUrl={slug ? `/case-studies/${currentStudy.slug}` : '/case-studies'}
         schemaData={{
           '@context': 'https://schema.org',
           '@type': 'Article',

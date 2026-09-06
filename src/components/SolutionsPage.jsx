@@ -228,7 +228,7 @@ const SolutionsPage = () => {
       <SEOManager
         title={`${data.title} | Infynix Solutions`}
         description={data.description}
-        canonicalUrl={`https://infynix.com/solutions/${slug}`}
+        canonicalUrl={`https://www.infynix-solutions.com/solutions/${slug}`}
       />
 
       {/* ══ 1. HERO SECTION ══ */}

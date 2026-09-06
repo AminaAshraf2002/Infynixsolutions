@@ -1,0 +1,171 @@
+import { useEffect } from 'react';
+import { Link, useParams } from 'react-router-dom';
+import './LandingPage.css';
+
+import Seo from '../seo/Seo';
+import { getLandingPage, landingPageBySlug } from '../content/landingPages';
+import { BUSINESS } from '../seo/siteConfig';
+import {
+  organizationSchema,
+  localBusinessSchema,
+  breadcrumbSchema,
+  faqSchema,
+  serviceSchema,
+} from '../seo/schema';
+import { NotFoundPage } from './UtilityPages';
+
+/**
+ * Renders a location + service landing page.
+ *
+ * Heading contract, enforced by the markup rather than left to the content:
+ *   h1  page.h1                     (exactly one)
+ *   h2  section headings            (services, local context, FAQ, CTA)
+ *   h3  individual services / FAQ questions
+ * Nothing here is allowed to emit a second h1.
+ */
+export default function LandingPage({ slug: slugProp }) {
+  const params = useParams();
+  const slug = slugProp || params.slug;
+  const page = getLandingPage(slug);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [slug]);
+
+  if (!page) return <NotFoundPage />;
+
+  const path = `/${page.slug}`;
+  const isKochi = page.city === 'Kochi';
+
+  const schema = [
+    organizationSchema(),
+    // Only the Kochi pages carry LocalBusiness — that is the one address Infynix
+    // actually occupies. Asserting a physical presence elsewhere is what gets
+    // Google Business Profiles suspended.
+    isKochi ? localBusinessSchema() : null,
+    serviceSchema({
+      name: `${page.service} in ${page.city}`,
+      description: page.description,
+      path,
+      areaServed: [page.city, page.cityAlt, page.region].filter(Boolean),
+    }),
+    breadcrumbSchema([
+      { name: 'Home', path: '/' },
+      { name: page.h1, path },
+    ]),
+    faqSchema(page.faqs),
+  ];
+
+  return (
+    <div className="lp">
+      <Seo
+        title={page.title}
+        description={page.description}
+        path={path}
+        schema={schema}
+      />
+
+      {/* Deliberately a div, not a <nav>: index.css carries a global
+          `nav { ... !important }` rule under 1024px for the site navbar, which
+          would otherwise position this breadcrumb as a floating header. */}
+      <div className="lp-breadcrumb" role="navigation" aria-label="Breadcrumb">
+        <ol>
+          <li><Link to="/">Home</Link></li>
+          <li aria-current="page">{page.h1}</li>
+        </ol>
+      </div>
+
+      <header className="lp-hero">
+        <span className="lp-eyebrow">
+          {page.service} · {page.city}
+          {page.cityAlt ? ` (${page.cityAlt})` : ''}
+        </span>
+        <h1 className="lp-h1">{page.h1}</h1>
+        <p className="lp-sub">{page.heroSubtitle}</p>
+        <div className="lp-actions">
+          <Link to="/contact" className="lp-btn lp-btn-primary">
+            Book a Discovery Call
+          </Link>
+          <a href={`tel:${BUSINESS.telephone.replace(/[^+\d]/g, '')}`} className="lp-btn lp-btn-ghost">
+            Call {BUSINESS.telephone}
+          </a>
+        </div>
+      </header>
+
+      <section className="lp-section lp-intro">
+        {page.intro.map((paragraph, i) => (
+          <p key={i}>{paragraph}</p>
+        ))}
+      </section>
+
+      <section className="lp-section">
+        <h2 className="lp-h2">{page.servicesHeading}</h2>
+        <div className="lp-grid">
+          {page.services.map((service) => (
+            <article key={service.name} className="lp-card">
+              <h3 className="lp-h3">{service.name}</h3>
+              <p>{service.desc}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="lp-section lp-local">
+        <h2 className="lp-h2">{page.localHeading}</h2>
+        {page.localBody.map((paragraph, i) => (
+          <p key={i}>{paragraph}</p>
+        ))}
+      </section>
+
+      <section className="lp-section">
+        <h2 className="lp-h2">Frequently Asked Questions</h2>
+        <div className="lp-faqs">
+          {page.faqs.map((faq) => (
+            <details key={faq.question} className="lp-faq">
+              {/* The answer stays in the DOM whether or not the item is open, so
+                  crawlers read it and the FAQPage markup matches visible content. */}
+              <summary>
+                <h3 className="lp-h3">{faq.question}</h3>
+              </summary>
+              <p>{faq.answer}</p>
+            </details>
+          ))}
+        </div>
+      </section>
+
+      {page.related?.length > 0 && (
+        <section className="lp-section">
+          <h2 className="lp-h2">Related Services</h2>
+          <ul className="lp-related">
+            {page.related
+              .filter((relatedSlug) => landingPageBySlug[relatedSlug])
+              .map((relatedSlug) => (
+                <li key={relatedSlug}>
+                  <Link to={`/${relatedSlug}`}>
+                    {landingPageBySlug[relatedSlug].h1}
+                  </Link>
+                </li>
+              ))}
+          </ul>
+        </section>
+      )}
+
+      <section className="lp-section lp-cta">
+        <h2 className="lp-h2">Talk to Infynix About {page.service} in {page.city}</h2>
+        <p>
+          Tell us what you are trying to grow and we will tell you honestly whether we
+          are the right people for it.
+        </p>
+        <address className="lp-address">
+          {BUSINESS.address.street}, {BUSINESS.address.locality},{' '}
+          {BUSINESS.address.region} {BUSINESS.address.postalCode}
+          <br />
+          <a href={`tel:${BUSINESS.telephone.replace(/[^+\d]/g, '')}`}>{BUSINESS.telephone}</a>
+          {' · '}
+          <a href={`mailto:${BUSINESS.email}`}>{BUSINESS.email}</a>
+        </address>
+        <Link to="/contact" className="lp-btn lp-btn-primary">Get in Touch</Link>
+      </section>
+    </div>
+  );
+}

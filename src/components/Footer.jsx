@@ -85,6 +85,41 @@ const Footer = () => {
               <Link to="/industries/education">Education</Link>
             </div>
             <div className="footer-nav-col">
+              {/* Location pages need internal links from a sitewide element — a
+                  sitemap entry alone is a weak discovery and equity signal. Top
+                  pages per city only; the full set is reachable from each page's
+                  "Related Services" block and the sitemap. */}
+              <span style={{ color: '#ffffff', fontWeight: 'bold', fontSize: '0.85rem', marginBottom: '8px' }}>KOCHI</span>
+              <Link to="/digital-marketing-agency-in-kochi">Digital Marketing Agency in Kochi</Link>
+              <Link to="/software-development-company-in-kochi">Software Development Company in Kochi</Link>
+              <Link to="/seo-company-in-kochi">SEO Company in Kochi</Link>
+              <Link to="/web-design-company-in-kochi">Web Design Company in Kochi</Link>
+              <Link to="/mobile-app-development-company-in-kochi">Mobile App Development in Kochi</Link>
+              <Link to="/ecommerce-website-development-company-in-kochi">E-Commerce Development in Kochi</Link>
+            </div>
+            <div className="footer-nav-col">
+              <span style={{ color: '#ffffff', fontWeight: 'bold', fontSize: '0.85rem', marginBottom: '8px' }}>KERALA</span>
+              <Link to="/digital-marketing-agency-in-kerala">Digital Marketing Agency in Kerala</Link>
+              <Link to="/software-development-company-in-kerala">Software Development Company in Kerala</Link>
+              <Link to="/seo-company-in-kerala">SEO Company in Kerala</Link>
+              <Link to="/web-design-company-in-kerala">Web Design Company in Kerala</Link>
+              <Link to="/performance-marketing-agency-in-kerala">Performance Marketing in Kerala</Link>
+            </div>
+            <div className="footer-nav-col">
+              <span style={{ color: '#ffffff', fontWeight: 'bold', fontSize: '0.85rem', marginBottom: '8px' }}>TRIVANDRUM</span>
+              <Link to="/digital-marketing-agency-in-trivandrum">Digital Marketing in Trivandrum</Link>
+              <Link to="/software-development-company-in-trivandrum">Software Development in Trivandrum</Link>
+              <Link to="/seo-company-in-trivandrum">SEO Company in Trivandrum</Link>
+              <Link to="/web-design-company-in-trivandrum">Web Design Company in Trivandrum</Link>
+            </div>
+            <div className="footer-nav-col">
+              <span style={{ color: '#ffffff', fontWeight: 'bold', fontSize: '0.85rem', marginBottom: '8px' }}>KOZHIKODE</span>
+              <Link to="/digital-marketing-agency-in-kozhikode">Digital Marketing in Kozhikode</Link>
+              <Link to="/software-development-company-in-kozhikode">Software Development in Kozhikode</Link>
+              <Link to="/seo-company-in-kozhikode">SEO Company in Kozhikode</Link>
+              <Link to="/web-design-company-in-kozhikode">Web Design Company in Kozhikode</Link>
+            </div>
+            <div className="footer-nav-col">
               <span style={{ color: '#ffffff', fontWeight: 'bold', fontSize: '0.85rem', marginBottom: '8px' }}>LEGAL</span>
               <Link to="/privacy-policy">Privacy Policy</Link>
               <Link to="/terms-of-service">Terms of Use</Link>

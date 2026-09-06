@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import "./Contact.css";
 import kochiImage from "../assets/kochi-office.jpg";
+import Seo from '../seo/Seo';
+import { organizationSchema, localBusinessSchema, breadcrumbSchema } from '../seo/schema';
 
 const ArrowIcon = () => (
     <svg viewBox="0 0 14 14" fill="none" width="13" height="13">
@@ -59,6 +61,19 @@ export default function Contact() {
 
     return (
         <div className="contact-page">
+            <Seo
+                title="Contact Infynix Solutions | Offices in Kochi, Dubai & London"
+                description="Talk to Infynix Solutions about digital marketing, software development or automation. Kerala office: 7th Floor, National Pearl Star Building, Edappally, Kochi 682024. Call +91 99959 11140."
+                path="/contact"
+                schema={[
+                    organizationSchema(),
+                    localBusinessSchema(),
+                    breadcrumbSchema([
+                        { name: 'Home', path: '/' },
+                        { name: 'Contact', path: '/contact' },
+                    ]),
+                ]}
+            />
             {/* ── HERO SECTION ── */}
             <section className="contact-form-section">
                 <div className="contact-form-section-bg-text">CONTACT</div>
