@@ -2,12 +2,17 @@ import { Link } from 'react-router-dom';
 import './HeroSection.css';
 import HeroBackground from './HeroBackground';
 
-// The five stages of the Growth Engineering method. Rendered as real text rather
-// than an image, so it is crawlable, translatable and weighs nothing.
-const METHOD = ['Attract', 'Engage', 'Convert', 'Optimise', 'Scale'];
+// The three practices, as real text rather than a graphic: crawlable,
+// translatable and weightless. The five-stage method is not repeated here
+// because the section directly below the hero already carries it.
+const PILLARS = ['Marketing & Media', 'Software & Platforms', 'AI Vision & Surveillance'];
+
+// Where the company operates. Also the only place on the homepage that names the
+// three markets, which matters for entity signals as much as for the narrative.
+const REGIONS = ['Kerala', 'GCC', 'United Kingdom'];
 
 function HeroSection({ data }) {
-  const eyebrow = data?.eyebrow || 'GROWTH ENGINEERING COMPANY';
+  const eyebrow = data?.eyebrow || 'A GROWTH ENGINEERING COMPANY';
 
   return (
     <section className="hero-section">
@@ -19,35 +24,46 @@ function HeroSection({ data }) {
           <span className="hero-eyebrow">{eyebrow}</span>
 
           <h1 className="hero-title">
-            Creative that performs.
+            Growth Engineering.
             <br />
-            <span className="title-highlight">Systems that compound.</span>
+            <span className="title-highlight">A discipline we are building.</span>
           </h1>
 
           <p className="hero-subtitle">
-            We are a marketing and media agency with an engineering team behind it.
-            Brand, content and campaigns at the front. Connected data, automation
-            and platforms underneath. So every rupee you spend keeps working long
-            after the campaign ends.
+            Marketing wins attention. Software creates leverage. AI tells you what
+            is actually happening. Most companies buy the three from three
+            different vendors, then wonder why none of it compounds. We engineer
+            them as one system.
           </p>
 
-          <ol className="hero-method" aria-label="The Growth Engineering method">
-            {METHOD.map((stage, index) => (
-              <li key={stage} className="hero-method-item">
+          <ol className="hero-method" aria-label="What we build">
+            {PILLARS.map((pillar, index) => (
+              <li key={pillar} className="hero-method-item">
                 <span className="hero-method-index">{String(index + 1).padStart(2, '0')}</span>
-                <span className="hero-method-label">{stage}</span>
+                <span className="hero-method-label">{pillar}</span>
               </li>
             ))}
           </ol>
+
+          <p className="hero-claim">
+            A category we are building rather than borrowing. Engineered in Kochi,
+            for clients across Kerala, the Gulf and the United Kingdom.
+          </p>
 
           <div className="hero-actions">
             <Link to="/contact" className="hero-btn hero-btn-primary">
               Book a Discovery Call
             </Link>
             <Link to="/growth-engineering" className="hero-btn hero-btn-ghost">
-              The Growth Engineering Method
+              What Growth Engineering Means
             </Link>
           </div>
+
+          <ul className="hero-regions" aria-label="Where we operate">
+            {REGIONS.map((region) => (
+              <li key={region} className="hero-region">{region}</li>
+            ))}
+          </ul>
         </div>
       </div>
     </section>

@@ -19,7 +19,7 @@
   width: calc(100% - 48px);
   max-width: 1920px;
   margin: -20px auto 0;
-  min-height: 84vh;
+  min-height: 88vh;
   border-radius: 32px;
   overflow: hidden;
   display: flex;
@@ -67,8 +67,8 @@
   flex-direction: column;
   align-items: flex-start;
   text-align: left;
-  gap: 1.4rem;
-  padding: 4rem clamp(2rem, 4vw, 5vw);
+  gap: 1.25rem;
+  padding: 3.5rem clamp(2rem, 4vw, 5vw);
   box-sizing: border-box;
 }
 
@@ -122,6 +122,48 @@
 }
 
 /* The five-stage method, as a text row rather than a graphic. */
+.hero-claim {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: clamp(0.92rem, 1.15vw, 1.02rem);
+  line-height: 1.6;
+  font-weight: 500;
+  color: rgb(214, 250, 86);
+  max-width: 54ch;
+  margin: 0;
+}
+
+.hero-regions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0 14px;
+  list-style: none;
+  margin: 0.9rem 0 0;
+  padding: 0.9rem 0 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.16);
+  width: 100%;
+  max-width: 640px;
+}
+
+.hero-region {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.62);
+}
+
+.hero-region + .hero-region::before {
+  content: '';
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: rgba(214, 250, 86, 0.75);
+  margin-right: 14px;
+  vertical-align: middle;
+}
+
 .hero-method {
   display: flex;
   flex-wrap: wrap;
@@ -212,7 +254,9 @@
   .hero-content,
   .hero-title,
   .hero-subtitle,
+  .hero-claim,
   .hero-method,
+  .hero-regions,
   .hero-eyebrow {
     text-align: left !important;
   }
@@ -246,7 +290,49 @@
     font-size: 0.95rem;
   }
 
-  .hero-method {
+  .hero-claim {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: clamp(0.92rem, 1.15vw, 1.02rem);
+  line-height: 1.6;
+  font-weight: 500;
+  color: rgb(214, 250, 86);
+  max-width: 54ch;
+  margin: 0;
+}
+
+.hero-regions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0 14px;
+  list-style: none;
+  margin: 0.9rem 0 0;
+  padding: 0.9rem 0 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.16);
+  width: 100%;
+  max-width: 640px;
+}
+
+.hero-region {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.62);
+}
+
+.hero-region + .hero-region::before {
+  content: '';
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: rgba(214, 250, 86, 0.75);
+  margin-right: 14px;
+  vertical-align: middle;
+}
+
+.hero-method {
     gap: 8px 18px;
   }
 }

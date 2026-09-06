@@ -23,6 +23,13 @@ const LINK_DISTANCE = 150;
 const POINTER_RADIUS = 200;
 const MAX_NODES = 90;
 
+// Occasional detection brackets: a quiet nod to the AI vision side of the work.
+// Deliberately sparse, because the point is that the system notices things, not
+// that it flashes at you.
+const MAX_DETECTIONS = 2;
+const DETECTION_LIFE = 190;   // frames from spawn to gone
+const DETECTION_CHANCE = 0.006;
+
 export default function HeroBackground() {
   const canvasRef = useRef(null);
 
@@ -41,6 +48,7 @@ export default function HeroBackground() {
     let nodes = [];
     let frame = null;
     let visible = true;
+    let detections = [];
     const pointer = { x: -9999, y: -9999, active: false };
 
     const seedNodes = () => {
@@ -54,6 +62,8 @@ export default function HeroBackground() {
         vy: (Math.random() - 0.5) * 0.28,
         r: Math.random() * 1.6 + 1.1,
       }));
+      // Detection brackets reference nodes by index, so they cannot survive a reseed.
+      detections = [];
     };
 
     const resize = () => {
@@ -116,6 +126,33 @@ export default function HeroBackground() {
         ctx.arc(node.x, node.y, node.r, 0, Math.PI * 2);
         ctx.fill();
       }
+
+      for (const det of detections) {
+        const node = nodes[det.index];
+        if (!node) continue;
+
+        // Ease in over the first fifth of life, hold, then ease out.
+        const t = det.age / DETECTION_LIFE;
+        const alpha = t < 0.2 ? t / 0.2 : t > 0.75 ? (1 - t) / 0.25 : 1;
+        if (alpha <= 0) continue;
+
+        const half = det.size / 2;
+        const arm = det.size * 0.28;
+        const left = node.x - half;
+        const right = node.x + half;
+        const top = node.y - half;
+        const bottom = node.y + half;
+
+        ctx.strokeStyle = `rgba(214, 250, 86, ${alpha * 0.55})`;
+        ctx.lineWidth = 1.1;
+        ctx.beginPath();
+        // corner brackets only, never a closed box
+        ctx.moveTo(left, top + arm); ctx.lineTo(left, top); ctx.lineTo(left + arm, top);
+        ctx.moveTo(right - arm, top); ctx.lineTo(right, top); ctx.lineTo(right, top + arm);
+        ctx.moveTo(right, bottom - arm); ctx.lineTo(right, bottom); ctx.lineTo(right - arm, bottom);
+        ctx.moveTo(left + arm, bottom); ctx.lineTo(left, bottom); ctx.lineTo(left, bottom - arm);
+        ctx.stroke();
+      }
     };
 
     const step = () => {
@@ -145,6 +182,19 @@ export default function HeroBackground() {
         node.vx = Math.max(-0.9, Math.min(0.9, node.vx * 0.995));
         node.vy = Math.max(-0.9, Math.min(0.9, node.vy * 0.995));
       }
+
+      if (detections.length < MAX_DETECTIONS && Math.random() < DETECTION_CHANCE && nodes.length) {
+        detections.push({
+          index: Math.floor(Math.random() * nodes.length),
+          size: 46 + Math.random() * 34,
+          age: 0,
+        });
+      }
+
+      detections = detections.filter((det) => {
+        det.age += 1;
+        return det.age < DETECTION_LIFE;
+      });
 
       draw();
       frame = requestAnimationFrame(step);
