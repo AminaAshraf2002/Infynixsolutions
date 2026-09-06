@@ -6,6 +6,7 @@ import capImg1 from '../assets/mark.png';
 import capImg2 from '../assets/media.png';
 import capImg3 from '../assets/marketing.png';
 import heroBg from '../assets/hero_bg_solutions_index.jpg';
+import { solutionsData } from '../lib/contentData';
 import Seo from '../seo/Seo';
 import { organizationSchema, breadcrumbSchema } from '../seo/schema';
 
@@ -268,6 +269,39 @@ const SolutionsIndex = () => {
             </div>
           ))}
         </div>
+      </section>
+
+      {/* Every routed service, linked. Thirteen of these pages sat in the
+          sitemap with no internal link pointing at them, which leaves Google
+          discovering them by sitemap alone. Built from solutionsData so a new
+          service cannot be added without appearing here. */}
+      <section style={{ padding: '100px 5%', borderBottom: '1px dashed #333' }}>
+        <h2 style={{
+          fontSize: 'clamp(1.5rem, 3vw, 2.2rem)', fontWeight: 500, margin: '0 0 40px',
+          fontFamily: "'Montserrat', sans-serif", letterSpacing: '-0.02em', color: '#fff',
+        }}>
+          All Services
+        </h2>
+        <ul style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))',
+          gap: '14px 28px', listStyle: 'none', margin: 0, padding: 0,
+        }}>
+          {Object.entries(solutionsData).map(([slug, entry]) => (
+            <li key={slug}>
+              <Link
+                to={`/solutions/${slug}`}
+                style={{
+                  display: 'block', padding: '14px 0', color: 'rgba(255,255,255,0.72)',
+                  textDecoration: 'none', fontSize: '0.92rem',
+                  borderBottom: '1px solid rgba(255,255,255,0.10)',
+                }}
+              >
+                {entry.title}
+              </Link>
+            </li>
+          ))}
+        </ul>
       </section>
 
     </div>

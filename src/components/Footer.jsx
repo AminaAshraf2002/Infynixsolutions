@@ -80,6 +80,7 @@ const Footer = () => {
             </div>
             <div className="footer-nav-col">
               <span style={{ color: '#ffffff', fontWeight: 'bold', fontSize: '0.85rem', marginBottom: '8px' }}>INDUSTRIES</span>
+              <Link to="/industries">All Industries</Link>
               <Link to="/industries/retail">Retail & Commerce</Link>
               <Link to="/industries/healthcare">Healthcare</Link>
               <Link to="/industries/education">Education</Link>
@@ -96,6 +97,7 @@ const Footer = () => {
               <Link to="/web-design-company-in-kochi">Web Design Company in Kochi</Link>
               <Link to="/mobile-app-development-company-in-kochi">Mobile App Development in Kochi</Link>
               <Link to="/ecommerce-website-development-company-in-kochi">E-Commerce Development in Kochi</Link>
+              <Link to="/ui-ux-design-company-in-kochi">UI/UX Design Company in Kochi</Link>
             </div>
             <div className="footer-nav-col">
               <span style={{ color: '#ffffff', fontWeight: 'bold', fontSize: '0.85rem', marginBottom: '8px' }}>KERALA</span>
