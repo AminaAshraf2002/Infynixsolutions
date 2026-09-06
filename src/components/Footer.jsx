@@ -14,7 +14,7 @@ const Footer = () => {
         <div className="footer-locations-grid">
           <div className="footer-brand-col">
             <Link to="/" className="footer-logo" style={{ textDecoration: 'none' }}>
-              <img 
+              <img loading="lazy" decoding="async" 
                 src={logo} 
                 alt="Infynix Logo" 
                 style={{ height: '32px', width: 'auto', filter: 'brightness(0) invert(1)', marginBottom: '8px' }} 
@@ -27,7 +27,7 @@ const Footer = () => {
 
           <div className="footer-location-card">
             <a href="https://maps.google.com/?q=1-75+Shelton+St,+London,+WC2H+9JQ" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
-              <img src={ukLImage} alt="UK London Office" className="footer-location-svg" />
+              <img loading="lazy" decoding="async" src={ukLImage} alt="UK London Office" className="footer-location-svg" />
               <div className="footer-location-title">UK - LONDON ↗</div>
               <div className="footer-location-addr">
                 1-75 Shelton St,<br />
@@ -38,7 +38,7 @@ const Footer = () => {
 
           <div className="footer-location-card">
             <a href="https://maps.google.com/?q=Business+Bay,+Dubai,+UAE" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
-              <img src={dubaiImage} alt="Dubai UAE Office" className="footer-location-svg" />
+              <img loading="lazy" decoding="async" src={dubaiImage} alt="Dubai UAE Office" className="footer-location-svg" />
               <div className="footer-location-title">DUBAI - UAE ↗</div>
               <div className="footer-location-addr">
                 Business Bay,<br />
@@ -49,12 +49,11 @@ const Footer = () => {
 
           <div className="footer-location-card">
             <a href="https://share.google/KX27eRrKxncrDFibN" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
-              <img src={kochiImage} alt="Kochi India Office" className="footer-location-svg" />
+              <img loading="lazy" decoding="async" src={kochiImage} alt="Kochi India Office" className="footer-location-svg" />
               <div className="footer-location-title">INDIA - KOCHI ↗</div>
               <div className="footer-location-addr">
-                7th Floor, National Pearl Star Building,<br />
-                next to Changampuzha Metro Station,<br />
-                Devankulangara, Mamangalam, Edappally,<br />
+                3rd Floor, Oberon Mall,<br />
+                Padivattom, Edappally,<br />
                 Ernakulam, Kochi, Kerala 682024
               </div>
             </a>
@@ -80,9 +79,46 @@ const Footer = () => {
             </div>
             <div className="footer-nav-col">
               <span style={{ color: '#ffffff', fontWeight: 'bold', fontSize: '0.85rem', marginBottom: '8px' }}>INDUSTRIES</span>
+              <Link to="/industries">All Industries</Link>
               <Link to="/industries/retail">Retail & Commerce</Link>
               <Link to="/industries/healthcare">Healthcare</Link>
               <Link to="/industries/education">Education</Link>
+            </div>
+            <div className="footer-nav-col">
+              {/* Location pages need internal links from a sitewide element, a
+                  sitemap entry alone is a weak discovery and equity signal. Top
+                  pages per city only; the full set is reachable from each page's
+                  "Related Services" block and the sitemap. */}
+              <span style={{ color: '#ffffff', fontWeight: 'bold', fontSize: '0.85rem', marginBottom: '8px' }}>KOCHI</span>
+              <Link to="/digital-marketing-agency-in-kochi">Digital Marketing Agency in Kochi</Link>
+              <Link to="/software-development-company-in-kochi">Software Development Company in Kochi</Link>
+              <Link to="/seo-company-in-kochi">SEO Company in Kochi</Link>
+              <Link to="/web-design-company-in-kochi">Web Design Company in Kochi</Link>
+              <Link to="/mobile-app-development-company-in-kochi">Mobile App Development in Kochi</Link>
+              <Link to="/ecommerce-website-development-company-in-kochi">E-Commerce Development in Kochi</Link>
+              <Link to="/ui-ux-design-company-in-kochi">UI/UX Design Company in Kochi</Link>
+            </div>
+            <div className="footer-nav-col">
+              <span style={{ color: '#ffffff', fontWeight: 'bold', fontSize: '0.85rem', marginBottom: '8px' }}>KERALA</span>
+              <Link to="/digital-marketing-agency-in-kerala">Digital Marketing Agency in Kerala</Link>
+              <Link to="/software-development-company-in-kerala">Software Development Company in Kerala</Link>
+              <Link to="/seo-company-in-kerala">SEO Company in Kerala</Link>
+              <Link to="/web-design-company-in-kerala">Web Design Company in Kerala</Link>
+              <Link to="/performance-marketing-agency-in-kerala">Performance Marketing in Kerala</Link>
+            </div>
+            <div className="footer-nav-col">
+              <span style={{ color: '#ffffff', fontWeight: 'bold', fontSize: '0.85rem', marginBottom: '8px' }}>TRIVANDRUM</span>
+              <Link to="/digital-marketing-agency-in-trivandrum">Digital Marketing in Trivandrum</Link>
+              <Link to="/software-development-company-in-trivandrum">Software Development in Trivandrum</Link>
+              <Link to="/seo-company-in-trivandrum">SEO Company in Trivandrum</Link>
+              <Link to="/web-design-company-in-trivandrum">Web Design Company in Trivandrum</Link>
+            </div>
+            <div className="footer-nav-col">
+              <span style={{ color: '#ffffff', fontWeight: 'bold', fontSize: '0.85rem', marginBottom: '8px' }}>KOZHIKODE</span>
+              <Link to="/digital-marketing-agency-in-kozhikode">Digital Marketing in Kozhikode</Link>
+              <Link to="/software-development-company-in-kozhikode">Software Development in Kozhikode</Link>
+              <Link to="/seo-company-in-kozhikode">SEO Company in Kozhikode</Link>
+              <Link to="/web-design-company-in-kozhikode">Web Design Company in Kozhikode</Link>
             </div>
             <div className="footer-nav-col">
               <span style={{ color: '#ffffff', fontWeight: 'bold', fontSize: '0.85rem', marginBottom: '8px' }}>LEGAL</span>

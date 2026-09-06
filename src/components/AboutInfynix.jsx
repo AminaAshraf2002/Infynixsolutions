@@ -1,8 +1,38 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import './AboutInfynix.css';
 import videoSrc from '../assets/video.mp4'; 
 
 const AboutInfynix = () => {
+  // This clip is 2.6 MB and sits below the fold. `autoPlay` makes the browser
+  // fetch it in full on load regardless of the `preload` hint, so it accounted
+  // for most of the homepage's transfer weight. Attaching src only once the
+  // element is near the viewport defers that cost until it is actually needed.
+  const videoWrapRef = useRef(null);
+  const [videoReady, setVideoReady] = useState(false);
+
+  useEffect(() => {
+    const el = videoWrapRef.current;
+    if (!el) return;
+
+    if (typeof IntersectionObserver === 'undefined') {
+      setVideoReady(true);
+      return;
+    }
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries.some((entry) => entry.isIntersecting)) {
+          setVideoReady(true);
+          observer.disconnect();
+        }
+      },
+      { rootMargin: '400px' }
+    );
+
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <section className="about-infynix-section">
       <div className="ind-glow"></div>
@@ -29,13 +59,14 @@ const AboutInfynix = () => {
 
         {/* Right Column: Video Container */}
         <div className="about-infynix-media-col" data-aos="fade-left" data-aos-duration="800">
-          <div className="about-media-wrapper">
-            <video 
-              src={videoSrc}
-              autoPlay 
-              loop 
-              muted 
-              playsInline 
+          <div className="about-media-wrapper" ref={videoWrapRef}>
+            <video
+              src={videoReady ? videoSrc : undefined}
+              autoPlay
+              loop
+              muted
+              playsInline
+              preload="none"
               className="about-video"
             />
           </div>

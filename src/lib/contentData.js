@@ -1,5 +1,5 @@
 // Centralized data repository for solutions, industries, case studies, insights, and FAQs
-import { subcategoryData } from './subcategoryData';
+import { subcategoryData } from './subcategoryData.js';
 
 export const solutionsData = {
   ...subcategoryData,
@@ -397,7 +397,7 @@ export const caseStudiesData = [
     client: 'TMS',
     challenge: 'Infynix needed an internal, industry-agnostic tool to manage teams and tasks across roles (Super Admin, Org Admin, Team Lead/PM, Employee), with each industry activating only the modules relevant to it.',
     objectives: 'Build a scalable multi-role platform with clear separation between web (admin roles) and mobile (execution roles), supporting offline-first usage for field/on-site employees.',
-    strategy: 'Split the platform by role and surface — Super Admin and Org Admin as web-only (React/MERN), Team Lead/PM and Employee as app-only (Flutter) — with industry-specific module activation instead of separate builds per industry.',
+    strategy: 'Split the platform by role and surface, Super Admin and Org Admin as web-only (React/MERN), Team Lead/PM and Employee as app-only (Flutter), with industry-specific module activation instead of separate builds per industry.',
     technology: 'React, Vite, Tailwind, React Native, Expo, Node.js, Express, MongoDB, SQLite',
     execution: 'Authored SRS documents and flowcharts up front; built 17+ frontend pages across the web app; developed the backend API layer (Node.js/Express/MongoDB); implemented SQLite-backed offline-first sync for the mobile app so employees can log work without connectivity.',
     results: '17+ pages shipped across one unified role-based platform',
@@ -406,9 +406,9 @@ export const caseStudiesData = [
     slug: 'beyond-demands',
     title: 'A multi-tenant salon supply procurement platform with three dedicated surfaces',
     client: 'Beyond Demands',
-    challenge: 'Partner salons, warehouse teams, and org admins all needed different views into the same supply chain — a premium storefront for ordering, an operations console for dispatch, and an analytics dashboard for oversight — without duplicating the underlying data model.',
+    challenge: 'Partner salons, warehouse teams, and org admins all needed different views into the same supply chain, a premium storefront for ordering, an operations console for dispatch, and an analytics dashboard for oversight, without duplicating the underlying data model.',
     objectives: 'Ship one platform that feels like three purpose-built products, while keeping tenancy, stock accuracy, and audit trails airtight under concurrent orders.',
-    strategy: 'Modular monolith architecture — one Next.js deployable with strict internal module boundaries (identity, catalog, ordering, inventory, audit) designed as future service seams, rather than premature microservices.',
+    strategy: 'Modular monolith architecture. One Next.js deployable with strict internal module boundaries (identity, catalog, ordering, inventory, audit) designed as future service seams, rather than premature microservices.',
     technology: 'Next.js, Prisma, PostgreSQL, NextAuth, Row-Level Security',
     execution: 'Implemented Postgres Row-Level Security with fail-closed tenant policies, SELECT ... FOR UPDATE transaction locking for order/dispatch concurrency, derived (never double-counted) reserved stock, rate limiting on login and purchase-code attempts, and forced password rotation for first-time users.',
     results: 'One codebase, three tailored surfaces, zero cross-tenant data leaks',

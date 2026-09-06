@@ -20,8 +20,8 @@ const marqueeItems = [
 ];
 
 const stats = [
-  { num: '7Ã—',   label: 'Stage Method' },
-  { num: '3Ã—',   label: 'Avg. Revenue Lift' },
+  { num: '7Ã, ',   label: 'Stage Method' },
+  { num: '3Ã, ',   label: 'Avg. Revenue Lift' },
   { num: '98%',  label: 'Client Retention' },
   { num: '150+', label: 'Systems Built' },
 ];
@@ -134,7 +134,7 @@ const GrowthEngineering = () => {
     '@context': 'https://schema.org',
     '@type': 'Service',
     'name': 'Growth Engineering',
-    'provider': { '@type': 'Organization', 'name': 'Infynix', 'url': 'https://infynix.com' },
+    'provider': { '@type': 'Organization', 'name': 'Infynix', 'url': 'https://www.infynix-solutions.com' },
     'description': 'Category page describing the Infynix Growth Engineering Method: Attract, Engage, Convert, Optimize, Scale.',
     'serviceType': 'Growth Engineering',
   };
@@ -144,7 +144,7 @@ const GrowthEngineering = () => {
       <SEOManager
         title="Growth Engineering Company | Infynix"
         description="Businesses don't struggle because they lack ambition. They struggle because technology, marketing, operations and data operate independently. Infynix engineers these into one system."
-        canonicalUrl="https://infynix.com/growth-engineering"
+        canonicalUrl="https://www.infynix-solutions.com/growth-engineering"
         schemaData={schema}
       />
 

@@ -113,7 +113,7 @@ const ClientsSection = () => {
           ))}
         </div>
       </div> */}
-      {/* CTA Card — "Let's create great things." */}
+      {/* CTA Card, "Let's create great things." */}
       <div className="cta-home-card" id="contact">
         <h2 className="cta-home-heading">
           Let's create <em>great things.</em>
@@ -126,7 +126,7 @@ const ClientsSection = () => {
         </a>
       </div>
 
-      {/* Footer — inside clients section */}
+      {/* Footer, inside clients section */}
       <footer className="premium-footer spec-footer" style={{ padding: '80px 3rem 40px', borderTop: '1px solid rgba(255,255,255,0.05)' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
           
@@ -134,7 +134,7 @@ const ClientsSection = () => {
           <div className="footer-locations-grid">
             <div className="footer-brand-col">
               <Link to="/" className="footer-logo" style={{ textDecoration: 'none' }}>
-                <img 
+                <img loading="lazy" decoding="async" 
                   src={logo} 
                   alt="Infynix Logo" 
                   style={{ height: '32px', width: 'auto', filter: 'brightness(0) invert(1)', marginBottom: '8px' }} 
@@ -146,7 +146,7 @@ const ClientsSection = () => {
             </div>
 
             <div className="footer-location-card">
-              <img src={ukLImage} alt="UK London Office" className="footer-location-svg" />
+              <img loading="lazy" decoding="async" src={ukLImage} alt="UK London Office" className="footer-location-svg" />
               <div className="footer-location-title">UK - LONDON</div>
               <div className="footer-location-addr">
                 1-75 Shelton St,<br />
@@ -155,7 +155,7 @@ const ClientsSection = () => {
             </div>
 
             <div className="footer-location-card">
-              <img src={dubaiImage} alt="Dubai UAE Office" className="footer-location-svg" />
+              <img loading="lazy" decoding="async" src={dubaiImage} alt="Dubai UAE Office" className="footer-location-svg" />
               <div className="footer-location-title">DUBAI - UAE</div>
               <div className="footer-location-addr">
                 Business Bay,<br />
@@ -164,12 +164,11 @@ const ClientsSection = () => {
             </div>
 
             <div className="footer-location-card">
-              <img src={kochiImage} alt="Kochi India Office" className="footer-location-svg" />
+              <img loading="lazy" decoding="async" src={kochiImage} alt="Infynix Solutions office, Kochi, India" className="footer-location-svg" />
               <div className="footer-location-title">INDIA - KOCHI</div>
               <div className="footer-location-addr">
-                7th Floor, National Pearl Star Building,<br />
-                next to Changampuzha Metro Station,<br />
-                Devankulangara, Mamangalam, Edappally,<br />
+                3rd Floor, Oberon Mall,<br />
+                Padivattom, Edappally,<br />
                 Ernakulam, Kochi, Kerala 682024
               </div>
             </div>

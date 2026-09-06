@@ -114,7 +114,7 @@ const GrowthEngineering = () => {
       title: "Data",
       mockupIcon: "fa-solid fa-database",
       body: "When data lives in separate systems, decisions get made on guesses instead of evidence.",
-      heading: "Unified data turns every decision — marketing, product, operations — into an informed one."
+      heading: "Unified data turns every decision, marketing, product, operations, into an informed one."
     }
   ];
 
@@ -160,7 +160,7 @@ const GrowthEngineering = () => {
     '@context': 'https://schema.org',
     '@type': 'Service',
     'name': 'Growth Engineering',
-    'provider': { '@type': 'Organization', 'name': 'Infynix', 'url': 'https://infynix.com' },
+    'provider': { '@type': 'Organization', 'name': 'Infynix', 'url': 'https://www.infynix-solutions.com' },
     'description': 'Category page describing the Infynix Growth Engineering Method: Attract, Engage, Convert, Optimize, Scale.',
     'serviceType': 'Growth Engineering',
   };
@@ -170,7 +170,7 @@ const GrowthEngineering = () => {
       <SEOManager
         title="Growth Engineering Company | Infynix"
         description="Businesses don't struggle because they lack ambition. They struggle because technology, marketing, operations and data operate independently. Infynix engineers these into one system."
-        canonicalUrl="https://infynix.com/growth-engineering"
+        canonicalUrl="https://www.infynix-solutions.com/growth-engineering"
         schemaData={schema}
       />
 

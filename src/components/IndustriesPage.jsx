@@ -7,7 +7,8 @@ import {
   ClipboardList, ShieldCheck, MonitorPlay, BarChart, Home, CalendarCheck, TrendingUp,
   LineChart, Truck, ConciergeBell, Smartphone, RefreshCw, CreditCard, LayoutDashboard, Video
 } from 'lucide-react';
-import SEOManager from './SEOManager';
+import Seo from '../seo/Seo';
+import { organizationSchema, serviceSchema, breadcrumbSchema } from '../seo/schema';
 import './InfynixDesign.css';
 
 const industryTestimonials = {
@@ -135,10 +136,39 @@ const IndustriesPage = () => {
 
   return (
     <div style={{ background: '#fff', color: '#1F2937', fontFamily: "'Montserrat', sans-serif", overflowX: 'hidden' }}>
-      <SEOManager
-        title={`${data.name} Solutions | Infynix`}
-        description={data.challenge}
-        canonicalUrl={`https://infynix.com/industries/${industryKey}`}
+      {/* Same index/detail collision as case studies: /industries rendered the
+          healthcare entry and copied its title and canonical. */}
+      <Seo
+        title={slug
+          ? `${data.name} Software Solutions | Infynix`
+          : 'Industries We Serve | Infynix Solutions, Kochi'}
+        description={slug
+          ? data.challenge
+          : 'Industry-specific software, automation and marketing systems from Infynix Solutions: healthcare, retail, education, real estate, manufacturing, hospitality and more.'}
+        path={slug ? `/industries/${industryKey}` : '/industries'}
+        schema={[
+          organizationSchema(),
+          slug
+            ? serviceSchema({
+                name: `${data.name} Technology Solutions`,
+                description: data.challenge,
+                path: `/industries/${industryKey}`,
+                areaServed: ['Kerala', 'India', 'United Arab Emirates', 'United Kingdom'],
+              })
+            : null,
+          breadcrumbSchema(
+            slug
+              ? [
+                  { name: 'Home', path: '/' },
+                  { name: 'Industries', path: '/industries' },
+                  { name: data.name, path: `/industries/${industryKey}` },
+                ]
+              : [
+                  { name: 'Home', path: '/' },
+                  { name: 'Industries', path: '/industries' },
+                ]
+          ),
+        ]}
       />
 
       <style>{`

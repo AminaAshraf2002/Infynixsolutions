@@ -1,7 +1,8 @@
 import './index.css';
 import './App.css';
 
-import { BrowserRouter, Routes, Route, useLocation, Navigate } from 'react-router-dom';
+import { BrowserRouter, StaticRouter, Routes, Route, useLocation, Navigate } from 'react-router-dom';
+import { HelmetProvider } from 'react-helmet-async';
 import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -36,9 +37,23 @@ import CaseStudiesPage from './components/CaseStudiesPage';
 import InsightsPage from './components/InsightsPage';
 import { PrivacyPolicy, TermsOfService, NotFoundPage } from './components/UtilityPages';
 
+// Location + service landing pages (SEO)
+import LandingPage from './components/LandingPage';
+import { landingPages } from './content/landingPages';
+import Seo from './seo/Seo';
+import { organizationSchema, websiteSchema, localBusinessSchema } from './seo/schema';
+import { DEFAULT_TITLE, DEFAULT_DESCRIPTION } from './seo/siteConfig';
+
 function HomePage() {
   return (
     <>
+      <Seo
+        title={DEFAULT_TITLE}
+        description={DEFAULT_DESCRIPTION}
+        path="/"
+        schema={[organizationSchema(), websiteSchema(), localBusinessSchema()]}
+      />
+
       {/* 1. Hero */}
       <Hero />
 
@@ -92,6 +107,17 @@ function AppContent() {
         <div style={{ position: 'relative', zIndex: 1 }}>
           <Routes>
             <Route path="/"                 element={<HomePage />} />
+
+            {/* Location + service landing pages. Flat slugs, matching the
+                "{service} company in {city}" pattern that ranks in this market. */}
+            {landingPages.map((page) => (
+              <Route
+                key={page.slug}
+                path={`/${page.slug}`}
+                element={<LandingPage slug={page.slug} />}
+              />
+            ))}
+
             <Route path="/growth-engineering" element={<GrowthEngineering />} />
             <Route path="/solutions/:slug"   element={<SolutionsPage />} />
             <Route path="/solutions"        element={<SolutionsIndex />} />
@@ -127,15 +153,27 @@ function AppContent() {
   );
 }
 
-function App() {
+/**
+ * `location` is supplied only by the prerenderer, which needs a StaticRouter.
+ * `helmetContext` is how the prerenderer reads back the head tags each route
+ * rendered, so title/meta/canonical/JSON-LD end up in the static HTML instead of
+ * being applied after hydration.
+ */
+function App({ helmetContext = {}, location }) {
   useEffect(() => {
     AOS.init({ duration: 800, once: true });
   }, []);
 
+  const content = <AppContent />;
+
   return (
-    <BrowserRouter>
-      <AppContent />
-    </BrowserRouter>
+    <HelmetProvider context={helmetContext}>
+      {location ? (
+        <StaticRouter location={location}>{content}</StaticRouter>
+      ) : (
+        <BrowserRouter>{content}</BrowserRouter>
+      )}
+    </HelmetProvider>
   );
 }
 

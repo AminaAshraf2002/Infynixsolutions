@@ -1,4 +1,4 @@
-// WhoWeAre.jsx  —  About Page — Infynix "Digital Momentum" Design
+// WhoWeAre.jsx, About Page. Infynix "Digital Momentum" Design
 // Primary: #007A5E | Selective dark sections only
 
 import { useState, useEffect, useRef } from "react";
@@ -6,6 +6,8 @@ import { Link } from "react-router-dom";
 import "./InfynixDesign.css";
 import storyVideo from "../assets/video.mp4";
 import teamImg from '../assets/team.png';
+import Seo from '../seo/Seo';
+import { organizationSchema, breadcrumbSchema } from '../seo/schema';
 
 export function useIxReveal() {
   useEffect(() => {
@@ -52,8 +54,20 @@ export default function WhoWeAre() {
 
   return (
     <div style={{ background: "#fff" }}>
+      <Seo
+        title="About Infynix Solutions | Growth Engineering Company in Kochi"
+        description="Infynix Solutions is a growth engineering company headquartered in Kochi, Kerala with offices in London and Dubai, building technology, marketing and operations systems as one connected whole."
+        path="/about"
+        schema={[
+          organizationSchema(),
+          breadcrumbSchema([
+            { name: 'Home', path: '/' },
+            { name: 'About', path: '/about' },
+          ]),
+        ]}
+      />
 
-      {/* ══ HERO — Zendesk Replica ══ */}
+      {/* ══ HERO, Zendesk Replica ══ */}
       <section className="solutions-hero-section" style={{
         background: '#ffffff',
         minHeight: '85vh',
@@ -97,13 +111,13 @@ export default function WhoWeAre() {
           </div>
         </div>
 
-        {/* Right — Image */}
+        {/* Right, Image */}
         <div style={{ position: 'relative', zIndex: 1, display: 'flex', justifyContent: 'center' }} data-aos="fade-up" data-aos-delay="200">
           <img src="https://web-assets.zendesk.com/is/image/zendesk/Hero-4?fmt=avif-alpha&qlt=65" alt="Who We Are" style={{ width: '100%', maxWidth: '400px', height: 'auto', borderRadius: '40px', objectFit: 'cover', aspectRatio: '1/1', }} />
         </div>
       </section>
 
-      {/* ══ WHAT WE DELIVER — white ══ */}
+      {/* ══ WHAT WE DELIVER, white ══ */}
       <section className="ix-section" style={{ background: "#fff" }}>
         <div style={{ maxWidth: 1200, margin: "0 auto" }}>
           <div style={{ marginBottom: "clamp(2rem, 5vw, 4rem)" }}>
@@ -138,9 +152,9 @@ export default function WhoWeAre() {
         </div>
       </section>
 
-      {/* ══ STORY + VIDEO — light teal bg + dark right ══ */}
+      {/* ══ STORY + VIDEO, light teal bg + dark right ══ */}
       <section id="story" className="about-story-section">
-        {/* Left — teal bg */}
+        {/* Left, teal bg */}
         <div style={{
           background: "var(--ix-primary-bg)",
           display: "flex", flexDirection: "column", justifyContent: "center",
@@ -160,14 +174,14 @@ export default function WhoWeAre() {
           </p>
         </div>
 
-        {/* Right — video */}
+        {/* Right, video */}
         <div style={{ position: "relative", overflow: "hidden", background: "var(--ix-dark)" }}>
           <video src={storyVideo} autoPlay loop muted playsInline style={{ width: "100%", height: "100%", objectFit: "cover", display: "block", opacity: 0.85 }} />
           <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to right, var(--ix-primary-bg) 0%, transparent 25%)" }} />
         </div>
       </section>
 
-      {/* ══ STATS STRIP — exact design ══ */}
+      {/* ══ STATS STRIP, exact design ══ */}
       <section className="ix-section" style={{ background: "var(--ix-primary-bg)", overflow: 'hidden', position: 'relative' }}>
 
 
@@ -234,7 +248,7 @@ export default function WhoWeAre() {
         </div>
       </section>
 
-      {/* ══ TEAM PHOTOS — light teal bg ══ */}
+      {/* ══ TEAM PHOTOS, light teal bg ══ */}
       {/* <section className="ix-section" style={{ background: "var(--ix-primary-bg)" }}>
         <div style={{ maxWidth: 1200, margin: "0 auto" }}>
           <span className="ix-teal-bar" />
@@ -262,7 +276,7 @@ export default function WhoWeAre() {
         </div>
       </section> */}
 
-      {/* ══ CULTURE CARDS — white ══ */}
+      {/* ══ CULTURE CARDS, white ══ */}
       <section className="ix-section" style={{ background: "#fff" }}>
         <div style={{ maxWidth: 1200, margin: "0 auto" }}>
           <span className="ix-teal-bar" />
@@ -289,18 +303,18 @@ export default function WhoWeAre() {
         </div>
       </section>
 
-      {/* ══ GLOBAL STATEMENT — teal ══ */}
+      {/* ══ GLOBAL STATEMENT, teal ══ */}
       <section style={{ background: "var(--ix-primary)", padding: "clamp(64px, 10vw, 120px) var(--section-px)", position: "relative", overflow: "hidden" }}>
         <div style={{ position: "absolute", inset: 0, opacity: 0.06, backgroundImage: "repeating-linear-gradient(-45deg, #fff 0, #fff 1px, transparent 0, transparent 50%)", backgroundSize: "20px 20px" }} />
         <div style={{ maxWidth: 1200, margin: "0 auto", position: "relative", zIndex: 1 }}>
           <p data-aos="fade-up" style={{ fontFamily: "var(--ix-font-display)", fontWeight: 600, fontSize: "clamp(1.8rem, 4.4vw, 4.5rem)", lineHeight: 1.1, letterSpacing: "-0.025em", color: "#fff" }}>
-            Partnering with leading brands to deploy scalable growth systems and next-generation AI security solutions —{" "}
+            Partnering with leading brands to deploy scalable growth systems and next-generation AI security solutions , {" "}
             <em style={{ fontFamily: "var(--ix-font-serif)", fontStyle: "italic", fontWeight: 400, color: "var(--ix-primary-mid)" }}>globally.</em>
           </p>
         </div>
       </section>
 
-      {/* ══ CTA — dark teal ══ */}
+      {/* ══ CTA, dark teal ══ */}
       <section className="ix-section" style={{ background: "var(--ix-dark)", textAlign: "center" }}>
         <div style={{ maxWidth: 700, margin: "0 auto" }}>
           <span className="ix-eyebrow ix-eyebrow--light" data-aos="fade-up" style={{ justifyContent: "center" }}>Let's Build Together</span>
