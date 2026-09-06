@@ -36,14 +36,12 @@ const IMAGES = {
     srcSet: `${regions} 640w, ${regions2x} 1120w`,
     alt: 'Laptop showing a map of the regions Infynix Solutions delivers into',
   },
-  // Deliberately captioned as the city rather than as our building: the Infynix
-  // office is in the National Pearl Star Building, Edappally, and this is a
-  // general Kochi photograph. Presenting it as our premises would be a lie in
-  // the alt text and in the picture.
+  // This is Oberon Mall, Padivattom, which is where the Infynix office
+  // actually is (3rd floor). The alt text can say so.
   kochi: {
     src: kochi,
     srcSet: `${kochi} 640w, ${kochi2x} 1120w`,
-    alt: 'Kochi, Kerala, where the Infynix engineering team is based',
+    alt: 'Oberon Mall, Padivattom, Edappally, home to the Infynix Solutions office in Kochi',
   },
 };
 

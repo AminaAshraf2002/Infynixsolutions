@@ -22,16 +22,18 @@ export const DEFAULT_OG_IMAGE = `${SITE_URL}/logo.png`;
 export const BUSINESS = {
   legalName: 'Infynix Solutions',
   email: 'info@infynixsolutions.ae',
-  telephone: '+91-99959-11140',
+  telephone: '+91-99959-11173',
   address: {
-    street: '7th Floor, National Pearl Star Building, Devankulangara, Mamangalam, Edappally',
+    street: '3rd Floor, Oberon Mall, Padivattom, Edappally',
     locality: 'Kochi',
     region: 'Kerala',
     postalCode: '682024',
     country: 'IN',
   },
-  // Edappally / Changampuzha Metro, Kochi.
-  geo: { latitude: 10.0261, longitude: 76.3125 },
+  // Oberon Mall, Padivattom, Edappally. Approximate to the building.
+  // Verify against the pin on the Google Business Profile before relying on it
+  // for anything beyond schema.
+  geo: { latitude: 10.0159, longitude: 76.3089 },
   openingHours: {
     days: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
     opens: '09:30',
@@ -53,9 +55,17 @@ export const BUSINESS = {
 
 // Add real profile URLs as they go live, sameAs is a meaningful entity signal and
 // an empty/wrong list is worse than a short accurate one.
+// The Google Business Profile. Exported separately because it is also used as
+// the LocalBusiness hasMap value and linked from the site, not just listed in
+// sameAs. Reviews left here are the strongest local ranking signal available.
+export const GOOGLE_BUSINESS_PROFILE = 'https://share.google/ey1Jfvouw3GLkRGzF';
+
 export const SOCIAL_PROFILES = [
   'https://www.linkedin.com/company/infynix-solutions',
   'https://www.instagram.com/infynixsolutions',
+  // Listing the GBP in sameAs is how the site and the profile get resolved as
+  // the same entity rather than two similar businesses.
+  GOOGLE_BUSINESS_PROFILE,
 ];
 
 export const absoluteUrl = (path = '/') => {

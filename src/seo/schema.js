@@ -3,6 +3,7 @@ import {
   SITE_NAME,
   BUSINESS,
   SOCIAL_PROFILES,
+  GOOGLE_BUSINESS_PROFILE,
   DEFAULT_OG_IMAGE,
   absoluteUrl,
 } from './siteConfig';
@@ -55,6 +56,7 @@ export const localBusinessSchema = () => ({
   telephone: BUSINESS.telephone,
   email: BUSINESS.email,
   priceRange: '₹₹',
+  hasMap: GOOGLE_BUSINESS_PROFILE,
   address: postalAddress,
   geo: {
     '@type': 'GeoCoordinates',

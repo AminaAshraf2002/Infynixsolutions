@@ -164,12 +164,11 @@ const ClientsSection = () => {
             </div>
 
             <div className="footer-location-card">
-              <img loading="lazy" decoding="async" src={kochiImage} alt="Kochi India Office" className="footer-location-svg" />
+              <img loading="lazy" decoding="async" src={kochiImage} alt="Infynix Solutions office, Kochi, India" className="footer-location-svg" />
               <div className="footer-location-title">INDIA - KOCHI</div>
               <div className="footer-location-addr">
-                7th Floor, National Pearl Star Building,<br />
-                next to Changampuzha Metro Station,<br />
-                Devankulangara, Mamangalam, Edappally,<br />
+                3rd Floor, Oberon Mall,<br />
+                Padivattom, Edappally,<br />
                 Ernakulam, Kochi, Kerala 682024
               </div>
             </div>

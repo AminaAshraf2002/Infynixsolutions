@@ -4,7 +4,7 @@ import './LandingPage.css';
 
 import Seo from '../seo/Seo';
 import { getLandingPage, landingPageBySlug } from '../content/landingPages';
-import { BUSINESS } from '../seo/siteConfig';
+import { BUSINESS, GOOGLE_BUSINESS_PROFILE } from '../seo/siteConfig';
 import {
   organizationSchema,
   localBusinessSchema,
@@ -202,7 +202,17 @@ export default function LandingPage({ slug: slugProp }) {
           {' · '}
           <a href={`mailto:${BUSINESS.email}`}>{BUSINESS.email}</a>
         </address>
-        <Link to="/contact" className="lp-btn lp-btn-primary">Get in Touch</Link>
+        <div className="lp-actions lp-actions-centred">
+          <Link to="/contact" className="lp-btn lp-btn-primary">Get in Touch</Link>
+          <a
+            href={GOOGLE_BUSINESS_PROFILE}
+            className="lp-btn lp-btn-ghost"
+            target="_blank"
+            rel="noopener"
+          >
+            Find us on Google
+          </a>
+        </div>
       </section>
     </div>
   );

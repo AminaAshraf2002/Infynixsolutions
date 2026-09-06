@@ -32,7 +32,7 @@ const offices = [
     {
         city: "Kochi",
         label: "Kerala Office",
-        desc: "7th Floor, National Pearl Star Building, Edappally, Kochi, Kerala 682024. Our core engineering powerhouse and development center delivering robust backend growth architecture.",
+        desc: "3rd Floor, Oberon Mall, Padivattom, Edappally, Kochi, Ernakulam, Kerala 682024. Our core engineering powerhouse and development centre delivering robust backend growth architecture.",
         image: kochiImage,
         mapUrl: "https://share.google/KX27eRrKxncrDFibN"
     },
@@ -63,7 +63,7 @@ export default function Contact() {
         <div className="contact-page">
             <Seo
                 title="Contact Infynix Solutions | Offices in Kochi, Dubai & London"
-                description="Talk to Infynix Solutions about digital marketing, software development or automation. Kerala office: 7th Floor, National Pearl Star Building, Edappally, Kochi 682024. Call +91 99959 11140."
+                description="Talk to Infynix Solutions about digital marketing, software development or automation. Kerala office: 3rd Floor, Oberon Mall, Padivattom, Edappally, Kochi 682024. Call +91 99959 11173."
                 path="/contact"
                 schema={[
                     organizationSchema(),
@@ -178,7 +178,7 @@ export default function Contact() {
                             <div className="sidebar-divider" />
                             <div className="sidebar-query-block">
                                 <p className="sidebar-query-title">HR Related Queries</p>
-                                <p className="sidebar-query-val">+91 99959 11140</p>
+                                <p className="sidebar-query-val">+91 99959 11173</p>
                                 <a href="mailto:hr@infynixsolutions.ae" className="sidebar-query-val">hr@infynixsolutions.ae</a>
                             </div>
                             <div className="sidebar-divider" />

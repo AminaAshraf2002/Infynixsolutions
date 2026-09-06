@@ -21,7 +21,7 @@ export const kochiPages = [
       'Performance marketing, SEO and automation built as one connected system, run from our Edappally office for businesses across Kochi and Ernakulam.',
     intro: [
       'Most Kochi businesses do not have a marketing problem. They have a disconnection problem. Ads run in one place, the website sits in another, enquiries land in a WhatsApp inbox nobody owns, and by the time anyone asks which campaign produced revenue, the trail has gone cold.',
-      'Infynix Solutions works from Edappally, minutes from Changampuzha Metro, and we build the plumbing before we build the campaign. Tracking, CRM, lead routing and attribution go in first. Then the spend goes to work, and you can see exactly which keyword, ad and landing page produced each enquiry.',
+      'Infynix Solutions works from Oberon Mall in Edappally, and we build the plumbing before we build the campaign. Tracking, CRM, lead routing and attribution go in first. Then the spend goes to work, and you can see exactly which keyword, ad and landing page produced each enquiry.',
       'We work with retail and D2C brands, clinics and hospitals, real estate developers, educational institutions and B2B firms across Kochi, from Kakkanad and Infopark through to MG Road and Vyttila.',
     ],
     servicesHeading: 'Digital Marketing Services We Run in Kochi',
@@ -80,7 +80,7 @@ export const kochiPages = [
       {
         question: 'Where is your Kochi office?',
         answer:
-          'We are on the 7th floor of the National Pearl Star Building, Devankulangara, Mamangalam, Edappally, next to Changampuzha Metro Station, Ernakulam 682024. You are welcome to visit. We prefer running strategy sessions in person where we can.',
+          'We are on the 3rd floor of Oberon Mall, Padivattom, Edappally, Ernakulam 682024. You are welcome to visit. We prefer running strategy sessions in person where we can.',
       },
     ],
     related: [

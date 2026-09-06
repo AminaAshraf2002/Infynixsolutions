@@ -295,6 +295,10 @@
   color: var(--lp-green);
 }
 
+.lp-actions-centred {
+  justify-content: center;
+}
+
 .lp-cta {
   text-align: center;
   border-top: 1px solid var(--lp-line);
