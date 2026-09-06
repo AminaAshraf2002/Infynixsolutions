@@ -12,7 +12,7 @@ export const keralaPages = [
     region: 'Kerala',
     service: 'Digital Marketing',
     category: 'marketing',
-    title: 'Digital Marketing Agency in Kerala | SEO, Ads & Automation | Infynix',
+    title: 'Digital Marketing Agency in Kerala | Infynix',
     description:
       'Digital marketing agency in Kerala running SEO, Google and Meta ads, social media and marketing automation for businesses in Kochi, Kozhikode, Thrissur and Trivandrum.',
     h1: 'Digital Marketing Agency in Kerala',
@@ -97,7 +97,7 @@ export const keralaPages = [
     region: 'Kerala',
     service: 'SEO',
     category: 'marketing',
-    title: 'SEO Company in Kerala | Technical, Local & Content SEO | Infynix',
+    title: 'SEO Company in Kerala | Infynix',
     description:
       'SEO company in Kerala delivering technical audits, multi-city local SEO, content strategy and link building for businesses in Kochi, Kozhikode, Thrissur and Trivandrum.',
     h1: 'SEO Company in Kerala',
@@ -182,7 +182,7 @@ export const keralaPages = [
     region: 'Kerala',
     service: 'Software Development',
     category: 'technology',
-    title: 'Software Development Company in Kerala | Custom Software | Infynix',
+    title: 'Software Development Company in Kerala | Infynix',
     description:
       'Software development company in Kerala building custom web applications, CRM and ERP platforms, mobile apps and AI automation for Indian, UAE and UK clients.',
     h1: 'Software Development Company in Kerala',
@@ -352,7 +352,7 @@ export const keralaPages = [
     region: 'Kerala',
     service: 'Mobile App Development',
     category: 'technology',
-    title: 'Mobile App Development Company in Kerala | iOS & Android | Infynix',
+    title: 'Mobile App Development Company in Kerala | Infynix',
     description:
       'Mobile app development company in Kerala building iOS, Android and cross-platform apps with React Native and Flutter for startups and enterprises in India and the GCC.',
     h1: 'Mobile App Development Company in Kerala',
@@ -437,7 +437,7 @@ export const keralaPages = [
     region: 'Kerala',
     service: 'Social Media Marketing',
     category: 'marketing',
-    title: 'Social Media Marketing Agency in Kerala | Reels & Paid Social | Infynix',
+    title: 'Social Media Marketing Agency in Kerala | Infynix',
     description:
       'Social media marketing agency in Kerala. Malayalam and English content, reels production, influencer campaigns and paid social measured against enquiries, not follower counts.',
     h1: 'Social Media Marketing Agency in Kerala',
@@ -522,7 +522,7 @@ export const keralaPages = [
     region: 'Kerala',
     service: 'Performance Marketing',
     category: 'marketing',
-    title: 'Performance Marketing Agency in Kerala | Google & Meta Ads | Infynix',
+    title: 'Performance Marketing Agency in Kerala | Infynix',
     description:
       'Performance marketing agency in Kerala running Google Ads, Meta and conversion tracking wired into your CRM, optimised against qualified leads and revenue, not clicks.',
     h1: 'Performance Marketing Agency in Kerala',

@@ -16,7 +16,7 @@ export const kozhikodePages = [
     region: 'Kerala',
     service: 'Digital Marketing',
     category: 'marketing',
-    title: 'Digital Marketing Agency in Kozhikode (Calicut), Kerala | Infynix',
+    title: 'Digital Marketing Agency in Kozhikode, Kerala | Infynix',
     description:
       'Digital marketing agency serving Kozhikode and Calicut with SEO, Google and Meta ads, Malayalam social content and marketing automation for Malabar businesses.',
     h1: 'Digital Marketing Agency in Kozhikode',
@@ -101,7 +101,7 @@ export const kozhikodePages = [
     region: 'Kerala',
     service: 'SEO',
     category: 'marketing',
-    title: 'SEO Company in Kozhikode (Calicut) | Local SEO Services | Infynix',
+    title: 'SEO Company in Kozhikode (Calicut) | Infynix',
     description:
       'SEO services for Kozhikode and Calicut businesses, technical audits, local search visibility, Malayalam content and link building, with reporting on enquiries not screenshots.',
     h1: 'SEO Company in Kozhikode',
@@ -186,7 +186,7 @@ export const kozhikodePages = [
     region: 'Kerala',
     service: 'Software Development',
     category: 'technology',
-    title: 'Software Development Company in Kozhikode (Calicut) | Infynix',
+    title: 'Software Development Company in Kozhikode | Infynix',
     description:
       'Software development for Kozhikode and Calicut businesses, custom web applications, CRM and ERP systems, mobile apps and AI automation, delivered from Kerala.',
     h1: 'Software Development Company in Kozhikode',
@@ -271,7 +271,7 @@ export const kozhikodePages = [
     region: 'Kerala',
     service: 'Web Design & Development',
     category: 'technology',
-    title: 'Web Design Company in Kozhikode (Calicut) | Website Development | Infynix',
+    title: 'Web Design Company in Kozhikode (Calicut) | Infynix',
     description:
       'Web design and development for Kozhikode and Calicut businesses, fast, crawlable websites and e-commerce stores with Gulf shipping, built to rank and convert.',
     h1: 'Web Design Company in Kozhikode',
@@ -356,7 +356,7 @@ export const kozhikodePages = [
     region: 'Kerala',
     service: 'Mobile App Development',
     category: 'technology',
-    title: 'Mobile App Development Company in Kozhikode (Calicut) | Infynix',
+    title: 'Mobile App Development Company in Kozhikode | Infynix',
     description:
       'Mobile app development for Kozhikode and Calicut businesses, iOS, Android and cross-platform apps for retail, logistics, healthcare and Gulf-facing services.',
     h1: 'Mobile App Development Company in Kozhikode',

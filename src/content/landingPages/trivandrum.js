@@ -20,7 +20,7 @@ export const trivandrumPages = [
     region: 'Kerala',
     service: 'Digital Marketing',
     category: 'marketing',
-    title: 'Digital Marketing Agency in Trivandrum (Thiruvananthapuram) | Infynix',
+    title: 'Digital Marketing Agency in Trivandrum | Infynix',
     description:
       'Digital marketing agency serving Trivandrum and Thiruvananthapuram, SEO, Google and Meta ads, Malayalam social content and marketing automation for capital-city businesses.',
     h1: 'Digital Marketing Agency in Trivandrum',
@@ -106,7 +106,7 @@ export const trivandrumPages = [
     region: 'Kerala',
     service: 'SEO',
     category: 'marketing',
-    title: 'SEO Company in Trivandrum (Thiruvananthapuram) | Infynix Solutions',
+    title: 'SEO Company in Trivandrum (Thiruvananthapuram) | Infynix',
     description:
       'SEO services for Trivandrum and Thiruvananthapuram businesses, technical audits, local map-pack visibility, content and link building, reported against organic enquiries.',
     h1: 'SEO Company in Trivandrum',
@@ -191,7 +191,7 @@ export const trivandrumPages = [
     region: 'Kerala',
     service: 'Software Development',
     category: 'technology',
-    title: 'Software Development Company in Trivandrum (Thiruvananthapuram) | Infynix',
+    title: 'Software Development Company in Trivandrum | Infynix',
     description:
       'Software development for Trivandrum and Thiruvananthapuram businesses, custom web platforms, CRM and ERP systems, mobile apps and AI automation, built by a Kerala engineering team.',
     h1: 'Software Development Company in Trivandrum',
@@ -276,7 +276,7 @@ export const trivandrumPages = [
     region: 'Kerala',
     service: 'Web Design & Development',
     category: 'technology',
-    title: 'Web Design Company in Trivandrum (Thiruvananthapuram) | Infynix',
+    title: 'Web Design Company in Trivandrum | Infynix',
     description:
       'Web design and development for Trivandrum businesses, fast, crawlable, accessible websites and e-commerce stores built to rank and convert, not just to look good.',
     h1: 'Web Design Company in Trivandrum',

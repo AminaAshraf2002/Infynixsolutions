@@ -13,7 +13,7 @@ export const kochiPages = [
     region: 'Kerala',
     service: 'Digital Marketing',
     category: 'marketing',
-    title: 'Digital Marketing Agency in Kochi, Kerala | Infynix Solutions',
+    title: 'Digital Marketing Agency in Kochi, Kerala | Infynix',
     description:
       'Infynix Solutions is a digital marketing agency in Kochi running SEO, Google and Meta ads, social media and marketing automation for Kerala businesses. Office in Edappally, Kochi.',
     h1: 'Digital Marketing Agency in Kochi',
@@ -98,7 +98,7 @@ export const kochiPages = [
     region: 'Kerala',
     service: 'SEO',
     category: 'marketing',
-    title: 'SEO Company in Kochi | Local & Technical SEO Services | Infynix',
+    title: 'SEO Company in Kochi | Infynix',
     description:
       'SEO company in Kochi delivering technical SEO, local map-pack rankings, content and link building for Ernakulam businesses. Transparent reporting on rankings and qualified leads.',
     h1: 'SEO Company in Kochi',
@@ -183,7 +183,7 @@ export const kochiPages = [
     region: 'Kerala',
     service: 'Software Development',
     category: 'technology',
-    title: 'Software Development Company in Kochi, Kerala | Infynix Solutions',
+    title: 'Software Development Company in Kochi, Kerala | Infynix',
     description:
       'Software development company in Kochi building custom web applications, CRM and ERP systems, AI automation and cloud platforms for businesses in Kerala, India and the GCC.',
     h1: 'Software Development Company in Kochi',
@@ -693,7 +693,7 @@ export const kochiPages = [
     region: 'Kerala',
     service: 'UI/UX Design',
     category: 'technology',
-    title: 'UI/UX Design Company in Kochi, Kerala | Product Design | Infynix',
+    title: 'UI/UX Design Company in Kochi, Kerala | Infynix',
     description:
       'UI/UX design company in Kochi, user research, wireframing, prototyping and design systems for web apps, mobile apps and e-commerce, tested against real conversion goals.',
     h1: 'UI/UX Design Company in Kochi',

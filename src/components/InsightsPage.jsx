@@ -133,9 +133,9 @@ const InsightsPage = () => {
                 </p>
               </div>
 
-              <h3 style={{ fontSize: '1.5rem', fontWeight: 800, fontFamily: "'Montserrat', sans-serif", margin: '50px 0 20px', color: CHARCOAL }} data-aos="fade-up">
+              <h2 style={{ fontSize: '1.5rem', fontWeight: 800, fontFamily: "'Montserrat', sans-serif", margin: '50px 0 20px', color: CHARCOAL }} data-aos="fade-up">
                 Defining the New Blueprint
-              </h3>
+              </h2>
               <p style={{ marginBottom: '40px' }} data-aos="fade-up">
                 The blueprint for 2025 relies on three fundamental pillars: modularity, observability, and self-healing logic. Traditional fixed-state configurations are being replaced by dynamic environments that respond to telemetry in real-time. This isn't just automation; it's autonomous integration.
               </p>

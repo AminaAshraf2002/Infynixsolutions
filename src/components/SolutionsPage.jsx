@@ -1,7 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { solutionsData, caseStudiesData } from '../lib/contentData';
-import SEOManager from './SEOManager';
+import Seo from '../seo/Seo';
+import { organizationSchema, serviceSchema, breadcrumbSchema } from '../seo/schema';
 import defaultHeroBg from '../assets/hero_bg_abstract.jpg';
 import capImg1 from '../assets/cap_img_1.jpg';
 import capImg2 from '../assets/cap_img_2.jpg';
@@ -225,10 +226,24 @@ const SolutionsPage = () => {
           }
         }
       `}} />
-      <SEOManager
+      <Seo
         title={`${data.title} | Infynix Solutions`}
-        description={data.description}
-        canonicalUrl={`https://www.infynix-solutions.com/solutions/${slug}`}
+        description={data.description || data.subtitle}
+        path={`/solutions/${activeSlug}`}
+        schema={[
+          organizationSchema(),
+          serviceSchema({
+            name: data.title,
+            description: data.description || data.subtitle,
+            path: `/solutions/${activeSlug}`,
+            areaServed: ['Kerala', 'India', 'United Arab Emirates', 'United Kingdom'],
+          }),
+          breadcrumbSchema([
+            { name: 'Home', path: '/' },
+            { name: 'Solutions', path: '/solutions' },
+            { name: data.title, path: `/solutions/${activeSlug}` },
+          ]),
+        ]}
       />
 
       {/* ══ 1. HERO SECTION ══ */}
