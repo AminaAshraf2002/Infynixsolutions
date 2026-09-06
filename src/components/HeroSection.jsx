@@ -2,10 +2,9 @@ import { Link } from 'react-router-dom';
 import './HeroSection.css';
 import HeroBackground from './HeroBackground';
 
-// The three practices, as real text rather than a graphic: crawlable,
-// translatable and weightless. The five-stage method is not repeated here
-// because the section directly below the hero already carries it.
-const PILLARS = ['Marketing & Media', 'Software & Platforms', 'AI Vision & Surveillance'];
+// Three words, no explanation. The hero states the position; the sections below
+// it do the explaining. Anything longer here dilutes the one line that matters.
+const PILLARS = ['Marketing', 'Software', 'AI Surveillance'];
 
 // Where the company operates. Also the only place on the homepage that names the
 // three markets, which matters for entity signals as much as for the narrative.
@@ -24,17 +23,10 @@ function HeroSection({ data }) {
           <span className="hero-eyebrow">{eyebrow}</span>
 
           <h1 className="hero-title">
-            Growth Engineering.
+            Growth is <span className="title-highlight">engineered</span>,
             <br />
-            <span className="title-highlight">A discipline we are building.</span>
+            not advertised.
           </h1>
-
-          <p className="hero-subtitle">
-            Marketing wins attention. Software creates leverage. AI tells you what
-            is actually happening. Most companies buy the three from three
-            different vendors, then wonder why none of it compounds. We engineer
-            them as one system.
-          </p>
 
           <ol className="hero-method" aria-label="What we build">
             {PILLARS.map((pillar, index) => (
@@ -44,11 +36,6 @@ function HeroSection({ data }) {
               </li>
             ))}
           </ol>
-
-          <p className="hero-claim">
-            A category we are building rather than borrowing. Engineered in Kochi,
-            for clients across Kerala, the Gulf and the United Kingdom.
-          </p>
 
           <div className="hero-actions">
             <Link to="/contact" className="hero-btn hero-btn-primary">
