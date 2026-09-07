@@ -53,51 +53,63 @@ const GrowthEngineeringIcon = () => (
   </svg>
 );
 
-const GrowthMarketingIcon = () => (
+const AgencyIcon = () => (
   <svg viewBox="0 0 100 100" fill="none" stroke="#007A5E" strokeWidth="1.2" style={{ width: '100%', height: '100%' }}>
-    <ellipse cx="50" cy="25" rx="35" ry="12" />
-    <ellipse cx="50" cy="50" rx="22" ry="8" stroke="#A7D600" />
-    <ellipse cx="50" cy="75" rx="10" ry="4" />
-    <line x1="15" y1="25" x2="40" y2="75" />
-    <line x1="85" y1="25" x2="60" y2="75" />
-    <line x1="50" y1="25" x2="50" y2="75" strokeDasharray="3 3" />
+    {/* Target rings */}
+    <circle cx="50" cy="50" r="35" strokeDasharray="4 2" />
+    <circle cx="50" cy="50" r="22" />
+    <circle cx="50" cy="50" r="10" fill="#007A5E" />
+    {/* Arrow */}
+    <line x1="85" y1="15" x2="55" y2="45" stroke="#A7D600" strokeWidth="1.5" />
+    <polygon points="85,15 75,15 85,25" fill="#A7D600" stroke="#A7D600" />
+    {/* Arrow tail */}
+    <line x1="85" y1="15" x2="90" y2="10" stroke="#A7D600" />
+    {/* Decorative line */}
+    <line x1="15" y1="85" x2="25" y2="75" strokeDasharray="2 2" />
   </svg>
 );
 
-const GrowthSystemsIcon = () => (
-  <svg viewBox="0 0 100 100" fill="none" stroke="#007A5E" strokeWidth="1" style={{ width: '100%', height: '100%' }}>
-    <circle cx="50" cy="50" r="30" strokeDasharray="4 2" />
-    <circle cx="50" cy="50" r="15" stroke="#A7D600" />
-    <circle cx="50" cy="20" r="4" fill="#007A5E" />
-    <circle cx="50" cy="80" r="4" fill="#007A5E" />
-    <circle cx="20" cy="50" r="4" fill="#007A5E" />
-    <circle cx="80" cy="50" r="4" fill="#007A5E" />
-    <line x1="50" y1="20" x2="50" y2="80" />
-    <line x1="20" y1="50" x2="80" y2="50" />
-    <line x1="29" y1="29" x2="71" y2="71" strokeDasharray="2 2" />
-    <line x1="29" y1="71" x2="71" y2="29" strokeDasharray="2 2" />
+const MediaIcon = () => (
+  <svg viewBox="0 0 100 100" fill="none" stroke="#007A5E" strokeWidth="1.2" style={{ width: '100%', height: '100%' }}>
+    {/* Cinema Camera Body */}
+    <rect x="25" y="40" width="45" height="35" rx="3" />
+    {/* Lens */}
+    <polygon points="70,48 90,38 90,77 70,67" stroke="#A7D600" strokeLinejoin="round" />
+    {/* Film Reels */}
+    <circle cx="35" cy="25" r="12" strokeDasharray="4 2" />
+    <circle cx="35" cy="25" r="4" fill="#007A5E" />
+    <circle cx="60" cy="25" r="12" strokeDasharray="4 2" />
+    <circle cx="60" cy="25" r="4" fill="#007A5E" />
+    {/* Tripod Stand */}
+    <line x1="30" y1="75" x2="20" y2="90" strokeDasharray="2 2" />
+    <line x1="65" y1="75" x2="75" y2="90" strokeDasharray="2 2" />
+    <line x1="47.5" y1="75" x2="47.5" y2="90" strokeDasharray="2 2" />
   </svg>
 );
 
-const WebDevIcon = () => (
+const DevIcon = () => (
   <svg viewBox="0 0 100 100" fill="none" stroke="#007A5E" strokeWidth="1.2" style={{ width: '100%', height: '100%' }}>
-    <rect x="15" y="20" width="70" height="50" rx="4" />
-    <line x1="15" y1="32" x2="85" y2="32" />
-    <circle cx="22" cy="26" r="2" fill="#007A5E" />
-    <circle cx="28" cy="26" r="2" fill="#007A5E" />
-    <circle cx="34" cy="26" r="2" fill="#A7D600" />
-    {/* Floating elements */}
-    <rect x="25" y="42" width="22" height="18" stroke="#A7D600" />
-    <line x1="54" y1="45" x2="75" y2="45" />
-    <line x1="54" y1="52" x2="75" y2="52" />
-    <line x1="54" y1="59" x2="68" y2="59" />
+    {/* Monitor */}
+    <rect x="15" y="20" width="70" height="45" rx="4" />
+    <line x1="15" y1="30" x2="85" y2="30" />
+    {/* Browser dots */}
+    <circle cx="22" cy="25" r="2" fill="#007A5E" />
+    <circle cx="28" cy="25" r="2" fill="#007A5E" />
+    <circle cx="34" cy="25" r="2" fill="#A7D600" />
+    {/* Monitor Stand */}
+    <line x1="50" y1="65" x2="50" y2="80" strokeDasharray="3 3" />
+    <line x1="35" y1="80" x2="65" y2="80" />
+    {/* Code Brackets </> inside */}
+    <polyline points="40,40 30,48 40,56" stroke="#A7D600" strokeWidth="1.5" strokeLinejoin="round" />
+    <line x1="55" y1="38" x2="45" y2="58" stroke="#A7D600" strokeWidth="1.5" />
+    <polyline points="60,40 70,48 60,56" stroke="#A7D600" strokeWidth="1.5" strokeLinejoin="round" />
   </svg>
 );
 
 
 const services = [
   {
-    icon: <GrowthMarketingIcon />,
+    icon: <AgencyIcon />,
     title: 'Infynix Agency',
     layerPrefix: 'Layer 01',
     layerName: 'Distribution',
@@ -105,7 +117,7 @@ const services = [
     link: '/solutions/infynix-agency',
   },
   {
-    icon: <GrowthSystemsIcon />,
+    icon: <MediaIcon />,
     title: 'Infynix Media',
     layerPrefix: 'Layer 02',
     layerName: 'Content',
@@ -113,7 +125,7 @@ const services = [
     link: '/solutions/infynix-media',
   },
   {
-    icon: <WebDevIcon />,
+    icon: <DevIcon />,
     title: 'Infynix Development',
     layerPrefix: 'Layer 03',
     layerName: 'Systems',

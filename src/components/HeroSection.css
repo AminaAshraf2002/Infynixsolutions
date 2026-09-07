@@ -238,121 +238,108 @@
 
 @media (max-width: 900px) {
   .hero-veil {
-    /* Vertical fade reads better once the text stack goes full width. */
-    background: linear-gradient(
-      180deg,
-      rgba(3, 12, 9, 0.78) 0%,
-      rgba(3, 12, 9, 0.62) 55%,
-      rgba(3, 12, 9, 0.4) 100%
+    background: radial-gradient(
+      ellipse 130% 110% at 50% 50%,
+      rgba(3, 12, 9, 0.55) 0%,
+      rgba(3, 12, 9, 0.88) 100%
     );
   }
 }
 
+/* ═══════════════════════════════════════════════════
+   MOBILE HERO — full screen, centered, premium feel
+   ═══════════════════════════════════════════════════ */
 @media (max-width: 768px) {
-  /* index.css centres and italicises hero text below 768px. The hero is
-     left-aligned by design at every width, so these re-assert it. */
-  .hero-content,
-  .hero-title,
-  .hero-subtitle,
-  .hero-claim,
-  .hero-method,
-  .hero-regions,
-  .hero-eyebrow {
-    text-align: left !important;
-  }
 
-  .hero-subtitle {
-    font-style: normal !important;
-  }
-
+  /* Section: zero padding so the card bleeds edge-to-edge */
   .hero-section {
-    padding-top: 100px;
-    padding-bottom: 48px;
+    padding: 0 !important;
+    background: #050608; /* matches card bg so no white gap */
+    overflow: hidden;
   }
 
+  /* Stage: full viewport width & height, no gap, no border-radius */
   .hero-stage {
-    width: calc(100% - 32px);
-    min-height: 64vh;
-    border-radius: 24px;
+    width: 100% !important;
+    min-height: 100svh !important;
+    min-height: 100vh !important; /* fallback */
+    border-radius: 0 !important;
+    margin: 0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
+  /* Content: center everything */
   .hero-content {
-    padding: 2.5rem 1.5rem;
-    gap: 1.15rem;
+    padding: 6rem 1.6rem 3rem !important;
+    gap: 1.1rem;
+    align-items: center !important;
+    text-align: center !important;
+    max-width: 100% !important;
+    justify-content: center;
+  }
+
+  .hero-eyebrow {
+    font-size: 0.68rem;
+    letter-spacing: 2.5px;
+    justify-content: center;
+    text-align: center !important;
   }
 
   .hero-title {
-    font-size: clamp(1.75rem, 7.8vw, 2.5rem);
-    max-width: 100%;
-    /* The desktop break orphans "cannot." on its own line here. Let the browser
-       balance the three lines instead. */
+    font-size: clamp(2rem, 9vw, 2.8rem) !important;
+    text-align: center !important;
+    max-width: 100% !important;
     text-wrap: balance;
+    line-height: 1.08;
+    font-weight: 700;
   }
 
-  .hero-title br {
-    display: none;
-  }
+  .hero-title br { display: none; }
 
-  .hero-subtitle {
-    font-size: 0.95rem;
-  }
-
+  .hero-subtitle,
   .hero-claim {
-  font-family: 'Montserrat', Arial, sans-serif;
-  font-size: clamp(0.92rem, 1.15vw, 1.02rem);
-  line-height: 1.6;
-  font-weight: 500;
-  color: rgb(214, 250, 86);
-  max-width: 54ch;
-  margin: 0;
-}
-
-.hero-regions {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 0 14px;
-  list-style: none;
-  margin: 0.9rem 0 0;
-  padding: 0.9rem 0 0;
-  border-top: 1px solid rgba(255, 255, 255, 0.16);
-  width: 100%;
-  max-width: 640px;
-}
-
-.hero-region {
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.62);
-}
-
-.hero-region + .hero-region::before {
-  content: '';
-  display: inline-block;
-  width: 4px;
-  height: 4px;
-  border-radius: 50%;
-  background: rgba(214, 250, 86, 0.75);
-  margin-right: 14px;
-  vertical-align: middle;
-}
-
-.hero-method {
-    gap: 8px 18px;
+    text-align: center !important;
+    font-style: normal !important;
+    max-width: 32ch;
   }
-}
 
-@media (max-width: 520px) {
+  .hero-subtitle { font-size: 0.96rem; }
+  .hero-claim    { font-size: 0.88rem; }
+
+  /* Buttons: stacked, full width, big thumb targets */
   .hero-actions {
-    flex-direction: column;
-    align-items: stretch;
-    width: 100%;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    width: 100% !important;
+    max-width: 300px !important;
+    gap: 12px !important;
+    margin-top: 0.6rem;
   }
 
   .hero-btn {
-    width: 100%;
-    text-align: center;
+    width: 100% !important;
+    text-align: center !important;
+    padding: 16px 20px !important;
+    font-size: 1rem !important;
+    border-radius: 100px !important;
+  }
+
+  /* Regions: centered, tighter */
+  .hero-regions {
+    justify-content: center !important;
+    max-width: 100% !important;
+    text-align: center !important;
+    gap: 0 8px;
+    margin: 0.8rem 0 0;
+    padding: 0.8rem 0 0;
+  }
+
+  .hero-region   { font-size: 0.65rem; }
+
+  .hero-method {
+    justify-content: center;
+    gap: 6px 14px;
   }
 }

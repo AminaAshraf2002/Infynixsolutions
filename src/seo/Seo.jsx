@@ -43,6 +43,16 @@ export default function Seo({
       <title>{resolvedTitle}</title>
       <meta name="description" content={resolvedDescription} />
       <link rel="canonical" href={canonical} />
+
+      {/* ── hreflang: regional alternate versions of this site ─────────
+          All three domains must carry this full set for Google to honour it.
+          Companion changes are needed in the .ae and .co.uk repos too.
+          x-default = fallback for regions not explicitly mapped (global .com). */}
+      <link rel="alternate" hreflang="en-IN" href="https://www.infynix-solutions.com/" />
+      <link rel="alternate" hreflang="en-AE" href="https://www.infynixsolutions.ae/" />
+      <link rel="alternate" hreflang="en-GB" href="https://www.infynixsolutions.co.uk/" />
+      <link rel="alternate" hreflang="x-default" href="https://www.infynix-solutions.com/" />
+
       <meta
         name="robots"
         content={noindex ? 'noindex, follow' : 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'}

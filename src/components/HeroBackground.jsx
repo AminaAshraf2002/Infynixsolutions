@@ -19,7 +19,7 @@ import { useEffect, useRef } from 'react';
  *    work and would only cost battery.
  */
 
-const LINK_DISTANCE = 150;
+let linkDistance = 150;
 const POINTER_RADIUS = 200;
 const MAX_NODES = 90;
 
@@ -51,18 +51,22 @@ export default function HeroBackground() {
     let detections = [];
     const pointer = { x: -9999, y: -9999, active: false };
 
+    const isMobile = () => width < 768;
+
     const seedNodes = () => {
-      // Roughly one node per 18k css pixels, capped at both ends so the field
-      // stays legible on a phone and affordable on a large display.
-      const target = Math.max(24, Math.min(MAX_NODES, Math.round((width * height) / 18000)));
+      // More nodes on mobile for visual richness, but kept affordable
+      const density = isMobile() ? 14000 : 20000;
+      const minN    = isMobile() ? 22 : 15;
+      const target  = Math.max(minN, Math.min(MAX_NODES, Math.round((width * height) / density)));
+      const speed   = isMobile() ? 0.55 : 0.28; // faster on mobile = more dynamic
       nodes = Array.from({ length: target }, () => ({
         x: Math.random() * width,
         y: Math.random() * height,
-        vx: (Math.random() - 0.5) * 0.28,
-        vy: (Math.random() - 0.5) * 0.28,
-        r: Math.random() * 1.6 + 1.1,
+        vx: (Math.random() - 0.5) * speed,
+        vy: (Math.random() - 0.5) * speed,
+        r:  Math.random() * 2.2 + 1.4,
+        pulse: Math.random() * Math.PI * 2, // random phase for glow pulse
       }));
-      // Detection brackets reference nodes by index, so they cannot survive a reseed.
       detections = [];
     };
 
@@ -76,6 +80,10 @@ export default function HeroBackground() {
       canvas.width = Math.round(width * dpr);
       canvas.height = Math.round(height * dpr);
       ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      
+      // On mobile, reduce the connection distance so it doesn't form a messy blob
+      linkDistance = width < 768 ? 90 : 150;
+      
       seedNodes();
     };
 
@@ -90,12 +98,20 @@ export default function HeroBackground() {
           const dx = a.x - b.x;
           const dy = a.y - b.y;
           const dist = Math.hypot(dx, dy);
-          if (dist > LINK_DISTANCE) continue;
+          if (dist > linkDistance) continue;
 
-          // Links fade in as nodes approach, the "systems connecting" beat.
-          const strength = 1 - dist / LINK_DISTANCE;
-          ctx.strokeStyle = `rgba(120, 200, 170, ${strength * 0.34})`;
-          ctx.lineWidth = strength * 1.15;
+          const strength = 1 - dist / linkDistance;
+          // Brighter, more vivid connections on mobile
+          const alpha = isMobile() ? strength * 0.65 : strength * 0.34;
+          const lineW = isMobile() ? strength * 2.0 : strength * 1.15;
+
+          if (isMobile()) {
+            // Glowing lime-green lines on mobile for eye-catching look
+            ctx.strokeStyle = `rgba(180, 240, 90, ${alpha})`;
+          } else {
+            ctx.strokeStyle = `rgba(120, 200, 170, ${alpha})`;
+          }
+          ctx.lineWidth = lineW;
           ctx.beginPath();
           ctx.moveTo(a.x, a.y);
           ctx.lineTo(b.x, b.y);
@@ -119,9 +135,28 @@ export default function HeroBackground() {
       }
 
       for (const node of nodes) {
+        // Increment pulse for animated glow
+        node.pulse = (node.pulse || 0) + 0.04;
         const nearPointer =
           pointer.active && Math.hypot(node.x - pointer.x, node.y - pointer.y) < POINTER_RADIUS;
-        ctx.fillStyle = nearPointer ? 'rgba(214, 250, 86, 0.95)' : 'rgba(190, 230, 210, 0.7)';
+
+        if (isMobile()) {
+          // On mobile: draw a soft glow halo behind each node
+          const glowAlpha = 0.12 + 0.08 * Math.sin(node.pulse);
+          const glowRadius = node.r * 3.5;
+          const grd = ctx.createRadialGradient(node.x, node.y, 0, node.x, node.y, glowRadius);
+          grd.addColorStop(0, `rgba(180, 240, 90, ${glowAlpha * 2}`);
+          grd.addColorStop(1, `rgba(180, 240, 90, 0)`);
+          ctx.fillStyle = grd;
+          ctx.beginPath();
+          ctx.arc(node.x, node.y, glowRadius, 0, Math.PI * 2);
+          ctx.fill();
+          // Node dot itself — bright lime
+          ctx.fillStyle = nearPointer ? 'rgba(255, 255, 100, 1)' : `rgba(214, 250, 86, ${0.8 + 0.2 * Math.sin(node.pulse)})`;
+        } else {
+          ctx.fillStyle = nearPointer ? 'rgba(214, 250, 86, 0.95)' : 'rgba(190, 230, 210, 0.7)';
+        }
+
         ctx.beginPath();
         ctx.arc(node.x, node.y, node.r, 0, Math.PI * 2);
         ctx.fill();

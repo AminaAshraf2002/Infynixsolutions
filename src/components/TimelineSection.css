@@ -405,6 +405,7 @@
   .timeline-section {
     padding: 8vh 5%;
     overflow: hidden;
+    min-height: auto;
   }
   .timeline-header-section {
     padding: 0;

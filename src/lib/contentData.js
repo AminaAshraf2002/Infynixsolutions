@@ -265,27 +265,198 @@ export const industriesData = {
 };
 
 export const caseStudiesData = [
+  // ── DEVELOPMENT CATEGORY ──
+  {
+    slug: 'beyond-demands',
+    category: 'Development',
+    title: 'Salon Procurement & Multi-Branch Inventory System',
+    client: 'Atmosot Wellcare',
+    clientFull: 'ATMOSOTWELL CARE BEAUTY SERVICES LLP',
+    description: 'Atmosot Wellcare (ATMOSOTWELL CARE BEAUTY SERVICES LLP) runs beauty and salon services across multiple branches. Before working with Infynix Solutions, procurement was managed through phone calls, WhatsApp messages and paper stock registers, with no shared visibility between branches, vendors and management.',
+    before: [
+      'Ordering done through calls and messages, no shared record',
+      'Stock tracked on paper, varying branch to branch',
+      'Low stock often noticed only after a product ran out',
+      'No way for management to see stock or orders across branches'
+    ],
+    after: [
+      'Vendor orders placed and tracked in one system, every branch',
+      'Stock levels recorded consistently, one source of truth',
+      'Low-stock alerts prompt reordering before shortages happen',
+      'Management gets one dashboard view across all branches'
+    ],
+    quote: "Before this, keeping track of stock across branches meant a lot of calls and a lot of guesswork. Now every branch follows the same process, and I can see what's happening everywhere from one screen. It has made day-to-day ordering far less stressful for the whole team.",
+    quoteAuthor: 'Atmosot Wellcare Management',
+    challenge: 'Partner salons, warehouse teams, and management required distinct portal views into inventory, ordering, and dispatch without data leakage.',
+    objectives: 'Ship one multi-tenant platform with three dedicated operational portals while maintaining strict data security and real-time stock sync.',
+    strategy: 'Built with Next.js and PostgreSQL Row-Level Security to ensure tenant data safety and automated low-stock reordering alerts.',
+    technology: 'Next.js, React 19, Prisma, PostgreSQL, NextAuth, Node.js',
+    execution: 'Implemented Postgres security policies, transaction locking for inventory dispatch, automated low-stock alerts, and instant order WhatsApp notifications.',
+    results: 'One unified codebase, 100% inventory visibility across all branches, and zero data leakage between client accounts.'
+  },
   {
     slug: 'task-management-system',
-    title: 'A multi-role SaaS platform for team and task management',
-    client: 'TMS',
+    category: 'Development',
+    title: 'Multi-Role SaaS Platform for Field Team & Task Operations',
+    client: 'TMS Enterprise',
+    clientFull: 'TMS OPERATIONAL SOLUTIONS',
+    description: 'TMS Enterprise managed field teams across multiple geographic zones using paper logs and fragmented instant messaging groups, causing delayed task updates and zero real-time accountability.',
+    before: [
+      'Field employee progress tracked manually via calls and messaging apps',
+      'No offline support when field workers operated in low-connectivity zones',
+      'Managers lacked live status dashboards across regional teams',
+      'Duplicate task assignments and missed SLA deadlines'
+    ],
+    after: [
+      'Dedicated web portal for managers and Flutter mobile app for field staff',
+      'Full offline SQLite sync ensuring 100% uptime in remote areas',
+      'Automated task dispatch, geo-tagging, and live SLA tracking',
+      'Real-time executive dashboard for multi-tier role management'
+    ],
+    quote: "TMS transformed our field team operations. Our site engineers can log work offline without losing data, and management sees progress in real time. Task completion speed jumped dramatically.",
+    quoteAuthor: 'TMS Operations Director',
     challenge: 'Infynix built an internal software suite to manage team tasks across multiple roles (Super Admin, Org Admin, Team Lead, Employee).',
     objectives: 'Build a scalable multi-role platform with clear separation between web management and mobile execution, supporting offline work for field employees.',
     strategy: 'Web app built in React and Node.js for managers; mobile app built with Flutter and SQLite for field staff working offline.',
     technology: 'React, Vite, Node.js, Express, MongoDB, SQLite, Flutter',
-    execution: 'Shipped 17+ custom frontend modules and built SQLite offline synchronization.',
-    results: '17+ custom pages shipped across one unified platform with 100% offline support for field staff.',
+    execution: 'Shipped 17+ custom frontend modules, role-based access control, and built SQLite offline synchronization.',
+    results: '17+ custom pages shipped across one unified platform with 100% offline support for field staff.'
   },
   {
-    slug: 'beyond-demands',
-    title: 'A supply procurement platform with three dedicated operational portals',
-    client: 'Beyond Demands',
-    challenge: 'Partner salons, warehouse teams, and admins required distinct portal views into inventory, ordering, and dispatch.',
-    objectives: 'Ship one multi-tenant platform with three dedicated surfaces while maintaining strict data security.',
-    strategy: 'Built with Next.js and PostgreSQL Row-Level Security to ensure tenant data safety.',
-    technology: 'Next.js, Prisma, PostgreSQL, NextAuth',
-    execution: 'Implemented Postgres security policies, transaction locking for inventory dispatch, and automated audit logs.',
-    results: 'One unified codebase, three tailored operational portals, and zero data leakage between client accounts.',
+    slug: 'agency-os',
+    category: 'Development',
+    title: 'Client Onboarding & Project Management Operating System',
+    client: 'Agency OS',
+    clientFull: 'AGENCY OS PLATFORM',
+    description: 'A comprehensive client management and billing portal built for fast-scaling digital agencies struggling with email-based client communication, delayed milestone approvals, and manual invoice tracking.',
+    before: [
+      'Client communication scattered across WhatsApp, Slack, and email threads',
+      'Manual invoice generation and delayed milestone sign-offs',
+      'No central client portal for file sharing and project tracking',
+      'Lack of automated revenue reporting and agency capacity planning'
+    ],
+    after: [
+      'Centralized white-label portal for client approvals, deliverables, and tickets',
+      'Automated Stripe invoicing and recurring milestone billing workflows',
+      'Real-time project roadmap and client feedback submission interface',
+      'Unified admin analytics for retainer revenue and team bandwidth'
+    ],
+    quote: "Agency OS gave our clients a single, professional portal. It cut client management emails by half and sped up invoice payments dramatically.",
+    quoteAuthor: 'Agency OS Co-Founder',
+    challenge: 'Agencies lose productive hours managing client updates through fragmented email threads and manual billing systems.',
+    objectives: 'Provide digital agencies with an end-to-end client workspace for project delivery, asset management, automated billing, and ticketing.',
+    strategy: 'Built a modular React single-page application backed by Node.js web services and Stripe webhooks.',
+    technology: 'React 19, Node.js, Express, PostgreSQL, Stripe API, TailwindCSS',
+    execution: 'Engineered custom client dashboards, automated milestone approval notifications, and Stripe recurring billing integration.',
+    results: '50% reduction in administrative client emails, 3x faster client onboarding, and automated monthly retainer collection.'
+  },
+  {
+    slug: 'ai-surveillance',
+    category: 'Development',
+    title: 'AI Face Recognition & Surveillance System',
+    client: 'Infynix Vision AI',
+    clientFull: 'INFYNIX AI SURVEILLANCE SYSTEMS',
+    description: 'Facilities relying on manual attendance and access checks needed a way to identify and track individuals across multiple camera feeds in real time. Infynix built a containerized face-recognition surveillance platform combining a high-accuracy detection engine with live video streaming and a mobile enrollment app.',
+    before: [
+      'Identity verification and monitoring done manually across camera feeds',
+      'No way to track a person consistently as they moved between cameras',
+      'Face enrollment required manual, in-person setup with no mobile option',
+      'No safeguard against false positives when a person briefly left frame'
+    ],
+    after: [
+      'Real-time face recognition running on InsightFace (ArcFace/SCRFD) and YOLOv8',
+      'Cross-camera de-duplication so the same person isn’t double-counted across feeds',
+      'OUT confirmation buffer logic to prevent false exits from momentary occlusion',
+      'Flutter mobile app for on-the-go face enrollment',
+      'Geofencing to trigger zone-based alerts automatically'
+    ],
+    quote: "The system reliably tracks people across every camera without losing them at the handoff points, and the mobile enrollment app means we're not tied to a desk to add someone new.",
+    quoteAuthor: 'Facility Operations Lead',
+    challenge: 'Manual identity checks and single-camera monitoring couldn’t track individuals consistently as they moved through a multi-camera facility, and enrollment required in-person desktop access.',
+    objectives: 'Build a containerized, real-time face recognition system with reliable cross-camera tracking, low-latency inference, and mobile-based enrollment.',
+    strategy: 'Combined InsightFace and YOLOv8 for detection/recognition with DeepSort for tracking and FAISS for fast similarity search, wrapped in a FastAPI engine with ONNX Runtime optimization and a TTL-based recognition cache.',
+    technology: 'Python, FastAPI, InsightFace (ArcFace/SCRFD), YOLOv8, DeepSort, FAISS, ONNX Runtime, Docker, Node.js, React, MediaMTX, Flutter',
+    execution: 'Built the Docker-based FastAPI face engine, integrated MediaMTX for RTSP/WebRTC streaming, implemented OUT confirmation buffering and geofencing logic, shipped a Flutter enrollment app, and delivered handover documentation for the engineering team.',
+    results: 'Reliable real-time recognition across multiple camera feeds with no duplicate tracking, faster enrollment via mobile, and a fully documented handover for ongoing maintenance.'
+  },
+
+  // ── MEDIA CATEGORY ──
+  {
+    slug: 'salon-branding-menucard',
+    category: 'Media',
+    title: 'Salon Service Menu & Beauty Brand Visual Identity',
+    client: 'Lumora Luxury Salon',
+    clientFull: 'LUMORA BEAUTY & SPA SERVICES (UAE)',
+    description: 'Lumora Beauty & Spa Services in UAE needed a luxury service menu card design, premium print collateral, and a cohesive visual brand revamp to reflect high-end hair, spa, and beauty treatments across its UAE branches.',
+    before: [
+      'Outdated service price lists and uninspired paper flyers',
+      'Fragmented brand identity across social media and physical salon collateral',
+      'Low visibility on premium salon treatment packages and VIP memberships'
+    ],
+    after: [
+      'Luxury gold-accented salon service menu card detailing hair, spa, and beauty treatments',
+      'Cohesive brand guidelines across digital social channels, printed menus, and salon reception',
+      'Digital QR menu integration allowing clients to browse treatment packages on mobile'
+    ],
+    quote: "The new service menu card and brand identity created by Infynix Media gave our salon the luxury UAE feel we wanted. Our clients love the elegant service presentation.",
+    quoteAuthor: 'Lumora Salon Management (UAE)',
+    challenge: 'Outdated price list flyers diluted Lumora\'s luxury positioning in the competitive UAE beauty and wellness market.',
+    objectives: 'Elevate brand perception across UAE branches with a luxury salon service menu, tactile print assets, and digital QR menu access.',
+    strategy: 'Custom typography hierarchy, gold-foil print menu layouts, treatment package categorization, and digital QR integration.',
+    execution: 'Designed print-ready high-resolution salon menu cards, social media brand kits, and digital salon service menus.',
+    results: '200% increase in high-tier treatment package bookings and premium brand recognition across UAE branches.'
+  },
+  {
+    slug: 'corporate-brand-identity',
+    category: 'Media',
+    title: 'Salon Visiting Card & Corporate Visual Identity',
+    client: 'Hair Studio De Luxe',
+    clientFull: 'ATMOSOTWELL CARE BEAUTY SERVICES LLP',
+    description: 'ATMOSOTWELL CARE BEAUTY SERVICES LLP, operating as Hair Studio De Luxe, began its journey in 2018 in Thrissur and has emerged as one of the top beauty and wellness companies in Kerala. With active branches in Thrissur, Edappal, Pattambi, K Mall Kakkatil, and Perumpilavu, they needed executive visiting cards and a unified visual brand identity.',
+    before: [
+      'Inconsistent visiting card designs across expanding branch locations in Kerala',
+      'Standard paper cards that failed to reflect Hair Studio De Luxe\'s premium service standards',
+      'No digital contact integration for branch managers, stylists, and VIP client relations'
+    ],
+    after: [
+      'Luxury foil-stamped salon visiting cards with QR/NFC digital contact sharing',
+      'Unified corporate visual identity guidelines across all 5+ Hair Studio De Luxe salon branches',
+      'Instant digital contact saving for clients booking premium hair and beauty treatments'
+    ],
+    quote: "Our new Hair Studio De Luxe visiting cards and brand collateral perfectly reflect our journey from 2018 to becoming one of Kerala's premier salon chains.",
+    quoteAuthor: 'Hair Studio De Luxe Management (ATMOSOTWELL CARE)',
+    challenge: 'Rapid branch expansion across Kerala required a unified, high-end visual brand identity and executive visiting cards for salon management.',
+    objectives: 'Design luxury visiting cards and brand collateral that project trust, elegance, and corporate consistency across all salon branches.',
+    strategy: 'Bespoke salon typography, luxury foil-stamped print specifications, and digital QR/NFC vCard contact integration.',
+    execution: 'Created executive visiting card suite, digital contact sharing systems, and branch brand guidelines for Hair Studio De Luxe.',
+    results: 'Standardized visual identity across 5+ Kerala branches and elevated client brand perception.'
+  },
+
+  // ── AGENCY CATEGORY ──
+  {
+    slug: 'performance-ad-campaign',
+    category: 'Agency',
+    title: 'Multi-Channel Paid Ads & ROI Scaling Campaign',
+    client: 'Velox Growth',
+    clientFull: 'VELOX COMMERCE & GROWTH SERVICES',
+    description: 'Velox struggled with skyrocketing cost-per-acquisition (CPA) on Google and Meta ad campaigns due to unoptimized ad creatives, outdated audience targeting, and slow landing page conversion rates.',
+    before: [
+      'High ad spend ($15k+/month) with inconsistent lead quality and rising CPA',
+      'Generic ad copy and creative fatigue causing low click-through rates (CTR)',
+      'Disconnected analytics missing server-side conversion tracking'
+    ],
+    after: [
+      'High-converting video ad hooks and targeted audience interest segmentation',
+      'Server-side Meta CAPI & Google Ads Conversion API setup for 100% tracking accuracy',
+      'Custom high-speed React landing pages optimized for maximum conversion'
+    ],
+    quote: "Infynix Agency turned our ad campaigns around within 30 days. Our cost per lead dropped by 42% while overall lead volume doubled.",
+    quoteAuthor: 'Velox CMO',
+    challenge: 'Wasted ad budgets on broad click campaigns that failed to convert into qualified customer inquiries.',
+    objectives: 'Scale monthly ad lead volume while cutting cost-per-acquisition (CPA) by at least 30% through creative testing and server-side tracking.',
+    strategy: 'Dynamic ad creative matrix, pre-rendered high-speed landing pages, and automated retargeting funnels.',
+    execution: 'Ran 50+ ad variation tests, integrated Meta CAPI, designed conversion-focused landing pages, and optimized lead routing into client CRM.',
+    results: '42% reduction in CPA, 2.8x Return on Ad Spend (ROAS), and 120+ qualified enterprise leads generated monthly.'
   }
 ];
 

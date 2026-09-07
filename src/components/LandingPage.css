@@ -8,11 +8,43 @@
   --lp-line: #e5e7eb;
   --lp-tint: #f0fdf4;
 
-  padding-left: var(--section-px, 40px);
-  padding-right: var(--section-px, 40px);
+  padding-left: clamp(40px, 6vw, 100px);
+  padding-right: clamp(40px, 6vw, 100px);
   padding-bottom: 100px;
   color: var(--lp-ink);
   font-family: var(--font-body, 'Montserrat', Arial, sans-serif);
+  position: relative;
+}
+
+/* Global dashed lines for landing pages */
+.lp::before,
+.lp::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 0;
+  z-index: 60;
+  pointer-events: none;
+}
+.lp::before {
+  left: clamp(20px, 4vw, 60px);
+  border-left: 1.5px dashed rgba(0, 0, 0, 0.11);
+}
+.lp::after {
+  right: clamp(20px, 4vw, 60px);
+  border-right: 1.5px dashed rgba(0, 0, 0, 0.11);
+}
+@media (max-width: 768px) {
+  .lp::before, .lp::after {
+    display: none;
+  }
+}
+
+/* Disable the section-level dashed lines to prevent overlapping */
+.lp-section::before,
+.lp-section::after {
+  display: none !important;
 }
 
 .lp-breadcrumb {

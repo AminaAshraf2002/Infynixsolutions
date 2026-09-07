@@ -126,6 +126,28 @@ const Footer = () => {
               <Link to="/terms-of-service">Terms of Use</Link>
               <a href="/sitemap.xml" target="_blank" rel="noopener noreferrer">XML Sitemap</a>
             </div>
+
+            {/* Cross-domain links — dofollow intentionally, these are our own regional
+                sister sites. rel="noopener" is for security on target="_blank" only. */}
+            <div className="footer-nav-col">
+              <span style={{ color: '#ffffff', fontWeight: 'bold', fontSize: '0.85rem', marginBottom: '8px' }}>GLOBAL PRESENCE</span>
+              <a
+                href="https://www.infynixsolutions.ae"
+                target="_blank"
+                rel="noopener"
+                style={{ display: 'flex', alignItems: 'center', gap: '6px' }}
+              >
+                🇦🇪 UAE — infynixsolutions.ae
+              </a>
+              <a
+                href="https://www.infynixsolutions.co.uk"
+                target="_blank"
+                rel="noopener"
+                style={{ display: 'flex', alignItems: 'center', gap: '6px' }}
+              >
+                🇬🇧 UK — infynixsolutions.co.uk
+              </a>
+            </div>
           </div>
         </div>
 

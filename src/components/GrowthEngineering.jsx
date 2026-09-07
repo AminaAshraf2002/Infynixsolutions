@@ -246,20 +246,18 @@ const GrowthEngineering = () => {
             <p style={{ fontFamily: "var(--ix-font-body)", fontSize: "1.05rem", color: "#666", lineHeight: 1.6 }}>Building clean digital systems that help your business rank high and get clients.</p>
           </div>
 
-          <div style={{
+          <div className={`ge-hero-text-3 ${settled ? 'settled' : ''}`} style={{
             position: "absolute",
             left: "8vw",
             right: "8vw",
-            top: settled ? "calc(66vh + 5vh)" : "calc(105vh)",
             opacity: settled ? 1 : 0,
-            transform: settled ? "translateY(0px)" : "translateY(10px)",
-            transition: "opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1) 0.5s, transform 0.7s cubic-bezier(0.4, 0, 0.2, 1) 0.5s",
             pointerEvents: settled ? "auto" : "none",
             zIndex: 3,
             marginTop: "40px",
+            transition: "opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1) 0.5s, transform 0.7s cubic-bezier(0.4, 0, 0.2, 1) 0.5s",
           }}>
-            <div style={{ maxWidth: 1200, margin: '0 auto', background: '#f5f5f5', borderRadius: 16, padding: '2rem 3rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '2rem', flexWrap: 'wrap' }}>
-              <p style={{ fontFamily: 'var(--ix-font-body)', fontSize: '0.95rem', color: '#555', lineHeight: 1.6, flex: '1 1 500px', margin: 0 }}>
+            <div className="ge-hero-box-inner" style={{ maxWidth: 1200, margin: '0 auto', background: '#f5f5f5', borderRadius: 16, display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '2rem', flexWrap: 'wrap' }}>
+              <p className="ge-hero-box-text" style={{ fontFamily: 'var(--ix-font-body)', fontSize: '0.95rem', color: '#555', lineHeight: 1.6, margin: 0 }}>
                 Infynix Solutions builds search infrastructure, high-speed web apps, paid media campaigns, and AI security systems designed for long-term growth.
               </p>
               <Link to="/contact" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '0.75rem 1.5rem', background: '#fff', color: '#111', textDecoration: 'none', borderRadius: 30, border: '1px solid #ddd', fontWeight: 600, fontSize: '0.9rem', transition: 'all 0.2s', whiteSpace: 'nowrap' }}>
