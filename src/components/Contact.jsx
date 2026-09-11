@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import "./Contact.css";
 import kochiImage from "../assets/kochi-office.jpg";
+import uaeOfficeImage from "../assets/office.webp";
 import Seo from '../seo/Seo';
 import { organizationSchema, localBusinessSchema, breadcrumbSchema } from '../seo/schema';
 
@@ -26,8 +27,9 @@ const offices = [
     {
         city: "Dubai",
         label: "UAE Office",
-        desc: "Business Bay, Dubai, UAE. Our strategic regional office managing partnerships, cloud growth projects, and AI system installations across the Middle East and GCC countries.",
-        image: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=900&q=80",
+        desc: "C1 Building - Office C1 1F-SF6540 - Free Zone - Al Butain - Ajman - United Arab Emirates. Our strategic regional office managing partnerships, cloud growth projects, and AI system installations across the Middle East and GCC countries.",
+        image: uaeOfficeImage,
+        mapUrl: "https://maps.google.com/?q=C1+Building,+Free+Zone,+Al+Butain,+Ajman,+UAE"
     },
     {
         city: "Kochi",
@@ -172,20 +174,21 @@ export default function Contact() {
                         {/* Queries card */}
                         <div className="sidebar-card">
                             <div className="sidebar-query-block">
-                                <p className="sidebar-query-title">Sales-Related Queries</p>
+                                <p className="sidebar-query-title">Sales &amp; Partnerships</p>
                                 <a href="mailto:office@infynixsolutions.ae" className="sidebar-query-val">office@infynixsolutions.ae</a>
                             </div>
                             <div className="sidebar-divider" />
                             <div className="sidebar-query-block">
-                                <p className="sidebar-query-title">HR Related Queries</p>
-                                <p className="sidebar-query-val">+91 99959 11173</p>
-                                <a href="mailto:hr@infynixsolutions.ae" className="sidebar-query-val">hr@infynixsolutions.ae</a>
+                                <p className="sidebar-query-title">Direct Contact Numbers</p>
+                                <a href="tel:+971542575702" className="sidebar-query-val">UAE: +971 54 257 5702</a>
+                                <a href="tel:+919995911173" className="sidebar-query-val">India: +91 99959 11173</a>
+                                <a href="tel:+447436670553" className="sidebar-query-val">UK: +44 7436 670553</a>
                             </div>
                             <div className="sidebar-divider" />
                             <div className="sidebar-query-block">
                                 <p className="sidebar-query-title">General Queries &amp; Support</p>
-                                <a href="mailto:info@infynixsolutions.ae" className="sidebar-query-val">info@infynixsolutions.ae</a>
-                                <a href="#" className="sidebar-careers-btn">
+                                <a href="mailto:office@infynixsolutions.ae" className="sidebar-query-val">office@infynixsolutions.ae</a>
+                                <a href="mailto:careers@infynixsolutions.ae" className="sidebar-careers-btn">
                                     Careers <ArrowIcon />
                                 </a>
                             </div>
