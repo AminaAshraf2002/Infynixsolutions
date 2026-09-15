@@ -178,7 +178,7 @@ const GrowthEngineering = () => {
               letterSpacing: "-0.01em",
               color: "#353434",
             }}>
-              The Growth Engineering Company
+              The Growth Engineering Company{' '}
               <br />
               <em style={{
                 fontFamily: "var(--ix-font-serif)",
@@ -452,7 +452,7 @@ const GrowthEngineering = () => {
               letterSpacing: '-0.02em',
               lineHeight: 1.1,
             }}>
-              Our 7 Step<br />
+              Our 7 Step{' '}<br />
               <em style={{ fontFamily: 'var(--ix-font-serif)', fontStyle: 'italic', fontWeight: 400 }}>Working Process</em>
             </h2>
           </div>

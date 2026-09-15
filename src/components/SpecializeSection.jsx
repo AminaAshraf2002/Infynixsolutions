@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { Fragment, useEffect, useRef } from 'react';
 import { useIxReveal } from './WhoWeAre';
 import { Link } from 'react-router-dom';
 
@@ -65,17 +65,19 @@ const SpecializeSection = () => {
           letterSpacing: '-0.02em',
           maxWidth: '1360px'
         }}>
+          {/* A real space node sits between each word span. Without it the DOM
+              reads "Webuildinterconnectedbusinesssystems": the gap came only
+              from .word{margin-right}, so every text extractor, screen reader
+              and AI crawler saw this heading as one unbroken string. */}
           {text1.split(' ').map((w, i) => (
-             <span className="word" key={`a-${i}`}>{w}</span>
-           ))} 
-           {' '}
-           {text2.split(' ').map((w, i) => (
-             <span className="word" style={{ color: 'rgb(167, 214, 0)' }} key={`b-${i}`}>{w}</span>
-           ))}
-           {' '}
-           {text3.split(' ').map((w, i) => (
-             <span className="word" key={`c-${i}`}>{w}</span>
-           ))}
+            <Fragment key={`a-${i}`}><span className="word">{w}</span>{' '}</Fragment>
+          ))}
+          {text2.split(' ').map((w, i) => (
+            <Fragment key={`b-${i}`}><span className="word" style={{ color: 'rgb(167, 214, 0)' }}>{w}</span>{' '}</Fragment>
+          ))}
+          {text3.split(' ').map((w, i) => (
+            <Fragment key={`c-${i}`}><span className="word">{w}</span>{' '}</Fragment>
+          ))}
         </h2>
         
         {/* <p data-aos-delay="200" data-aos="fade-up" style={{

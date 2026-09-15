@@ -8,7 +8,7 @@ const InitiativesSection = () => {
         {/* Left Side */}
         <div className="init-left" data-aos="fade-up">
           <h2 className="init-h1">
-            Strategic<br />
+            Strategic{' '}<br />
             <em>Pillars</em>
           </h2>
           <p className="init-desc">

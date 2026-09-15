@@ -14,6 +14,18 @@ const insightImages = {
   'how-ai-automates-growth': 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=1200&q=80'
 };
 
+// Content dates are authored as "September 6, 2026" for display. Schema.org
+// needs ISO 8601, so convert rather than emitting a string Google discards.
+const toIsoDate = (value) => {
+  if (!value) return undefined;
+  const parsed = new Date(value);
+  if (Number.isNaN(parsed.getTime())) return undefined;
+  // Build from local parts. toISOString() shifts to UTC, and in IST that turns
+  // local midnight on the 6th into the 5th.
+  const pad = (n) => String(n).padStart(2, '0');
+  return `${parsed.getFullYear()}-${pad(parsed.getMonth() + 1)}-${pad(parsed.getDate())}`;
+};
+
 const InsightsPage = () => {
   const { slug } = useParams();
 
@@ -84,9 +96,14 @@ const InsightsPage = () => {
             '@type': 'Article',
             'headline': article.title,
             'description': article.summary,
-            'author': { '@type': 'Organization', 'name': article.author || 'Infynix' },
-            'publisher': { '@type': 'Organization', 'name': 'Infynix' },
-            'datePublished': article.date
+            'author': { '@type': 'Organization', 'name': article.author || 'Infynix Solutions' },
+            // Reference the Organization node by @id rather than restating a bare
+            // name, so the article attaches to the same entity as the rest of the site.
+            'publisher': { '@id': 'https://www.infynix-solutions.com/#organization' },
+            // Schema.org requires ISO 8601. "September 6, 2026" is ignored by Google.
+            'datePublished': toIsoDate(article.date),
+            'dateModified': toIsoDate(article.date),
+            'mainEntityOfPage': `https://www.infynix-solutions.com/insights/${article.slug}`
           }}
         />
 
