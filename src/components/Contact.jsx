@@ -21,7 +21,7 @@ const offices = [
     {
         city: "London",
         label: "UK Headquarters",
-        desc: "68 Endsleigh Gardens, Ilford, London IG1 3EG. Our global executive headquarters directing international operations, technology consulting, and enterprise client strategy across European and American regions.",
+        desc: "39 Becontree Avenue, Dagenham, London RM8 2UH. Our global executive headquarters directing international operations, technology consulting, and enterprise client strategy across European and American regions.",
         image: "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=900&q=80",
     },
     {

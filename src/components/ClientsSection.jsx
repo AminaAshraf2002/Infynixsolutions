@@ -149,8 +149,8 @@ const ClientsSection = () => {
               <img loading="lazy" decoding="async" src={ukLImage} alt="UK London Office" className="footer-location-svg" />
               <div className="footer-location-title">UK - LONDON</div>
               <div className="footer-location-addr">
-                68 Endsleigh Gardens,<br />
-                Ilford, London IG1 3EG
+                39 Becontree Avenue,<br />
+                Dagenham, London RM8 2UH
               </div>
             </div>
 
