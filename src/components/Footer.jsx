@@ -127,7 +127,7 @@ const Footer = () => {
               <a href="/sitemap.xml" target="_blank" rel="noopener noreferrer">XML Sitemap</a>
             </div>
 
-            {/* Cross-domain links — dofollow intentionally, these are our own regional
+            {/* Cross-domain links, dofollow intentionally, these are our own regional
                 sister sites. rel="noopener" is for security on target="_blank" only. */}
             <div className="footer-nav-col">
               <span style={{ color: '#ffffff', fontWeight: 'bold', fontSize: '0.85rem', marginBottom: '8px' }}>GLOBAL PRESENCE</span>
@@ -137,7 +137,7 @@ const Footer = () => {
                 rel="noopener"
                 style={{ display: 'flex', alignItems: 'center', gap: '6px' }}
               >
-                🇦🇪 UAE — infynixsolutions.ae
+                🇦🇪 UAE, infynixsolutions.ae
               </a>
               <a
                 href="https://www.infynixsolutions.co.uk"
@@ -145,7 +145,7 @@ const Footer = () => {
                 rel="noopener"
                 style={{ display: 'flex', alignItems: 'center', gap: '6px' }}
               >
-                🇬🇧 UK — infynixsolutions.co.uk
+                🇬🇧 UK, infynixsolutions.co.uk
               </a>
             </div>
           </div>

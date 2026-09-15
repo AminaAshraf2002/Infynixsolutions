@@ -98,7 +98,7 @@ const SolutionsIndex = () => {
   return (
     <div style={{ background: '#000', color: '#fff', minHeight: '100vh', fontFamily: 'var(--ix-font-body)' }}>
       <Seo
-        title="Our Services | Infynix Solutions — The Growth Engineering Company"
+        title="Our Services | Infynix Solutions, The Growth Engineering Company"
         description="Infynix Agency, Infynix Media, and Infynix Growth Solutions. SEO engineering, paid media, cinematic video production, custom software, and AI surveillance."
         path="/solutions"
         schema={[
