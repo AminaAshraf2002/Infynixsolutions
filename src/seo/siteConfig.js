@@ -21,7 +21,7 @@ export const DEFAULT_OG_IMAGE = `${SITE_URL}/logo.png`;
 // Profile and every external citation, inconsistent NAP suppresses local ranking.
 export const BUSINESS = {
   legalName: 'Infynix Solutions',
-  email: 'info@infynixsolutions.ae',
+  email: 'office@infynixsolutions.ae',
   telephone: '+91-99959-11173',
   address: {
     street: '3rd Floor, Oberon Mall, Padivattom, Edappally',
