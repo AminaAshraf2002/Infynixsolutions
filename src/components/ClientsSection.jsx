@@ -146,12 +146,14 @@ const ClientsSection = () => {
             </div>
 
             <div className="footer-location-card">
-              <img loading="lazy" decoding="async" src={ukLImage} alt="UK London Office" className="footer-location-svg" />
-              <div className="footer-location-title">UK - LONDON</div>
-              <div className="footer-location-addr">
-                1-75 Shelton St,<br />
-                London, WC2H 9JQ
-              </div>
+              <a href="https://maps.google.com/?q=68+Endsleigh+Gardens,+Ilford+IG1+3EG,+United+Kingdom" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
+                <img loading="lazy" decoding="async" src={ukLImage} alt="UK London Office" className="footer-location-svg" />
+                <div className="footer-location-title">UK - LONDON ↗</div>
+                <div className="footer-location-addr">
+                  68 Endsleigh Gardens,<br />
+                  Ilford IG1 3EG, United Kingdom
+                </div>
+              </a>
             </div>
 
             <div className="footer-location-card">

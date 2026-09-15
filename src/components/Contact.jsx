@@ -21,8 +21,9 @@ const offices = [
     {
         city: "London",
         label: "UK Headquarters",
-        desc: "1-75 Shelton St, London, WC2H 9JQ. Our global executive headquarters directing international operations, technology consulting, and enterprise client strategy across European and American regions.",
+        desc: "68 Endsleigh Gardens, Ilford IG1 3EG, United Kingdom. Our global executive headquarters directing international operations, technology consulting, and enterprise client strategy across European and American regions.",
         image: "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=900&q=80",
+        mapUrl: "https://maps.google.com/?q=68+Endsleigh+Gardens,+Ilford+IG1+3EG,+United+Kingdom",
     },
     {
         city: "Dubai",
