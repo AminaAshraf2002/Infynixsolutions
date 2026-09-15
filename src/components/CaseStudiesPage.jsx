@@ -106,7 +106,7 @@ const CaseStudiesPage = () => {
           ? `${currentStudy.client} Case Study | Infynix Solutions`
           : 'Case Studies | Software, Media & Growth Projects | Infynix Solutions'}
         description={slug
-          ? `How Infynix delivered results for ${currentStudy.client}. ${currentStudy.objectives.slice(0, 110)}`
+          ? `${currentStudy.client} case study: ${currentStudy.objectives.slice(0, 120).trim()}`
           : 'Case studies from Infynix Solutions across Development, Media, and Agency services delivered for clients worldwide.'}
         canonicalUrl={slug ? `/case-studies/${currentStudy.slug}` : '/case-studies'}
         schemaData={{
@@ -158,9 +158,9 @@ const CaseStudiesPage = () => {
                   <span style={{ fontFamily: 'var(--ix-font-display)' }}>{currentStudy.title}</span>
                 </h1>
 
-                <h3 style={{ fontSize: '1.2rem', color: GREEN, fontWeight: '700', marginBottom: '20px', fontFamily: 'var(--ix-font-serif)' }}>
+                <h2 style={{ fontSize: '1.2rem', color: GREEN, fontWeight: '700', marginBottom: '20px', fontFamily: 'var(--ix-font-serif)' }}>
                   {currentStudy.clientFull || currentStudy.client}
-                </h3>
+                </h2>
 
                 <p style={{ color: '#555', fontSize: '0.98rem', lineHeight: '1.75', marginBottom: '30px' }}>
                   {currentStudy.description}

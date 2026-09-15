@@ -343,3 +343,20 @@
     gap: 6px 14px;
   }
 }
+
+@media (max-width: 480px) {
+  .hero-stage {
+    width: calc(100% - 20px);
+    min-height: auto;
+    border-radius: 20px;
+  }
+
+  .hero-content {
+    padding: 2rem 1.1rem;
+    gap: 1rem;
+  }
+
+  .hero-title {
+    font-size: clamp(1.6rem, 7.5vw, 2.1rem);
+  }
+}

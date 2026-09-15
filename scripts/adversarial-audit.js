@@ -166,6 +166,8 @@ for (const p of pages) {
     if (!/\salt="[^"]*"/.test(tag)) noAlt += 1;
   }
   const levels = [...p.html.matchAll(/<h([1-6])[\s>]/g)].map((m) => Number(m[1]));
+  // note: heading text often sits inside a nested span, so never read it with
+  // [^<]* or a perfectly good heading reads as empty.
   for (let i = 1; i < levels.length; i += 1) {
     if (levels[i] - levels[i - 1] > 1) { skipped += 1; headingIssues.push(p.urlPath); break; }
   }

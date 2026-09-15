@@ -103,7 +103,7 @@ export const kozhikodePages = [
     category: 'marketing',
     title: 'SEO Company in Kozhikode (Calicut) | Infynix',
     description:
-      'SEO services for Kozhikode and Calicut businesses, technical audits, local search visibility, Malayalam content and link building, with reporting on enquiries not screenshots.',
+      'SEO services for Kozhikode and Calicut businesses, technical audits, local search visibility, Malayalam content and link building.',
     h1: 'SEO Company in Kozhikode',
     heroSubtitle:
       'Organic visibility for Kozhikode and Calicut searches, technical foundations first, then content and local authority.',

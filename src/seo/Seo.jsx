@@ -44,14 +44,27 @@ export default function Seo({
       <meta name="description" content={resolvedDescription} />
       <link rel="canonical" href={canonical} />
 
-      {/* ── hreflang: regional alternate versions of this site ─────────
-          All three domains must carry this full set for Google to honour it.
-          Companion changes are needed in the .ae and .co.uk repos too.
-          x-default = fallback for regions not explicitly mapped (global .com). */}
-      <link rel="alternate" hreflang="en-IN" href="https://www.infynix-solutions.com/" />
-      <link rel="alternate" hreflang="en-AE" href="https://www.infynixsolutions.ae/" />
-      <link rel="alternate" hreflang="en-GB" href="https://www.infynixsolutions.co.uk/" />
-      <link rel="alternate" hreflang="x-default" href="https://www.infynix-solutions.com/" />
+      {/* hreflang, homepage only.
+          These three URLs are equivalents of each other, so the annotation is
+          valid here. It is NOT valid on inner pages: hreflang must point at the
+          corresponding page, and every page carrying this set was telling Google
+          that its UK equivalent was the UK homepage. Google ignores clusters
+          like that, and where it does not, it swaps in the wrong URL.
+          To extend this to inner pages, each locale needs the matching path and
+          a self-reference, and every page in the cluster has to point back.
+          x-default is the fallback for regions not explicitly mapped. */}
+      {path === '/' && (
+        <link rel="alternate" hrefLang="en-IN" href="https://www.infynix-solutions.com/" />
+      )}
+      {path === '/' && (
+        <link rel="alternate" hrefLang="en-AE" href="https://www.infynixsolutions.ae/" />
+      )}
+      {path === '/' && (
+        <link rel="alternate" hrefLang="en-GB" href="https://www.infynixsolutions.co.uk/" />
+      )}
+      {path === '/' && (
+        <link rel="alternate" hrefLang="x-default" href="https://www.infynix-solutions.com/" />
+      )}
 
       <meta
         name="robots"

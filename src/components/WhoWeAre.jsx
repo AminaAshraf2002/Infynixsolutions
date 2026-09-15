@@ -56,7 +56,7 @@ export default function WhoWeAre() {
     <div style={{ background: "#fff" }}>
       <Seo
         title="About Infynix Solutions | Growth Engineering Company in Kochi"
-        description="Infynix Solutions is a growth engineering company headquartered in Kochi, Kerala with offices in London and Dubai, building technology, marketing and operations systems as one connected whole."
+        description="Infynix Solutions is a growth engineering company headquartered in Kochi, Kerala with offices in London and Dubai, building technology."
         path="/about"
         schema={[
           organizationSchema(),

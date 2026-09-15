@@ -15,7 +15,7 @@ export const kochiPages = [
     category: 'marketing',
     title: 'Digital Marketing Agency in Kochi, Kerala | Infynix',
     description:
-      'Infynix Solutions is a digital marketing agency in Kochi running SEO, Google and Meta ads, social media and marketing automation for Kerala businesses. Office in Edappally, Kochi.',
+      'Infynix Solutions is a digital marketing agency in Kochi running SEO, Google and Meta ads, social media and marketing automation for Kerala businesses.',
     h1: 'Digital Marketing Agency in Kochi',
     heroSubtitle:
       'Performance marketing, SEO and automation built as one connected system, run from our Edappally office for businesses across Kochi and Ernakulam.',
@@ -100,7 +100,7 @@ export const kochiPages = [
     category: 'marketing',
     title: 'SEO Company in Kochi | Infynix',
     description:
-      'SEO company in Kochi delivering technical SEO, local map-pack rankings, content and link building for Ernakulam businesses. Transparent reporting on rankings and qualified leads.',
+      'SEO company in Kochi delivering technical SEO, local map-pack rankings, content and link building for Ernakulam businesses.',
     h1: 'SEO Company in Kochi',
     heroSubtitle:
       'Technical fixes first, then content and authority, the order that actually moves rankings for Kochi and Ernakulam businesses.',
@@ -185,7 +185,7 @@ export const kochiPages = [
     category: 'technology',
     title: 'Software Development Company in Kochi, Kerala | Infynix',
     description:
-      'Software development company in Kochi building custom web applications, CRM and ERP systems, AI automation and cloud platforms for businesses in Kerala, India and the GCC.',
+      'Software development company in Kochi building custom web applications, CRM and ERP systems, AI automation and cloud platforms for businesses in Kerala.',
     h1: 'Software Development Company in Kochi',
     heroSubtitle:
       'Custom platforms, CRM and ERP systems, AI automation and integrations, engineered in Kochi for businesses that have outgrown spreadsheets.',
@@ -270,7 +270,7 @@ export const kochiPages = [
     category: 'technology',
     title: 'Web Design Company in Kochi | Website Development | Infynix',
     description:
-      'Web design company in Kochi building fast, search-optimised websites and e-commerce stores for Kerala businesses. Built to be crawlable, accessible and to convert enquiries.',
+      'Web design company in Kochi building fast, search-optimised websites and e-commerce stores for Kerala businesses. Built to be crawlable.',
     h1: 'Web Design Company in Kochi',
     heroSubtitle:
       'Websites engineered to load fast, rank properly and convert, not just to look good in a design review.',
@@ -355,7 +355,7 @@ export const kochiPages = [
     category: 'technology',
     title: 'Mobile App Development Company in Kochi, Kerala | Infynix',
     description:
-      'Mobile app development company in Kochi building iOS, Android and cross-platform apps with React Native and Flutter for startups and enterprises across Kerala and the GCC.',
+      'Mobile app development company in Kochi building iOS, Android and cross-platform apps with React Native and Flutter for startups and enterprises across.',
     h1: 'Mobile App Development Company in Kochi',
     heroSubtitle:
       'iOS, Android and cross-platform apps built to ship, scale and survive their first ten thousand users.',
@@ -440,7 +440,7 @@ export const kochiPages = [
     category: 'technology',
     title: 'IT Company in Kochi, Kerala | Software, Cloud & AI | Infynix',
     description:
-      'IT company in Kochi providing custom software development, cloud infrastructure, AI automation and digital transformation for businesses across Kerala, India, the UAE and UK.',
+      'IT company in Kochi providing custom software development, cloud infrastructure, AI automation and digital transformation for businesses across Kerala.',
     h1: 'IT Company in Kochi',
     heroSubtitle:
       'Software, cloud and automation delivered by one accountable team, with an office you can walk into.',
@@ -525,7 +525,7 @@ export const kochiPages = [
     category: 'marketing',
     title: 'Social Media Marketing Agency in Kochi, Kerala | Infynix',
     description:
-      'Social media marketing agency in Kochi producing reels, Malayalam and English content, influencer campaigns and paid social for Kerala brands. In-house production team.',
+      'Social media marketing agency in Kochi producing reels, Malayalam and English content, influencer campaigns and paid social for Kerala brands.',
     h1: 'Social Media Marketing Agency in Kochi',
     heroSubtitle:
       'Content produced in Kochi, distributed with paid amplification, measured against enquiries rather than likes.',
@@ -695,7 +695,7 @@ export const kochiPages = [
     category: 'technology',
     title: 'UI/UX Design Company in Kochi, Kerala | Infynix',
     description:
-      'UI/UX design company in Kochi, user research, wireframing, prototyping and design systems for web apps, mobile apps and e-commerce, tested against real conversion goals.',
+      'UI/UX design company in Kochi, user research, wireframing, prototyping and design systems for web apps, mobile apps and e-commerce.',
     h1: 'UI/UX Design Company in Kochi',
     heroSubtitle:
       'Research-led interface design for products people have to use every day, not just look at once.',

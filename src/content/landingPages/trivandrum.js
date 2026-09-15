@@ -22,7 +22,7 @@ export const trivandrumPages = [
     category: 'marketing',
     title: 'Digital Marketing Agency in Trivandrum | Infynix',
     description:
-      'Digital marketing agency serving Trivandrum and Thiruvananthapuram, SEO, Google and Meta ads, Malayalam social content and marketing automation for capital-city businesses.',
+      'Digital marketing agency serving Trivandrum and Thiruvananthapuram, SEO, Google and Meta ads, Malayalam social content and marketing automation for.',
     h1: 'Digital Marketing Agency in Trivandrum',
     heroSubtitle:
       'Search, paid media and automation for Thiruvananthapuram businesses, built by a Kerala team and measured against enquiries, not impressions.',
@@ -108,7 +108,7 @@ export const trivandrumPages = [
     category: 'marketing',
     title: 'SEO Company in Trivandrum (Thiruvananthapuram) | Infynix',
     description:
-      'SEO services for Trivandrum and Thiruvananthapuram businesses, technical audits, local map-pack visibility, content and link building, reported against organic enquiries.',
+      'SEO services for Trivandrum and Thiruvananthapuram businesses, technical audits, local map-pack visibility, content and link building.',
     h1: 'SEO Company in Trivandrum',
     heroSubtitle:
       'Technical foundations, local authority and content depth for Thiruvananthapuram search visibility.',
@@ -193,7 +193,7 @@ export const trivandrumPages = [
     category: 'technology',
     title: 'Software Development Company in Trivandrum | Infynix',
     description:
-      'Software development for Trivandrum and Thiruvananthapuram businesses, custom web platforms, CRM and ERP systems, mobile apps and AI automation, built by a Kerala engineering team.',
+      'Software development for Trivandrum and Thiruvananthapuram businesses, custom web platforms, CRM and ERP systems, mobile apps and AI automation.',
     h1: 'Software Development Company in Trivandrum',
     heroSubtitle:
       'Custom platforms, integrations and automation for Thiruvananthapuram businesses and institutions.',
@@ -278,7 +278,7 @@ export const trivandrumPages = [
     category: 'technology',
     title: 'Web Design Company in Trivandrum | Infynix',
     description:
-      'Web design and development for Trivandrum businesses, fast, crawlable, accessible websites and e-commerce stores built to rank and convert, not just to look good.',
+      'Web design and development for Trivandrum businesses, fast, crawlable, accessible websites and e-commerce stores built to rank and convert.',
     h1: 'Web Design Company in Trivandrum',
     heroSubtitle:
       'Websites for Thiruvananthapuram businesses and institutions, engineered for speed, search visibility and accessibility.',

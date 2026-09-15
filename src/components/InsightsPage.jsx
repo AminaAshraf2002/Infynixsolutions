@@ -189,7 +189,7 @@ const InsightsPage = () => {
     <div style={{ background: OFF_WHITE, minHeight: '100vh', fontFamily: "'Montserrat', sans-serif", color: CHARCOAL }}>
       <SEOManager
         title="Insights | Infynix"
-        description="Growth Insights"
+        description="Growth engineering insights from Infynix Solutions: how connected software, AI vision and marketing systems actually compound for a business."
         canonicalUrl="https://www.infynix-solutions.com/insights"
         schemaData={{
           '@context': 'https://schema.org',

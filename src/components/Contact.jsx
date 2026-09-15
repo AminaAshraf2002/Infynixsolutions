@@ -65,7 +65,7 @@ export default function Contact() {
         <div className="contact-page">
             <Seo
                 title="Contact Infynix Solutions | Offices in Kochi, Dubai & London"
-                description="Talk to Infynix Solutions about digital marketing, software development or automation. Kerala office: 3rd Floor, Oberon Mall, Padivattom, Edappally, Kochi 682024. Call +91 99959 11173."
+                description="Talk to Infynix Solutions about digital marketing, software development or automation. Kerala office: 3rd Floor, Oberon Mall, Padivattom, Edappally."
                 path="/contact"
                 schema={[
                     organizationSchema(),

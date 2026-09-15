@@ -14,7 +14,7 @@ export const keralaPages = [
     category: 'marketing',
     title: 'Digital Marketing Agency in Kerala | Infynix',
     description:
-      'Digital marketing agency in Kerala running SEO, Google and Meta ads, social media and marketing automation for businesses in Kochi, Kozhikode, Thrissur and Trivandrum.',
+      'Digital marketing agency in Kerala running SEO, Google and Meta ads, social media and marketing automation for businesses in Kochi, Kozhikode.',
     h1: 'Digital Marketing Agency in Kerala',
     heroSubtitle:
       'One connected growth system, search, paid, social and automation, built for businesses selling across Kerala.',
@@ -99,7 +99,7 @@ export const keralaPages = [
     category: 'marketing',
     title: 'SEO Company in Kerala | Infynix',
     description:
-      'SEO company in Kerala delivering technical audits, multi-city local SEO, content strategy and link building for businesses in Kochi, Kozhikode, Thrissur and Trivandrum.',
+      'SEO company in Kerala delivering technical audits, multi-city local SEO, content strategy and link building for businesses in Kochi, Kozhikode.',
     h1: 'SEO Company in Kerala',
     heroSubtitle:
       'Fix what blocks indexing, build what earns authority, and report on enquiries rather than screenshots of rankings.',
@@ -269,7 +269,7 @@ export const keralaPages = [
     category: 'technology',
     title: 'Web Design Company in Kerala | Website Development | Infynix',
     description:
-      'Web design company in Kerala building fast, crawlable, conversion-focused websites and e-commerce stores for businesses in Kochi, Trivandrum, Kozhikode and across the state.',
+      'Web design company in Kerala building fast, crawlable, conversion-focused websites and e-commerce stores for businesses in Kochi, Trivandrum.',
     h1: 'Web Design Company in Kerala',
     heroSubtitle:
       'Websites engineered for mobile speed, search visibility and enquiries, for businesses selling across Kerala and the Gulf.',
@@ -354,7 +354,7 @@ export const keralaPages = [
     category: 'technology',
     title: 'Mobile App Development Company in Kerala | Infynix',
     description:
-      'Mobile app development company in Kerala building iOS, Android and cross-platform apps with React Native and Flutter for startups and enterprises in India and the GCC.',
+      'Mobile app development company in Kerala building iOS, Android and cross-platform apps with React Native and Flutter for startups and enterprises in India.',
     h1: 'Mobile App Development Company in Kerala',
     heroSubtitle:
       'iOS, Android and cross-platform apps, scoped honestly, built to ship, and supported after launch.',
@@ -439,7 +439,7 @@ export const keralaPages = [
     category: 'marketing',
     title: 'Social Media Marketing Agency in Kerala | Infynix',
     description:
-      'Social media marketing agency in Kerala. Malayalam and English content, reels production, influencer campaigns and paid social measured against enquiries, not follower counts.',
+      'Social media marketing agency in Kerala. Malayalam and English content, reels production, influencer campaigns and paid social measured against enquiries.',
     h1: 'Social Media Marketing Agency in Kerala',
     heroSubtitle:
       'Malayalam-first content, produced in Kerala, amplified with paid budget and reported against enquiries.',
@@ -524,7 +524,7 @@ export const keralaPages = [
     category: 'marketing',
     title: 'Performance Marketing Agency in Kerala | Infynix',
     description:
-      'Performance marketing agency in Kerala running Google Ads, Meta and conversion tracking wired into your CRM, optimised against qualified leads and revenue, not clicks.',
+      'Performance marketing agency in Kerala running Google Ads, Meta and conversion tracking wired into your CRM, optimised against qualified leads and revenue.',
     h1: 'Performance Marketing Agency in Kerala',
     heroSubtitle:
       'Paid media with the measurement built first, so you know which campaign produced revenue, not just which produced clicks.',
