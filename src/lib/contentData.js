@@ -1,8 +1,11 @@
 // Centralized data repository for solutions, industries, case studies, insights, and FAQs
 import { subcategoryData } from './subcategoryData.js';
+// Infynix Media, India catalogue. The division existed with no services under it.
+import { mediaServices } from './mediaServices.js';
 
 export const solutionsData = {
   ...subcategoryData,
+  ...mediaServices,
   'infynix-agency': {
     title: 'Infynix Agency',
     category: 'Agency',
