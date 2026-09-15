@@ -32,7 +32,9 @@ const stripDuplicateHead = (html) =>
     .replace(/\s*<title>[\s\S]*?<\/title>/i, '')
     .replace(/\s*<meta\s+name="description"[^>]*>/gi, '')
     .replace(/\s*<meta\s+name="keywords"[^>]*>/gi, '')
-    .replace(/\s*<meta\s+property="og:[^"]*"[^>]*>/gi, '');
+    .replace(/\s*<meta\s+property="og:[^"]*"[^>]*>/gi, '')
+    .replace(/\s*<link\s+rel="canonical"[^>]*>/gi, '')
+    .replace(/\s*<link\s+rel="alternate"[^>]*>/gi, '');
 
 const outputPathFor = (route) => {
   if (route === '/') return path.join(distDir, 'index.html');
