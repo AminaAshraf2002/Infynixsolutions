@@ -8,7 +8,7 @@ import {
   LineChart, Truck, ConciergeBell, Smartphone, RefreshCw, CreditCard, LayoutDashboard, Video
 } from 'lucide-react';
 import Seo from '../seo/Seo';
-import { organizationSchema, serviceSchema, breadcrumbSchema } from '../seo/schema';
+import { organizationSchema, serviceSchema, breadcrumbSchema, faqSchema } from '../seo/schema';
 import './InfynixDesign.css';
 
 const industryTestimonials = {
@@ -168,6 +168,11 @@ const IndustriesPage = () => {
                   { name: 'Industries', path: '/industries' },
                 ]
           ),
+          // These FAQs are already rendered further down the page; this just
+          // declares them so they are eligible for rich results and AI answers.
+          slug && data.faqs && data.faqs.length
+            ? faqSchema(data.faqs.map((f) => ({ question: f.q, answer: f.a })))
+            : null,
         ]}
       />
 
