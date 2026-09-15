@@ -269,6 +269,28 @@ a.sidebar-query-val:hover { color: #007A5E; }
     border-color: #A7D600;
 }
 
+.contact-social-btn {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: 1.5px solid #e2e8f0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    background: #f8fafc;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: all 0.25s ease;
+}
+
+.contact-social-btn:hover {
+    background: #007A5E;
+    border-color: #007A5E;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
 /* Green discovery card */
 .sidebar-green {
     background: #007A5E;

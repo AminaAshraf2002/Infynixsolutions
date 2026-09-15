@@ -192,6 +192,39 @@ export default function Contact() {
                                     Careers <ArrowIcon />
                                 </a>
                             </div>
+                            <div className="sidebar-divider" />
+                            <div className="sidebar-query-block">
+                                <p className="sidebar-query-title">Follow Us</p>
+                                <div className="contact-social-links" style={{ display: 'flex', gap: '10px', marginTop: '10px' }}>
+                                    <a
+                                        href="https://www.linkedin.com/company/infynix-solutionglobal/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="contact-social-btn"
+                                        aria-label="Infynix Solutions LinkedIn"
+                                    >
+                                        <i className="fa-brands fa-linkedin-in"></i>
+                                    </a>
+                                    <a
+                                        href="https://www.instagram.com/infynix_growth_solutions/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="contact-social-btn"
+                                        aria-label="Infynix Solutions Instagram"
+                                    >
+                                        <i className="fa-brands fa-instagram"></i>
+                                    </a>
+                                    <a
+                                        href="https://www.facebook.com/people/Infynix-Solutions/61584250757142/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="contact-social-btn"
+                                        aria-label="Infynix Solutions Facebook"
+                                    >
+                                        <i className="fa-brands fa-facebook-f"></i>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
 
                         {/* Discovery call card */}
