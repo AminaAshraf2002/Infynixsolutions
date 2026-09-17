@@ -54,7 +54,7 @@ export const mediaServices = {
     faqs: [
       { q: 'How long does a brand film take?', a: 'Typically 4 to 8 weeks from brief to delivery. Scripting and approvals take longer than shooting, so the timeline is usually set by how fast decisions come back rather than production days.' },
       { q: 'Can you produce in Malayalam and English?', a: 'Yes, and for most Kerala brands you should. We plan bilingual delivery into the shoot rather than dubbing afterwards, which is why the two versions read as native rather than translated.' },
-      { q: 'What does a brand film cost?', a: 'A single-location corporate film typically runs from ₹1,50,000. Multi-location ad films with casting, sets and a full crew run considerably higher. We scope from the distribution plan, because a film for paid media needs different assets than one for a trade show.' },
+      { q: 'What does a brand film cost?', a: 'Multi-location ad films with casting, sets and a full crew run considerably higher. We scope from the distribution plan, because a film for paid media needs different assets than one for a trade show.' },
     ],
   },
 

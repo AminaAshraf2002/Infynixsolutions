@@ -69,7 +69,7 @@ export const keralaPages = [
       {
         question: 'How much should a Kerala business budget for digital marketing?',
         answer:
-          'As a working guide, a local single-city business should plan ₹50,000 to ₹1,00,000 monthly across retainer and ad spend combined. A state-wide multi-city operation typically needs ₹1,50,000 upward. Spread too thin across too many channels, any budget underperforms.',
+          'Every engagement is scoped individually after a discovery session, from the outcome you need and the work involved, and quoted before anything starts. Ad spend, where it applies, is separate and paid directly to the platforms, and we will say plainly if the budget on the table is too small to produce a usable result.',
       },
       {
         question: 'Can you handle both Malayalam and English campaigns?',
@@ -149,7 +149,7 @@ export const keralaPages = [
       {
         question: 'What does an SEO company in Kerala charge?',
         answer:
-          'Ongoing retainers commonly run ₹25,000 to ₹1,50,000 per month depending on competitiveness, number of cities and content volume. Below roughly ₹25,000 there is rarely enough hours in the engagement to do technical work, content and links properly.',
+          'We do not quote from a rate card. A discovery session establishes the scope, the systems involved and the outcome you are working towards, and the proposal that follows is a fixed price or a monthly retainer for exactly that. If a smaller first phase would answer the question, we say so.',
       },
       {
         question: 'Why is my website not appearing on Google at all?',
@@ -239,7 +239,7 @@ export const keralaPages = [
       {
         question: 'What does custom software cost?',
         answer:
-          'An MVP or focused internal system typically lands between ₹4,00,000 and ₹12,00,000. A full platform with multiple roles, integrations and mobile support runs from ₹15,00,000 upward. We phase engagements so a working release ships before the full budget is committed.',
+          'Scope drives the number, so the honest answer comes after a short discovery rather than before it. What we commit to in advance is that the quote is fixed for the agreed scope, that there are no surprise extras, and that we tell you when a cheaper route would serve you better.',
       },
       {
         question: 'Do you offer dedicated offshore teams?',
@@ -314,7 +314,7 @@ export const keralaPages = [
       {
         question: 'How much does a website cost in Kerala?',
         answer:
-          'A well-engineered business site typically runs ₹75,000 to ₹3,00,000 depending on page count, custom design depth and integrations. E-commerce and booking platforms start higher. The ₹15,000 builds advertised widely are template installs with no SEO foundation. They are the most common reason businesses end up paying twice.',
+          'Every engagement is scoped individually after a discovery session, from the outcome you need and the work involved, and quoted before anything starts. Ad spend, where it applies, is separate and paid directly to the platforms, and we will say plainly if the budget on the table is too small to produce a usable result.',
       },
       {
         question: 'Will my website rank on Google?',
@@ -399,7 +399,7 @@ export const keralaPages = [
       {
         question: 'How much does an app cost in Kerala?',
         answer:
-          'A focused MVP with a clear feature set typically runs ₹6,00,000 to ₹15,00,000. Apps with payments, real-time features, multi-role access or heavy integrations run higher. We deliberately scope an MVP first so a real product reaches real users before the full budget is spent.',
+          'Apps with payments, real-time features, multi-role access or heavy integrations run higher. We deliberately scope an MVP first so a real product reaches real users before the full budget is spent.',
       },
       {
         question: 'React Native, Flutter, or native?',
@@ -484,7 +484,7 @@ export const keralaPages = [
       {
         question: 'How much does social media management cost in Kerala?',
         answer:
-          'Management retainers typically start around ₹25,000 per month for a single-platform calendar, rising with video production volume and languages. Shoot-heavy scopes with regular reel output sit higher. Ad spend is separate and paid directly to the platform.',
+          'Every engagement is scoped individually after a discovery session, from the outcome you need and the work involved, and quoted before anything starts. Ad spend, where it applies, is separate and paid directly to the platforms, and we will say plainly if the budget on the table is too small to produce a usable result.',
       },
       {
         question: 'Which platforms should we be on?',
@@ -569,7 +569,7 @@ export const keralaPages = [
       {
         question: 'What is the minimum ad spend worth starting with?',
         answer:
-          'Around ₹40,000 to ₹50,000 per month in media for a single channel is roughly where campaigns gather enough conversion data to optimise meaningfully. Below that the algorithms cannot learn quickly enough and you are largely paying for guesswork.',
+          'We do not quote from a rate card. A discovery session establishes the scope, the systems involved and the outcome you are working towards, and the proposal that follows is a fixed price or a monthly retainer for exactly that. If a smaller first phase would answer the question, we say so.',
       },
       {
         question: 'How do you charge, percentage of spend or retainer?',
