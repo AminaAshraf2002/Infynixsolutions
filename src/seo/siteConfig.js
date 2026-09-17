@@ -61,8 +61,9 @@ export const BUSINESS = {
 export const GOOGLE_BUSINESS_PROFILE = 'https://share.google/de6rHeKgl4nC3riaW';
 
 export const SOCIAL_PROFILES = [
-  'https://www.linkedin.com/company/infynix-solutions',
-  'https://www.instagram.com/infynix_growth_solutions',
+  'https://www.linkedin.com/company/infynix-solutionglobal/',
+  'https://www.instagram.com/infynix_growth_solutions/',
+  'https://www.facebook.com/people/Infynix-Solutions/61584250757142/',
   // Listing the GBP in sameAs is how the site and the profile get resolved as
   // the same entity rather than two similar businesses.
   GOOGLE_BUSINESS_PROFILE,

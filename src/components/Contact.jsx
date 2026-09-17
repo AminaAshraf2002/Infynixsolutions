@@ -4,6 +4,7 @@ import kochiImage from "../assets/kochi-office.jpg";
 import uaeOfficeImage from "../assets/office.webp";
 import Seo from '../seo/Seo';
 import { organizationSchema, localBusinessSchema, breadcrumbSchema } from '../seo/schema';
+import SocialLinks from './SocialLinks';
 
 const ArrowIcon = () => (
     <svg viewBox="0 0 14 14" fill="none" width="13" height="13">
@@ -191,6 +192,11 @@ export default function Contact() {
                                 <a href="mailto:office@infynixsolutions.ae" className="sidebar-careers-btn">
                                     Careers <ArrowIcon />
                                 </a>
+                            </div>
+                            <div className="sidebar-divider" />
+                            <div className="sidebar-query-block">
+                                <p className="sidebar-query-title">Follow Us</p>
+                                <SocialLinks className="contact-social-links" linkClassName="contact-social-btn" />
                             </div>
                         </div>
 
