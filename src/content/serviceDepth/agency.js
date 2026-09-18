@@ -1,0 +1,815 @@
+// Infynix Agency, India: depth content for the marketing service pages.
+//
+// Written for the Kerala market from the Kochi office: Malayalam and English,
+// WhatsApp as the conversion path, the DPDP Act, NMC, ASCI and K-RERA rules,
+// the Onam calendar, the Gulf diaspora, and the district-by-district shape of
+// the state. Keyed by service slug, merged in index.js.
+
+export const agencyDepth = {
+  'infynix-agency': {
+    overview: [
+      'Infynix Agency is the performance and digital marketing division of Infynix Solutions in India, run from Oberon Mall in Edappally, Kochi: search, paid social, local search, content, CRM automation and the measurement that ties them together. It exists to make marketing spend accountable, which in a market where Kerala click costs are rising fast in healthcare, real estate, education and jewellery is the whole game.',
+      'The division runs on one principle: the plumbing goes in before the spend. Tracking configured to the Digital Personal Data Protection Act, CRM fields for source and campaign, WhatsApp and call tracking, offline conversion import and an agreed definition of a qualified enquiry. Then the channels go to work, and every enquiry and sale traces back to what produced it.',
+      'We work with hospitals and clinics, real estate developers, jewellery and retail chains, schools and colleges, resorts and restaurants, professional services firms and B2B companies selling from Infopark to India and abroad, across Kochi, Kozhikode, Thrissur, Trivandrum and every district in between, and with Kerala brands selling to the Gulf diaspora.',
+      'The agency shares a building, a brief and a dashboard with Infynix Media, which produces the creative in Malayalam and English, and Infynix Growth Solutions, which builds the sites, systems and integrations the campaigns land on. One team, one set of numbers.',
+    ],
+    capabilitiesHeading: 'What the agency runs',
+    capabilities: [
+      { name: 'Performance advertising and paid media', desc: 'Google, Meta, YouTube and LinkedIn campaigns measured from spend to revenue, with offline conversions sent back to the platforms.' },
+      { name: 'SEO and content marketing', desc: 'Technical remediation, Malayalam and English content and authority building, reported on organic enquiries rather than positions.' },
+      { name: 'Local search and Google Business Profile', desc: 'Profiles, citations and reviews across every real branch, in both languages.' },
+      { name: 'Social media management', desc: 'Bilingual calendars, monthly shoot days, community management and paid social run as performance.' },
+      { name: 'Marketing automation and CRM', desc: 'Zoho, HubSpot and WhatsApp Business API flows so enquiries are answered and nurtured, with consent handled.' },
+      { name: 'Analytics and attribution', desc: 'GA4, server-side tagging, call and WhatsApp tracking and one dashboard that reconciles to the accounts.' },
+      { name: 'Diaspora campaigns', desc: 'Gulf, UK and US campaigns for brands whose buyers include NRI families, with a working view from our UAE and UK offices.' },
+      { name: 'Creative from Infynix Media', desc: 'Video, photography and motion produced in Kerala for the campaigns, in both languages.' },
+    ],
+    specsHeading: 'Channels and what to expect',
+    specsColumns: ['Channel', 'Time to first signal', 'Primary measure'],
+    specs: [
+      ['Google Search', '1 to 2 weeks', 'Cost per qualified enquiry'],
+      ['Meta, Instagram and YouTube', '2 to 3 weeks', 'Cost per lead or order, quality from CRM'],
+      ['LinkedIn (B2B)', '4 to 6 weeks', 'Meetings booked, pipeline value'],
+      ['Diaspora campaigns', '3 to 4 weeks', 'Cost per WhatsApp conversation'],
+      ['Local SEO', '8 to 12 weeks', 'Map pack visibility, calls, WhatsApp'],
+      ['Organic search', '4 to 9 months', 'Organic enquiries by page'],
+    ],
+    useCasesHeading: 'Who the agency works with',
+    useCases: [
+      { name: 'Hospitals and clinics', desc: 'Groups and practices competing for high-value treatments within NMC and ASCI rules, from patients in Kerala and the Gulf.' },
+      { name: 'Real estate', desc: 'Developers generating site visits from Kochi families and NRI buyers, with K-RERA compliance on every ad.' },
+      { name: 'Jewellery and retail chains', desc: 'Multi-branch brands whose year is shaped by Onam, Vishu and wedding season.' },
+      { name: 'Education', desc: 'Schools, colleges and coaching institutes with admissions cycles to plan around.' },
+      { name: 'Hospitality and tourism', desc: 'Resorts and restaurants where Maps, Instagram and direct bookings are the goal.' },
+      { name: 'Infopark and B2B', desc: 'SaaS and services companies selling from Kerala to India and abroad, measured on pipeline.' },
+    ],
+    engagementsHeading: 'How we work together',
+    engagements: [
+      { name: 'Growth retainer', desc: 'Strategy, channels, creative, automation and reporting on a monthly retainer, with budgets moved to what is producing.' },
+      { name: 'Foundations project', desc: 'Tracking, consent, CRM, Business Profile and landing pages built before any spend.' },
+      { name: 'Channel management', desc: 'One or two channels run inside a wider in-house team.' },
+      { name: 'Audit and rescue', desc: 'A paid audit of accounts spending without producing, with a written plan.' },
+    ],
+    detail: [
+      {
+        heading: 'Measurement before spend',
+        body: [
+          'Kerala click costs are rising in the categories that matter, and agencies compete for the same auctions, some of them spending a client budget just to hold a position. A campaign that cannot separate a qualified enquiry from a junk form fill is a donation. So before a rupee goes to a platform we install the layer that lets spend be judged, and the first month is a measurement exercise as much as a growth one.',
+          'That layer is not glamorous: conversion events that mean something, call and WhatsApp tracking, CRM fields for source and campaign, offline conversion import, consent configured to the DPDP Act, and a written definition of a qualified enquiry that the sales team applies. Every month after is decided on those numbers rather than on a platform dashboard.',
+        ],
+        points: [
+          { name: 'Offline conversion import', desc: 'Qualified enquiries and closed sales sent back to Google and Meta so bidding learns from revenue.' },
+          { name: 'WhatsApp as a channel', desc: 'Click-to-WhatsApp tracked as a conversion and routed into the CRM, because that is where Kerala enquiries happen.' },
+          { name: 'DPDP-aware consent', desc: 'Tracking and marketing consent handled to the Digital Personal Data Protection Act.' },
+          { name: 'One dashboard', desc: 'Spend, enquiries, qualified enquiries and revenue by channel, refreshed daily.' },
+        ],
+      },
+      {
+        heading: 'Malayalam, the districts and the diaspora',
+        body: [
+          'Kerala reads, watches and searches in Malayalam, and translated Malayalam underperforms native Malayalam in every test we run. The state is also fourteen markets rather than one: Kozhikode responds to different creative than Ernakulam, Malappuram has the strongest Gulf connection, Thrissur runs on Pooram, Trivandrum is a government and Technopark town. And several million Malayalis in the Gulf buy from home, searching at Gulf hours and converting on WhatsApp.',
+          'Campaigns are structured by district and language, Malayalam copy is written natively, creative is produced by Infynix Media for the platform it runs on, and diaspora campaigns are run with a working view of the audience from our UAE office.',
+        ],
+        points: [
+          { name: 'Malayalam campaigns', desc: 'Separate campaigns, copy and pages, reported on their own economics.' },
+          { name: 'District structure', desc: 'Budgets and creative segmented where the data supports it.' },
+          { name: 'Diaspora campaigns', desc: 'Gulf, UK and US audiences timed to their hours and routed to WhatsApp.' },
+          { name: 'Platform-native creative', desc: 'Reels and vertical video produced in Kerala.' },
+        ],
+      },
+      {
+        heading: 'Rules that apply to Kerala advertising',
+        body: [
+          'Doctors and hospitals are bound by National Medical Commission restrictions on promotion. Real estate projects must carry the K-RERA registration number. Financial products, chit funds and gold loans have RBI and state rules. Education claims about outcomes and placements fall under the ASCI chapter. Google and Meta add restricted-category policies that suspend accounts without warning. An account suspended in the week before Onam is a cost no report shows.',
+          'We keep a checklist per sector and run creative through it before it reaches a platform. It protects the brand as much as the account.',
+        ],
+        points: [
+          { name: 'Healthcare review', desc: 'Claims, imagery and language checked against NMC and ASCI guidance.' },
+          { name: 'Real estate compliance', desc: 'K-RERA numbers and disclaimers on every project ad and page.' },
+          { name: 'Financial and education claims', desc: 'Handled to RBI, state and ASCI rules before launch.' },
+          { name: 'Platform policy', desc: 'Restricted-category requirements met up front.' },
+        ],
+      },
+      {
+        heading: 'One brief across marketing, media and technology',
+        body: [
+          'Most agencies hand a client three suppliers who do not talk: a media buyer, a production company and a web developer. The campaign is designed without the creative, the creative is shot without the landing page, and the landing page is built without the tracking. Infynix runs all three as one team. The brief produces the media plan, the film and the site together, and the same dashboard reports on all of them.',
+          'For a Kerala client that means an Onam campaign whose creative was shot in July, whose landing pages carry Malayalam properly, whose WhatsApp enquiries land in a CRM with their source attached, and whose results are reported in the numbers the accountant uses.',
+        ],
+        points: [
+          { name: 'Media and creative together', desc: 'The version plan comes from the media plan.' },
+          { name: 'Landing pages built for the campaign', desc: 'Prerendered, bilingual, tracked from day one.' },
+          { name: 'Systems that catch the lead', desc: 'CRM, WhatsApp and automation built by the technology team.' },
+          { name: 'One set of numbers', desc: 'Spend to revenue, reported once.' },
+        ],
+      },
+    ],
+    extraFaqs: [
+      { question: 'What does the agency do that a media buyer does not?', answer: 'A media buyer runs the platforms. The agency builds the measurement, the consent, the CRM routing and the landing pages first, produces the creative with Infynix Media, runs the channels, and reports from spend to revenue in the numbers your accountant uses. Budgets move weekly to what is producing.' },
+      { question: 'Do you run campaigns in Malayalam?', answer: 'Yes. Malayalam campaigns, copy and landing pages are written by native speakers and run as a separate track with separate reporting, because Malayalam search and social behaviour differ from English and usually outperform for consumer brands.' },
+      { question: 'Do you run campaigns for the Gulf diaspora?', answer: 'Yes. For hospitals, real estate, education, jewellery and premium services that sell to NRI families, we run campaigns targeted to the UAE, Saudi Arabia, Qatar, Oman and beyond, timed to Gulf hours and routed to WhatsApp, with a working view of that audience from our UAE office.' },
+      { question: 'Can you work with our existing CRM?', answer: 'Yes. Google, Meta and LinkedIn lead flows are wired into Zoho, HubSpot, Salesforce and custom systems with source and campaign carried through, and WhatsApp Business API is integrated where the sales process runs there.' },
+      { question: 'Do you handle NMC, ASCI and K-RERA compliance in ads?', answer: 'Yes. A checklist per sector is applied to every piece of creative before launch, covering healthcare claims and imagery, real estate registration numbers, financial and education claims and platform restricted-category policies.' },
+      { question: 'Do you guarantee results?', answer: 'No, and we would be cautious of any agency that does. We commit to a measured system, a transparent methodology, honest weekly reporting and the willingness to say when something is not working. Results show up in your own CRM rather than in our slides.' },
+      { question: 'Where is the agency based?', answer: 'Third floor, Oberon Mall, Padivattom, Edappally, Kochi 682024. We work in person across Kerala and over shared channels, and we do not claim offices in other cities that we do not hold.' },
+      { question: 'Can you work alongside our in-house marketing team?', answer: 'Yes. We take one or more channels, or the measurement and automation layer, and report into your existing meetings and tools. Account ownership stays with you.' },
+    ],
+  },
+
+  'performance-advertising': {
+    overview: [
+      'Performance advertising for Kerala businesses: Google, Meta, YouTube and LinkedIn campaigns run as one measured system from Kochi, with spend judged on what it produced after the click and budgets moved weekly to whatever is producing. In a market where a hospital, a developer and a jeweller are bidding against national brands and each other, that discipline is the difference between a marketing budget and a donation.',
+      'Performance advertising has come to mean running ads, which is not what it means. It means spending money only where it can be shown to return, and moving it as soon as the numbers say so. That requires measurement the platforms do not give you by default: what happened after the click, whether the enquiry was real, whether it became revenue, and what it cost against margin after returns and cash-on-delivery failures.',
+      'We install that measurement first, define a qualified enquiry with you, send the outcomes back to the platforms so they optimise for what you actually want, and report the whole chain from spend to revenue by channel, campaign and district. Creative is produced by Infynix Media in Malayalam and English and tested on a cadence, because the creative and the landing page move cost per enquiry more than any bidding setting.',
+      'We run paid media for hospitals and clinics, real estate, jewellery and retail, education, hospitality, e-commerce and B2B companies across Kerala, and into the Gulf for brands that sell to the diaspora.',
+    ],
+    capabilitiesHeading: 'What performance means here',
+    capabilities: [
+      { name: 'Attribution before spend', desc: 'Tracking, CRM fields, WhatsApp and call tracking, consent and an enquiry definition installed before a rupee goes to a platform.' },
+      { name: 'Google Ads and Performance Max', desc: 'Search, Performance Max, Shopping and YouTube with offline conversion import and search term hygiene.' },
+      { name: 'Meta and Instagram', desc: 'Campaigns with the Conversions API, audiences built from the CRM, and vertical creative produced for the platform.' },
+      { name: 'YouTube', desc: 'Skippable and Shorts campaigns for a state that watches YouTube in Malayalam more than almost any other channel.' },
+      { name: 'LinkedIn for B2B', desc: 'Account-based campaigns measured on meetings and pipeline for Infopark and Technopark companies.' },
+      { name: 'Bilingual campaign structure', desc: 'Malayalam and English campaigns separated, with native copy and pages, reported on their own economics.' },
+      { name: 'Creative testing cadence', desc: 'New hooks, formats and offers every few weeks from Infynix Media, with losers cut before they burn budget.' },
+      { name: 'Contribution reporting', desc: 'Revenue after returns, COD failures, fees and discounts against spend, by campaign and product, not platform ROAS.' },
+    ],
+    specsHeading: 'Channels, timelines and what we measure',
+    specsColumns: ['Channel', 'Time to first signal', 'Primary measure'],
+    specs: [
+      ['Google Search', '1 to 2 weeks', 'Cost per qualified enquiry'],
+      ['Performance Max and Shopping', '3 to 4 weeks', 'Contribution after returns, new customer rate'],
+      ['Meta and Instagram', '2 to 3 weeks', 'Cost per lead or order, quality from CRM'],
+      ['YouTube', '3 to 4 weeks', 'View-through enquiries, brand search lift'],
+      ['LinkedIn (B2B)', '4 to 6 weeks', 'Meetings booked, pipeline created'],
+      ['Diaspora campaigns', '3 to 4 weeks', 'Cost per WhatsApp conversation by country'],
+    ],
+    useCasesHeading: 'Who this is built for',
+    useCases: [
+      { name: 'Hospitals and clinics', desc: 'High-value treatments where enquiry quality matters more than volume and every ad clears NMC and ASCI rules.' },
+      { name: 'Real estate', desc: 'Site-visit generation from Kerala families and NRI buyers with agent routing and K-RERA compliance.' },
+      { name: 'Jewellery and retail', desc: 'Onam, Vishu and wedding season campaigns with showroom visits and orders as the measure.' },
+      { name: 'Education', desc: 'Admissions campaigns timed to the cycle, measured on enrolments.' },
+      { name: 'E-commerce and D2C', desc: 'Shopping, Performance Max and social commerce with COD returns and fees counted in the numbers.' },
+      { name: 'B2B and SaaS', desc: 'Companies selling from Kerala to India and abroad, measured on pipeline.' },
+    ],
+    engagementsHeading: 'How we work together',
+    engagements: [
+      { name: 'Performance retainer', desc: 'Channels, creative, testing and reporting monthly, with budgets moved to what is producing.' },
+      { name: 'Foundations project', desc: 'Tracking, consent, CRM and landing pages built before spend begins.' },
+      { name: 'Audit and rescue', desc: 'A paid audit of accounts spending without producing, with a written plan.' },
+    ],
+    detail: [
+      {
+        heading: 'Contribution, not ROAS',
+        body: [
+          'Platform ROAS is the most flattering number in marketing. It counts revenue before returns, before payment fees, before delivery, before cash-on-delivery orders that were refused at the door and before the cost of the goods, and it credits the platform for sales that would have happened anyway. A Kerala D2C brand with a high COD rejection rate can show a healthy ROAS while losing money on every paid order.',
+          'We report contribution: revenue after returns, fees, delivery, COD failures and discounts, against spend, by campaign and product. It is a less flattering number and it is the only one that tells the business whether to spend more.',
+        ],
+        points: [
+          { name: 'Returns and COD counted', desc: 'Rejections and refunds reconciled against the campaigns that produced the orders.' },
+          { name: 'Fees and delivery', desc: 'Gateway and courier costs deducted.' },
+          { name: 'Incrementality', desc: 'Brand and existing-customer revenue separated from genuinely new demand.' },
+          { name: 'Product-level view', desc: 'Contribution by product and category, so the feed is bid accordingly.' },
+        ],
+      },
+      {
+        heading: 'YouTube and Meta in Malayalam',
+        body: [
+          'Kerala watches YouTube in Malayalam at a rate few markets match, and Instagram is where retail, hospitality and real estate are discovered. Campaigns built in English for a desktop form-filler miss most of it. We structure by language and intent, write Malayalam ads and pages natively, and produce vertical creative for each platform with Infynix Media rather than cropping a landscape ad four ways.',
+          'The Kerala calendar shapes the plan too: Onam prepared weeks ahead, Vishu and wedding season budgets timed to the buying windows, admissions campaigns live when parents start searching, and the monsoon shift to online planned rather than discovered.',
+        ],
+        points: [
+          { name: 'Malayalam campaigns', desc: 'Separate campaigns, copy and pages, reported on their own numbers.' },
+          { name: 'Platform-native creative', desc: 'Reels, Shorts and YouTube creative produced in Kerala.' },
+          { name: 'Onam and seasons', desc: 'Planned into budgets and creative in advance.' },
+          { name: 'WhatsApp conversions', desc: 'Click-to-WhatsApp tracked and routed, because that is where the enquiry happens.' },
+        ],
+      },
+      {
+        heading: 'Rules that apply to paid media in Kerala',
+        body: [
+          'Doctors and hospitals are bound by NMC restrictions on promotion. Real estate ads must carry the K-RERA number. Financial products have RBI rules, education claims fall under ASCI guidance, and Google and Meta add restricted-category policies that suspend accounts without warning. An account suspended in the week before Onam is a cost no report shows.',
+          'We keep a checklist per sector, run creative through it before launch, and set accounts up with the verifications the platforms require for restricted categories.',
+        ],
+        points: [
+          { name: 'Healthcare review', desc: 'Claims, imagery and language checked against NMC and ASCI guidance.' },
+          { name: 'Real estate compliance', desc: 'K-RERA numbers and disclaimers on every ad and page.' },
+          { name: 'Platform certification', desc: 'Restricted-category verification handled up front.' },
+          { name: 'Education and finance', desc: 'Claims handled to ASCI and RBI rules before launch.' },
+        ],
+      },
+      {
+        heading: 'Creative and landing pages as the lever',
+        body: [
+          'Once measurement is in place, the biggest lever in a performance account is not the bid. It is the creative and the page. New hooks and formats move cost per enquiry more than any bidding setting, and a landing page test on the offer, the form or the proof moves it again. Most accounts we audit have not changed creative in months and have never tested the page.',
+          'We run both on a cadence: new creative every few weeks in both languages, and structured page tests with the numbers deciding, with the winners applied to the pages that rank organically as well.',
+        ],
+        points: [
+          { name: 'Creative cadence', desc: 'New hooks and formats on a schedule, produced by Infynix Media.' },
+          { name: 'Page testing', desc: 'Headlines, offers, forms and proof tested structurally.' },
+          { name: 'Losers cut early', desc: 'Underperforming creative and pages retired before they burn budget.' },
+          { name: 'Winners scaled', desc: 'What works gets the budget, and feeds the organic pages.' },
+        ],
+      },
+    ],
+    extraFaqs: [
+      { question: 'What is the difference between performance advertising and digital marketing?', answer: 'Performance advertising is the discipline of spending only where return can be shown and moving budget as the numbers dictate. It sits inside digital marketing alongside organic search, content, social and automation. This page covers paid media; the Infynix Agency page covers the wider programme.' },
+      { question: 'How much should we spend to get a readable result?', answer: 'It depends on your category and the Kerala cost per click in it. We state the minimum before you commit, and we will say if the budget is too small to produce a signal rather than take it and report clicks.' },
+      { question: 'Do you report on ROAS?', answer: 'We report contribution: revenue after returns, COD failures, fees, delivery and discounts, against spend, by campaign and product. Platform ROAS is shown for reference but decisions are not made on it.' },
+      { question: 'Can you run campaigns into the Gulf?', answer: 'Yes. Diaspora campaigns are structured by country with Malayalam and English creative, timed to Gulf hours, routed to WhatsApp and reported on cost per conversation by country.' },
+      { question: 'Do you guarantee a cost per lead?', answer: 'No. We set a target from your margin and close rate in the first workshop and report against it from month one, and we tell you honestly when it is not being met and why.' },
+      { question: 'Do you handle NMC and K-RERA requirements in ads?', answer: 'Yes. Healthcare and real estate creative is checked against NMC, ASCI and K-RERA requirements before launch, and platform restricted-category verification is handled up front so accounts are not suspended mid-campaign.' },
+      { question: 'Do you manage product feeds for Shopping?', answer: 'Yes. Feed optimisation, custom labels by margin and role, availability sync and supplemental data are part of every Shopping and social commerce engagement, because the feed is the campaign.' },
+      { question: 'Can you work alongside our in-house team?', answer: 'Yes. We take one or more channels, or the measurement layer, and report into your existing tools. Accounts stay in your name.' },
+      { question: 'Do you run YouTube campaigns in Malayalam?', answer: 'Yes. Kerala watches YouTube in Malayalam at a rate few markets match, and skippable and Shorts campaigns with Malayalam creative produced by Infynix Media are a core channel for consumer brands here.' },
+      { question: 'How quickly can you start?', answer: 'Foundations begin within two weeks of agreement, and the first campaigns are typically live in the third or fourth week once the measurement can be trusted.' },
+    ],
+  },
+
+  'seo-content-marketing': {
+    overview: [
+      'SEO and content marketing for Kerala businesses: content planned from what people in Kochi, Kozhikode, Thrissur and Trivandrum actually search, in Malayalam and English, written with your experts, structured so search engines and AI assistants can quote it, and supported by the technical foundation and the authority that let it rank. Reported on organic enquiries, not on rankings.',
+      'Most content marketing in Kerala is a blog nobody planned, written by nobody in particular, about topics nobody searched for. It produces pages, not enquiries. Content that works starts from demand: the questions patients, parents, buyers and procurement teams type into Google, the answers they need, and the language they search in. Then it is written by someone who knows the answer, and it is built to be found.',
+      'We run content as a programme alongside the technical and local SEO work: demand research in both languages, an editorial calendar, expert-led writing, Malayalam that is native rather than translated, structured data and internal linking, and monthly reporting on what each piece produced.',
+      'We work with hospitals and clinics, schools and colleges, real estate developers, law and financial firms, tourism and hospitality, and B2B companies selling from Kerala to India and abroad.',
+    ],
+    capabilitiesHeading: 'What the programme delivers',
+    capabilities: [
+      { name: 'Demand research in two languages', desc: 'Keyword and question research in Malayalam, Manglish and English, mapped to the intents that produce enquiries.' },
+      { name: 'Editorial calendar', desc: 'Service, guide, comparison and locality content planned quarterly from demand and the Kerala calendar.' },
+      { name: 'Expert-led writing', desc: 'Written with your doctors, teachers, engineers or advisers so it is accurate and specific, not generic.' },
+      { name: 'Native Malayalam content', desc: 'Written in Malayalam by native speakers, never translated, in the register the audience uses.' },
+      { name: 'Quotable structure', desc: 'Clear headings, direct answers and FAQ markup so search engines and AI assistants can lift the answer.' },
+      { name: 'Technical foundation', desc: 'Crawlability, rendering, Core Web Vitals and structured data fixed so the content can be found.' },
+      { name: 'Authority building', desc: 'Links and mentions earned from Kerala and Indian publishers, associations and institutions. No bought links.' },
+      { name: 'Reporting on enquiries', desc: 'Search Console, GA4 and CRM connected so each piece is reported on the enquiries it produced.' },
+    ],
+    specsHeading: 'What to expect and when',
+    specsColumns: ['Workstream', 'Typical timeline', 'Evidence it is working'],
+    specs: [
+      ['Demand research and calendar', 'Weeks 1 to 3', 'A quarter of content planned from real demand'],
+      ['Technical remediation', 'Weeks 1 to 6', 'Indexed pages up, errors down in Search Console'],
+      ['Content production', 'Month 2 onwards', 'Impressions and clicks on new pages'],
+      ['Malayalam track', 'Month 2 onwards', 'Malayalam impressions and enquiries'],
+      ['Authority building', 'Month 3 onwards', 'Referring domains, page-level rankings'],
+      ['Competitive terms', 'Months 6 to 12', 'Page one positions, enquiries by query'],
+    ],
+    useCasesHeading: 'Who this is for',
+    useCases: [
+      { name: 'Hospitals and clinics', desc: 'Condition, treatment and doctor content that patients search, within NMC rules, in both languages.' },
+      { name: 'Education', desc: 'Course, admission, fee and campus content aligned to what parents and students search and when.' },
+      { name: 'Real estate', desc: 'Locality guides, project pages and buyer content that compete with the portals.' },
+      { name: 'Professional services', desc: 'Practice area and guide content that establishes expertise for careful clients.' },
+      { name: 'Tourism and hospitality', desc: 'Destination and experience content that ranks alongside the OTAs and drives direct bookings.' },
+      { name: 'B2B and SaaS', desc: 'Problem, comparison and capability content for buyers in India and abroad.' },
+    ],
+    engagementsHeading: 'How we engage',
+    engagements: [
+      { name: 'Content and SEO retainer', desc: 'The full programme monthly, with the balance of technical, content and authority work adjusted as the data dictates.' },
+      { name: 'Content programme', desc: 'Bilingual content on a set cadence for businesses with the technical basics in place.' },
+      { name: 'Content audit', desc: 'A review of what exists, what ranks, what to consolidate and what to write next.' },
+    ],
+    detail: [
+      {
+        heading: 'Malayalam search is the widest gap in Kerala',
+        body: [
+          'Malayalam and Manglish queries carry real demand across every consumer category in the state, and the quality of content answering them is poor. That gap is the single largest organic opportunity in Kerala. Translated English pages do not close it, because Malayalam readers recognise translation and Google treats it accordingly. Content written natively in Malayalam, by someone who knows the subject, ranks where nothing else does.',
+          'We research Malayalam demand directly, write natively, mark up language versions correctly and report the Malayalam track on its own, so the business can see the return and invest in it.',
+        ],
+        points: [
+          { name: 'Malayalam demand research', desc: 'Queries mapped from Malayalam and Manglish search data with spelling variants.' },
+          { name: 'Native writing', desc: 'Content written in Malayalam by native speakers.' },
+          { name: 'Language markup', desc: 'Versions served correctly to the right searcher.' },
+          { name: 'Separate reporting', desc: 'Traffic, rankings and enquiries by language.' },
+        ],
+      },
+      {
+        heading: 'Content a careful reader can trust',
+        body: [
+          'Kerala buyers research. A parent choosing a school, a patient choosing a specialist, a family buying an apartment, a finance director shortlisting a supplier: each reads more than a consumer buying on impulse. Content has to be accurate, specific and credible, with the credentials, processes and evidence the reader is looking for, and it has to stay within the rules that apply to healthcare, education and financial claims.',
+          'We plan content from what those readers search, write it with subject matter input from your team, and structure it with clear headings, direct answers and FAQ markup so search engines and AI assistants can quote it directly.',
+        ],
+        points: [
+          { name: 'Demand-led planning', desc: 'Topics from search data and the questions your team actually gets.' },
+          { name: 'Expert input', desc: 'Written with your clinicians, teachers or engineers.' },
+          { name: 'Claims within rules', desc: 'NMC, ASCI and RBI expectations applied to every page.' },
+          { name: 'Quotable structure', desc: 'Headings, direct answers and FAQ markup.' },
+        ],
+      },
+      {
+        heading: 'Competing with portals and national brands',
+        body: [
+          'For most Kerala commercial searches the first page is held by Practo, Justdial, Sulekha, the property portals, national ed-tech brands and aggregators, not by the businesses that do the work. They hold those positions with scale and authority, and they charge the businesses listed on them for the leads. The way past them is to give Google what they cannot: first-hand content about your services, your locality and your customers, a Business Profile that outperforms a listing, and reviews that read as real.',
+          'We map which portals hold which terms, find the queries where a local page can win, and displace them one term at a time.',
+        ],
+        points: [
+          { name: 'Portal mapping', desc: 'Which aggregators hold which terms, and where the gaps are.' },
+          { name: 'First-hand content', desc: 'Pages that say what only the business doing the work can say.' },
+          { name: 'Business Profile strength', desc: 'A profile that beats a listing for a local search.' },
+          { name: 'Term by term', desc: 'Displacing portals on the queries that convert.' },
+        ],
+      },
+      {
+        heading: 'Content that feeds the rest of the marketing',
+        body: [
+          'A guide that ranks is also the email that nurtures, the script for a Reel, the answer the WhatsApp assistant gives and the proof the sales team sends. Content produced once and used everywhere is how a Kerala business with a small team publishes like a large one. We plan content with the agency and media teams so the guide, the video and the campaign come from one brief.',
+          'The reporting shows what each piece produced across channels, not just in search.',
+        ],
+        points: [
+          { name: 'One brief, many formats', desc: 'Guide, video, email and social from the same research.' },
+          { name: 'Sales enablement', desc: 'Content the sales team can send to close.' },
+          { name: 'Assistant knowledge', desc: 'Content that powers the answers on WhatsApp and the site.' },
+          { name: 'Cross-channel reporting', desc: 'What each piece produced, wherever it ran.' },
+        ],
+      },
+      {
+        heading: 'Content for the Gulf diaspora',
+        body: [
+          'For hospitals, developers, schools and jewellers, some of the most valuable search demand comes from outside Kerala: a Malayali family in Dubai researching a hospital for a parent, an apartment for retirement, a school for a child returning home. They search in English and Malayalam, at Gulf hours, with questions a local page rarely answers: how to arrange a consultation from abroad, how payment works, what happens on the visit home.',
+          'We plan diaspora content from that demand, answer the questions the local page misses, and structure it so it ranks for searches made in the UAE and the Gulf, with a working view of the audience from our UAE office.',
+        ],
+        points: [
+          { name: 'Diaspora demand research', desc: 'What NRI families search, from where, in which language.' },
+          { name: 'Questions the local page misses', desc: 'Arranging from abroad, payment, the visit home.' },
+          { name: 'Gulf search targeting', desc: 'Content and markup that rank for searches made in the UAE.' },
+          { name: 'WhatsApp conversion', desc: 'The enquiry path the diaspora actually uses.' },
+        ],
+      },
+    ],
+    extraFaqs: [
+      { question: 'Do you write in Malayalam?', answer: 'Yes, natively, by native speakers, from Malayalam demand research, and reported as a separate track so you can see what each language produces. For most Kerala consumer categories the Malayalam track is where the fastest organic wins are.' },
+      { question: 'Who writes the content?', answer: 'Our writers, with your subject matter experts involved rather than just approving, so the content is accurate and specific. Healthcare, education and financial content is checked against NMC, ASCI and RBI expectations before publication.' },
+      { question: 'How long does content take to produce enquiries?', answer: 'New pages typically show impressions within weeks and enquiries within two to four months, with competitive terms taking six to twelve months of sustained work. Leading indicators are reported monthly.' },
+      { question: 'Can a local business outrank Practo or the property portals?', answer: 'For specific local and service terms, yes. Portals win on scale, but a local business can win with first-hand content, a strong Business Profile and genuine reviews on the queries that actually convert.' },
+      { question: 'Do you buy links?', answer: 'No. Authority is earned from Kerala and Indian publishers, associations and institutions through genuinely useful content and outreach.' },
+      { question: 'Can you audit our existing content?', answer: 'Yes. A content audit reviews what exists, what ranks, what to consolidate, what to rewrite and what to write next, with the plan prioritised by demand.' },
+      { question: 'Do you work with our developers for the technical side?', answer: 'Either way. We hand precise tickets to your team and verify the fixes, or the Infynix technology team makes the changes.' },
+      { question: 'How do you report?', answer: 'Monthly with Search Console, GA4 and CRM connected, showing organic enquiries and revenue by page, query and language, with a short weekly note on what changed.' },
+      { question: 'Can content reach Malayalis in the Gulf?', answer: 'Yes. Diaspora content is planned from what NRI families search, answers the questions a local page misses, and is structured to rank for searches made in the UAE and the Gulf, with WhatsApp as the conversion path.' },
+    ],
+  },
+
+  'social-media-management': {
+    overview: [
+      'Social media management for Kerala brands that need to publish consistently in Malayalam and English, across Instagram, YouTube, Facebook and LinkedIn, with community management that answers fast enough to convert and paid social run as performance rather than boosting. Kerala has one of the highest social media penetrations in India, and Malayalam social is a culture of its own.',
+      'Most brand accounts here post in bursts, in one language, with stock creative, and wonder why nothing happens. What works is a rhythm the brand can sustain for a year: a bilingual calendar planned monthly, a shoot day in Kochi or across the state that produces the month, community management in the language the customer wrote in, and paid campaigns that promote the strongest organic content with real measurement behind them.',
+      'We manage social for jewellery and retail chains, restaurants and resorts, hospitals and clinics, real estate, education and professional firms across Kerala, with the Infynix Media team producing the content and the performance team running the paid layer.',
+      'Reporting shows reach and engagement as leading indicators and enquiries, WhatsApp conversations and revenue as the measure, so social is judged on what it produces rather than on likes.',
+    ],
+    capabilitiesHeading: 'What management includes',
+    capabilities: [
+      { name: 'Bilingual content calendar', desc: 'Malayalam and English planned together each month, with themes, offers and the shoot list, in the register the audience uses.' },
+      { name: 'Monthly shoot day', desc: 'Infynix Media produces 15 to 25 vertical clips and the stills the month needs, on location across Kerala.' },
+      { name: 'Platform-native editing', desc: 'Reels, Shorts and YouTube cut for each platform, with open captions in both languages.' },
+      { name: 'Community management', desc: 'Comments and DMs answered same day, seven days a week, in the language the customer wrote in, with enquiries routed to sales.' },
+      { name: 'Paid social as performance', desc: 'Structured campaigns with the Conversions API, tracked WhatsApp enquiries and creative testing, not boosted posts.' },
+      { name: 'Creator collaborations', desc: 'Kerala creators matched on audience fit, with deliverables and tracking agreed in writing.' },
+      { name: 'Reputation and reviews', desc: 'Google, Practo, Zomato and the platforms your sector uses, managed as part of the same programme.' },
+      { name: 'Monthly reporting', desc: 'Reach, saves, profile visits, enquiries and revenue, feeding the next planning session.' },
+    ],
+    specsHeading: 'Formats and cadence',
+    specsColumns: ['Format', 'Typical cadence', 'What we measure'],
+    specs: [
+      ['Reels and Shorts', '12 to 20 per month', 'Reach, saves, profile visits, enquiries'],
+      ['Static and carousel posts', '8 to 12 per month', 'Engagement, saves, link clicks'],
+      ['Stories', 'Daily', 'Replies, sticker taps, WhatsApp clicks'],
+      ['Paid social', 'Always on plus seasonal', 'Cost per enquiry or order, revenue'],
+      ['Creator content', '1 to 4 per month', 'Reach, redemptions, enquiries'],
+      ['Community management', 'Same day, 7 days', 'Response time, conversion of DMs'],
+    ],
+    useCasesHeading: 'Who this is for',
+    useCases: [
+      { name: 'Jewellery and textiles', desc: 'Showrooms whose Instagram is the window and whose year is shaped by Onam and wedding season.' },
+      { name: 'Restaurants and resorts', desc: 'Venues where a Reel decides who books, and where reviews decide who returns.' },
+      { name: 'Hospitals and clinics', desc: 'Doctor-led educational content that builds trust within NMC rules.' },
+      { name: 'Real estate', desc: 'Developers building an audience of Kerala and NRI buyers with project and locality content.' },
+      { name: 'Education', desc: 'Schools and institutes whose admissions depend on parents and students on Instagram and YouTube.' },
+      { name: 'Professional and B2B', desc: 'Founder and expertise content on LinkedIn for firms whose reputation is the product.' },
+    ],
+    engagementsHeading: 'How we work together',
+    engagements: [
+      { name: 'Social retainer', desc: 'Calendar, shoot day, editing, community management and paid social monthly.' },
+      { name: 'Production only', desc: 'Shoot days and editing for an in-house team that runs its own channels.' },
+      { name: 'Paid social management', desc: 'Campaigns run as performance inside a wider marketing team.' },
+    ],
+    detail: [
+      {
+        heading: 'Malayalam first, because it works',
+        body: [
+          'For most Kerala consumer brands the Malayalam version of a post outperforms the English one, often by a wide margin, and translated Malayalam underperforms native Malayalam every time. The audience notices register, humour and idiom, and content that reads as translated reads as foreign. We write Malayalam natively, adjusted by district because Malabar and Travancore do not speak alike, and English natively alongside it, and we test rather than assume.',
+          'For B2B and diaspora audiences English leads and Malayalam supports. The reporting shows what each language produces, and the calendar is weighted accordingly.',
+        ],
+        points: [
+          { name: 'Native writing', desc: 'Malayalam and English written by native speakers, never translated.' },
+          { name: 'District register', desc: 'Tone adjusted for Malabar, central and southern audiences.' },
+          { name: 'Language testing', desc: 'The same idea tested in both languages with the numbers deciding.' },
+          { name: 'Replies in kind', desc: 'Community management in the language the customer used.' },
+        ],
+      },
+      {
+        heading: 'Community management is a sales channel',
+        body: [
+          'In Kerala the enquiry happens in the DM and on WhatsApp. A comment asking the price of a necklace, a DM asking if a table is free, a message asking about a treatment: each is a lead, and each is lost if it is answered on Monday. Community management done properly is same-day, seven days a week, in the language the customer used, with enquiries passed to the sales team or the CRM with their source attached.',
+          'We staff it that way, we measure response time and DM conversion, and we report social on the enquiries it produced rather than on the comments it collected.',
+        ],
+        points: [
+          { name: 'Same-day response', desc: 'Comments and DMs answered seven days a week.' },
+          { name: 'Enquiry routing', desc: 'Leads passed to sales or the CRM with source attached.' },
+          { name: 'WhatsApp handoff', desc: 'Conversations moved to WhatsApp Business where the sale happens.' },
+          { name: 'Measured', desc: 'Response time and DM conversion in the monthly report.' },
+        ],
+      },
+      {
+        heading: 'Paid social run as performance, not boosting',
+        body: [
+          'Boosting a post is not a paid social strategy. Structured campaigns with objectives, audiences segmented by district, creative tests, the Conversions API installed server-side and tracked WhatsApp enquiries produce enquiries at a cost the business can see. Boosted posts produce likes. The strongest organic content becomes the paid creative, the paid data feeds the organic plan, and the whole thing is reported from spend to revenue.',
+          'Seasonal campaigns for Onam, Vishu, wedding season and admissions are planned into the calendar with creative shot in advance and budgets timed to the buying windows.',
+        ],
+        points: [
+          { name: 'Structured campaigns', desc: 'Objectives, district audiences and creative tests rather than boosted posts.' },
+          { name: 'Conversions API', desc: 'Server-side tracking so reported results survive privacy changes.' },
+          { name: 'Creative from organic', desc: 'The best-performing organic content promoted with budget.' },
+          { name: 'Seasonal planning', desc: 'Onam, Vishu, weddings and admissions prepared in advance.' },
+        ],
+      },
+      {
+        heading: 'A month in practice',
+        body: [
+          'The month starts with a planning session: what the business needs to sell, what the audience is asking, what the season demands, and the twenty ideas that come out of it, in Malayalam and English. A shoot day follows, planned to the shot, in Kochi or wherever the brand is, producing the clips and stills the calendar needs. Editing runs for each platform, captions are written natively, and the calendar is approved in one pass. Community management runs daily throughout.',
+          'The month closes with a report on what reached, what engaged and what produced enquiries and revenue, which sets the next planning session.',
+        ],
+        points: [
+          { name: 'Planning session', desc: 'Themes, offers, season and the shoot list agreed monthly.' },
+          { name: 'Shoot day', desc: 'A month of content produced in one planned day by Infynix Media.' },
+          { name: 'Approval in one pass', desc: 'A scheduled calendar reviewed once.' },
+          { name: 'Monthly report', desc: 'Reach, engagement, enquiries and revenue, feeding the next plan.' },
+        ],
+      },
+      {
+        heading: 'Founder and executive content that does not eat the week',
+        body: [
+          'The most effective social content for professional and B2B brands in Kerala is a founder, a doctor or a senior person speaking plainly about what they know, in Malayalam or English. It builds trust faster than any brand animation, and it is the format LinkedIn, Instagram and YouTube reward. The obstacle is time: a busy executive cannot record every week. The answer is batching: one planned session a month, with questions prepared and the setups ready, produces the month’s content in an hour on camera.',
+          'We prepare the prompts from what the audience actually asks, run the session, and cut, caption and schedule the clips in both languages, so the executive gives up an hour and the brand publishes for a month.',
+        ],
+        points: [
+          { name: 'Prepared prompts', desc: 'Questions written from what the audience searches and asks.' },
+          { name: 'One session a month', desc: 'An hour on camera producing the month’s clips.' },
+          { name: 'Cut and captioned', desc: 'Vertical clips with captions in Malayalam and English.' },
+          { name: 'Scheduled and measured', desc: 'Published on a rhythm, with the numbers deciding the next prompts.' },
+        ],
+      },
+    ],
+    extraFaqs: [
+      { question: 'Do you produce the content or just schedule it?', answer: 'We produce it. Infynix Media runs a monthly shoot day in Kochi or across Kerala producing the vertical clips and stills the calendar needs, edited for each platform with captions in Malayalam and English, and the calendar is scheduled and managed from there.' },
+      { question: 'Can you manage accounts in Malayalam and English?', answer: 'Yes. The calendar is planned bilingually, content is written natively in both languages, and community management replies in the language the customer wrote in.' },
+      { question: 'Do you handle comments and DMs?', answer: 'Yes, same day, seven days a week, with enquiries routed to your sales team or CRM with their source attached and conversations moved to WhatsApp Business where the sale happens.' },
+      { question: 'Do you work with Kerala influencers?', answer: 'Yes. Creators are matched on audience fit rather than follower count, deliverables and tracking are agreed in writing, and each collaboration is reported on what it produced.' },
+      { question: 'How do you measure social media?', answer: 'Reach, saves and profile visits as leading indicators; enquiries, WhatsApp conversations and revenue as the measure, with WhatsApp clicks tracked and routed to the CRM. Reported monthly and used to plan the next month.' },
+      { question: 'Can you run social for a brand with branches across Kerala?', answer: 'Yes. Content is shot across locations on a rotation so every district sees itself, paid campaigns are segmented by district and language, and reporting shows enquiries by branch.' },
+      { question: 'Can you run only the paid social layer?', answer: 'Yes. Paid social is run as performance marketing inside a wider in-house or agency team, with the Conversions API, tracked enquiries and creative testing, reporting into your existing tools.' },
+      { question: 'Can you handle content for a clinic or a school within the rules?', answer: 'Yes. We keep a checklist per sector covering NMC, ASCI and platform policies, and every piece of content is reviewed against it before publishing.' },
+      { question: 'Can you produce founder or doctor content?', answer: 'Yes. One prepared session a month produces the month’s clips: prompts written from audience questions, an hour on camera, clips cut and captioned in both languages, scheduled and measured, within NMC rules for healthcare.' },
+    ],
+  },
+
+  'marketing-automation-crm': {
+    overview: [
+      'Marketing automation and CRM for Kerala businesses whose enquiries arrive on WhatsApp at ten at night, whose sales teams work from their phones, and whose leads go cold in a shared inbox before anyone follows up. The systems that catch the lead, route it, answer it and keep it warm until it closes, built on Zoho, HubSpot, Salesforce or a custom stack, with WhatsApp Business API at the centre.',
+      'The Kerala sales process runs on WhatsApp. A lead that gets a reply in two minutes converts; one that gets a reply the next morning has already spoken to three competitors. Automation is what makes the two-minute reply possible without a sales team that never sleeps, and CRM is what makes the follow-up happen and the result measurable.',
+      'We build these systems for hospitals and clinic groups, real estate developers, schools and colleges, jewellery and retail chains, professional services and B2B companies, with consent and data handling to the Digital Personal Data Protection Act designed in, and with the accountant’s tools left in place.',
+      'The result is a pipeline you can see: every enquiry with its source and campaign, every follow-up logged, every closed sale attributed, and a sales team that spends its time selling rather than chasing.',
+    ],
+    capabilitiesHeading: 'What we build',
+    capabilities: [
+      { name: 'CRM implementation', desc: 'Zoho, HubSpot, Salesforce or a custom CRM implemented for how your team actually sells, with pipelines, stages and fields that match the process.' },
+      { name: 'WhatsApp Business API', desc: 'Enquiries, replies, notifications and templated follow-ups through the channel Kerala customers use, logged against the CRM record.' },
+      { name: 'Lead capture and routing', desc: 'Web, WhatsApp, calls, ads, portal and walk-in leads captured with source and campaign, deduplicated and routed to the right person or branch within minutes.' },
+      { name: 'Automated follow-up', desc: 'Sequences by WhatsApp, email and SMS that respond instantly, qualify and nurture in Malayalam or English, with a person stepping in at the right moment.' },
+      { name: 'Lead scoring and qualification', desc: 'Simple scores applied from behaviour and CRM data so sales works the leads most likely to close.' },
+      { name: 'Sales enablement', desc: 'Quotes, brochures, booking links and documents generated from the CRM, in both languages.' },
+      { name: 'Consent and DPDP', desc: 'Marketing consent captured, recorded and honoured to the Digital Personal Data Protection Act.' },
+      { name: 'Reporting and attribution', desc: 'Pipeline, conversion and revenue by source, campaign and branch, connected to the ad platforms for offline conversion import.' },
+    ],
+    specsHeading: 'Typical engagements and timelines',
+    specsColumns: ['Engagement', 'Typical timeline'],
+    specs: [
+      ['CRM implementation for a sales team', '4 to 8 weeks'],
+      ['WhatsApp Business API integration', '2 to 4 weeks'],
+      ['Lead routing and automation build', '3 to 6 weeks'],
+      ['Migration from spreadsheets or another CRM', '4 to 10 weeks'],
+      ['Ongoing automation and optimisation', 'Monthly'],
+    ],
+    useCasesHeading: 'Who this is for',
+    useCases: [
+      { name: 'Hospitals and clinic groups', desc: 'Enquiry to consultation to treatment tracked across branches, with reminders and follow-up automated.' },
+      { name: 'Real estate developers', desc: 'Portal, ad and WhatsApp leads routed to the right project and agent in minutes, with site-visit scheduling automated.' },
+      { name: 'Education', desc: 'Admissions pipelines from enquiry to enrolment, timed to the academic calendar.' },
+      { name: 'Jewellery and retail', desc: 'Scheme members, wedding enquiries and showroom visits tracked and followed up.' },
+      { name: 'Professional services', desc: 'Long sales cycles kept warm with nurture that does not become noise.' },
+      { name: 'B2B and exporters', desc: 'Pipeline across India and the Gulf tracked from a Kerala base.' },
+    ],
+    engagementsHeading: 'How we work together',
+    engagements: [
+      { name: 'Implementation project', desc: 'CRM, WhatsApp, routing and automation built and launched on a fixed scope.' },
+      { name: 'Foundations inside a marketing retainer', desc: 'The CRM and automation layer built as the first phase of a growth engagement.' },
+      { name: 'Ongoing optimisation', desc: 'Sequences, scoring and reporting improved monthly from the data.' },
+    ],
+    detail: [
+      {
+        heading: 'WhatsApp is the CRM Kerala already uses',
+        body: [
+          'Every Kerala sales team runs on WhatsApp, and most CRMs are ignored because they do not. The salesperson replies from their phone, the conversation lives in their chat history, and the CRM is updated on Saturday if at all. The fix is not to force the team off WhatsApp. It is to put WhatsApp inside the CRM: enquiries arrive through the Business API, conversations are logged against the record, templated replies go out instantly in Malayalam or English, and the salesperson still works from their phone.',
+          'We implement the WhatsApp Business API with the CRM so both stay true, with the templates, opt-ins and consent handling Meta and the DPDP Act require.',
+        ],
+        points: [
+          { name: 'Business API integration', desc: 'WhatsApp conversations logged against the CRM record.' },
+          { name: 'Instant templated replies', desc: 'A qualified first response within minutes, day or night, in the customer’s language.' },
+          { name: 'Salesperson on their phone', desc: 'The team keeps the workflow it already has.' },
+          { name: 'Opt-in and consent', desc: 'Templates and consent handled to Meta policy and the DPDP Act.' },
+        ],
+      },
+      {
+        heading: 'Routing that does not lose the lead',
+        body: [
+          'A hospital lead from a Google ad, a Practo listing and a WhatsApp click can arrive at three different inboxes and reach three different branches, or none. Routing rules decide in seconds: by department, by branch, by language, by availability, with a fallback if nobody responds. The lead is deduplicated against the existing record, tagged with its source and campaign, and the coordinator is notified on the channel they actually check.',
+          'The same logic serves a developer routing by project and agent, a school routing by year group and campus, and a B2B firm routing by territory and deal size.',
+        ],
+        points: [
+          { name: 'Rules by business', desc: 'Department, branch, project, language or territory, as the process needs.' },
+          { name: 'Deduplication', desc: 'One record per person, however many channels they used.' },
+          { name: 'Source and campaign', desc: 'Every lead tagged for attribution from the moment it arrives.' },
+          { name: 'Fallback and escalation', desc: 'Unanswered leads reassigned before they go cold.' },
+        ],
+      },
+      {
+        heading: 'Consent, data and the DPDP Act',
+        body: [
+          'The Digital Personal Data Protection Act sets obligations on consent, purpose, data principal rights and breach notification for any business processing personal data in India, and health and student data carry additional expectations. Marketing automation is where those obligations bite: a nurture sequence sent without consent, a list imported from a spreadsheet, a WhatsApp broadcast to numbers that never opted in. Each is a complaint waiting to happen.',
+          'We design consent capture into every form and channel, record the basis for every contact, honour opt-outs automatically, and host in Indian cloud regions, so the pipeline you build is one you are allowed to use.',
+        ],
+        points: [
+          { name: 'Consent at capture', desc: 'Marketing consent recorded with every lead, per channel.' },
+          { name: 'Opt-out honoured', desc: 'Unsubscribes applied across WhatsApp, email and SMS automatically.' },
+          { name: 'Health and student data', desc: 'Additional controls where the business handles them.' },
+          { name: 'Indian hosting', desc: 'Data held in Indian regions.' },
+        ],
+      },
+      {
+        heading: 'Automation that a person can step into',
+        body: [
+          'The best automation in a Kerala sales process does the first minute and the follow-ups, and hands the conversation to a person at the moment it matters: when the lead asks a real question, when they are ready to book, when the deal needs a human voice. Fully automated pipelines lose the high-value lead; fully manual ones lose the rest. The design is in the handoffs.',
+          'We build sequences with clear handoff points, notify the right person when they trigger, and measure response time and conversion at each stage so the balance can be adjusted from the data.',
+        ],
+        points: [
+          { name: 'Instant first response', desc: 'Automated, qualified, in the language of the enquiry.' },
+          { name: 'Handoff triggers', desc: 'A person notified when the conversation needs one.' },
+          { name: 'Nurture that ends', desc: 'Sequences that stop when they should, not noise forever.' },
+          { name: 'Stage measurement', desc: 'Response time and conversion by stage, adjusted monthly.' },
+        ],
+      },
+      {
+        heading: 'Real estate: from portal lead to site visit',
+        body: [
+          'Real estate is the clearest case for automation in Kerala. Leads arrive from the portals, Meta, Google and WhatsApp, often for the same project, often from the same NRI buyer, and a developer with a sales team of ten loses a large share of them to slow response and no follow-up. Routing by project and language, an instant WhatsApp reply with the brochure, a site visit or a video call booked from the conversation for a buyer in the Gulf, and a follow-up sequence that keeps the buyer warm turns the same lead flow into more visits from the same spend.',
+          'We build this for developers with the portal integrations, the WhatsApp templates and the reporting that shows cost per site visit and cost per booking by source.',
+        ],
+        points: [
+          { name: 'Portal integration', desc: 'Portal and ad leads captured with source.' },
+          { name: 'Instant brochure reply', desc: 'WhatsApp templates in the buyer’s language within minutes.' },
+          { name: 'Visit and video call booking', desc: 'Scheduled from the conversation, with reminders, for local and NRI buyers.' },
+          { name: 'Cost per site visit', desc: 'Reported by source and campaign, through to booking.' },
+        ],
+      },
+    ],
+    extraFaqs: [
+      { question: 'Which CRM do you recommend for a Kerala business?', answer: 'It depends on the sales process. Zoho fits most Indian SMEs on cost and localisation, HubSpot fits marketing-led teams, Salesforce fits larger organisations, and WhatsApp-first teams sometimes need a lighter tool with the Business API integrated. We recommend after seeing how your team actually sells, and we implement all of them.' },
+      { question: 'Can you integrate WhatsApp Business API with our CRM?', answer: 'Yes. Conversations are logged against the CRM record, templated replies go out instantly in Malayalam or English, the salesperson keeps working from their phone, and opt-ins and templates are handled to Meta policy and the DPDP Act.' },
+      { question: 'How fast can a lead be answered?', answer: 'Within minutes, day or night, with an automated qualified first response in the language of the enquiry, and a person notified when the conversation needs one. Response time is measured and reported.' },
+      { question: 'Can you route leads to the right branch or department?', answer: 'Yes. Routing rules by department, branch, project, language, territory or availability decide in seconds, with deduplication, source tagging and a fallback if nobody responds.' },
+      { question: 'Can you migrate us from spreadsheets or another CRM?', answer: 'Yes. Data is mapped, cleaned and migrated in rehearsed stages with reconciliation, and the team is trained on the new process before the old one is switched off.' },
+      { question: 'Do you handle DPDP consent for marketing?', answer: 'Yes. Consent is captured with every lead per channel, recorded, and honoured automatically across WhatsApp, email and SMS, with additional controls for health and student data.' },
+      { question: 'Can the CRM feed the ad platforms?', answer: 'Yes. Qualified enquiries and closed sales are sent back to Google and Meta as offline conversions so bidding optimises for revenue rather than form fills.' },
+      { question: 'Who owns the system?', answer: 'You do. Accounts, data, configurations and documentation are in your name, and the process is documented so your team can run it.' },
+      { question: 'How quickly can a CRM be implemented?', answer: 'A CRM for a sales team is typically implemented in four to eight weeks, with WhatsApp Business API integration in two to four, depending on the process and the data to migrate.' },
+    ],
+  },
+
+  'seo-services': {
+    overview: [
+      'SEO services and search infrastructure for Kerala businesses: technical SEO, local search across the districts, Malayalam and English content, e-commerce SEO and authority building, run from Kochi and reported on the metric that matters, which is qualified enquiries and revenue from organic search. Not rankings on a report.',
+      'Ranking on Google in Kerala is not about tricks. It is about a site search engines can actually read, content that answers what people in Kochi, Kozhikode and Trivandrum search for in the language they search in, and authority signals Google trusts. Most Kerala business sites fail the first test before the others matter: pages that cannot be rendered, duplicate URLs, slow mobile load and structured data that is broken or absent.',
+      'We run SEO as an integrated programme: technical audit and remediation, local search and Google Business Profile across every real branch, Malayalam and English content built from real demand, e-commerce SEO and link acquisition through content and outreach rather than purchase. Search Console, GA4 and the CRM are connected so organic reporting shows enquiries by page and query.',
+      'Our SEO clients include hospitals and clinics, real estate developers, jewellery and retail chains, schools and colleges, resorts, professional services firms and B2B companies selling from Kerala to India and abroad.',
+    ],
+    capabilitiesHeading: 'What the programme delivers',
+    capabilities: [
+      { name: 'Technical audit and remediation', desc: 'Crawlability, indexation, rendering, Core Web Vitals, structured data and architecture fixed in priority order and verified in Search Console.' },
+      { name: 'Local SEO across Kerala', desc: 'Google Business Profile management, Indian citations, review workflows and district content for every real location.' },
+      { name: 'Malayalam search track', desc: 'Malayalam and Manglish keyword research, native content and correct language markup, reported separately from English.' },
+      { name: 'Content strategy and production', desc: 'Guides, service and product content planned from demand and structured so search engines and AI assistants can quote it.' },
+      { name: 'E-commerce SEO', desc: 'Category architecture, product optimisation, facet control, schema and internal linking for Shopify, WooCommerce and custom stores.' },
+      { name: 'Authority and digital PR', desc: 'Links and mentions earned through useful content, Kerala and Indian publisher outreach and partnerships. No bought links.' },
+      { name: 'Diaspora and national reach', desc: 'Search coverage for NRI buyers and for Kerala brands selling across India, with content planned per audience.' },
+      { name: 'Reporting on enquiries', desc: 'Search Console, GA4 and CRM connected so organic reporting shows enquiries and revenue by page and query.' },
+    ],
+    specsHeading: 'What to expect and when',
+    specsColumns: ['Workstream', 'Typical timeline', 'Evidence it is working'],
+    specs: [
+      ['Technical remediation', 'Weeks 1 to 6', 'Indexed pages up, errors down in Search Console'],
+      ['Local SEO and Business Profile', 'Weeks 4 to 12', 'Map pack visibility, calls and WhatsApp clicks'],
+      ['Content programme', 'Month 2 onwards', 'Impressions and clicks on new pages'],
+      ['Authority building', 'Month 3 onwards', 'Referring domains and page-level rankings'],
+      ['Competitive city terms', 'Months 6 to 12', 'Page one positions and enquiries by query'],
+    ],
+    useCasesHeading: 'Who we run SEO for',
+    useCases: [
+      { name: 'Hospitals and clinics', desc: 'Treatment, condition and doctor content that ranks and stays within NMC advertising rules, for patients in Kerala and the Gulf.' },
+      { name: 'Real estate', desc: 'Locality guides, project pages and buyer intent content that compete with the portals rather than depend on them.' },
+      { name: 'Jewellery and retail', desc: 'Showroom, category and product SEO for chains across the districts.' },
+      { name: 'Education', desc: 'Course, admission and campus content aligned to what parents and students search.' },
+      { name: 'Tourism and hospitality', desc: 'Destination and property content that ranks alongside the OTAs and drives direct bookings.' },
+      { name: 'B2B and SaaS', desc: 'Capability and comparison content for Infopark and Technopark companies selling beyond Kerala.' },
+    ],
+    engagementsHeading: 'How we engage',
+    engagements: [
+      { name: 'SEO retainer', desc: 'The full programme monthly, with the balance of technical, content and authority work adjusted as the data dictates.' },
+      { name: 'Technical audit and fix', desc: 'A fixed-scope audit with remediation for sites where the foundation is the problem.' },
+      { name: 'Content programme', desc: 'Bilingual content on a set cadence for businesses with the technical basics in place.' },
+    ],
+    detail: [
+      {
+        heading: 'Search infrastructure comes first',
+        body: [
+          'We call this service search infrastructure for a reason. Most Kerala business websites are built on frameworks that render content in the browser, and Google receives an empty shell. Others carry duplicate URLs from language switchers and filters, slow templates under the weight of tracking scripts and sliders, and structured data copied from a template that describes a different business. No content programme overcomes any of that.',
+          'We audit against what Google actually sees, fix rendering with prerendering where needed, consolidate duplicates, tune Core Web Vitals on the templates that carry traffic and on real Indian mobile connections, and apply structured data that is true. Where your developers own the site we hand over precise tickets and verify the fixes; where they do not, the Infynix technology team makes the changes.',
+        ],
+        points: [
+          { name: 'Rendering', desc: 'Prerendered HTML so crawlers and AI assistants receive the full page.' },
+          { name: 'Duplication', desc: 'Language, filter and parameter URLs canonicalised or consolidated.' },
+          { name: 'Core Web Vitals', desc: 'Load and stability tuned on mid-range Android over Jio and Airtel.' },
+          { name: 'Structured data', desc: 'Organization, LocalBusiness, Service, Product and FAQ schema where true.' },
+        ],
+      },
+      {
+        heading: 'Malayalam search is its own discipline',
+        body: [
+          'Malayalam and Manglish queries behave differently from English ones. Spelling varies, transliteration varies, and people phrase a need differently in their own language. Translating English pages produces content that Malayalam readers recognise as translated and that rarely ranks. The gap between Malayalam demand and quality Malayalam content is also the widest organic opportunity in Kerala, because so few competitors have done it properly.',
+          'Our Malayalam work is planned from Malayalam keyword research, written natively, marked up correctly so Google serves the right version to the right searcher, and reported on its own so the business can see what each language produces.',
+        ],
+        points: [
+          { name: 'Malayalam keyword research', desc: 'Demand mapped from Malayalam and Manglish search data, including spelling variants.' },
+          { name: 'Native writing', desc: 'Content written in Malayalam, not translated.' },
+          { name: 'Hreflang and structure', desc: 'Language versions marked up so search serves the right one.' },
+          { name: 'Separate reporting', desc: 'Traffic, rankings and enquiries by language.' },
+        ],
+      },
+      {
+        heading: 'Local search across the districts',
+        body: [
+          'Kerala searches are local in a way that matters. People search for a dentist in Kakkanad, a CA in Kozhikode, a school in Thrissur, a resort near Munnar. The map pack takes a large share of those clicks, driven by Business Profile signals, proximity, reviews and how consistently the business details appear across Justdial, Sulekha, Practo and the rest. A profile claimed and forgotten does nothing; a profile managed as a channel does most of the local work.',
+          'We manage Business Profile with a content calendar in both languages for every real branch, clean up citations so details match everywhere, run a genuine review programme, and build district content only where the intent exists and the business actually serves the area. We never claim addresses a business does not hold.',
+        ],
+        points: [
+          { name: 'Profile as a channel', desc: 'Posts, services, products, Q and A and reviews in Malayalam and English, per branch.' },
+          { name: 'Citation consistency', desc: 'Name, address and phone matched across Indian directories and platforms.' },
+          { name: 'Review programme', desc: 'Steady, genuine reviews, never purchased or incentivised.' },
+          { name: 'District content', desc: 'Pages with real local detail, only where the business serves.' },
+        ],
+      },
+      {
+        heading: 'Competing with portals and national brands',
+        body: [
+          'For most Kerala commercial searches the first page is held by Practo, Justdial, Sulekha, the property portals, national ed-tech and hospital brands and aggregators, not by the businesses that actually do the work. They hold those positions with scale and authority, and they charge the businesses listed on them for the leads. The way past them is not to outspend them. It is to give Google what they cannot: first-hand content about your services, your locality and your customers, a Business Profile that outperforms a listing, and reviews that read as real.',
+          'We map which aggregators hold which terms, find the queries where a local page can realistically win, and displace them one term at a time, in priority order.',
+        ],
+        points: [
+          { name: 'Aggregator mapping', desc: 'Which portals hold which terms, and where the gaps are.' },
+          { name: 'First-hand content', desc: 'Pages that say what only the business doing the work can say.' },
+          { name: 'Business Profile strength', desc: 'A profile that beats a listing for a local search.' },
+          { name: 'Term by term', desc: 'Displacing aggregators on the queries that convert.' },
+        ],
+      },
+    ],
+    extraFaqs: [
+      { question: 'How long does SEO take to show results in Kerala?', answer: 'Technical fixes show in Search Console within weeks. Local search and map pack improvements usually appear within 8 to 12 weeks. Competitive city-wide and sector terms need 6 to 12 months of sustained content and authority work. Leading indicators are reported monthly so progress is visible before rankings move.' },
+      { question: 'Do you do Malayalam SEO?', answer: 'Yes. Malayalam and Manglish keyword research, native-written content and correct language markup run as a separate track with separate reporting, so you can see what each language produces.' },
+      { question: 'Can a local business outrank Practo, Justdial or the property portals?', answer: 'For specific local and service terms, yes. Aggregators win on scale and authority, but a local business can win with first-hand content, a strong Business Profile and genuine reviews on the queries that actually convert. We map where that is realistic and work through the terms in order.' },
+      { question: 'Do you guarantee first page rankings?', answer: 'No. No honest SEO company does, because nobody controls Google. We commit to a sound technical foundation, content built from real demand, defensible authority work and transparent monthly reporting on enquiries as well as rankings.' },
+      { question: 'Do you buy links?', answer: 'No. Authority is earned through genuinely useful content, Kerala and Indian publisher outreach, partnerships and digital PR. Bought links are a liability that surfaces at the next link spam update.' },
+      { question: 'Can you fix a Google penalty or a traffic drop?', answer: 'Yes. We diagnose manual actions and algorithmic drops from Search Console and crawl data, clean up toxic links where that is the cause, fix content and technical issues where they are, and document the recovery. We will also say if the drop is seasonal or a tracking problem rather than a penalty.' },
+      { question: 'Can you manage SEO for branches across Kerala?', answer: 'Yes. One Business Profile per real branch, district pages with genuine local content, schema per location and a site structure that lets each rank without duplication are standard in our multi-branch work.' },
+      { question: 'How do you report?', answer: 'Monthly with Search Console, GA4 and CRM data connected, so you see organic enquiries and revenue by page, query and language, plus rankings, indexation and authority as leading indicators. A short weekly note covers what changed.' },
+    ],
+  },
+
+  'performance-marketing': {
+    overview: [
+      'Performance marketing and paid ads for Kerala businesses, run from Kochi as one measured system: Google, Meta, YouTube and LinkedIn, with spend judged on what it produced after the click, offline conversions sent back to the platforms, creative tested on a cadence in Malayalam and English, and budgets moved weekly to whatever is producing. The companion to our performance advertising service, with the emphasis on the measurement and the operating rhythm that make paid media pay.',
+      'The reason performance marketing fails in Kerala is rarely the platforms. It is the absence of a system around them: no definition of a qualified enquiry, no tracking of WhatsApp and calls, no CRM that carries the source, no creative testing, no honest accounting for returns and cash-on-delivery failures, and a monthly report that shows clicks. The system is the product, and it is what this page describes.',
+      'We build the system first, run the channels on it, and report from spend to revenue in the numbers the accountant uses. Diaspora campaigns into the Gulf are run with a working view of that audience from our UAE office, and district-level campaigns are structured because Kerala is fourteen markets, not one.',
+      'We run performance marketing for hospitals and clinics, real estate developers, jewellery and retail chains, education, hospitality, e-commerce and B2B companies across the state.',
+    ],
+    capabilitiesHeading: 'The operating system behind the ads',
+    capabilities: [
+      { name: 'Qualified enquiry definition', desc: 'Agreed in writing in the first workshop, applied in the CRM, and used to judge every campaign.' },
+      { name: 'Full-funnel tracking', desc: 'Forms, calls, WhatsApp and walk-ins tracked with source and campaign, into the CRM and back to the platforms.' },
+      { name: 'Weekly budget reallocation', desc: 'Spend moved to what is producing every week, in writing, with the reasoning.' },
+      { name: 'District and language structure', desc: 'Campaigns segmented by district and by Malayalam and English so each is bid and reported on its own economics.' },
+      { name: 'Creative testing cadence', desc: 'New hooks and formats every few weeks from Infynix Media, with losers cut early.' },
+      { name: 'Landing page testing', desc: 'Structured tests on headlines, forms, proof and offers, with winners applied to the organic pages too.' },
+      { name: 'Contribution accounting', desc: 'Returns, COD failures, fees and discounts counted so the result reflects what the business kept.' },
+      { name: 'Seasonal planning', desc: 'Onam, Vishu, wedding season, admissions and the monsoon planned into budgets in advance.' },
+    ],
+    specsHeading: 'Channels, timelines and what we measure',
+    specsColumns: ['Channel', 'Time to first signal', 'Primary measure'],
+    specs: [
+      ['Google Search', '1 to 2 weeks', 'Cost per qualified enquiry'],
+      ['Performance Max and Shopping', '3 to 4 weeks', 'Contribution after returns, new customer rate'],
+      ['Meta and Instagram', '2 to 3 weeks', 'Cost per lead or order, quality from CRM'],
+      ['YouTube', '3 to 4 weeks', 'View-through enquiries, brand search lift'],
+      ['LinkedIn (B2B)', '4 to 6 weeks', 'Meetings booked, pipeline created'],
+      ['Diaspora campaigns', '3 to 4 weeks', 'Cost per WhatsApp conversation by country'],
+    ],
+    useCasesHeading: 'Who this is built for',
+    useCases: [
+      { name: 'Lead-driven businesses', desc: 'Hospitals, real estate, education and financial services where enquiry quality matters more than volume.' },
+      { name: 'Multi-branch retail', desc: 'Jewellery, textile and electronics chains that need results by branch, not a state total.' },
+      { name: 'E-commerce and D2C', desc: 'Kerala brands selling across India with COD returns and fees counted in the numbers.' },
+      { name: 'Hospitality', desc: 'Resorts and restaurants measuring direct bookings against OTA commission.' },
+      { name: 'B2B and SaaS', desc: 'Infopark and Technopark companies selling nationally and abroad, measured on pipeline.' },
+      { name: 'Diaspora sellers', desc: 'Businesses whose buyers include NRI families in the Gulf.' },
+    ],
+    engagementsHeading: 'How we work together',
+    engagements: [
+      { name: 'Performance retainer', desc: 'Channels, creative, testing and reporting monthly, with budgets moved to what is producing.' },
+      { name: 'Foundations project', desc: 'Tracking, consent, CRM and landing pages built before spend begins.' },
+      { name: 'Audit and rescue', desc: 'A paid audit of accounts spending without producing, with a written plan.' },
+    ],
+    detail: [
+      {
+        heading: 'The first ninety days',
+        body: [
+          'The first month is foundations: access, tracking, CRM fields, the enquiry definition, consent to the DPDP Act and the first landing pages, with a small amount of search spend to start collecting data. The second month is the first real campaigns across the channels that fit, with creative testing under way and the weekly notes showing what is moving. The third month is the first honest review: what produced qualified enquiries at what cost, what to cut, where to move the budget.',
+          'By day ninety you have a measured system, three months of real numbers and a plan for the next quarter built on them rather than on a proposal. That is the point at which most clients decide to scale, and the point at which the ones who should not are told so.',
+        ],
+        points: [
+          { name: 'Month one', desc: 'Foundations, tracking, enquiry definition, first pages and a data-gathering budget.' },
+          { name: 'Month two', desc: 'Campaigns live across the fitting channels, creative testing under way.' },
+          { name: 'Month three', desc: 'The first quarterly review on real numbers, with cuts and reallocations.' },
+          { name: 'Quarter two onwards', desc: 'Scaling what works, with SEO starting to carry weight.' },
+        ],
+      },
+      {
+        heading: 'Kerala economics: margins, COD and the calendar',
+        body: [
+          'Kerala businesses run tighter margins than most agency models assume, cash on delivery produces return rates that the ROAS number hides, and the year has an Onam-shaped peak that flat budgets miss. A campaign that looks profitable on the platform dashboard can be losing money once returns, margin and seasonality are counted.',
+          'We set targets from your real margin and close rate, count COD returns against results, and plan budgets around the Kerala calendar so the peak is funded and the trough is not overspent.',
+        ],
+        points: [
+          { name: 'Margin-aware targets', desc: 'Cost per acquisition set from what you actually earn.' },
+          { name: 'COD accounting', desc: 'Returns counted against results, not ignored.' },
+          { name: 'Seasonal budgets', desc: 'Onam, Vishu, wedding season and the monsoon planned in advance.' },
+          { name: 'Honest minimums', desc: 'The spend needed for a readable result, stated before you commit.' },
+        ],
+      },
+      {
+        heading: 'Scaling a Kerala brand beyond the state',
+        body: [
+          'Many Kerala brands, in food, Ayurveda, apparel and consumer goods, reach a point where the state is saturated and the next growth is national or in the Gulf. Performance marketing is how that expansion is tested cheaply: campaigns in Bengaluru, Chennai, Mumbai and the Malayali pockets of every metro, or into the UAE, Saudi Arabia and Qatar, measured on cost per order after returns, before a distributor or a warehouse is committed.',
+          'We run those tests with the same measurement discipline as the home market, report by city or country, and say honestly which markets are ready and which are not.',
+        ],
+        points: [
+          { name: 'City-by-city tests', desc: 'Small, measured campaigns before committing distribution.' },
+          { name: 'Malayali pockets first', desc: 'Diaspora audiences in every metro and the Gulf targeted first.' },
+          { name: 'Returns counted', desc: 'Cost per order after COD returns, by city or country.' },
+          { name: 'Honest readout', desc: 'Which markets are ready, in writing.' },
+        ],
+      },
+      {
+        heading: 'Questions to ask any agency before you sign',
+        body: [
+          'A few questions separate the teams that will produce revenue from those that will produce reports. Ask who owns the ad accounts and the analytics property, and what happens if you leave. Ask how a qualified enquiry is defined and where that definition lives. Ask to see a real weekly update sent to another client, numbers redacted. Ask what they would stop doing in month three if it was not working. Ask how Malayalam creative is produced, how WhatsApp enquiries are tracked, and whether they have run campaigns in your category under its advertising rules.',
+          'Any agency that hesitates has not built a measured system for a Kerala business before. We are happy to answer every one of these on the first call.',
+        ],
+        points: [
+          { name: 'Account ownership', desc: 'Everything in your name from day one, with admin access documented.' },
+          { name: 'Enquiry definition', desc: 'Agreed in the first workshop and applied in the CRM, not in a slide.' },
+          { name: 'Proof of process', desc: 'Real weekly notes and a live dashboard, shown before you sign.' },
+          { name: 'Exit terms', desc: 'A notice period in weeks and a clean handover of every asset.' },
+        ],
+      },
+    ],
+    extraFaqs: [
+      { question: 'How is this different from your performance advertising service?', answer: 'Performance advertising covers the channels and the creative. Performance marketing is the system around them: the enquiry definition, the tracking, the CRM, the weekly reallocation, the contribution accounting and the operating rhythm. Most clients take both as one engagement; the pages exist so each is explained properly.' },
+      { question: 'How much should we spend to get a readable result?', answer: 'It depends on your category and cost per click. We state the minimum before you commit, and we will say if the budget is too small to produce a signal rather than take it and report clicks.' },
+      { question: 'Do you handle cash on delivery returns in the reporting?', answer: 'Yes. COD returns are counted against results so the return on ad spend reflects what the business actually kept, not what the platform dashboard shows.' },
+      { question: 'Can you help a Kerala brand expand to other cities or the Gulf?', answer: 'Yes. We test new markets with small, measured campaigns city by city or country by country, starting with Malayali audiences, and report cost per order after returns so the decision to commit distribution is made on numbers.' },
+      { question: 'Do you guarantee a cost per lead?', answer: 'No. We set a target from your margin and close rate in the first workshop and report against it from month one, and we tell you honestly when it is not being met and why.' },
+      { question: 'Who owns the ad accounts?', answer: 'You do, from day one, with admin access documented. If we part ways, everything stays with you.' },
+      { question: 'Can you work alongside our in-house team?', answer: 'Yes. We take one or more channels, or the measurement layer, and report into your existing tools.' },
+      { question: 'How do you report?', answer: 'A short written note every week on what changed and what it did, a monthly review with spend, enquiries, qualified enquiries and revenue by channel and district, and a live dashboard, in the definitions your accountant uses.' },
+      { question: 'Do you manage product feeds for Shopping?', answer: 'Yes. Feed optimisation, custom labels by margin and role, availability sync and supplemental data are part of every Shopping and social commerce engagement.' },
+    ],
+  },
+};
