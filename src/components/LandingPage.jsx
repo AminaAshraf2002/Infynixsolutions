@@ -25,6 +25,31 @@ import { heroImageFor, localImageFor } from '../content/landingImagery';
  *   h3  individual services / FAQ questions
  * Nothing here is allowed to emit a second h1.
  */
+
+// Four steps, by practice. These give each page a scannable spine instead of
+// three stacked paragraphs. Deliberately describes method, not outcomes, so
+// nothing here claims a result we cannot evidence.
+const APPROACH = {
+  marketing: [
+    ['Audit', 'Tracking, rankings and spend, measured before anything changes.'],
+    ['Fix', 'Technical and structural blockers first, because content cannot outrun them.'],
+    ['Run', 'Campaigns and content shipped against a defined cost per qualified lead.'],
+    ['Compound', 'What works gets more budget. What does not gets cut, in writing.'],
+  ],
+  technology: [
+    ['Discover', 'A paid discovery phase producing a scoped roadmap you own outright.'],
+    ['Architect', 'Data model, integrations and infrastructure agreed before code.'],
+    ['Build', 'Fortnightly demos, working software, no black box.'],
+    ['Hand over', 'Your repositories, your infrastructure, documented.'],
+  ],
+  media: [
+    ['Brief', 'What the content has to do, and for whom, before a camera comes out.'],
+    ['Produce', 'Shot by our own team, on location, not assembled from stock.'],
+    ['Edit', 'Cut for the platform it will live on, in the language it will be watched in.'],
+    ['Distribute', 'Published with paid amplification behind whatever performs.'],
+  ],
+};
+
 export default function LandingPage({ slug: slugProp }) {
   const params = useParams();
   const slug = slugProp || params.slug;
@@ -37,16 +62,21 @@ export default function LandingPage({ slug: slugProp }) {
   if (!page) return <NotFoundPage />;
 
   const path = `/${page.slug}`;
-  const isKochi = page.city === 'Kochi';
+  // A page carries LocalBusiness only when its city is the one this entity
+  // actually occupies (Kochi for India, Dagenham / Greater London for the UK,
+  // Ajman for the UAE). Asserting a physical presence elsewhere is what gets
+  // Google Business Profiles suspended.
+  const office = BUSINESS.address;
+  const hasOffice =
+    page.city === office.locality ||
+    page.city === office.region ||
+    (office.region || '').endsWith(` ${page.city}`);
   const heroImage = heroImageFor(page);
   const localImage = localImageFor(page);
 
   const schema = [
     organizationSchema(),
-    // Only the Kochi pages carry LocalBusiness. That is the one address Infynix
-    // actually occupies. Asserting a physical presence elsewhere is what gets
-    // Google Business Profiles suspended.
-    isKochi ? localBusinessSchema() : null,
+    hasOffice ? localBusinessSchema() : null,
     serviceSchema({
       name: `${page.service} in ${page.city}`,
       description: page.description,
@@ -114,9 +144,29 @@ export default function LandingPage({ slug: slugProp }) {
       </header>
 
       <section className="lp-section lp-intro">
-        {page.intro.map((paragraph, i) => (
-          <p key={i}>{paragraph}</p>
-        ))}
+        {/* The opening line carries the argument, so it gets the weight. The
+            rest sits in two columns rather than a third stacked paragraph. */}
+        <p className="lp-lead">{page.intro[0]}</p>
+        {page.intro.length > 1 && (
+          <div className="lp-intro-cols">
+            {page.intro.slice(1).map((paragraph, i) => (
+              <p key={i}>{paragraph}</p>
+            ))}
+          </div>
+        )}
+      </section>
+
+      <section className="lp-section lp-approach">
+        <h2 className="lp-h2">How we work</h2>
+        <ol className="lp-steps">
+          {(APPROACH[page.category] || APPROACH.technology).map(([name, detail], i) => (
+            <li key={name} className="lp-step">
+              <span className="lp-step-n">{String(i + 1).padStart(2, '0')}</span>
+              <h3 className="lp-step-h">{name}</h3>
+              <p>{detail}</p>
+            </li>
+          ))}
+        </ol>
       </section>
 
       <section className="lp-section">
@@ -134,10 +184,90 @@ export default function LandingPage({ slug: slugProp }) {
         </div>
       </section>
 
+      {page.capabilities?.length > 0 && (
+        <section className="lp-section">
+          <h2 className="lp-h2">{page.capabilitiesHeading || 'What we deliver'}</h2>
+          <div className="lp-cap-grid">
+            {page.capabilities.map((cap) => (
+              <article key={cap.name} className="lp-cap">
+                <h3 className="lp-h3">{cap.name}</h3>
+                <p>{cap.desc}</p>
+              </article>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {page.specs?.length > 0 && (
+        <section className="lp-section">
+          <h2 className="lp-h2">{page.specsHeading || 'Formats and delivery'}</h2>
+          <div className="lp-table-scroll">
+            <table className="lp-table">
+              <thead>
+                <tr>{page.specsColumns.map((c) => <th key={c}>{c}</th>)}</tr>
+              </thead>
+              <tbody>
+                {page.specs.map((row, i) => (
+                  <tr key={i}>{row.map((cell, j) => <td key={j}>{cell}</td>)}</tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </section>
+      )}
+
+      {page.useCases?.length > 0 && (
+        <section className="lp-section">
+          <h2 className="lp-h2">{page.useCasesHeading || 'Who this is for'}</h2>
+          <div className="lp-grid">
+            {page.useCases.map((u) => (
+              <article key={u.name} className="lp-card">
+                <h3 className="lp-h3">{u.name}</h3>
+                <p>{u.desc}</p>
+              </article>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {page.engagements?.length > 0 && (
+        <section className="lp-section">
+          <h2 className="lp-h2">{page.engagementsHeading || 'How we work together'}</h2>
+          <div className="lp-cap-grid">
+            {page.engagements.map((e) => (
+              <article key={e.name} className="lp-cap">
+                <h3 className="lp-h3">{e.name}</h3>
+                <p>{e.desc}</p>
+              </article>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {page.detail?.length > 0 && page.detail.map((block) => (
+        <section className="lp-section" key={block.heading}>
+          <h2 className="lp-h2">{block.heading}</h2>
+          {block.body.map((para, i) => (
+            <p key={i} className="lp-body">{para}</p>
+          ))}
+          {block.points?.length > 0 && (
+            <div className="lp-cap-grid" style={{ marginTop: '22px' }}>
+              {block.points.map((pt) => (
+                <article key={pt.name} className="lp-cap">
+                  <h3 className="lp-h3">{pt.name}</h3>
+                  <p>{pt.desc}</p>
+                </article>
+              ))}
+            </div>
+          )}
+        </section>
+      ))}
+
       <section className="lp-section lp-local">
         <div className="lp-local-text">
           <h2 className="lp-h2">{page.localHeading}</h2>
-          {page.localBody.map((paragraph, i) => (
+          <p className="lp-pull">{page.localBody[0]}</p>
+          {page.localBody.slice(1).map((paragraph, i) => (
             <p key={i}>{paragraph}</p>
           ))}
         </div>

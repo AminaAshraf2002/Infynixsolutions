@@ -118,7 +118,7 @@ const ClientsSection = () => {
         <h2 className="cta-home-heading">
           Let's create <em>great things.</em>
         </h2>
-        <a href="mailto:hello@infynix-solutions.com" className="cta-home-btn" id="cta-getintouch-btn">
+        <a href="mailto:office@infynixsolutions.ae" className="cta-home-btn" id="cta-getintouch-btn">
           Get in touch
           <svg width="12" height="12" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="1.5">
             <path d="M1 13L13 1M13 1H5M13 1v8" />
@@ -146,14 +146,12 @@ const ClientsSection = () => {
             </div>
 
             <div className="footer-location-card">
-              <a href="https://maps.google.com/?q=68+Endsleigh+Gardens,+Ilford+IG1+3EG,+United+Kingdom" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
-                <img loading="lazy" decoding="async" src={ukLImage} alt="UK London Office" className="footer-location-svg" />
-                <div className="footer-location-title">UK - LONDON ↗</div>
-                <div className="footer-location-addr">
-                  68 Endsleigh Gardens,<br />
-                  Ilford IG1 3EG, United Kingdom
-                </div>
-              </a>
+              <img loading="lazy" decoding="async" src={ukLImage} alt="UK London Office" className="footer-location-svg" />
+              <div className="footer-location-title">UK - LONDON</div>
+              <div className="footer-location-addr">
+                39 Becontree Avenue,<br />
+                Dagenham, London RM8 2UH
+              </div>
             </div>
 
             <div className="footer-location-card">
@@ -209,33 +207,7 @@ const ClientsSection = () => {
           </div>
 
           <div className="footer-bottom" style={{ borderTop: '1px solid rgba(255, 255, 255, 0.05)', marginTop: '40px', paddingTop: '30px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '20px' }}>
-            <p style={{ fontSize: '0.8rem', color: '#ffffff', margin: 0 }}>© 2026 Infynix Solutions UK. Engineered for Excellence.</p>
-            <div className="footer-socials">
-              <a
-                href="https://www.linkedin.com/company/infynix-solutionglobal/"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Infynix Solutions LinkedIn"
-              >
-                <i className="fa-brands fa-linkedin-in"></i>
-              </a>
-              <a
-                href="https://www.instagram.com/infynix_growth_solutions/"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Infynix Solutions Instagram"
-              >
-                <i className="fa-brands fa-instagram"></i>
-              </a>
-              <a
-                href="https://www.facebook.com/people/Infynix-Solutions/61584250757142/"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Infynix Solutions Facebook"
-              >
-                <i className="fa-brands fa-facebook-f"></i>
-              </a>
-            </div>
+            <p style={{ fontSize: '0.8rem', color: '#ffffff' }}>© 2026 Infynix Solutions UK. Engineered for Excellence.</p>
           </div>
         </div>
       </footer>

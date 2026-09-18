@@ -4,6 +4,7 @@ import logo from '../assets/footer.png';
 import ukLImage from '../assets/UKL.svg';
 import dubaiImage from '../assets/dubai.svg';
 import kochiImage from '../assets/kochi.svg';
+import SocialLinks from './SocialLinks';
 
 const Footer = () => {
   return (
@@ -26,18 +27,18 @@ const Footer = () => {
           </div>
 
           <div className="footer-location-card">
-            <a href="https://maps.google.com/?q=68+Endsleigh+Gardens,+Ilford+IG1+3EG,+United+Kingdom" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
+            <a href="https://share.google/nr3IR1BycI55dDqUs" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
               <img loading="lazy" decoding="async" src={ukLImage} alt="UK London Office" className="footer-location-svg" />
               <div className="footer-location-title">UK - LONDON ↗</div>
               <div className="footer-location-addr">
-                68 Endsleigh Gardens,<br />
-                Ilford IG1 3EG, United Kingdom
+                39 Becontree Avenue,<br />
+                Dagenham, London RM8 2UH
               </div>
             </a>
           </div>
 
           <div className="footer-location-card">
-            <a href="https://maps.google.com/?q=C1+Building,+Free+Zone,+Al+Butain,+Ajman,+UAE" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
+            <a href="https://share.google/GeaxRIc5dl6JKegOr" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
               <img loading="lazy" decoding="async" src={dubaiImage} alt="UAE Office" className="footer-location-svg" />
               <div className="footer-location-title">UAE - AJMAN ↗</div>
               <div className="footer-location-addr">
@@ -48,7 +49,7 @@ const Footer = () => {
           </div>
 
           <div className="footer-location-card">
-            <a href="https://share.google/KX27eRrKxncrDFibN" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
+            <a href="https://share.google/de6rHeKgl4nC3riaW" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
               <img loading="lazy" decoding="async" src={kochiImage} alt="Kochi India Office" className="footer-location-svg" />
               <div className="footer-location-title">INDIA - KOCHI ↗</div>
               <div className="footer-location-addr">
@@ -127,7 +128,7 @@ const Footer = () => {
               <a href="/sitemap.xml" target="_blank" rel="noopener noreferrer">XML Sitemap</a>
             </div>
 
-            {/* Cross-domain links — dofollow intentionally, these are our own regional
+            {/* Cross-domain links, dofollow intentionally, these are our own regional
                 sister sites. rel="noopener" is for security on target="_blank" only. */}
             <div className="footer-nav-col">
               <span style={{ color: '#ffffff', fontWeight: 'bold', fontSize: '0.85rem', marginBottom: '8px' }}>GLOBAL PRESENCE</span>
@@ -137,7 +138,7 @@ const Footer = () => {
                 rel="noopener"
                 style={{ display: 'flex', alignItems: 'center', gap: '6px' }}
               >
-                🇦🇪 UAE — infynixsolutions.ae
+                🇦🇪 UAE, infynixsolutions.ae
               </a>
               <a
                 href="https://www.infynixsolutions.co.uk"
@@ -145,40 +146,15 @@ const Footer = () => {
                 rel="noopener"
                 style={{ display: 'flex', alignItems: 'center', gap: '6px' }}
               >
-                🇬🇧 UK — infynixsolutions.co.uk
+                🇬🇧 UK, infynixsolutions.co.uk
               </a>
             </div>
           </div>
         </div>
 
         <div className="footer-bottom" style={{ borderTop: '1px solid rgba(204, 191, 191, 0.28)', marginTop: '40px', paddingTop: '30px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '20px' }}>
-          <p style={{ fontSize: '0.8rem', color: '#ffffff', margin: 0 }}>© 2026 Infynix Solutions UK. Engineered for Excellence.</p>
-          <div className="footer-socials">
-            <a
-              href="https://www.linkedin.com/company/infynix-solutionglobal/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Infynix Solutions LinkedIn"
-            >
-              <i className="fa-brands fa-linkedin-in"></i>
-            </a>
-            <a
-              href="https://www.instagram.com/infynix_growth_solutions/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Infynix Solutions Instagram"
-            >
-              <i className="fa-brands fa-instagram"></i>
-            </a>
-            <a
-              href="https://www.facebook.com/people/Infynix-Solutions/61584250757142/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Infynix Solutions Facebook"
-            >
-              <i className="fa-brands fa-facebook-f"></i>
-            </a>
-          </div>
+          <p style={{ fontSize: '0.8rem', color: '#ffffff' }}>© 2026 Infynix Solutions UK. Engineered for Excellence.</p>
+          <SocialLinks />
         </div>
       </div>
     </footer>

@@ -151,7 +151,7 @@ export default function HeroBackground() {
           ctx.beginPath();
           ctx.arc(node.x, node.y, glowRadius, 0, Math.PI * 2);
           ctx.fill();
-          // Node dot itself — bright lime
+          // Node dot itself, bright lime
           ctx.fillStyle = nearPointer ? 'rgba(255, 255, 100, 1)' : `rgba(214, 250, 86, ${0.8 + 0.2 * Math.sin(node.pulse)})`;
         } else {
           ctx.fillStyle = nearPointer ? 'rgba(214, 250, 86, 0.95)' : 'rgba(190, 230, 210, 0.7)';

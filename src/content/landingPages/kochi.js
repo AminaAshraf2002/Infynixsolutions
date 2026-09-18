@@ -60,7 +60,7 @@ export const kochiPages = [
       {
         question: 'How much does digital marketing cost in Kochi?',
         answer:
-          'Retainers for Kochi businesses typically start around ₹35,000 per month for a focused scope such as local SEO or a single paid channel, and rise with the number of channels, languages and landing pages involved. Ad spend is separate and paid directly to the platform. We scope from your target cost per acquisition rather than quoting a package before we understand the numbers.',
+          'Ad spend is separate and paid directly to the platform. We scope from your target cost per acquisition rather than quoting a package before we understand the numbers.',
       },
       {
         question: 'How long before we see results from SEO in Kochi?',
@@ -160,7 +160,7 @@ export const kochiPages = [
       {
         question: 'What does SEO cost in Kochi?',
         answer:
-          'Ongoing SEO retainers generally run from ₹30,000 to ₹1,50,000 per month depending on competition, number of locations and how much content and link work is required. A one-off technical audit is a smaller fixed fee and is often the sensible starting point.',
+          'Every engagement is scoped individually after a discovery session, from the outcome you need and the work involved, and quoted before anything starts. Ad spend, where it applies, is separate and paid directly to the platforms, and we will say plainly if the budget on the table is too small to produce a usable result.',
       },
       {
         question: 'How do you report progress?',
@@ -230,7 +230,7 @@ export const kochiPages = [
       {
         question: 'How much does custom software development cost in Kochi?',
         answer:
-          'A focused internal tool or MVP typically lands between ₹4,00,000 and ₹12,00,000. A full multi-role platform with integrations, role-based access and mobile support generally runs from ₹15,00,000 upward. We scope in phases so you fund a working first release rather than an 18-month bet.',
+          'Every engagement is scoped individually after a discovery session, from the outcome you need and the work involved, and quoted before anything starts. Ad spend, where it applies, is separate and paid directly to the platforms, and we will say plainly if the budget on the table is too small to produce a usable result.',
       },
       {
         question: 'Do we own the source code?',
@@ -315,7 +315,7 @@ export const kochiPages = [
       {
         question: 'How much does a website cost in Kochi?',
         answer:
-          'A well-built business website with a proper SEO foundation typically runs from ₹75,000 to ₹3,00,000 depending on page count, custom design depth and integrations. E-commerce and booking platforms start higher. Very cheap builds usually cost more later. They are the ones we most often get called in to rescue.',
+          'E-commerce and booking platforms start higher. Very cheap builds usually cost more later. They are the ones we most often get called in to rescue.',
       },
       {
         question: 'How long does it take?',
@@ -400,7 +400,7 @@ export const kochiPages = [
       {
         question: 'How much does it cost to build a mobile app in Kochi?',
         answer:
-          'A focused MVP with a clear feature set typically runs ₹6,00,000 to ₹15,00,000. Apps with payments, real-time features, multi-role access or heavy integrations run higher. We scope MVP first deliberately. It gets a real product in front of real users before the full budget is committed.',
+          'Apps with payments, real-time features, multi-role access or heavy integrations run higher. We scope MVP first deliberately. It gets a real product in front of real users before the full budget is committed.',
       },
       {
         question: 'React Native or native, which should we choose?',
@@ -570,7 +570,7 @@ export const kochiPages = [
       {
         question: 'How much does social media management cost in Kochi?',
         answer:
-          'Management retainers usually start around ₹25,000 per month for a single-platform content calendar and rise with production volume, video output and the number of languages. Shoot-heavy scopes with regular reel production sit higher. Ad spend is separate.',
+          'Every engagement is scoped individually after a discovery session, from the outcome you need and the work involved, and quoted before anything starts. Ad spend, where it applies, is separate and paid directly to the platforms, and we will say plainly if the budget on the table is too small to produce a usable result.',
       },
       {
         question: 'Do you shoot content yourselves?',
@@ -660,7 +660,7 @@ export const kochiPages = [
       {
         question: 'How much does an e-commerce site cost?',
         answer:
-          'A well-built Shopify store with custom theme work typically runs ₹1,50,000 to ₹5,00,000. WooCommerce builds are similar. Custom or headless storefronts with complex catalogues or B2B logic start considerably higher. Payment gateway and platform fees are ongoing and separate.',
+          'WooCommerce builds are similar. Custom or headless storefronts with complex catalogues or B2B logic start considerably higher. Payment gateway and platform fees are ongoing and separate.',
       },
       {
         question: 'Can you integrate Indian payment gateways and UPI?',
@@ -740,7 +740,7 @@ export const kochiPages = [
       {
         question: 'What does UI/UX design cost in Kochi?',
         answer:
-          'A focused product or app design engagement typically runs ₹1,50,000 to ₹6,00,000 depending on screen count, research depth and whether a design system is included. Standalone UX audits of an existing product are a smaller fixed fee.',
+          'Every engagement is scoped individually after a discovery session, from the outcome you need and the work involved, and quoted before anything starts. Ad spend, where it applies, is separate and paid directly to the platforms, and we will say plainly if the budget on the table is too small to produce a usable result.',
       },
       {
         question: 'Can you design without building?',

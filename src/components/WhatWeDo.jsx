@@ -75,7 +75,7 @@ const tabContent = {
       'Real-time computer vision threat detection for facility security.',
       'Edge hardware processing on NVIDIA Jetson for private, local data analytics.',
       'Automated intrusion alerts, weapon detection, and boundary monitoring.',
-      'Seamless connection with your existing CCTV and IP camera network.',
+      'Seamless connection with your existing IP camera network.',
       'Real-time mobile push alerts and security management dashboards.',
     ],
     subSections: [],

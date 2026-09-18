@@ -83,7 +83,7 @@ export const trivandrumPages = [
       {
         question: 'What does digital marketing cost in Trivandrum?',
         answer:
-          'Broadly in line with Kochi, a focused single-channel scope typically starts around ₹30,000 per month, rising with channels, languages and landing-page volume. Paid media costs in Thiruvananthapuram generally sit below Ernakulam, so ad budgets stretch further.',
+          'Scope drives the number, so the honest answer comes after a short discovery rather than before it. What we commit to in advance is that the quote is fixed for the agreed scope, that there are no surprise extras, and that we tell you when a cheaper route would serve you better.',
       },
       {
         question: 'Do you work with government or PSU clients?',
@@ -173,7 +173,7 @@ export const trivandrumPages = [
       {
         question: 'What does SEO cost in Trivandrum?',
         answer:
-          'Typically ₹20,000 to ₹70,000 per month depending on competition, number of service lines and content volume, generally below the equivalent Kochi range. A one-off technical audit is a fixed fee and is usually the sensible first step.',
+          'Scope drives the number, so the honest answer comes after a short discovery rather than before it. What we commit to in advance is that the quote is fixed for the agreed scope, that there are no surprise extras, and that we tell you when a cheaper route would serve you better.',
       },
     ],
     related: [
@@ -243,7 +243,7 @@ export const trivandrumPages = [
       {
         question: 'What does custom software cost?',
         answer:
-          'An MVP or focused internal system typically runs ₹4,00,000 to ₹12,00,000. A full platform with multiple roles, integrations and mobile support starts around ₹15,00,000. We phase engagements so a working release ships before the full budget is committed.',
+          'We do not quote from a rate card. A discovery session establishes the scope, the systems involved and the outcome you are working towards, and the proposal that follows is a fixed price or a monthly retainer for exactly that. If a smaller first phase would answer the question, we say so.',
       },
       {
         question: 'Do we own the code?',
@@ -323,7 +323,7 @@ export const trivandrumPages = [
       {
         question: 'How much does a website cost in Trivandrum?',
         answer:
-          'A well-built business site with proper SEO foundations typically runs ₹75,000 to ₹3,00,000 depending on page count, design depth and integrations. Institutional sites with large content structures and e-commerce builds start higher. Very cheap builds usually cost more later, those are the ones we most often get called to rescue.',
+          'Institutional sites with large content structures and e-commerce builds start higher. Very cheap builds usually cost more later, those are the ones we most often get called to rescue.',
       },
       {
         question: 'How long does it take?',

@@ -4,6 +4,7 @@ import kochiImage from "../assets/kochi-office.jpg";
 import uaeOfficeImage from "../assets/office.webp";
 import Seo from '../seo/Seo';
 import { organizationSchema, localBusinessSchema, breadcrumbSchema } from '../seo/schema';
+import SocialLinks from './SocialLinks';
 
 const ArrowIcon = () => (
     <svg viewBox="0 0 14 14" fill="none" width="13" height="13">
@@ -21,23 +22,22 @@ const offices = [
     {
         city: "London",
         label: "UK Headquarters",
-        desc: "68 Endsleigh Gardens, Ilford IG1 3EG, United Kingdom. Our global executive headquarters directing international operations, technology consulting, and enterprise client strategy across European and American regions.",
+        desc: "39 Becontree Avenue, Dagenham, London RM8 2UH. Our global executive headquarters directing international operations, technology consulting, and enterprise client strategy across European and American regions.",
         image: "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=900&q=80",
-        mapUrl: "https://maps.google.com/?q=68+Endsleigh+Gardens,+Ilford+IG1+3EG,+United+Kingdom",
     },
     {
         city: "Dubai",
         label: "UAE Office",
         desc: "C1 Building - Office C1 1F-SF6540 - Free Zone - Al Butain - Ajman - United Arab Emirates. Our strategic regional office managing partnerships, cloud growth projects, and AI system installations across the Middle East and GCC countries.",
         image: uaeOfficeImage,
-        mapUrl: "https://maps.google.com/?q=C1+Building,+Free+Zone,+Al+Butain,+Ajman,+UAE"
+        mapUrl: "https://share.google/GeaxRIc5dl6JKegOr"
     },
     {
         city: "Kochi",
         label: "Kerala Office",
         desc: "3rd Floor, Oberon Mall, Padivattom, Edappally, Kochi, Ernakulam, Kerala 682024. Our core engineering powerhouse and development centre delivering robust backend growth architecture.",
         image: kochiImage,
-        mapUrl: "https://share.google/KX27eRrKxncrDFibN"
+        mapUrl: "https://share.google/de6rHeKgl4nC3riaW"
     },
 ];
 
@@ -189,42 +189,14 @@ export default function Contact() {
                             <div className="sidebar-query-block">
                                 <p className="sidebar-query-title">General Queries &amp; Support</p>
                                 <a href="mailto:office@infynixsolutions.ae" className="sidebar-query-val">office@infynixsolutions.ae</a>
-                                <a href="mailto:careers@infynixsolutions.ae" className="sidebar-careers-btn">
+                                <a href="mailto:office@infynixsolutions.ae" className="sidebar-careers-btn">
                                     Careers <ArrowIcon />
                                 </a>
                             </div>
                             <div className="sidebar-divider" />
                             <div className="sidebar-query-block">
                                 <p className="sidebar-query-title">Follow Us</p>
-                                <div className="contact-social-links" style={{ display: 'flex', gap: '10px', marginTop: '10px' }}>
-                                    <a
-                                        href="https://www.linkedin.com/company/infynix-solutionglobal/"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="contact-social-btn"
-                                        aria-label="Infynix Solutions LinkedIn"
-                                    >
-                                        <i className="fa-brands fa-linkedin-in"></i>
-                                    </a>
-                                    <a
-                                        href="https://www.instagram.com/infynix_growth_solutions/"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="contact-social-btn"
-                                        aria-label="Infynix Solutions Instagram"
-                                    >
-                                        <i className="fa-brands fa-instagram"></i>
-                                    </a>
-                                    <a
-                                        href="https://www.facebook.com/people/Infynix-Solutions/61584250757142/"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="contact-social-btn"
-                                        aria-label="Infynix Solutions Facebook"
-                                    >
-                                        <i className="fa-brands fa-facebook-f"></i>
-                                    </a>
-                                </div>
+                                <SocialLinks className="contact-social-links" linkClassName="contact-social-btn" />
                             </div>
                         </div>
 

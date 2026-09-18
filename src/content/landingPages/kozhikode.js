@@ -83,7 +83,7 @@ export const kozhikodePages = [
       {
         question: 'What does digital marketing cost for a Kozhikode business?',
         answer:
-          'Comparable to Kochi: a focused single-channel scope typically starts around ₹30,000 monthly, with multi-channel programmes running higher. Ad costs in the Kozhikode district are generally lower than Ernakulam, so budgets tend to go further on paid media here.',
+          'We do not quote from a rate card. A discovery session establishes the scope, the systems involved and the outcome you are working towards, and the proposal that follows is a fixed price or a monthly retainer for exactly that. If a smaller first phase would answer the question, we say so.',
       },
     ],
     related: [
@@ -168,7 +168,7 @@ export const kozhikodePages = [
       {
         question: 'What does SEO cost for a Kozhikode business?',
         answer:
-          'Typically ₹20,000 to ₹60,000 per month for local SEO, below the equivalent Kochi range because the competitive requirement is lower. A one-off technical audit is a smaller fixed fee and is often the right first step.',
+          'We do not quote from a rate card. A discovery session establishes the scope, the systems involved and the outcome you are working towards, and the proposal that follows is a fixed price or a monthly retainer for exactly that. If a smaller first phase would answer the question, we say so.',
       },
     ],
     related: [
@@ -243,7 +243,7 @@ export const kozhikodePages = [
       {
         question: 'What does custom software cost for a Kozhikode business?',
         answer:
-          'A focused system such as order and inventory management typically runs ₹4,00,000 to ₹10,00,000. Larger multi-branch platforms with mobile apps and integrations run higher. We phase delivery so a usable first release ships within a few months rather than at the end of a long build.',
+          'Larger multi-branch platforms with mobile apps and integrations run higher. We phase delivery so a usable first release ships within a few months rather than at the end of a long build.',
       },
       {
         question: 'Can you build for our Gulf operations too?',
@@ -318,7 +318,7 @@ export const kozhikodePages = [
       {
         question: 'How much does a website cost in Kozhikode?',
         answer:
-          'A properly engineered business site typically runs ₹60,000 to ₹2,50,000 depending on page count, design depth and integrations, generally a little below Kochi pricing. E-commerce with Gulf shipping configuration starts higher.',
+          'We do not quote from a rate card. A discovery session establishes the scope, the systems involved and the outcome you are working towards, and the proposal that follows is a fixed price or a monthly retainer for exactly that. If a smaller first phase would answer the question, we say so.',
       },
       {
         question: 'Can you build an online store that ships to the Gulf?',
@@ -403,7 +403,7 @@ export const kozhikodePages = [
       {
         question: 'How much does an app cost for a Kozhikode business?',
         answer:
-          'A focused operational app, field team, ordering, or booking, typically runs ₹5,00,000 to ₹12,00,000. Consumer apps with payments and richer features run higher. We scope an MVP first so a working tool reaches your team before the full budget is committed.',
+          'Consumer apps with payments and richer features run higher. We scope an MVP first so a working tool reaches your team before the full budget is committed.',
       },
       {
         question: 'Can the app work without internet?',
