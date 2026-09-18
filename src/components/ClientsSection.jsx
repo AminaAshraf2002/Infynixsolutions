@@ -6,6 +6,7 @@ import logo from '../assets/footer.png';
 import ukLImage from '../assets/UKL.svg';
 import dubaiImage from '../assets/dubai.svg';
 import kochiImage from '../assets/kochi.svg';
+import SocialLinks from './SocialLinks';
 
 const ClientsSection = () => {
   useIxReveal();
@@ -150,7 +151,7 @@ const ClientsSection = () => {
               <div className="footer-location-title">UK - LONDON</div>
               <div className="footer-location-addr">
                 39 Becontree Avenue,<br />
-                Dagenham, London RM8 2UH
+                Dagenham, Greater London RM8 2UH
               </div>
             </div>
 
@@ -208,6 +209,7 @@ const ClientsSection = () => {
 
           <div className="footer-bottom" style={{ borderTop: '1px solid rgba(255, 255, 255, 0.05)', marginTop: '40px', paddingTop: '30px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '20px' }}>
             <p style={{ fontSize: '0.8rem', color: '#ffffff' }}>© 2026 Infynix Solutions UK. Engineered for Excellence.</p>
+            <SocialLinks />
           </div>
         </div>
       </footer>

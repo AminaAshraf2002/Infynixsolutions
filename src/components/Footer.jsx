@@ -32,7 +32,7 @@ const Footer = () => {
               <div className="footer-location-title">UK - LONDON ↗</div>
               <div className="footer-location-addr">
                 39 Becontree Avenue,<br />
-                Dagenham, London RM8 2UH
+                Dagenham, Greater London RM8 2UH
               </div>
             </a>
           </div>
