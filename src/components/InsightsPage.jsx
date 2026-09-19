@@ -2,6 +2,7 @@ import React, { useEffect, useState, useMemo } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { insightsData } from '../lib/contentData';
 import SEOManager from './SEOManager';
+import { SITE_URL } from '../seo/siteConfig';
 
 const OFF_WHITE = "#F5F5F3";
 const CHARCOAL = "#1A1A1A";
@@ -90,7 +91,7 @@ const InsightsPage = () => {
         <SEOManager
           title={`${article.title} | Infynix`}
           description={article.summary}
-          canonicalUrl={`https://infynixgrowthsolutions.com/insights/${slug}`}
+          canonicalUrl={`https://www.infynixgrowthsolutions.com/insights/${slug}`}
           schemaData={{
             '@context': 'https://schema.org',
             '@type': 'Article',
@@ -99,11 +100,11 @@ const InsightsPage = () => {
             'author': { '@type': 'Organization', 'name': article.author || 'Infynix Solutions' },
             // Reference the Organization node by @id rather than restating a bare
             // name, so the article attaches to the same entity as the rest of the site.
-            'publisher': { '@id': 'https://infynixgrowthsolutions.com/#organization' },
+            'publisher': { '@id': `${SITE_URL}/#organization` },
             // Schema.org requires ISO 8601. "September 6, 2026" is ignored by Google.
             'datePublished': toIsoDate(article.date),
             'dateModified': toIsoDate(article.date),
-            'mainEntityOfPage': `https://infynixgrowthsolutions.com/insights/${article.slug}`
+            'mainEntityOfPage': `${SITE_URL}/insights/${article.slug}`
           }}
         />
 
@@ -207,7 +208,7 @@ const InsightsPage = () => {
       <SEOManager
         title="Insights | Infynix"
         description="Growth engineering insights from Infynix Solutions: how connected software, AI vision and marketing systems actually compound for a business."
-        canonicalUrl="https://infynixgrowthsolutions.com/insights"
+        canonicalUrl="https://www.infynixgrowthsolutions.com/insights"
         schemaData={{
           '@context': 'https://schema.org',
           '@type': 'Blog',

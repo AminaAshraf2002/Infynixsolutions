@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import SEOManager from './SEOManager';
+import { SITE_URL } from '../seo/siteConfig';
 import './InfynixDesign.css';
 
 /* ── DATA ── */
@@ -118,7 +119,7 @@ const GrowthEngineering = () => {
     '@context': 'https://schema.org',
     '@type': 'Service',
     'name': 'Growth Engineering & SEO Services',
-    'provider': { '@type': 'Organization', 'name': 'Infynix Solutions', 'url': 'https://infynixgrowthsolutions.com' },
+    'provider': { '@type': 'Organization', 'name': 'Infynix Solutions', 'url': SITE_URL },
     'description': 'Infynix Solutions is a Growth Engineering Company. We build fast websites, search architecture, paid media campaigns, and AI software.',
     'serviceType': 'Growth Engineering',
   };
@@ -128,7 +129,7 @@ const GrowthEngineering = () => {
       <SEOManager
         title="Growth Engineering & SEO Company | Infynix Solutions"
         description="Infynix Solutions is a Growth Engineering company. We build fast websites, search architecture, paid media campaigns, and AI vision systems."
-        canonicalUrl="https://infynixgrowthsolutions.com/growth-engineering"
+        canonicalUrl="https://www.infynixgrowthsolutions.com/growth-engineering"
         schemaData={schema}
       />
 

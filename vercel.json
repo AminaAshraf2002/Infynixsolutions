@@ -2,8 +2,9 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "trailingSlash": false,
   "redirects": [
-    { "source": "/(.*)", "has": [{ "type": "host", "value": "infynix-solutions.com" }], "destination": "https://infynixgrowthsolutions.com/$1", "permanent": true },
-    { "source": "/(.*)", "has": [{ "type": "host", "value": "www.infynix-solutions.com" }], "destination": "https://infynixgrowthsolutions.com/$1", "permanent": true },
+    { "source": "/(.*)", "has": [{ "type": "host", "value": "infynixgrowthsolutions.com" }], "destination": "https://www.infynixgrowthsolutions.com/$1", "permanent": true },
+    { "source": "/(.*)", "has": [{ "type": "host", "value": "infynix-solutions.com" }], "destination": "https://www.infynixgrowthsolutions.com/$1", "permanent": true },
+    { "source": "/(.*)", "has": [{ "type": "host", "value": "www.infynix-solutions.com" }], "destination": "https://www.infynixgrowthsolutions.com/$1", "permanent": true },
     { "source": "/what-we-do", "destination": "/growth-engineering", "permanent": true },
     { "source": "/future-of-growth-systems", "destination": "/growth-engineering", "permanent": true },
     { "source": "/news", "destination": "/insights", "permanent": true },

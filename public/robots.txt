@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 Disallow: /cdn-cgi/
 
-Sitemap: https://infynixgrowthsolutions.com/sitemap.xml
+Sitemap: https://www.infynixgrowthsolutions.com/sitemap.xml

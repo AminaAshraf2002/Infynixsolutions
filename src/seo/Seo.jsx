@@ -54,7 +54,7 @@ export default function Seo({
           a self-reference, and every page in the cluster has to point back.
           x-default is the fallback for regions not explicitly mapped. */}
       {path === '/' && (
-        <link rel="alternate" hrefLang="en-IN" href="https://infynixgrowthsolutions.com/" />
+        <link rel="alternate" hrefLang="en-IN" href="https://www.infynixgrowthsolutions.com/" />
       )}
       {path === '/' && (
         <link rel="alternate" hrefLang="en-AE" href="https://www.infynixsolutions.ae/" />
@@ -63,7 +63,7 @@ export default function Seo({
         <link rel="alternate" hrefLang="en-GB" href="https://www.infynixsolutions.co.uk/" />
       )}
       {path === '/' && (
-        <link rel="alternate" hrefLang="x-default" href="https://infynixgrowthsolutions.com/" />
+        <link rel="alternate" hrefLang="x-default" href="https://www.infynixgrowthsolutions.com/" />
       )}
 
       <meta

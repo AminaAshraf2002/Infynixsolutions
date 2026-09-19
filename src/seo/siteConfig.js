@@ -5,7 +5,7 @@
 // a domain Infynix does not own (it resolves to a domain-sale listing). Do not
 // reintroduce it.
 
-export const SITE_URL = 'https://infynixgrowthsolutions.com';
+export const SITE_URL = 'https://www.infynixgrowthsolutions.com';
 
 export const SITE_NAME = 'Infynix Solutions';
 

@@ -1,35 +1,114 @@
-# Infynix Solutions - The Growth Engineering Company
+# Infynix Solutions (India)
 
-> Infynix Solutions is a premier Growth Engineering firm. We unify technical SEO engineering, performance media, custom web/app software, AI agents, and AI surveillance solutions into cohesive growth engines.
+> Infynix Solutions is a Growth Engineering company: three divisions that build the marketing, media and business systems a company needs to attract, convert and scale. This file describes the India site at https://www.infynixgrowthsolutions.com.
 
-## Primary Business Pillars
+## Business
+- Legal name: Infynix Solutions
+- Office: 3rd Floor, Oberon Mall, Padivattom, Edappally, Kochi, Kerala, 682024, IN
+- Telephone: +91-99959-11173
+- Email: office@infynixsolutions.ae
+- Areas served: United Kingdom, United Arab Emirates, India, Kerala, Kochi, Ernakulam, Kozhikode, Calicut, Thrissur, Thiruvananthapuram
+- Contact page: https://www.infynixgrowthsolutions.com/contact
 
-### 1. Infynix Agency (Marketing & Advertising)
-- **Paid Media & Performance Advertising**: Scalable customer acquisition across Meta Ads (Facebook & Instagram), Google Search, Shopping, Performance Max, and LinkedIn Ads.
-- **SEO Engineering**: Technical SEO architecture, sub-second pre-rendering, programmatic landing page engines, structured JSON-LD schemas, and semantic keyword cluster dominance.
-- **Conversion Rate Optimization (CRO)**: Funnel architecture, landing page optimization, behavioral tracking, and data-backed A/B experimentation.
+## Divisions
+### Infynix Agency (Performance and digital marketing)
+Paid media, search, social and the measurement underneath them. The side of the business that creates demand and proves where it came from.
+- Hub: https://www.infynixgrowthsolutions.com/solutions/infynix-agency
+- [Performance Advertising](https://www.infynixgrowthsolutions.com/solutions/performance-advertising): Data-driven paid media campaigns on Google, Meta, and LinkedIn designed for direct sales return.
+- [SEO & Content Marketing](https://www.infynixgrowthsolutions.com/solutions/seo-content-marketing): Technical search pre-rendering, clean HTML tags, and commercial keyword rankings.
+- [Social Media Management](https://www.infynixgrowthsolutions.com/solutions/social-media-management): Building active social profiles and brand authority on social channels.
+- [Marketing Automation & CRM](https://www.infynixgrowthsolutions.com/solutions/marketing-automation-crm): Automating lead follow-ups, email drips, and CRM synchronization.
+- [Performance Marketing & Paid Ads](https://www.infynixgrowthsolutions.com/solutions/performance-marketing): We manage targeted ad campaigns on Google, Meta, and LinkedIn focused on customer acquisition and return on ad spend.
+- [SEO Services & Search Infrastructure](https://www.infynixgrowthsolutions.com/solutions/seo-services): We engineer technical search pre-rendering, clean HTML tags, and keyword content to help your business rank at the top of search engine results.
+- [UI/UX Design & Brand Styling](https://www.infynixgrowthsolutions.com/solutions/ui-ux-design): We design digital product layouts and visual brand styles that look modern and guide users to buy.
 
-### 2. Infynix Media (Branding & Production)
-- **Brand Identity & Design**: Strategic positioning, messaging frameworks, visual identity systems, and UI/UX product design.
-- **Cinematic Production**: High-end brand films, broadcast commercials, studio photography, and 3D motion graphics.
-- **Short-Form & Social Content**: High-retention vertical video (Reels, TikTok, Shorts) designed for organic algorithmic reach.
+### Infynix Growth Solutions (Software, ERP and business systems)
+Custom web applications, CRM and ERP development, business automation, cloud infrastructure and AI vision systems. The engineering practice.
+- Hub: https://www.infynixgrowthsolutions.com/solutions/infynix-growth-solutions
+- [AI Surveillance & Security Solutions](https://www.infynixgrowthsolutions.com/solutions/ai-surveillance): Real-time AI computer vision security, local edge processing, and automated threat alerts for commercial facilities.
+- [Custom Web & App Development](https://www.infynixgrowthsolutions.com/solutions/custom-web-app-development): Custom web software engineered in React 19 and Next.js built for your business operations.
+- [AI Product Development & Agents](https://www.infynixgrowthsolutions.com/solutions/ai-native-product-development): Building smart software tools powered by Large Language Models and AI agents.
+- [Website Development Services](https://www.infynixgrowthsolutions.com/solutions/website-development): We build fast, secure web platforms using React 19 and Next.js designed to convert visitors into clients.
+- [Mobile App Development](https://www.infynixgrowthsolutions.com/solutions/mobile-app-development): We develop custom mobile applications for iOS and Android built for speed, offline usability, and clear navigation.
+- [Artificial Intelligence & AI Integration](https://www.infynixgrowthsolutions.com/solutions/artificial-intelligence): We build custom AI agents and workflow tools that automate daily administrative tasks.
+- [Business Automation Solutions](https://www.infynixgrowthsolutions.com/solutions/business-automation): We connect your software tools with automated APIs so your team spends zero time copying data by hand.
+- [Custom CRM & ERP Software](https://www.infynixgrowthsolutions.com/solutions/crm-erp-development): We build custom CRM and business management software designed around how your company actually operates.
+- [Cloud Infrastructure & Hosting](https://www.infynixgrowthsolutions.com/solutions/cloud-solutions): We set up and manage secure cloud hosting on AWS, Google Cloud, and Vercel.
 
-### 3. Infynix Growth Solutions (Software & AI Surveillance)
-- **Custom Software & Web Engineering**: High-performance web applications, React/Next.js architectures, progressive web apps, and native mobile apps (iOS & Android).
-- **AI Agents & LLM Integration**: Autonomous AI agents, RAG (Retrieval-Augmented Generation) systems, and workflow automation connected to enterprise CRMs/ERPs.
-- **AI Surveillance & Security Solutions**: Real-time computer vision pipelines, edge AI hardware processing (NVIDIA Jetson & Google Coral), automated threat/intrusion profiling, and smart CCTV network analytics.
+### Infynix Media (Content, film and production)
+Brand films, photography, motion graphics and short-form social content, produced in house.
+- Hub: https://www.infynixgrowthsolutions.com/solutions/infynix-media
+- [Photography & Videography](https://www.infynixgrowthsolutions.com/solutions/photography-videography): Product, brand and corporate photography and video, shot on location across Kerala by our own team in Kochi.
+- [Brand Films & Commercials](https://www.infynixgrowthsolutions.com/solutions/brand-films-commercials): Brand films, ad films and corporate video, written and produced end to end for Kerala and national campaigns.
+- [Short-Form & Social Content](https://www.infynixgrowthsolutions.com/solutions/short-form-social-content): Reels, shorts and vertical video produced in volume, cut for the platform and the language each audience actually watches in.
+- [Motion Graphics & Animation](https://www.infynixgrowthsolutions.com/solutions/motion-graphics-animation): Explainer animation, product motion and title design for brands whose product is difficult to film.
+- [Podcast & Audio Production](https://www.infynixgrowthsolutions.com/solutions/podcast-audio-production): Recording, editing and distribution for brand podcasts and audio series, in Malayalam and English.
 
-## Core Technology Stack
-- **Frontend & Web**: React 19, Next.js, Vite 8, React Router 7, Framer Motion, GSAP.
-- **Backend & AI**: Node.js, Express, Python, OpenAI/Claude APIs, LangChain, RAG Vector Databases.
-- **Edge & Computer Vision**: OpenCV, YOLO, NVIDIA Jetson, Google Coral, RTSP/CCTV Stream Gateways.
-- **Cloud & DevOps**: AWS, GCP, Vercel, Docker, CI/CD pipelines.
+## Location and service pages
+- [Digital Marketing Agency in Kochi](https://www.infynixgrowthsolutions.com/digital-marketing-agency-in-kochi)
+- [SEO Company in Kochi](https://www.infynixgrowthsolutions.com/seo-company-in-kochi)
+- [Software Development Company in Kochi](https://www.infynixgrowthsolutions.com/software-development-company-in-kochi)
+- [Web Design Company in Kochi](https://www.infynixgrowthsolutions.com/web-design-company-in-kochi)
+- [Mobile App Development Company in Kochi](https://www.infynixgrowthsolutions.com/mobile-app-development-company-in-kochi)
+- [IT Company in Kochi](https://www.infynixgrowthsolutions.com/it-company-in-kochi)
+- [Social Media Marketing Agency in Kochi](https://www.infynixgrowthsolutions.com/social-media-marketing-agency-in-kochi)
+- [E-Commerce Website Development Company in Kochi](https://www.infynixgrowthsolutions.com/ecommerce-website-development-company-in-kochi)
+- [UI/UX Design Company in Kochi](https://www.infynixgrowthsolutions.com/ui-ux-design-company-in-kochi)
+- [Digital Marketing Agency in Kerala](https://www.infynixgrowthsolutions.com/digital-marketing-agency-in-kerala)
+- [SEO Company in Kerala](https://www.infynixgrowthsolutions.com/seo-company-in-kerala)
+- [Software Development Company in Kerala](https://www.infynixgrowthsolutions.com/software-development-company-in-kerala)
+- [Web Design Company in Kerala](https://www.infynixgrowthsolutions.com/web-design-company-in-kerala)
+- [Mobile App Development Company in Kerala](https://www.infynixgrowthsolutions.com/mobile-app-development-company-in-kerala)
+- [Social Media Marketing Agency in Kerala](https://www.infynixgrowthsolutions.com/social-media-marketing-agency-in-kerala)
+- [Performance Marketing Agency in Kerala](https://www.infynixgrowthsolutions.com/performance-marketing-agency-in-kerala)
+- [Digital Marketing Agency in Kozhikode](https://www.infynixgrowthsolutions.com/digital-marketing-agency-in-kozhikode)
+- [SEO Company in Kozhikode](https://www.infynixgrowthsolutions.com/seo-company-in-kozhikode)
+- [Software Development Company in Kozhikode](https://www.infynixgrowthsolutions.com/software-development-company-in-kozhikode)
+- [Web Design Company in Kozhikode](https://www.infynixgrowthsolutions.com/web-design-company-in-kozhikode)
+- [Mobile App Development Company in Kozhikode](https://www.infynixgrowthsolutions.com/mobile-app-development-company-in-kozhikode)
+- [Digital Marketing Agency in Trivandrum](https://www.infynixgrowthsolutions.com/digital-marketing-agency-in-trivandrum)
+- [SEO Company in Trivandrum](https://www.infynixgrowthsolutions.com/seo-company-in-trivandrum)
+- [Software Development Company in Trivandrum](https://www.infynixgrowthsolutions.com/software-development-company-in-trivandrum)
+- [Web Design Company in Trivandrum](https://www.infynixgrowthsolutions.com/web-design-company-in-trivandrum)
 
-## Canonical Website Directory
-- Main Website: https://infynixgrowthsolutions.com
-- Growth Engineering: https://infynixgrowthsolutions.com/growth-engineering
-- Solutions & Pillars: https://infynixgrowthsolutions.com/solutions
-- Industries: https://infynixgrowthsolutions.com/industries
-- Case Studies: https://infynixgrowthsolutions.com/case-studies
-- Insights & Tech Lab: https://infynixgrowthsolutions.com/insights
-- Contact & Discovery: https://infynixgrowthsolutions.com/contact
+## Industries
+- [Healthcare](https://www.infynixgrowthsolutions.com/industries/healthcare)
+- [Education](https://www.infynixgrowthsolutions.com/industries/education)
+- [Real Estate](https://www.infynixgrowthsolutions.com/industries/real-estate)
+- [Retail & Commerce](https://www.infynixgrowthsolutions.com/industries/retail)
+
+## Case studies
+- [Salon Procurement & Multi-Branch Inventory System](https://www.infynixgrowthsolutions.com/case-studies/beyond-demands)
+- [Multi-Role SaaS Platform for Field Team & Task Operations](https://www.infynixgrowthsolutions.com/case-studies/task-management-system)
+- [Client Onboarding & Project Management Operating System](https://www.infynixgrowthsolutions.com/case-studies/agency-os)
+- [AI Face Recognition & Surveillance System](https://www.infynixgrowthsolutions.com/case-studies/ai-surveillance)
+- [Salon Service Menu & Beauty Brand Visual Identity](https://www.infynixgrowthsolutions.com/case-studies/salon-branding-menucard)
+- [Salon Visiting Card & Corporate Visual Identity](https://www.infynixgrowthsolutions.com/case-studies/corporate-brand-identity)
+- [Multi-Channel Paid Ads & ROI Scaling Campaign](https://www.infynixgrowthsolutions.com/case-studies/performance-ad-campaign)
+
+## Insights
+- [What is Growth Engineering and Why Your Business Needs It](https://www.infynixgrowthsolutions.com/insights/what-is-growth-engineering)
+- [How Real-Time AI Computer Vision Improves Facility Security](https://www.infynixgrowthsolutions.com/insights/ai-surveillance-computer-vision-security)
+
+## Site directory
+- Home: https://www.infynixgrowthsolutions.com/
+- Growth Engineering: https://www.infynixgrowthsolutions.com/growth-engineering
+- Solutions: https://www.infynixgrowthsolutions.com/solutions
+- Industries: https://www.infynixgrowthsolutions.com/industries
+- Case studies: https://www.infynixgrowthsolutions.com/case-studies
+- Insights: https://www.infynixgrowthsolutions.com/insights
+- About: https://www.infynixgrowthsolutions.com/about
+- Contact: https://www.infynixgrowthsolutions.com/contact
+- Sitemap: https://www.infynixgrowthsolutions.com/sitemap.xml
+
+## Sister sites
+Infynix Solutions is registered separately in India, the United Kingdom and the United Arab Emirates. Each site describes the services and office of that entity.
+- United Kingdom: https://www.infynixsolutions.co.uk/
+- United Arab Emirates: https://www.infynixsolutions.ae/
+
+## Profiles
+- https://www.linkedin.com/company/infynix-solutionglobal/
+- https://www.instagram.com/infynix_growth_solutions/
+- https://www.facebook.com/people/Infynix-Solutions/61584250757142/
+- https://share.google/de6rHeKgl4nC3riaW
+
