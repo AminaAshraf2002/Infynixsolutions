@@ -6,6 +6,11 @@ import { kochiDepth } from './depth/kochi.js';
 import { keralaDepth } from './depth/kerala.js';
 import { kozhikodeDepth } from './depth/kozhikode.js';
 import { trivandrumDepth } from './depth/trivandrum.js';
+// Long-tail pages: ERP, CRM and video production per city. Self-contained,
+// written with the deep sections inline, so they need no depth entry.
+import { indiaErpPages } from './india-erp.js';
+import { indiaCrmPages } from './india-crm.js';
+import { indiaVideoPages } from './india-video.js';
 
 // The base files carry the page identity and the copy that was written first:
 // intro, services, local section and the original FAQs. The depth files carry
@@ -31,6 +36,9 @@ export const landingPages = [
   ...keralaPages,
   ...kozhikodePages,
   ...trivandrumPages,
+  ...indiaErpPages,
+  ...indiaCrmPages,
+  ...indiaVideoPages,
 ].map(withDepth);
 
 export const landingPageBySlug = Object.fromEntries(
