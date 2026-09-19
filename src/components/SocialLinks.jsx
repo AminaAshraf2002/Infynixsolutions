@@ -9,6 +9,8 @@ const ICONS = [
   ['facebook.com', 'fa-brands fa-facebook-f', 'Facebook'],
   ['youtube.com', 'fa-brands fa-youtube', 'YouTube'],
   ['x.com', 'fa-brands fa-x-twitter', 'X'],
+  ['wa.me', 'fa-brands fa-whatsapp', 'WhatsApp'],
+  ['whatsapp.com', 'fa-brands fa-whatsapp', 'WhatsApp'],
 ];
 
 export default function SocialLinks({ className = 'footer-socials', linkClassName = '' }) {

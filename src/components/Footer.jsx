@@ -32,7 +32,7 @@ const Footer = () => {
               <div className="footer-location-title">UK - LONDON ↗</div>
               <div className="footer-location-addr">
                 39 Becontree Avenue,<br />
-                Dagenham, London RM8 2UH
+                Dagenham, Greater London RM8 2UH
               </div>
             </a>
           </div>
@@ -58,6 +58,18 @@ const Footer = () => {
                 Ernakulam, Kochi, Kerala 682024
               </div>
             </a>
+            <div style={{ marginTop: '8px' }}>
+              <a 
+                href="https://wa.me/919995911173" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', color: '#25D366', fontSize: '0.8rem', textDecoration: 'none', fontWeight: 500 }}
+                aria-label="WhatsApp India +91 99959 11173"
+              >
+                <i className="fa-brands fa-whatsapp" style={{ fontSize: '0.95rem' }}></i>
+                <span>+91 99959 11173</span>
+              </a>
+            </div>
           </div>
         </div>
 

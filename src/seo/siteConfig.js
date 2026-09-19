@@ -5,7 +5,7 @@
 // a domain Infynix does not own (it resolves to a domain-sale listing). Do not
 // reintroduce it.
 
-export const SITE_URL = 'https://www.infynix-solutions.com';
+export const SITE_URL = 'https://infynixgrowthsolutions.com';
 
 export const SITE_NAME = 'Infynix Solutions';
 
@@ -64,6 +64,7 @@ export const SOCIAL_PROFILES = [
   'https://www.linkedin.com/company/infynix-solutionglobal/',
   'https://www.instagram.com/infynix_growth_solutions/',
   'https://www.facebook.com/people/Infynix-Solutions/61584250757142/',
+  'https://wa.me/919995911173',
   // Listing the GBP in sameAs is how the site and the profile get resolved as
   // the same entity rather than two similar businesses.
   GOOGLE_BUSINESS_PROFILE,

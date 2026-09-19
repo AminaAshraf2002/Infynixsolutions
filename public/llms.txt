@@ -26,10 +26,10 @@
 - **Cloud & DevOps**: AWS, GCP, Vercel, Docker, CI/CD pipelines.
 
 ## Canonical Website Directory
-- Main Website: https://www.infynix-solutions.com
-- Growth Engineering: https://www.infynix-solutions.com/growth-engineering
-- Solutions & Pillars: https://www.infynix-solutions.com/solutions
-- Industries: https://www.infynix-solutions.com/industries
-- Case Studies: https://www.infynix-solutions.com/case-studies
-- Insights & Tech Lab: https://www.infynix-solutions.com/insights
-- Contact & Discovery: https://www.infynix-solutions.com/contact
+- Main Website: https://infynixgrowthsolutions.com
+- Growth Engineering: https://infynixgrowthsolutions.com/growth-engineering
+- Solutions & Pillars: https://infynixgrowthsolutions.com/solutions
+- Industries: https://infynixgrowthsolutions.com/industries
+- Case Studies: https://infynixgrowthsolutions.com/case-studies
+- Insights & Tech Lab: https://infynixgrowthsolutions.com/insights
+- Contact & Discovery: https://infynixgrowthsolutions.com/contact

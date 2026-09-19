@@ -192,7 +192,7 @@ line('  Backlinks           unknown, almost certainly near zero. New pages,');
 line('                      no acquisition work done yet. This is the single');
 line('                      largest gap against SpiderWorks and Blusteak, who');
 line('                      have years of Kerala press and directory links.');
-line('  Domain history      www.infynix-solutions.com has no ranking history');
+line('  Domain history      infynixgrowthsolutions.com has no ranking history');
 line('                      for these terms. Expect 4 to 9 months.');
 line('  Google Business     unverified. Without it the Kochi pages cannot');
 line('                      enter the map pack at all.');
