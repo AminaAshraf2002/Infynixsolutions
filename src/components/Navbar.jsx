@@ -3,27 +3,18 @@ import { Link, useLocation } from 'react-router-dom';
 import logo from '../assets/logo.png';
 import healthcareIcon from '../assets/healthcare.png';
 import educationIcon from '../assets/education.png';
-import constructionIcon from '../assets/construction.png';
 import realEstateIcon from '../assets/real-estate.png';
-import manufacturingIcon from '../assets/manufacturing.png';
 import retailIcon from '../assets/retail.png';
-import hospitalityIcon from '../assets/hospitality.png';
-import professionalServicesIcon from '../assets/professional-services.png';
-import { industriesData } from '../lib/contentData';
 
 const indLeft = [
   { path: '/industries/healthcare', icon: healthcareIcon, title: 'Healthcare', desc: 'Automate care, records, and compliance workflows.' },
   { path: '/industries/education', icon: educationIcon, title: 'Education', desc: 'Modernize enrollment, learning, and communication.' },
-  { path: '/industries/construction', icon: constructionIcon, title: 'Construction', desc: 'Centralize project data, budgets, and site tracking.' },
-  { path: '/industries/real-estate', icon: realEstateIcon, title: 'Real Estate', desc: 'CRM and automation built for faster deal closing.' }
-].filter((item) => industriesData[item.path.split('/').pop()]);
+];
 
 const indRight = [
-  { path: '/industries/manufacturing', icon: manufacturingIcon, title: 'Manufacturing', desc: 'Connect production, inventory, and supply chain data.' },
-  { path: '/industries/retail', icon: retailIcon, title: 'Retail & Commerce', desc: 'Unify inventory, customers, and channels.' },
-  { path: '/industries/hospitality', icon: hospitalityIcon, title: 'Hospitality', desc: 'Automate bookings, guest service, and operations.' },
-  { path: '/industries/professional-services', icon: professionalServicesIcon, title: 'Professional Services', desc: 'Systems for billing, projects, and client experience.' }
-].filter((item) => industriesData[item.path.split('/').pop()]);
+  { path: '/industries/real-estate', icon: realEstateIcon, title: 'Real Estate', desc: 'CRM and automation built for faster deal closing.' },
+  { path: '/industries/retail', icon: retailIcon, title: 'Retail & E-commerce', desc: 'Unify inventory, customers, and omnichannel sales.' },
+];
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -152,11 +143,11 @@ const Navbar = () => {
                       top: '100%',
                       left: '50%',
                       transform: dropdownOpen ? 'translateX(-50%) translateY(0)' : 'translateX(-50%) translateY(10px)',
-                      width: '1060px',
+                      width: '880px',
                       backgroundColor: '#ffffff',
                       borderRadius: '20px',
                       boxShadow: '0 20px 40px rgba(0,0,0,0.12)',
-                      padding: '40px 48px',
+                      padding: '28px 36px',
                       marginTop: '12px',
                       opacity: dropdownOpen ? 1 : 0,
                       visibility: dropdownOpen ? 'visible' : 'hidden',
@@ -164,7 +155,7 @@ const Navbar = () => {
                       pointerEvents: dropdownOpen ? 'auto' : 'none',
                       display: 'grid',
                       gridTemplateColumns: '1fr 1px 1fr',
-                      gap: '40px',
+                      gap: '32px',
                       cursor: 'default',
                       zIndex: 1000
                     }}>
@@ -221,6 +212,7 @@ const Navbar = () => {
                 </li>
                 <li><Link to="/case-studies" className="nav-link" onClick={() => setMenuOpen(false)}>Case Studies</Link></li>
                 <li><Link to="/insights" className="nav-link" onClick={() => setMenuOpen(false)}>Insights</Link></li>
+                <li><Link to="/blog" className="nav-link" onClick={() => setMenuOpen(false)}>Blog</Link></li>
                 <li><Link to="/about" className="nav-link" onClick={() => setMenuOpen(false)}>About</Link></li>
               </ul>
             </div>
@@ -296,7 +288,15 @@ const Navbar = () => {
                   <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                 </span>
               </Link>
-              <Link to="/about" className="mobile-menu-link stagger-6" onClick={() => setMenuOpen(false)}>
+              <Link to="/blog" className="mobile-menu-link stagger-6" onClick={() => setMenuOpen(false)}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+                  <span className="mobile-link-text">Blog</span>
+                </div>
+                <span className="mobile-link-arrow">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </span>
+              </Link>
+              <Link to="/about" className="mobile-menu-link stagger-7" onClick={() => setMenuOpen(false)}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
                   <span className="mobile-link-text">About Us</span>
                 </div>
@@ -306,7 +306,7 @@ const Navbar = () => {
               </Link>
             </div>
 
-            <div className="mobile-menu-footer stagger-7">
+            <div className="mobile-menu-footer stagger-8">
               <Link to="/contact" className="mobile-menu-cta" onClick={() => setMenuOpen(false)}>
                 Start a Project <span style={{ marginLeft: '8px' }}>→</span>
               </Link>

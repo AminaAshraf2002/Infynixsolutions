@@ -7,6 +7,8 @@ import ukLImage from '../assets/UKL.svg';
 import dubaiImage from '../assets/dubai.svg';
 import kochiImage from '../assets/kochi.svg';
 import SocialLinks from './SocialLinks';
+import BrandContactBlocks from './BrandContactBlocks';
+import SisterWebsitesSection from './SisterWebsitesSection';
 
 const ClientsSection = () => {
   useIxReveal();
@@ -217,6 +219,14 @@ const ClientsSection = () => {
                 <a href="/sitemap.xml" target="_blank" rel="noopener noreferrer">XML Sitemap</a>
               </div>
             </div>
+          </div>
+
+          <hr className="footer-divider" style={{ margin: '30px 0', borderColor: 'rgba(255,255,255,0.15)' }} />
+
+          {/* 3 columns in ONE ROW on desktop */}
+          <div className="footer-divisions-row">
+            <BrandContactBlocks theme="dark" displayContents />
+            <SisterWebsitesSection theme="dark" title="Global Presence" />
           </div>
 
           <div className="footer-bottom" style={{ borderTop: '1px solid rgba(255, 255, 255, 0.05)', marginTop: '40px', paddingTop: '30px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '20px' }}>

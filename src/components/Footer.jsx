@@ -5,6 +5,8 @@ import ukLImage from '../assets/UKL.svg';
 import dubaiImage from '../assets/dubai.svg';
 import kochiImage from '../assets/kochi.svg';
 import SocialLinks from './SocialLinks';
+import BrandContactBlocks from './BrandContactBlocks';
+import SisterWebsitesSection from './SisterWebsitesSection';
 
 const Footer = () => {
   return (
@@ -83,6 +85,7 @@ const Footer = () => {
               <Link to="/about">Company</Link>
               <Link to="/case-studies">Featured Work</Link>
               <Link to="/insights">Insights</Link>
+              <Link to="/blog">Blog</Link>
             </div>
             <div className="footer-nav-col">
               <span style={{ color: '#ffffff', fontWeight: 'bold', fontSize: '0.85rem', marginBottom: '8px' }}>SERVICES</span>
@@ -140,28 +143,15 @@ const Footer = () => {
               <a href="/sitemap.xml" target="_blank" rel="noopener noreferrer">XML Sitemap</a>
             </div>
 
-            {/* Cross-domain links, dofollow intentionally, these are our own regional
-                sister sites. rel="noopener" is for security on target="_blank" only. */}
-            <div className="footer-nav-col">
-              <span style={{ color: '#ffffff', fontWeight: 'bold', fontSize: '0.85rem', marginBottom: '8px' }}>GLOBAL PRESENCE</span>
-              <a
-                href="https://www.infynixsolutions.ae"
-                target="_blank"
-                rel="noopener"
-                style={{ display: 'flex', alignItems: 'center', gap: '6px' }}
-              >
-                🇦🇪 UAE, infynixsolutions.ae
-              </a>
-              <a
-                href="https://www.infynixsolutions.co.uk"
-                target="_blank"
-                rel="noopener"
-                style={{ display: 'flex', alignItems: 'center', gap: '6px' }}
-              >
-                🇬🇧 UK, infynixsolutions.co.uk
-              </a>
-            </div>
           </div>
+        </div>
+
+        <hr className="footer-divider" style={{ margin: '35px 0' }} />
+
+        {/* 3 columns in ONE ROW on desktop */}
+        <div className="footer-divisions-row">
+          <BrandContactBlocks theme="dark" displayContents />
+          <SisterWebsitesSection theme="dark" title="Global Presence" />
         </div>
 
         <div className="footer-bottom" style={{ borderTop: '1px solid rgba(204, 191, 191, 0.28)', marginTop: '40px', paddingTop: '30px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '20px' }}>

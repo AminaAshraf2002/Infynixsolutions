@@ -118,11 +118,13 @@
     grid-template-columns: 1fr !important;
   }
 }
-.clients-section,
-#services,
-#featured {
-  padding-left: 60px !important;
-  padding-right: 60px !important;
+@media (min-width: 1025px) {
+  .clients-section,
+  #services,
+  #featured {
+    padding-left: 60px !important;
+    padding-right: 60px !important;
+  }
 }
 
 *,
@@ -1895,19 +1897,20 @@ section[style*="var(--ix-primary)"]::after,
 }
 
 .cta-home-heading {
-  font-family: 'Outfit', sans-serif;
-  font-size: clamp(2.1rem, 5vw, 4.2rem);
-  font-weight: 900;
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-style: italic;
+  font-size: clamp(1.85rem, 4.2vw, 3.4rem);
+  font-weight: 400;
   color: #ffffff;
-  line-height: 1.15;
-  margin-bottom: 2.5rem;
-  letter-spacing: -0.02em;
+  line-height: 1.18;
+  margin-bottom: 2.2rem;
+  letter-spacing: -0.01em;
 }
 
 .cta-home-heading em {
   font-style: italic;
   font-weight: 400;
-  font-family: var(--font-display);
+  font-family: 'Playfair Display', Georgia, serif !important;
   color: rgb(167, 214, 0);
 }
 
@@ -2050,6 +2053,23 @@ section[style*="var(--ix-primary)"]::after,
 
 .footer-socials a:hover {
   background: #ffffff;
+}
+
+/* Footer Divisions & Sister Websites Row */
+.footer-divisions-row {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2.5rem;
+  margin-bottom: 0;
+  align-items: start;
+  width: 100%;
+}
+
+@media (max-width: 868px) {
+  .footer-divisions-row {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
 }
 
 /* ─── FOOTER LOCATIONS GRID ────────────────────────────── */
@@ -4816,24 +4836,65 @@ video {
 }
 
 /* 10. CTA Banner */
-@media (max-width: 767px) {
-  .clients-section .cta-home-card {
-    margin: 3rem 16px 2rem !important;
+@media (max-width: 768px) {
+  .clients-section {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    padding-top: 15px !important;
   }
 
+  .clients-section .cta-home-card,
   .cta-home-card {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 1.25rem auto 2.2rem !important;
+    padding: 2.2rem 1.25rem 2rem !important;
+    border-radius: 18px !important;
+    min-height: auto !important;
     text-align: center !important;
-    padding: 2.5rem 1.5rem !important;
+    box-sizing: border-box !important;
   }
 
   .cta-home-heading {
-    font-size: clamp(1.8rem, 5vw, 2.5rem) !important;
-    margin-bottom: 2rem !important;
+    font-family: 'Playfair Display', Georgia, serif !important;
+    font-style: italic !important;
+    font-size: clamp(1.65rem, 6.5vw, 2.2rem) !important;
+    margin-bottom: 1.25rem !important;
+    line-height: 1.18 !important;
+  }
+
+  .cta-home-heading em {
+    font-family: 'Playfair Display', Georgia, serif !important;
+    font-style: italic !important;
   }
 
   .cta-home-btn {
-    width: 100% !important;
-    justify-content: center !important;
+    width: auto !important;
+    display: inline-flex !important;
+    padding: 0.75rem 1.6rem !important;
+    border-radius: 100px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .clients-section {
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+    padding-top: 10px !important;
+  }
+
+  .clients-section .cta-home-card,
+  .cta-home-card {
+    padding: 1.8rem 1rem 1.6rem !important;
+    margin: 1rem auto 2rem !important;
+    border-radius: 16px !important;
+  }
+
+  .cta-home-heading {
+    font-family: 'Playfair Display', Georgia, serif !important;
+    font-style: italic !important;
+    font-size: clamp(1.45rem, 6.5vw, 1.85rem) !important;
+    margin-bottom: 1.1rem !important;
   }
 }
 
