@@ -1,0 +1,557 @@
+/* ==========================================================================
+   WHAT WE OFFER - 3D INTERACTIVE SERVICE GRID STYLES
+   ========================================================================== */
+
+.what-we-offer-section {
+  position: relative;
+  width: 100%;
+  background: #ffffff;
+  padding: clamp(70px, 9vw, 120px) 0 clamp(80px, 10vw, 130px) 0;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+/* Subtle background accent glow behind grid */
+.what-we-offer-glow {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  width: 900px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(0, 168, 128, 0.04) 0%, rgba(255, 255, 255, 0) 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Container margins: Set horizontal container padding to clamp(80px, 8vw, 160px)
+   so cards never touch or collide with the vertical page-edge dashed border lines. */
+.what-we-offer-container {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 1720px;
+  margin: 0 auto;
+  padding-left: clamp(80px, 8vw, 160px);
+  padding-right: clamp(80px, 8vw, 160px);
+  box-sizing: border-box;
+}
+
+/* ── Section Header ── */
+.what-we-offer-header {
+  text-align: center;
+  max-width: 820px;
+  margin: 0 auto 36px auto;
+  box-sizing: border-box;
+}
+
+.what-we-offer-eyebrow {
+  display: inline-block;
+  font-family: 'Albert Sans', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #007A5E;
+  margin-bottom: 12px;
+}
+
+.what-we-offer-heading {
+  font-family: 'Albert Sans', sans-serif;
+  font-size: clamp(2rem, 3.8vw, 3rem);
+  font-weight: 600; /* Clean, elegant weight - not heavy/bold */
+  color: #0f172a;
+  letter-spacing: -0.025em;
+  margin: 0 0 16px 0;
+  line-height: 1.16;
+  perspective: 800px;
+}
+
+.what-we-offer-heading .heading-word {
+  display: inline-block;
+  transform-origin: bottom center;
+  backface-visibility: hidden;
+  margin-right: 0.28em;
+}
+
+.what-we-offer-heading .heading-word:last-child {
+  margin-right: 0;
+}
+
+/* Green gradient line centered beneath the title */
+.what-we-offer-accent-line {
+  width: 72px;
+  height: 3.5px;
+  background: linear-gradient(90deg, #00A880, #005A46);
+  border-radius: 999px;
+  margin: 14px auto 20px auto;
+}
+
+.what-we-offer-subtitle {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: clamp(0.96rem, 1.25vw, 1.08rem);
+  color: #64748b;
+  line-height: 1.65;
+  margin: 0 auto;
+  max-width: 680px;
+}
+
+/* ── Category Filter Tabs ── */
+.what-we-offer-tabs-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 32px 0 20px 0;
+}
+
+.what-we-offer-tabs {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  background: #f8fafc;
+  padding: 6px;
+  border-radius: 999px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.02);
+}
+
+.filter-tab-button {
+  background: transparent;
+  border: none;
+  outline: none;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: #475569;
+  padding: 9px 20px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  white-space: nowrap;
+  position: relative;
+  user-select: none;
+}
+
+.filter-tab-button:hover {
+  color: #0f172a;
+  background: rgba(0, 0, 0, 0.04);
+}
+
+.filter-tab-button.is-active {
+  background: #007A5E;
+  color: #ffffff;
+  font-weight: 600;
+  box-shadow: 0 4px 14px -2px rgba(0, 122, 94, 0.32);
+}
+
+/* ── Direct Department Contact Bar ── */
+.department-contact-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin: 16px auto 32px auto;
+  padding: 12px 22px;
+  max-width: fit-content;
+  background: rgba(0, 122, 94, 0.04);
+  border: 1px solid rgba(0, 122, 94, 0.16);
+  border-radius: 12px;
+  box-shadow: 0 4px 16px -4px rgba(0, 122, 94, 0.08);
+  animation: barFadeIn 0.35s ease forwards;
+}
+
+@keyframes barFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dept-bar-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: 'Albert Sans', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #007A5E;
+  letter-spacing: 0.02em;
+}
+
+.dept-bar-links {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.dept-link-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 6px 13px;
+  border-radius: 8px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 122, 94, 0.2);
+  color: #0f172a;
+  text-decoration: none;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 0.82rem;
+  font-weight: 600;
+  transition: all 0.22s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.dept-link-pill:hover {
+  background: #007A5E;
+  color: #ffffff;
+  border-color: #007A5E;
+  box-shadow: 0 4px 12px -2px rgba(0, 122, 94, 0.3);
+  transform: translateY(-1px);
+}
+
+.dept-link-pill svg {
+  transition: transform 0.2s ease;
+}
+
+.dept-link-pill:hover svg {
+  transform: scale(1.1);
+}
+
+/* ── Responsive 3D Grid ── */
+.services-3d-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* Mobile < 640px: 1 column */
+  gap: 24px;
+  position: relative;
+  width: 100%;
+  margin-top: 24px;
+  align-items: stretch;
+}
+
+@media (min-width: 640px) {
+  .services-3d-grid {
+    grid-template-columns: repeat(2, 1fr); /* Tablet >= 640px: 2 columns */
+    gap: 24px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .services-3d-grid {
+    grid-template-columns: repeat(3, 1fr); /* Desktop >= 1024px: 3 columns */
+    gap: 28px;
+  }
+}
+
+@media (min-width: 1360px) {
+  .services-3d-grid {
+    grid-template-columns: repeat(4, 1fr); /* Large screens >= 1360px up to 1920px: 4 columns */
+    gap: 28px;
+  }
+}
+
+/* ── Card Wrapper & SEO Rule: NO display: none! ── */
+.service-card-wrapper {
+  position: relative;
+  perspective: 1000px;
+  display: flex;
+  opacity: 1;
+  visibility: visible;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Strict SEO rule: Filtered-out cards remain in the DOM so Google and search crawlers
+   can index all 12 services! Use CSS hiding instead of conditional unmounting. */
+.service-card-wrapper.is-filtered-out {
+  position: absolute !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  visibility: hidden !important;
+  height: 0 !important;
+  min-height: 0 !important;
+  overflow: hidden !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+  transform: scale(0.94);
+}
+
+/* ── Card Styling ── */
+.service-card-3d {
+  position: relative;
+  width: 100%;
+  background: #ffffff; /* Crisp white background */
+  border: 1px solid rgba(0, 0, 0, 0.08); /* Subtle border */
+  border-radius: 20px;
+  padding: 30px 26px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-decoration: none;
+  color: inherit;
+  box-sizing: border-box;
+  transform-style: preserve-3d;
+  will-change: transform, box-shadow;
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.05), 0 2px 6px -1px rgba(0, 0, 0, 0.02);
+  transition: border-color 0.28s ease, box-shadow 0.28s ease;
+  overflow: hidden;
+}
+
+.service-card-3d:hover {
+  border-color: rgba(0, 168, 128, 0.32);
+  box-shadow: 0 22px 44px -12px rgba(0, 122, 94, 0.14), 0 4px 12px -2px rgba(0, 0, 0, 0.04);
+}
+
+/* Soft specular reflection glare element */
+.service-card-glare {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  background: radial-gradient(circle 380px at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(255, 255, 255, 0.72) 0%, rgba(255, 255, 255, 0) 70%);
+  opacity: var(--glare-opacity, 0);
+  transition: opacity 0.3s ease;
+  z-index: 4;
+}
+
+/* ── Card Top: Icon & Category Badge ── */
+.card-top-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 22px;
+}
+
+/* Emerald-to-forest-green gradient circle icon */
+.card-icon-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #00A880 0%, #005A46 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  box-shadow: 0 6px 16px -2px rgba(0, 122, 94, 0.32);
+  transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.service-card-3d:hover .card-icon-circle {
+  transform: scale(1.08) rotate(3deg);
+}
+
+/* Division category pill badge */
+.card-division-badge {
+  font-family: 'Albert Sans', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: rgba(0, 122, 94, 0.06);
+  color: #007A5E;
+  border: 1px solid rgba(0, 122, 94, 0.15);
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.badge-media {
+  background: rgba(14, 116, 144, 0.06);
+  color: #0e7490;
+  border-color: rgba(14, 116, 144, 0.16);
+}
+
+.badge-development {
+  background: rgba(15, 23, 42, 0.06);
+  color: #1e293b;
+  border-color: rgba(15, 23, 42, 0.14);
+}
+
+/* ── Card Content ── */
+.card-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title {
+  font-family: 'Albert Sans', sans-serif;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #0f172a;
+  line-height: 1.35;
+  margin: 0 0 10px 0;
+  letter-spacing: -0.015em;
+  transition: color 0.2s ease;
+}
+
+.service-card-3d:hover .card-title {
+  color: #007A5E;
+}
+
+.card-desc {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 0.88rem;
+  color: #64748b;
+  line-height: 1.55;
+  margin: 0 0 16px 0;
+  flex: 1;
+}
+
+/* ── In-card Direct Contact Chips (Agency & Media) ── */
+.card-contact-chips {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-bottom: 20px;
+  padding-top: 12px;
+  border-top: 1px dashed rgba(0, 0, 0, 0.08);
+}
+
+.card-contact-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 0.74rem;
+  font-weight: 600;
+  color: #334155;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 4px 8px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.card-contact-chip:hover {
+  background: #007A5E;
+  color: #ffffff;
+  border-color: #007A5E;
+  transform: translateY(-1px);
+}
+
+/* ── Card Footer: Learn More Link ── */
+.card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+  padding-top: 14px;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.card-learn-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #007A5E;
+  transition: color 0.2s ease;
+}
+
+.card-learn-arrow {
+  display: inline-flex;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.service-card-3d:hover .card-learn-arrow {
+  transform: translateX(5px);
+}
+
+/* ── Bottom Magnetic CTA Button ── */
+.what-we-offer-cta-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 54px;
+}
+
+.magnetic-btn-wrapper {
+  display: inline-block;
+  position: relative;
+  padding: 10px;
+}
+
+.what-we-offer-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 36px;
+  background: linear-gradient(135deg, #007A5E 0%, #005A46 100%);
+  color: #ffffff;
+  border-radius: 999px;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: -0.01em;
+  box-shadow: 0 10px 24px -4px rgba(0, 122, 94, 0.35);
+  transition: box-shadow 0.3s ease, background 0.3s ease;
+  will-change: transform;
+  user-select: none;
+}
+
+.what-we-offer-cta-btn:hover {
+  box-shadow: 0 16px 32px -4px rgba(0, 122, 94, 0.45);
+  background: linear-gradient(135deg, #008f6e 0%, #006b53 100%);
+}
+
+.cta-btn-arrow {
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.what-we-offer-cta-btn:hover .cta-btn-arrow {
+  transform: translateX(4px);
+}
+
+/* ── Prefers-reduced-motion accessibility ── */
+@media (prefers-reduced-motion: reduce) {
+  .what-we-offer-heading .heading-word,
+  .service-card-3d,
+  .card-icon-circle,
+  .card-learn-arrow,
+  .what-we-offer-cta-btn,
+  .department-contact-bar,
+  .service-card-wrapper {
+    animation: none !important;
+    transition: none !important;
+    transform: none !important;
+  }
+  .service-card-glare {
+    display: none !important;
+  }
+}
+
+/* ── Mobile Tweaks ── */
+@media (max-width: 639px) {
+  .what-we-offer-section {
+    padding: 60px 0 70px 0;
+  }
+  .what-we-offer-container {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+  .filter-tab-button {
+    font-size: 0.8rem;
+    padding: 7px 14px;
+  }
+  .service-card-3d {
+    padding: 24px 20px;
+  }
+  .what-we-offer-cta-btn {
+    padding: 13px 28px;
+    font-size: 0.94rem;
+  }
+}

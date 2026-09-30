@@ -143,6 +143,8 @@ input, textarea, select {
 html {
   scroll-behavior: smooth;
   font-size: 15px;
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
 body {
@@ -150,6 +152,8 @@ body {
   background: #fff;
   color: var(--black);
   font-size: 0.95rem;
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
 
@@ -2646,10 +2650,24 @@ section[style*="var(--ix-primary)"]::after,
   min-width: 0;
 }
 
-/* ─── 3XL / ULTRA-WIDE (1536px+) ─── */
+/* ─── 3XL / ULTRA-WIDE (1536px+ / 1920x1080) ─── */
 @media (min-width: 1536px) {
-  nav {
-    max-width: 1100px;
+  .site-header:not(.scrolled) {
+    width: 100% !important;
+    max-width: 100% !important;
+    left: 0 !important;
+    right: 0 !important;
+  }
+
+  .site-header.scrolled {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+
+  .nav-container-new {
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
   }
 
   .hero {
@@ -2657,11 +2675,11 @@ section[style*="var(--ix-primary)"]::after,
   }
 
   .hero-title {
-    font-size: 96px;
+    font-size: clamp(3.5rem, 4.8vw, 5.5rem);
   }
 
   .hero-subtitle {
-    font-size: 52px;
+    font-size: clamp(1.8rem, 2.2vw, 2.8rem);
   }
 
   .specialize-section {
@@ -2669,50 +2687,59 @@ section[style*="var(--ix-primary)"]::after,
   }
 
   .specialize-text {
-    font-size: 72px;
-    max-width: 1300px;
+    font-size: clamp(3.5rem, 4vw, 4.5rem);
+    max-width: 1400px;
+    margin: 0 auto;
   }
 
   .initiatives-inner {
-    max-width: 1400px;
-    gap: 6rem;
+    max-width: 1500px;
+    gap: 5rem;
   }
 
   .init-h1 {
-    font-size: 6.5rem;
+    font-size: clamp(3.5rem, 4.5vw, 5rem);
+  }
+
+  .init-desc {
+    font-size: 1.05rem;
+    max-width: 560px;
+    line-height: 1.8;
   }
 
   .riverside-inner {
-    max-width: 1400px;
+    max-width: 1500px;
   }
 
   .partners-inner {
-    max-width: 1536px;
+    max-width: 1600px;
   }
 
   .partners-grid {
-    grid-template-columns: repeat(6, 1fr);
-    gap: 2.5rem 1.5rem;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2.5rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
   }
 
   .clients-inner {
-    max-width: 1536px;
+    max-width: 1600px;
   }
 
   .clients-h2 {
-    font-size: 6rem;
+    font-size: clamp(3.8rem, 4.5vw, 5.5rem);
   }
 
   .services-wrap {
-    max-width: 1536px;
+    max-width: 1600px;
   }
 
   .svc-tagline {
-    font-size: clamp(3.5rem, 4.5vw, 4.5rem);
+    font-size: clamp(3.2rem, 4vw, 4.2rem);
   }
 
   #featured .featured-inner {
-    max-width: 1536px;
+    max-width: 1600px;
   }
 
   .feat-img-wrap {
@@ -2720,7 +2747,7 @@ section[style*="var(--ix-primary)"]::after,
   }
 
   .footer-content {
-    max-width: 1536px;
+    max-width: 1600px;
   }
 
   .wwd-s1 {
@@ -2734,14 +2761,28 @@ section[style*="var(--ix-primary)"]::after,
   .wwd-s4-h2,
   .wwd-tabs,
   .wwd-panel {
-    max-width: 1536px;
+    max-width: 1600px;
   }
 }
 
 /* ─── 2XL / LARGE DESKTOP (1280-1535px) ─── */
 @media (min-width: 1280px) and (max-width: 1535px) {
-  nav {
-    max-width: 960px;
+  .site-header:not(.scrolled) {
+    width: 100% !important;
+    max-width: 100% !important;
+    left: 0 !important;
+    right: 0 !important;
+  }
+
+  .site-header.scrolled {
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+
+  .nav-container-new {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
   }
 
   .hero {
@@ -2749,11 +2790,11 @@ section[style*="var(--ix-primary)"]::after,
   }
 
   .hero-title {
-    font-size: 88px;
+    font-size: clamp(3rem, 4.2vw, 4.5rem);
   }
 
   .hero-subtitle {
-    font-size: 48px;
+    font-size: clamp(1.5rem, 2vw, 2.4rem);
   }
 
   .specialize-section {
@@ -2761,29 +2802,32 @@ section[style*="var(--ix-primary)"]::after,
   }
 
   .specialize-text {
-    font-size: 64px;
-    max-width: 1100px;
+    font-size: clamp(3rem, 3.8vw, 4rem);
+    max-width: 1200px;
+    margin: 0 auto;
   }
 
   .initiatives-inner {
-    max-width: 1200px;
-    gap: 5rem;
+    max-width: 1300px;
+    gap: 4.5rem;
   }
 
   .init-h1 {
-    font-size: 5.8rem;
+    font-size: clamp(3.2rem, 4vw, 4.5rem);
   }
 
   .partners-grid {
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1100px;
+    margin: 0 auto;
   }
 
   .clients-h2 {
-    font-size: 5rem;
+    font-size: 4.5rem;
   }
 
   .services-wrap {
-    max-width: 1280px;
+    max-width: 1360px;
   }
 
   .svc-tagline {
@@ -2791,7 +2835,7 @@ section[style*="var(--ix-primary)"]::after,
   }
 
   .featured-inner {
-    max-width: 1280px;
+    max-width: 1360px;
   }
 
   .wwd-s1 {
@@ -2805,9 +2849,20 @@ section[style*="var(--ix-primary)"]::after,
 
 /* ─── XL / STANDARD DESKTOP (1024-1279px) ─── */
 @media (min-width: 1024px) and (max-width: 1279px) {
-  nav {
-    max-width: 860px;
-    width: calc(100% - 80px);
+  .site-header:not(.scrolled) {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .site-header.scrolled {
+    max-width: 980px;
+    margin: 0 auto;
+  }
+
+  .nav-container-new {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
   }
 
   .hero {

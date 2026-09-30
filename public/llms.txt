@@ -34,6 +34,8 @@ Custom web applications, CRM and ERP development, business automation, cloud inf
 - [Business Automation Solutions](https://www.infynixgrowthsolutions.com/solutions/business-automation): We connect your software tools with automated APIs so your team spends zero time copying data by hand.
 - [Custom CRM & ERP Software](https://www.infynixgrowthsolutions.com/solutions/crm-erp-development): We build custom CRM and business management software designed around how your company actually operates.
 - [Cloud Infrastructure & Hosting](https://www.infynixgrowthsolutions.com/solutions/cloud-solutions): We set up and manage secure cloud hosting on AWS, Google Cloud, and Vercel.
+- [AI Agents & Business Workflows](https://www.infynixgrowthsolutions.com/solutions/ai-agents-automation): We engineer autonomous AI agents, intelligent workflow pipelines, and custom LLM tools that streamline business operations and eliminate manual administrative work.
+- [Cloud Infrastructure & Cyber Security](https://www.infynixgrowthsolutions.com/solutions/cloud-infrastructure-security): Enterprise cloud architectures, hardened cyber security frameworks, and zero-downtime deployment pipelines built on AWS, GCP, and Kubernetes.
 
 ### Infynix Media (Content, film and production)
 Brand films, photography, motion graphics and short-form social content, produced in house.

@@ -201,6 +201,46 @@ export const solutionsData = {
     faqs: [
       { q: 'Can you migrate our site without downtime?', a: 'Yes. We handle cloud migrations cleanly without taking your current site offline.' }
     ]
+  },
+  'ai-agents-automation': {
+    title: 'AI Agents & Business Workflows',
+    category: 'Development',
+    keywords: ['AI Agents', 'Business Automation', 'LLM Workflows', 'Autonomous Agents', 'AI Integration'],
+    description: 'We engineer autonomous AI agents, intelligent workflow pipelines, and custom LLM tools that streamline business operations and eliminate manual administrative work.',
+    challenge: 'Manual workflows, fragmented tools, and administrative bottlenecks burn hundreds of high-value team hours every month.',
+    insight: 'Enterprise AI should not be generic chatbots; it must connect directly to internal company databases, CRM tools, and communication channels with deterministic guardrails.',
+    solution: 'We architect autonomous multi-agent systems, document ingestion pipelines, and deterministic API workflows tailored to your operational processes.',
+    outcome: 'Elimination of manual data entry, instant response cycles, lower operating costs, and software that scales effortlessly.',
+    capabilities: [
+      { title: 'Autonomous Multi-Agent Systems', desc: 'Self-orchestrating AI agents with human-in-the-loop controls for complex multi-step business logic.' },
+      { title: 'RAG & Knowledge Extraction', desc: 'Secure retrieval-augmented generation pipelines querying internal company documents and ERP systems.' },
+      { title: 'Workflow Automations & APIs', desc: 'Automated data pipelines connecting CRM, messaging platforms, invoicing, and logistics.' },
+      { title: 'Enterprise Guardrails & Evaluation', desc: 'Strict safety policies, hallucination prevention checks, and end-to-end audit logging.' }
+    ],
+    faqs: [
+      { q: 'How do custom AI agents integrate with existing software?', a: 'We build direct API webhooks and database connectors into tools like HubSpot, Salesforce, Slack, WhatsApp, and PostgreSQL.' },
+      { q: 'Is our company data kept secure and private?', a: 'Yes. All data pipelines operate in isolated enterprise cloud environments or on-premise infrastructure with zero retention by public foundation models.' }
+    ]
+  },
+  'cloud-infrastructure-security': {
+    title: 'Cloud Infrastructure & Cyber Security',
+    category: 'Development',
+    keywords: ['Cloud Infrastructure', 'Cyber Security', 'DevOps', 'AWS Architecture', 'Zero Downtime', 'Cloud Security'],
+    description: 'Enterprise cloud architectures, hardened cyber security frameworks, and zero-downtime deployment pipelines built on AWS, GCP, and Kubernetes.',
+    challenge: 'Unsecured cloud environments, slow server response times, and unoptimized hosting infrastructure introduce catastrophic security vulnerabilities and outages.',
+    insight: 'Modern cloud infrastructure demands automated infrastructure-as-code, active threat detection, and resilient multi-region architectures.',
+    solution: 'We architect and manage ultra-secure, auto-scaling cloud deployments with automated backups, end-to-end SSL/TLS encryption, and continuous vulnerability monitoring.',
+    outcome: 'Sub-second response latencies, 99.99% high availability, SOC2/ISO compliance readiness, and resilient security posture.',
+    capabilities: [
+      { title: 'Cloud Architecture & AWS/GCP Setup', desc: 'Serverless and microservice topologies designed for horizontal scalability and peak traffic surges.' },
+      { title: 'Cyber Security & Vulnerability Audits', desc: 'Penetration testing, IAM access controls, firewall configuration, and automated threat mitigation.' },
+      { title: 'CI/CD & Infrastructure as Code', desc: 'Automated deployment pipelines and Terraform infrastructure definitions for reproducible deployments.' },
+      { title: 'High Availability & Disaster Recovery', desc: 'Multi-region failover protocols, automated snapshot backups, and 24/7 uptime monitoring.' }
+    ],
+    faqs: [
+      { q: 'Can you migrate legacy servers to the cloud without downtime?', a: 'Yes. We run blue-green and canary cutover strategies so your customer traffic experiences zero interruption during cloud migrations.' },
+      { q: 'How do you monitor and protect our infrastructure from threats?', a: 'We implement automated web application firewalls (WAF), rate limiting, continuous security audits, and real-time incident alerting.' }
+    ]
   }
 };
 

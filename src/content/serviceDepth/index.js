@@ -9,4 +9,6 @@ export const serviceDepth = {
   ...mediaDepth,
   ...agencyDepth,
   ...growthDepth,
+  'ai-agents-automation': growthDepth['ai-native-product-development'],
+  'cloud-infrastructure-security': growthDepth['cloud-solutions'],
 };

@@ -523,3 +523,21 @@
   color: var(--lp-ink);
   font-weight: 600;
 }
+
+/* ---- large desktop & ultra-wide (1440px+ / 1920x1080) ------------------- */
+@media (min-width: 1440px) {
+  .lp-breadcrumb,
+  .lp-hero,
+  .lp-section-inner {
+    max-width: 1360px;
+  }
+
+  .lp-h1 {
+    font-size: clamp(2.8rem, 4.5vw, 4.2rem);
+  }
+
+  .lp-sub {
+    font-size: 1.15rem;
+    max-width: 68ch;
+  }
+}
