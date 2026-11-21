@@ -8,7 +8,6 @@ import insightBimLogo from '../assets/svg logos/INSIGHT-BIM-LOGO.svg';
 import lstudioLogo from '../assets/svg logos/L-STUDIO_LOGO-WHITE.svg';
 import lyvinLogo from '../assets/svg logos/Lyvin-logo.svg';
 import miniBelleLogo from '../assets/svg logos/MINI-BELLE-logo.svg';
-import mehraDesignsLogo from '../assets/svg logos/Mehra-Designs 01.svg';
 import interioPlusLogo from '../assets/svg logos/interio-plus.svg';
 import lumoraLogo from '../assets/svg logos/lumora-LOGO-WHITE.svg';
 import miracleMeditationLogo from '../assets/svg logos/miracle-meditation-loGO.svg';
@@ -25,7 +24,6 @@ const PartnersSection = () => {
     { name: 'L Studio', src: lstudioLogo },
     { name: 'Lyvin', src: lyvinLogo },
     { name: 'MINI BELLE', src: miniBelleLogo },
-    { name: 'Mehra Designs', src: mehraDesignsLogo },
     { name: 'Interio Plus', src: interioPlusLogo },
     { name: 'Lumora', src: lumoraLogo },
     { name: 'Miracle Meditation', src: miracleMeditationLogo },
